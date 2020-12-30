@@ -1,0 +1,30 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 15
+title: Multivarejo e omnichanel
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 15
+---
+
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **13/04**
+
+> Não se esqueçam de incluir o nome dos membros do grupo na postagem!
+
+Leia do artigo [Multivarejo e omnicanal: o novo varejo alimentar do Grupo Pão de Açúcar](https://github.com/retaoliveira/relements/raw/main/texto/omini_pao.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
+
+1. Discuta, à luz dos conhecimentos adquiridos ao longo da disciplina, a seguinte frase: "A logística não é linear, otimizar um subsistema não significa otimizar o sistema total, é preciso olhar para os demais elos da cadeia”. Emita sua opinião quanto à concordância ou não com essa afirmativa e justifique. 
+
+2. Faça uma pesquisa na internet e discuta as diferenças entre uma estratégia logística multicanal e o omnichannel. 
+
+
+

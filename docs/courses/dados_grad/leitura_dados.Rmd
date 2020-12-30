@@ -1,0 +1,33 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: true
+menu:
+  dados_grad:
+    parent: Unidade 1 - Análise de dados para gestão
+    weight: 13
+title: Lendo dados no R
+type: docs
+weight: 13
+---
+
+## R? O que é o R?
+
+## Conhecendo o R {.tabset .tabset-fade .tabset-pills}
+
+### Interface e funcionalidades
+
+Para uso do R no ambiente RStudio, é inicialmente necessário entender o seu funcionamento. O R é uma linguagem de programação, em plataforma open source, desenvolvida para análise de dados. SEJAM BEM VINDOS!
+
+![Bem vindo](https://retaoliveira.github.io/relements/figures/welcome_to_rstats_twitter.png)
+
+Em um primeiro momento, o conjunto R + RStudio parece pouco amigável, mas com o tempo, é impossível não apaixonar-se pelas infinitas possibilidades que temos ao utilizar o R.
+
+![Ódio x amor](https://retaoliveira.github.io/relements/figures/r_first_then.png)
+
+A comunidade do R é bastante ampla e colaborativa. Assim: BUSQUE AJUDA!!!!!
+
+## ![Suporte](https://retaoliveira.github.io/relements/figures/code_hero_rstats.png)
+
+## Variáveis, funções e *packages* {.tabset .tabset-fade .tabset-pills}
+
+Sua estrutura fundamenta-se em uma grande variedade de ferramentas quantitativas, organizadas por meio de **objetos**, **funções** e **packages**. A instalação `base` do R já contempla uma série de funções e *packages*. *Packages* adicionais podem ser instalados quando for necessário ou interessante. Para instalação de *packages*, utiliza-se a função `install.packages()`.

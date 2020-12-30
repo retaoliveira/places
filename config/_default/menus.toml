@@ -1,0 +1,69 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+[[main]]
+  name = "Home"
+  url = "#about"
+  weight = 10
+
+[[main]]
+  name = "Blog"
+  url = "#posts"
+  weight = 20
+
+#[[main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 30
+
+#[[main]]
+#  name = "Publications"
+#  url = "#publications"
+#  weight = 40
+
+[[main]]
+  name = "Cursos"
+  url = "#"
+  hasChildren = true
+  weight = 30
+
+[[main]]
+  parent = "Cursos"
+  name = "Logística - 2021/1"
+  url = "courses/log/"
+  weight = 10
+  
+[[main]]
+  parent = "Cursos"
+  name = "Métodos Quantitativos para Suporte à Decisão na Gestão Urbana - 2021/1"
+  url = "courses/urban_analytics/"
+  weight = 20
+  
+[[main]]
+  parent = "Cursos"
+  name = "Análise de Dados para gestão organizacional - 2021/1"
+  url = "courses/dados_grad/"
+  weight = 60
+
+[[main]]
+  parent = "Cursos"
+  name = "Análise de Dados aplicada ao processo decisório - 2020/2"
+  url = "courses/dados_pos/"
+  weight = 80
+
+
+  
+[[main]]
+  name = "Contato"
+  url = "#contact"
+  weight = 60
+
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+[[main]]
+    name = "CV"
+    url = "files/cv.pdf"
+    weight = 70

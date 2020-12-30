@@ -1,0 +1,86 @@
+---
+title: 'Como comecei a usar RMarkdown'
+author: 'Renata Oliveira'
+date: '2020-12-24'
+slug: uso-markdown
+categories:
+  - R
+tags:
+  - RMarkdown
+  - R
+subtitle: ''
+plotly: true
+summary: ''
+authors: []
+lastmod: '2020-12-24T11:29:31-03:00'
+featured: no
+image:
+  caption: 'Ilustração por Alison Horst'
+  focal_point: ''
+  preview_only: no
+projects: []
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+    number_sections: true
+    fig_width: 6
+---
+
+
+
+
+Períodos de pandemia são sempre interessantes! Falo como se tivesse passado por diversos momentos como este; felizmente, isso não é verdade! Entretanto, foi nesse período que descobri o Rmarkdown.
+
+O isolamento social trouxe possibilidades, como eu aprender o R. Pesquisando sobre Latex, tive acesso a diferentes linguagens para elaboração de relatórios reprodutíveis e dinâmicos. A necessidade faz a "força". Resolvi explorar as possibilidades antes de me dedicar a aprender efetivamente alguma linguagem e descobri que o Rmarkdown é bem mais intuitivo e dinâmico do que o Latex, apesar de ainda precisar do Latex para implementação de equações, por exemplo.
+
+Com [RMarkdown](https://rmarkdown.rstudio.com/), é possível:
+
+-   Compilar um documento em um relatório em diferentes formatos de saída, como PDF, HTML e Word.
+-   Produzir slides para apresentações.
+-   Criar dashboards interativas, com layouts atraentes e que se adaptam à tela do usuário.
+-   Criar relatórios interativos com Shiny.
+-   Escrever artigos científicos ou livros.
+-   Criar blogs ou sites.
+
+Para começar a explorar esse mundo de textos dinâmicos, você precisa inicialmente:
+
+
+```r
+# install.packages("knitr")
+# install.packages("rmarkdown")
+```
+
+Depois, crie um novo arquivo de RMarkdown usando o comando File \> New \> File menu e selecione R \> RMarkdown na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione Adicionar R Markdown (ou Adicionar \> Novo Item e selecionando R Markdown na lista).
+
+Todo documento RMarkdown é composto por três importantes tipos de conteúdo: + Um cabeçalho `YAML` delimitado antes e depois por --- + `chunks` de códigos R ou outra linguagem compatível delimitado por \`\``. + Texto estruturado com formatação simples em`\#\` para títulos e outros caracteres de formatação
+
+Se ficarem interessados em packages para construção de documentos em Rmarkdown, tenho usado:
+
+
+```r
+library(vitae)
+library(pagedown)
+library(flexdashboard)
+library(rticles)
+library(bookdown)
+library(distill)
+library(hugodown)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)
+```
+
+Alguns links para quem quiser se aventurar na composição de artigos científicos, textos acadêmicos e não-acadêmicos, apresentações, dashboards, sites e outras possibilidades que o Rmarkdown nos proporciona.
+
+-   [RMarkdown: o mínimo que você precisa saber](https://medium.com/rladiesbh/rmarkdown-o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-1cb1bb57769d)
+-   [Pesquisa Reproduzível com R by Fernando Mayer e Walmes Zeviani](http://cursos.leg.ufpr.br/prr/capDocDin.html)
+-   [Rmarkdown-rautu](http://www.leg.ufpr.br/~fernandomayer/palestra/useR-2015/Rmarkdown-rautu.html#outline)
+-   [Iniciação do RMarkdown by Jayme Gomes dos Santos Junior](https://pet-estatistica.github.io/site/download/posts/postJAYME2.html#introducao)
+-   [Introdução a R para Visualização e Apresentação de Dados by Sillas Gonzaga](http://sillasgonzaga.com/material/curso_visualizacao/apresentacao-de-dados-com-relatorios.html)
+-   [R Markdown: The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund](https://bookdown.org/yihui/rmarkdown/)
+
+------------------------------------------------------------------------
+
+Credits: Ilustração por Alisson Horst
+

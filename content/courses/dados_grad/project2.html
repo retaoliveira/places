@@ -1,0 +1,144 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: true
+menu:
+  dados_grad:
+    parent: Projetos
+    weight: 14
+title: Projeto 2
+toc: true
+type: docs
+weight: 14
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="pré-requisitos" class="section level2">
+<h2>Pré-requisitos</h2>
+<p>Conhecimento nos pacotes do <code>tidyverse</code> (<code>ggplot</code>, <code>readr</code>, <code>dplyr</code>)</p>
+</div>
+<div id="atividades-para-consolidação-do-projeto-02" class="section level2">
+<h2>Atividades para consolidação do Projeto 02:</h2>
+<p>Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia <strong>25/03/2021</strong>.</p>
+<div id="utilizar-o-documento-de-comunicação-relatório-apresentação-ou-outro-de-sua-escolha-em-rmarkdown-gerado-para-o-projeto-1.-faremos-nesta-etapa-a-limpeza-dos-dados-e-a-organização-do-banco-de-dados-com-os-atributos-que-serão-analisados-no-projeto-integrador." class="section level3">
+<h3>Utilizar o documento de comunicação (relatório, apresentação ou outro de sua escolha) em <code>RMarkdown</code> gerado para o <strong>Projeto 1</strong>. Faremos, nesta etapa, a limpeza dos dados e a organização do banco de dados com os atributos que serão analisados no <strong>Projeto Integrador</strong>.</h3>
+<div id="abrir-arquivo-rmarkdown-.rmd" class="section level4">
+<h4>1. Abrir arquivo <code>RMarkdown</code> (.Rmd)</h4>
+</div>
+<div id="editar-o-cabeçalho-yaml-no-topo-do-documento-incluindo" class="section level4">
+<h4>2. Editar o cabeçalho YAML no topo do documento, incluindo:</h4>
+<ul>
+<li>Data</li>
+<li>Título que represente o conteúdo do relatório</li>
+<li>Autores do grupo</li>
+</ul>
+</div>
+<div id="mantenha-o-conteúdo-ou-aprimore-apresentado-no-documento-do-projeto-1." class="section level4">
+<h4>3. Mantenha o conteúdo (ou aprimore) apresentado no documento do <strong>Projeto 1</strong>.</h4>
+</div>
+<div id="carregue-os-dados-que-serão-necessários-para-análise-do-problema-descrito." class="section level4">
+<h4>4. Carregue os dados que serão necessários para análise do problema descrito.</h4>
+<p>Gere um objeto para cada data frame e inclua no seu .Rmd a apresentação preliminar do dado (<code>head()</code>) e alguma função de exploração do dados, como <code>str()</code>, <code>names()</code>, <code>nrow()</code>…</p>
+</div>
+<div id="faça-representações-preliminares-dos-dados." class="section level4">
+<h4>5. Faça representações preliminares dos dados.</h4>
+<p>Gere algumas representações dos dados que permitam entender as medidas de tendência central (média, mediana) em relação à dispersão dos dados (boxplot, histograma, barras). Lembre-se que tipos diferentes de gráficos no <code>ggplot2</code> devem ser gerados para tipos diferentes de dados.</p>
+<p>Trabalhe nessas representações relacionando atributos importantes para caracterização do processo em investigação.</p>
+</div>
+<div id="faça-limpezas-necessárias-para-que-os-dados-fiquem-tidy-." class="section level4">
+<h4>6. Faça limpezas necessárias para que os dados fiquem <strong>tidy</strong> .</h4>
+<p>Lembre-se que um dado <strong>tidy</strong> deve considerar que:
+- Cada variável forma uma coluna.
+- Cada observação forma uma linha.
+- Livre de linhas/colunas duplicadas.
+- Livre de erros de ortografia
+- Relevante (por exemplo, livre de caracteres especiais)
+- O tipo de dados apropriado para análise
+- Livre de outliers (ou só contém outliers que tenham sido identificados/entendidos)</p>
+<p>Utilize as funções disponíveis em <code>dplyr</code>:</p>
+<ul>
+<li><code>select</code>: seleção de colunas pelo nome</li>
+<li><code>arrange</code>: reorganização das colunas</li>
+<li><code>slice</code>: seleção de linhas pelo index(es)</li>
+<li><code>filter</code>: seleção de linhas segundo algum critério</li>
+<li><code>distinct</code>: aplica um filtro para que não haja colunas duplicadas</li>
+<li><code>mutate</code>: adição de novas variáveis</li>
+<li><code>summarise</code>: redução de variáveis a valores</li>
+<li><code>group_by</code>: operações em agrupamentos</li>
+<li>… (many more)</li>
+</ul>
+<p>Represente (<code>head()</code>) os dados após a limpeza e explique o que foi necessário fazer para gerar dados <strong>tidy</strong>.</p>
+</div>
+</div>
+</div>
+<div id="rubrica-de-avaliação" class="section level2">
+<h2>Rubrica de avaliação</h2>
+<p>Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto 1 que são úteis para nortear o desenvolvimento do trabalho.</p>
+<div id="relatório-rmarkdown" class="section level3">
+<h3>Relatório RMarkdown</h3>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Proporção da nota</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sintaxe do código</td>
+<td>20%</td>
+</tr>
+<tr class="even">
+<td>HTML e Rmd apresentados</td>
+<td>0,5 pontos</td>
+</tr>
+<tr class="odd">
+<td>YAML contém título, autor e data</td>
+<td>0,5 pontos</td>
+</tr>
+<tr class="even">
+<td>O arquivo foi nomeado conforme diretrizes</td>
+<td>0,5 pontos</td>
+</tr>
+<tr class="odd">
+<td>A gramática e a ortografia são excelentes - sem erros de ortografia</td>
+<td>0,5 pontos</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Proporção da nota</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dados</td>
+<td>80%</td>
+</tr>
+<tr class="even">
+<td>Dados e suas estatísticas descritivas representados de maneira clara e relevante</td>
+<td>4 pontos</td>
+</tr>
+<tr class="odd">
+<td>Limpeza dos dados realizada de maneira assertiva e completa</td>
+<td>4 pontos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>

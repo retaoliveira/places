@@ -1,0 +1,428 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-640 -410 1280 440">
+ <title>Comparison of standard normal distribution and it shifted by 1.5 sigma</title>
+ <desc>Comparison of standard normal distribution (with mean = 0 and standard deviation = 1, coloured green) and the distribution shifted by 1.5 sigma (with mean = -1.5 coloured blue, and mean = 1.5 coloured red) on the effect on the upper and lower specification limits (USL and LSL, respectively) by CMG Lee.</desc>
+ <rect x="-768" y="-480" width="1536" height="512" fill="#ffffff"/>
+ <g font-family="sans-serif" font-size="20" letter-spacing="-1" text-anchor="middle" stroke="#000000" fill="#000000">
+
+  <text x="700" y="15" dy="0.7ex" stroke="none">7</text>
+  <line x1="700" y1="8" x2="700" y2="0"/>
+  <line x1="690" y1="4" x2="690" y2="0"/>
+  <line x1="680" y1="4" x2="680" y2="0"/>
+  <line x1="670" y1="4" x2="670" y2="0"/>
+  <line x1="660" y1="4" x2="660" y2="0"/>
+  <line x1="650" y1="8" x2="650" y2="0"/>
+  <line x1="640" y1="4" x2="640" y2="0"/>
+  <line x1="630" y1="4" x2="630" y2="0"/>
+  <line x1="620" y1="4" x2="620" y2="0"/>
+  <line x1="610" y1="4" x2="610" y2="0"/>
+  <text x="600" y="15" dy="0.7ex" stroke="none">6</text>
+  <line x1="600" y1="8" x2="600" y2="0"/>
+  <line x1="590" y1="4" x2="590" y2="0"/>
+  <line x1="580" y1="4" x2="580" y2="0"/>
+  <line x1="570" y1="4" x2="570" y2="0"/>
+  <line x1="560" y1="4" x2="560" y2="0"/>
+  <line x1="550" y1="8" x2="550" y2="0"/>
+  <line x1="540" y1="4" x2="540" y2="0"/>
+  <line x1="530" y1="4" x2="530" y2="0"/>
+  <line x1="520" y1="4" x2="520" y2="0"/>
+  <line x1="510" y1="4" x2="510" y2="0"/>
+  <text x="500" y="15" dy="0.7ex" stroke="none">5</text>
+  <line x1="500" y1="8" x2="500" y2="0"/>
+  <line x1="490" y1="4" x2="490" y2="0"/>
+  <line x1="480" y1="4" x2="480" y2="0"/>
+  <line x1="470" y1="4" x2="470" y2="0"/>
+  <line x1="460" y1="4" x2="460" y2="0"/>
+  <line x1="450" y1="8" x2="450" y2="0"/>
+  <line x1="440" y1="4" x2="440" y2="0"/>
+  <line x1="430" y1="4" x2="430" y2="0"/>
+  <line x1="420" y1="4" x2="420" y2="0"/>
+  <line x1="410" y1="4" x2="410" y2="0"/>
+  <text x="400" y="15" dy="0.7ex" stroke="none">4</text>
+  <line x1="400" y1="8" x2="400" y2="0"/>
+  <line x1="390" y1="4" x2="390" y2="0"/>
+  <line x1="380" y1="4" x2="380" y2="0"/>
+  <line x1="370" y1="4" x2="370" y2="0"/>
+  <line x1="360" y1="4" x2="360" y2="0"/>
+  <line x1="350" y1="8" x2="350" y2="0"/>
+  <line x1="340" y1="4" x2="340" y2="0"/>
+  <line x1="330" y1="4" x2="330" y2="0"/>
+  <line x1="320" y1="4" x2="320" y2="0"/>
+  <line x1="310" y1="4" x2="310" y2="0"/>
+  <text x="300" y="15" dy="0.7ex" stroke="none">3</text>
+  <line x1="300" y1="8" x2="300" y2="0"/>
+  <line x1="290" y1="4" x2="290" y2="0"/>
+  <line x1="280" y1="4" x2="280" y2="0"/>
+  <line x1="270" y1="4" x2="270" y2="0"/>
+  <line x1="260" y1="4" x2="260" y2="0"/>
+  <line x1="250" y1="8" x2="250" y2="0"/>
+  <line x1="240" y1="4" x2="240" y2="0"/>
+  <line x1="230" y1="4" x2="230" y2="0"/>
+  <line x1="220" y1="4" x2="220" y2="0"/>
+  <line x1="210" y1="4" x2="210" y2="0"/>
+  <text x="200" y="15" dy="0.7ex" stroke="none">2</text>
+  <line x1="200" y1="8" x2="200" y2="0"/>
+  <line x1="190" y1="4" x2="190" y2="0"/>
+  <line x1="180" y1="4" x2="180" y2="0"/>
+  <line x1="170" y1="4" x2="170" y2="0"/>
+  <line x1="160" y1="4" x2="160" y2="0"/>
+  <line x1="150" y1="8" x2="150" y2="0"/>
+  <line x1="140" y1="4" x2="140" y2="0"/>
+  <line x1="130" y1="4" x2="130" y2="0"/>
+  <line x1="120" y1="4" x2="120" y2="0"/>
+  <line x1="110" y1="4" x2="110" y2="0"/>
+  <text x="100" y="15" dy="0.7ex" stroke="none">1</text>
+  <line x1="100" y1="8" x2="100" y2="0"/>
+  <line x1="90" y1="4" x2="90" y2="0"/>
+  <line x1="80" y1="4" x2="80" y2="0"/>
+  <line x1="70" y1="4" x2="70" y2="0"/>
+  <line x1="60" y1="4" x2="60" y2="0"/>
+  <line x1="50" y1="8" x2="50" y2="0"/>
+  <line x1="40" y1="4" x2="40" y2="0"/>
+  <line x1="30" y1="4" x2="30" y2="0"/>
+  <line x1="20" y1="4" x2="20" y2="0"/>
+  <line x1="10" y1="4" x2="10" y2="0"/>
+  <text x="0" y="15" dy="0.7ex" stroke="none">0</text>
+  <line x1="0" y1="8" x2="0" y2="0"/>
+  <line x1="-10" y1="4" x2="-10" y2="0"/>
+  <line x1="-20" y1="4" x2="-20" y2="0"/>
+  <line x1="-30" y1="4" x2="-30" y2="0"/>
+  <line x1="-40" y1="4" x2="-40" y2="0"/>
+  <line x1="-50" y1="8" x2="-50" y2="0"/>
+  <line x1="-60" y1="4" x2="-60" y2="0"/>
+  <line x1="-70" y1="4" x2="-70" y2="0"/>
+  <line x1="-80" y1="4" x2="-80" y2="0"/>
+  <line x1="-90" y1="4" x2="-90" y2="0"/>
+  <text x="-100" y="15" dy="0.7ex" stroke="none">-1</text>
+  <line x1="-100" y1="8" x2="-100" y2="0"/>
+  <line x1="-110" y1="4" x2="-110" y2="0"/>
+  <line x1="-120" y1="4" x2="-120" y2="0"/>
+  <line x1="-130" y1="4" x2="-130" y2="0"/>
+  <line x1="-140" y1="4" x2="-140" y2="0"/>
+  <line x1="-150" y1="8" x2="-150" y2="0"/>
+  <line x1="-160" y1="4" x2="-160" y2="0"/>
+  <line x1="-170" y1="4" x2="-170" y2="0"/>
+  <line x1="-180" y1="4" x2="-180" y2="0"/>
+  <line x1="-190" y1="4" x2="-190" y2="0"/>
+  <text x="-200" y="15" dy="0.7ex" stroke="none">-2</text>
+  <line x1="-200" y1="8" x2="-200" y2="0"/>
+  <line x1="-210" y1="4" x2="-210" y2="0"/>
+  <line x1="-220" y1="4" x2="-220" y2="0"/>
+  <line x1="-230" y1="4" x2="-230" y2="0"/>
+  <line x1="-240" y1="4" x2="-240" y2="0"/>
+  <line x1="-250" y1="8" x2="-250" y2="0"/>
+  <line x1="-260" y1="4" x2="-260" y2="0"/>
+  <line x1="-270" y1="4" x2="-270" y2="0"/>
+  <line x1="-280" y1="4" x2="-280" y2="0"/>
+  <line x1="-290" y1="4" x2="-290" y2="0"/>
+  <text x="-300" y="15" dy="0.7ex" stroke="none">-3</text>
+  <line x1="-300" y1="8" x2="-300" y2="0"/>
+  <line x1="-310" y1="4" x2="-310" y2="0"/>
+  <line x1="-320" y1="4" x2="-320" y2="0"/>
+  <line x1="-330" y1="4" x2="-330" y2="0"/>
+  <line x1="-340" y1="4" x2="-340" y2="0"/>
+  <line x1="-350" y1="8" x2="-350" y2="0"/>
+  <line x1="-360" y1="4" x2="-360" y2="0"/>
+  <line x1="-370" y1="4" x2="-370" y2="0"/>
+  <line x1="-380" y1="4" x2="-380" y2="0"/>
+  <line x1="-390" y1="4" x2="-390" y2="0"/>
+  <text x="-400" y="15" dy="0.7ex" stroke="none">-4</text>
+  <line x1="-400" y1="8" x2="-400" y2="0"/>
+  <line x1="-410" y1="4" x2="-410" y2="0"/>
+  <line x1="-420" y1="4" x2="-420" y2="0"/>
+  <line x1="-430" y1="4" x2="-430" y2="0"/>
+  <line x1="-440" y1="4" x2="-440" y2="0"/>
+  <line x1="-450" y1="8" x2="-450" y2="0"/>
+  <line x1="-460" y1="4" x2="-460" y2="0"/>
+  <line x1="-470" y1="4" x2="-470" y2="0"/>
+  <line x1="-480" y1="4" x2="-480" y2="0"/>
+  <line x1="-490" y1="4" x2="-490" y2="0"/>
+  <text x="-500" y="15" dy="0.7ex" stroke="none">-5</text>
+  <line x1="-500" y1="8" x2="-500" y2="0"/>
+  <line x1="-510" y1="4" x2="-510" y2="0"/>
+  <line x1="-520" y1="4" x2="-520" y2="0"/>
+  <line x1="-530" y1="4" x2="-530" y2="0"/>
+  <line x1="-540" y1="4" x2="-540" y2="0"/>
+  <line x1="-550" y1="8" x2="-550" y2="0"/>
+  <line x1="-560" y1="4" x2="-560" y2="0"/>
+  <line x1="-570" y1="4" x2="-570" y2="0"/>
+  <line x1="-580" y1="4" x2="-580" y2="0"/>
+  <line x1="-590" y1="4" x2="-590" y2="0"/>
+  <text x="-600" y="15" dy="0.7ex" stroke="none">-6</text>
+  <line x1="-600" y1="8" x2="-600" y2="0"/>
+  <line x1="-610" y1="4" x2="-610" y2="0"/>
+  <line x1="-620" y1="4" x2="-620" y2="0"/>
+  <line x1="-630" y1="4" x2="-630" y2="0"/>
+  <line x1="-640" y1="4" x2="-640" y2="0"/>
+  <line x1="-650" y1="8" x2="-650" y2="0"/>
+  <line x1="-660" y1="4" x2="-660" y2="0"/>
+  <line x1="-670" y1="4" x2="-670" y2="0"/>
+  <line x1="-680" y1="4" x2="-680" y2="0"/>
+  <line x1="-690" y1="4" x2="-690" y2="0"/>
+  <text x="-700" y="15" dy="0.7ex" stroke="none">-7</text>
+  <line x1="-700" y1="8" x2="-700" y2="0"/>
+  <text x="-28" y="-400" dy="0.7ex" stroke="none">0.40</text>
+  <line x1="-8" y1="-400" x2="0" y2="-400"/>
+  <line x1="-4" y1="-390" x2="0" y2="-390"/>
+  <line x1="-4" y1="-380" x2="0" y2="-380"/>
+  <line x1="-4" y1="-370" x2="0" y2="-370"/>
+  <line x1="-4" y1="-360" x2="0" y2="-360"/>
+  <line x1="-8" y1="-350" x2="0" y2="-350"/>
+  <line x1="-4" y1="-340" x2="0" y2="-340"/>
+  <line x1="-4" y1="-330" x2="0" y2="-330"/>
+  <line x1="-4" y1="-320" x2="0" y2="-320"/>
+  <line x1="-4" y1="-310" x2="0" y2="-310"/>
+  <text x="-28" y="-300" dy="0.7ex" stroke="none">0.30</text>
+  <line x1="-8" y1="-300" x2="0" y2="-300"/>
+  <line x1="-4" y1="-290" x2="0" y2="-290"/>
+  <line x1="-4" y1="-280" x2="0" y2="-280"/>
+  <line x1="-4" y1="-270" x2="0" y2="-270"/>
+  <line x1="-4" y1="-260" x2="0" y2="-260"/>
+  <line x1="-8" y1="-250" x2="0" y2="-250"/>
+  <line x1="-4" y1="-240" x2="0" y2="-240"/>
+  <line x1="-4" y1="-230" x2="0" y2="-230"/>
+  <line x1="-4" y1="-220" x2="0" y2="-220"/>
+  <line x1="-4" y1="-210" x2="0" y2="-210"/>
+  <text x="-28" y="-200" dy="0.7ex" stroke="none">0.20</text>
+  <line x1="-8" y1="-200" x2="0" y2="-200"/>
+  <line x1="-4" y1="-190" x2="0" y2="-190"/>
+  <line x1="-4" y1="-180" x2="0" y2="-180"/>
+  <line x1="-4" y1="-170" x2="0" y2="-170"/>
+  <line x1="-4" y1="-160" x2="0" y2="-160"/>
+  <line x1="-8" y1="-150" x2="0" y2="-150"/>
+  <line x1="-4" y1="-140" x2="0" y2="-140"/>
+  <line x1="-4" y1="-130" x2="0" y2="-130"/>
+  <line x1="-4" y1="-120" x2="0" y2="-120"/>
+  <line x1="-4" y1="-110" x2="0" y2="-110"/>
+  <text x="-28" y="-100" dy="0.7ex" stroke="none">0.10</text>
+  <line x1="-8" y1="-100" x2="0" y2="-100"/>
+  <line x1="-4" y1="-90" x2="0" y2="-90"/>
+  <line x1="-4" y1="-80" x2="0" y2="-80"/>
+  <line x1="-4" y1="-70" x2="0" y2="-70"/>
+  <line x1="-4" y1="-60" x2="0" y2="-60"/>
+  <line x1="-8" y1="-50" x2="0" y2="-50"/>
+  <line x1="-4" y1="-40" x2="0" y2="-40"/>
+  <line x1="-4" y1="-30" x2="0" y2="-30"/>
+  <line x1="-4" y1="-20" x2="0" y2="-20"/>
+  <line x1="-4" y1="-10" x2="0" y2="-10"/>
+  <text x="640" y="15" dy="0.7ex" font-style="italic" text-anchor="end" stroke="none">x</text>
+  <text x="-60" y="-400" dy="0.7ex" font-style="italic" text-anchor="end" stroke="none">&#981;(x)</text>
+  <path d="M 0 -420 V -400 M -700 0 H 700"/>
+  <g stroke-width="2">
+   <g stroke="#9900cc" fill="#9900cc">
+    <g stroke="none">
+     <text x="-630" y="-400" dy="0.7ex" text-anchor="start">Fraction of area left of LSL:</text>
+     <text x="630" y="-400" dy="0.7ex" text-anchor="end">Fraction of area right of USL:</text>
+     <text x="445" y="-250" dy="0.7ex">Total fraction beyond &#177;6&#963;:</text>
+     <text x="-600" y="-110" dy="0.7ex" font-weight="bold">LSL</text>
+     <text x="600" y="-110" dy="0.7ex" font-weight="bold">USL</text>
+    </g>
+    <path d="M -600 -100 V 0 M 600 -100 V 0"/>
+    <g stroke-width="1" fill="none">
+     <path d="M -630 -310 V -5 m -10 -20 l 10 20 l 10 -20 M 630 -315 V -5 m -10 -20 l 10 20 l 10 -20"/>
+     <rect x="310" y="-270" width="270" height="120" rx="20" ry="20"/>
+    </g>
+   </g>
+
+  <g stroke="#006600" fill="#006600">
+   <text x="0" y="-50" dy="0.7ex" stroke="none">&#956;=0</text>
+   <path d="M 0 -398.942 V 0" stroke-dasharray="8,2"/>
+   <text x="-100" y="-50" dy="0.7ex" stroke="none">&#956;-&#963;=-1</text>
+   <text x="100" y="-50" dy="0.7ex" stroke="none">&#956;+&#963;=1</text>
+   <path d="M -100 -241.971 V 0 M 100 -241.971 V 0" stroke-dasharray="2,2"/>
+   <text x="-630" y="-360" dy="0.7ex" text-anchor="start" stroke="none"><tspan>original:</tspan><tspan x="-520">9.866 &#215; 10</tspan><tspan dy="-0.7ex">-10</tspan></text>
+   <text x="390" y="-360" dy="0.7ex" text-anchor="start" stroke="none"><tspan>original:</tspan><tspan x="500">9.866 &#215; 10</tspan><tspan dy="-0.7ex">-10</tspan></text>
+   <text x="330" y="-210" dy="0.7ex" text-anchor="start" stroke="none"><tspan>original:</tspan><tspan x="440">1.973 &#215; 10</tspan><tspan dy="-0.7ex">-9</tspan></text>
+   <path d="M -700 0 L -360 -0.612 L -340 -1.232 L -320 -2.384 L -310 -3.267 L -300 -4.432 L -290 -5.953 L -280 -7.915 L -270 -10.421 L -260 -13.583 L -250 -17.528 L -240 -22.395 L -230 -28.327 L -220 -35.475 L -210 -43.984 L -200 -53.991 L -190 -65.616 L -180 -78.95 L -170 -94.049 L -160 -110.921 L -150 -129.518 L -140 -149.727 L -130 -171.369 L -120 -194.186 L -110 -217.852 L -100 -241.971 L -90 -266.085 L -80 -289.692 L -70 -312.254 L -60 -333.225 L -50 -352.065 L -40 -368.27 L -30 -381.388 L -20 -391.043 L -10 -396.953 L 0 -398.942 L 10 -396.953 L 20 -391.043 L 30 -381.388 L 40 -368.27 L 50 -352.065 L 60 -333.225 L 70 -312.254 L 80 -289.692 L 90 -266.085 L 100 -241.971 L 110 -217.852 L 120 -194.186 L 130 -171.369 L 140 -149.727 L 150 -129.518 L 160 -110.921 L 170 -94.049 L 180 -78.95 L 190 -65.616 L 200 -53.991 L 210 -43.984 L 220 -35.475 L 230 -28.327 L 240 -22.395 L 250 -17.528 L 260 -13.583 L 270 -10.421 L 280 -7.915 L 290 -5.953 L 300 -4.432 L 310 -3.267 L 320 -2.384 L 330 -1.723 L 350 -0.873 L 380 -0.292 L 700 0" stroke-opacity="0.8" fill-opacity="0.2"/>
+  </g>
+  <g stroke="#ff6666" fill="#ff6666">
+   <text x="150" y="-15" dy="0.7ex" stroke="none">&#956;=1.5</text>
+   <path d="M 150 -398.942 V 0" stroke-dasharray="8,2"/>
+   <text x="50" y="-15" dy="0.7ex" stroke="none">&#956;-&#963;=0.5</text>
+   <text x="250" y="-15" dy="0.7ex" stroke="none">&#956;+&#963;=2.5</text>
+   <path d="M 50 -241.971 V 0 M 250 -241.971 V 0" stroke-dasharray="2,2"/>
+   <text x="-630" y="-340" dy="0.7ex" text-anchor="start" stroke="none"><tspan>+1.5&#963; shift:</tspan><tspan x="-520">3.191 &#215; 10</tspan><tspan dy="-0.7ex">-14</tspan></text>
+   <text x="390" y="-340" dy="0.7ex" text-anchor="start" stroke="none"><tspan>+1.5&#963; shift:</tspan><tspan x="500">3.398 &#215; 10</tspan><tspan dy="-0.7ex">-6</tspan></text>
+   <text x="330" y="-190" dy="0.7ex" text-anchor="start" stroke="none"><tspan>+1.5&#963; shift:</tspan><tspan x="440">3.398 &#215; 10</tspan><tspan dy="-0.7ex">-6</tspan></text>
+   <path d="M -700 0 L -210 -0.612 L -190 -1.232 L -170 -2.384 L -160 -3.267 L -150 -4.432 L -140 -5.953 L -130 -7.915 L -120 -10.421 L -110 -13.583 L -100 -17.528 L -90 -22.395 L -80 -28.327 L -70 -35.475 L -60 -43.984 L -50 -53.991 L -40 -65.616 L -30 -78.95 L -20 -94.049 L -10 -110.921 L 0 -129.518 L 10 -149.727 L 20 -171.369 L 30 -194.186 L 40 -217.852 L 50 -241.971 L 60 -266.085 L 70 -289.692 L 80 -312.254 L 90 -333.225 L 100 -352.065 L 110 -368.27 L 120 -381.388 L 130 -391.043 L 140 -396.953 L 150 -398.942 L 160 -396.953 L 170 -391.043 L 180 -381.388 L 190 -368.27 L 200 -352.065 L 210 -333.225 L 220 -312.254 L 230 -289.692 L 240 -266.085 L 250 -241.971 L 260 -217.852 L 270 -194.186 L 280 -171.369 L 290 -149.727 L 300 -129.518 L 310 -110.921 L 320 -94.049 L 330 -78.95 L 340 -65.616 L 350 -53.991 L 360 -43.984 L 370 -35.475 L 380 -28.327 L 390 -22.395 L 400 -17.528 L 410 -13.583 L 420 -10.421 L 430 -7.915 L 440 -5.953 L 450 -4.432 L 460 -3.267 L 470 -2.384 L 480 -1.723 L 500 -0.873 L 530 -0.292 L 700 0" stroke-opacity="0.8" fill-opacity="0.2"/>
+  </g>
+  <g stroke="#6666ff" fill="#6666ff">
+   <text x="-150" y="-15" dy="0.7ex" stroke="none">&#956;=-1.5</text>
+   <path d="M -150 -398.942 V 0" stroke-dasharray="8,2"/>
+   <text x="-250" y="-15" dy="0.7ex" stroke="none">&#956;-&#963;=-2.5</text>
+   <text x="-50" y="-15" dy="0.7ex" stroke="none">&#956;+&#963;=-0.5</text>
+   <path d="M -250 -241.971 V 0 M -50 -241.971 V 0" stroke-dasharray="2,2"/>
+   <text x="-630" y="-320" dy="0.7ex" text-anchor="start" stroke="none"><tspan>-1.5&#963; shift:</tspan><tspan x="-520">3.398 &#215; 10</tspan><tspan dy="-0.7ex">-6</tspan></text>
+   <text x="390" y="-320" dy="0.7ex" text-anchor="start" stroke="none"><tspan>-1.5&#963; shift:</tspan><tspan x="500">3.191 &#215; 10</tspan><tspan dy="-0.7ex">-14</tspan></text>
+   <text x="330" y="-170" dy="0.7ex" text-anchor="start" stroke="none"><tspan>-1.5&#963; shift:</tspan><tspan x="440">3.398 &#215; 10</tspan><tspan dy="-0.7ex">-6</tspan></text>
+   <path d="M -700 0 L -510 -0.612 L -490 -1.232 L -470 -2.384 L -460 -3.267 L -450 -4.432 L -440 -5.953 L -430 -7.915 L -420 -10.421 L -410 -13.583 L -400 -17.528 L -390 -22.395 L -380 -28.327 L -370 -35.475 L -360 -43.984 L -350 -53.991 L -340 -65.616 L -330 -78.95 L -320 -94.049 L -310 -110.921 L -300 -129.518 L -290 -149.727 L -280 -171.369 L -270 -194.186 L -260 -217.852 L -250 -241.971 L -240 -266.085 L -230 -289.692 L -220 -312.254 L -210 -333.225 L -200 -352.065 L -190 -368.27 L -180 -381.388 L -170 -391.043 L -160 -396.953 L -150 -398.942 L -140 -396.953 L -130 -391.043 L -120 -381.388 L -110 -368.27 L -100 -352.065 L -90 -333.225 L -80 -312.254 L -70 -289.692 L -60 -266.085 L -50 -241.971 L -40 -217.852 L -30 -194.186 L -20 -171.369 L -10 -149.727 L 0 -129.518 L 10 -110.921 L 20 -94.049 L 30 -78.95 L 40 -65.616 L 50 -53.991 L 60 -43.984 L 70 -35.475 L 80 -28.327 L 90 -22.395 L 100 -17.528 L 110 -13.583 L 120 -10.421 L 130 -7.915 L 140 -5.953 L 150 -4.432 L 160 -3.267 L 170 -2.384 L 180 -1.723 L 200 -0.873 L 230 -0.292 L 700 0" stroke-opacity="0.8" fill-opacity="0.2"/>
+  </g>
+  </g>
+ </g>
+</svg>
+
+<!-- Perl script to create above; please do not remove.
+#!/usr/bin/perl
+use POSIX;
+use Math::Trig;
+my %graphs = (
+ "original" =>
+  { "mu"      =>    0,  "colour" => "#006600",
+    "a_p_m"   => 9.866, "a_p_e"  => -10,
+    "a_n_m"   => 9.866, "a_n_e"  => -10,
+    "a_t_m"   => 1.973, "a_t_e"  =>  -9,
+    "y_label" =>   -50, "y_area" => -360 },
+ "+1.5&#963; shift" =>
+  { "mu"      =>   1.5, "colour" => "#ff6666",
+    "a_p_m"   => 3.398, "a_p_e"  =>  -6,
+    "a_n_m"   => 3.191, "a_n_e"  => -14,
+    "a_t_m"   => 3.398, "a_t_e"  =>  -6,
+    "y_label" =>   -15, "y_area" => -340 },
+ "-1.5&#963; shift" =>
+  { "mu"      =>  -1.5, "colour" => "#6666ff",
+    "a_p_m"   => 3.191, "a_p_e"  => -14,
+    "a_n_m"   => 3.398, "a_n_e"  =>  -6,
+    "a_t_m"   => 3.398, "a_t_e"  =>  -6,
+    "y_label" =>   -15, "y_area" => -320 },
+ undef);
+# fraction of area > x, a_p = 1-(1+erf(x/sqrt(2)))/2 = (1+erf(-x/sqrt(2)))/2
+# fraction of area < x, a_n = (1+erf(x/sqrt(2)))/2
+my $double_dash = "-" . "-";
+my $out_ticks = "";
+my $out_graph = "";
+my $out_tmp, $i, $mu, $sigma, $poi_n, $poi_p, $x, $y;
+my $y_label, $y_area, $y_total, $x_max, $y_max, $x_poi_n, $x_poi_p, $y_poi;
+my $a_p_m, $a_p_e, $a_n_m, $a_n_e, $a_t_m, $a_t_e;
+my $file_out = $0; $file_out =~ s/[^\.]*$/svg/;
+
+my $sqrt_2_pi = sqrt(2 * pi);
+sub pdf {
+ my ($x, $mu, $sigma) = @_;
+ my $x_minus_mu = $x - $mu;
+ return exp($x_minus_mu * $x_minus_mu / (-2 * $sigma * $sigma)) /
+        ($sqrt_2_pi * $sigma);
+}
+sub round {
+ my $unit = $_[1] || 1;
+ return floor($_[0] * $unit + 0.5) / $unit;
+}
+sub x { return &round(100 * $_[0], 1e3); }
+sub y { return &round(-1000 * $_[0], 1e3); }
+
+for ($i = 7; $i >= -7; $i -= 0.1) {
+ $x = &x($i);
+ $out_tmp = sprintf("%.0f", $i);
+ if (abs($i - &round($i)) < 1e-6) {
+  $out_ticks .= qq`
+  <text x="${x}" y="15" dy="0.7ex" stroke="none">${out_tmp}</text>`;
+ }
+ if (abs($i - &round($i, 2)) < 1e-6) {
+  $y = 8;
+ } else {
+  $y = 4;
+ }
+ $out_ticks .= qq`
+  <line x1="${x}" y1="${y}" x2="${x}" y2="0"/>`;
+}
+for ($i = 0.4; $i > 0; $i -= 0.01) {
+ $y = &y($i);
+ $out_tmp = sprintf("%.2f", $i);
+ if (abs($i - &round($i, 10)) < 1e-6) {
+  $out_ticks .= qq`
+  <text x="-28" y="${y}" dy="0.7ex" stroke="none">${out_tmp}</text>`;
+ }
+ if (abs($i - &round($i, 20)) < 1e-6) {
+  $x = -8;
+ } else {
+  $x = -4;
+ }
+ $out_ticks .= qq`
+  <line x1="${x}" y1="${y}" x2="0" y2="${y}"/>`;
+}
+
+for (keys %graphs) {
+ $_ || next;
+ $name = $graphs{$_}{"name"};
+ $colour = $graphs{$_}{"colour"};
+ $y_label = $graphs{$_}{"y_label"};
+ $y_area = $graphs{$_}{"y_area"};
+ $y_total = $y_area + 150;
+ $a_p_m = $graphs{$_}{"a_p_m"};
+ $a_p_e = $graphs{$_}{"a_p_e"};
+ $a_n_m = $graphs{$_}{"a_n_m"};
+ $a_n_e = $graphs{$_}{"a_n_e"};
+ $a_t_m = $graphs{$_}{"a_t_m"};
+ $a_t_e = $graphs{$_}{"a_t_e"};
+ $mu = $graphs{$_}{"mu"};
+ $sigma = 1;
+ $x_max = &x($mu);
+ $y_max = &y(&pdf($mu, $mu, $sigma));
+ $poi_n = $mu - $sigma;
+ $poi_p = $mu + $sigma;
+ $x_poi_n = &x($poi_n);
+ $x_poi_p = &x($poi_p);
+ $y_poi = &y(&pdf($mu, $poi_p, $sigma));
+
+ $y_old = 9e9;
+ $out_tmp = "";
+ for ($i = -7; $i < 7; $i += 0.1) {
+  $x = &x($i);
+  $y = &y(&pdf($i, $mu, $sigma));
+  if (abs($y - $y_old) > 0.5) {
+   $out_tmp .= ($out_tmp eq "" ? "M" : " L") . " ${x} ${y}";
+   $y_old = $y;
+  }
+ }
+ $out_graph .= qq`
+  <g stroke="${colour}" fill="${colour}">
+   <text x="${x_max}" y="${y_label}" dy="0.7ex" stroke="none">&#956;=${mu}</text>
+   <path d="M ${x_max} ${y_max} V 0" stroke-dasharray="8,2"/>
+   <text x="${x_poi_n}" y="${y_label}" dy="0.7ex" stroke="none">&#956;-&#963;=${poi_n}</text>
+   <text x="${x_poi_p}" y="${y_label}" dy="0.7ex" stroke="none">&#956;+&#963;=${poi_p}</text>
+   <path d="M ${x_poi_n} ${y_poi} V 0 M ${x_poi_p} ${y_poi} V 0" stroke-dasharray="2,2"/>
+   <text x="-630" y="${y_area}" dy="0.7ex" text-anchor="start" stroke="none"><tspan>${_}:</tspan><tspan x="-520">${a_n_m} &#215; 10</tspan><tspan dy="-0.7ex">${a_n_e}</tspan></text>
+   <text x="390" y="${y_area}" dy="0.7ex" text-anchor="start" stroke="none"><tspan>${_}:</tspan><tspan x="500">${a_p_m} &#215; 10</tspan><tspan dy="-0.7ex">${a_p_e}</tspan></text>
+   <text x="330" y="${y_total}" dy="0.7ex" text-anchor="start" stroke="none"><tspan>${_}:</tspan><tspan x="440">${a_t_m} &#215; 10</tspan><tspan dy="-0.7ex">${a_t_e}</tspan></text>
+   <path d="${out_tmp} L ${x} ${y}" stroke-opacity="0.8" fill-opacity="0.2"/>
+  </g>`;
+}
+
+open (FILE_OUT, ">$file_out");
+print FILE_OUT qq`<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-640 -410 1280 440">
+ <title>Comparison of standard normal distribution and it shifted by 1.5 sigma</title>
+ <desc>Comparison of standard normal distribution (with mean = 0 and standard deviation = 1, coloured green) and the distribution shifted by 1.5 sigma (with mean = -1.5 coloured blue, and mean = 1.5 coloured red) on the effect on the upper and lower specification limits (USL and LSL, respectively) by CMG Lee.</desc>
+ <rect x="-768" y="-480" width="1536" height="512" fill="#ffffff"/>
+ <g font-family="sans-serif" font-size="20" letter-spacing="-1" text-anchor="middle" stroke="#000000" fill="#000000">
+${out_ticks}
+  <text x="640" y="15" dy="0.7ex" font-style="italic" text-anchor="end" stroke="none">x</text>
+  <text x="-60" y="-400" dy="0.7ex" font-style="italic" text-anchor="end" stroke="none">&#981;(x)</text>
+  <path d="M 0 -420 V -400 M -700 0 H 700"/>
+  <g stroke-width="2">
+   <g stroke="#9900cc" fill="#9900cc">
+    <g stroke="none">
+     <text x="-630" y="-400" dy="0.7ex" text-anchor="start">Fraction of area left of LSL:</text>
+     <text x="630" y="-400" dy="0.7ex" text-anchor="end">Fraction of area right of USL:</text>
+     <text x="445" y="-250" dy="0.7ex">Total fraction beyond &#177;6&#963;:</text>
+     <text x="-600" y="-110" dy="0.7ex" font-weight="bold">LSL</text>
+     <text x="600" y="-110" dy="0.7ex" font-weight="bold">USL</text>
+    </g>
+    <path d="M -600 -100 V 0 M 600 -100 V 0"/>
+    <g stroke-width="1" fill="none">
+     <path d="M -630 -310 V -5 m -10 -20 l 10 20 l 10 -20 M 630 -315 V -5 m -10 -20 l 10 20 l 10 -20"/>
+     <rect x="310" y="-270" width="270" height="120" rx="20" ry="20"/>
+    </g>
+   </g>
+${out_graph}
+  </g>
+ </g>
+</svg>
+
+<!${double_dash} Perl script to create above; please do not remove.
+`;
+open (FILE_IN, $0);
+while (<FILE_IN>) { print FILE_OUT $_; }
+close FILE_IN;
+print FILE_OUT "${double_dash}>";
+close FILE_OUT;
+-->

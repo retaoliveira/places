@@ -1,0 +1,32 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Unidade 3 - Integração Logística e sistemas de informação
+    weight: 10
+title: Tecnologia da Informação aplicada à Logística
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho. 
+
+Essas mudanças são fruto da quarta revolução industrial estruturada por meio do uso de tecnologia para convergência entre os mundos físico, digital e biológico. Trata-se de um processo de transformação que beneficiará apenas os indivíduos e as sociedades que forem capazes de inovar e se adaptar. 
+
+No ambiente empresarial, a logística começou a tomar forma no início dos anos 50, momento em que universidades americanas (repletas de grandes cientistas de vários países do mundo pósguerra) e com suas indústrias preservadas (o palco da 2ª Guerra não foi em território dos EUA), iniciou o processo de crescimento acelerado. O marketing logo virou ciência na academia e aí se incorporou o “P” (place) e criou-se o conceito de “Distribuição Comercial” que logo virou “Distribuição Física” e nos anos 80 assumiu a mega função empresarial: logística. Na virada dos anos 90 vieram os softwares (como WMS, TMS, ERP) e mais à frente tantas tecnologias que “turbinaram” a logística. Mas será que
+funciona mesmo?
+
+Nesse contexto, as Tecnologias da Informação (TICs) se tornam cada vez mais parte intrínseca da gestão da cadeia de suprimentos. Assim, neste curso, não discutiremos as TICs de maneira isolada, como uma das atividades-chave da GCS. As TICs farão parte de toda a exploração de conteúdo necessária para desenvolvimento de competências. 
+
+Seguem dois artigos interessantes para que sejam avaliados conceitos e prática das TICs nas operações logísticas. 
+
+- [Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia](https://github.com/retaoliveira/relements/raw/main/texto/ti2013.pdf)
+
+- [Logística + Tecnologia: na prática a teoria é outra](https://github.com/retaoliveira/relements/raw/main/texto/ti_pratica.pdf)

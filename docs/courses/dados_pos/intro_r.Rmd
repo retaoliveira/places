@@ -1,0 +1,971 @@
+---
+date: 2019-05-05T00:00:00+01:00
+draft: false
+menu:
+  dados_pos:
+    parent: Unidade 1 - Análise de dados para gestão
+    weight: 11
+title: Conhecendo o R
+type: docs
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+weight: 13
+---
+
+# TL;DR
+
+Nessa seção apresentamos alguns conceitos importantes para que a utilização do `R` seja mais amigável! Algumas informações importantes que são detalhadas a seguir:
+
+- O `RStudio` é uma interface para uso do `R`
+- O `R` é sensível a caracteres maiúsculos e minúsculos.
+- Marcador de decimal para o R é `.`, mas pode ser configurado conforme arquivo. 
+- O `R` é estruturado em `package::função(objeto, parâmetros))`
+- Para utilizar pacotes, precisamos instalar (`install.packages("package")`), carregar (`library("package")`) e chamar as funções.  
+- As funções `getwd()`, `dir()` e `setwd()` ajudam a organizar o trabalho. 
+- O `R` funciona como calculadora
+- Para atribuir variáveis (objetos) ao ambiente de trabalho, você pode usar tanto `<-` como `=`
+- Os tipos de dados mais comuns são `character`, `numeric`, `factor`e `logical`.
+- Para fazer a conversão entre tipos de dados, podemos utilizar funções com a estrutura `as.tipo(objeto)`. Para verificar qual o tipo de dados, a função é análoga, mas `is.tipo(objeto)`. Exemplos: `as.logical(x)` e `is.logical(x)`. 
+- As classes de organização dos dados mais comuns são `vector`, `list`, `matrix` e `dataframe`.
+- Parênteses são utilizados para delimitar funções e objetos/parâmetros. Colchetes são utilizados para delimitar índices de posição. 
+- Existem pacotes no R que possuem bases de dados para aprendizagem. O mais conhecido pode ser obtido por `data(mtcars)`. 
+- Algumas funções interessantes para conhecermos e inspecionar inicialmente os dados são:
+  - `head(mtcars)` - apresenta as seis primeiras linhas do banco de dados
+  - `str(mtcars)` - mostra os tipos de variáveis e a estrutura do dado
+  - `class(mtcars)` - mostra a classe da base de dados
+  - `dim(mtcars)` - mostra a dimensão do objeto
+  - `names(mtcars)` - mostra os nomes das variáveis (colunas)
+- A função `c()` permite a construção de vetores por meio alocação de valores em posições distintas de vetores.  
+
+
+# R? O que é o R?
+
+## Conhecendo o R {.tabset .tabset-fade .tabset-pills}
+
+### Interface e funcionalidades
+
+Para uso do R no ambiente RStudio, é inicialmente necessário entender o seu funcionamento. O R é uma linguagem de programação, em plataforma open source, desenvolvida para análise de dados. SEJAM BEM VINDOS!
+
+![Bem vindo](https://retaoliveira.github.io/relements/figures/allison_horst/welcome_to_rstats_twitter.png)
+
+Em um primeiro momento, o conjunto R + RStudio parece pouco amigável, mas com o tempo, é impossível não apaixonar-se pelas infinitas possibilidades que temos ao utilizar o R.
+
+![Ódio x amor](https://retaoliveira.github.io/relements/figures/allison_horst/r_first_then.png)
+
+A comunidade do R é bastante ampla e colaborativa. Assim: BUSQUE AJUDA!!!!!
+
+![Suporte](https://retaoliveira.github.io/relements/figures/allison_horst/code_hero.jpg)
+
+
+# Definições básicas
+
+Termos| Definição
+------|----------
+`Script`| Os scripts são arquivos do R com comandos a serem executados. Para rodar um comando digitado no painel de edição dos Scripts ou do arquivo .Rmd do RStudio no Windows, basta fazer: `Ctrl+Enter`. 
+`Packages` ou `pacotes` | São um conjunto de funções organizadas em um arquivo que pode ser obtido em diferentes repositórios. Para utilização dos pacotes, é necessário instalá-los e, posteriormente, carregá-los na sessão por meio do comando `library`. 
+`funções` | São códigos que determina um algoritmo computacional e que têm diferentes objetivos. Pode haver mais de uma função para o mesmo objetivo. As funções são estruturadas por meio de um comando básico e parâmetros/argumentos que são incluídos entre parênteses após a função. 
+`objeto` | Objetos no R são elementos aos quais são aplicadas as funções
+`Console` | É o espaço no ambiente R onde você digita e roda os comandos do R. É a janela principal, onde é possível digitar os comandos, vizualizar os resultados e mensagens de alerta e mensagens de erros. Nesse ambiente, a seta (>) indica que o R esta pronto para receber um comando; sinal de mais (+) indica que o comando da linha anterior ainda não esta completo, faltando algo para o comando ser executado. A ausência de um desses dois simbólos (> ou +) indica que o R ainda não finalizou o processo do comando anterior. Os resultados de uma função são apresentados entre símbolos de cochetes ([]).
+ `Terminal` | É o espaço onde você digita e roda comandos do sistema (Windows, por exemplo)
+`RMarkdown` | Linguagem de texto do R
+`RStudio` | É uma IDE (Integrated Development Envirnonment) que permite uma interface gráfica amigável com os usuários. 
+`Help` | Janela onde são mostrados os textos de ajuda.
+`Plot` | Janela reservada para os resultados gráficos.
+`History` | Lista o histórico dos comandos já executados.
+`Environment` | Painel exclusivo do RStudio que lista os objetos criados na área de trabalho (workspace).
+`Files` | Painel exclusivo do RStudio, que lista os arquivos do computador. É semelhante ao gerenciador de arquivos padrão do sistema operacional.
+
+## Tipos de arquivos no R
+Os principais tipos de arquivos gerados por meio do `R` são:
+
+Extensão|Descrição
+--------|---------
+.R | Usado para salvar `scripts`.
+.RData | Usado para salvar os `objetos` da área de trabalho (workspace).
+.Rhistory | Usado para salvar o `histórico dos comandos` executados.
+.Rmd | Formato para salvar arquivos em `RMarkdown`
+
+## Local de trabalho
+O diretório de trabalho padrão é aquele ao qual o R foi associado. Entretanto, pode ser alterado, sem qualquer mudanças nos objetos da área de trabalho.
+
+![](https://retaoliveira.github.io/relements/figures/allison_horst/cracked_setwd.png)
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+getwd() # Mostrar o diretório de trabalho atual
+dir() # Listar os arquivos do diretório
+setwd() # Mudar o diretório de trabalho
+```
+É possivel salvar a área de trabalho inteira e carregar em outro momento.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+ls() # Listar os objetos da área de trabalho
+save.image("meu_workspace.RData") # Salvar área de trabalho
+load("meu_workspace.RData") # Carregar área de trabalho
+```
+
+## Variáveis, funções e *packages* 
+
+Sua estrutura fundamenta-se em uma grande variedade de ferramentas quantitativas, organizadas por meio de **objetos**, **funções** e **packages**. A instalação `base` do R já contempla uma série de funções e *packages*. *Packages* adicionais podem ser instalados quando for necessário ou interessante. Para instalação de *packages*, utiliza-se a função `install.packages()`.
+
+A priori, instale os seguintes pacotes no seu computador:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+install.packages(c("rmarkdown", "knitr", "dsbox", "tidyverse", "coronavirus", "lubridate", "glue", "scales", "ggrepel", "DT", "flexdashboard", "blogdown", "bookdown", "pagedown", "xaringan", "xaringanthemer", "janitor", "jsonlite", "kableExtra", "leaflet", "officedown", "openxlsx", "readr", "readxl", "devtools", "remotes", "swirl", "stringr", "tmap", "tmapstool", "rvest", "viridis", "installr", "distill", "rticles", "data.table", "ggplot2", "hrbrthemes", "plotly", "learnr", "prettydoc", "corrplot", "tufte", "ggpubr", "sf", "htmlwidgets"))
+```
+
+Ao longo do curso chamaremos as bibliotecas para que possamos implementar as funções. 
+
+# R como calculadora
+
+No `R` você pode fazer cálculos simples usando o console. 
+
+R serve como calculadora é bastante simples realizar operações matemáticas.
+
+Soma:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+42 + 84
+```
+
+Subtração:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+84 - 42
+```
+
+Multiplicação
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+42 * 2
+```
+
+Divisão:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+42 / 6
+```
+
+Potência:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+2 ^ 5
+```
+
+Divisão inteira (sem resto):
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+42 %/% 5
+```
+
+Resto da divisão:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+42 %% 5
+```
+
+# Utilizando variáveis
+
+Nos exemplos acima realizamos operações bastante simples sem usar objetos, ou, como costumamos chamar, variáveis. 
+
+Vamos criar uma variável "x" com o valor 42. Ao criar uma variável que armazena apenas um número, estamos criando um vetor atômico (pois vetores atômicos são os vetores de tamanho 1).
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+x <- 42
+```
+
+Lembre-se: podemos usar o "<-" ou "=" para fazermos uma atribuição:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+x = 42
+```
+
+No entanto, vale a pena usar "<-" para não confundir os usos de "=", que também é usado para estabelecer valores nos argumentos de uma função.
+
+Podemos imprimir o valor de uma variável no console simplesmente digitando seu nome:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+x
+```
+
+Em várias outras linguagens, e em R inclusive, usa-se a função _print_ para imprimir os valores de uma variável:
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=TRUE}
+print(x)
+```
+
+Quando usar print? Veremos no futuro que, dependendo da situação (por exemplo, dentro de funções), é preciso explicitar que queremos "imprimir" algo, e, nestes casos, usamos a função _print_.
+
+Vamos criar mais uma variável, y, e fazer operações com variáveis:
+
+```{r}
+y <- 5
+x + y
+x - y
+x / y
+x * y
+```
+
+Podemos armazenar o resultado de uma operação matemática em uma variável. Veja os exemplos:
+
+```{r}
+z1 <- 42 / 3
+z2 <- x + y
+z3 <- ((x / 5 ) * 9) + 32
+```
+
+Veja que na última operação utilizamos diversos parênteses. As regras para o uso de parênteses no R em operações matemáticas são semelhantes às da "aritmética de papel e caneta". Os parênteses são executados sempre de dentro para fora. Aliás, essa regra vale em geral no R, ou seja, para aplicação de quaisquer funções, e não apenas para as operações matemáticas.
+
+# Tipos de dados no R
+
+No R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão. 
+
+A função de teste retorna sempre `TRUE` ou `FALSE`, pois é uma `função lógica`. 
+
+A função de conversão, quando possível, transforma os dados em diferentes tipos. 
+
+Funções de teste apresentam a estrutura `is.character()` e funções de conversão são `as.character()`. 
+
+Neste curso não detalharemos todos os tipos de dados, mas apresentaremos apenas os mais importantes para a análise de dados em caráter exploratório. No blog, temos diversas sugestões de tutoriais e documentação geral que contempla todos os tipos de dados e capacidade de interoperabilidade do R.
+
+### Character
+Variáveis `character` são aquelas que contém texto. Para designar uma variável como texto, precisamos colocar seus valores entre aspas. Dados do tipo texto são comuns em variáveis categóricas. 
+
+Experimente:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+d <- "texto"
+is.character(d)
+```
+
+### Numeric
+
+Dados `numeric` são números. A função `numeric` pode ser utilizada para gerar um vetor com elementos numéricos com valor 0. 
+
+Faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# Criar vetor de cinco posições com valores 0
+numeric(5)
+
+# Gera valor character
+e <- "1980"
+
+# Teste
+is.numeric(e)
+
+# Conversão
+f <- as.numeric("1980")
+
+# Teste
+is.numeric(f)
+```
+
+### Logical
+A função `logical` gera um vetor lógico com o tamanho desejado e por padrão, cada elemento do vetor recebe o valor `FALSE`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+logical(3)
+
+# Conversão
+as.logical(c(7,5,0))
+
+# TRUE e FALSE podem ser convertidos em 1 ou 0
+as.logical(c(7,5,0))*1
+```
+
+Os valores no vetor que são diferentes de *zero*, recebem o valor `TRUE`. 
+
+> A função **`c`**(*combine*) é utilizada para composição de um vetor, combinando valores identificados por índices.
+
+
+## Fatores
+Neste tutorial, falamos rapidamente de classe e o assunto pareceu relativamente simples. Vamos complicá-lo com um dos aspectos mais confusos da linguagem R: a classe de vetores __factor__.
+
+__factor__ é, basicamente, a classe de vetores em R utilizada para lidar com dados categóricos, nominais ou ordinais. Em vez de gastarmos tinta tentando entendê-los de forma abstrata, vamos a um exemplo.
+
+Suponhamos que temos um vetor de texto que representa uma variável categórica que pode receber dois valores, "sim" e "nao".
+
+```{r}
+yes_no <- c("sim", "nao", "nao", "nao", "sim", "nao")
+print(yes_no)
+class(yes_no)
+```
+
+Vamos usar a função _factor_ para gerar o vetor "f_yes_no" e observar o resultado:
+
+```{r}
+f_yes_no <- factor(yes_no)
+print(f_yes_no)
+```
+
+Note que não temos mais aspas nos valores impressos do vetor de fatores. Além disso, ele vem acompanhado de uma nova informação: "levels", ou niveis.
+
+Basicamente, "factors" são vetores numéricos cujos valores estão associados a um rótulo. Os "levels" são esses pares de código numérico + rótulo.
+
+Se tentamos transformar em números o vetor de fatores, veja o que obtemos:
+
+```{r}
+as.numeric(f_yes_no)
+```
+
+1 e 2 são os códigos numéricos gerados autormaticamente para "nao" e "sim", respectivamente. O critério para atribuir valores foi a ordem alfabética dos textos transformados em fatores.
+
+Podemos investigar os níveis de um vetor de fatores com a função _levels_:
+
+```{r}
+levels(f_yes_no)
+```
+
+E também podemos alterá-los, tal como fazemos com os nomes dos elementos de um vetor:
+
+```{r}
+levels(f_yes_no) <- c("No", "Sim")
+print(f_yes_no)
+```
+
+Tudo bem até agora?
+
+E se os níveis de uma variável forem ordenados? Vejamos um exemplo:
+
+```{r}
+tamanho <- c("alto", "baixo", "baixo", "medio", "alto", "baixo", "medio")
+f_tamanho <- factor(tamanho)
+print(f_tamanho)
+```
+
+Como o R segue o ordenamento alfabético, os códigos numéricos 1, 2 e 3 estão associados a "alto", "baixo" e "medio", respectivamente. Mas qual é o problema de não ordenarmos? Veja abaixo:
+
+```{r, error = T}
+f_tamanho[1]
+f_tamanho[2]
+f_tamanho[1] > f_tamanho[2]
+```
+
+Sem ordenarmos, não podemos comparar os níveis e estamos assumindo a variável como sendo nominal.
+
+Para ordernar os níveis de um vetor de fatores, temos que informar alguns parâmetros adicionais -- _order_ e _levels_ -- ao criá-lo:
+
+```{r}
+f_tamanho <- factor(tamanho, ordered = T, levels <- c("baixo", "medio", "alto"))
+print(f_tamanho)
+```
+Note que a informação sobre os "levels" acompanha a ordem informada, que, neste caso, é diferente da alfabética. Comparações entre os níveis fazem sentido se a variável for ordinal:
+
+```{r}
+f_tamanho[1]
+f_tamanho[2]
+f_tamanho[1] > f_tamanho[2]
+f_tamanho > "medio"
+```
+
+Voltaremos aos "factors" em momento adequado. O importante agora é saber que eles existem e que é uma classe de vetores em R. Atenção especial deve ser dada ao fato de que diversas vezes, ao importarmos bases de dados para o "workspace", o R considera variáveis de texto como sendo "factors", mesmo de maneira inadequada. Para evitar este problema, devemos adotar o argumento "stringAsFactors = F" em diversas funções de importação. Como avisei no início deste tópico, "factors" é um dos aspectos mais confusos em R (em conjunto com "missing values", que vamos adiar até um momento adequado).
+
+Em síntese: 
+
+Fatores são vetores de categorias específicas, definidas por meio do parâmetro `levels`. A ordem dos fatores pode ser especificada pela função `ordered`. Experimente:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# Vetor de texto
+tipos.casas <- c("casa", "apartamento", "apartamento", "sobrado")
+
+# Vetor de fatores
+tipos.casas <- factor(c("casa", "apartamento", "apartamento", "sobrado"), levels=c("casa", "apartamento", "sobrado"))
+```
+
+Quando utilizamos dados em estrutura de fatores, é possível gerar sínteses rápidas e simples por meio da função `table`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+table(tipos.casas)
+```
+
+Dados fatoriais são úteis para o tratamento de dados categóricos, ou que pertencem a um determinado número de classes predeterminadas. Existem muitas feições representadas por meio de dados espaciais que são estruturadas em variáveis discretas. 
+
+LEMBRANDO..... Dados podem ser:
+![Discretos x Contínuos](https://retaoliveira.github.io/relements/figures/continuous_discrete.png)
+![Discreto x Contínuo](https://retaoliveira.github.io/relements/figures/nominal_ordinal_binary.png)
+
+
+Para ordenar dados fatoriais, utilizamos a função `ordered`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+renda_1 <- factor(c("alta", "alta", "baixa", "baixa", "media", "alta"), levels=c("baixa", "media", "alta")) 
+
+renda_2 <- ordered(c("alta", "alta", "baixa", "baixa", "media", "alta"), levels=c("baixa", "media", "alta")) 
+```
+
+
+# Tipos de classes no R 
+ 
+Diferentes tipos de dados podem ser utilizados para popular diferentes estruturas de dados ou `classes`. As classes mais comumente utilizadas para análise de dados espaciais são: vetores, matrizes, data frames, listas e factores. 
+
+É por meio das classes que as funções e operadores conseguem saber exatamente o que fazer com um objeto. 
+
+Experimente:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+1+1
+```
+
+Faça `"a" + "b"`
+
+O operador `+` verifica que "a" e "b" não são números (ou que não são do tipo `numeric`) e devolve uma mensagem de erro informando isso. 
+
+## Vetores
+O R é construído com base no conceito de vetores e matrizes. As maior parte das operações é feita para os elementos.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# Definição de vetores
+vector(mode = "numeric", length = 8)
+
+vector(length = 8)
+
+tmp <- data.frame(a=10:15, b=15:20)
+```
+
+Aproveitando o embalo dos vetores atômicos, vamos ver um pouco mais sobre vetores de tamanho maior que 1. Alguns exemplos e suas classes:
+
+```{r}
+vetor_numerico <- c(42, 7, 999, 3.14)
+vetor_texto <- c("Miriam", "a", 'jota', "TRUE", "4")
+vetor_logico <- c(TRUE, FALSE, F, F, T)
+class(vetor_numerico)
+class(vetor_texto)
+class(vetor_logico)
+```
+
+Detalhes para observarmos:
+
+- No caso do vetor numérico, não importa se usamos números com casas decimais.
+- Para vetores do tipo "character", não importa o que há dentro dos parêntese. Tudo é texto.
+- Você pode usar TRUE ou T, FALSE ou F, alternadamente. O R entende o que você quer dizer. Lembre-se de sempre usar maiúsculas.
+
+
+### Sequências
+
+Dá um trabalho danado criar uma sequência de números de, por exemplo, 42 a 66. Ou sequências ainda maiores. Uma maneira simples (mas não a única), de gerar uma sequência de inteiros em R é utilizar ":". Veja o exemplo:
+
+```{r}
+sequencia <- 42:66
+print(sequencia)
+```
+
+A sequência pode ter ordem reversa:
+
+```{r}
+sequencia_reversa <- 10:1
+print(sequencia_reversa)
+```
+
+Podemos combinar sequências que contém um intervalo, ou mesmo sequências que se sobrepõe, em um único vetor:
+
+```{r}
+sequencia_intervalo <- c(1:10, 20:30)
+print(sequencia_intervalo)
+sequencia_sobreposicao <- c(10:20, 15:25)
+print(sequencia_sobreposicao)
+```
+
+### Operações matemáticas com vetores
+
+Vamos considerar uma operação com vetores considerando a conversão de dados entre Farenheit e Celsius. 
+
+Temos um vetor de temperaturas médias dos meses de dezembro a abril em um lugar qualquer do hemisfério Norte:
+
+```{r}
+temperatura_celsius <- c(-7, -10, 5, 12, 21)
+```
+
+Da mesma maneira que com vetores atômicos, podemos aplicar as operações matemáticas a vetores maiores. Por exemplo, vamos converter os valores do vetor "temperatura_celsius" para farenheit:
+
+```{r}
+temperatura_farenheit <- ((temperatura_celsius / 5) * 9) + 32
+```
+
+Veja que as operações são aplicadas a todos os elementos do vetor.
+
+
+### Nomes do vetor
+
+Aproveitando o exemplo, os elementos de um vetor podem ser nomeados. O vetor "temperatura_celsius", por enquanto, não tem nome:
+
+```{r}
+names(temperatura_celsius)
+```
+
+Se quiseremos atribuir os nomes aos elementos de "temperatura_celsius", atribuimos um vetor a "names(temperatura_celsius)". Esse uso da linguagem é um pouco estranho, pois estamos atribuindo algo a uma função de um objeto, não a um objeto.
+
+Uma maneira de pensar esse uso de maneira menos confusa, é imaginar que um objeto tem várias partes e que estamos atribuindo algo a uma parte específica -- os nomes dos elementos, no caso -- deste objeto. Veja:
+
+```{r}
+names(temperatura_celsius) <- c("dezembro", "janeiro", "fevereiro", "março", "abril")
+```
+
+Outra forma, mais elegante, de nomear os elementos de um vetor é criar um novo vetor com os nomes, tal como abaixo...
+
+```{r}
+meses_experimento <- c("dezembro", "janeiro", "fevereiro", "março", "abril")
+```
+
+... e a seguir atribuir aos nomes dos elementos do vetor existente (no nosso caso, temperatura_celsius):
+
+```{r}
+names(temperatura_celsius) <- meses_experimento
+```
+
+A vantagem deste processo é poder usar mais de uma vez o vetor de nomes sem precisar escrevê-lo novamente, como faremos no exemplo abaixo.
+
+### Classes dos vetores atômicos
+
+Há três __classes__ fundamentais para os vetores atômicos. Vamos criar três variáveis e examinar suas classes:
+
+```{r}
+numero_pi <- 3.14
+texto <- "Meu texto"
+verdadeiro <- TRUE
+```
+
+Usamos a função _class_ para examinar a classe de um objeto:
+
+```{r}
+class(numero_pi)
+class(texto)
+class(verdadeiro)
+```
+
+Auto-explicativo, certo? De forma mais detalhada, apresentaremos os principais tipos de dados e as classes de objetos no R a seguir. 
+
+
+### Operações entre vetores
+
+Criemos dois vetores, cada um registrando os gastos com sorvete e café de um pessoa em cada dia da semana, sábado e domingo, inclusive:
+
+```{r}
+semana_1 <- c(32, 20, 15, 20, 18, 19, 40)
+semana_2 <- c(32, 21, 12, 12, 24, 21, 50)
+```
+
+Antes de seguir com as operações entre os vetores, vamos nomear seus elementos. Vale a penas criar um único vetor, "dias_da_semana", e atribuir aos nomes dos elementos dos vetores de dados de gasto com sorvete e café:
+
+```{r}
+dias_da_semana <- c("Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado")
+names(semana_1) <- dias_da_semana 
+names(semana_2) <- dias_da_semana
+```
+
+Operações entre vetores seguem a mesma lógica das operações com vetores atômicos e com vetores e números, com a ressalva de que as operações são realizadas "pareando" os elementos dos vetores. Dito de outra forma, ao somarmos dois vetores, por exemplo, o vetor resultante terá na primeira posição a soma dos elementos da primeira posição dos vetores originais, a segunda posição terá a soma dos elementos da segunda posição dos vetores originais e assim por diante. Executando o exemplo:
+
+```{r}
+soma_semanas <- semana_1 + semana_2
+print(soma_semanas)
+```
+
+Note que, como os vetores originais já estavam nomeados e os elementos em cada posição tinham o mesmo nome, o vetor resultante também já está nomeado.
+
+É bastante simples criar um vetor que seja a combinação de dois vetores. Por exemplo, se quisermos juntar as duas semanas em um único vetor, usamos a função _c_:
+
+```{r}
+duas_semanas <- c(semana_1, semana_2)
+```
+
+### Subconjunto de um vetor - parte 1
+
+E se quisermos extrair elementos em apenas uma ou algumas posições de um vetor?
+
+Quando queremos selecionar elementos de um vetor (ou, no futuro, de uma matriz ou de um _data frame_) usamos colchetes [] ao final do objeto. Vetores são objetos com uma única dimensão, então tudo que precisamos fazer é colocar o número da posição que queremos dentro dos colchetes. Chamamos esse procedimento em inglês de "subset" (no português, "selecionar um subconjunto").
+
+Para extrair o primeiro dia do vetor com dados da semana 1 (domingo):
+
+```{r}
+semana_1[1]
+```
+
+Ou, para extrair o final de semana (domingo na posição 1 e sábado na posição 7):
+
+```{r}
+semana_1[c(1,7)]
+```
+
+Ou ainda, os dias úteis da semana:
+
+```{r}
+semana_1[2:6]
+```
+
+Se os elementos do vetor estiverem adequadamente nomeados, podemos usar seus nomes no lugar de suas posições. Repetindo os dois primeiros exemplos imediatamente acima temos:
+
+```{r}
+semana_1["Domingo"]
+semana_1[c("Domingo", "Sabado")]
+```
+
+Podemos usar um vetor para nos auxíliar a produzir o subconjunto:
+
+```{r}
+dias_uteis <- c("Segunda", "Terca", "Quarta", "Quinta", "Sexta")
+semana_1[dias_uteis]
+```
+
+### Soma, média e estatísticas descritivas dos elementos de um vetor
+
+Ao longo do tempo, nosso repertório de funções de R aumentará rapidamente. Há um conjunto de funções fáceis de lembrar que são muito úteis para calcular estatísticas descritivas de um vetor (ou de uma variável em um _data frame_). Exemplo: meu consumo de litros de café por mês em 2016.
+
+```{r}
+litros_cafe <- c(4.3, 3.1, 5.3, 5.5, 6.9, 8.3, 9.7, 9.9, 9.1, 7.0, 6.2, 5.6)
+```
+
+Observe as funções de soma, media, desvio padrão, variância, mediana, máximo, mínimo e quantil, na respectiva ordem:
+
+```{r}
+sum(litros_cafe)
+mean(litros_cafe)
+sd(litros_cafe)
+var(litros_cafe)
+median(litros_cafe)
+max(litros_cafe)
+min(litros_cafe)
+quantile(litros_cafe, probs = c(0, 0.25, 0.5, 0.75, 1))
+```
+
+Veja que, com a exceção de _quantile_, todas as funções retornam vetores atômicos. _quantile_ retorna um vetor do tamanho do vetor de probabilidades, que é o segundo argumento da função, e que indica os quantis correspondentes a cada valor.
+
+### Subconjunto de um vetor - parte 2
+
+Finalmente, vamos usar operadores relacionais. A "Organização Mundial de Bebedores de Café", OMBC, recomenda que o consumo de café não ultrapasse o limite de até 7 litros por mês (inclusive). Vamos observar o histórico em meses de consumo de café para um indivíduo.
+
+Nomeando o vetor:
+
+```{r}
+meses <- c("Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", 
+           "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+names(litros_cafe) <- meses
+```
+
+Criando um vetor lógico (TRUE ou FALSE) que indique em quais meses o consumo ultrapassou o limite recomendado:
+
+```{r}
+selecao <- litros_cafe > 7
+print(selecao)
+```
+
+Usamos o vetor "selecao" para fazer o subconjunto do vetor de dados de consumo de café:
+
+```{r}
+litros_cafe[selecao]
+```
+
+Para vetores pequenos, o procedimento adotado para gerar subconjuntos parece desnecessariamente trabalhoso. Mas imagine agora que você queira observar os votos de todos os candidatos que atendam a determinada condição -- por exemplo, terem gastos de campanha acima de determinado patarmar. Com uma variável (gasto de campanha) você pode gerar um vetor de seleção que permite gerar o subconjunto desejado.
+
+Voltaremos em variações desse assunto em diversos momentos no futuro.
+
+
+## Listas
+
+Os tipos de dados `character`, `numeric` e `logical` só podem ser associados a classes de dados nas quais TODOS os elementos são do mesmo tipo. A classe `listas` não tem esse requisito. As listas têm posições (índices) para diferentes topos de elementos. 
+
+Para acessar um elemento em um vetor, utilizamos `[]`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+vector_teste <- c(5:10)
+vector_teste
+vector_teste[4]
+```
+
+Para acessar um elemento em uma lista por meio de sua posição, utilizamos `[[]]`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+colaborador <- list(name="Renata Oliveira", ano.inicio = 2006, posicao = "Professora")
+colaborador
+```
+
+## Matrizes
+Matrizes são um conjunto de vetores. As linhas e colunas das matrizes podem ser nomeadas. Na análise espacial de um dado vetorial, temos uma tabela de atributos em estrutura matricial. As linhas representam as feições e as colunas são os atributos dessas feições. Na representação de dados raster, linhas e colunas representam latitudes e longitudes ou células raster. 
+
+Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a _base de dados_ ou, como vamos conhecer a partir de agora, __dataframe__.
+
+Durante o curso, utilizaremos poucas ou nenhuma vez matrizes. Há uma razão para isso: estamos interessad@s sorbetudo em dados no formato de _data frame_, que é um caso específico de matriz. Ainda assim, convém rapidamente aprender sobre matrizes para, advinhe, entender um pouco mais sobre _data frames_.
+
+Para matemáticos, matrizes são objetos com uma álgebra própria e parte de uma área denominada Álgebra Linear. Por exemplo, a multiplicação de matrizes, se você lembra dela de seu período de escola ou graduação, segue regras e tem propriedades diferentes da multiplicação de números. Apesar do R ter uma "gramática" para Álgebra Linear (que lembra o MATLAB e Octave), ela não nos interessa agora e a deixaremos de lado.
+
+Para criarmos uma matriz, precisamos de um vetor que contenha o número de elementos a serem inseridos em uma matriz. Para uma matriz de 3 linhas e 3 colunas, precisamos de um vetor de 9 elementos, a exemplo do vetor gerado pelo comando "1:9".
+
+Há duas maneiras de "preencher" a matriz: pelas linhas ("byrow = T") ou pelas colunas ("byrow = F"). Veja os exemplos abaixo e tente compreender o funcionamento de _matrix_:
+
+```{r}
+matrix(1:9, byrow = TRUE, nrow = 3)
+matrix(1:9, byrow = FALSE, nrow = 3)
+```
+
+Vamos a um exemplo de matriz criada a partir de 3 vetores. Os vetores abaixo representam o gasto de café de 3 pessoas de segunda a sexta-feira em uma semana determinada.
+
+```{r}
+beatriz <- c(4, 5, 0, 3, 5)
+pedro <- c(2, 2, 2, 2, 2)
+mateus <- c(0, 0, 12, 0, 0)
+```
+
+Vamos juntar todas os vetores em um só...
+
+```{r}
+vetor_cafe <- c(beatriz, pedro, mateus)
+```
+
+... e criar uma matriz de 5 linhas e 3 colunas denominada café:
+
+```{r}
+cafe <- matrix(vetor_cafe, byrow = FALSE, nrow = 5)
+print(cafe)
+```
+
+Veja que as margens da matriz não tem nomes. Vamos proceder como fizemos com vetores. Entretanto, não vamos nomear cada elemento, mas as linhas e colunas, e utilizaremos as funções _rownames_ e _colnames_ para a tarefa:
+
+```{r}
+fregueses <- c("Beatriz", "Pedro", "Mateus")
+dias_uteis <- c("Segunda", "Terca", "Quarta", "Quinta", "Sexta")
+rownames(cafe) <- dias_uteis
+colnames(cafe) <- fregueses
+print(cafe)
+```
+
+O processo de nomear as linhas e colunas poderia ser realizado no momento em que a matriz foi gerada com o uso do argumento _dimnames_, como no exemplo:
+
+```{r}
+cafe <- matrix(vetor_cafe, byrow = FALSE, nrow = 5,
+               dimnames = list(dias_uteis, fregueses))
+```
+
+E se quisermos trocar as linhas pelas colunas -- processo conhecido como transposição da matriz? Usamos a função _t_. Dica: _c_ e _t_ são funções em R. Evite criar objetos com esse nome.
+
+```{r}
+t(cafe)
+```
+
+Se quisermos juntar os três vetores originais como se fossem colunas, podemos usar a função _cbind_.
+
+```{r}
+cbind(beatriz, pedro, mateus)
+```
+
+_rbind_, função bastante útil e que voltará várias vezes no curso, faz o mesmo tratando os vetores como linhas:
+
+```{r}
+rbind(beatriz, pedro, mateus)
+```
+
+As funções _rowSums_ e _colSums_, como é de se esperar, calculam as somas de todos os elementos de cada linha e de cada coluna, respectivamente:
+
+```{r}
+rowSums(cafe)
+colSums(cafe)
+```
+
+Combinando as funções de soma com as de combinação (sic), podemos gerar os totais nas margens da matriz:
+
+```{r}
+Total_Coluna <- colSums(cafe)
+cafe2 <- rbind(cafe, Total_Coluna)
+Total_Linha <- rowSums(cafe2)
+cafe2 <- cbind(cafe2, Total_Linha)
+print(cafe2)
+```
+
+Como com vetores, podemos fazer operações aritméticas (veja que não estamos falando de Álgebra Linear) com matrizes. Por exemplo, para transformar os gastos com café em doláres (cotação = 3.2):
+
+```{r}
+cafe / 3.2
+```
+
+Podemos também relizar operações entre matrizes de mesmas dimensões que considerem os elementos de forma pareada, tal como com vetores. Usando as duas matrizes do começo deste tópico:
+
+```{r}
+matrix(1:9, byrow = TRUE, nrow = 3) + matrix(1:9, byrow = FALSE, nrow = 3)
+```
+
+Tanto sobre matriz para chegarmos ao que realmente importa: subconjuntos de matrizes. Com vetores, usamos colchetes para produzirmos subconjuntos. As regras que aprendemos para vetores valem para matrizes. A diferença é que matrizes -- e também _data frames_ -- são objetos com duas dimensões (linhas e colunas). Portanto, ao extrairmos um subconjunto, precisamos informar as duas dimensões nos colchetes, primeiro linha, depois coluna, separadas por vírgula. Se deixamos uma das dimensões em branco, estamos selecionando todos os elementos daquela dimensão.
+
+Vamos a uma série de exemplos para compreender as regras de subconjunto de matrizes.
+
+Selecionar toda a segunda coluna:
+
+```{r}
+cafe[, 2]
+```
+
+Selecionar toda a terceira linha:
+
+```{r}
+cafe[3, ]
+```
+
+Selecionar o elemento da linha 1 e coluna 3:
+
+```{r}
+cafe[1, 3]
+```
+
+Selecionar os elementos 4 e 5 da coluna 1:
+
+```{r}
+cafe[4:5, 1]
+```
+
+Selecionar os elementos 1, 3 e 5 da coluna 3:
+
+```{r}
+cafe[c(1,3,5), 3]
+```
+
+Selecionar o elemento 4 das colunas 2 e 3:
+
+```{r}
+cafe[4, 2:3]
+```
+
+Selecionar a segunda e terça-feira de Pedro:
+
+```{r}
+cafe[c("Segunda", "Terca"), "Pedro"]
+```
+
+Selecionar a quarta-feira de todos:
+
+```{r}
+cafe["Quarta",]
+```
+
+## Dataframes
+`Data frames` e `tibble` são estruturas tabulares de dados que, diferentemente das matrizes (`matrix`), permitem representar diferentes atributos (e tipos de dados) em diferentes colunas. Esses tipos de classes são utilizadas para organizar dados espaciais (pontos, linhas, áreas e pixels).
+
+Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia.
+
+As principais características de um dataframe são: (1) cada coluna representa uma variável (ou característica) de um conjunto de observações; (2) cada linha representa uma observação e contém os valores de cada variável para tal observação. Vejamos um exemplo:
+
+| Candidato | Partido | Votos | 
+| --------- |:-------:| -----:|
+| Beatriz   | PMDB    |   350 | 
+| Danilo    | SOL     |  1598 | 
+| Pedro     | PTB     |   784 | 
+| Davi      | PSD     |   580 | 
+| Mateus    | PV      |   2   | 
+
+Com a função _data_ podemos carregar um conjunto de dados disponível na sua sessão de R. Utilizaremos a base _mtcars_, que contém dados da revista _Motor Trend US_ sobre características (variáveis) de 32 automóveis (esse é um dos conjuntos de dados mais populares em cursos introdutórios de R).
+
+```{r}
+data(mtcars)
+```
+
+Pronto! Logo mais veremos como abrir conjuntos de dados de outras fontes (arquivos de texto, outros softwares, etc), mas já podemos começar a trabalhar com _data frames_.
+
+Antes de avançar, vamos usar o __help__ (documentação) do R para descobrir o que há no _data frame_ chamado _mtcars_:
+
+```{r}
+?mtcars
+```
+
+Se quiseremos olhar para os dados que acabamos de carregar utilizamos a função _View_ (com V maiúsculo, algo pouco usual em R):
+
+```{r}
+View(mtcars)
+```
+
+### Do editor de planilhas ao R - parte 1
+
+A partir desse ponto no curso vamos resistir à tentação de "olhar" para os dados. O hábito de quem utiliza com editores de planilha como MS Excel ou Libre Office, ou ainda com algums softwares de análise de dados como SPSS e Minitab, é trabalhar "olhando" para os dados, ou seja, para os valores de cada célula de uma base dados.
+
+Você perceberá em pouco tempo que isso não é necessário. Na verdade, é contraproducente. Nas primeiras aulas vamos nos munir de ferramentas que nos permitirão conhecer os dados sem olhá-los diretamente.
+
+#### Head no lugar de View
+
+Por exemplo, podemos substituir a função _View_ pela função _head_. Veja o resultado:
+
+```{r}
+head(mtcars)
+```
+
+Com apenas as 6 primeiras linhas do _data frame_ temos noção de todo o conjunto. Sabemos rapidamente que os nomes dos carros são o nome de cada uma das linhas, e que o nome das colunas indicam qual característica está armazenada coluna (lembra-se da documentação de _mtcars_ que você acabou de ler).
+
+Alternativamente, podemos usar a função _str_ (atalho para "structure"):
+
+```{r}
+str(mtcars)
+```
+
+Com _str_ sabemos qual é a lista de variáveis (colunas) no _data frame_, de qual tipo são -- no caso, todas são numéricas e vamos falar sobre esse tema mais tarde -- e os primeiros valores de cada uma, além do número total de observações e variáveis mostrados no topo do __output__.
+
+Há outras maneiras de obter o número linhas e colunas de um _data frame_:
+
+```{r}
+nrow(mtcars)
+ncol(mtcars)
+dim(mtcars)
+```
+
+_nrow_ retorna o número de linhas; _ncol_, o de coluna; _dim_ as dimensões (na ordem linha e depois coluna) do objeto.
+
+_names_, por sua vez, retorna os nomes das variáveis do _data frame_
+
+```{r}
+names(mtcars)
+```
+
+#### Argumentos ou parâmetros das funções
+
+Note que em todas as funções que utilizamos até agora, _mtcars_ está dentro do parêntesis que segue o nome da função. Essa __sintax__ é característica das funções de R. O que vai entre parêntesis são os __argumentos__ ou __parâmetros__ da função, ou seja, os "inputs" que serão transformados.
+
+Uma função pode receber mais de um argumento. Pode também ter argumentos não obrigatórios, ou seja, para os quais não é necessário informar nada se você não quiser alterar os valores pré-definidos. Por exemplo, a função _head_ contém o argumento _n_, que se refere ao número de linhas a serem __impressas__ na tela, pré-estabelecido em 6 (você pode conhecer os argumentos da função na documentação do R usando _?_ antes do nome da função). Para alterá-lo para 10, por exemplo, basta fazer:
+
+```{r}
+head(x = mtcars, n = 10)
+```
+
+_x_ é o argumento que já havíamos utilizado anteriormente e indica em que objeto a função _head_ será aplicada. Dica: você pode omitir tanto "x =" quanto "n =" se você já conhecer a ordem de cada argumento no uso da função. Veja que neste caso estamos utilizando o símbolo "=" sem fazer a atribuição de dados a um objeto, mas para atribuir valores (ou objetos) aos argumento de uma função. Para não haver confusão é preferível usar o símbolo "<-" para atribuição e o "=" para as demais situações.
+
+A classe `data.frame` no R é composta por uma série de vetores de **comprimento igual** (número de observações) que juntos formam uma estrutura de dados bi-dimensional. Cada vetor registra valores de um atributo específico. Essa é a classe de dados mais comumente utilizada para armazenar dados no R. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+df <- data.frame(dist=seq(0, 400, 100), city=c("Belo Horizonte", "São Paulo", "Rio de Janeiro", "Brasília", "Salvador"))
+str(df)
+```
+> A função `seq` possibilita a criação de uma sequência de dados por meio de três parâmetros: seq(`valor_inicial`, `valor_final`, `intervalo`). 
+
+Tibbles e data.frames não são muito diferentes. Há alguns detalhes quanto à transformação de dados na criação dessas classes, mas, em linhas gerais, a estrutura de dados em `tibble` é mais eficiente e organizada. 
+
+As seguintes funções são adequadas tanto para `data.frames` como para `tibble`:   
+`names()`   
+`colnames()`   
+`rownames()`   
+`length()`   
+`ncol()`   
+`nrow()`   
+
+> Explore a documentação do `tibble` em: `vignette("tibble")`
+
+
+Os objetos dessas duas classes podem ser selecionados por meio da estrutura `data.frame[linha, coluna]`, na qual os parâmetros linhas e coluna são os índices desses elementos. 
+
+Para combinar `data.frame` e `tibble` por linhas ou colunas utilizamos, respectivamente, as funções `rbind()` e `cbind()`.
+
+
+Até aqui, já ficou claro que a escolha ou identificação dos tipos e das classes de dados espaciais e não espaciais é muito importante para sua análise. 
+
+Algumas funções para manipulação de dataframes:
+
+head() # - Mostra as primeiras 6 linhas.   
+tail() #  - Mostra as últimas 6 linhas.   
+dim() # - Número de linhas e de colunas.   
+names() # - Os nomes das colunas (variáveis).   
+str() # - Estrutura do data.frame. Mostra, entre outras coisas, as classes de cada coluna.   
+cbind() # - Acopla duas tabelas lado a lado.   
+rbind() # - Empilha duas tabelas.   
+
+
+---
+Créditos:   
+O conteúdo deste documento é, em parte, originalmente produzido por Leonardo S. Barone e Vanderlei de Bastiani. Muito obrigada pelo trabalho e por compartilharem esses documentos!
+
+https://github.com/leobarone/FLS6397/blob/master/tutorials/tutorial2.Rmd
+
+https://vanderleidebastiani.github.io/tutoriais/Introducao_ao_R.html#sobre_o_r

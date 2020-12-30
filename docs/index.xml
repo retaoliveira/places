@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/places/</link>
+    <description>Recent content on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Tue, 27 Apr 2021 15:30:38 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/places/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://retaoliveira.github.io/places/post/</link>
+      <pubDate>Tue, 27 Apr 2021 15:30:38 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cursos</title>
+      <link>https://retaoliveira.github.io/places/courses/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publicações</title>
+      <link>https://retaoliveira.github.io/places/publication/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://retaoliveira.github.io/places/slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/slides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://retaoliveira.github.io/places/project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

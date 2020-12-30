@@ -1,0 +1,57 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Unidade 1 - Análise de dados para gestão
+    weight: 13
+title: Git e Github
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 13
+---
+
+# Git, Github e RStudio
+
+1- Comece criando uma conta no github: [https://github.com/](https://github.com/). Github é um serviço web-based de controle de versão, que utiliza o software de código aberto _git_.
+
+2- A seguir, instale git no seu computador. Para Windowns, use o url: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+3- Opcionalmente, você pode instalar o Github Desktop em seu computador. Não utilizaremos em sala de aula, mas é uma ferramenta interessante: [https://desktop.github.com/](https://desktop.github.com/)
+
+## Tarefa 1 - Fork e clone
+
+4- Vá para sua conta no github e faça login. Famos "forkar" o repositório: [https://github.com/places-research/class01_datapos.git](https://github.com/places-research/class01_datapos.git)
+
+5- Clonar o repositório (alterar "SEULOGIN" para o seu nome de usuário no github):https://github.com/SEULOGIN/repositorio_clone
+
+6- Criar um novo script que abra os dados e produza uma regressão e um gráfico, como no código abaixo:
+
+```{r cars, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+dados <- read.csv("~/repositorio_clone/dados.csv")
+lm(idade ~ sexo + reprovacoes, data = dados)
+plot(density(idade))
+```
+
+7- Salvar com nome de "analise.R"
+
+8- Produzir um arquivo ".Rmd" de sua autoria, comentando (muito brevemente) a regressão e o gráfico. Salvar como "analise.Rmd"
+
+9- Add, commit e push usando a interface do RStudio.
+
+## Tarefa 2 - Criando um novo projeto
+
+10- Criar um repositório novo diretamente no github.
+
+11- Clonar.
+
+12- Editar o README.
+
+13- Adicionar 2 novos arquivos de sua escolha.
+
+14- Add, commit e push.

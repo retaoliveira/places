@@ -1,0 +1,204 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.level1 .header-section-number {
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.level1 .header-section-title {
+  display: inline-block;
+  border-bottom: 3px solid;
+  background-color: #00295a;
+  color: #ffffff;
+}
+
+h1{
+  background-color: #00295a;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-left: 10px; 
+}
+
+h2{
+  /* background-color: #0057c2; */
+  background-color: #32537a;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-left: 10px; 
+}
+
+h3{
+  /* background-color: #8cb4e4; */
+  background-color: #99a9bd;
+  color: #00013b;
+  border-radius: 10px;
+  padding-left: 10px; 
+}
+
+.level2 .header-section-number {
+  border-bottom: none;
+  border-radius: 10px;
+}
+
+/* -----------div tips------------- */
+
+div.ideia, div.nota, div.exemplo, div.exercicio, div.simulacao {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  color: #00295a;
+  /* color: #1f5386; */
+/*  background-color: #00295a;*/
+  /* background-color: #bed3ec; */
+  background-color: #d2e0f2;
+  border: solid 5px #dfedff;
+  border-radius: 10px;
+}
+
+div.ideia {
+  background-image: url("img/idea.png");
+}
+
+div.nota {
+  background-image: url("img/marker_bw.png");
+}
+
+div.exemplo {
+  background-image: url("img/Your-turn_bw.png");
+}
+
+div.exercicio {
+  background-image: url("img/notebook.png");
+}
+
+div.simulacao {
+  background-image: url("img/scope_bw.png");
+}
+
+div.justa {
+  text-align: justify;
+}
+
+div.blackbox {
+  padding: 1em;
+  background: black;
+  color: #d10000;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-image: url("img/iconfinder_Symbol-Construction_49259.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 21 px;
+}
+
+div.center {
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color-adjust: #dceffa;
+  border-block-color: #6D9EC1;
+  border-inline-color: #000d14;
+}
+
+/* ------------------ */
+/* Detalhes e Summary */
+/* ------------------ */
+details {
+    border: 1px solid #aaa;
+    font: 14px "Roboto Regular";
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+details summary::-webkit-details-marker {
+  background: #d2e0fd;
+  color: #000;
+  font-size: 400%;
+}
+
+summary:after {
+  background: #d2e0fd; 
+  border-radius: 4px; 
+  content: "+"; 
+  color: #000; 
+  float: left; 
+  font-size: 1.4em; 
+  font-weight: bold; 
+  margin: -5px 10px 0 0; 
+  padding: 0; 
+  text-align: center; 
+  width: 20px;
+}
+details[open] summary:after {
+  content: "-";
+}

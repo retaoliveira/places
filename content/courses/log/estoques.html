@@ -1,0 +1,178 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: False
+menu:
+  log:
+    parent: Unidade 5 - Gestão de estoques e armazenagem
+    weight: 12
+title: Gestão de estoques
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 12
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#definição">Definição</a></li>
+<li><a href="#por-que-surgem-os-estoques">Por que surgem os estoques?</a></li>
+<li><a href="#razões-para-existência-de-estoques">Razões para existência de estoques</a></li>
+<li><a href="#tipos-de-estoque">Tipos de estoque</a></li>
+<li><a href="#influência-de-estoques-na-competitividade-das-empresas">Influência de estoques na competitividade das empresas</a></li>
+<li><a href="#decisões-de-estoques">Decisões de estoques</a></li>
+<li><a href="#objetivos-da-gestão-de-estoques">Objetivos da gestão de estoques</a></li>
+<li><a href="#principais-incertezas-que-impactam-o-planejamento-de-estoques">Principais incertezas que impactam o planejamento de estoques</a></li>
+<li><a href="#alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques">Alguns vídeos interessantes para entender um pouco mais sobre estoques</a>
+<ul>
+<li><a href="#gestão-de-estoques">Gestão de estoques</a></li>
+<li><a href="#sku">SKU</a></li>
+<li><a href="#curva-abc">Curva ABC</a></li>
+<li><a href="#giro-de-estoque">Giro de estoque</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="definição" class="section level2">
+<h2>Definição</h2>
+<p>“Os estoques são recursos ociosos que possuem valor econômico.”
+.small[
+Joseph G. Monks: Administração da Produção]</p>
+<p>“Entende-se por estoque quaisquer quantidades de bens físicos que sejam conservados, de forma improdutiva, por algum intervalo de tempo.”
+.small[
+Daniel Moreira: Administração da Produção e Operações]</p>
+<p>“Estoques são acúmulos de materiais entre fases dos processos de transformação, que proporcionam um grau de independência entre as fases”
+.small[
+Henrique L.Correa: Administração da Produção e Operações]</p>
+<p>Estoques são materiais ou produtos que ficam fisicamente disponíveis pela empresa, até o momento de ingressarem no processo produtivo ou seguirem para a comercialização direta ao consumidor final. Os estoques podem ser de matérias-primas e outros insumos, produtos em processos, produtos acabados disponíveis para a comercialização e todos os demais materiais e insumos que a empresa utiliza e que necessitam estar armazenados nas suas dependências.</p>
+</div>
+<div id="por-que-surgem-os-estoques" class="section level2">
+<h2>Por que surgem os estoques?</h2>
+<ul>
+<li>Impossível ou inviável coordenar suprimento e demanda:
+<ul>
+<li>capacidade</li>
+<li>informação</li>
+<li>custo de obtenção</li>
+<li>restrições tecnológicas</li>
+</ul></li>
+<li>Especular com os estoques:
+<ul>
+<li>escassez</li>
+<li>oportunidade</li>
+</ul></li>
+<li>Incerteza de previsões de suprimento e/ou demanda:
+<ul>
+<li>estoques de segurança</li>
+</ul></li>
+<li>Preencher o “pipeline” - canais de distribuição</li>
+</ul>
+</div>
+<div id="razões-para-existência-de-estoques" class="section level2">
+<h2>Razões para existência de estoques</h2>
+<ul>
+<li>compras ou produção de forma mais econômica</li>
+<li>redução de fretes</li>
+<li>prevenir incertezas (desabastecimentos)</li>
+<li>reduzir efeitos de sazonalidades</li>
+<li>diferentes ritmos de produção entre fases</li>
+<li>reduzir custos de ociosidades</li>
+<li>melhor atendimento a consumidores</li>
+</ul>
+</div>
+<div id="tipos-de-estoque" class="section level2">
+<h2>Tipos de estoque</h2>
+<ul>
+<li><p>Estoque Isolador ou Estoque de Segurança - tem como função compensar as incertezas inerentes ao fornecimento e demanda. Ex: máquina problemática!!!</p></li>
+<li><p>Estoque de Ciclo - ocorre porque um ou mais estágios na operação não podem fornecer todos os itens que produzem simultaneamente. Ex: fabricações em batelada - Padaria / Processos Químicos.</p></li>
+<li><p>Estoque de Antecipação - ocorre principalmente nos produtos de grande variação de demanda. Ex: chocolate, sorvete, cerveja.</p></li>
+<li><p>Estoque no Canal de Distribuição - ocorrem porque o material não pode ser transportado instantaneamente entre o ponto de produção e o ponto de venda.</p></li>
+</ul>
+</div>
+<div id="influência-de-estoques-na-competitividade-das-empresas" class="section level2">
+<h2>Influência de estoques na competitividade das empresas</h2>
+<ul>
+<li>Influência nos custos;</li>
+<li>Influência na velocidade de entrega;</li>
+<li>Influência na confiabilidade de entregas;</li>
+<li>Influência sobre a flexibilidade de saídas - quando se tem estoques de diferentes produtos tem-se flexibilidade para atender as diferentes necessidades, mas perde-se flexibilidade em qualquer mudança de pedido feita pelo cliente.</li>
+<li>Influência sobre a qualidade do produto - a produção com qualidade reduz o nível de estoque da empresa pois corre-se um risco menor de se perder o material.</li>
+<li>Influência sobre o serviço prestado ao cliente.</li>
+</ul>
+</div>
+<div id="decisões-de-estoques" class="section level2">
+<h2>Decisões de estoques</h2>
+<ul>
+<li>Quanto pedir
+<ul>
+<li>Custos de estoques</li>
+<li>Lote econômico de compras</li>
+</ul></li>
+<li>Quando pedir
+<ul>
+<li>Revisões contínuas e periódicas</li>
+</ul></li>
+<li>Como controlar o sistema
+<ul>
+<li>Curva ABC</li>
+<li>Inventário</li>
+<li>planejamento de estoques de segurança</li>
+</ul></li>
+</ul>
+</div>
+<div id="objetivos-da-gestão-de-estoques" class="section level2">
+<h2>Objetivos da gestão de estoques</h2>
+<ul>
+<li>Cálculo do nível de estoque cíclico</li>
+<li>Cálculo do nível de estoque de segurança</li>
+<li>Determinação de Lote Econômico de Compra</li>
+<li>Atualização de inventário</li>
+<li>Replanejamento do suprimento</li>
+<li>Determinação do ponto de pedido</li>
+<li>Recebimento e armazenagem de materiais</li>
+<li>Conservar material em condições adequadas</li>
+<li>Entregar material mediante requisição</li>
+<li>Documentação</li>
+<li>Organização do almoxarifado</li>
+</ul>
+</div>
+<div id="principais-incertezas-que-impactam-o-planejamento-de-estoques" class="section level2">
+<h2>Principais incertezas que impactam o planejamento de estoques</h2>
+<ul>
+<li>Incertezas quanto à demanda (consumo)</li>
+<li>Incertezas em relação à entrega (atrasos, por exemplo)</li>
+</ul>
+<hr>
+</div>
+<div id="alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques" class="section level1">
+<h1>Alguns vídeos interessantes para entender um pouco mais sobre estoques</h1>
+<div id="gestão-de-estoques" class="section level2">
+<h2>Gestão de estoques</h2>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/rmQnVTLwc3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/DjwadLdgiic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/_aQf-tKNrTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="sku" class="section level2">
+<h2>SKU</h2>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/jRBOE04Rrdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="curva-abc" class="section level2">
+<h2>Curva ABC</h2>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/sB0-Fcqvz7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="giro-de-estoque" class="section level2">
+<h2>Giro de estoque</h2>
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/ucFtX-pf9oA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+</div>
