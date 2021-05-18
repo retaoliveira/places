@@ -1,0 +1,56 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: true
+menu:
+  log:
+    parent: Projetos
+    weight: 16
+title: Projeto 1
+toc: true
+type: docs
+weight: 16
+---
+
+## Pré-requisitos
+
+Entender definições e fundamentos que compõe os conceitos `Logística` e `Gestão da Cadeia de Suprimentos`. 
+
+## Objetivos de aprendizagem
+
+Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de `Logística` e `Gestão da Cadeia de Suprimentos` com os desafios contemporâneos advindos da 4a revolução industrial para a gestão logística estratégica. 
+
+## Atividades para consolidação do Projeto 01:
+
+Esta atividade tem valor de 10 pontos e deverá ser entregue por meio do sigaa, na tarefa respectiva, informando o link do vídeo carregado no youtube. Os vídeos serão disponibilizados no site para que todos os colegas possam discutir os aspectos abordados pelo grupo nesta atividade. 
+
+O prazo para entrega desta atividade é dia **20/02/2021**. 
+
+### Criar um vídeo público no youtube conforme as seguintes diretrizes:
+
+1. O vídeo deverá ter, no máximo, 3 (três) minutos.
+2. O conteúdo do vídeo deverá contemplar:
+- a caracterização da mudança que a 4a revolução industrial está proporcionando às atividades econômicas escolhida pelo grupo.
+- a relação entre essa mudança e as atividades-chave da gestão da cadeia de suprimentos 
+- vantagens e desvantagens para a gestão da cadeia de suprimentos considerando seu impacto no trade-off logístico (responsividade e eficiência)
+- as implicações sociais, econômicas e ambientais dessas mudanças
+
+## Rubrica de avaliação
+
+A seguir, são apresentados os critérios considerados para a avaliação do projeto 1 que são úteis para nortear o desenvolvimento do trabalho. 
+
+### Vídeo
+
+|Item|Proporção da nota
+|----|-----------------
+|Conteúdo |70%
+|Relevância da mudanças em discussão|2 pontos
+|Pertinência da relação estabelecida entre a GCS e a mudança proposta|1 ponto
+|Discussão do trade-off logístico relacionando vantagens e desvantagens da mudança para a GCS|2 pontos
+|Discussão das implicações sociais, econômicas e ambientais|2 pontos
+
+|Item|Proporção da nota
+|----|-----------------
+|Qualidade do Vídeo|30%
+|Respeito ao tempo máximo|1 ponto 	 
+|Há clareza quanto aos pontos em discussão|1 ponto
+|O grupo se esforçou para apresentar um resultado dinâmico e atrativo| 1 pontos
