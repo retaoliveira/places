@@ -1226,6 +1226,191 @@ Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
     </item>
     
     <item>
+      <title>Localização</title>
+      <link>https://retaoliveira.github.io/places/conteudo/log_urb/localizacao/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/log_urb/localizacao/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definição&#34;&gt;Definição&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#por-que-surgem-os-estoques&#34;&gt;Por que surgem os estoques?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#razões-para-existência-de-estoques&#34;&gt;Razões para existência de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-estoque&#34;&gt;Tipos de estoque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#influência-de-estoques-na-competitividade-das-empresas&#34;&gt;Influência de estoques na competitividade das empresas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#decisões-de-estoques&#34;&gt;Decisões de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#objetivos-da-gestão-de-estoques&#34;&gt;Objetivos da gestão de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#principais-incertezas-que-impactam-o-planejamento-de-estoques&#34;&gt;Principais incertezas que impactam o planejamento de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34;&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gestão-de-estoques&#34;&gt;Gestão de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sku&#34;&gt;SKU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#curva-abc&#34;&gt;Curva ABC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#giro-de-estoque&#34;&gt;Giro de estoque&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;definição&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definição&lt;/h2&gt;
+&lt;p&gt;“Os estoques são recursos ociosos que possuem valor econômico.”
+.small[
+Joseph G. Monks: Administração da Produção]&lt;/p&gt;
+&lt;p&gt;“Entende-se por estoque quaisquer quantidades de bens físicos que sejam conservados, de forma improdutiva, por algum intervalo de tempo.”
+.small[
+Daniel Moreira: Administração da Produção e Operações]&lt;/p&gt;
+&lt;p&gt;“Estoques são acúmulos de materiais entre fases dos processos de transformação, que proporcionam um grau de independência entre as fases”
+.small[
+Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
+&lt;p&gt;Estoques são materiais ou produtos que ficam fisicamente disponíveis pela empresa, até o momento de ingressarem no processo produtivo ou seguirem para a comercialização direta ao consumidor final. Os estoques podem ser de matérias-primas e outros insumos, produtos em processos, produtos acabados disponíveis para a comercialização e todos os demais materiais e insumos que a empresa utiliza e que necessitam estar armazenados nas suas dependências.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;por-que-surgem-os-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Por que surgem os estoques?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Impossível ou inviável coordenar suprimento e demanda:
+&lt;ul&gt;
+&lt;li&gt;capacidade&lt;/li&gt;
+&lt;li&gt;informação&lt;/li&gt;
+&lt;li&gt;custo de obtenção&lt;/li&gt;
+&lt;li&gt;restrições tecnológicas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Especular com os estoques:
+&lt;ul&gt;
+&lt;li&gt;escassez&lt;/li&gt;
+&lt;li&gt;oportunidade&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Incerteza de previsões de suprimento e/ou demanda:
+&lt;ul&gt;
+&lt;li&gt;estoques de segurança&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Preencher o “pipeline” - canais de distribuição&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;razões-para-existência-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Razões para existência de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;compras ou produção de forma mais econômica&lt;/li&gt;
+&lt;li&gt;redução de fretes&lt;/li&gt;
+&lt;li&gt;prevenir incertezas (desabastecimentos)&lt;/li&gt;
+&lt;li&gt;reduzir efeitos de sazonalidades&lt;/li&gt;
+&lt;li&gt;diferentes ritmos de produção entre fases&lt;/li&gt;
+&lt;li&gt;reduzir custos de ociosidades&lt;/li&gt;
+&lt;li&gt;melhor atendimento a consumidores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-estoque&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tipos de estoque&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Estoque Isolador ou Estoque de Segurança - tem como função compensar as incertezas inerentes ao fornecimento e demanda. Ex: máquina problemática!!!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque de Ciclo - ocorre porque um ou mais estágios na operação não podem fornecer todos os itens que produzem simultaneamente. Ex: fabricações em batelada - Padaria / Processos Químicos.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque de Antecipação - ocorre principalmente nos produtos de grande variação de demanda. Ex: chocolate, sorvete, cerveja.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque no Canal de Distribuição - ocorrem porque o material não pode ser transportado instantaneamente entre o ponto de produção e o ponto de venda.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;influência-de-estoques-na-competitividade-das-empresas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Influência de estoques na competitividade das empresas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Influência nos custos;&lt;/li&gt;
+&lt;li&gt;Influência na velocidade de entrega;&lt;/li&gt;
+&lt;li&gt;Influência na confiabilidade de entregas;&lt;/li&gt;
+&lt;li&gt;Influência sobre a flexibilidade de saídas - quando se tem estoques de diferentes produtos tem-se flexibilidade para atender as diferentes necessidades, mas perde-se flexibilidade em qualquer mudança de pedido feita pelo cliente.&lt;/li&gt;
+&lt;li&gt;Influência sobre a qualidade do produto - a produção com qualidade reduz o nível de estoque da empresa pois corre-se um risco menor de se perder o material.&lt;/li&gt;
+&lt;li&gt;Influência sobre o serviço prestado ao cliente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decisões-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Decisões de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Quanto pedir
+&lt;ul&gt;
+&lt;li&gt;Custos de estoques&lt;/li&gt;
+&lt;li&gt;Lote econômico de compras&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Quando pedir
+&lt;ul&gt;
+&lt;li&gt;Revisões contínuas e periódicas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Como controlar o sistema
+&lt;ul&gt;
+&lt;li&gt;Curva ABC&lt;/li&gt;
+&lt;li&gt;Inventário&lt;/li&gt;
+&lt;li&gt;planejamento de estoques de segurança&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;objetivos-da-gestão-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Objetivos da gestão de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cálculo do nível de estoque cíclico&lt;/li&gt;
+&lt;li&gt;Cálculo do nível de estoque de segurança&lt;/li&gt;
+&lt;li&gt;Determinação de Lote Econômico de Compra&lt;/li&gt;
+&lt;li&gt;Atualização de inventário&lt;/li&gt;
+&lt;li&gt;Replanejamento do suprimento&lt;/li&gt;
+&lt;li&gt;Determinação do ponto de pedido&lt;/li&gt;
+&lt;li&gt;Recebimento e armazenagem de materiais&lt;/li&gt;
+&lt;li&gt;Conservar material em condições adequadas&lt;/li&gt;
+&lt;li&gt;Entregar material mediante requisição&lt;/li&gt;
+&lt;li&gt;Documentação&lt;/li&gt;
+&lt;li&gt;Organização do almoxarifado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;principais-incertezas-que-impactam-o-planejamento-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Principais incertezas que impactam o planejamento de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Incertezas quanto à demanda (consumo)&lt;/li&gt;
+&lt;li&gt;Incertezas em relação à entrega (atrasos, por exemplo)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/h1&gt;
+&lt;div id=&#34;gestão-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gestão de estoques&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/rmQnVTLwc3E&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/DjwadLdgiic&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/_aQf-tKNrTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sku&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;SKU&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/jRBOE04Rrdg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;curva-abc&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Curva ABC&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/sB0-Fcqvz7I&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;giro-de-estoque&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Giro de estoque&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/ucFtX-pf9oA&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Redes logísticas</title>
+      <link>https://retaoliveira.github.io/places/conteudo/log_urb/redes/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/log_urb/redes/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Em elaboração&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Desafios contemporâneos</title>
       <link>https://retaoliveira.github.io/places/conteudo/log_urb/log_atual/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
@@ -1542,6 +1727,21 @@ Cada uma dessas ações, no entanto, tem um custo. Assim, cada cadeia de suprime
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística Urbana - definições</title>
+      <link>https://retaoliveira.github.io/places/conteudo/log_urb/log_urb/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/log_urb/log_urb/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Em elaboração&lt;/p&gt;
+&lt;hr&gt;
 </description>
     </item>
     

@@ -13,82 +13,6 @@
     
     
     <item>
-      <title>Instalação de R, RStudio e Git</title>
-      <link>https://retaoliveira.github.io/places/conteudo/intro_r/install/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/conteudo/intro_r/install/</guid>
-      <description>&lt;h3 id=&#34;por-que-escolhi-essas-linguagens-para-este-curso&#34;&gt;Por que escolhi essas linguagens para este curso?&lt;/h3&gt;
-&lt;p&gt;Sabe-se que:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;A maioria das pessoas interessadas em aprender a analisar dados para suporte ao processo decisório, aplicado à gestão de negócios ou à proposição de políticas públicas não são cientistas da computação.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A maioria das atividades em gestão envolve comunicação, estruturados como relatórios, dashboards, e aplicações web interactivas que permitam aos decisores entender a estrutura e a dinâmica dos processos e tomar decisões bem informadas visando o cumprimento dos objetivos inicialmente propostos.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Assim, o R é adequado para processos em que as organizações precisam testar teorias, explicar as relações de causa e efeito, iterar rapidamente, e tomar decisões. Além disso, os recursos de comunicação são eficientes e diversificados, incluindo relatórios empresariais, apresentações e aplicações web que podem ser construídos utilizando um fluxo de trabalho reproduzível.&lt;/p&gt;
-&lt;p&gt;Este curso não tem a pretenção de formar analistas de sistemas, cientistas ou engenheiros de computação ou técnicos de informática. Assim, as funcionalidades apresentadas nos encontros e nas atividades propostas são orientadas à implementação prática e fundamentadas em teoria sobre a tomada de decisão orientada por informação (DOD).&lt;/p&gt;
-&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;Baixar e instalar o R&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Links adicionais&lt;/strong&gt;
-&lt;a href=&#34;https://rpubs.com/cassiorampinelli/488999&#34;&gt;Visão geral e primeiros passos com R e RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;rstudio&#34;&gt;RStudio&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;Baixar e instalar o RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.curso-r.com/material/rstudio/&#34;&gt;Estrutura do RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Baixar e instalar o Git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Nesse &lt;a href=&#34;https://www.curso-r.com/material/instalacao/&#34;&gt;site&lt;/a&gt; você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Como acessar o tutorial da disciplina no swirl</title>
-      <link>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</guid>
-      <description>
-&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o “oráculo” universal Google.&lt;/p&gt;
-&lt;p&gt;Os estudantes um procedimento breve para conseguirem abrir o tutorial:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Salvar o arquivo nesta mensagem em um diretório em seu computador.&lt;/li&gt;
-&lt;li&gt;Abrir o RStudio e procedam com a instalação do package swirl: &lt;code&gt;install.packages(&#34;swirl&#34;)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Carregar a biblioteca do swirl: &lt;code&gt;library(swirl)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Instalar o tutorial: &lt;code&gt;install_course()&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Abrir o menu de tutoriais &lt;code&gt;swirl::swirl()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu.&lt;/li&gt;
-&lt;li&gt;Selecionar 1: &lt;code&gt;introR&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.&lt;/p&gt;
-&lt;p&gt;In a &lt;code&gt;chunk&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;swirl&amp;quot;)
-library(swirl)
-
-install_course()
-swirl()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O arquivo pode ser acessado no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width=&#34;1000&#34; height=&#34;542&#34; src=&#34;https://www.youtube.com/embed/HaZ4p16sv6M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o &lt;a href=&#34;http://swirlstats.com/scn/&#34;&gt;Swirl Course Network&lt;/a&gt;. A instalação é feita também com a função &lt;code&gt;install_course()&lt;/code&gt;, mas nesse caso você precisa digitar o nome do curso como em:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;swirl::install_course(&amp;quot;A_(very)_short_introduction_to_R&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Abrindo dados no R</title>
       <link>https://retaoliveira.github.io/places/conteudo/intro_r/abrindo_dados/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
@@ -1761,6 +1685,45 @@ Na janela de pré-visualização, clique no botão &lt;code&gt;Publicar&lt;/code
 &lt;/ol&gt;
 &lt;p&gt;Aprecie o seu primeiro documento!&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como acessar o tutorial da disciplina no swirl</title>
+      <link>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o “oráculo” universal Google.&lt;/p&gt;
+&lt;p&gt;Os estudantes um procedimento breve para conseguirem abrir o tutorial:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Salvar o arquivo nesta mensagem em um diretório em seu computador.&lt;/li&gt;
+&lt;li&gt;Abrir o RStudio e procedam com a instalação do package swirl: &lt;code&gt;install.packages(&#34;swirl&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carregar a biblioteca do swirl: &lt;code&gt;library(swirl)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instalar o tutorial: &lt;code&gt;install_course()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Abrir o menu de tutoriais &lt;code&gt;swirl::swirl()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu.&lt;/li&gt;
+&lt;li&gt;Selecionar 1: &lt;code&gt;introR&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.&lt;/p&gt;
+&lt;p&gt;In a &lt;code&gt;chunk&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;swirl&amp;quot;)
+library(swirl)
+
+install_course()
+swirl()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O arquivo pode ser acessado no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1000&#34; height=&#34;542&#34; src=&#34;https://www.youtube.com/embed/HaZ4p16sv6M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o &lt;a href=&#34;http://swirlstats.com/scn/&#34;&gt;Swirl Course Network&lt;/a&gt;. A instalação é feita também com a função &lt;code&gt;install_course()&lt;/code&gt;, mas nesse caso você precisa digitar o nome do curso como em:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;swirl::install_course(&amp;quot;A_(very)_short_introduction_to_R&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

@@ -40,16 +40,6 @@
   </url>
   
   <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/intro_r/install/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://retaoliveira.github.io/places/courses/log/est_1/</loc>
   </url>
   
@@ -72,13 +62,13 @@
   </url>
   
   <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/spatial/install/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+    <loc>https://retaoliveira.github.io/places/courses/dados_grad/install/</loc>
+    <lastmod>2020-12-26T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://retaoliveira.github.io/places/courses/dados_grad/install/</loc>
-    <lastmod>2020-12-26T00:00:00+01:00</lastmod>
+    <loc>https://retaoliveira.github.io/places/conteudo/spatial/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -88,11 +78,6 @@
   
   <url>
     <loc>https://retaoliveira.github.io/places/conteudo/log_urb/gcs/</loc>
-    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/spatial/intro_dataana/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url>
   
@@ -123,11 +108,6 @@
   
   <url>
     <loc>https://retaoliveira.github.io/places/conteudo/access/</loc>
-    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/spatial/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -259,10 +239,6 @@
   </url>
   
   <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/spatial/intro_r/</loc>
-  </url>
-  
-  <url>
     <loc>https://retaoliveira.github.io/places/courses/log/compras/</loc>
   </url>
   
@@ -272,7 +248,17 @@
   </url>
   
   <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/log_urb/localizacao/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://retaoliveira.github.io/places/courses/log/est_5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/log_urb/redes/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -311,6 +297,11 @@
   </url>
   
   <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/log_urb/log_urb/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://retaoliveira.github.io/places/conteudo/log_urb/nivel_servico/</loc>
     <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url>
@@ -338,6 +329,11 @@
   <url>
     <loc>https://retaoliveira.github.io/places/courses/dados_grad/ggplot/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/intro_r/swirl/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -392,6 +388,11 @@
   <url>
     <loc>https://retaoliveira.github.io/places/courses/dados_pos/geodata/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/spatial/map/</loc>
+    <lastmod>2021-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>

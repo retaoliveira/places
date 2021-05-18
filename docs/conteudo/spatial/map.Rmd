@@ -1,0 +1,443 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  spatial:
+    parent: Localização como atributo de suporte à decisão
+    weight: 70
+title: Construindo mapas e representações
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 70
+---
+
+# Packages
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)
+```
+
+<hr>
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+# carregar o dado
+data("georgia") 
+
+# converter o dado em sf
+georgia_sf <- st_as_sf(georgia)
+class(georgia_sf)
+georgia_sf # representa as dez primeiras feições
+```
+
+## Uma introdução ao package `tmap` {.tabset .tabset-fade .tabset-pills}
+
+O package `tmap` permite o uso de novas funcionalidades para gerar mapas e funções para extração de dados do Google Maps e do OpenStreetMap. O foco do package `tmap` é a construção de mapas temáticos. Podem ser considerados dados `sp` e `sf`. A gramática para construção dos mapas é similar àquela do package `ggplot`. Assim, a representação de dados espaciais por meio do `tmap` conta com a manipulação de cada elemento do mapa separadamente em diferentes camadas. 
+Para limpar o workspace, digite: 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+rm(list=ls())
+```
+
+### Quick `tmap`
+
+A função `qtm()` pode ser utilizada para composição de mapas de maneira expressa (quick). O código a seguir permite carregar o dado `georgia`, recriar o dado `georgia_sf` e gerar um mapa expresso. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+data("georgia")
+ls()
+```
+
+Para criar o objeto `sf` `georgia_sf`, faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+georgia_sf <- st_as_sf(georgia)
+```
+
+Finalmente, crie o mapa expresso utilizando:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(tmap)
+qtm(georgia, fill="red", style = "natural")
+```
+
+O uso do parâmetro `style` permite configurações rápidas de mapas por meio do package `tmap`. Explore a função `qtm` para entender os demais temas possíveis. 
+
+O parâmetro `fill` pode ser utilizado para especificar uma cor ou a variável a ser mapeada. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+qtm(georgia_sf, fill = "MedInc", text ="Name", text.size=0.5, format = "World_wide", style = "classic", text.root = 5, fill.title = "Median Income")
+```
+
+
+### Mapa completo por meio do `tmap`
+
+Para gerar mapas completos por meio do package `tmap`, é necessário utilizar a função `tm_shape`acompanhada de uma outra função que especifique o precisa ser plotado. Antes de plotar, um objeto contendo a linha da divisa estadual da Georgia pode ser criada por meio da função `st_union()` do package `sf`. Uma alternativa para dados `sp` é função `gUnaryUnion()` do package `rgeos`, carregado juntamente com o package `GISTools`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# união das feições para composição do limite estadual
+g <- st_union(georgia_sf)
+
+# plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill("tomato") +
+  tm_borders(lty="dashed", col = "gold")
+
+```
+
+Incluir alguns estilos:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill("tomato") +
+  tm_borders(lty="dashed", col = "gold") +
+  tm_style("natural", bg.color = "grey90")
+```
+
+Incluir limite estadual. Repare que a função `tm_shape` vai ser chamada novamente uma vez que outro objeto será incluído no mapa. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+tm_shape(georgia_sf) + 
+  tm_fill("tomato") +
+  tm_borders(lty="dashed", col = "gold") +
+  tm_style("natural", bg.color = "grey90") +
+  tm_shape(g) + 
+  tm_borders(lwd=2) # lwd - line width - espessura da linha
+```
+
+Incluindo todos os parâmetros juntos:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+tm_shape(georgia_sf) + 
+  tm_fill("tomato") +
+  tm_borders(lty="dashed", col = "gold") +
+  tm_style("natural", bg.color = "grey90") +
+  tm_shape(g) + 
+  tm_borders(lwd=2) +
+  tm_layout(title = "O estado da Georgia",
+            title.size = 1,
+            title.position = c(0.55, "top"))
+```
+
+Experimente esses outros parâmetros da função `qtm`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+data(World, rivers, metro, land)
+
+# just the map
+qtm(World)
+
+# choropleth
+qtm(World, fill = "economy", format = "World", style = "col_blind")
+
+# choropleth with more specifications
+qtm(World, fill="HPI", fill.n = 9, fill.palette = "div",
+    fill.title = "Happy Planet Index", fill.id = "name", 
+    style = "gray", format = "World")
+
+# Alternative to previous map - RECOMENDED
+tm_shape(World) +
+    tm_polygons("HPI", n = 9, palette = "div",
+        title = "Happy Planet Index", id = "name") +
+    tm_style("gray") +
+    tm_format("World")
+
+# Bubble map
+qtm(World, borders = NULL) + 
+qtm(metro, symbols.size = "pop2010", 
+    symbols.title.size= "Metropolitan Areas", 
+    symbols.id= "name",
+    format = "World")
+```
+
+Para plotar dois mapas juntos com dados diferentes, experimente o seguinte código:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(tmap)
+
+t1 <- tm_shape(georgia_sf) +
+              tm_fill("coral") +
+              tm_borders() +
+              tm_layout(bg.color = "grey85")
+
+t2 <- tm_shape(georgia2) +
+              tm_fill("orange") +
+              tm_borders() +
+              tm_layout(asp=0.86, bg.color = "grey95") #alinhar a segunda figura
+t1
+t2
+```
+
+Para especificar o layout da figura combinando os mapas:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(grid)
+
+# abrir uma nova página de plotagem
+grid.newpage()
+
+# definir o layout
+pushViewport(viewport(layout = grid.layout(1,2)))
+
+#  Plotar usando o comando print
+print(t1, vp=viewport(layout.pos.col = 1, height = 5))
+print(t2, vp=viewport(layout.pos.col = 2, height = 5))
+
+```
+Repare que t1 é um objeto `sf` e t2 é um objeto `sp` e apresentam sistemas de referência diferentes. 
+
+Para consultar os diferentes sistemas de projeção, verifique utilizando a função `crs`. 
+
+```{r}
+crs(georgia_sf)
+
+crs(georgia2)
+```
+Para nomear os atributos, verifique o data.frame do objeto `georgia_sf`. Utilize a função `names()` para ter acesso a uma lista de nomes de todos os atributos. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+names(georgia_sf)
+
+# Construir um data frame com os nomes. 
+data.frame(georgia_sf)[,13]
+```
+
+Para incluir os nomes, faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+tm_shape(georgia_sf) +
+              tm_fill("white") +
+              tm_borders() +
+              tm_text("Name", size=0.3) +
+              tm_layout(frame = FALSE)
+```
+Para criar um subconjunto dos dados, é possível fazer uma seleção criando uma camada com o subconjunto por meio dos índices:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+index <- c(81, 82, 83, 150, 62, 53, 21, 16, 124, 121, 17)
+georgia_sub <- georgia_sf[index, ]
+```
+
+Para sobrepor os mapas com as duas camadas, faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+tm_shape(georgia_sf) +
+              tm_fill("white") +
+              tm_borders("grey", lwd=0.5) +
+tm_shape(g) +
+              tm_borders(lwd=2) +
+tm_shape(georgia_sub) +
+              tm_fill("lightblue") +
+              tm_borders() +
+              tm_layout(frame = TRUE, title = "Georgia com subconjunto", title.size=1, title.position = c(0.02, "bottom"))
+```
+
+---
+
+## Sistemas de coordenadas
+
+Verificar qual o sistema de referência em uso de dados espaciais vetoriais
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(sf)
+st_crs(georgia_sf)
+```
+
+Verificar qual o sistema de referência em uso em dados espaciais matriciais
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+library(raster)
+# crs(elev.r)
+```
+
+
+#### Sintaxe `Proj4`
+Parâmetro | Significado
+----------|-------------
++a       |  Semimajor radius of the ellipsoid axis
++b       |  Semiminor radius of the ellipsoid axis
++datum    | Datum name 
++ellps    | Ellipsoid name 
++lat_0    | Latitude of origin
++lat_1    | Latitude of first standard parallel
++lat_2    | Latitude of second standard parallel
++lat_ts   | Latitude of true scale
++lon_0    | Central meridian
++over     | Allow longitude output outside -180 to 180 range, disables wrapping 
++proj     | Projection name 
++south    | Denotes southern hemisphere UTM zone
++units|     meters, US survey feet, etc.
++x_0   |    False easting
++y_0    |   False northing
++zone    |  UTM zone
+
+[Projeções disponíveis no Proj4](https://proj.org/operations/projections/)
+
+
+### Base de dados EPGS
+
+[Spatial Reference EPSG](https://spatialreference.org/ref/epsg/) 
+
+
+### Alterar projeções
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+georgia_sf_crs <- st_transform(georgia_sf, crs = 3035)
+
+st_crs(georgia_sf_crs)
+
+```
+
+---
+
+## Como salvar meu mapa
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, include=TRUE, results='hide'}
+
+data(newhaven)
+
+pdf(file = 'map.pdf') # salva o mapa como pdf.
+
+tm_shape(blocks) +
+    tm_borders() +
+tm_shape(roads) +
+  tm_lines(col = "red") +
+# embellish the map
+tm_scale_bar(width = 0.22) +
+tm_compass(position = c(0.8, 0.07)) +
+tm_layout(frame = F, title = "New Haven, CT", 
+            title.size = 1.5, 
+            title.position = c(0.55, "top"), 
+            legend.outside = T) 
+
+dev.off() # desconectar o arquivo gerado do ambiente de trabalho. 
+```
+
+É possível salvar por meio de outros formatos. 
+
+pdf()   
+png()   
+tiff()    
+
+---
+
+## Adicionando mapa de contexto
+
+Em algumas situações um mapa de fundo é interessante. Há várias maneiras de fazer essa inclusão. Pelo `OpenStreetMap`, a ideia é fazer a definição da área a ser representada, fazer o download e plotar o mapa de fundo. Depois acrescentar o mapa em desenvolvimento. 
+
+```{r message=FALSE, warning=FALSE}
+library(OpenStreetMap)
+# define upper left, lower right corners 
+georgia.sub <- georgia[index,]
+ul <- as.vector(cbind(bbox(georgia.sub)[2,2], 
+    bbox(georgia.sub)[1,1]))
+lr <- as.vector(cbind(bbox(georgia.sub)[2,1], 
+    bbox(georgia.sub)[1,2]))
+# download the map tile
+MyMap <- openmap(ul,lr)
+# now plot the layer and the backdrop
+par(mar = c(0,0,0,0))
+plot(MyMap, removeMargin=FALSE)
+plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)
+```
+
+## Visualização de fenômenos sociais no espaço {.tabset .tabset-fade .tabset-pills}
+
+### Mapas coropléticos
+
+```{r echo=FALSE, out.width='50%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/coropl.png')
+```
+
+---
+
+### Mapas de pontos
+
+```{r echo=FALSE, out.width='50%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/pontos.png')
+```
+
+---
+
+### Representação de fluxos
+
+```{r echo=FALSE, out.width='50%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/fluxos.png')
+```
+
+---
+
+### Mapas de calor
+
+```{r echo=FALSE, out.width='60%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/calor.png')
+```
+
+---
+
+### Cartogramas
+
+```{r echo=FALSE, out.width='50%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/1_cartograma.png')
+```
+
+---
+
+### Símbolos proporcionais
+
+```{r echo=FALSE, out.width='55%', fig.align = 'center'}
+knitr::include_graphics('https://retaoliveira.github.io/relements/figures/pontos_propo.png')
+```
+
+---
+
+## Plotar pontos a partir de coordenadas
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+library(sf)
+library(tmap)
+
+data <- read_sf("https://retaoliveira.github.io/places/shapefiles/ESCOLAS_PARTICULARES/ESCOLAS_PARTICULARES.shp")
+bh <- read_sf("https://retaoliveira.github.io/places/shapefiles/BAIRRO/BAIRRO.shp")
+
+
+xy <- st_coordinates(data) # arquivo para calculos centrográficos
+
+xy_coord <- as.data.frame(st_coordinates(data)) %>%
+   st_as_sf(coords = c('X', 'Y'), crs = 31983) # conversão em sf para representação espacial de coordenadas como pontos
+```
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+tm_shape(data) +
+   tm_dots("ID_EQ_ED")
+```
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+tm_shape(xy_coord) +
+      tm_dots(col="red")
+```
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+tm_shape(data) + 
+   tm_bubbles("NUMERO", col="blue", alpha = 0.5) + # Considerando os números como número de alunos matriculados
+tm_shape(bh) +
+   tm_borders(col = "grey40", lwd = 1, lty = "solid", alpha = NA)
+```
