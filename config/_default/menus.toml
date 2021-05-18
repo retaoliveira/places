@@ -14,51 +14,91 @@
   weight = 20
 
 #[[main]]
-#  name = "Projects"
+#  name = "Projetos"
 #  url = "#projects"
 #  weight = 30
 
 #[[main]]
-#  name = "Publications"
+#  name = "Publicações"
 #  url = "#publications"
 #  weight = 40
 
 [[main]]
-  name = "Cursos"
+  name = "O que aprender"
   url = "#"
   hasChildren = true
-  weight = 30
+  weight = 50
+  
+[[main]]
+  parent = "O que aprender"
+  name = "Logística Urbana"
+  url = "conteudo/log_urb/"
+  weight = 10
+  
+[[main]]
+  parent = "O que aprender"
+  name = "Acessibilidade"
+  url = "conteudo/access/"
+  weight = 20
 
 [[main]]
-  parent = "Cursos"
+  parent = "O que aprender"
+  name = "Ciência de dados"
+  url = "conteudo/data/"
+  weight = 30
+  
+[[main]]
+  parent = "O que aprender"
+  name = "Introdução ao R"
+  url = "conteudo/intro_r/"
+  weight = 40
+  
+[[main]]
+  parent = "O que aprender"
+  name = "Análise espacial"
+  url = "conteudo/spatial/"
+  weight = 50
+  
+[[main]]
+  parent = "O que aprender"
+  name = "Urban Analytics"
+  url = "conteudo/urban/"
+  weight = 60
+
+[[main]]
+  name = "Como aprender"
+  url = "#"
+  hasChildren = true
+  weight = 60
+
+[[main]]
+  parent = "Como aprender"
   name = "Logística - 2021/1"
   url = "courses/log/"
   weight = 10
   
 [[main]]
-  parent = "Cursos"
+  parent = "Como aprender"
   name = "Métodos Quantitativos para Suporte à Decisão na Gestão Urbana - 2021/1"
   url = "courses/urban_analytics/"
   weight = 20
   
 [[main]]
-  parent = "Cursos"
+  parent = "Como aprender"
   name = "Análise de Dados para gestão organizacional - 2021/1"
   url = "courses/dados_grad/"
-  weight = 60
+  weight = 30
 
 [[main]]
-  parent = "Cursos"
+  parent = "Como aprender"
   name = "Análise de Dados aplicada ao processo decisório - 2020/2"
   url = "courses/dados_pos/"
-  weight = 80
-
-
+  weight = 40
   
 [[main]]
   name = "Contato"
   url = "#contact"
-  weight = 60
+  weight = 70
 
 
 # Link to a PDF of your resume/CV from the menu.
@@ -66,4 +106,4 @@
 [[main]]
     name = "CV"
     url = "files/cv.pdf"
-    weight = 70
+    weight = 80

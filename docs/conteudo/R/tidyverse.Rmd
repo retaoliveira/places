@@ -1,0 +1,98 @@
+---
+date: "2020-12-30T00:00:00+01:00"
+draft: false
+menu:
+  R:
+    parent: Unidade 3 - Estrutura de dados no R
+    weight: 30
+title: Overview - Tidyverse
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+### Instalação e uso do Package `tidyverse`
+
+Instale todos os pacotes no tidyverse executando `install.packages("tidyverse")`.  
+ 
+Execute a `library(tidyverse)` para carregar o núcleo do tidyverse e torná-lo disponível em sua sessão R atual.
+
+Saiba mais sobre o pacote tidyverse em [https://tidyverse.tidyverse.org](https://tidyverse.tidyverse.org).
+
+### Estrutura básica do tidyverse 
+A estrutura básica do tidyverse inclui os pacotes que você provavelmente usará nas análises de dados. Os seguintes pacotes estão incluídos:
+
+#### ggplot2
+
+O `ggplot2` é um sistema de criação gráfica declarativa, baseado na Gramática de gráficos. Você fornece os dados, diz ao `ggplot2` como mapear variáveis para a estética, quais elementos gráficos utilizar, e ele cuida dos detalhes. 
+
+#### dplyr
+`dplyr` fornece uma gramática de manipulação de dados, fornecendo um conjunto consistente de comandos que resolvem os desafios mais comuns de manipulação de dados. 
+
+#### tidyr
+`tidyr` fornece um conjunto de funções que ajudam você a obter organizar os dados. Dados organizados são dados com uma estrutura consistente: em resumo, cada variável vai em uma coluna, e cada coluna é uma variável.
+
+#### readr
+
+`readr` fornece uma maneira rápida e amigável de ler dados tabulares (como csv, tsv, e fwf). Ele é projetado para analisar de forma flexível muitos tipos de dados.
+
+#### purrr
+
+`purrr` melhora o conjunto de ferramentas de programação funcional (FP) do `R`, fornecendo um conjunto completo e consistente de ferramentas para trabalhar com funções e vetores. Uma vez que você domina os conceitos básicos, o `purrr` permite que você substitua muitos `loops` por códigos mais fáceis de escrever e mais expressivos. 
+
+#### tibble
+
+`tibble` é uma representação moderna do `dataframe`. `Tibbles` são dataframes preguiçosos e rudes: eles fazem menos e reclamam mais, forçando você a enfrentar os problemas mais cedo, normalmente levando a um código mais limpo e expressivo. 
+
+#### stringr
+
+`stringr` fornece um conjunto coeso de funções projetadas para tornar o trabalho com texto o mais fácil possível. Ele é construído sobre o `stringi`, que usa a biblioteca `ICU C` para fornecer implementações rápidas e corretas de manipulações comuns de texto 
+
+#### forcats
+
+`forcats` fornece um conjunto de ferramentas úteis que resolvem problemas comuns com fatores. R utiliza fatores para lidar com variáveis categóricas, variáveis que têm um conjunto fixo e conhecido de valores possíveis.
+
+O `tidyverse` também inclui muitos outros pacotes com uso mais especializado. Eles não são carregados automaticamente com `biblioteca(tidyverse)`, então você precisará carregar cada um deles com sua própria chamada à biblioteca.
+
+### Importação de dados 
+Assim como o `readr`, o pacote tidyverse instala uma série de outros pacotes para a leitura de dados:
+
+- [`DBI`](https://github.com/r-dbi/DBI) para bancos de dados relacionais. Você precisará emparelhar `DBI` com um backend específico de banco de dados como `RSQLite` , `RMariaDB`, `RPostgres`, ou `odbc.` Saiba mais em [https://db.rstudio.com](https://db.rstudio.com).
+- [`haven`](https://haven.tidyverse.org/) para dados SPSS, Stata, e SAS.
+- [`httr`](https://github.com/r-lib/httr) para web APIs.
+- [`readxl`](https://readxl.tidyverse.org/) para planilhas .xls e .xlsx.
+- [`rvest`](https://github.com/tidyverse/rvest) para raspagem da web.
+- [`jsonlite`](https://github.com/jeroen/jsonlite#jsonlite) para JSON. (mantido por Jeroen Ooms.)
+- [`xml2`](https://github.com/r-lib/xml2) para XML.
+
+### Wrangle 
+
+Além de `tidyr` e `dplyr`, há cinco pacotes (incluindo `stringr` e `forcats`) que são projetados para trabalhar com tipos específicos de dados:
+
+- [`lubridate`](https://lubridate.tidyverse.org/) para datas e datas-horas.
+- [`hms`](https://github.com/tidyverse/hms) para valores de data e hora do dia.
+- [`blob`](https://github.com/tidyverse/blob) para armazenamento de dados blob (binários).
+
+### Programa 
+
+Além do `purrr`, que fornece métodos muito consistentes e naturais para iteração em objetos R, há dois pacotes adicionais que ajudam nos desafios gerais de programação:
+
+- [`magrittr`](https://magrittr.tidyverse.org/) fornece o `pipe`, `%>%`. Ele também fornece um número de operadores de pipe mais especializados (como `%$%` e `%<>%`) que podem ser úteis em outras aplicações.
+ 
+- [`glue`](https://github.com/tidyverse/glue) fornece uma alternativa à `paste()` que facilita a combinação de dados e texto.
+
+### Modelo 
+A modelagem com o `tidyverse` possibilita a coleção de pacotes de `tidymodels`, que em grande parte substituem o pacote `modelr` usado no `R4DS.` Estes pacotes fornecem uma base abrangente para a criação e utilização de modelos de todos os tipos. Visite o [Guia de Introdução](https://www.tidymodels.org/start/) ou, para exemplos mais detalhados, vá direto para a página [Aprender](https://www.tidymodels.org/learn/).
+
+
+## Alguns links interessantes para aprender `tidyverse`
+
++ [Learn the tidyverse](https://www.tidyverse.org/learn/)
++ [Remaster tidyverse by Garret](https://github.com/rstudio-education/remaster-the-tidyverse/)
++ [Data wrangling](https://programminghistorian.org/en/lessons/data_wrangling_and_management_in_R)
++ [YaRrr! The Pirate’s Guide to R Nathaniel D. Phillips](https://bookdown.org/ndphillips/YaRrr/)

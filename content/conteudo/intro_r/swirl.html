@@ -1,0 +1,47 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  intro_r:
+    parent: 1 - Análise de dados para gestão
+    weight: 30
+title: 'Como acessar o tutorial da disciplina no swirl'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o “oráculo” universal Google.</p>
+<p>Os estudantes um procedimento breve para conseguirem abrir o tutorial:</p>
+<ol style="list-style-type: decimal">
+<li>Salvar o arquivo nesta mensagem em um diretório em seu computador.</li>
+<li>Abrir o RStudio e procedam com a instalação do package swirl: <code>install.packages("swirl")</code></li>
+<li>Carregar a biblioteca do swirl: <code>library(swirl)</code></li>
+<li>Instalar o tutorial: <code>install_course()</code>
+<ul>
+<li>uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.</li>
+</ul></li>
+<li>Abrir o menu de tutoriais <code>swirl::swirl()</code></li>
+<li>Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu.</li>
+<li>Selecionar 1: <code>introR</code></li>
+</ol>
+<p>Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.</p>
+<p>In a <code>chunk</code>:</p>
+<pre class="r"><code>install.packages(&quot;swirl&quot;)
+library(swirl)
+
+install_course()
+swirl()</code></pre>
+<p>O arquivo pode ser acessado no <a href="https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG">link</a></p>
+<iframe width="1000" height="542" src="https://www.youtube.com/embed/HaZ4p16sv6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o <a href="http://swirlstats.com/scn/">Swirl Course Network</a>. A instalação é feita também com a função <code>install_course()</code>, mas nesse caso você precisa digitar o nome do curso como em:</p>
+<pre class="r"><code>swirl::install_course(&quot;A_(very)_short_introduction_to_R&quot;)</code></pre>

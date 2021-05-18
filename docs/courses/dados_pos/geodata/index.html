@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Instalação dos packages para manipulação de dados espaciais no RIntrodução aos packages sp e sfDados espaciais spDados espaciais GISToolsDados espaciais sfLendo e escrevendo dados espaciais no RLendo e escrevendo dados sp.Lendo e escrevendo dados sf.Uma introdução ao package tmapQuick tmapMapa completo por meio do tmapSistemas de coordenadasBase de dados EPGSAlterar projeçõesComo salvar meu mapaAdicionando mapa de contextoVisualização de fenômenos sociais no espaçoMapas coropléticosMapas de pontosRepresentação de fluxosMapas de calorCartogramasSímbolos proporcionaisPlotar pontos a partir de coordenadasInstalação dos packages para manipulação de dados espaciais no RInicialmente, faz-se necessária a instalação e carregamento dos packages:">
+  <meta name="description" content="Instalação dos packages para manipulação de dados espaciais no R Introdução aos packages sp e sf  Dados espaciais sp Dados espaciais GISTools Dados espaciais sf  Lendo e escrevendo dados espaciais no R  Lendo e escrevendo dados sp. Lendo e escrevendo dados sf.  Uma introdução ao package tmap  Quick tmap Mapa completo por meio do tmap  Sistemas de coordenadas  Base de dados EPGS Alterar projeções  Como salvar meu mapa Adicionando mapa de contexto Visualização de fenômenos sociais no espaço  Mapas coropléticos Mapas de pontos Representação de fluxos Mapas de calor Cartogramas Símbolos proporcionais  Plotar pontos a partir de coordenadas   Instalação dos packages para manipulação de dados espaciais no R Inicialmente, faz-se necessária a instalação e carregamento dos packages:">
 
   
   <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/places/courses/dados_pos/geodata/">
@@ -127,7 +127,7 @@
   <meta property="og:site_name" content="Profa. Renata Oliveira">
   <meta property="og:url" content="https://retaoliveira.github.io/places/courses/dados_pos/geodata/">
   <meta property="og:title" content="Dados espaciais | Profa. Renata Oliveira">
-  <meta property="og:description" content="Instalação dos packages para manipulação de dados espaciais no RIntrodução aos packages sp e sfDados espaciais spDados espaciais GISToolsDados espaciais sfLendo e escrevendo dados espaciais no RLendo e escrevendo dados sp.Lendo e escrevendo dados sf.Uma introdução ao package tmapQuick tmapMapa completo por meio do tmapSistemas de coordenadasBase de dados EPGSAlterar projeçõesComo salvar meu mapaAdicionando mapa de contextoVisualização de fenômenos sociais no espaçoMapas coropléticosMapas de pontosRepresentação de fluxosMapas de calorCartogramasSímbolos proporcionaisPlotar pontos a partir de coordenadasInstalação dos packages para manipulação de dados espaciais no RInicialmente, faz-se necessária a instalação e carregamento dos packages:"><meta property="og:image" content="https://retaoliveira.github.io/places/img/icon-192.png">
+  <meta property="og:description" content="Instalação dos packages para manipulação de dados espaciais no R Introdução aos packages sp e sf  Dados espaciais sp Dados espaciais GISTools Dados espaciais sf  Lendo e escrevendo dados espaciais no R  Lendo e escrevendo dados sp. Lendo e escrevendo dados sf.  Uma introdução ao package tmap  Quick tmap Mapa completo por meio do tmap  Sistemas de coordenadas  Base de dados EPGS Alterar projeções  Como salvar meu mapa Adicionando mapa de contexto Visualização de fenômenos sociais no espaço  Mapas coropléticos Mapas de pontos Representação de fluxos Mapas de calor Cartogramas Símbolos proporcionais  Plotar pontos a partir de coordenadas   Instalação dos packages para manipulação de dados espaciais no R Inicialmente, faz-se necessária a instalação e carregamento dos packages:"><meta property="og:image" content="https://retaoliveira.github.io/places/img/icon-192.png">
   <meta property="twitter:image" content="https://retaoliveira.github.io/places/img/icon-192.png"><meta property="og:locale" content="pt-br">
   
   <meta property="article:published_time" content="2019-05-05T00:00:00&#43;01:00">
@@ -261,7 +261,43 @@
 
         
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>O que aprender</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/access/"><span>Acessibilidade</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/data/"><span>Ciência de dados</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/spatial/"><span>Análise espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Como aprender</span><span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             
@@ -797,10 +833,10 @@ class(georgia_sf)</code></pre>
 <pre><code>## [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
 <pre class="r"><code>georgia_sf # representa as dez primeiras feições</code></pre>
 <pre><code>## Simple feature collection with 159 features and 14 fields
-## geometry type:  MULTIPOLYGON
-## dimension:      XY
-## bbox:           xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
-## CRS:             +proj=longlat +ellps=WGS84
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
+## CRS:            +proj=longlat +ellps=WGS84
 ## First 10 features:
 ##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
 ## 0 31.75339 -82.28558    15744     75.6     8.2  11.43  0.64   19.9    20.76
@@ -894,7 +930,7 @@ writeOGR(obj=georgia, dsn=&quot;./shapefiles&quot;, layer=&quot;georgia&quot;, d
 <p>Para ler um <em>shapefile</em>, faça:</p>
 <pre class="r"><code>new_georgia &lt;- readOGR(dsn=&quot;./shapefiles/georgia.shp&quot;)</code></pre>
 <pre><code>## OGR data source with driver: ESRI Shapefile 
-## Source: &quot;D:\Dropbox\places\content\courses\dados_pos\shapefiles\georgia.shp&quot;, layer: &quot;georgia&quot;
+## Source: &quot;/Users/renataoliveira/Dropbox/places/content/courses/dados_pos/shapefiles/georgia.shp&quot;, layer: &quot;georgia&quot;
 ## with 159 features
 ## It has 14 fields</code></pre>
 <pre class="r"><code>class(new_georgia)</code></pre>
@@ -1040,10 +1076,12 @@ print(t2, vp=viewport(layout.pos.col = 2, height = 5))</code></pre>
 Repare que t1 é um objeto <code>sf</code> e t2 é um objeto <code>sp</code> e apresentam sistemas de referência diferentes.</p>
 <p>Para consultar os diferentes sistemas de projeção, verifique utilizando a função <code>crs</code>.</p>
 <pre class="r"><code>crs(georgia_sf)</code></pre>
-<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition</code></pre>
-<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition</code></pre>
+<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
+<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
 <pre><code>## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs</code></pre>
 <pre class="r"><code>crs(georgia2)</code></pre>
 <pre><code>## CRS arguments:
@@ -1363,7 +1401,7 @@ plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)</code></pre>
           , the
           <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
           <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
-          package, and the Academia Hugo for 
+          package, and 
           <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
           for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>

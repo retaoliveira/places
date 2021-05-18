@@ -3371,10 +3371,10 @@ class(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] &amp;quot;sf&amp;quot;         &amp;quot;data.frame&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia_sf # representa as dez primeiras feições&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Simple feature collection with 159 features and 14 fields
-## geometry type:  MULTIPOLYGON
-## dimension:      XY
-## bbox:           xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
-## CRS:             +proj=longlat +ellps=WGS84
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
+## CRS:            +proj=longlat +ellps=WGS84
 ## First 10 features:
 ##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
 ## 0 31.75339 -82.28558    15744     75.6     8.2  11.43  0.64   19.9    20.76
@@ -3468,7 +3468,7 @@ writeOGR(obj=georgia, dsn=&amp;quot;./shapefiles&amp;quot;, layer=&amp;quot;geor
 &lt;p&gt;Para ler um &lt;em&gt;shapefile&lt;/em&gt;, faça:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;new_georgia &amp;lt;- readOGR(dsn=&amp;quot;./shapefiles/georgia.shp&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## OGR data source with driver: ESRI Shapefile 
-## Source: &amp;quot;D:\Dropbox\places\content\courses\dados_pos\shapefiles\georgia.shp&amp;quot;, layer: &amp;quot;georgia&amp;quot;
+## Source: &amp;quot;/Users/renataoliveira/Dropbox/places/content/courses/dados_pos/shapefiles/georgia.shp&amp;quot;, layer: &amp;quot;georgia&amp;quot;
 ## with 159 features
 ## It has 14 fields&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;class(new_georgia)&lt;/code&gt;&lt;/pre&gt;
@@ -3614,10 +3614,12 @@ print(t2, vp=viewport(layout.pos.col = 2, height = 5))&lt;/code&gt;&lt;/pre&gt;
 Repare que t1 é um objeto &lt;code&gt;sf&lt;/code&gt; e t2 é um objeto &lt;code&gt;sp&lt;/code&gt; e apresentam sistemas de referência diferentes.&lt;/p&gt;
 &lt;p&gt;Para consultar os diferentes sistemas de projeção, verifique utilizando a função &lt;code&gt;crs&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in showSRID(uprojargs, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning in showSRID(SRS_string, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in showSRID(uprojargs, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in showSRID(SRS_string, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia2)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## CRS arguments:

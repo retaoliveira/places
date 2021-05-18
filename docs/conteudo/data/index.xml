@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciência de dados on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/places/conteudo/data/</link>
+    <description>Recent content in Ciência de dados on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    
+	    <atom:link href="https://retaoliveira.github.io/places/conteudo/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -265,10 +265,10 @@ class(georgia_sf)</code></pre>
 <pre><code>## [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
 <pre class="r"><code>georgia_sf # representa as dez primeiras feições</code></pre>
 <pre><code>## Simple feature collection with 159 features and 14 fields
-## geometry type:  MULTIPOLYGON
-## dimension:      XY
-## bbox:           xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
-## CRS:             +proj=longlat +ellps=WGS84
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
+## CRS:            +proj=longlat +ellps=WGS84
 ## First 10 features:
 ##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
 ## 0 31.75339 -82.28558    15744     75.6     8.2  11.43  0.64   19.9    20.76
@@ -362,7 +362,7 @@ writeOGR(obj=georgia, dsn=&quot;./shapefiles&quot;, layer=&quot;georgia&quot;, d
 <p>Para ler um <em>shapefile</em>, faça:</p>
 <pre class="r"><code>new_georgia &lt;- readOGR(dsn=&quot;./shapefiles/georgia.shp&quot;)</code></pre>
 <pre><code>## OGR data source with driver: ESRI Shapefile 
-## Source: &quot;D:\Dropbox\places\content\courses\dados_pos\shapefiles\georgia.shp&quot;, layer: &quot;georgia&quot;
+## Source: &quot;/Users/renataoliveira/Dropbox/places/content/courses/dados_pos/shapefiles/georgia.shp&quot;, layer: &quot;georgia&quot;
 ## with 159 features
 ## It has 14 fields</code></pre>
 <pre class="r"><code>class(new_georgia)</code></pre>
@@ -508,10 +508,12 @@ print(t2, vp=viewport(layout.pos.col = 2, height = 5))</code></pre>
 Repare que t1 é um objeto <code>sf</code> e t2 é um objeto <code>sp</code> e apresentam sistemas de referência diferentes.</p>
 <p>Para consultar os diferentes sistemas de projeção, verifique utilizando a função <code>crs</code>.</p>
 <pre class="r"><code>crs(georgia_sf)</code></pre>
-<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition</code></pre>
-<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj =
-## prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition</code></pre>
+<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
+<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
 <pre><code>## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs</code></pre>
 <pre class="r"><code>crs(georgia2)</code></pre>
 <pre><code>## CRS arguments:
