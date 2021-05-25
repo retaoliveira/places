@@ -79,12 +79,6 @@
   
 [[main]]
   parent = "Como aprender"
-  name = "Métodos Quantitativos para Suporte à Decisão na Gestão Urbana - 2021/1"
-  url = "courses/urban_analytics/"
-  weight = 20
-  
-[[main]]
-  parent = "Como aprender"
   name = "Análise de Dados para gestão organizacional - 2021/1"
   url = "courses/dados_grad/"
   weight = 30
