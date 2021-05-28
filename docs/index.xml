@@ -7,10 +7,19 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>pt-br</language>
     <copyright>Renata Oliveira {year}</copyright>
-    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://retaoliveira.github.io/places/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Como aprender</title>
+      <link>https://retaoliveira.github.io/places/courses/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>O que aprender</title>
@@ -27,15 +36,6 @@
       <pubDate>Tue, 27 Apr 2021 15:30:38 -0300</pubDate>
       
       <guid>https://retaoliveira.github.io/places/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Como aprender</title>
-      <link>https://retaoliveira.github.io/places/courses/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/courses/</guid>
       <description></description>
     </item>
     

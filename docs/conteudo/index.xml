@@ -44,6 +44,16 @@
 &lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Baixar e instalar o Git&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h1 id=&#34;os-vídeos-são-um-suporte-bacana-para-começarem-a-utilizarem-o-r&#34;&gt;Os vídeos são um suporte bacana para começarem a utilizarem o R.&lt;/h1&gt;
+&lt;h2 id=&#34;introdução-conceitual-ao-r&#34;&gt;Introdução conceitual ao R&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/iBgtV3oJYv0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;instalar-o-r&#34;&gt;Instalar o R&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/G03TwotgPQ8&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;instalar-o-rstudio&#34;&gt;Instalar o RStudio&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/aeK6-kPhofk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;instalar-pacotes-no-r&#34;&gt;Instalar pacotes no R&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/lfwMneERUEU&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
 &lt;p&gt;Nesse &lt;a href=&#34;https://www.curso-r.com/material/instalacao/&#34;&gt;site&lt;/a&gt; você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R.&lt;/p&gt;
 &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
 &lt;script&gt;

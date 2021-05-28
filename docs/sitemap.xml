@@ -55,6 +55,11 @@
   </url>
   
   <url>
+    <loc>https://retaoliveira.github.io/places/courses/dados_grad/</loc>
+    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://retaoliveira.github.io/places/conteudo/spatial/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url>
@@ -96,11 +101,6 @@
   
   <url>
     <loc>https://retaoliveira.github.io/places/conteudo/access/</loc>
-    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retaoliveira.github.io/places/courses/dados_grad/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -381,12 +381,17 @@
   </url>
   
   <url>
-    <loc>https://retaoliveira.github.io/places/conteudo/</loc>
+    <loc>https://retaoliveira.github.io/places/courses/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retaoliveira.github.io/places/</loc>
+    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retaoliveira.github.io/places/conteudo/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -458,11 +463,6 @@
   <url>
     <loc>https://retaoliveira.github.io/places/post/2020-12-30-dicas-sobre-rmarkdown/</loc>
     <lastmod>2020-12-30T20:47:37-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retaoliveira.github.io/places/courses/</loc>
-    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
