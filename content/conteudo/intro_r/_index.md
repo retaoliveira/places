@@ -54,6 +54,25 @@ No link acima é apresentado o processo de instalação para Windows. No mesmo s
 
 No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais. 
 
+----
+
+# Os vídeos são um suporte bacana para começarem a utilizarem o R. 
+
+## Introdução conceitual ao R
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/iBgtV3oJYv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Instalar o R
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/G03TwotgPQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Instalar o RStudio 
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/aeK6-kPhofk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Instalar pacotes no R
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/lfwMneERUEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ----
 
