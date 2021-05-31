@@ -1,0 +1,301 @@
+---
+date: '2020-12-24'
+draft: false
+menu:
+  dados_grad:
+    parent: Unidade 5 - Segmentação de mercado
+    weight: 10
+title: Segmentação de mercado
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+```{r}
+library(gmodels)
+library(factoextra)
+library(FactoMineR)
+library(ggplot2)
+library(ggcorrplot)
+library(psych)
+library(tidyverse)
+library(outliers)
+library(hrbrthemes)
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(viridis)
+library(hrbrthemes)
+library(knitr)
+library(kableExtra)
+```
+
+
+# Funções
+
+## Normalização MinMax
+
+```{r}
+norm_minmax <- function(x){
+                           (x- min(x)) /(max(x)-min(x))
+}
+
+```
+
+# O que é segmentação de mercado?
+
+Segmentação de mercado é o processo de divisão da base de clientes em vários grupos de indivíduos que compartilham uma semelhança de diferentes maneiras que são relevantes para o marketing, tais como sexo, idade, interesses e hábitos de gastos diversos.
+
+As empresas que implantam a segmentação de clientes consideram que cada cliente tem requisitos diferentes e exigem um esforço de marketing específico para tratá-los adequadamente. As empresas visam obter uma abordagem mais profunda do cliente que estão almejando. Portanto, seu objetivo tem que ser específico e deve ser adaptado para atender às exigências individuais de cada cliente. Além disso, através dos dados coletados, as empresas podem obter uma compreensão mais profunda das preferências dos clientes, bem como os requisitos para descobrir segmentos valiosos que lhes proporcionariam o máximo lucro. Desta forma, elas podem estratificar suas técnicas de marketing de forma mais eficiente e minimizar a possibilidade de risco ao seu investimento.
+
+A técnica de segmentação de clientes depende de vários diferenciais-chave que dividem os clientes em grupos a serem analisados. Dados relacionados à demografia, geografia, status econômico, bem como padrões comportamentais, desempenham um papel crucial na determinação da direção da empresa em direção aos vários segmentos.
+
+## Como implementar a segmentação de clientes no R?
+
+Na primeira etapa deste projeto de ciência de dados, vamos realizar a exploração de dados. Importaremos os pacotes essenciais necessários para esta função e, em seguida, leremos nossos dados. Finalmente, analisaremos os dados de entrada para obter as informações necessárias.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+customer_data=read.csv("https://raw.githubusercontent.com/retaoliveira/relements/main/data/Mall_Customers.csv?token=AKYVP2TU37DVTLG7CB6DYE3AM53OW")
+
+str(customer_data)
+
+names(customer_data)
+```
+
+Temos uma variável que é uma identificação do consumidor, uma variável de gênero, uma de idade, outra de renda anual em k$ e um score de gastos que varia entre 1 e 100. 
+
+Vamos agora exibir as primeiras seis linhas de nosso conjunto de dados usando a função head() e usar a função summary() para emitir o resumo do mesmo.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+head(customer_data)
+summary(customer_data$Age)
+
+sd(customer_data$Age)
+summary(customer_data$Annual.Income..k..)
+
+sd(customer_data$Annual.Income..k..)
+summary(customer_data$Age)
+
+sd(customer_data$Spending.Score..1.100.)
+```
+
+> Faça uma interpretação das variáveis
+
+<hr> 
+
+# Visualização de gênero do cliente
+
+Criaremos um barplot para mostrar a distribuição de gênero em nosso conjunto de dados de clientes_dados.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+a <- table(customer_data$Genre)
+
+ggplot(customer_data, aes(x = Genre)) +
+  geom_bar(fill="red") +
+  ggtitle("Usando o BarPlot para exibir a comparação de gênero") +
+  theme_ipsum() +
+  labs(x = "Gênero", y = "Número de ocorrências")
+```
+
+Pelo gráfico acima, observamos que o número de mulheres é maior do que o de homens. 
+
+# Visualização da distribuição etária
+
+Vamos traçar um histograma para visualizar a distribuição e traçar a freqüência das idades dos clientes. Primeiramente, procederemos com um resumo da variável Idade.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+summary(customer_data$Age)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+ggplot(customer_data, aes(x = Age)) +
+  geom_histogram(binwidth = 5) +
+  theme_ipsum() 
+
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+boxplot(customer_data$Age,
+       col="#ff0066",
+       main="Boxplot for Descriptive Analysis of Age")
+
+ggplot(customer_data, aes(y = Age)) +
+  geom_boxplot(fill="#ff0066") +
+  theme_ipsum() 
+```
+
+A partir das duas visualizações acima, concluímos que a idade mediana do cliente está entre 30 e 35 anos. A idade mínima dos clientes é 18 anos, enquanto que a idade máxima é 70 anos.
+
+# Análise da renda anual dos clientes
+
+Nesta seção do projeto R, vamos criar visualizações para analisar a renda anual dos clientes. Traçaremos um histograma e então procederemos a examinar estes dados usando um gráfico de densidade.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+summary(customer_data$Annual.Income..k..)
+
+ggplot(customer_data) +
+  geom_histogram(aes(x = Annual.Income..k..), binwidth = 10, fill = "#660033") +
+  theme_ipsum() +
+  ggtitle("Histogram for Annual Income")
+
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(customer_data) +
+  geom_density(aes(x = Annual.Income..k..), fill="#69b3a2", color="#e9ecef", alpha=0.8) +
+  theme_ipsum() +
+  ggtitle("Histogram for Annual Income")
+```
+
+Da análise descritiva acima, concluímos que a renda mínima anual dos clientes é de 15 e a máxima renda é de 137 mil $ anuais. As pessoas que ganham uma renda média de 70 têm a maior contagem de freqüência em nossa distribuição de histogramas. O salário médio de todos os clientes é de 60,56.
+
+
+# Análise da pontuação de gastos dos clientes
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+summary(customer_data$Spending.Score..1.100.)
+
+ggplot(customer_data, aes(y = Spending.Score..1.100.)) +
+  geom_boxplot(fill="#ff0066") +
+  theme_ipsum() 
+
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+ggplot(customer_data) +
+  geom_histogram(aes(x = Spending.Score..1.100.), binwidth = 10, fill = "#660033") +
+  theme_ipsum() +
+  ggtitle("HistoGgram for Spending Score")
+
+
+```
+
+Podemos ver que a Análise Descritiva da Pontuação de Gastos é que Min é 1, Max é 99 e a média é 50,20. Pelo histograma, concluímos que os clientes entre as classes 40 e 50 são os mais frequentes entre todas as classes.
+
+## K-Means Cluster para segmentação de mercado
+
+Ao utilizar o algoritmo K-Means clustering, o primeiro passo é indicar o número de clusters (k) que desejamos produzir. O algoritmo começa com a seleção aleatória de `k` objetos do conjunto de dados que servirão como os centros iniciais de nossos clusters. 
+
+Estes objetos selecionados são os meios de agrupamento, também conhecidos como centroides. Então, os objetos restantes são atribuídos aos centróides mais próximos. Esses centróides são definidos pela Distância Euclidiana presente entre o objeto e o cluster. Nos referimos a esta etapa como "atribuição de agrupamento". 
+
+Quando a atribuição é concluída, o algoritmo procede para calcular o novo valor médio de cada agrupamento presente nos dados. Após o recálculo dos centros, as observações são verificadas, identificando se elas estão mais próximas de um agrupamento diferente. Usando a média atualizada do cluster, os objetos passam por uma reatribuição. Isto passa repetidamente por várias iterações até que as atribuições de agrupamento parem de se alterar. Os clusters que estão presentes na iteração atual são os mesmos que foram obtidos na iteração anterior.
+
+
+### Determinando o número de clusters ótimos
+
+Ao trabalhar com clusters, é preciso especificar o número de clusters a serem utilizados. Para ajudá-lo a determinar os clusters ideais, há três métodos populares. Consideraremos o método de cotovelo. 
+
+O principal objetivo por trás de métodos de partição de clusters como o K-Means é definir os clusters de forma que a variação intra-cluster permaneça mínima.
+
+No R, é possível implementar essa análise por meio da função a seguir.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+df <- customer_data %>% 
+  mutate(Genre = ifelse(Genre == "Male", 1, 2)) %>% 
+  select("Genre", "Age", "Annual.Income..k..", "Spending.Score..1.100.")
+  
+fviz_nbclust(df, kmeans, method = "wss")+
+  geom_vline(xintercept = 6, linetype = 2)
+
+```
+
+Do gráfico acima, concluímos que 6 é um número apropriado de clusters.
+
+Usando a função `fviz_nbclust()`, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(NbClust)
+library(factoextra)
+
+fviz_nbclust(customer_data[,3:5], kmeans, method = "silhouette")
+```
+
+Agora, tomemos k = 6 como nosso número de clusters inicial.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+set.seed(12345)
+km.res <- kmeans(df, 6, nstart=25)
+print(km.res)
+```
+
+Na saída de nossa operação de kmeans, observamos uma lista com várias informações-chave. A partir daí, concluímos que as informações úteis são:
+
++ cluster - Este é um vetor de vários inteiros que denotam o cluster que tem uma alocação de cada ponto.+ 
++ totss - Isto representa a soma total dos quadrados.
++ centers - Matriz composta de vários centros de agrupamento
++ withinss - Este é um vetor que representa a soma intra-cluster dos quadrados tendo um componente por cluster.
++ tot.withinss - Denota a soma total intra-cluster de quadrados.
++ betweenss - Esta é a soma dos quadrados entre os quadrados de um cluster.
++ size - O número total de pontos que cada aglomerado possui.
+
+As médias das variáveis para os agrupamentos podem ser obtidas por meio da função:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+cluster_result <- aggregate(df, by=list(cluster=km.res$cluster), mean)
+cluster_result
+
+```
+
+## O conjunto de agrupamentos pode ser visualizado por meio da função:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+df2 <- cbind(df, cluster=km.res$cluster)
+
+km.res$centers
+
+a <- fviz_cluster(km.res, data=df2,
+             palette = c("#2E9FDF", "#00AFBB", "#E7B800", "#FC4E07", "#E46726", "#6D9EC1"),
+             #ellipse.type="euclid",
+             star.plot=TRUE,
+             repel=TRUE)
+
+a + theme_ipsum()
+
+```
+
+## Relacionando as variáveis:
+
+```{r}
+ggplot(df2, aes(x =Annual.Income..k.., y = Spending.Score..1.100.)) + 
+  geom_point(stat = "identity", aes(color = as.factor(cluster))) +
+  scale_color_discrete(name=" ",
+              breaks=c("1", "2", "3", "4", "5","6"),
+              labels=c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5","Cluster 6")) +
+  ggtitle("Segments of Mall Customers", subtitle = "Using K-means Clustering")
+```
+
+> Complete a análise a seguir identificando os agrupamentos:
+
+Da visualização acima, observamos que há uma distribuição de 6 clusters como segue:
+
++ Cluster ___ e ___ - Estes clusters representam os dados do cliente com o salário médio de renda, bem como o gasto médio anual de salário.
+
++ Cluster ___ - Este cluster representa o cliente_dados com uma alta renda anual, bem como um alto gasto anual.
+
++ Cluster ___ - Este grupo denota os dados do cliente com baixa renda anual, bem como o baixo gasto anual de renda.
+
++ Cluster ___ - Este cluster denota uma alta renda anual e um baixo gasto anual.
+
++ Cluster ___ - Este cluster representa uma baixa renda anual, mas seu alto gasto anual.
+
+Com a ajuda do clustering, podemos compreender muito melhor as variáveis, o que nos leva a tomar decisões cuidadosas. Com a identificação dos clientes, as empresas podem lançar produtos e serviços que visam clientes com base em vários parâmetros como renda, idade, padrões de gastos, etc. Além disso, padrões mais complexos, como revisões de produtos, são levados em consideração para melhor segmentação.
+
+## Síntese
+
+Neste projeto de ciência de dados, passamos pelo modelo de segmentação do cliente. Desenvolvemos isto por meio de um algoritmo de clustering chamado K-means clustering. Analisamos e visualizamos os dados e depois procedemos à implementação de nosso algoritmo. 
+
+<hr>
+
+_Créditos_[^1]
+
+[^1]: [Projeto Data Science - Segmentação de clientes usando o aprendizado de máquinas em R](https://data-flair.training/blogs/r-data-science-project-customer-segmentation/)

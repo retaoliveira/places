@@ -1,0 +1,71 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 12
+title: Tutorial 1
+weight: 20
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+## Diretrizes gerais:
+
+1. Baixe o arquivo .Rmd e abra no RStudio.  
+
+  [Arquivo](https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0)
+
+2. Instale os pacotes: 
+  - `"tidyverse"`
+  - `"tinytex"`
+  - `"knitr"`
+  - `"flexdashboard"`
+  - `"xaringan"`
+  - `"xaringanthemer"`
+  
+3. Chame as bibliotecas dos pacotes instalados
+  - `library("tidyverse")`
+  - `library("tinytex")`
+  - `library("knitr")`
+  - `library("flexdashboard")`
+  - `library("xaringan")`
+  - `library("xaringanthemer")`
+
+4. Corrija os problemas de códigos nos respectivos chunks. 
+
+5. Rode o arquivo .Rmd por meio do comando a seguir (copie e cole o comando no console + enter), substituindo o nome do arquivo pelo endereço **completo** em seu computador. 
+
+`rmarkdown::render("ENDEREÇAMENTODOARQUIVO.Rmd")`
+
+6. Salve o .Rmd e submeta-o por meio da tarefa no Sigaa. 
+
+> Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
+
+## Preparação para o exercício:
+
+Carregue o *data frame* *mtcars*
+
+```{r}
+data(mtcars)
+```
+
+## Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:
+
+Q1)
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+Head(mtcars)
+```
+

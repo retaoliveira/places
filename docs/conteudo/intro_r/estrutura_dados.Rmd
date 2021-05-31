@@ -211,51 +211,15 @@ str() # - Estrutura do data.frame. Mostra, entre outras coisas, as classes de ca
 cbind() # - Acopla duas tabelas lado a lado.   
 rbind() # - Empilha duas tabelas.   
 
-### Atividades de verificação de aprendizagem
+# Dicas de sites com informação interessante
 
-**Questão 1:**
+https://lhmet.github.io/adar-ebook/vetor.html
 
-Veja as cores de veículos comercializados por uma concessionária na semana passada. 
+http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-colours <- factor(c("red","blue","red","white",
-                    "silver","red","white","silver",
-                    "red","red","white","silver","silver"),
-                  levels=c("red","blue","white","silver","black"))
-```
+http://www.estatisticacomr.uff.br/?p=564
 
+https://livro.curso-r.com/3-r-base.html
 
-Se você colocar o código a seguir, o que acontece? Responda na atividade da semana.
-
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-colours[4] <- "orange"
-colours
-```
-
-
-Utilize a função `table` para determinar a quantidade de automóveis comercializados de cada cor. 
-
-
-**Questão 2:** 
-
-Considere:
-
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-car.type <- factor(c("saloon","saloon","hatchback",
-    "saloon","convertible","hatchback","convertible",
-    "saloon", "hatchback","saloon", "saloon",
-    "saloon","hatchback"),
-    levels=c("saloon","hatchback","convertible"))
-```
-Gere a tabela de frequências para os dados `car.type`. 
-
-Experimente: 
-
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-table(car.type, colours)
-```
-
-Qual a diferença entre o uso da função `table` com um ou argumentos? 
-Qual a diferença entre `table(car.type, colours)` e `table(colours, car.type)`?
-
+https://www.msperlin.com/padfeR/operacoes-basicas.html
 

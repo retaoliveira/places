@@ -4,12 +4,12 @@ draft: false
 lastmod: "2021-05-15T00:00:00Z"
 menu:
   log_urb:
-    name: "Logística"
-    weight: 1
-title: Logística
+    name: "Logística Urbana"
+    weight: 20
+title: Logística Urbana
 toc: true
 type: docs
-weight: 1
+weight: 20
 editor_options: 
   markdown: 
     wrap: sentence
@@ -17,7 +17,7 @@ editor_options:
 
 Neste tema vamos conhecer fundamentos e questões que compõe 
 
-Falar de como chegar ao conceito de Logística Urbana... 
+Falar de como chegar ao conceito de Logística... 
 
 <div id="disqus_thread"></div>
 <script>

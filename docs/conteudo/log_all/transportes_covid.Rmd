@@ -1,0 +1,32 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log_all:
+    parent: 4 - Transportes e distribuição física
+    weight: 11
+title: Impactos da pandemia COVID-19 nos transportes
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 11
+---
+
+Algumas notícias interessantes sobre os impactos da pandemia COVID-19 na movimentação internacional de cargas: 
+
+- [Cargo flows impacting hinterland transport](https://www.porteconomics.eu/wpsp-iaph-barometer-cargo-flows-impacting-hinterland-transport/)
+
+- [Disruptions and resilience in global container shipping and ports: covid-19 pandemic vs. 2008-2009 financial crisis](https://www.porteconomics.eu/disruptions-and-resilience-in-global-container-shipping-and-ports-covid-19-pandemic-vs-2008-2009-financial-crisis/)
+
+- [The correlation between the behaviour of ports and freight rates in Latin America and the Caribbean during the COVID19 pandemic](https://www.porteconomics.eu/the-correlation-between-the-behaviour-of-ports-and-freight-rates-in-latin-america-and-the-caribbean-during-the-covid19-pandemic/)
+
+- [All areas of the supply chain must work together in post-pandemic world](https://www.porttechnology.org/news/all-areas-of-the-supply-chain-must-work-together-in-post-pandemic-world/)
+
+- [Movimentação de contêineres no Porto de Santos, SP, bate recorde em outubro](https://portalacepg.com.br/movimentacao-de-conteineres-no-porto-de-santos-sp-bate-recorde-em-outubro/)
+
+
+> DICA: Para quem tem alguma dificuldade com o uso de língua estrangeira para leitura, há extensões para navegadores e apps que permitem tradução de páginas. Um app excelente é o [DeepL](https://www.deepl.com/translator)

@@ -1,10 +1,10 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
-draft: true
+date: "2021-06-09T00:00:00+01:00"
+draft: false
 menu:
   log:
     parent: Projetos
-    weight: 16
+    weight: 4
 title: Projeto 1
 toc: true
 type: docs
@@ -23,7 +23,7 @@ Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos 
 
 Esta atividade tem valor de 10 pontos e deverá ser entregue por meio do sigaa, na tarefa respectiva, informando o link do vídeo carregado no youtube. Os vídeos serão disponibilizados no site para que todos os colegas possam discutir os aspectos abordados pelo grupo nesta atividade. 
 
-O prazo para entrega desta atividade é dia **20/02/2021**. 
+O prazo para entrega desta atividade é dia **28/06/2021** pelo sigaa. 
 
 ### Criar um vídeo público no youtube conforme as seguintes diretrizes:
 

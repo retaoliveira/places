@@ -5,11 +5,11 @@ lastmod: "2021-05-05T00:00:00Z"
 menu:
   spatial:
     name: Análise espacial
-    weight: 10
+    weight: 40
 title: Geocomputing e Análise Espacial
 toc: true
 type: docs
-weight: 10
+weight: 40
 ---
 
 <div id="disqus_thread"></div>

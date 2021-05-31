@@ -1,0 +1,75 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 5 - Gestão de estoques e armazenagem
+    weight: 13
+title: Armazenagem
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 13
+---
+
+
+## Endereçamento de armazenagem
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/fRyiGVmB2i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Picking
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/h8JBZ8qLiy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Recebimento e conferência
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/BFyPEMWRpuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Inventário
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/iKNPIiL0KtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Gestão estratégica de armazenagem
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/2lLqjzOgUBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Armazenagem no Brasil
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/o-mfwZ4OIT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/HI46Nj8s5DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+https://www.linkedin.com/feed/update/urn:li:activity:6772601182000087040/
+
+<iframe width="946" height="645" src="https://www.youtube.com/embed/LQ4AeoQgDvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/g78M9H8H0MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/TgJxCloUya0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/d5NettAAiWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Armazéns automatizados
+
+<iframe width="1145" height="645" src="https://www.youtube.com/embed/xWApW5pSa4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/S8zDRu72HD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/IMPbKVb8y8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/4DKrcpa8Z_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/Ox05Bks2Q3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+

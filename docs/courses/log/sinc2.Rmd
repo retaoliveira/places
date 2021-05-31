@@ -1,12 +1,12 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
+date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
   log:
-    parent: Apresentações
-    weight: 25
+    parent: Encontros
+    weight: 13
 title: Encontro Síncrono 2
-weight: 25
+weight: 16
 editor_options: 
   markdown: 
     wrap: 72
@@ -19,7 +19,9 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class02_log', height = "400px")
+knitr::include_url('https://places-research.github.io/aula02_log/', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class02_log)
+[LINK](https://places-research.github.io/aula02_log/)
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/1N5s9xuUfc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

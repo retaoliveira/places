@@ -1,0 +1,30 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 7 - Sourcing
+    weight: 13
+title: Sourcing
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 13
+---
+
+Em elaboração
+
+<hr>
+
+# Alguns vídeos interessantes para entender um pouco mais sobre estoques
+
+## Gestão de estoques
+
+
+
+
+

@@ -31,39 +31,33 @@
   
 [[main]]
   parent = "O que aprender"
-  name = "Logística Urbana"
-  url = "conteudo/log_urb/"
+  name = "Logística"
+  url = "conteudo/log_all/"
   weight = 10
   
 [[main]]
   parent = "O que aprender"
-  name = "Acessibilidade"
-  url = "conteudo/access/"
+  name = "Logística Urbana"
+  url = "conteudo/log_urb/"
   weight = 20
-
-[[main]]
-  parent = "O que aprender"
-  name = "Ciência de dados"
-  url = "conteudo/data/"
-  weight = 30
   
 [[main]]
   parent = "O que aprender"
   name = "Introdução ao R"
   url = "conteudo/intro_r/"
-  weight = 40
+  weight = 30
   
 [[main]]
   parent = "O que aprender"
   name = "Análise espacial"
   url = "conteudo/spatial/"
-  weight = 50
+  weight = 40
   
 [[main]]
   parent = "O que aprender"
   name = "Urban Analytics"
   url = "conteudo/urban/"
-  weight = 60
+  weight = 50
 
 [[main]]
   name = "Como aprender"

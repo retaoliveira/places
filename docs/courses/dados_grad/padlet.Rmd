@@ -1,0 +1,19 @@
+---
+date: 2021-05-05T00:00:00+01:00
+draft: false
+menu:
+  dados_grad:
+    parent: Recursos do curso
+    weight: 5
+title: Padlet da disciplina
+type: docs
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+weight: 5
+---
+
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:480px;height:352px;max-width:100%"><iframe src="https://padlet.com/padlets/czkontp9cegkgfhx/embeds/preview_embed" style="width:100%;height:100%;display:block;padding:0;margin:0" frameborder="0"></iframe></div>

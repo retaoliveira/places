@@ -5,12 +5,12 @@ lastmod: "2021-05-05T00:00:00Z"
 menu:
   intro_r:
     name: R como instrumentos para a análise de dados
-    weight: 1
+    weight: 30
 summary: Introdução ao R
 title: R
 toc: true
 type: docs
-weight: 1
+weight: 30
 editor_options: 
   markdown: 
     wrap: sentence
@@ -27,56 +27,6 @@ Assim, o R é adequado para processos em que as organizações precisam testar t
 Este curso não tem a pretenção de formar analistas de sistemas, cientistas ou engenheiros de computação ou técnicos de informática. Assim, as funcionalidades apresentadas nos encontros e nas atividades propostas são orientadas à implementação prática e fundamentadas em teoria sobre a tomada de decisão orientada por informação (DOD). 
 
 
-### R   
-
-[Baixar e instalar o R](https://cran.r-project.org/bin/windows/base/)
-
-No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais. 
-
-**Links adicionais**
-[Visão geral e primeiros passos com R e RStudio](https://rpubs.com/cassiorampinelli/488999)
-
-----
-   
-### RStudio
-
-[Baixar e instalar o RStudio](https://rstudio.com/products/rstudio/download/)
-
-No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais. 
-
-[Estrutura do RStudio](https://www.curso-r.com/material/rstudio/)
-
-----
-
-### Git
-
-[Baixar e instalar o Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais. 
-
-----
-
-# Os vídeos são um suporte bacana para começarem a utilizarem o R. 
-
-## Introdução conceitual ao R
-
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/iBgtV3oJYv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Instalar o R
-
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/G03TwotgPQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Instalar o RStudio 
-
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/aeK6-kPhofk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Instalar pacotes no R
-
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/lfwMneERUEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-----
-
-Nesse [site](https://www.curso-r.com/material/instalacao/) você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R. 
 
 
 

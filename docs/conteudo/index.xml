@@ -13,6 +13,68 @@
     
     
     <item>
+      <title>Logística</title>
+      <link>https://retaoliveira.github.io/places/conteudo/log_all/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/log_all/</guid>
+      <description>&lt;p&gt;Neste tema vamos conhecer fundamentos e questões que compõe&lt;/p&gt;
+&lt;p&gt;Falar de como chegar ao conceito de Logística&amp;hellip;&lt;/p&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística Urbana</title>
+      <link>https://retaoliveira.github.io/places/conteudo/log_urb/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/conteudo/log_urb/</guid>
+      <description>&lt;p&gt;Neste tema vamos conhecer fundamentos e questões que compõe&lt;/p&gt;
+&lt;p&gt;Falar de como chegar ao conceito de Logística&amp;hellip;&lt;/p&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>https://retaoliveira.github.io/places/conteudo/intro_r/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
@@ -29,122 +91,7 @@
 &lt;/ol&gt;
 &lt;p&gt;Assim, o R é adequado para processos em que as organizações precisam testar teorias, explicar as relações de causa e efeito, iterar rapidamente, e tomar decisões. Além disso, os recursos de comunicação são eficientes e diversificados, incluindo relatórios empresariais, apresentações e aplicações web que podem ser construídos utilizando um fluxo de trabalho reproduzível.&lt;/p&gt;
 &lt;p&gt;Este curso não tem a pretenção de formar analistas de sistemas, cientistas ou engenheiros de computação ou técnicos de informática. Assim, as funcionalidades apresentadas nos encontros e nas atividades propostas são orientadas à implementação prática e fundamentadas em teoria sobre a tomada de decisão orientada por informação (DOD).&lt;/p&gt;
-&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;Baixar e instalar o R&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Links adicionais&lt;/strong&gt;
-&lt;a href=&#34;https://rpubs.com/cassiorampinelli/488999&#34;&gt;Visão geral e primeiros passos com R e RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;rstudio&#34;&gt;RStudio&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;Baixar e instalar o RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.curso-r.com/material/rstudio/&#34;&gt;Estrutura do RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Baixar e instalar o Git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;os-vídeos-são-um-suporte-bacana-para-começarem-a-utilizarem-o-r&#34;&gt;Os vídeos são um suporte bacana para começarem a utilizarem o R.&lt;/h1&gt;
-&lt;h2 id=&#34;introdução-conceitual-ao-r&#34;&gt;Introdução conceitual ao R&lt;/h2&gt;
-&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/iBgtV3oJYv0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;instalar-o-r&#34;&gt;Instalar o R&lt;/h2&gt;
-&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/G03TwotgPQ8&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;instalar-o-rstudio&#34;&gt;Instalar o RStudio&lt;/h2&gt;
-&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/aeK6-kPhofk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;instalar-pacotes-no-r&#34;&gt;Instalar pacotes no R&lt;/h2&gt;
-&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/lfwMneERUEU&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;hr&gt;
-&lt;p&gt;Nesse &lt;a href=&#34;https://www.curso-r.com/material/instalacao/&#34;&gt;site&lt;/a&gt; você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R.&lt;/p&gt;
 &lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
-    };
-    */
-    (function() { // DON&#39;T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement(&#39;script&#39;);
-    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
-    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Logística</title>
-      <link>https://retaoliveira.github.io/places/conteudo/log_urb/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/conteudo/log_urb/</guid>
-      <description>&lt;p&gt;Neste tema vamos conhecer fundamentos e questões que compõe&lt;/p&gt;
-&lt;p&gt;Falar de como chegar ao conceito de Logística Urbana&amp;hellip;&lt;/p&gt;
-&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
-    };
-    */
-    (function() { // DON&#39;T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement(&#39;script&#39;);
-    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
-    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ciência de dados</title>
-      <link>https://retaoliveira.github.io/places/conteudo/data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/conteudo/data/</guid>
-      <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
-    };
-    */
-    (function() { // DON&#39;T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement(&#39;script&#39;);
-    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
-    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Urban Analytics</title>
-      <link>https://retaoliveira.github.io/places/conteudo/urban/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/conteudo/urban/</guid>
-      <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -197,11 +144,11 @@
     </item>
     
     <item>
-      <title>Acessibilidade</title>
-      <link>https://retaoliveira.github.io/places/conteudo/access/</link>
-      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <title>Urban Analytics</title>
+      <link>https://retaoliveira.github.io/places/conteudo/urban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://retaoliveira.github.io/places/conteudo/access/</guid>
+      <guid>https://retaoliveira.github.io/places/conteudo/urban/</guid>
       <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
     /**

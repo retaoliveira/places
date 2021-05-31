@@ -1,0 +1,73 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 12
+title: Tutorial 1
+weight: 20
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+  <link rel="stylesheet" href="D:/assets/css/custom.css" type="text/css" />
+
+
+<div id="diretrizes-gerais" class="section level2">
+<h2>Diretrizes gerais:</h2>
+<ol style="list-style-type: decimal">
+<li>Baixe o arquivo .Rmd e abra no RStudio.</li>
+</ol>
+<p><a href="https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0">Arquivo</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Instale os pacotes:</li>
+</ol>
+<ul>
+<li><code>"tidyverse"</code></li>
+<li><code>"tinytex"</code></li>
+<li><code>"knitr"</code></li>
+<li><code>"flexdashboard"</code></li>
+<li><code>"xaringan"</code></li>
+<li><code>"xaringanthemer"</code></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Chame as bibliotecas dos pacotes instalados</li>
+</ol>
+<ul>
+<li><code>library("tidyverse")</code></li>
+<li><code>library("tinytex")</code></li>
+<li><code>library("knitr")</code></li>
+<li><code>library("flexdashboard")</code></li>
+<li><code>library("xaringan")</code></li>
+<li><code>library("xaringanthemer")</code></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Corrija os problemas de códigos nos respectivos chunks.</p></li>
+<li><p>Rode o arquivo .Rmd por meio do comando a seguir (copie e cole o comando no console + enter), substituindo o nome do arquivo pelo endereço <strong>completo</strong> em seu computador.</p></li>
+</ol>
+<p><code>rmarkdown::render("ENDEREÇAMENTODOARQUIVO.Rmd")</code></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Salve o .Rmd e submeta-o por meio da tarefa no Sigaa.</li>
+</ol>
+<blockquote>
+<p>Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.</p>
+</blockquote>
+</div>
+<div id="preparação-para-o-exercício" class="section level2">
+<h2>Preparação para o exercício:</h2>
+<p>Carregue o <em>data frame</em> <em>mtcars</em></p>
+<pre class="r"><code>data(mtcars)</code></pre>
+</div>
+<div id="encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script" class="section level2">
+<h2>Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:</h2>
+<p>Q1)</p>
+<pre class="r"><code>Head(mtcars)</code></pre>
+</div>

@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 5
+weight: 20
 ---
 
 Leia do artigo [Logística e Serviço ao Cliente: como Aumentar a satisfação do cliente através de uma cadeia de abastecimento eficaz](https://github.com/retaoliveira/relements/raw/main/texto/servico_log.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.

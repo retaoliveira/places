@@ -1,6 +1,6 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
-draft: true
+date: "2021-06-10T00:00:00+01:00"
+draft: false
 menu:
   dados_grad:
     parent: Projetos
@@ -26,12 +26,19 @@ Consideraremos três dimensões para construção do projeto integrador:
 ## Etapas essenciais para desenvolvimento de um projeto de suporte à decisão que contemple análise de dados
 
 1. Definição do problema - O primeiro e mais crítico passo é delinear as questões que pretende abordar por meio da análise de dados e desenhar hipóteses a partir da caracterização do problema.
+
 2. Coleta de dados - A coleta de dados é um passo muito crucial e não tão fácil como parece. O processo requer tempo e esforço. Nenhum conjunto de dados contém dados como se espera e envolve pesquisa, arranjos, reordenações e montagem final.
+
 3. Limpeza e transformação de dados - Se quiser que os seus resultados sejam consistentes, deve certificar-se de que a limpeza dos dados foi feita corretamente. Na essência, a limpeza de dados elimina dados desnecessários e duplicados da coleta de dados.
+
 4. Representação dos dados - representações gráficas permitem importantes insights sobre o fenômeno ou processo em investigação. 
+
 5. Análise dos dados - Nesta fase, tem de detectar tendências e padrões nos dados coletados, agrupá-los em conformidade, e compreender o comportamento dos dados para que seja possível caracterizar o processo em investigação.
+
 6. Modelagem dos dados - Nesta fase, os dados são divididos em duas partes - uma para formação e desenvolvimento de modelos, e a outra para testes.
+
 7. Otimização e implementação do modelo - Nesta etapa, o modelo é implementado visando acurácia e eficiência das análises.
+
 8. Comunicação da análise, discussão e resultados. Nessa etapa, os grupos deverão reservar parte do instrumento de comunicação para discussão ética do uso dos dados para a análise em curso e discutir implicações nos curso, médio e longo prazos para a sociedade, apresentando aspectos positivos e negativos da exploração de dados para suporte ao processo decisório em questão.
 
 Nesse projeto, em função da natureza da disciplina que tem como objetivo proporcionar aos estudantes competências para realização de análise exploratória de dados, as etapas 6 e 7 não serão exploradas no projeto integrador.
@@ -42,15 +49,14 @@ As entregas parciais deverão ser realizadas conforme o cronograma a seguir que 
 
 | Data | Etapa concluída |
 |------|-----------------|
-|12/02|Descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados|
-|12/03|Dados processados (limpeza e transformação) e estrutura do instrumento de comunicação esboçada|
-|19/03|Representação do problema e dos instrumentos de análise orientada pelos dados|
-|02/04|Análise e discussão dos resultados e instrumento de comunicação final|
-|09/04|Apresentação do instrumento final para a turma|
+|01/07|Descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados|
+|26/08|Dados processados (limpeza e transformação) e estrutura do instrumento de comunicação esboçada|
+|09/09|Análise e discussão dos resultados e instrumento de comunicação final|
+|10/09|Apresentação do instrumento final para a turma|
 
 ## Organização das atividades:
 
-1. **Composição dos grupos de trabalho:** Cada grupo será composto por **4 (quatro) alunos**. Esse grupo deve se manter para realização dos `PROJETOS INCREMENTAIS`, realizadas após e antes dos encontros síncronos, e para construção do `PROJETO INTEGRADOR`. 
+1. **Composição dos grupos de trabalho:** Cada grupo será composto por **4 (quatro) alunos**. Esse grupo deve se manter para realização dos `TUTORIAIS`, realizadas após e antes dos encontros síncronos, e para construção do `PROJETO INTEGRADOR`. 
 
 2. **Planejamento da execução do trabalho:** Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução. 
 
@@ -124,17 +130,17 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
 
 ### Rubrica de avaliação
 
-Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto integrador que são úteis para nortear o desenvolvimento do trabalho. Esta atividade será avaliada em `40 pontos`.
+Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto integrador que são úteis para nortear o desenvolvimento do trabalho. Esta atividade será avaliada em `60 pontos`.
 
 > Certifique-se que você está cadastrado ao servidor da disciplina no `Teams`, pois o processo de desenvolvimento do projeto será tão importante quanto seu resultado para a avaliação e eu acompanharei as discussões, análises e resultados por lá. 
 
-Os `40 pontos` serão distribuídos em: 
+Os `60 pontos` serão distribuídos em: 
 
 |Item|Pontuação
 |----|-----------------
-|Relatório/instrumento de comunicação|25
-|Apresentação do projeto|5
-|Trabalho em equipe - avaliação pelos pares|10
+|Relatório/instrumento de comunicação|30
+|Apresentação do projeto|15
+|Trabalho em equipe - avaliação pelos pares|15
 
 Segue a discriminação geral da pontuação:
 
@@ -155,14 +161,14 @@ Segue a discriminação geral da pontuação:
 |Pertinência das hipóteses geradas|1
 |Consistência do objetivo geral proposto|2
 
-##### 2. Organização, limpeza e transformação dos dados (5 pontos)
+##### 2. Organização, limpeza e transformação dos dados (10 pontos)
 
 |Item|Pontuação
 |----|-----------------
-|Escolha das fontes para coleta de dados|2
-|Escolha e implementação dos instrumentos para organização e limpeza dos dados|1
-|Organização final dos dados |1
-|Escolha e implementação das variáveis e indicadores para análise|1
+|Escolha das fontes para coleta de dados|4
+|Escolha e implementação dos instrumentos para organização e limpeza dos dados|2
+|Organização final dos dados |2
+|Escolha e implementação das variáveis e indicadores para análise|2
 
 ##### 3. Representação dos dados para suporte à decisão (5 pontos)
 
@@ -193,7 +199,7 @@ Segue a discriminação geral da pontuação:
 |Criatividade e pensamento crítico|1
 
 
-#### Apresentação do projeto (5 pontos)
+#### Apresentação do projeto (15 pontos)
 
 10 minutos no máximo, e cada membro da equipe deve dizer algo substancial. Você pode apresentar ao vivo durante o encontro ou pré-gravar e enviar seu vídeo para ser reproduzido durante o encontro.
 
@@ -203,12 +209,11 @@ O esquema de notas (rubrica) para a apresentação é o seguinte:
 
 |Item|Pontuação
 |----|-----------------
-|Gerenciamento de tempo: A equipe dividiu bem o tempo entre si ou foi cortada ao longo do tempo?	|1
-|Conteúdo: A questão da pesquisa está bem projetada e os dados estão sendo usados de forma relevante para a questão da pesquisa?|1
-|Profissionalismo: Até que ponto a equipe se apresentou bem? A apresentação parece ter sido bem praticada? Todos tiveram a oportunidade de dizer algo significativo sobre o projeto?|1
-|Trabalho em equipe: A equipe apresentou uma história unificada, ou pareceu um trabalho independente remendado em conjunto?|1
-|Slides: Os slides são bem organizados, legíveis, não estão cheios de texto, apresentando figuras com etiquetas legíveis, lendas, etc.?|1
+|Gerenciamento de tempo: A equipe dividiu bem o tempo entre si ou foi cortada ao longo do tempo?	|2
+|Conteúdo: A questão da pesquisa está bem projetada e os dados estão sendo usados de forma relevante para a questão da pesquisa?|5
+|Profissionalismo: Até que ponto a equipe se apresentou bem? A apresentação parece ter sido bem praticada? Todos tiveram a oportunidade de dizer algo significativo sobre o projeto?|3
+|Trabalho em equipe: A equipe apresentou uma história unificada, ou pareceu um trabalho independente remendado em conjunto?|3
+|Slides: Os slides são bem organizados, legíveis, não estão cheios de texto, apresentando figuras com etiquetas legíveis, lendas, etc.?|2
 
-#### Trabalho em equipe - avaliação pelos pares (10 pontos)
+#### Trabalho em equipe - avaliação pelos pares (15 pontos)
 
-Você deverá preencher uma pesquisa onde avaliará a contribuição e o trabalho em equipe de cada membro da **SUA** equipe em `10 pontos`. Além disso, você informará um percentual de contribuição para cada membro da equipe. O preenchimento desse formulário é um pré-requisito para obtenção de crédito na avaliação do membro da equipe. Se você estiver sugerindo que um indivíduo fez menos de 20% do trabalho, por favor, dê alguma explicação. Se qualquer indivíduo obtiver uma pontuação média de colegas indicando que fez menos de 10% do trabalho, essa pessoa receberá metade da nota do resto do grupo.

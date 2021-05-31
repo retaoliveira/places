@@ -1,0 +1,134 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log_all:
+    parent: 1 - Definindo Logística
+    weight: 20
+title: Desafios contemporâneos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+# Desafios contemporâneos
+Desafios contemporâneos permeiam as decisões logísticas ao longo da cadeia de suprimentos. Ao longo deste curso, vamos explorar esses desafios e a expectativa de mudanças estruturais: conceituais e práticas.
+
+## Alguns desafios da/para Logística 4.0:
+
+- **redução nos volumes de estoque de matéria-prima** ao longo da cadeia de suprimentos e o desenvolvimento de **fornecedores** aptos ao atendimento de pedidos seguindo as necessidades reais do negócio;
+- pela **diminuição dos custos com perda de ativos e com transportes**;
+- pela transformação da organização dos processos de **estocagem e armazenagem**;
+- por **integrar e compartilhar dados** mediante plataformas abertas;
+- por **desburocratizar processos** e **obter diferenciais competitivos**;
+- por **aumentar os níveis de segurança** do sistema;
+- pela **identificação de problemas**, permitindo a adoção rápida e prática de soluções pertinentes;
+- por proporcionar o **fluxo de informações, serviços e produtos.**
+- **digitalização**
+- **virtualização dos processos**
+- **conectividade** e **visibilidade** (visão)
+- **transparência de processos e atuação** (entendimento)
+- **capacidade preditiva** (estar preparado) e 
+- **adaptabilidade** ao sistema (otimização).
+
+[Fonte](https://www.grupotpc.com/blog/logistica-4-0/) 
+
+**RESILIÊNCIA? RESPONSABILIDADE? BEM ESTAR?**
+<br></br>
+<br></br>
+
+---
+
+# "Dark economy" como solução logística
+
+<br></br>
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/QJI0_FuddDs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Fonte](https://kitchencentral.com.br/darkkitchens/?utm_source=gsearch&utm_channel=search&utm_campaign=brazil_gs_bh&utm_ad=1&gclid=CjwKCAiAu8SABhAxEiwAsodSZHc5lYEqh3rAGaYP6MS4lhCoLDo9F33_5pB5-q1dsEFyJfbHJOWg3xoCs3IQAvD_BwE)
+
+--
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/praca.png")
+```
+
+[Fonte](https://guia.folha.uol.com.br/restaurantes/2020/06/praca-de-alimentacao-virtual-e-novidade-em-aplicativos-de-delivery.shtml)
+
+--
+
+"Os horários de abertura são determinados pelos próprios estabelecimentos. Como um último recurso, em casos críticos em que o restaurante não consegue acompanhar a demanda ou na área específica os entregadores já estiverem com alta taxa de ocupação, essa medida é tomada momentaneamente para equilibrar a oferta e demanda. Isso evita grande impactos para os restaurantes, tanto em sua operação como em avaliação de clientes que poderiam ter um nível de experiência ruim."
+
+[Fonte](https://boteclando.blogosfera.uol.com.br/2020/07/04/ifood-fecha-restaurantes-abertos-e-prejudica-estabelecimentos/)
+
+--
+
+Mais notícias interessantes... 
+
+[Restaurantes](https://boteclando.blogosfera.uol.com.br/2020/07/04/ifood-fecha-restaurantes-abertos-e-prejudica-estabelecimentos/)
+
+[Restaurantes 2](https://economia.uol.com.br/noticias/bbc/2020/02/08/como-apps-de-entrega-estao-levando-pequenos-restaurantes-a-falencia.htm)
+
+[Restaurantes 3](https://www.scuadra.com.br/blog/tendencias-2021-no-setor-de-restaurantes-e-delivery/)
+
+<br></br>
+<br></br>
+
+---
+
+# Ameaças à responsividade e à eficiência na Gestão das Cadeias de Suprimentos
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/cam.png")
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/cam2.png")
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/cam3.png")
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/cam4.png")
+```
+
+[Fonte](https://www.cnnbrasil.com.br/business/2021/01/26/chamado-de-greve-dos-caminhoneiros-ganha-apoio-de-confederacao-cnttl)
+
+<br></br>
+<br></br>
+
+---
+
+# Enquanto isso.... Transformações importantes em curso!
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/auto.png")
+```
+
+[Fonte](https://medium.com/@recogni/autonomous-vehicles-and-last-mile-delivery-2249bb16fdd7)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/drone.png")
+```
+
+[Fonte](https://blogs.sw.siemens.com/thought-leadership/2020/04/16/autonomous-last-mile-delivery/)
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/dagjQW_jgtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/WKf-VDAHZi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/NrmMk1Myrxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+

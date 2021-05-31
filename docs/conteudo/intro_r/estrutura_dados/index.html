@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Tipos de dados no R Tipos de classes no R Atividades de verificação de aprendizagem   Tipos de dados no R No R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.
+  <meta name="description" content="Tipos de dados no RTipos de classes no RDicas de sites com informação interessanteTipos de dados no RNo R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.
 A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica.">
 
   
@@ -128,7 +128,7 @@ A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."
   <meta property="og:site_name" content="Profa. Renata Oliveira">
   <meta property="og:url" content="https://retaoliveira.github.io/places/conteudo/intro_r/estrutura_dados/">
   <meta property="og:title" content="Tipos de dados, objetos e operadores no R | Profa. Renata Oliveira">
-  <meta property="og:description" content="Tipos de dados no R Tipos de classes no R Atividades de verificação de aprendizagem   Tipos de dados no R No R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.
+  <meta property="og:description" content="Tipos de dados no RTipos de classes no RDicas de sites com informação interessanteTipos de dados no RNo R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.
 A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."><meta property="og:image" content="https://retaoliveira.github.io/places/img/icon-192.png">
   <meta property="twitter:image" content="https://retaoliveira.github.io/places/img/icon-192.png"><meta property="og:locale" content="pt-br">
   
@@ -268,15 +268,11 @@ A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."
           <ul class="dropdown-menu">
             
             <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/places/conteudo/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
               <a href="/places/conteudo/log_urb/"><span>Logística Urbana</span></a>
-            </li>
-            
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/places/conteudo/access/"><span>Acessibilidade</span></a>
-            </li>
-            
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/places/conteudo/data/"><span>Ciência de dados</span></a>
             </li>
             
             <li class="dropdown-item my-0 py-0 mx-0 px-0">
@@ -426,15 +422,19 @@ A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/places/conteudo/intro_r/intro_r/">1 - Análise de dados para gestão</a>
+    <a class="docs-toc-link" href="/places/conteudo/intro_r/install/">1 - Análise de dados para gestão</a>
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/places/conteudo/intro_r/intro_r/">Conhecendo o R</a>
+        <a href="/places/conteudo/intro_r/install/">Instalação de R, RStudio e Git</a>
       </li>
       
       <li >
         <a href="/places/conteudo/intro_r/intro_dataana/">Introdução à Análise de Dados</a>
+      </li>
+      
+      <li >
+        <a href="/places/conteudo/intro_r/intro_r/">Conhecendo o R</a>
       </li>
       
       <li >
@@ -471,8 +471,8 @@ A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."
         <a href="/places/conteudo/intro_r/abrindo_dados/">Abrindo dados no R</a>
       </li>
       
-      <li class="active">
-        <a href="/places/conteudo/intro_r/estrutura_dados/">Tipos de dados, objetos e operadores no R</a>
+      <li >
+        <a href="/places/conteudo/intro_r/estrutura_dados.knit/">Tipos de dados, objetos e operadores no R</a>
       </li>
       
       <li >
@@ -549,7 +549,7 @@ A função de teste retorna sempre TRUE ou FALSE, pois é uma função lógica."
 <ul>
 <li><a href="#tipos-de-dados-no-r">Tipos de dados no R</a></li>
 <li><a href="#tipos-de-classes-no-r">Tipos de classes no R</a></li>
-<li><a href="#atividades-de-verificação-de-aprendizagem">Atividades de verificação de aprendizagem</a></li>
+<li><a href="#dicas-de-sites-com-informação-interessante">Dicas de sites com informação interessante</a></li>
 </ul>
 </div>
 
@@ -709,38 +709,13 @@ cbind() # - Acopla duas tabelas lado a lado.<br />
 rbind() # - Empilha duas tabelas.</p>
 </div>
 </div>
-<div id="atividades-de-verificação-de-aprendizagem" class="section level3">
-<h3>Atividades de verificação de aprendizagem</h3>
-<p><strong>Questão 1:</strong></p>
-<p>Veja as cores de veículos comercializados por uma concessionária na semana passada.</p>
-<pre class="r"><code>colours &lt;- factor(c(&quot;red&quot;,&quot;blue&quot;,&quot;red&quot;,&quot;white&quot;,
-                    &quot;silver&quot;,&quot;red&quot;,&quot;white&quot;,&quot;silver&quot;,
-                    &quot;red&quot;,&quot;red&quot;,&quot;white&quot;,&quot;silver&quot;,&quot;silver&quot;),
-                  levels=c(&quot;red&quot;,&quot;blue&quot;,&quot;white&quot;,&quot;silver&quot;,&quot;black&quot;))</code></pre>
-<p>Se você colocar o código a seguir, o que acontece? Responda na atividade da semana.</p>
-<pre class="r"><code>colours[4] &lt;- &quot;orange&quot;
-colours</code></pre>
-<pre><code>##  [1] red    blue   red    &lt;NA&gt;   silver red    white  silver red    red   
-## [11] white  silver silver
-## Levels: red blue white silver black</code></pre>
-<p>Utilize a função <code>table</code> para determinar a quantidade de automóveis comercializados de cada cor.</p>
-<p><strong>Questão 2:</strong></p>
-<p>Considere:</p>
-<pre class="r"><code>car.type &lt;- factor(c(&quot;saloon&quot;,&quot;saloon&quot;,&quot;hatchback&quot;,
-    &quot;saloon&quot;,&quot;convertible&quot;,&quot;hatchback&quot;,&quot;convertible&quot;,
-    &quot;saloon&quot;, &quot;hatchback&quot;,&quot;saloon&quot;, &quot;saloon&quot;,
-    &quot;saloon&quot;,&quot;hatchback&quot;),
-    levels=c(&quot;saloon&quot;,&quot;hatchback&quot;,&quot;convertible&quot;))</code></pre>
-<p>Gere a tabela de frequências para os dados <code>car.type</code>.</p>
-<p>Experimente:</p>
-<pre class="r"><code>table(car.type, colours)</code></pre>
-<pre><code>##              colours
-## car.type      red blue white silver black
-##   saloon        2    1     1      2     0
-##   hatchback     3    0     0      1     0
-##   convertible   0    0     1      1     0</code></pre>
-<p>Qual a diferença entre o uso da função <code>table</code> com um ou argumentos?
-Qual a diferença entre <code>table(car.type, colours)</code> e <code>table(colours, car.type)</code>?</p>
+<div id="dicas-de-sites-com-informação-interessante" class="section level1">
+<h1>Dicas de sites com informação interessante</h1>
+<p><a href="https://lhmet.github.io/adar-ebook/vetor.html" class="uri">https://lhmet.github.io/adar-ebook/vetor.html</a></p>
+<p><a href="http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html" class="uri">http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html</a></p>
+<p><a href="http://www.estatisticacomr.uff.br/?p=564" class="uri">http://www.estatisticacomr.uff.br/?p=564</a></p>
+<p><a href="https://livro.curso-r.com/3-r-base.html" class="uri">https://livro.curso-r.com/3-r-base.html</a></p>
+<p><a href="https://www.msperlin.com/padfeR/operacoes-basicas.html" class="uri">https://www.msperlin.com/padfeR/operacoes-basicas.html</a></p>
 </div>
 
           </div>
@@ -765,7 +740,7 @@ Qual a diferença entre <code>table(car.type, colours)</code> e <code>table(colo
   
   <div class="post-nav-item">
     <div class="meta-nav">Próximo</div>
-    <a href="/places/conteudo/intro_r/ggplot/" rel="prev">Visualização de dados</a>
+    <a href="/places/conteudo/intro_r/estrutura_dados.knit/" rel="prev">Tipos de dados, objetos e operadores no R</a>
   </div>
   
 </div>

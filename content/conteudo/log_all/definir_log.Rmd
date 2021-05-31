@@ -1,0 +1,45 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log_all:
+    parent: 1 - Definindo Logística
+    weight: 10
+title: Afinal, o que é Logística?
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+
+Definir Logística é um grande desafio. Vários autores fizeram diferentes propostas de definições ao longo do tempo. Penso que o logística é muito mais um conjunto de princípios do que uma operação. "Fazer" logística relaciona-se à promover o acesso a bens de consumo e serviços, essenciais à vida humana e promovidos pelo consumo, destinados ao consumidor final da maneira mais eficiente e responsiva possível. 
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/Il0frfdhPbg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Conhecer um pouco sobre o futuro das profissões é essencial para que possamos entender o mundo em que vivemos:
+
+<iframe width="891" height="501" src="https://www.youtube.com/embed/2j00U6lUC-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="668" height="501" src="https://www.youtube.com/embed/Ngf8Jq2nuGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+As operações que envolvem esses princípios apresentam-se em diferentes dimensões, contextos e níveis de integração. Estão fundamentalmente relacionadas a um posicionamento estratégico de fluxos e entregas necessários para que seja possível deixar o consumidor feliz e garantir a competitividade das empresas. Esse é o objetivo finalístico das operações logísticas. Não existe otimização dessas operações, mas sim, a busca de um `TRADE-OFF` entre `nível de serviço` e `custo.` 
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/5Ky98pI3FBQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A implementação da Logística no contexto empresarial passou por diferentes etapas, desde uma atuação fragmentada das operações até a integração estratégica da cadeia produtiva. Quando há plena integração quanto ao processo de decisão em relação à `ENTREGA`, a estrutura consolidada é denominada `Cadeia de Suprimentos`. 
+**Cadeia de suprimentos** é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o _trade-off_ entre **responsividade** e **eficiência**, além de garantia de um contexto sustentável de desenvolvimento por ações **socialmente responsáveis** e **resilientes.** 
+
+Desafios contemporâneos permeiam as decisões logísticas ao longo da cadeia de suprimentos. Ao longo deste curso, vamos explorar esses desafios e a expectativa de mudanças estruturais: conceituais e práticas.
+
+<iframe width="894" height="503" src="https://www.youtube.com/embed/fAa9xxquj14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br></br>
+
+[Quiz de verificação de aprendizagem](http://www.quiz.com.br/qa/4839/)
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/63o70UWJthM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

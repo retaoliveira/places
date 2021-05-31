@@ -1,0 +1,29 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log_all:
+    parent: 3 - Integração Logística e sistemas de informação
+    weight: 10
+title: Logística 4.0
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho. 
+
+Essas mudanças são fruto da quarta revolução industrial estruturada por meio do uso de tecnologia para convergência entre os mundos físico, digital e biológico. Trata-se de um processo de transformação que beneficiará apenas os indivíduos e as sociedades que forem capazes de inovar e se adaptar. 
+
+O termo Supply Chain 4.0 é geralmente associado à transformação digital oriunda da adoção e convergência de um conjunto de tecnologias disruptivas, como robótica, Inteligência Artificial (IA), big data, internet das coisas (IoT) e impressão 3D, dentre outras. Embora a tecnologia seja a protagonista, uma transformação cultural e do modelo de gestão são igualmente fundamentais para alcançar os níveis de performance pretendidos com a adoção destas soluções, obrigando a uma completa reconfiguração das cadeias de suprimentos com foco na satisfação do consumidor. Com a aceleração da transformação digital no enfrentamento dos desafios impostos pela pandemia, entender os aspectos relevantes para reconfiguração da cadeia é fundamental, não só para superar a crise, mas também para se posicionar como líder no pós-pandemia.
+
+Seguem duas publicações interessantes sobre os impactos da 4a revolução industrial na gestão da cadeia de suprimentos. Percebam que a primeira é de `2008` e a segunda de `2020`.  
+
+- [Futuro e Tendências em Logística e Supply Chain](https://github.com/retaoliveira/relements/raw/main/texto/2008.pdf)
+
+- [Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos](https://github.com/retaoliveira/relements/raw/main/texto/2020_varejo.pdf)

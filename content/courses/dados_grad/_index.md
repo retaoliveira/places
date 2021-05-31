@@ -65,8 +65,8 @@ A aprendizagem na disciplina será avaliada por meio da consolidação de ativid
 
 | Pontos | Entrega | Atividade                                                                                                                                                                                                                                                    |
 |--------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5 | 03/06 | Lab 1 – Introdução do R e IDE RStudio. RMarkdown. |
-| 5 | 17/06 | Lab 2 – Tipos de dados e objetos no R|
+| 5 | 17/06 | Lab 1 – Introdução do R e IDE RStudio. RMarkdown. |
+| 5 | 24/06 | Lab 2 – Tipos de dados e objetos no R|
 | 5 | 01/07 | Lab 3 – Visualização de dados – base ggplot2|
 | 5 | 15/07 | Lab 4 – Importação e introdução ao tratamento de dados no R.|
 | 5 | 22/07 | Lab 5 – Tratamento de dados - dplyr|

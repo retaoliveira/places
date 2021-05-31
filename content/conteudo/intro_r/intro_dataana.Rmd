@@ -4,7 +4,7 @@ draft: false
 menu:
   intro_r:
     parent: 1 - Análise de dados para gestão
-    weight: 11
+    weight: 10
 title: Introdução à Análise de Dados
 editor_options: 
   markdown: 
