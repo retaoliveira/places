@@ -7,10 +7,20 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>pt-br</language>
     <copyright>Renata Oliveira {year}</copyright>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 17:10:58 -0300</lastBuildDate>
     
 	    <atom:link href="https://retaoliveira.github.io/places/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A farra dos preços baixos no Uber e no Airbnb está próxima do fim</title>
+      <link>https://retaoliveira.github.io/places/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</link>
+      <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.terra.com.br/noticias/tecnologia/a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim,1859fe282da8d13c5d7a416e6afe6529g19nwc79.html&#34;&gt;A farra dos preços baixos no Uber e no Airbnb está próxima&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Principais comandos do Git</title>
@@ -294,6 +304,10 @@ Tools for selecting colour combinations.&lt;/p&gt;
 Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.&lt;/p&gt;
 &lt;p&gt;Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios &lt;code&gt;local&lt;/code&gt;e &lt;code&gt;remoto&lt;/code&gt;. O próprio &lt;code&gt;Github&lt;/code&gt; tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o &lt;a href=&#34;https://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Ainda tenho que me acostumar a utilizar o &lt;code&gt;RStudio&lt;/code&gt; para gerenciar versão no &lt;code&gt;Github&lt;/code&gt;. Sim, é possível. Mas até agora achei que o &lt;code&gt;GitKraken&lt;/code&gt; é mais rápido e eficiente.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: acesse o &lt;a href=&#34;https://retaoliveira.github.io/places/post/principais-comandos-do-git/&#34;&gt;post&lt;/a&gt; para dicas de comandos básicos do &lt;code&gt;Git&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;Créditos&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;

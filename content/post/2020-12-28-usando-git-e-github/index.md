@@ -51,6 +51,9 @@ Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo t
 Ainda tenho que me acostumar a utilizar o `RStudio` para gerenciar versão no `Github`. Sim, é possível. Mas até agora achei que o `GitKraken` é mais rápido e eficiente. 
 
 ---
+> Dica: acesse o [post](https://retaoliveira.github.io/places/post/principais-comandos-do-git/) para dicas de comandos básicos do `Git`. 
+
+---
 Créditos
 
 https://amber.rbind.io/2016/12/19/website/
