@@ -7,10 +7,28 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>pt-br</language>
     <copyright>Renata Oliveira {year}</copyright>
-    <lastBuildDate>Tue, 27 Apr 2021 15:30:38 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://retaoliveira.github.io/places/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Análise de dados</title>
+      <link>https://retaoliveira.github.io/places/category/analise-de-dados/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/category/analise-de-dados/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://retaoliveira.github.io/places/category/git/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/category/git/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>FeliCIDADE</title>
@@ -18,15 +36,6 @@
       <pubDate>Tue, 27 Apr 2021 15:30:38 -0300</pubDate>
       
       <guid>https://retaoliveira.github.io/places/category/felicidade/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Análise de dados</title>
-      <link>https://retaoliveira.github.io/places/category/analise-de-dados/</link>
-      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/category/analise-de-dados/</guid>
       <description></description>
     </item>
     

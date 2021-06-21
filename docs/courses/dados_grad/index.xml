@@ -423,6 +423,8 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
 &lt;iframe src=&#34;https://places-research.github.io/class03_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class03_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/20IucWjr0I4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
 </description>
     </item>
     
@@ -504,7 +506,7 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
 &lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Diretrizes gerais:&lt;/h2&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Baixe o arquivo e abra no RStudio.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Baixe o arquivo e abra no RStudio. &lt;a href=&#34;https://www.dropbox.com/s/027ibiwzsfz128v/tutorial2.Rmd?dl=0&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Execute as operações assinaladas nos exercícios a seguir.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Salve o .Rmd e submeta-o por meio desta tarefa.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
