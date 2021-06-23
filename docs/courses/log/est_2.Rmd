@@ -4,8 +4,8 @@ draft: false
 menu:
   log:
     parent: Estudos autônomos
-    weight: 5
-title: Tecnologia da Informação 
+    weight: 6
+title: KPIs
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,26 +13,52 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 5
+weight: 20
 ---
 
-O prazo de entrega desta atividade pelo SIGAA é **16/03**. 
+# Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e submeta pela respectiva tarefa do SIGAA. 
 
-> Não se esqueçam de incluir o nome dos membros do grupo na postagem!
+1.	O que são e qual a importância de KPIs para a gestão da cadeia de suprimentos?
 
+2.	Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de último quilômetro para os clientes desses três varejistas, e há escassez de mão de obra alocada para esse processo gerencial.  
 
-Leia os artigos: 
+Assim, será possível escolher apenas três indicadores de desempenho (KPI) para todas as classes de atributos a serem monitorados: 
+(i)	desempenho no atendimento ao cliente
+(ii)	desempenho na gestão de estoques
+(iii)	produtividade do armazém
+(iv)	desempenho em transportes
 
-- [Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia](https://github.com/retaoliveira/relements/raw/main/texto/ti2013.pdf)
+Destaca-se a importância do trade-off (custo operacional x nível de serviço). Você poderá escolher, dentre os indicadores apresentados na tabela apresentada ao final desta atividade, três indicadores de forma a completar a visão gerencial do seu processo. Quais são esses três indicadores e por que você os escolheu? Lembre-se que são apenas três indicadores para todas as classes de atributos a serem monitorados. 
 
-- [Logística + Tecnologia: na prática a teoria é outra](https://github.com/retaoliveira/relements/raw/main/texto/ti_pratica.pdf) 
+## KPI’s Logísticos
 
-- [Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos](https://github.com/retaoliveira/relements/raw/main/texto/2020_varejo.pdf)
-
-e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
-
-
-1. Quais as contribuições essenciais das TICs para a gestão da cadeia de suprimentos? Existem aspectos negativos da implementação de TI quando o objetivo da gestão da cadeia de suprimentos está centrado no trade-off entre responsividade e eficiência? Há diferenças do papel das TICs quando os conceitos de sustentabilidade e resiliência são considerados como objetivos estratégicos da SCM?
-
-2. Vocês acreditam que tecnologias como a Impressão 3D podem viabilizar uma gestão da cadeia de suprimentos mais responsiva e eficiente? Explique o seu ponto de vista. 
-
+Indicador de Desempenho | Descrição|	Cálculo|	Melhores Práticas|
+------------------------|----------|---------|-------------------
+DESEMPENHO NO ATENDIMENTO DO PEDIDO DO CLIENTE | | | |
+Pedido Perfeito ou Perfect Order Measurement|	Calcula a taxa de pedidos sem erros em cada estágio do pedido do Cliente. Deve considerar cada etapa na "vida" de um pedido.|	% acurácia no Registro do Pedido x % acurácia na Separação x % Entregas no Prazo x % Entregas sem Danos x % Pedidos Faturados Corretamente	| Em torno de 70%.|
+% de Pedidos Completos e no Prazo ou % OTIF - On Time in Full	|Corresponde às entregas realizadas dentro do prazo e atendendo as quantidades e especificações do pedido.	|Entregas Perfeitas / Total de Entregas Realizadas|	Para grupos de Clientes A, o índice varia de 90 % a 95%; no geral atinge valores próximos de 75%.|
+% de Entregas no Prazo ou On Time Delivery|	Desmembramento da OTIF; mede % de entregas realizadas no prazo acordado com o Cliente.|	Entregas no prazo / Total de Entregas Realizadas|	Variam de 95% a 98 %|
+Taxa de Atendimento do Pedido ou Order Fill Rate|	Desmembramento da OTIF; mede % de pedidos atendidos na quantidade e especificações solicitadas pelo Cliente.|	Pedidos integralmente atendidos / Total de Pedidos Expedidos|	99.50%|
+Tempo de Ciclo do Pedido ou Order Cycle Time|	Tempo decorrido entre a realização do pedido por um Cliente e a data de entrega. Alguns consideram como data final a data de disponibilização do pedido na doca de expedição.|	Data da Entrega menos a Data da Realização do Pedido|	Menos de 24 horas para localidades mais próximas ou até um limite de 350 km.|
+DESEMPENHO NA GESTÃO DOS ESTOQUES| | | |
+Dock to Stock Time|	Tempo da mercadoria da doca de recebimento até a sua armazenagem física. Outros consideram da doca até a sua armazenagem física e o seu registro nos sistemas de controle de estoques e disponibilização para venda.|	Tempo da doca ao estoque ou disponibilização do item para venda	|2 horas ou 99,9 % no mesmo dia.|
+acurácia do Inventário ou Inventory Accuracy	|Corresponde à diferença entre o estoque físico e a informação contábil de estoques.|	Estoque Físico Atual por SKU / Estoque Contábil ou Estoque Reportado no Sistema|	No Brasil, 95 %. No Japão atingem 99,95 % e nos EUA entre 99,75 % a 99,95%.|
+Stock outs|	Quantificação das vendas perdidas em função da indisponibilidade do item solicitado.|	Receita não Realizada devido à Indisponibilidade do Item em Estoque (R$)|	Variável.|
+% Estoque Indisponível para Venda	|Corresponde ao estoque indisponível para venda em função de danos decorrentes da movimentação armazenagem, vencimento da data de validade ou obsolescência.|	Estoque Indisponível (R$) / Estoque Total (R$)|	Variável.|
+Utilização da Capacidade de Estocagem ou Storage Utilization|	Mede a utilização volumétrica ou do número de posições para estocagem disponíveis em um armazém.|	Ocupação Média em m³ ou Posições de Armazenagem Ocupadas / Capacidade Total de Armazenagem em m³ ou Número de Posições	|Estar acima de 100 % é um péssimo indicador, pois provavelmente indica que corredores ou outras áreas inadequadas para estocagem estão sendo utilizadas.|
+Visibilidade dos Estoques ou Inventory Visibility|	Mede o tempo para disponibilização dos estoques dos materiais recém recebidos nos sistemas da empresa.|	Data / Hora do Registro da Informação de Recebimento do Material nos Sistemas da Empresa - Data / Hora do Recebimento Físico	|Máximo de 2 horas.|
+PRODUTIVIDADE DO ARMAZÉM| | | |
+Pedidos por Hora ou Orders per Hour	Mede a quantidade de pedidos separados e embalados / acondicionados por hora. Também pode ser medido em linhas ou itens.	Pedidos Separados / Embalados / Total de Horas Trabalhadas no Armazém	Variam conforme o tipo de negócio.|
+Custo por Pedido ou Cost per Order|	Rateio dos custos operacionais do armazém pela quantidade de pedidos expedidos.|	Custo Total do Armazém / Total de Pedidos Expedidos	|Variam conforme o tipo de negócio.
+Custos de Movimentação e Armazenagem como um % das Vendas ou Warehousing Cost as % of Sales	|Revela a participação dos custos operacionais de um armazém nas vendas de uma empresa.|	Custo Total do Armazém / Venda Total	|Variam conforme o tipo de negócio.|
+Tempo Médio de Carga / Descarga	|Mede o tempo de permanência dos veículos de transporte nas docas de recebimento e expedição.	|Hora de Saída da Doca - Hora de Entrada na Doca|	Variam conforme tipo de veículo, carga e condições operacionais.|
+Tempo Médio de Permanência do Veículo de Transporte ou Truck Turnaround Time|	Além do tempo em doca, mede tempos manobra, trânsito interno, autorização da Portaria, vistorias, etc.|	Hora de Saída da Portaria - Hora de Entrada na Portaria|	Variam conforme procedimentos da empresa.|
+Utilização dos Equipamentos de Movimentação	Mede a utilização dos equipamentos de movimentação disponíveis em uma operação de movimentação e armazenagem.	|Horas em Operação / Horas Disponíveis para Uso	|Em uso intensivo, com operador dedicado, mínimo de 95 %.|
+DESEMPENHO EM TRANSPORTES| | | | 
+Custos de Transporte como um % das Vendas ou Freight Costs as % of Sales|	Mostra a participação dos custos de transportes nas vendas totais da empresa.	|Custo Total de Transportes (R$) / Vendas Totais (R$)	|Variam conforme o tipo de negócio.|
+Custo do Frete por Unidade Expedida ou Freight Cost per Unit Shipped|	Revela o custo do frete por unidade expedida. Pode também ser calculado por modo de transporte.|	Custo Total de Transporte (R$) / Total de Unidades Expedidas|	Variam conforme o tipo de negócio.|
+Coletas no Prazo ou On Time Pickups	|Calcula o % de coletas realizadas dentro do prazo acordado.|	Coletas no prazo / Total de coletas|	Variam de 95 % a 98 %.|
+Utilização da Capacidade de Carga de Caminhões ou Truckload Capacity Utilized	|Avalia a utilização da capacidade de carga dos veículos de transporte utilizados.	|Carga Total Expedida / Capacidade Teórica Total dos Veículos Utilizados	|Depende de diversas variáveis, mas as melhores práticas estão ao redor de 85 %.|
+Avarias no Transporte ou Damages|	Mede a participação das avarias em transporte no total expedido.|	Avarias no Transporte |(R$) / Total Expedido (R$)	Variável.|
+Não Conformidades em Transportes|	Mede a participação do custo extra de frete decorrente de re-entregas, devoluções, atrasos, etc por motivos diversos no custo total de transporte.|	Custo Adicional de Frete com Não Conformidades (R$) / Custo Total de Transporte (R$)|	Variável.|
+acurácia no Conhecimento de Frete ou Freight Bill Accuracy	|Mede a participação dos erros verificados no conhecimento de frete em relação aos custos totais de transportes.|	Erros na Cobrança (R$) / Custo Total de Transporte (R$)|	Mínimo de 98,5 %.|
