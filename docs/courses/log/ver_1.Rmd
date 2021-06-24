@@ -16,4 +16,6 @@ type: docs
 weight: 15
 ---
 
+Responda as questões disponíveis no link para verificar sua aprendizagem! 
 
+[LINK](https://rpubs.com/retaoliveira/log1)
