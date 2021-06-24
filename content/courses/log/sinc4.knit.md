@@ -1,0 +1,26 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Encontros
+    weight: 14
+title: Encontro Síncrono 4
+weight: 16
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+<iframe src="https://places-research.github.io/aula04_log/" width="672" height="400px"></iframe>
+
+[LINK](https://places-research.github.io/aula04_log/)
+
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/_FjI72XKRKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

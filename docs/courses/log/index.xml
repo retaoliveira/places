@@ -34,6 +34,28 @@
     </item>
     
     <item>
+      <title>Introdução à logística</title>
+      <link>https://retaoliveira.github.io/places/courses/log/ver_1/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/log/ver_1/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução à logística</title>
+      <link>https://retaoliveira.github.io/places/courses/log/ver_1.knit/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/log/ver_1.knit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Encontro Síncrono 1</title>
       <link>https://retaoliveira.github.io/places/courses/log/sinc1/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
@@ -241,122 +263,837 @@
 &lt;div id=&#34;responda-as-questões-a-seguir-de-maneira-colaborativa-em-seu-grupo-de-trabalho-e-submeta-pela-respectiva-tarefa-do-sigaa.&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e submeta pela respectiva tarefa do SIGAA.&lt;/h1&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;O que são e qual a importância de KPIs para a gestão da cadeia de suprimentos?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de último quilômetro para os clientes desses três varejistas, e há escassez de mão de obra alocada para esse processo gerencial.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;O que são e qual a importância de KPIs para a gestão da cadeia de
+suprimentos?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Você trabalha na empresa Entrega Rápida que atua no mercado como
+operador logístico para e-commerce. Você tem três clientes
+majoritários, a saber: (i) portoriquenhos.com; (ii)
+submarinonuclear.com; e (iii) purchasetime.com. Para estes
+clientes você, como analista de transporte, deve gerenciar a
+cadeia de suprimentos e, em especial, a distribuição no último
+quilômetro a fim de obter a melhor relação custo/benefício da
+operação (os menores custos possíveis com o maior nível de
+serviço, adequado às expectativas dos varejistas e dos
+consumidores finais). Entretanto, você trabalhará sozinho no
+controle da entrega de último quilômetro para os clientes desses
+três varejistas, e há escassez de mão de obra alocada para esse
+processo gerencial.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Assim, será possível escolher apenas três indicadores de desempenho (KPI) para todas as classes de atributos a serem monitorados:
-(i) desempenho no atendimento ao cliente
-(ii) desempenho na gestão de estoques
-(iii) produtividade do armazém
-(iv) desempenho em transportes&lt;/p&gt;
-&lt;p&gt;Destaca-se a importância do trade-off (custo operacional x nível de serviço). Você poderá escolher, dentre os indicadores apresentados na tabela apresentada ao final desta atividade, três indicadores de forma a completar a visão gerencial do seu processo. Quais são esses três indicadores e por que você os escolheu? Lembre-se que são apenas três indicadores para todas as classes de atributos a serem monitorados.&lt;/p&gt;
+&lt;p&gt;Assim, será possível escolher apenas três indicadores de desempenho
+(KPI) para todas as classes de atributos a serem monitorados:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-roman&#34;&gt;
+&lt;li&gt;desempenho no atendimento ao cliente&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;desempenho na gestão de estoques&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;produtividade do armazém&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;desempenho em transportes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Destaca-se a importância do trade-off (custo operacional x nível de
+serviço). Você poderá escolher, dentre os indicadores apresentados na
+tabela apresentada ao final desta atividade, três indicadores de forma
+a completar a visão gerencial do seu processo. Quais são esses três
+indicadores e por que você os escolheu? Lembre-se que são apenas três
+indicadores para todas as classes de atributos a serem monitorados.&lt;/p&gt;
 &lt;div id=&#34;kpis-logísticos&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;KPI’s Logísticos&lt;/h2&gt;
-&lt;table&gt;
+&lt;table style=&#34;width:85%;&#34;&gt;
 &lt;colgroup&gt;
-&lt;col width=&#34;38%&#34; /&gt;
-&lt;col width=&#34;16%&#34; /&gt;
-&lt;col width=&#34;14%&#34; /&gt;
-&lt;col width=&#34;30%&#34; /&gt;
+&lt;col width=&#34;18%&#34; /&gt;
+&lt;col width=&#34;20%&#34; /&gt;
+&lt;col width=&#34;26%&#34; /&gt;
+&lt;col width=&#34;19%&#34; /&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr class=&#34;header&#34;&gt;
-&lt;th&gt;Indicador de Desempenho&lt;/th&gt;
+&lt;th&gt;Indicador
+de D
+esempenho&lt;/th&gt;
 &lt;th&gt;Descrição&lt;/th&gt;
 &lt;th&gt;Cálculo&lt;/th&gt;
-&lt;th&gt;Melhores Práticas&lt;/th&gt;
+&lt;th&gt;Melhores
+Práticas&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;DESEMPENHO NO ATENDIMENTO DO PEDIDO DO CLIENTE&lt;/td&gt;
+&lt;td&gt;D
+ESEMPENHO
+NO A T
+ENDIMENTO
+DO PEDIDO
+DO CLIENTE&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Pedido Perfeito ou Perfect Order Measurement&lt;/td&gt;
-&lt;td&gt;Calcula a taxa de pedidos sem erros em cada estágio do pedido do Cliente. Deve considerar cada etapa na “vida” de um pedido.&lt;/td&gt;
-&lt;td&gt;% acurácia no Registro do Pedido x % acurácia na Separação x % Entregas no Prazo x % Entregas sem Danos x % Pedidos Faturados Corretamente&lt;/td&gt;
-&lt;td&gt;Em torno de 70%.&lt;/td&gt;
+&lt;td&gt;Pedido
+Perfeito
+ou Perfect
+Order Me
+asurement&lt;/td&gt;
+&lt;td&gt;Calcula a
+taxa de
+pedidos sem
+erros em
+cada estágio
+do pedido do
+Cliente.
+Deve
+considerar
+cada etapa
+na “vida” de
+um pedido.&lt;/td&gt;
+&lt;td&gt;% acurácia no
+Registro do
+Pedido x %
+acurácia na
+Separação x % |
+Entregas no
+Prazo x %
+Entregas sem
+Danos x %
+Pedidos
+Faturados
+Corretamente.&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Em torno de
+70%.&lt;/p&gt;
+&lt;div class=&#34;line-block&#34;&gt;&lt;/div&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;% de Pedidos Completos e no Prazo ou % OTIF - On Time in Full&lt;/td&gt;
-&lt;td&gt;Corresponde às entregas realizadas dentro do prazo e atendendo as quantidades e especificações do pedido.&lt;/td&gt;
-&lt;td&gt;Entregas Perfeitas / Total de Entregas Realizadas&lt;/td&gt;
-&lt;td&gt;Para grupos de Clientes A, o índice varia de 90 % a 95%; no geral atinge valores próximos de 75%.&lt;/td&gt;
+&lt;td&gt;% de
+Pedidos
+Completos
+e no Prazo
+ou % OTIF
+- On Time
+in Full&lt;/td&gt;
+&lt;td&gt;Corresponde
+às entregas
+realizadas
+dentro do
+prazo e
+atendendo as
+quantidades
+e
+es
+pecificações
+do pedido.&lt;/td&gt;
+&lt;td&gt;Entregas
+Perfeitas /
+Total de
+Entregas
+Realizadas.&lt;/td&gt;
+&lt;td&gt;Para grupos
+de Clientes
+A, o índice
+varia de
+90% a 95%;
+no geral
+atinge
+valores
+próximos de
+75%.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;% de Entregas no Prazo ou On Time Delivery&lt;/td&gt;
-&lt;td&gt;Desmembramento da OTIF; mede % de entregas realizadas no prazo acordado com o Cliente.&lt;/td&gt;
-&lt;td&gt;Entregas no prazo / Total de Entregas Realizadas&lt;/td&gt;
-&lt;td&gt;Variam de 95% a 98 %&lt;/td&gt;
+&lt;td&gt;% de
+Entregas
+no Prazo
+ou On Time
+Delivery&lt;/td&gt;
+&lt;td&gt;De
+smembramento
+da OTIF;
+mede % de
+entregas
+realizadas
+no prazo
+acordado com
+o Cliente.&lt;/td&gt;
+&lt;td&gt;Entregas no
+prazo / Total de
+Entregas
+Realizadas.&lt;/td&gt;
+&lt;td&gt;Variam de
+95% a 98%&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Taxa de Atendimento do Pedido ou Order Fill Rate&lt;/td&gt;
-&lt;td&gt;Desmembramento da OTIF; mede % de pedidos atendidos na quantidade e especificações solicitadas pelo Cliente.&lt;/td&gt;
-&lt;td&gt;Pedidos integralmente atendidos / Total de Pedidos Expedidos&lt;/td&gt;
+&lt;td&gt;Taxa de
+A
+tendimento
+do Pedido
+ou Order
+Fill Rate&lt;/td&gt;
+&lt;td&gt;De
+smembramento
+da OTIF;
+mede % de
+pedidos
+atendidos na
+quantidade e
+es
+pecificações
+solicitadas
+pelo
+Cliente.&lt;/td&gt;
+&lt;td&gt;Pedidos
+integralmente
+atendidos /
+Total de Pedidos
+Expedidos.&lt;/td&gt;
 &lt;td&gt;99.50%&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Tempo de Ciclo do Pedido ou Order Cycle Time&lt;/td&gt;
-&lt;td&gt;Tempo decorrido entre a realização do pedido por um Cliente e a data de entrega. Alguns consideram como data final a data de disponibilização do pedido na doca de expedição.&lt;/td&gt;
-&lt;td&gt;Data da Entrega menos a Data da Realização do Pedido&lt;/td&gt;
-&lt;td&gt;Menos de 24 horas para localidades mais próximas ou até um limite de 350 km.&lt;/td&gt;
+&lt;td&gt;Tempo de
+Ciclo do
+Pedido ou
+Order
+Cycle Time&lt;/td&gt;
+&lt;td&gt;Tempo
+decorrido
+entre a
+realização
+do pedido
+por um
+Cliente e a
+data de
+entrega.
+Alguns
+consideram
+como data
+final a data
+de disp
+onibilização
+do pedido na
+doca de
+expedição.&lt;/td&gt;
+&lt;td&gt;Data da Entrega
+menos a Data da
+Realização do
+Pedido.&lt;/td&gt;
+&lt;td&gt;Menos de 24
+horas para
+localidades
+mais
+próximas ou
+até um
+limite de
+350 km.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;DESEMPENHO NA GESTÃO DOS ESTOQUES&lt;/td&gt;
+&lt;td&gt;D
+ESEMPENHO
+NA GESTÃO
+DOS
+ESTOQUES&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Dock to Stock Time&lt;/td&gt;
-&lt;td&gt;Tempo da mercadoria da doca de recebimento até a sua armazenagem física. Outros consideram da doca até a sua armazenagem física e o seu registro nos sistemas de controle de estoques e disponibilização para venda.&lt;/td&gt;
-&lt;td&gt;Tempo da doca ao estoque ou disponibilização do item para venda&lt;/td&gt;
-&lt;td&gt;2 horas ou 99,9 % no mesmo dia.&lt;/td&gt;
+&lt;td&gt;Dock to
+Stock Time&lt;/td&gt;
+&lt;td&gt;Tempo da
+mercadoria
+da doca de
+recebimento
+até a sua
+armazenagem
+física.
+Outros
+consideram
+da doca até
+a sua
+armazenagem
+física e o
+seu registro
+nos sistemas
+de controle
+de estoques
+e dis p
+onibilização
+para venda.&lt;/td&gt;
+&lt;td&gt;Tempo da doca ao
+estoque ou
+disponibilização
+do item para
+venda.&lt;/td&gt;
+&lt;td&gt;2 horas ou
+99,9 % no
+mesmo dia.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;acurácia do Inventário ou Inventory Accuracy&lt;/td&gt;
-&lt;td&gt;Corresponde à diferença entre o estoque físico e a informação contábil de estoques.&lt;/td&gt;
-&lt;td&gt;Estoque Físico Atual por SKU / Estoque Contábil ou Estoque Reportado no Sistema&lt;/td&gt;
-&lt;td&gt;No Brasil, 95 %. No Japão atingem 99,95 % e nos EUA entre 99,75 % a 99,95%.&lt;/td&gt;
+&lt;td&gt;Acurácia
+do
+Inventário
+ou
+Inventory
+Accuracy&lt;/td&gt;
+&lt;td&gt;Corresponde
+à diferença
+entre o
+estoque
+físico e a
+informação
+contábil de
+estoques.&lt;/td&gt;
+&lt;td&gt;Estoque Físico
+Atual por SKU /
+Estoque Contábil
+ou Estoque
+Reportado no
+Sistema.&lt;/td&gt;
+&lt;td&gt;No Brasil,
+95%. No
+Japão
+atingem
+99,95% e
+nos EUA
+entre
+99,75% a
+99,95%.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td&gt;Stock outs&lt;/td&gt;
-&lt;td&gt;Quantificação das vendas perdidas em função da indisponibilidade do item solicitado.&lt;/td&gt;
-&lt;td&gt;Receita não Realizada devido à Indisponibilidade do Item em Estoque (R&lt;span class=&#34;math inline&#34;&gt;\()| Variável.| % Estoque Indisponível para Venda |Corresponde ao estoque indisponível para venda em função de danos decorrentes da movimentação armazenagem, vencimento da data de validade ou obsolescência.| Estoque Indisponível (R\)&lt;/span&gt;) / Estoque Total (R&lt;span class=&#34;math inline&#34;&gt;\()| Variável.| Utilização da Capacidade de Estocagem ou Storage Utilization| Mede a utilização volumétrica ou do número de posições para estocagem disponíveis em um armazém.| Ocupação Média em m³ ou Posições de Armazenagem Ocupadas / Capacidade Total de Armazenagem em m³ ou Número de Posições |Estar acima de 100 % é um péssimo indicador, pois provavelmente indica que corredores ou outras áreas inadequadas para estocagem estão sendo utilizadas.| Visibilidade dos Estoques ou Inventory Visibility| Mede o tempo para disponibilização dos estoques dos materiais recém recebidos nos sistemas da empresa.| Data / Hora do Registro da Informação de Recebimento do Material nos Sistemas da Empresa - Data / Hora do Recebimento Físico |Máximo de 2 horas.| PRODUTIVIDADE DO ARMAZÉM| | | | Pedidos por Hora ou Orders per Hour Mede a quantidade de pedidos separados e embalados / acondicionados por hora. Também pode ser medido em linhas ou itens. Pedidos Separados / Embalados / Total de Horas Trabalhadas no Armazém Variam conforme o tipo de negócio.| Custo por Pedido ou Cost per Order| Rateio dos custos operacionais do armazém pela quantidade de pedidos expedidos.| Custo Total do Armazém / Total de Pedidos Expedidos |Variam conforme o tipo de negócio. Custos de Movimentação e Armazenagem como um % das Vendas ou Warehousing Cost as % of Sales |Revela a participação dos custos operacionais de um armazém nas vendas de uma empresa.| Custo Total do Armazém / Venda Total |Variam conforme o tipo de negócio.| Tempo Médio de Carga / Descarga |Mede o tempo de permanência dos veículos de transporte nas docas de recebimento e expedição. |Hora de Saída da Doca - Hora de Entrada na Doca| Variam conforme tipo de veículo, carga e condições operacionais.| Tempo Médio de Permanência do Veículo de Transporte ou Truck Turnaround Time| Além do tempo em doca, mede tempos manobra, trânsito interno, autorização da Portaria, vistorias, etc.| Hora de Saída da Portaria - Hora de Entrada na Portaria| Variam conforme procedimentos da empresa.| Utilização dos Equipamentos de Movimentação Mede a utilização dos equipamentos de movimentação disponíveis em uma operação de movimentação e armazenagem. |Horas em Operação / Horas Disponíveis para Uso |Em uso intensivo, com operador dedicado, mínimo de 95 %.| DESEMPENHO EM TRANSPORTES| | | | Custos de Transporte como um % das Vendas ou Freight Costs as % of Sales| Mostra a participação dos custos de transportes nas vendas totais da empresa. |Custo Total de Transportes (R\)&lt;/span&gt;) / Vendas Totais (R&lt;span class=&#34;math inline&#34;&gt;\() |Variam conforme o tipo de negócio.| Custo do Frete por Unidade Expedida ou Freight Cost per Unit Shipped| Revela o custo do frete por unidade expedida. Pode também ser calculado por modo de transporte.| Custo Total de Transporte (R\)&lt;/span&gt;) / Total de Unidades Expedidas&lt;/td&gt;
-&lt;td&gt;Variam conforme o tipo de negócio.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Coletas no Prazo ou On Time Pickups&lt;/td&gt;
-&lt;td&gt;Calcula o % de coletas realizadas dentro do prazo acordado.&lt;/td&gt;
-&lt;td&gt;Coletas no prazo / Total de coletas&lt;/td&gt;
-&lt;td&gt;Variam de 95 % a 98 %.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Utilização da Capacidade de Carga de Caminhões ou Truckload Capacity Utilized&lt;/td&gt;
-&lt;td&gt;Avalia a utilização da capacidade de carga dos veículos de transporte utilizados.&lt;/td&gt;
-&lt;td&gt;Carga Total Expedida / Capacidade Teórica Total dos Veículos Utilizados&lt;/td&gt;
-&lt;td&gt;Depende de diversas variáveis, mas as melhores práticas estão ao redor de 85 %.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Avarias no Transporte ou Damages&lt;/td&gt;
-&lt;td&gt;Mede a participação das avarias em transporte no total expedido.&lt;/td&gt;
-&lt;td&gt;Avarias no Transporte&lt;/td&gt;
-&lt;td&gt;(R&lt;span class=&#34;math inline&#34;&gt;\() / Total Expedido (R\)&lt;/span&gt;) Variável.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Não Conformidades em Transportes&lt;/td&gt;
-&lt;td&gt;Mede a participação do custo extra de frete decorrente de re-entregas, devoluções, atrasos, etc por motivos diversos no custo total de transporte.&lt;/td&gt;
-&lt;td&gt;Custo Adicional de Frete com Não Conformidades (R&lt;span class=&#34;math inline&#34;&gt;\() / Custo Total de Transporte (R\)&lt;/span&gt;)&lt;/td&gt;
+&lt;td&gt;Q
+uantificação
+das vendas
+perdidas em
+função da
+indis
+ponibilidade
+do item
+solicitado.&lt;/td&gt;
+&lt;td&gt;Receita não
+Realizada devido
+à
+I
+ndisponibilidade
+do Item em
+Estoque (R$).&lt;/td&gt;
 &lt;td&gt;Variável.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;acurácia no Conhecimento de Frete ou Freight Bill Accuracy&lt;/td&gt;
-&lt;td&gt;Mede a participação dos erros verificados no conhecimento de frete em relação aos custos totais de transportes.&lt;/td&gt;
-&lt;td&gt;Erros na Cobrança (R&lt;span class=&#34;math inline&#34;&gt;\() / Custo Total de Transporte (R\)&lt;/span&gt;)&lt;/td&gt;
-&lt;td&gt;Mínimo de 98,5 %.&lt;/td&gt;
+&lt;td&gt;Utilização
+da
+Capacidade
+de
+Estocagem
+ou Storage
+U
+tilization&lt;/td&gt;
+&lt;td&gt;Mede a
+utilização
+volumétrica
+ou do número
+de posições
+para
+estocagem
+disponíveis
+em um
+armazém.&lt;/td&gt;
+&lt;td&gt;Ocupação Média
+em m³ ou
+Posições de
+Armazenagem
+Ocupadas /
+Capacidade Total
+de Armazenagem
+em m³ ou Número
+de Posições.&lt;/td&gt;
+&lt;td&gt;Estar acima
+de 100 % é
+um péssimo
+indicador,
+pois pr
+ovavelmente
+indica que
+corredores
+ou outras
+áreas
+inadequadas
+para
+estocagem
+estão sendo
+utilizadas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;% Estoque
+In
+disponível
+para Venda&lt;/td&gt;
+&lt;td&gt;Corresponde
+ao estoque
+indisponível
+para venda
+em função de
+danos
+decorrentes
+da
+movimentação
+armazenagem,
+vencimento
+da data de
+validade ou
+ob
+solescência.&lt;/td&gt;
+&lt;td&gt;Estoque
+Indi
+sponível/Estoque
+total em reais.&lt;/td&gt;
+&lt;td&gt;Variável.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Utilização
+da
+Capacidade
+de
+Estocagem
+ou Storage
+U
+tilization&lt;/td&gt;
+&lt;td&gt;Mede a
+utilização
+volumétrica
+ou do número
+de posições
+para
+estocagem
+disponíveis
+em um
+armazém.&lt;/td&gt;
+&lt;td&gt;Ocupação Média
+em m³ ou
+Posições de
+Armazenagem
+Ocupadas /
+Capacidade Total
+de Armazenagem
+em m³ ou Número
+de Posições.&lt;/td&gt;
+&lt;td&gt;Estar acima
+de 100% é
+um péssimo
+indicador,
+pois pr
+ovavelmente
+indica que
+corredores
+ou outras
+áreas
+inadequadas
+para
+estocagem
+estão sendo
+utilizadas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Vi
+sibilidade
+dos
+Estoques
+ou
+Inventory
+Visibility&lt;/td&gt;
+&lt;td&gt;Mede o tempo
+para
+disp
+onibilização
+dos estoques
+dos
+materiais
+recém
+recebidos
+nos sistemas
+da empresa.&lt;/td&gt;
+&lt;td&gt;Data / Hora do
+Registro da
+Informação de
+Recebimento do
+Material nos
+Sistemas da
+Empresa - Data /
+Hora do
+Recebimento
+Físico.&lt;/td&gt;
+&lt;td&gt;Máximo de 2
+horas.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;PROD
+UTIVIDADE
+DO ARMAZÉM&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Pedidos
+por Hora
+ou Orders
+per Hour&lt;/td&gt;
+&lt;td&gt;Mede a
+quantidade
+de pedidos
+separados e
+embalados /
+ac
+ondicionados
+por hora.
+Também pode
+ser medido
+em linhas ou
+itens.&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Pedidos
+Separados /
+Embalados /
+Total de Horas
+Trabalhadas no
+Armazém.&lt;/p&gt;
+&lt;p&gt;Horas
+Trabalhadas no
+Armazém.&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;Variam
+conforme o
+tipo de
+negócio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Custo por
+Pedido ou
+Cost per
+Order&lt;/td&gt;
+&lt;td&gt;Rateio dos
+custos
+operacionais
+do armazém
+pela
+quantidade
+de pedidos
+expedidos.&lt;/td&gt;
+&lt;td&gt;Custo Total do
+Armazém / Total
+de Pedidos
+Expedidos.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme o
+tipo de
+negócio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Custos de
+Mo
+vimentação
+e
+A
+rmazenagem
+como um %
+das Vendas
+ou
+W
+arehousing
+Cost as %
+of Sales.&lt;/td&gt;
+&lt;td&gt;Revela a
+participação
+dos custos
+operacionais
+de um
+armazém nas
+vendas de
+uma empresa.&lt;/td&gt;
+&lt;td&gt;Custo Total do
+Armazém / Venda
+Total.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme o
+tipo de
+negócio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Tempo
+Médio de
+Carga /
+Descarga.&lt;/td&gt;
+&lt;td&gt;Mede o tempo
+de
+permanência
+dos veículos
+de
+transporte
+nas docas de
+recebimento
+e expedição.&lt;/td&gt;
+&lt;td&gt;Hora de Saída da
+Doca - Hora de
+Entrada na Doca.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme
+tipo de
+veículo,
+carga e
+condições
+op
+eracionais.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Tempo
+Médio de
+P
+ermanência
+do Veículo
+de
+Transporte
+ou Truck
+Turnaround
+Time&lt;/td&gt;
+&lt;td&gt;Além do
+tempo em
+doca, mede
+tempos
+manobra,
+trânsito
+interno,
+autorização
+da Portaria,
+vistorias,
+etc.&lt;/td&gt;
+&lt;td&gt;Hora de Saída da
+Portaria - Hora
+de Entrada na
+Portaria.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme pr
+ocedimentos
+da empresa.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Utilização
+dos
+Eq
+uipamentos
+de
+Mo
+vimentação
+Mede a
+utilização
+dos
+eq
+uipamentos
+de
+mo
+vimentação
+d
+isponíveis
+em uma
+operação
+de
+mo
+vimentação
+e arm
+azenagem.&lt;/td&gt;
+&lt;td&gt;Horas em
+Operação /
+Horas
+Disponíveis
+para Uso.&lt;/td&gt;
+&lt;td&gt;Em uso
+intensivo, com
+operador
+dedicado, mínimo
+de 95%.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DESEMPENHO
+EM TR
+ANSPORTES&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Custos de
+Transporte
+como um %
+das Vendas
+ou Freight
+Costs as %
+of Sales.&lt;/td&gt;
+&lt;td&gt;Mostra a
+participação
+dos custos
+de
+transportes
+nas vendas
+totais da
+empresa.&lt;/td&gt;
+&lt;td&gt;Custo Total de
+Transportes /
+Vendas Totais em
+reais.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme o
+tipo de
+negócio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Custo do
+Frete por
+Unidade
+Expedida
+ou Freight
+Cost per
+Unit
+Shipped.&lt;/td&gt;
+&lt;td&gt;Revela o
+custo do
+frete por
+unidade
+expedida.
+Pode também
+ser
+calculado
+por modo de
+transporte.&lt;/td&gt;
+&lt;td&gt;Custo Total de
+Transporte /
+Total de
+Unidades
+Expedidas.&lt;/td&gt;
+&lt;td&gt;Variam
+conforme o
+tipo de
+negócio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Coletas no
+Prazo ou
+On Time
+Pickups.&lt;/td&gt;
+&lt;td&gt;Calcula o %
+de coletas
+realizadas
+dentro do
+prazo
+acordado.&lt;/td&gt;
+&lt;td&gt;Coletas no prazo
+/ Total de
+coletas.&lt;/td&gt;
+&lt;td&gt;Variam de
+95% a 98%.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Utilização
+da
+Capacidade
+de Carga
+de
+Caminhões
+ou
+Truckload
+Capacity
+Utilized&lt;/td&gt;
+&lt;td&gt;Avalia a
+utilização
+da
+capacidade
+de carga dos
+veículos de
+transporte
+utilizados.&lt;/td&gt;
+&lt;td&gt;Carga Total
+Expedida /
+Capacidade
+Teórica Total
+dos Veículos
+Utilizados.&lt;/td&gt;
+&lt;td&gt;Depende de
+diversas
+variáveis,
+mas as
+melhores
+práticas
+estão ao
+redor de
+85%.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Avarias no
+Transporte
+ou Damages&lt;/td&gt;
+&lt;td&gt;Mede a
+participação
+das avarias
+em
+transporte
+no total
+expedido.&lt;/td&gt;
+&lt;td&gt;Avarias no
+Transporte /
+Total Expedido
+em reais&lt;/td&gt;
+&lt;td&gt;Variável.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Não
+Con
+formidades
+em
+T
+ransportes&lt;/td&gt;
+&lt;td&gt;Mede a
+participação
+do custo
+extra de
+frete
+decorrente
+de
+re-entregas,
+devoluções,
+atrasos, etc
+por motivos
+diversos no
+custo total
+de
+transporte.&lt;/td&gt;
+&lt;td&gt;Custo Adicional
+de Frete com Não
+Conformidades /
+Custo Total de
+Transporte em
+reais&lt;/td&gt;
+&lt;td&gt;Variável.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;A
+curacidade
+no Co
+nhecimento
+de Frete
+ou Freight
+Bill
+Accuracy&lt;/td&gt;
+&lt;td&gt;Mede a
+participação
+dos erros
+verificados
+no
+conhecimento
+de frete em
+relação aos
+custos
+totais de
+transportes.&lt;/td&gt;
+&lt;td&gt;Erros na
+Cobrança / Custo
+Total de
+Transporte em
+reais.&lt;/td&gt;
+&lt;td&gt;Mínimo de
+98,5%.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
