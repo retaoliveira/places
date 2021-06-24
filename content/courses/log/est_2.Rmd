@@ -16,49 +16,464 @@ type: docs
 weight: 20
 ---
 
-# Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e submeta pela respectiva tarefa do SIGAA. 
+# Responda as questões a seguir de maneira colaborativa em seu grupo de trabalho e submeta pela respectiva tarefa do SIGAA.
 
-1.	O que são e qual a importância de KPIs para a gestão da cadeia de suprimentos?
+1.  O que são e qual a importância de KPIs para a gestão da cadeia de
+    suprimentos?
 
-2.	Você trabalha na empresa Entrega Rápida que atua no mercado como operador logístico para e-commerce. Você tem três clientes majoritários, a saber: (i) portoriquenhos.com; (ii) submarinonuclear.com; e (iii) purchasetime.com. Para estes clientes você, como analista de transporte, deve gerenciar a cadeia de suprimentos e, em especial, a distribuição no último quilômetro a fim de obter a melhor relação custo/benefício da operação (os menores custos possíveis com o maior nível de serviço, adequado às expectativas dos varejistas e dos consumidores finais). Entretanto, você trabalhará sozinho no controle da entrega de último quilômetro para os clientes desses três varejistas, e há escassez de mão de obra alocada para esse processo gerencial.  
+2.  Você trabalha na empresa Entrega Rápida que atua no mercado como
+    operador logístico para e-commerce. Você tem três clientes
+    majoritários, a saber: (i) portoriquenhos.com; (ii)
+    submarinonuclear.com; e (iii) purchasetime.com. Para estes
+    clientes você, como analista de transporte, deve gerenciar a
+    cadeia de suprimentos e, em especial, a distribuição no último
+    quilômetro a fim de obter a melhor relação custo/benefício da
+    operação (os menores custos possíveis com o maior nível de
+    serviço, adequado às expectativas dos varejistas e dos
+    consumidores finais). Entretanto, você trabalhará sozinho no
+    controle da entrega de último quilômetro para os clientes desses
+    três varejistas, e há escassez de mão de obra alocada para esse
+    processo gerencial.
 
-Assim, será possível escolher apenas três indicadores de desempenho (KPI) para todas as classes de atributos a serem monitorados: 
-(i)	desempenho no atendimento ao cliente   
-(ii)	desempenho na gestão de estoques   
-(iii)	produtividade do armazém   
-(iv)	desempenho em transportes   
+Assim, será possível escolher apenas três indicadores de desempenho
+(KPI) para todas as classes de atributos a serem monitorados:
 
-Destaca-se a importância do trade-off (custo operacional x nível de serviço). Você poderá escolher, dentre os indicadores apresentados na tabela apresentada ao final desta atividade, três indicadores de forma a completar a visão gerencial do seu processo. Quais são esses três indicadores e por que você os escolheu? Lembre-se que são apenas três indicadores para todas as classes de atributos a serem monitorados. 
+(i) desempenho no atendimento ao cliente\
+(ii) desempenho na gestão de estoques\
+(iii) produtividade do armazém\
+(iv) desempenho em transportes
 
-## KPI’s Logísticos
+Destaca-se a importância do trade-off (custo operacional x nível de
+serviço). Você poderá escolher, dentre os indicadores apresentados na
+tabela apresentada ao final desta atividade, três indicadores de forma
+a completar a visão gerencial do seu processo. Quais são esses três
+indicadores e por que você os escolheu? Lembre-se que são apenas três
+indicadores para todas as classes de atributos a serem monitorados.
 
-Indicador de Desempenho | Descrição|	Cálculo|	Melhores Práticas|
-------------------------|----------|---------|-------------------
-DESEMPENHO NO ATENDIMENTO DO PEDIDO DO CLIENTE | | | |
-Pedido Perfeito ou Perfect Order Measurement|	Calcula a taxa de pedidos sem erros em cada estágio do pedido do Cliente. Deve considerar cada etapa na "vida" de um pedido.|	% acurácia no Registro do Pedido x % acurácia na Separação x % Entregas no Prazo x % Entregas sem Danos x % Pedidos Faturados Corretamente	| Em torno de 70%.|
-% de Pedidos Completos e no Prazo ou % OTIF - On Time in Full	|Corresponde às entregas realizadas dentro do prazo e atendendo as quantidades e especificações do pedido.	|Entregas Perfeitas / Total de Entregas Realizadas|	Para grupos de Clientes A, o índice varia de 90 % a 95%; no geral atinge valores próximos de 75%.|
-% de Entregas no Prazo ou On Time Delivery|	Desmembramento da OTIF; mede % de entregas realizadas no prazo acordado com o Cliente.|	Entregas no prazo / Total de Entregas Realizadas|	Variam de 95% a 98 %|
-Taxa de Atendimento do Pedido ou Order Fill Rate|	Desmembramento da OTIF; mede % de pedidos atendidos na quantidade e especificações solicitadas pelo Cliente.|	Pedidos integralmente atendidos / Total de Pedidos Expedidos|	99.50%|
-Tempo de Ciclo do Pedido ou Order Cycle Time|	Tempo decorrido entre a realização do pedido por um Cliente e a data de entrega. Alguns consideram como data final a data de disponibilização do pedido na doca de expedição.|	Data da Entrega menos a Data da Realização do Pedido|	Menos de 24 horas para localidades mais próximas ou até um limite de 350 km.|
-DESEMPENHO NA GESTÃO DOS ESTOQUES| | | |
-Dock to Stock Time|	Tempo da mercadoria da doca de recebimento até a sua armazenagem física. Outros consideram da doca até a sua armazenagem física e o seu registro nos sistemas de controle de estoques e disponibilização para venda.|	Tempo da doca ao estoque ou disponibilização do item para venda	|2 horas ou 99,9 % no mesmo dia.|
-acurácia do Inventário ou Inventory Accuracy	|Corresponde à diferença entre o estoque físico e a informação contábil de estoques.|	Estoque Físico Atual por SKU / Estoque Contábil ou Estoque Reportado no Sistema|	No Brasil, 95 %. No Japão atingem 99,95 % e nos EUA entre 99,75 % a 99,95%.|
-Stock outs|	Quantificação das vendas perdidas em função da indisponibilidade do item solicitado.|	Receita não Realizada devido à Indisponibilidade do Item em Estoque (R$)|	Variável.|
-% Estoque Indisponível para Venda	|Corresponde ao estoque indisponível para venda em função de danos decorrentes da movimentação armazenagem, vencimento da data de validade ou obsolescência.|	Estoque Indisponível (R\$$) / Estoque Total (R\\$)|	Variável.|
-Utilização da Capacidade de Estocagem ou Storage Utilization|	Mede a utilização volumétrica ou do número de posições para estocagem disponíveis em um armazém.|	Ocupação Média em m³ ou Posições de Armazenagem Ocupadas / Capacidade Total de Armazenagem em m³ ou Número de Posições	|Estar acima de 100 % é um péssimo indicador, pois provavelmente indica que corredores ou outras áreas inadequadas para estocagem estão sendo utilizadas.|
-Visibilidade dos Estoques ou Inventory Visibility|	Mede o tempo para disponibilização dos estoques dos materiais recém recebidos nos sistemas da empresa.|	Data / Hora do Registro da Informação de Recebimento do Material nos Sistemas da Empresa - Data / Hora do Recebimento Físico	|Máximo de 2 horas.|
-PRODUTIVIDADE DO ARMAZÉM| | | |
-Pedidos por Hora ou Orders per Hour	Mede a quantidade de pedidos separados e embalados / acondicionados por hora. Também pode ser medido em linhas ou itens.	Pedidos Separados / Embalados / Total de Horas Trabalhadas no Armazém	Variam conforme o tipo de negócio.|
-Custo por Pedido ou Cost per Order|	Rateio dos custos operacionais do armazém pela quantidade de pedidos expedidos.|	Custo Total do Armazém / Total de Pedidos Expedidos	|Variam conforme o tipo de negócio.
-Custos de Movimentação e Armazenagem como um % das Vendas ou Warehousing Cost as % of Sales	|Revela a participação dos custos operacionais de um armazém nas vendas de uma empresa.|	Custo Total do Armazém / Venda Total	|Variam conforme o tipo de negócio.|
-Tempo Médio de Carga / Descarga	|Mede o tempo de permanência dos veículos de transporte nas docas de recebimento e expedição.	|Hora de Saída da Doca - Hora de Entrada na Doca|	Variam conforme tipo de veículo, carga e condições operacionais.|
-Tempo Médio de Permanência do Veículo de Transporte ou Truck Turnaround Time|	Além do tempo em doca, mede tempos manobra, trânsito interno, autorização da Portaria, vistorias, etc.|	Hora de Saída da Portaria - Hora de Entrada na Portaria|	Variam conforme procedimentos da empresa.|
-Utilização dos Equipamentos de Movimentação	Mede a utilização dos equipamentos de movimentação disponíveis em uma operação de movimentação e armazenagem.	|Horas em Operação / Horas Disponíveis para Uso	|Em uso intensivo, com operador dedicado, mínimo de 95 %.|
-DESEMPENHO EM TRANSPORTES| | | | 
-Custos de Transporte como um % das Vendas ou Freight Costs as % of Sales|	Mostra a participação dos custos de transportes nas vendas totais da empresa.	|Custo Total de Transportes (R\$) / Vendas Totais (R\$)	|Variam conforme o tipo de negócio.|
-Custo do Frete por Unidade Expedida ou Freight Cost per Unit Shipped|	Revela o custo do frete por unidade expedida. Pode também ser calculado por modo de transporte.|	Custo Total de Transporte (R$) / Total de Unidades Expedidas|	Variam conforme o tipo de negócio.|
-Coletas no Prazo ou On Time Pickups	|Calcula o % de coletas realizadas dentro do prazo acordado.|	Coletas no prazo / Total de coletas|	Variam de 95 % a 98 %.|
-Utilização da Capacidade de Carga de Caminhões ou Truckload Capacity Utilized	|Avalia a utilização da capacidade de carga dos veículos de transporte utilizados.	|Carga Total Expedida / Capacidade Teórica Total dos Veículos Utilizados	|Depende de diversas variáveis, mas as melhores práticas estão ao redor de 85 %.|
-Avarias no Transporte ou Damages|	Mede a participação das avarias em transporte no total expedido.|	Avarias no Transporte |(R$) / Total Expedido (R$)	Variável.|
-Não Conformidades em Transportes|	Mede a participação do custo extra de frete decorrente de re-entregas, devoluções, atrasos, etc por motivos diversos no custo total de transporte.|	Custo Adicional de Frete com Não Conformidades (R$) / Custo Total de Transporte (R$)|	Variável.|
-acurácia no Conhecimento de Frete ou Freight Bill Accuracy	|Mede a participação dos erros verificados no conhecimento de frete em relação aos custos totais de transportes.|	Erros na Cobrança (R$) / Custo Total de Transporte (R$)|	Mínimo de 98,5 %.|
+## KPI's Logísticos
+
++----------+-------------+----------------+------------+
+| I        | Descrição   | Cálculo        | Melhores   |
+| ndicador |             |                | Práticas   |
+| de D     |             |                |            |
+| e        |             |                |            |
+| sempenho |             |                |            |
++==========+=============+================+============+
+| D        |             |                |            |
+| E        |             |                |            |
+| SEMPENHO |             |                |            |
+| NO A T   |             |                |            |
+| E        |             |                |            |
+| NDIMENTO |             |                |            |
+| DO       |             |                |            |
+| PEDIDO   |             |                |            |
+| DO       |             |                |            |
+| CLIENTE  |             |                |            |
++----------+-------------+----------------+------------+
+| Pedido   | Calcula a   | \% acurácia no | Em torno   |
+| Perfeito | taxa de     | Registro do    | de 70%.    |
+| ou       | pedidos sem | Pedido x %     |            |
+| Perfect  | erros em    | acurácia na    | |          |
+| Order Me | cada        | Separação x %  |            |
+| a        | estágio do  | \| Entregas no |            |
+| surement | pedido do   | Prazo x %      |            |
+|          | Cliente.    | Entregas sem   |            |
+|          | Deve        | Danos x %      |            |
+|          | considerar  | Pedidos        |            |
+|          | cada etapa  | Faturados      |            |
+|          | na "vida"   | Corretamente.  |            |
+|          | de um       |                |            |
+|          | pedido.     |                |            |
++----------+-------------+----------------+------------+
+| \% de    | Corresponde | Entregas       | Para       |
+| Pedidos  | às entregas | Perfeitas /    | grupos de  |
+| C        | realizadas  | Total de       | Clientes   |
+| ompletos | dentro do   | Entregas       | A, o       |
+| e no     | prazo e     | Realizadas.    | índice     |
+| Prazo ou | atendendo   |                | varia de   |
+| % OTIF - | as          |                | 90% a 95%; |
+| On Time  | quantidades |                | no geral   |
+| in Full  | e es        |                | atinge     |
+|          | p           |                | valores    |
+|          | ecificações |                | próximos   |
+|          | do pedido.  |                | de 75%.    |
++----------+-------------+----------------+------------+
+| \% de    | De          | Entregas no    | Variam de  |
+| Entregas | s           | prazo / Total  | 95% a 98%  |
+| no Prazo | membramento | de Entregas    |            |
+| ou On    | da OTIF;    | Realizadas.    |            |
+| Time     | mede % de   |                |            |
+| Delivery | entregas    |                |            |
+|          | realizadas  |                |            |
+|          | no prazo    |                |            |
+|          | acordado    |                |            |
+|          | com o       |                |            |
+|          | Cliente.    |                |            |
++----------+-------------+----------------+------------+
+| Taxa de  | De          | Pedidos        | 99.50%     |
+| A t      | s           | integralmente  |            |
+| e        | membramento | atendidos /    |            |
+| ndimento | da OTIF;    | Total de       |            |
+| do       | mede % de   | Pedidos        |            |
+| Pedido   | pedidos     | Expedidos.     |            |
+| ou Order | atendidos   |                |            |
+| Fill     | na          |                |            |
+| Rate     | quantidade  |                |            |
+|          | e es        |                |            |
+|          | p           |                |            |
+|          | ecificações |                |            |
+|          | solicitadas |                |            |
+|          | pelo        |                |            |
+|          | Cliente.    |                |            |
++----------+-------------+----------------+------------+
+| Tempo de | Tempo       | Data da        | Menos de   |
+| Ciclo do | decorrido   | Entrega menos  | 24 horas   |
+| Pedido   | entre a     | a Data da      | para       |
+| ou Order | realização  | Realização do  | l          |
+| Cycle    | do pedido   | Pedido.        | ocalidades |
+| Time     | por um      |                | mais       |
+|          | Cliente e a |                | próximas   |
+|          | data de     |                | ou até um  |
+|          | entrega.    |                | limite de  |
+|          | Alguns      |                | 350 km.    |
+|          | consideram  |                |            |
+|          | como data   |                |            |
+|          | final a     |                |            |
+|          | data de     |                |            |
+|          | disp        |                |            |
+|          | o           |                |            |
+|          | nibilização |                |            |
+|          | do pedido   |                |            |
+|          | na doca de  |                |            |
+|          | expedição.  |                |            |
++----------+-------------+----------------+------------+
+| D        |             |                |            |
+| E        |             |                |            |
+| SEMPENHO |             |                |            |
+| NA       |             |                |            |
+| GESTÃO   |             |                |            |
+| DOS      |             |                |            |
+| ESTOQUES |             |                |            |
++----------+-------------+----------------+------------+
+| Dock to  | Tempo da    | Tempo da doca  | 2 horas ou |
+| Stock    | mercadoria  | ao estoque ou  | 99,9 % no  |
+| Time     | da doca de  | d              | mesmo dia. |
+|          | recebimento | i              |            |
+|          | até a sua   | sponibilização |            |
+|          | armazenagem | do item para   |            |
+|          | física.     | venda.         |            |
+|          | Outros      |                |            |
+|          | consideram  |                |            |
+|          | da doca até |                |            |
+|          | a sua       |                |            |
+|          | armazenagem |                |            |
+|          | física e o  |                |            |
+|          | seu         |                |            |
+|          | registro    |                |            |
+|          | nos         |                |            |
+|          | sistemas de |                |            |
+|          | controle de |                |            |
+|          | estoques e  |                |            |
+|          | dis p       |                |            |
+|          | o           |                |            |
+|          | nibilização |                |            |
+|          | para venda. |                |            |
++----------+-------------+----------------+------------+
+| Acurácia | Corresponde | Estoque Físico | No Brasil, |
+| do I     | à diferença | Atual por SKU  | 95%. No    |
+| n        | entre o     | / Estoque      | Japão      |
+| ventário | estoque     | Contábil ou    | atingem    |
+| ou       | físico e a  | Estoque        | 99,95% e   |
+| I        | informação  | Reportado no   | nos EUA    |
+| nventory | contábil de | Sistema.       | entre      |
+| Accuracy | estoques.   |                | 99,75% a   |
+|          |             |                | 99,95%.    |
++----------+-------------+----------------+------------+
+| Stock    | Q           | Receita não    | Variável.  |
+| outs     | u           | Realizada      |            |
+|          | antificação | devido à In    |            |
+|          | das vendas  | d              |            |
+|          | perdidas em | isponibilidade |            |
+|          | função da   | do Item em     |            |
+|          | indis       | Estoque (R\$). |            |
+|          | p           |                |            |
+|          | onibilidade |                |            |
+|          | do item     |                |            |
+|          | solicitado. |                |            |
++----------+-------------+----------------+------------+
+| U        | Mede a      | Ocupação Média | Estar      |
+| t        | utilização  | em m³ ou       | acima de   |
+| ilização | volumétrica | Posições de    | 100 % é um |
+| da C     | ou do       | Armazenagem    | péssimo    |
+| a        | número de   | Ocupadas /     | indicador, |
+| pacidade | posições    | Capacidade     | pois pr    |
+| de       | para        | Total de       | o          |
+| E        | estocagem   | Armazenagem em | vavelmente |
+| stocagem | disponíveis | m³ ou Número   | indica que |
+| ou       | em um       | de Posições.   | corredores |
+| Storage  | armazém.    |                | ou outras  |
+| Ut       |             |                | áreas      |
+| i        |             |                | i          |
+| lization |             |                | nadequadas |
+|          |             |                | para       |
+|          |             |                | estocagem  |
+|          |             |                | estão      |
+|          |             |                | sendo      |
+|          |             |                | u          |
+|          |             |                | tilizadas. |
++----------+-------------+----------------+------------+
+| \%       | Corresponde | Estoque        | Variável.  |
+| Estoque  | ao estoque  | Indisponível ( |            |
+| Ind      | i           | R$\$$) / Esto  | . \|       |
+| i        | ndisponível | \| que total   |            |
+| sponível | para venda  | (R$\$$)        |            |
+| para     | em função   |                |            |
+| Venda    | de danos    |                |            |
+|          | decorrentes |                |            |
+|          | da          |                |            |
+|          | m           |                |            |
+|          | ovimentação |                |            |
+|          | a           |                |            |
+|          | rmazenagem, |                |            |
+|          | vencimento  |                |            |
+|          | da data de  |                |            |
+|          | validade ou |                |            |
+|          | ob          |                |            |
+|          | s           |                |            |
+|          | olescência. |                |            |
++----------+-------------+----------------+------------+
+| U        | Mede a      | Ocupação Média | Estar      |
+| t        | utilização  | em m³ ou       | acima de   |
+| ilização | volumétrica | Posições de    | 100% é um  |
+| da C     | ou do       | Armazenagem    | péssimo    |
+| a        | número de   | Ocupadas /     | indicador, |
+| pacidade | posições    | Capacidade     | pois pr    |
+| de       | para        | Total de       | o          |
+| E        | estocagem   | Armazenagem em | vavelmente |
+| stocagem | disponíveis | m³ ou Número   | indica que |
+| ou       | em um       | de Posições.   | corredores |
+| Storage  | armazém.    |                | ou outras  |
+| Ut       |             |                | áreas      |
+| i        |             |                | i          |
+| lization |             |                | nadequadas |
+|          |             |                | para       |
+|          |             |                | estocagem  |
+|          |             |                | estão      |
+|          |             |                | sendo      |
+|          |             |                | u          |
+|          |             |                | tilizadas. |
++----------+-------------+----------------+------------+
+| Vis      | Mede o      | Data / Hora do | Máximo de  |
+| i        | tempo para  | Registro da    | 2 horas.   |
+| bilidade | disp        | Informação de  |            |
+| dos      | o           | Recebimento do |            |
+| Estoques | nibilização | Material nos   |            |
+| ou       | dos         | Sistemas da    |            |
+| I        | estoques    | Empresa - Data |            |
+| nventory | dos         | / Hora do      |            |
+| V        | materiais   | Recebimento    |            |
+| i        | recém       | Físico         |            |
+| sibility | recebidos   |                |            |
+|          | nos         |                |            |
+|          | sistemas da |                |            |
+|          | empresa.    |                |            |
++----------+-------------+----------------+------------+
+| PROD     |             |                |            |
+| U        |             |                |            |
+| TIVIDADE |             |                |            |
+| DO       |             |                |            |
+| ARMAZÉM  |             |                |            |
++----------+-------------+----------------+------------+
+| Pedidos  | Mede a      | Pedidos        | Variam     |
+| por Hora | quantidade  | Separados /    | conforme o |
+| ou       | de pedidos  | Embalados /    | tipo de    |
+| Orders   | separados e | Total de Horas | negócio.   |
+| per Hour | embalados / | Trabalhadas no |            |
+|          | ac          | Armazém.       |            |
+|          | o           |                |            |
+|          | ndicionados | Horas          |            |
+|          | por hora.   | Trabalhadas no |            |
+|          | Também pode | Armazém.       |            |
+|          | ser medido  |                |            |
+|          | em linhas   |                |            |
+|          | ou itens.   |                |            |
++----------+-------------+----------------+------------+
+| Custo    | Rateio dos  | Custo Total do | Variam     |
+| por      | custos      | Armazém /      | conforme o |
+| Pedido   | o           | Total de       | tipo de    |
+| ou Cost  | peracionais | Pedidos        | negócio.   |
+| per      | do armazém  | Expedidos.     |            |
+| Order    | pela        |                |            |
+|          | quantidade  |                |            |
+|          | de pedidos  |                |            |
+|          | expedidos.  |                |            |
++----------+-------------+----------------+------------+
+| Custos   | Revela a    | Custo Total do | Variam     |
+| de       | p           | Armazém /      | conforme o |
+| Movi     | articipação | Venda Total.   | tipo de    |
+| mentação | dos custos  |                | negócio.   |
+| e        | o           |                |            |
+| Arm      | peracionais |                |            |
+| azenagem | de um       |                |            |
+| como um  | armazém nas |                |            |
+| % das    | vendas de   |                |            |
+| Vendas   | uma         |                |            |
+| ou       | empresa.    |                |            |
+| War      |             |                |            |
+| ehousing |             |                |            |
+| Cost as  |             |                |            |
+| % of     |             |                |            |
+| Sales    |             |                |            |
++----------+-------------+----------------+------------+
+| Tempo    | Mede o      | Hora de Saída  | Variam     |
+| Médio de | tempo de    | da Doca - Hora | conforme   |
+| Carga /  | permanência | de Entrada na  | tipo de    |
+| Descarga | dos         | Doca.          | veículo,   |
+|          | veículos de |                | carga e    |
+|          | transporte  |                | condições  |
+|          | nas docas   |                | op         |
+|          | de          |                | e          |
+|          | recebimento |                | racionais. |
+|          | e           |                |            |
+|          | expedição.  |                |            |
++----------+-------------+----------------+------------+
+| Tempo    | Além do     | Hora de Saída  | Variam     |
+| Médio de | tempo em    | da Portaria -  | conforme   |
+| Per      | doca, mede  | Hora de        | pr         |
+| manência | tempos      | Entrada na     | o          |
+| do       | manobra,    | Portaria.      | cedimentos |
+| Veículo  | trânsito    |                | da         |
+| de       | interno,    |                | empresa.   |
+| Tr       | autorização |                |            |
+| ansporte | da          |                |            |
+| ou Truck | Portaria,   |                |            |
+| Tu       | vistorias,  |                |            |
+| rnaround | etc.        |                |            |
+| Time     |             |                |            |
++----------+-------------+----------------+------------+
+| Ut       | Horas em    | Em uso         |            |
+| ilização | Operação /  | intensivo, com |            |
+| dos      | Horas       | operador       |            |
+| Equi     | Disponíveis | dedicado,      |            |
+| pamentos | para Uso.   | mínimo de 95%. |            |
+| de       |             |                |            |
+| Movi     |             |                |            |
+| mentação |             |                |            |
+| Mede a   |             |                |            |
+| ut       |             |                |            |
+| ilização |             |                |            |
+| dos      |             |                |            |
+| equi     |             |                |            |
+| pamentos |             |                |            |
+| de mov   |             |                |            |
+| i        |             |                |            |
+| mentação |             |                |            |
+| di       |             |                |            |
+| s        |             |                |            |
+| poníveis |             |                |            |
+| em uma   |             |                |            |
+| operação |             |                |            |
+| de mov   |             |                |            |
+| i        |             |                |            |
+| mentação |             |                |            |
+| e arm    |             |                |            |
+| a        |             |                |            |
+| zenagem. |             |                |            |
++----------+-------------+----------------+------------+
+| D        |             |                |            |
+| E        |             |                |            |
+| SEMPENHO |             |                |            |
+| EM TR    |             |                |            |
+| A        |             |                |            |
+| NSPORTES |             |                |            |
++----------+-------------+----------------+------------+
+| Custos   | Mostra a    | Custo Total de | Variam     |
+| de T     | p           | Transportes    | conforme o |
+| r        | articipação | (R\$) / Vendas | tipo de    |
+| ansporte | dos custos  | Totais (R\$).  | negócio.   |
+| como um  | de          |                |            |
+| % das    | transportes |                |            |
+| Vendas   | nas vendas  |                |            |
+| ou       | totais da   |                |            |
+| Freight  | empresa.    |                |            |
+| Costs as |             |                |            |
+| % of     |             |                |            |
+| Sales.   |             |                |            |
++----------+-------------+----------------+------------+
+| Custo do | Revela o    | Custo Total de | Variam     |
+| Frete    | custo do    | Transporte     | conforme o |
+| por      | frete por   | (R\$) / Total  | tipo de    |
+| Unidade  | unidade     | de Unidades    | negócio.   |
+| Expedida | expedida.   | Expedidas.     |            |
+| ou       | Pode também |                |            |
+| Freight  | ser         |                |            |
+| Cost per | calculado   |                |            |
+| Unit     | por modo de |                |            |
+| Shipped. | transporte. |                |            |
++----------+-------------+----------------+------------+
+| Coletas  | Calcula o % | Coletas no     | Variam de  |
+| no Prazo | de coletas  | prazo / Total  | 95% a 98%. |
+| ou On    | realizadas  | de coletas.    |            |
+| Time     | dentro do   |                |            |
+| Pickups. | prazo       |                |            |
+|          | acordado.   |                |            |
++----------+-------------+----------------+------------+
+| U        | Avalia a    | Carga Total    | Depende de |
+| t        | utilização  | Expedida /     | diversas   |
+| ilização | da          | Capacidade     | variáveis, |
+| da C     | capacidade  | Teórica Total  | mas as     |
+| a        | de carga    | dos Veículos   | melhores   |
+| pacidade | dos         | Utilizados.    | práticas   |
+| de Carga | veículos de |                | estão ao   |
+| de       | transporte  |                | redor de   |
+| C        | utilizados. |                | 85%.       |
+| aminhões |             |                |            |
+| ou       |             |                |            |
+| T        |             |                |            |
+| ruckload |             |                |            |
+| Capacity |             |                |            |
+| Utilized |             |                |            |
++----------+-------------+----------------+------------+
+| Avarias  | Mede a      | Avarias no     | Variável.  |
+| no T     | p           | Transporte     |            |
+| r        | articipação | (R\$) / Total  |            |
+| ansporte | das avarias | Expedido       |            |
+| ou       | em          | (R\$).         |            |
+| Damages  | transporte  |                |            |
+|          | no total    |                |            |
+|          | expedido.   |                |            |
++----------+-------------+----------------+------------+
+| Não Con  | Mede a      | Custo          | Variável.  |
+| f        | p           | Adicional de   |            |
+| o        | articipação | Frete com Não  |            |
+| rmidades | do custo    | Conformidades  |            |
+| em T r   | extra de    | (R\$) / Custo  |            |
+| a        | frete       | Total de       |            |
+| nsportes | decorrente  | Transporte     |            |
+|          | de          | (R\$)          |            |
+|          | r           |                |            |
+|          | e-entregas, |                |            |
+|          | devoluções, |                |            |
+|          | atrasos,    |                |            |
+|          | etc por     |                |            |
+|          | motivos     |                |            |
+|          | diversos no |                |            |
+|          | custo total |                |            |
+|          | de          |                |            |
+|          | transporte. |                |            |
++----------+-------------+----------------+------------+
+| A c      | Mede a      | Erros na       | Mínimo de  |
+| u        | p           | Cobrança (R\$) | 98,5%.     |
+| racidade | articipação | / Custo Total  |            |
+| no C o n | dos erros   | de Transporte  |            |
+| h        | verificados | (R\$)          |            |
+| ecimento | no          |                |            |
+| de Frete | c           |                |            |
+| ou       | onhecimento |                |            |
+| Freight  | de frete em |                |            |
+| Bill     | relação aos |                |            |
+| Accuracy | custos      |                |            |
+|          | totais de   |                |            |
+|          | t           |                |            |
+|          | ransportes. |                |            |
++----------+-------------+----------------+------------+
