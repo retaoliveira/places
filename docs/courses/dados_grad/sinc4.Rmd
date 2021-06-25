@@ -4,9 +4,9 @@ draft: false
 menu:
   dados_grad:
     parent: Encontros
-    weight: 15
+    weight: 19
 title: Encontro Síncrono 4
-weight: 15
+weight: 19
 editor_options: 
   markdown: 
     wrap: 72

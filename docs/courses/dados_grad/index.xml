@@ -387,14 +387,14 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
 &lt;div id=&#34;pré-requisitos&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Pré-requisitos&lt;/h2&gt;
 &lt;p&gt;Para desenvolver esta tarefa você precisará dos seguintes pacotes:
-- &lt;code&gt;rMarkdown&lt;/code&gt;
-- &lt;code&gt;knitr&lt;/code&gt;
-- &lt;code&gt;rpubs&lt;/code&gt;
-- &lt;code&gt;prettydoc&lt;/code&gt;
-- &lt;code&gt;xaringan&lt;/code&gt;
-- &lt;code&gt;xaringarExtra&lt;/code&gt;
-- &lt;code&gt;xaringanthemer&lt;/code&gt;
-- &lt;code&gt;flexdashboard&lt;/code&gt;
+- &lt;code&gt;rMarkdown&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;knitr&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;rpubs&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;prettydoc&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringan&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringarExtra&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringanthemer&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;flexdashboard&lt;/code&gt;&lt;br /&gt;
 - &lt;code&gt;kableExtra&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;atividades-para-consolidação-do-projeto-01&#34; class=&#34;section level2&#34;&gt;
@@ -598,11 +598,9 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
   &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
 
 
-&lt;iframe src=&#34;https://places-research.github.io/class03_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;iframe src=&#34;https://places-research.github.io/class04_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
 &lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class03_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/20IucWjr0I4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class04_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -14,15 +14,15 @@ weight: 12
 ## Pré-requisitos
 
 Para desenvolver esta tarefa você precisará dos seguintes pacotes:
-- `rMarkdown`
-- `knitr`
-- `rpubs`
-- `prettydoc`
-- `xaringan`
-- `xaringarExtra`
-- `xaringanthemer`
-- `flexdashboard`
-- `kableExtra`
+- `rMarkdown`   
+- `knitr`   
+- `rpubs`   
+- `prettydoc`   
+- `xaringan`   
+- `xaringarExtra`   
+- `xaringanthemer`   
+- `flexdashboard`   
+- `kableExtra`   
 
 ## Atividades para consolidação do Projeto 01:
 
