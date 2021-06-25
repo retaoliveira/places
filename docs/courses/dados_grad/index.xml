@@ -372,6 +372,165 @@ Entendimento dos padrões de votação e outras atividades do corpo legislativo 
     </item>
     
     <item>
+      <title>Projeto 1</title>
+      <link>https://retaoliveira.github.io/places/courses/dados_grad/project1/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/dados_grad/project1/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;pré-requisitos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pré-requisitos&lt;/h2&gt;
+&lt;p&gt;Para desenvolver esta tarefa você precisará dos seguintes pacotes:
+- &lt;code&gt;rMarkdown&lt;/code&gt;
+- &lt;code&gt;knitr&lt;/code&gt;
+- &lt;code&gt;rpubs&lt;/code&gt;
+- &lt;code&gt;prettydoc&lt;/code&gt;
+- &lt;code&gt;xaringan&lt;/code&gt;
+- &lt;code&gt;xaringarExtra&lt;/code&gt;
+- &lt;code&gt;xaringanthemer&lt;/code&gt;
+- &lt;code&gt;flexdashboard&lt;/code&gt;
+- &lt;code&gt;kableExtra&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;atividades-para-consolidação-do-projeto-01&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Atividades para consolidação do Projeto 01:&lt;/h2&gt;
+&lt;p&gt;Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia &lt;strong&gt;01/07/2021&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;criar-um-documento-de-comunicação-relatório-apresentação-ou-outro-de-sua-escolha-em-rmarkdown.-faremos-nesta-etapa-a-entrega-considerando-o-projeto-integrador-que-deve-ser-composta-pela-descrição-do-problema-em-investigação-hipóteses-desenhadas-pelo-grupo-coleta-preliminar-de-dados-e-plano-de-análise-dos-dados.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Criar um documento de comunicação (relatório, apresentação ou outro de sua escolha) em &lt;code&gt;RMarkdown&lt;/code&gt;. Faremos, nesta etapa, a entrega considerando o projeto integrador, que deve ser composta pela descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados.&lt;/h3&gt;
+&lt;div id=&#34;criar-arquivo-rmarkdown-.rmd&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1. Criar arquivo &lt;code&gt;RMarkdown&lt;/code&gt; (.Rmd)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Criar um novo arquivo rmarkdown &lt;code&gt;.Rmd&lt;/code&gt; no &lt;code&gt;Rstudio&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;O nome do arquivo deverá ser: grupo#-r-proj01.Rmd (exemplo: grupo1-r-proj01.Rmd)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;editar-o-cabeçalho-yaml-no-topo-do-documento-incluindo&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;2. Editar o cabeçalho YAML no topo do documento, incluindo:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Data&lt;/li&gt;
+&lt;li&gt;Título que represente o conteúdo do relatório&lt;/li&gt;
+&lt;li&gt;Autores do grupo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bônus: descubra em uma breve pesquisa na internet como colocar um código para que a data seja sempre aquela do sistema operacional do computador.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;descreva-o-problema-que-será-abordado-pelo-grupo-no-projeto-integrador-da-disciplina.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;3. Descreva o problema que será abordado pelo grupo no projeto integrador da disciplina.&lt;/h4&gt;
+&lt;p&gt;Lembre-se que para definição do problema, o primeiro e mais crítico passo é delinear as questões que pretende abordar por meio da análise de dados e desenhar hipóteses referentes à caracterização do problema.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;colete-dados-preliminares-e-apresente-aqui-uma-tabela-contendo-os-dados-coletadas-e-as-respectivas-fontes.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;4. Colete dados preliminares e apresente aqui uma tabela contendo os dados coletadas e as respectivas fontes.&lt;/h4&gt;
+&lt;p&gt;Inclua colunas na tabela apresentando variáveis e tipos dos dados apresentados em cada variável. Nesse momento, não se preocupem em apresentar os dados ou quaisquer análises preliminares.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;apresente-um-plano-de-análise-de-dados-contendo-as-estratégias-metodológicas-que-o-grupo-pensa-serem-adequadas-para-os-tipos-de-dados-e-para-o-objetivo-do-trabalho.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;5. Apresente um plano de análise de dados, contendo as estratégias metodológicas que o grupo pensa serem adequadas para os tipos de dados e para o objetivo do trabalho.&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;explique-por-que-o-seu-projeto-é-relevante-e-como-pode-ser-considerado-como-subsídio-em-processos-decisórios-organizacionais.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;6. Explique por que o seu projeto é relevante e como pode ser considerado como subsídio em processos decisórios organizacionais.&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rubrica-de-avaliação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rubrica de avaliação&lt;/h2&gt;
+&lt;p&gt;Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto integrador que são úteis para nortear o desenvolvimento do trabalho.&lt;/p&gt;
+&lt;div id=&#34;relatório-rmarkdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Relatório RMarkdown&lt;/h3&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;19%&#34; /&gt;
+&lt;col width=&#34;80%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Sintaxe do código&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;HTML e Rmd apresentados&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;YAML contém título, autor e data&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;O arquivo foi nomeado conforme diretrizes&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;A gramática e a ortografia são excelentes - sem erros de ortografia&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Dados&lt;/td&gt;
+&lt;td&gt;40%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Dados apresentados de maneira clara e relevante&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;A estratégia de análise dos dados é clara e pertinente&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;19%&#34; /&gt;
+&lt;col width=&#34;80%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Justificativa e contextualização&lt;/td&gt;
+&lt;td&gt;40%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Relevância&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Descrição da contextualização do projeto em subsídio a processos decisórios&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aprendizagem-independente-opcional&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Aprendizagem independente (opcional)&lt;/h3&gt;
+&lt;p&gt;Há vários materiais, tutoriais e cursos sobre R gratuitos produzidos nos últimos anos. É realmente difícil escolher um para começar. Minha sugestão para quem estiver perdida ou perdido e quiser estudar um pouco mais é fazer o curso “&lt;a href=&#34;https://www.datacamp.com/courses/free-introduction-to-r&#34;&gt;Introduction to R&lt;/a&gt;” no site Datacamp.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Encontro Síncrono 1</title>
       <link>https://retaoliveira.github.io/places/courses/dados_grad/sinc1/</link>
       <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>

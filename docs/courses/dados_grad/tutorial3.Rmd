@@ -4,9 +4,9 @@ draft: false
 menu:
   dados_grad:
     parent: Tutoriais
-    weight: 1
+    weight: 15
 title: Tutorial 3
-weight: 20
+weight: 25
 editor_options: 
   markdown: 
     wrap: 72
