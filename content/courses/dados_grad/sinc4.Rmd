@@ -19,9 +19,8 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class03_dataadm', height = "400px")
+knitr::include_url('https://places-research.github.io/class04_dataadm', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class03_dataadm)
+[LINK](https://places-research.github.io/class04_dataadm)
 
-<iframe width="1147" height="645" src="https://www.youtube.com/embed/20IucWjr0I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

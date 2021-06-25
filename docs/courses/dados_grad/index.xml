@@ -588,5 +588,91 @@ Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;
 </description>
     </item>
     
+    <item>
+      <title>Tutorial 3</title>
+      <link>https://retaoliveira.github.io/places/courses/dados_grad/tutorial3/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/courses/dados_grad/tutorial3/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Baixe o arquivo e abra no RStudio. &lt;a href=&#34;https://www.dropbox.com/s/027ibiwzsfz128v/tutorial2.Rmd?dl=0&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Execute as operações assinaladas nos exercícios a seguir.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Salve o .Rmd e submeta-o por meio desta tarefa.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;dê-uma-olhada-no-dataframe-starwars.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Dê uma olhada no dataframe Starwars.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(starwars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 87
+## Columns: 14
+## $ name       &amp;lt;chr&amp;gt; &amp;quot;Luke Skywalker&amp;quot;, &amp;quot;C-3PO&amp;quot;, &amp;quot;R2-D2&amp;quot;, &amp;quot;Darth Vader&amp;quot;, &amp;quot;Leia Or~
+## $ height     &amp;lt;int&amp;gt; 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180, 2~
+## $ mass       &amp;lt;dbl&amp;gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 84.0, 77.~
+## $ hair_color &amp;lt;chr&amp;gt; &amp;quot;blond&amp;quot;, NA, NA, &amp;quot;none&amp;quot;, &amp;quot;brown&amp;quot;, &amp;quot;brown, grey&amp;quot;, &amp;quot;brown&amp;quot;, N~
+## $ skin_color &amp;lt;chr&amp;gt; &amp;quot;fair&amp;quot;, &amp;quot;gold&amp;quot;, &amp;quot;white, blue&amp;quot;, &amp;quot;white&amp;quot;, &amp;quot;light&amp;quot;, &amp;quot;light&amp;quot;, &amp;quot;~
+## $ eye_color  &amp;lt;chr&amp;gt; &amp;quot;blue&amp;quot;, &amp;quot;yellow&amp;quot;, &amp;quot;red&amp;quot;, &amp;quot;yellow&amp;quot;, &amp;quot;brown&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;blue&amp;quot;,~
+## $ birth_year &amp;lt;dbl&amp;gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0, 57.0, ~
+## $ sex        &amp;lt;chr&amp;gt; &amp;quot;male&amp;quot;, &amp;quot;none&amp;quot;, &amp;quot;none&amp;quot;, &amp;quot;male&amp;quot;, &amp;quot;female&amp;quot;, &amp;quot;male&amp;quot;, &amp;quot;female&amp;quot;,~
+## $ gender     &amp;lt;chr&amp;gt; &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;femini~
+## $ homeworld  &amp;lt;chr&amp;gt; &amp;quot;Tatooine&amp;quot;, &amp;quot;Tatooine&amp;quot;, &amp;quot;Naboo&amp;quot;, &amp;quot;Tatooine&amp;quot;, &amp;quot;Alderaan&amp;quot;, &amp;quot;T~
+## $ species    &amp;lt;chr&amp;gt; &amp;quot;Human&amp;quot;, &amp;quot;Droid&amp;quot;, &amp;quot;Droid&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Huma~
+## $ films      &amp;lt;list&amp;gt; &amp;lt;&amp;quot;The Empire Strikes Back&amp;quot;, &amp;quot;Revenge of the Sith&amp;quot;, &amp;quot;Return~
+## $ vehicles   &amp;lt;list&amp;gt; &amp;lt;&amp;quot;Snowspeeder&amp;quot;, &amp;quot;Imperial Speeder Bike&amp;quot;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;quot;Imp~
+## $ starships  &amp;lt;list&amp;gt; &amp;lt;&amp;quot;X-wing&amp;quot;, &amp;quot;Imperial shuttle&amp;quot;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;quot;TIE Advanced x1&amp;quot;,~&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;modifique-o-seguinte-gráfico-para-que-a-cor-de-todos-os-pontos-seja-rosa.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = &amp;quot;#30509C&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/places/courses/dados_grad/tutorial3_files/figure-html/scatterplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adicione-texto-no-título-eixos-x-e-y-e-tamanho-dos-pontos.-remova-o-comentário-para-ver-o-efeito.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = &amp;quot;#30509C&amp;quot;) +
+  labs(
+    #title = &amp;quot;___&amp;quot;,
+    #x = &amp;quot;___&amp;quot;, 
+    #y = &amp;quot;___&amp;quot;,
+    #___
+    )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/places/courses/dados_grad/tutorial3_files/figure-html/scatterplot-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-única-variável-categórica-do-conjunto-de-dados-e-faça-um-gráfico-de-barras-de-sua-distribuição.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/h3&gt;
+&lt;p&gt;(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com &lt;code&gt;eval = FALSE&lt;/code&gt; porque o código atual ali não é válido e, portanto, o documento não permitia o &lt;code&gt;knit&lt;/code&gt;. Uma vez substituído o código por um código válido, defina a opção “eval = TRUE”, ou remova a opção “eval” por completo, uma vez que está definida como “TRUE” por padrão).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, aes(___)) +
+  geom___&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-única-variável-numérica-e-faça-um-histograma-dela.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/h3&gt;
+&lt;p&gt;(Desta vez nenhum código inicial é fornecido, você está por sua conta!)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-variável-numérica-e-uma-variável-categórica-e-faça-uma-visualização-você-escolhe-o-tipo-para-visualizar-a-relação-entre-as-duas-variáveis.-junto-com-seu-código-e-sua-saída-forneça-uma-interpretação-da-visualização.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-duas-variáveis-categóricas-e-faça-uma-visualização-para-entender-visualmente-a-relação-entre-as-duas-variáveis.-junto-com-seu-código-e-saída-forneça-uma-interpretação-da-visualização.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-duas-variáveis-numéricas-e-duas-variáveis-categóricas-e-faça-uma-visualização-que-incorpore-todas-elas-e-forneça-uma-interpretação-com-sua-resposta.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
