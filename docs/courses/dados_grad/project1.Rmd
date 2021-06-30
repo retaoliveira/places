@@ -26,7 +26,7 @@ Para desenvolver esta tarefa você precisará dos seguintes pacotes:
 
 ## Atividades para consolidação do Projeto 01:
 
-Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia **01/07/2021**. 
+Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia **08/07/2021**. 
 
 ### Criar um documento de comunicação (relatório, apresentação ou outro de sua escolha) em `RMarkdown`. Faremos, nesta etapa, a entrega considerando o projeto integrador, que deve ser composta pela descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados.
 

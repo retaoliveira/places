@@ -1,0 +1,28 @@
+---
+date: "2021-06-30T00:00:00+01:00"
+draft: false
+menu:
+  log_urb:
+    parent: 3 - Desafios da Logística Urbana
+    weight: 10
+title: Desafios da Logística Urbana
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/xQ-MuZguCK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/Rdu1krb6SJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/oFSL9HAhnew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/oGgDelr8uls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
