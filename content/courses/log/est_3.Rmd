@@ -1,0 +1,30 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 5
+title: Nível de Serviço Logístico
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+Leia do artigo [Logística e Serviço ao Cliente: como Aumentar a satisfação do cliente através de uma cadeia de abastecimento eficaz](https://github.com/retaoliveira/relements/raw/main/texto/servico_log.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
+
+## 1. Varejo tradicional em uma cadeia de suprimentos
+
+a. Como um comerciante de alimentos (mercearia ou pequeno supermercado) poderia usar o inventário (produtos em estoque no estabelecimento) para aumentar a capacidade responsividade da cadeia de suprimentos da empresa? Quais as consequências dessa decisão?
+
+## 2. Varejo e-commerce - serviço de entrega
+
+a. Como uma empresa de entregas em domicílio pode utilizar os preços dos serviços de entrega para melhorar sua rentabilidade?
+b. Quais cuidados devem ser observados?
+c. Cite um indicador que você recomendaria para análise de desempenho logístico desse processo e um indicador para mensurar o nível de serviço percebido pelo cliente. 
+
