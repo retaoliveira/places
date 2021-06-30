@@ -1,11 +1,11 @@
 ---
-date: "2020-12-275T00:00:00+01:00"
+date: "2021-06-30T00:00:00+01:00"
 draft: false
 menu:
   log:
     parent: Estudos autônomos
-    weight: 5
-title: Nível de Serviço Logístico
+    weight: 7
+title: Logística Urbana
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,18 +13,11 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 20
+weight: 21
 ---
 
-Leia do artigo [Logística e Serviço ao Cliente: como Aumentar a satisfação do cliente através de uma cadeia de abastecimento eficaz](https://github.com/retaoliveira/relements/raw/main/texto/servico_log.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
+Assita os vídeos constantes em [Desafios da Logística Urbana](https://retaoliveira.github.io/places/conteudo/log_urb/desafios) e responda as questões que seguem na tarefa postada no SIGAA:
 
-## 1. Varejo tradicional em uma cadeia de suprimentos
+1. Defina Logística Urbana
 
-a. Como um comerciante de alimentos (mercearia ou pequeno supermercado) poderia usar o inventário (produtos em estoque no estabelecimento) para aumentar a capacidade responsividade da cadeia de suprimentos da empresa? Quais as consequências dessa decisão?
-
-## 2. Varejo e-commerce - serviço de entrega
-
-a. Como uma empresa de entregas em domicílio pode utilizar os preços dos serviços de entrega para melhorar sua rentabilidade?
-b. Quais cuidados devem ser observados?
-c. Cite um indicador que você recomendaria para análise de desempenho logístico desse processo e um indicador para mensurar o nível de serviço percebido pelo cliente. 
-
+2. Quais desafios adicionais transportadores e embarcadores enfrentam quando discutimos a etapa da gestão da cadeia de suprimentos que acontece nas cidades? Explique. 
