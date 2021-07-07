@@ -5,7 +5,7 @@ menu:
   dados_grad:
     parent: Encontros
     weight: 20
-title: Encontros Síncronos 5 e 6
+title: Encontro Síncrono 6
 weight: 20
 editor_options: 
   markdown: 
@@ -19,8 +19,8 @@ type: docs
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_url('https://places-research.github.io/class04_dataadm', height = "400px")
+knitr::include_url('https://places-research.github.io/class06_dataadm', height = "400px")
 ```
 
-[LINK](https://places-research.github.io/class04_dataadm)
+[LINK](https://places-research.github.io/class06_dataadm)
 
