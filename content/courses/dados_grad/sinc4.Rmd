@@ -5,7 +5,7 @@ menu:
   dados_grad:
     parent: Encontros
     weight: 19
-title: Encontros Síncronos 4 e 5
+title: Encontros Síncronos 4, 5 e 6
 weight: 19
 editor_options: 
   markdown: 
