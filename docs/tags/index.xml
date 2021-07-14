@@ -7,10 +7,28 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>pt-br</language>
     <copyright>Renata Oliveira {year}</copyright>
-    <lastBuildDate>Mon, 21 Jun 2021 17:10:58 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://retaoliveira.github.io/places/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git</title>
+      <link>https://retaoliveira.github.io/places/tag/git/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/tag/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://retaoliveira.github.io/places/tag/github/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/tag/github/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Acessibilidade</title>
@@ -27,24 +45,6 @@
       <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
       
       <guid>https://retaoliveira.github.io/places/tag/planejamento-urbano/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://retaoliveira.github.io/places/tag/git/</link>
-      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/tag/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Github</title>
-      <link>https://retaoliveira.github.io/places/tag/github/</link>
-      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://retaoliveira.github.io/places/tag/github/</guid>
       <description></description>
     </item>
     

@@ -7,10 +7,39 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>pt-br</language>
     <copyright>Renata Oliveira {year}</copyright>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://retaoliveira.github.io/places/tag/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Usando o Github Desktop - Git sem coding</title>
+      <link>https://retaoliveira.github.io/places/post/usando-o-github-desktop-git-sem-coding/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/places/post/usando-o-github-desktop-git-sem-coding/</guid>
+      <description>&lt;p&gt;Algumas dicas de como utilizar o Github Desktop para fazer uso do Git e do Github sem a necessidade de aprender as linhas de comando.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instale o aplicativo conforme seu sistema operacional. Se você utilizar o Windows, faça o download no &lt;a href=&#34;https://desktop.github.com/&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crie uma conta no &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vá em File &amp;raquo; Options &amp;raquo; Accounts &amp;raquo; Sign in&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/1git.png%22&#34; alt=&#34;File&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/2git.png%22&#34; alt=&#34;Options&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/3git.png%22&#34; alt=&#34;Account&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/4git.png%22&#34; alt=&#34;Sign in&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/5git.png%22&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Para mais informações, acesse o site &lt;a href=&#34;https://docs.github.com/pt/desktop&#34;&gt;Github Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Principais comandos do Git</title>

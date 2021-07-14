@@ -5,7 +5,7 @@ menu:
   dados_grad:
     parent: Encontros
     weight: 19
-title: Encontros Síncronos 4 e 5
+title: Encontros Síncronos 4, 5 e 6
 weight: 19
 editor_options: 
   markdown: 
@@ -29,3 +29,6 @@ knitr::include_url('https://places-research.github.io/class04_dataadm', height =
 
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/TrrsMHB4gbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="1198" height="674" src="https://www.youtube.com/embed/FsiyOd_vArc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
