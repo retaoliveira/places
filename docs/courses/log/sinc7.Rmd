@@ -4,9 +4,9 @@ draft: false
 menu:
   log:
     parent: Encontros
-    weight: 15
-title: Encontro Síncrono 7
-weight: 17
+    weight: 18
+title: Encontro Síncrono 8
+weight: 18
 editor_options: 
   markdown: 
     wrap: 72

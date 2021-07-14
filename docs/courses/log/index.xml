@@ -30,6 +30,10 @@
 &lt;iframe src=&#34;https://padlet.com/padlets/ahn87voe2kb46rxg/embeds/preview_embed&#34; style=&#34;width:100%;height:100%;display:block;padding:0;margin:0&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
+&lt;div class=&#34;padlet-embed&#34; style=&#34;border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:480px;height:352px;max-width:100%&#34;&gt;
+&lt;iframe src=&#34;https://padlet.com/padlets/e2wjcp8rmq1oqv0z/embeds/preview_embed&#34; style=&#34;width:100%;height:100%;display:block;padding:0;margin:0&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -261,7 +265,7 @@
     </item>
     
     <item>
-      <title>Encontro Síncrono 7</title>
+      <title>Encontro Síncrono 8</title>
       <link>https://retaoliveira.github.io/places/courses/log/sinc7/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
       
