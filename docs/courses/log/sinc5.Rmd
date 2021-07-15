@@ -24,3 +24,8 @@ knitr::include_url('https://places-research.github.io/aula05_log/', height = "40
 
 [LINK](https://places-research.github.io/aula05_log/)
 
+
+
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/gwhXHqaFVPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
