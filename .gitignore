@@ -7,3 +7,5 @@ Thumbs.db
 .Rdata
 .httr-oauth
 .DS_Store
+/public/
+/resources/
