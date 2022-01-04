@@ -1,6 +1,6 @@
 ---
 date: '2021-09-03'
-draft: false
+draft: true
 menu:
   intro_r:
     parent: 8 - Segmentação de mercado
@@ -16,7 +16,7 @@ type: docs
 weight: 90
 ---
 
-<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 <div id="TOC">
 <ul>
@@ -94,6 +94,11 @@ library(plotly)</code></pre>
 ##     layout</code></pre>
 <pre class="r"><code>library(viridis)</code></pre>
 <pre><code>## Carregando pacotes exigidos: viridisLite</code></pre>
+<pre><code>## 
+## Attaching package: &#39;viridis&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:viridisLite&#39;:
+## 
+##     viridis.map</code></pre>
 <pre class="r"><code>library(hrbrthemes)
 library(knitr)
 library(kableExtra)</code></pre>
@@ -184,7 +189,7 @@ ggplot(customer_data, aes(x = Genre)) +
   ggtitle(&quot;Usando o BarPlot para exibir a comparação de gênero&quot;) +
   theme_ipsum() +
   labs(x = &quot;Gênero&quot;, y = &quot;Número de ocorrências&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Pelo gráfico acima, observamos que o número de mulheres é maior do que o de homens.</p>
 </div>
 <div id="visualização-da-distribuição-etária" class="section level1">
@@ -196,15 +201,15 @@ ggplot(customer_data, aes(x = Genre)) +
 <pre class="r"><code>ggplot(customer_data, aes(x = Age)) +
   geom_histogram(binwidth = 5) +
   theme_ipsum() </code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <pre class="r"><code>boxplot(customer_data$Age,
        col=&quot;#ff0066&quot;,
        main=&quot;Boxplot for Descriptive Analysis of Age&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(customer_data, aes(y = Age)) +
   geom_boxplot(fill=&quot;#ff0066&quot;) +
   theme_ipsum() </code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
 <p>A partir das duas visualizações acima, concluímos que a idade mediana do cliente está entre 30 e 35 anos. A idade mínima dos clientes é 18 anos, enquanto que a idade máxima é 70 anos.</p>
 </div>
 <div id="análise-da-renda-anual-dos-clientes" class="section level1">
@@ -217,12 +222,12 @@ ggplot(customer_data, aes(x = Genre)) +
   geom_histogram(aes(x = `Annual Income (k$)`), binwidth = 10, fill = &quot;#660033&quot;) +
   theme_ipsum() +
   ggtitle(&quot;Histogram for Annual Income&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(customer_data) +
   geom_density(aes(x = `Annual Income (k$)`), fill=&quot;#69b3a2&quot;, color=&quot;#e9ecef&quot;, alpha=0.8) +
   theme_ipsum() +
   ggtitle(&quot;Histogram for Annual Income&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Da análise descritiva acima, concluímos que a renda mínima anual dos clientes é de 15 e a máxima renda é de 137 mil $ anuais. As pessoas que ganham uma renda média de 70 têm a maior contagem de freqüência em nossa distribuição de histogramas. O salário médio de todos os clientes é de 60,56.</p>
 </div>
 <div id="análise-da-pontuação-de-gastos-dos-clientes" class="section level1">
@@ -233,12 +238,12 @@ ggplot(customer_data, aes(x = Genre)) +
 <pre class="r"><code>ggplot(customer_data, aes(y = `Spending Score (1-100)`)) +
   geom_boxplot(fill=&quot;#ff0066&quot;) +
   theme_ipsum() </code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(customer_data) +
   geom_histogram(aes(x = `Spending Score (1-100)`), binwidth = 10, fill = &quot;#660033&quot;) +
   theme_ipsum() +
   ggtitle(&quot;HistoGgram for Spending Score&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>Podemos ver que a Análise Descritiva da Pontuação de Gastos é que Min é 1, Max é 99 e a média é 50,20. Pelo histograma, concluímos que os clientes entre as classes 40 e 50 são os mais frequentes entre todas as classes.</p>
 <div id="k-means-cluster-para-segmentação-de-mercado" class="section level2">
 <h2>K-Means Cluster para segmentação de mercado</h2>
@@ -256,14 +261,14 @@ ggplot(customer_data, aes(x = Genre)) +
   
 fviz_nbclust(df, kmeans, method = &quot;wss&quot;)+
   geom_vline(xintercept = 6, linetype = 2)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>Do gráfico acima, concluímos que 6 é um número apropriado de clusters.</p>
 <p>Usando a função <code>fviz_nbclust()</code>, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:</p>
 <pre class="r"><code>library(NbClust)
 library(factoextra)
 
 fviz_nbclust(customer_data[,3:5], kmeans, method = &quot;silhouette&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>Agora, tomemos k = 6 como nosso número de clusters inicial.</p>
 <pre class="r"><code>set.seed(12345)
 km.res &lt;- kmeans(df, 6, nstart=25)
@@ -341,7 +346,7 @@ km.res$centers</code></pre>
              repel=TRUE)
 
 a + theme_ipsum()</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 </div>
 <div id="relacionando-as-variáveis" class="section level2">
 <h2>Relacionando as variáveis:</h2>
@@ -351,7 +356,7 @@ a + theme_ipsum()</code></pre>
               breaks=c(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;,&quot;6&quot;),
               labels=c(&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, &quot;Cluster 4&quot;, &quot;Cluster 5&quot;,&quot;Cluster 6&quot;)) +
   ggtitle(&quot;Segments of Mall Customers&quot;, subtitle = &quot;Using K-means Clustering&quot;)</code></pre>
-<p><img src="/places/conteudo/intro_r/mkt_seg_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="/cursos/intro_r/mkt_seg_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <blockquote>
 <p>Complete a análise a seguir identificando os agrupamentos:</p>
 </blockquote>

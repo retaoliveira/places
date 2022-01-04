@@ -1,5 +1,5 @@
 ---
-date: 2021-05-05T00:00:00+01:00
+date: 2021-10-15T00:00:00+01:00
 draft: false
 menu:
   intro_r:
@@ -17,16 +17,16 @@ output:
 type: docs
 ---
 
-<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<script src="/places/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
-<script src="/places/rmarkdown-libs/jquery/jquery.min.js"></script>
-<link href="/places/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-<script src="/places/rmarkdown-libs/datatables-binding/datatables.js"></script>
-<link href="/places/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="/places/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="/places/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
-<link href="/places/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
-<script src="/places/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery-3.6.0.min.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
   <link rel="stylesheet" href="/assets/css/custom.css" type="text/css" />
 
 <div id="TOC">
@@ -39,14 +39,12 @@ type: docs
 <li><a href="#formatação-de-texto">Formatação de texto</a></li>
 <li><a href="#incluindo-tabelas">Incluindo tabelas</a></li>
 <li><a href="#incluindo-figuras">Incluindo figuras</a></li>
-<li><a href="#chunks"><code>chunks</code></a></li>
+<li><a href="#chunks">chunks</a></li>
 <li><a href="#visualização">Visualização</a></li>
 <li><a href="#metadados---cabeçalho">Metadados - Cabeçalho</a></li>
 <li><a href="#formatos-de-output">Formatos de output</a></li>
-<li><a href="#divulgando">Divulgando</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#rode-o-seu-primeiro-documento-em-rmarkdown">Rode o seu primeiro documento em RMarkdown!</a></li>
 </ul>
 </div>
 
@@ -55,7 +53,7 @@ type: docs
 </iframe>
 <div id="tldr" class="section level1">
 <h1>TL;DR</h1>
-<p>RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do <a href="https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP">link</a></p>
+<p>RMarkdown é uma estrutura de documento para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do <a href="https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP">link</a></p>
 <div id="o-que-é-markdown" class="section level2">
 <h2>O que é Markdown?</h2>
 <p>Segundo o criador da linguagem:</p>
@@ -67,6 +65,7 @@ type: docs
 <ul>
 <li><a href="https://blog.da2k.com.br/2015/02/08/aprenda-markdown/">Sintaxe</a></li>
 <li><a href="https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md">Tutorial</a></li>
+<li><a href="https://beatriz-milz.shinyapps.io/tutorial_markdown/#section-introdu%C3%A7%C3%A3o">Tutorial interativo</a></li>
 </ul>
 </div>
 <div id="rmarkdown" class="section level2">
@@ -299,18 +298,19 @@ setosa
   head() %&gt;% 
   DT::datatable()</code></pre>
 <div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[5.1,4.9,4.7,4.6,5,5.4],[3.5,3,3.2,3.1,3.6,3.9],[1.4,1.4,1.3,1.5,1.4,1.7],[0.2,0.2,0.2,0.2,0.2,0.4],["setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6"],[5.1,4.9,4.7,4.6,5,5.4],[3.5,3,3.2,3.1,3.6,3.9],[1.4,1.4,1.3,1.5,1.4,1.7],[0.2,0.2,0.2,0.2,0.2,0.4],["setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <p>Informações sobre a configuração dos packages considerados porm ser encontrados nos links: <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"><code>kableExtra</code></a>, `</p>
 </div>
 <div id="incluindo-figuras" class="section level3">
 <h3>Incluindo figuras</h3>
-<p><img src="https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png" alt="Figura 1: RMarkdown" />
-Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrização do <code>chunk</code> permite configurar a figura:</p>
+<p>Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrização do <code>chunk</code> permite configurar a figura:</p>
 <pre class="r"><code>knitr::include_graphics(img1_path)</code></pre>
-<p><a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Dicas:</a></p>
+<blockquote>
+<p><a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Dicas!</a></p>
+</blockquote>
 </div>
 <div id="chunks" class="section level3">
-<h3><code>chunks</code></h3>
+<h3>chunks</h3>
 <p><code>chunks</code> são blocos de código que podem ser incluídos e rodados em um documento <code>.Rmd</code>. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em <code>R</code> é o atalho <code>Ctrl + Alt + i</code>.</p>
 <p>O <code>chunk</code> deve ser iniciado por ```<code>{r }</code> e alguns parâmetros definem opções para os <code>chunks</code>.</p>
 <ul>
@@ -322,21 +322,21 @@ Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrizaç�
 </ul>
 <pre class="r"><code>x &lt;- rnorm(30)
 x</code></pre>
-<pre><code>##  [1]  0.85301979 -1.20670342 -2.22819565 -1.64121807 -0.01532080 -0.46151015
-##  [7]  0.57836682 -0.86865502  0.07392585 -1.14114997  0.28009723  0.02311227
-## [13]  0.54236216 -0.54058459 -0.69211749  0.52809306  2.62622924 -0.08507349
-## [19]  1.65361651 -0.46970572  1.59696520 -0.23543453  0.16921561 -0.79719001
-## [25]  0.63282570  1.27541352  0.60651845 -0.32445256  0.69333907  0.23582679</code></pre>
+<pre><code>##  [1]  0.5162300 -0.9708385  1.0235770 -0.6915387 -1.0844002 -2.3260716
+##  [7] -1.2964939 -0.5799969 -0.6267196 -1.8150133  0.3675131 -0.5721890
+## [13] -0.2655877 -0.9298799 -0.8974441 -0.7339284  0.7127292 -1.3384530
+## [19]  0.3969737  1.1318720  0.4960721  0.5678342  1.2569189  1.2371460
+## [25] -0.8775620  0.9499297  1.0608437  0.3446300 -0.4034319  0.2331705</code></pre>
 <p>Para definir uma opção da mesma maneira para todos os <code>chunks</code> do documento, é possível criar um <code>chunk</code> com o código <code>knitr::opts_chunk$set()</code>, como no exemplo abaixo:</p>
 <p>As opções gerais de <code>chunks</code> podem ser encontradas no <a href="https://yihui.org/knitr/options/">link</a>.</p>
 </div>
 <div id="visualização" class="section level3">
 <h3>Visualização</h3>
 <pre class="r"><code>plot(x)</code></pre>
-<p><img src="/places/conteudo/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 <p>Também podemos fazer um histograma dessa variável simulada</p>
 <pre class="r"><code>hist(x)</code></pre>
-<p><img src="/places/conteudo/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p><img src="/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
 <div id="metadados---cabeçalho" class="section level3">
 <h3>Metadados - Cabeçalho</h3>
@@ -367,27 +367,8 @@ x</code></pre>
     number_sections: yes
   pdf_document:
     keep_tex: true</code></pre>
-</div>
-<div id="divulgando" class="section level3">
-<h3>Divulgando</h3>
-<p>No RStudio, crie um novo documento <code>R Markdown</code> escolhendo <code>Arquivo | Novo | R Markdown</code>.
-Clique no botão <code>Knit HTML</code> na barra de ferramentas do doc para visualizar seu documento.
-Na janela de pré-visualização, clique no botão <code>Publicar</code>.</p>
-<p>É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta <code>RPubs</code> ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca).</p>
-<p>Uma vez terminado e clicando no botão <code>Continue</code> na parte inferior, você irá diretamente para o artigo publicado.</p>
-<p>Você pode optar por atualizar seu conteúdo.</p>
-<hr />
+<iframe width="1197" height="645" src="https://www.youtube.com/embed/xU4AXv0GolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </div>
 </div>
-</div>
-<div id="rode-o-seu-primeiro-documento-em-rmarkdown" class="section level1">
-<h1>Rode o seu primeiro documento em RMarkdown!</h1>
-<ol style="list-style-type: decimal">
-<li><p>Salve o <a href="https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ">arquivo</a> em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade.</p></li>
-<li><p>Abra o arquivo no RStudio: <code>File | Open File</code> e navegue até o arquivo <code>01-covid.Rmd</code> selecionando-o.</p></li>
-<li><p>Você identificará o arquivo por meio do <code>YAML</code> com <code>title: "Mortes por COVID-19"</code></p></li>
-<li><p>Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do <code>RMarkdown</code> para que sejam instalados <code>packages</code> necessários para rodar esse <code>.Rmd</code></p></li>
-<li><p>Clique no botão de <code>knitr</code>.</p></li>
-</ol>
-<p>Aprecie o seu primeiro documento!</p>
 </div>

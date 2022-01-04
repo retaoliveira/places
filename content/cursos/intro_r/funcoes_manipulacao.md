@@ -1,9 +1,9 @@
 ---
 date: "2021-05-15T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   intro_r:
-    parent: 5 - Funções para manipulação e tratamento de dados
+    parent: 5 - Funções para manipulação de dados
     weight: 30
 title: Manipulação e limpeza de dados
 toc: true
@@ -11,7 +11,8 @@ type: docs
 weight: 50
 ---
 
-Introdução ao pacote dplyr
+# Introdução ao pacote dplyr
+
 Começando pelo meio: data frames
 Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.
 

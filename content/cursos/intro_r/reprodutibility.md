@@ -1,9 +1,9 @@
 ---
-date: "2021-05-05T00:00:00+01:00"
+date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 7 - Tópico avançado em documentos reprodutíveis
+    parent: 2 - Documentos reprodutíveis
     weight: 19
 title: Documentos parametrizados
 toc: true

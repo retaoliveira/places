@@ -16,7 +16,7 @@ type: docs
 weight: 70
 ---
 
-<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 <div id="TOC">
 <ul>
@@ -118,11 +118,11 @@ ls()</code></pre>
 <p>Finalmente, crie o mapa expresso utilizando:</p>
 <pre class="r"><code>library(tmap)
 qtm(georgia, fill=&quot;red&quot;, style = &quot;natural&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>O uso do parâmetro <code>style</code> permite configurações rápidas de mapas por meio do package <code>tmap</code>. Explore a função <code>qtm</code> para entender os demais temas possíveis.</p>
 <p>O parâmetro <code>fill</code> pode ser utilizado para especificar uma cor ou a variável a ser mapeada.</p>
 <pre class="r"><code>qtm(georgia_sf, fill = &quot;MedInc&quot;, text =&quot;Name&quot;, text.size=0.5, format = &quot;World_wide&quot;, style = &quot;classic&quot;, text.root = 5, fill.title = &quot;Median Income&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
 <div id="mapa-completo-por-meio-do-tmap" class="section level3">
 <h3>Mapa completo por meio do <code>tmap</code></h3>
@@ -134,14 +134,14 @@ g &lt;- st_union(georgia_sf)
 tm_shape(georgia_sf) + 
   tm_fill(&quot;tomato&quot;) +
   tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>Incluir alguns estilos:</p>
 <pre class="r"><code># plotar as camadas espaciais
 tm_shape(georgia_sf) + 
   tm_fill(&quot;tomato&quot;) +
   tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;) +
   tm_style(&quot;natural&quot;, bg.color = &quot;grey90&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>Incluir limite estadual. Repare que a função <code>tm_shape</code> vai ser chamada novamente uma vez que outro objeto será incluído no mapa.</p>
 <pre class="r"><code>tm_shape(georgia_sf) + 
   tm_fill(&quot;tomato&quot;) +
@@ -149,7 +149,7 @@ tm_shape(georgia_sf) +
   tm_style(&quot;natural&quot;, bg.color = &quot;grey90&quot;) +
   tm_shape(g) + 
   tm_borders(lwd=2) # lwd - line width - espessura da linha</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Incluindo todos os parâmetros juntos:</p>
 <pre class="r"><code>tm_shape(georgia_sf) + 
   tm_fill(&quot;tomato&quot;) +
@@ -160,35 +160,35 @@ tm_shape(georgia_sf) +
   tm_layout(title = &quot;O estado da Georgia&quot;,
             title.size = 1,
             title.position = c(0.55, &quot;top&quot;))</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>Experimente esses outros parâmetros da função <code>qtm</code>.</p>
 <pre class="r"><code>data(World, rivers, metro, land)
 
 # just the map
 qtm(World)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <pre class="r"><code># choropleth
 qtm(World, fill = &quot;economy&quot;, format = &quot;World&quot;, style = &quot;col_blind&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
 <pre class="r"><code># choropleth with more specifications
 qtm(World, fill=&quot;HPI&quot;, fill.n = 9, fill.palette = &quot;div&quot;,
     fill.title = &quot;Happy Planet Index&quot;, fill.id = &quot;name&quot;, 
     style = &quot;gray&quot;, format = &quot;World&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
 <pre class="r"><code># Alternative to previous map - RECOMENDED
 tm_shape(World) +
     tm_polygons(&quot;HPI&quot;, n = 9, palette = &quot;div&quot;,
         title = &quot;Happy Planet Index&quot;, id = &quot;name&quot;) +
     tm_style(&quot;gray&quot;) +
     tm_format(&quot;World&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
 <pre class="r"><code># Bubble map
 qtm(World, borders = NULL) + 
 qtm(metro, symbols.size = &quot;pop2010&quot;, 
     symbols.title.size= &quot;Metropolitan Areas&quot;, 
     symbols.id= &quot;name&quot;,
     format = &quot;World&quot;)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-5.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-12-5.png" width="672" /></p>
 <p>Para plotar dois mapas juntos com dados diferentes, experimente o seguinte código:</p>
 <pre class="r"><code>library(tmap)
 
@@ -202,9 +202,9 @@ t2 &lt;- tm_shape(georgia2) +
               tm_borders() +
               tm_layout(asp=0.86, bg.color = &quot;grey95&quot;) #alinhar a segunda figura
 t1</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <pre class="r"><code>t2</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
 <p>Para especificar o layout da figura combinando os mapas:</p>
 <pre class="r"><code>library(grid)
 
@@ -217,16 +217,10 @@ pushViewport(viewport(layout = grid.layout(1,2)))
 #  Plotar usando o comando print
 print(t1, vp=viewport(layout.pos.col = 1, height = 5))
 print(t2, vp=viewport(layout.pos.col = 2, height = 5))</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 Repare que t1 é um objeto <code>sf</code> e t2 é um objeto <code>sp</code> e apresentam sistemas de referência diferentes.</p>
 <p>Para consultar os diferentes sistemas de projeção, verifique utilizando a função <code>crs</code>.</p>
 <pre class="r"><code>crs(georgia_sf)</code></pre>
-<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
-## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
-## definition</code></pre>
-<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
-## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
-## definition</code></pre>
 <pre><code>## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs</code></pre>
 <pre class="r"><code>crs(georgia2)</code></pre>
 <pre><code>## CRS arguments:
@@ -285,7 +279,7 @@ data.frame(georgia_sf)[,13]</code></pre>
               tm_borders() +
               tm_text(&quot;Name&quot;, size=0.3) +
               tm_layout(frame = FALSE)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-17-1.png" width="672" />
 Para criar um subconjunto dos dados, é possível fazer uma seleção criando uma camada com o subconjunto por meio dos índices:</p>
 <pre class="r"><code>index &lt;- c(81, 82, 83, 150, 62, 53, 21, 16, 124, 121, 17)
 georgia_sub &lt;- georgia_sf[index, ]</code></pre>
@@ -299,7 +293,7 @@ tm_shape(georgia_sub) +
               tm_fill(&quot;lightblue&quot;) +
               tm_borders() +
               tm_layout(frame = TRUE, title = &quot;Georgia com subconjunto&quot;, title.size=1, title.position = c(0.02, &quot;bottom&quot;))</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <hr />
 </div>
 </div>
@@ -462,7 +456,7 @@ MyMap &lt;- openmap(ul,lr)
 par(mar = c(0,0,0,0))
 plot(MyMap, removeMargin=FALSE)
 plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)</code></pre>
-<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/map_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 </div>
 <div id="visualização-de-fenômenos-sociais-no-espaço" class="section level2 tabset tabset-fade tabset-pills">
 <h2>Visualização de fenômenos sociais no espaço</h2>

@@ -12,6 +12,32 @@ type: docs
 weight: 40
 ---
 
+# Competências a serem desenvolvidas
+- Pensamento espacial     
+- Introdução à cartografia   
+  - forma e dimensões terrestres   
+  - representações: sistemas geodésicos, modelos e datum    
+  - sistemas de coordenadas geográficas e projetadas   
+- Sistemas de Informações Geográficas (_Geographic Information Systems_)   
+- Unidades espaciais e representação de fenômenos espaciais   
+- Distâncias   
+- QGIS   
+  - Ambiente e funcionalidades básicas do QGIS   
+  - Complementos: instalação e para que servem  
+  - Mudança de datum e sistemas de coordenadas   
+  - Tabela de atributos   
+  - Estruturas de dados espaciais  
+    - classificação: vetoriais e matriciais   
+    - interoperabilidade   
+    - geocodificação   
+  - Funções básicas em GIS   
+      - seleção por atributo e por localização    
+      - join por código e join espacial   
+      - mapas temáticos   
+      - geração de centroides e agregação de variaveis  
+      - conceito de redes   
+      - layout de impressão 
+      
 <div id="disqus_thread"></div>
 <script>
     /**

@@ -3,7 +3,7 @@ date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 3 - Estrutura de dados no R
+    parent: 3 - Trabalhando com dados no R
     weight: 7
 title: Abrindo dados no R
 weight: 7

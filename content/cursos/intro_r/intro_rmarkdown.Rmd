@@ -1,5 +1,5 @@
 ---
-date: 2021-05-05T00:00:00+01:00
+date: 2021-10-15T00:00:00+01:00
 draft: false
 menu:
   intro_r:
@@ -27,7 +27,7 @@ Assita o vídeo! É impactante, baseado em fatos reais!
 
 # TL;DR
 
-RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do [link](https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP)
+RMarkdown é uma estrutura de documento para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do [link](https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP)
 
 
 ## O que é Markdown?
@@ -42,6 +42,7 @@ Dicas de sintaxe da linguagem Markdown podem ser encontradas em:
 
 - [Sintaxe](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/)
 - [Tutorial](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md)
+- [Tutorial interativo](https://beatriz-milz.shinyapps.io/tutorial_markdown/#section-introdu%C3%A7%C3%A3o)
 
 
 ## RMarkdown
@@ -103,16 +104,20 @@ Informações sobre a configuração dos packages considerados porm ser encontra
 
 ### Incluindo figuras
 
-![Figura 1: RMarkdown](https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png)
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE, out.width="90%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png")
+```
+
 Eu prefiro incluir figuras por meio de `chunk`, pois a parametrização do `chunk` permite configurar a figura:
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 knitr::include_graphics(img1_path)
 ```
 
-[Dicas:](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/) 
+> [Dicas!](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/) 
 
-### `chunks`
+### chunks
 
 `chunks` são blocos de código que podem ser incluídos e rodados em um documento `.Rmd`. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em `R` é o atalho `Ctrl + Alt + i`. 
 
@@ -190,33 +195,7 @@ output:
 ```
 
 
-### Divulgando
+<iframe width="1197" height="645" src="https://www.youtube.com/embed/xU4AXv0GolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-No RStudio, crie um novo documento `R Markdown` escolhendo `Arquivo | Novo | R Markdown`.
-Clique no botão `Knit HTML` na barra de ferramentas do doc para visualizar seu documento.
-Na janela de pré-visualização, clique no botão `Publicar`.
-
-É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta `RPubs` ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca). 
-
-Uma vez terminado e clicando no botão `Continue` na parte inferior, você irá diretamente para o artigo publicado. 
-
-Você pode optar por atualizar seu conteúdo.
-
-
----
-
-# Rode o seu primeiro documento em RMarkdown!
-
-1. Salve o [arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ) em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade. 
-
-2. Abra o arquivo no RStudio: `File | Open File` e navegue até o arquivo `01-covid.Rmd` selecionando-o. 
-
-3. Você identificará o arquivo por meio do `YAML` com `title: "Mortes por COVID-19"`
-
-4. Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do `RMarkdown` para que sejam instalados `packages` necessários para rodar esse `.Rmd`
-
-4. Clique no botão de `knitr`. 
-
-Aprecie o seu primeiro documento! 
 
 

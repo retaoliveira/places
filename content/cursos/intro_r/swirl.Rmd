@@ -1,11 +1,11 @@
 ---
-date: "2021-05-05T00:00:00+01:00"
+date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 1 - Análise de dados para gestão
-    weight: 30
-title: 'Como acessar o tutorial da disciplina no swirl'
+    parent: 1 - Primeiros passos
+    weight: 50
+title: Hello R! Tutorial no swirl
 editor_options: 
   markdown: 
     wrap: 70
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 30
+weight: 40
 ---
 
 Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o "oráculo" universal Google. 

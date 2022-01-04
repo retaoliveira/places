@@ -1,6 +1,6 @@
 ---
 date: "2021-05-05T00:00:00+01:00"
-draft: true
+draft: false
 menu:
   spatial:
     parent: Localização como atributo de suporte à decisão
@@ -16,7 +16,7 @@ type: docs
 weight: 30
 ---
 
-<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 <div id="TOC">
 <ul>
@@ -166,12 +166,12 @@ ls() # inspecionar os dados</code></pre>
 <pre class="r"><code>head(blocks@data)</code></pre>
 <p>Os dados das unidades censitárias de New Haven podem ser visualizados por meio de:</p>
 <pre class="r"><code>plot(blocks)</code></pre>
-<p><img src="/places/conteudo/spatial/geodata_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/geodata_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Para plotar as unidades censitárias e as rodovias em vermelho. A função <code>par</code> serve para plotar mais de um gráfico em uma mesma representação. Existem diferentes parâmetros para essa função. Por exemplo, o <code>mfrow</code> refere-se ao número de linhas e colunas para combinar as plotagens.O parâmetro <code>mar</code> ajuda na definição de margens.</p>
 <pre class="r"><code>par(mar = c(0,0,0,0))
 plot(roads, col=&quot;red&quot;)
 plot(blocks, add=TRUE)</code></pre>
-<p><img src="/places/conteudo/spatial/geodata_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/geodata_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="dados-espaciais-sf" class="section level3">
@@ -282,13 +282,13 @@ class(georgia_sf)</code></pre>
 <p>A função <code>plot</code> também funciona de maneira diferente. Ela permite criar objetos <code>sf</code> e se o objeto tiver atributos, ele demarcará com preenchimento das feições. Teste:</p>
 <pre class="r"><code># todos os atributos
 plot(georgia_sf)</code></pre>
-<p><img src="/places/conteudo/spatial/geodata_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/cursos/spatial/geodata_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <pre class="r"><code>#atributos selecionados
 plot(georgia_sf[,6])</code></pre>
-<p><img src="/places/conteudo/spatial/geodata_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<p><img src="/cursos/spatial/geodata_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
 <pre class="r"><code># atributos selecionados
 plot(georgia_sf[,c(4,5)])</code></pre>
-<p><img src="/places/conteudo/spatial/geodata_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<p><img src="/cursos/spatial/geodata_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
 <p>Objetos <code>sf</code> apresentam data frame. O data frame de <code>sp</code> e <code>sf</code> podem ser comparados. No data frame dos objetos <code>sf</code> há atributos de geometria, diferentemente do data frame <code>sp</code>.</p>
 <pre class="r"><code>head(data.frame(georgia))</code></pre>
 <pre><code>##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
@@ -340,7 +340,7 @@ writeOGR(obj=georgia, dsn=&quot;./shapefiles&quot;, layer=&quot;georgia&quot;, d
 <p>Para ler um <em>shapefile</em>, faça:</p>
 <pre class="r"><code>new_georgia &lt;- readOGR(dsn=&quot;./shapefiles/georgia.shp&quot;)</code></pre>
 <pre><code>## OGR data source with driver: ESRI Shapefile 
-## Source: &quot;/Users/renataoliveira/Dropbox/places/content/conteudo/spatial/shapefiles/georgia.shp&quot;, layer: &quot;georgia&quot;
+## Source: &quot;D:\Dropbox\courses\content\cursos\spatial\shapefiles\georgia.shp&quot;, layer: &quot;georgia&quot;
 ## with 159 features
 ## It has 14 fields</code></pre>
 <pre class="r"><code>class(new_georgia)</code></pre>

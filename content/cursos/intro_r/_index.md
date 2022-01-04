@@ -1,10 +1,10 @@
 ---
 date: "2020-23-12T00:00:00Z"
 draft: false
-lastmod: "2021-05-05T00:00:00Z"
+lastmod: "2021-10-15T00:00:00Z"
 menu:
   intro_r:
-    name: R como instrumentos para a análise de dados
+    name: Introdução ao R
     weight: 30
 summary: Introdução ao R
 title: R

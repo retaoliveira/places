@@ -1,10 +1,10 @@
 ---
-date: "2021-05-05T00:00:00+01:00"
+date: "2021-10-15T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 3 - Estrutura de dados no R
-    weight: 30
+    parent: 3 - Trabalhando com dados no R
+    weight: 5
 title: Overview - Tidyverse
 editor_options: 
   markdown: 
@@ -13,7 +13,7 @@ output:
   blogdown::html_page:
     toc: true
 type: docs
-weight: 30
+weight: 5
 ---
 
 ### Instalação e uso do Package `tidyverse`

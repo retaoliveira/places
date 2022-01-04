@@ -3,7 +3,7 @@ date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
   log_all:
-    parent: 3 - Integração Logística e sistemas de informação
+    parent: 4 - Integração Logística e sistemas de informação
     weight: 10
 title: Logística 4.0
 editor_options: 

@@ -3,12 +3,12 @@ date: "2021-05-05T00:00:00+01:00"
 draft: false
 menu:
   intro_r:
-    parent: 4 - Estatística descritiva e mineração de dados
-    weight: 30
-title: Introdução à estatística descritiva
+    parent: 3 - Trabalhando com dados no R
+    weight: 99
+title: Operadores lógicos e aritméticos no R
 toc: true
 type: docs
-weight: 30
+weight: 99
 ---
 
 ## Estatística descritiva para sumarização de dados com o R

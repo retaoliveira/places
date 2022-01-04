@@ -8,7 +8,7 @@ menu:
 title: Nível de Serviço
 editor_options: 
   markdown: 
-    wrap: 70
+    wrap: 50
 output: 
   blogdown::html_page:
     toc: true

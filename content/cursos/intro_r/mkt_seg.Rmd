@@ -1,6 +1,6 @@
 ---
 date: '2021-09-03'
-draft: false
+draft: true
 menu:
   intro_r:
     parent: 8 - Segmentação de mercado
