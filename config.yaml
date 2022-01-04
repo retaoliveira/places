@@ -1,7 +1,7 @@
 title: Profa. Renata Oliveira
 baseURL: https://app.netlify.com/sites/cranky-mestorf-a03ae7
 copyright: Renata Oliveira {year}
-publishDir: docs
+publishDir: public
 googleAnalytics: ''
 disqusShortname: ''
 theme: academia-hugo
