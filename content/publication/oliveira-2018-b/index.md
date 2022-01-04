@@ -7,7 +7,7 @@ publication_types: ["2"]
 abstract: ""
 featured: false
 publication: "*Urban Science*"
-tags: ["1", "advantage in urban goods", "and given that warehouses", "are the origin or", "can generate a competitive", "cluster analysis", "distribution", "in cities", "introduction and background", "logistics facilities", "logistics sprawl", "since it directly impacts", "the flow of cargo", "the location of warehouses", "urban freight transport"]
+tags: ["urban freight transport"]
 doi: "10.3390/urbansci2020043"
 ---
 

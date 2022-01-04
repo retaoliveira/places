@@ -6,9 +6,9 @@ image:
   focal_point: Smart
 summary: Urban Logistics.
 tags:
-- urban planning
-- spatial analysis
-- urban logistics
+  - urban planning
+  - spatial analysis
+  - urban logistics
 title: Urban Logistics
 ---
 

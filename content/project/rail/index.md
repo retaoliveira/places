@@ -6,8 +6,8 @@ image:
   focal_point: Smart
 summary: Railroads and economic development
 tags:
-- urban planning
-- rail
+  - urban planning
+   - rail
 title: Railroads
 ---
 

@@ -6,9 +6,9 @@ image:
   focal_point: Smart
 summary: Spatial analysis.
 tags:
-- urban planning
-- spatial analysis
-- urban logistics
+  - urban planning
+  - spatial analysis
+  - urban logistics
 title: Spatial Analysis
 ---
 
