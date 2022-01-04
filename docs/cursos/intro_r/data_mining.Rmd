@@ -1,0 +1,204 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: true
+menu:
+  intro_r:
+    parent: 4 - Estatística descritiva e mineração de dados
+    weight: 40
+title: Introdução à mineração de dados
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 40
+---
+
+
+### 
+## Taxonomia dos dados
+
+- Conjunto de dados: fatos
+
+- Dados estruturados:
+        - Bem organizados para serem processados por computador
+        - Numéricos versus nominais
+
+- Dados não estruturados:       
+        - Como os textos criados por humanos e, portanto, não preparados para serem compreendidos/consumidos por computadores
+
+- Dados semiestruturados?
+        - XML, HTML, etc.
+        
+        
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="110%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/imagem1.png")
+```
+        
+---
+## Ciência de pré-processamento dos dados
+
+No mundo real, os dados costumam se apresentar sujos, mal-alinhados, excessivamente complexos e imprecisos. Não costumam estar prontos para serem usados em tarefas de análise de dados. É necessário preparar os dados para a análise de dados.
+
+Pré-processamento de dados:
+- Consolidação de dados
+- Limpeza de dados
+- Transformação de dados
+- Redução de dados
+
+Arte – desenvolve e melhora com a experiência
+
+
+---
+
+Redução de dados
+
+Variáveis:
+Redução dimensional
+Seleção de variáveis
+
+
+
+---
+
+## Mineração de dados
+Mineração de dados (em inglês, data mining) é o processo de encontrar anomalias, padrões e correlações em grandes conjuntos de dados para prever resultados. Através de uma variedade de técnicas, você pode usar essas informações para aumentar a renda, cortar custos, melhorar o relacionamento com os clientes, reduzir riscos e mais.
+
+.footnote[
+SAS [Mineração de dados](https://www.sas.com/pt_br/insights/analytics/mineracao-de-dados.html)
+]
+
+---
+
+O processo não trivial de identificar padrões válidos, novos, potencialmente úteis e ulteriormente compreensíveis junto a bases de dados estruturados.
+Fayyad et. al, 1996
+
+Mineração de dados: um termo equivocado?
+
+Outros nomes: extração de conhecimentos, análise de padrões, arqueologia de dados, colheita de informações, busca de padrões e dragagem de dados.
+
+---
+A mineração de dados constrói modelos para revelar padrões dentre os atributos apresentados no conjunto de dados.
+Os modelos são as representações matemáticas (simples relações/afinidades lineares ou relações complexas e altamente   não lineares) que identificam os padrões dentre os atributos dos aspectos descritos no conjunto de dados.
+
+Tipos de modelos:
+Associações
+Previsões
+Agrupamentos
+Relações sequenciais
+
+---
+Data mining é formada por um conjunto de ferramentas e técnicas que através do uso de algoritmos de aprendizagem ou classificação baseados em redes neurais e estatística. Estes são capazes de explorar um conjunto de dados, extraindo ou ajudando a evidenciar padrões nestes dados e auxiliando na descoberta de conhecimento. O conhecimento em Data Mining pode ser apresentado por essas ferramentas de diversas formas: agrupamentos, hipóteses, regras, árvores de decisão, grafos, ou dendrogramas.
+
+O ser humano sempre aprendeu observando padrões, formulando hipóteses e testando-as para descobrir regras. A novidade da era do computador é o volume enorme de dados que não pode mais ser examinado à procura de padrões em um prazo de tempo razoável. A solução é instrumentalizar o próprio computador para detectar relações que sejam novas e úteis. Data Mining (DM) surge para essa finalidade e pode ser aplicada tanto para a pesquisa cientifica como para impulsionar a lucratividade da empresa madura, inovadora e competitiva.
+
+Diariamente as empresas acumulam grande volume de dados em seus aplicativos operacionais. São dados brutos que dizem quem comprou o quê, onde, quando e em que quantidade. É a informação vital para o dia-a-dia da empresa. Se fizermos estatística ao final do dia para repor estoques e detectar tendências de compra, estaremos praticando business intelligence (BI). Se analisarmos os dados com estatística de modo mais refinado, à procura de padrões de vinculações entre as variáveis registradas, então estaremos fazendo Data Mining.
+
+Colabora na análise do comportamento de clientes
+
+Vivemos a era do marketing 4.0. Como característica, os consumidores atuais anseiam por uma experiência personalizada e interativa com as empresas com que fazem negócio.
+
+Dessa forma, o único meio de conquistar e reter o cliente é entendendo profundamente seu comportamento, características e preferências.
+
+A mineração de dados possibilita uma análise rápida e eficiente dos principais atributos dos consumidores. Assim, suas campanhas de publicidade podem ser direcionadas exatamente para as pessoas com maiores chances de se tornar consumidores.
+
+Possibilita a antecipação de demandas
+
+Na letra de “O Tempo Não Para”, Cazuza diz ter visto o futuro repetir o passado. Certamente, quando escreveu a canção, o cantor não se referia a nada relacionado a estratégias de vendas ou marketing.
+
+Ainda assim, sua letra serve como um gancho para explicar um dos benefícios da mineração de dados.
+
+Com a utilização de sistemas de alta capacidade de processamento de dados, é possível analisar informações antigas, como o volume de compras em um determinado mês ou o nível de interação em certa época do ano.
+
+Na maioria dos casos, essas tendências se repetirão. Então, com o cruzamento de informações, sua empresa pode se preparar para demandas superiores em determinadas épocas do ano. Pegue como exemplo a Black Friday.
+
+Mesmo que um gestor não conte com nenhum conhecimento sobre a data, sabe que, naquela época do ano, a demanda cresce de forma acelerada.
+
+Facilita a análise da concorrência
+
+---
+Figura 4.6 Processo KDD (Knowledge Discovery in Databases).
+
+```{r}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/img4.png")
+```
+
+---
+
+O departamento de polícia de Miami-Dade está usando análise de dados preditiva para antever e combater a criminalidade
+
+Análise de dados preditiva na aplicação de leis:
+Policiamento com menos
+Novas ideias sobre casos arquivados
+O retrato completo começa parcial
+Sucesso traz credibilidade
+Apenas os fatos
+Ruas mais seguras para uma cidade mais inteligente
+
+---
+## Análise de agrupamentos
+Usada para identificar aglomerações naturais de eventos ou de objetos.
+Faz parte do aprendizado de máquina.
+Emprega aprendizado não supervisionado.
+Não há uma variável de saída.
+Aprende os agrupamentos a partir de dados passados e então designa novas instâncias.
+No marketing, também é chamada de segmentação.
+
+Os resultados de uma análise de agrupamento podem ser usados para:
+Identificar um esquema de classificação (como tipos de clientes).
+Indicar regras para designar novos casos a classes para fins de identificação, triagem e diagnósticos.
+Oferecer medidas de definição, tamanho e mudança para conceitos previamente amplos e vagos.
+Diminuir o tamanho e a complexidade do problema de espaço para outros métodos de mineração de dados.
+Identificar valores discrepantes em um domínio específico (como da detecção de eventos raros).
+
+---
+
+
+Métodos de análise:
+Métodos estatísticos (incluindo hierárquicos e não hierárquicos), como k-means e k-modes
+Redes neurais (com a arquitetura chamada mapa auto-organizável)
+Lógica difusa (fuzzy logic) (como o algoritmo c-means)
+Algoritmos genéticos.
+
+---
+
+Algoritmo de agrupamento por k-means
+k = quantidade pré-determinada de agrupamentos.
+Algoritmo (Etapa de inicialização: escolha o valor de k)
+Etapa 1: Gere aleatoriamente k pontos como os centros iniciais dos agrupamentos.
+Etapa 2: Designe cada ponto ao centro de agrupamento mais próximo.
+Etapa 3: Recompute os novos centros de agrupamentos.
+Etapa de repetição: Repita as etapas 2 e 3 até que algum critério de convergência seja alcançado (geralmente quando a designação de pontos a agrupamentos se estabiliza).
+
+
+---
+## Mitos da mineração de dados
+Mito|Realidade
+----|---------
+A mineração de dados oferece previsões instantâneas ao estilo bola de cristal.|A mineração de dados é um processo em múltiplas etapas que exige um projeto e uma utilização deliberados e proativos.
+
+A mineração de dados ainda não é viável para aplicações empresariais tradicionais.|As aplicações de ponta estão prontas para ser usadas por praticamente qualquer tipo e/ou tamanho de empresa.
+
+A mineração de dados requer uma base de dados dedicada em separado.|Devido aos avanços na tecnologia de banco de dados, um banco de dados dedicado não é necessário.
+
+Somente indivíduos com formação avançada podem realizar mineração de dados.|Ferramentas novas baseadas na Web permitem que gestores de todos os níveis educacionais pratiquem mineração de dados.
+
+A mineração de dados é apenas para empresas de grande porte que dispõem de vastos dados sobre clientes.|Se os dados refletirem com precisão o empreendimento ou seus clientes, a empresa pode usar mineração de dados.
+
+
+
+## Deslizes na mineração de dados
+Selecionar o problema errado para mineração de dados.
+Ignorar o que seu patrocinador imagina que mineração de dados seja e o que ela realmente é capaz e não é capaz de fazer.
+Começar sem ter o final em mente.
+Definir o projeto sobre um alicerce que seus dados não são capazes de sustentar.
+Reservar tempo insuficiente para preparação de dados.
+Olhar apenas para os resultados agregados e não para registros individuais.
+Ser desleixado com o acompanhamento do procedimento e dos resultados da mineração de dados.
+Usar os dados do futuro para prever o futuro.
+Ignorar achados suspeitos e rapidamente seguir em frente.
+

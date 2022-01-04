@@ -1,0 +1,62 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log_all:
+    parent: 2 - Desempenho e nível de serviço
+    weight: 20
+title: Nível de Serviço
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## Serviço ao cliente
+
+Todas as atividades necessárias para receber, aceitar, processar, enviar e faturar os pedidos dos clientes, controlar para que as atividades possam ser executadas em conformidade com o planejamento e assegurar-se que o cliente está satisfeito. O objetivo do serviço ao cliente é **CRIAR VALOR** para o cliente.
+
+Os diferenciais competitivos nas operações logísticas são:
+
+- Vantagem em CUSTO    
+- Vantagem em VALOR   
+
+### Redução de custo
+- Realizando uma boa gestão de estoques   
+- Otimizando processos   
+- Melhorando a produtividade   
+- Introduzindo novas tecnologias   
+- Otimizando recursos   
+- Através da negociação com fornecedores   
+- Utilizando modais alternativos   
+- Otimizando utilização de espaços / transporte   
+
+### Agregação de valor
+- Disponibilizando o produto no momento desejado   
+- Fazendo entregas rápidas   
+- Sendo consistente nas entregas ao cliente   
+- Aumentando a frequência de entrega   
+- Tornando fácil o processo de compras   
+- Disponibilizando informações confiáveis em tempo real   
+- Oferecendo flexibilidade; local entrega, horário, embalagem, serviços especiais   
+- Corrigindo rapidamente qualquer erro, ou reagindo a eventos não esperados   
+
+
+> Não há nenhum valor no produto ou serviço até estar nas mãos do cliente ou consumidor.
+
+## Cadeias de suprimento orientadas pelo mercado
+
+As cadeias de suprimentos tradicionais eram projetadas para `otimizar as operações internas` da empresa fornecedora. Desse modo, um fabricante poderia ser motivado a estabelecer acordos de fornecimento e distribuição que permitissem a maximização da eficiência na produção.
+Porém, esta estratégia não é `centrada no cliente`; a cadeia de suprimentos não foi projetada em torno das necessidades do cliente.
+
+Com a constante transferência de poder no canal de distribuição, do produtor para o consumidor, essa filosofia convencional tem-se tornado cada vez menos apropriada. Em vez de projetar cadeias de suprimentos da fábrica para fora, `o desafio é projetá-las do cliente para dentro`.
+Essa nova perspectiva enxerga o consumidor, não no fim da cadeia de suprimentos, mas no início.
+
+
+## Quais as vantagens de realizar diagnóstico externo do sistema logístico?
+
+[DIAGNÓSTICO EXTERNO DO SISTEMA LOGÍSTICO: UTILIZANDO PESQUISAS DE SERVIÇO AO CLIENTE PARA IDENTIFICAÇÃO DE OPORTUNIDADES DE MELHORIA por Maria Fernanda Hijjar](https://www.ilos.com.br/web/diagnostico-externo-do-sistema-logistico-utilizando-pesquisas-de-servico-ao-cliente-para-identificacao-de-oportunidades-de-melhoria/)

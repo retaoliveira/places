@@ -1,0 +1,28 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos:
+    parent: Apresentações
+    weight: 13
+title: Encontro Síncrono 10
+weight: 13
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places-research.github.io/class12_datapos', height = "400px")
+```
+
+[LINK](https://places-research.github.io/class12_datapos)
+
+
+<iframe width="1068" height="601" src="https://www.youtube.com/embed/OHfxdG1BQVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

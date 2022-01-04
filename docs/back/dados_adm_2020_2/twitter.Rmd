@@ -1,0 +1,188 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Unidade 6 - Análise textual
+    weight: 20
+title: Como coletar, manipular e representar dados de Tweets
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## Análise de sentimento por meio de dados do Twitter
+
+Nesta lição, você explorará a análise dos dados de mídia social acessados a partir do twitter, em R. Você usará a `API RESTful` do `Twitter` para acessar dados sobre os usuários do twitter e sobre o que eles estão tweetando.
+
+### Atividades preliminares
+
+Para começar, você precisará:
+1.	Criar uma conta no Twitter se você ainda não tiver uma.
+2.	[Usando sua conta, configure um aplicativo que você usará para acessar o Twitter a partir do R](https://cran.r-project.org/web/packages/rtweet/vignettes/auth.html) 
+3.	Baixe e instale os pacotes `rtweet` e `tidytext` para `R`.
+
+Você está pronto para começar a consultar a `API` do `Twitter` para ver o que você pode aprender a partir dos tweets!
+
+### Configure o aplicativo do Twitter 
+
+Vamos começar montando um aplicativo no twitter que você pode usar para acessar os tweets. Para configurar seu aplicativo, siga a documentação do `rtweet` aqui.
+
+Com o aplicativo do twitter configurado, você está pronto para acessar tweets pelo R. Você usará o pacote `rtweet` para fazer isso.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# carregar a biblioteca do twitter - a biblioteca do rtweet é recomendada
+library(rtweet)
+# plotting and pipes - tidyverse!
+library(ggplot2)
+library(dplyr)
+# text mining library
+library(tidytext)
+```
+
+Estas keys estão localizadas em suas configurações do aplicativo do twitter na guia keys e Tokens de Acesso. Você precisará copiá-las em seu código como  abaixo substituindo o texto de preenchimento que usei nesta lição pelo texto que o twitter lhe dá em seu aplicativo.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# whatever name you assigned to your created app
+appname <- "your-app-name"
+
+## api key (example below is not a real key)
+key <- "yourLongApiKeyHere" # Não está ativo
+
+## api secret (example below is not a real key)
+secret <- "yourSecretKeyHere" # Não está ativo
+
+access_token <- "yourTokenHere" # Não está ativo
+access_secret <- "yourSecretTokenHere" # Não está ativo
+
+```
+
+Em seguida, você precisará passar um conjunto de keys para a API.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# create token named "twitter_token"
+twitter_token <- create_token(
+  app = appname,
+  consumer_key = key,
+  consumer_secret = secret,
+  access_token = access_token,
+  access_secret = access_secret)
+```
+
+Finalmente, você pode criar um token que autentique o acesso aos tweets! Poste um tweet como teste. Lembre-se que o tweet precisa ser de 140 caracteres ou menos.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# post a tweet from R
+post_tweet("Olá!")
+## your tweet has been posted!
+```
+
+### Analisar e baixar dados do Twitter
+
+#### Baixar textos dos tweets considerando um termo específico
+
+Agora você está pronto para procurar no twitter por tweets recentes! Comecemos por encontrar todos os tweets que usam o hashtag `#rstats`. Observe abaixo que você usa a função `rtweet::search_tweets()` para procurar. `search_tweets()` requer os seguintes argumentos:
+1. **q**: o termo que você deseja procurar
+2. **n**: o número de tweets que você quer que sejam devolvidos. Você pode solicitar até um máximo de 18.000 tweets.
+
+Para ver que outros argumentos você pode usar com esta função, use a ajuda R: `?search_tweets()`
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+## search for 500 tweets using the #rstats hashtag
+rstats_tweets <- search_tweets(q = "#rstats", n = 500)
+# view the first 3 rows of the dataframe
+head(rstats_tweets, n = 3)
+```
+
+#### Retweets
+Um `retweet` é quando você ou outra pessoa compartilha o tweet de alguém para que seus seguidores possam vê-lo. É semelhante ao compartilhamento no Facebook onde você pode adicionar uma citação ou texto acima do retweet se quiser ou apenas compartilhar o post. Vamos usar a mesma consulta que você usou acima, mas desta vez ignore todos os retweets definindo o argumento `include_rts`. para `FALSE`. Você pode obter as estatísticas de tweet/retweet de seu dataframe, separadamente.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# find recent tweets with #rstats but ignore retweets
+rstats_tweets <- search_tweets("#rstats", n = 500,
+                             include_rts = FALSE)
+# view top 2 rows of data
+head(rstats_tweets, n = 2)
+```
+
+
+#### Quem está twitando?
+
+A seguir, vamos descobrir quem está tweetando sobre R usando o hashtag `#rstats`. 
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# view column with screen names - top 6
+head(rstats_tweets$screen_name)
+## [1] "tangming2005"   "tangming2005"   "noah_greifer"   "yoniceedee"    
+## [5] "yoniceedee"     "peterlovesdata"
+# get a list of unique usernames
+unique(rstats_tweets$screen_name)
+```
+
+Você também pode usar a função `search_users()` para ver o que os usuários estão tweetando usando uma hashtag específica. Esta função retorna apenas um data.frame dos usuários e informações sobre suas contas.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# what users are tweeting with #rstats
+users <- search_users("#rstats",
+                      n = 500)
+# just view the first 2 users - the data frame is large!
+head(users, n = 2)
+```
+
+#### Localização dos usuários do Twitter
+
+Vamos aprender um pouco mais sobre essas pessoas tweetando sobre `R`. Primeiro, de onde elas são?
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE, echo=TRUE}
+# how many locations are represented
+length(unique(users$location))
+## [1] 299
+
+users %>%
+  ggplot(aes(location)) +
+  geom_bar() + coord_flip() +
+      labs(x = "Count",
+      y = "Location",
+      title = "Twitter users - unique locations ")
+```
+
+Vamos gerar uma análise considerando a contagem de observações e plotar apenas as localidades mais frequentes. Para isso, utilize a função `top_n()`. Observe que neste caso você está agrupando seus dados por usuário. Assim, `top_n()` retornará locais com pelo menos 15 usuários associados a ele.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+users %>%
+  count(location, sort = TRUE) %>%
+  mutate(location = reorder(location, n)) %>%
+  top_n(20) %>%
+  ggplot(aes(x = location, y = n)) +
+  geom_col() +
+  coord_flip() +
+      labs(x = "Count",
+      y = "Location",
+      title = "Where Twitter users are from - unique locations ")
+
+```
+
+Parece que temos alguns valores de `NA` ou nenhum valor de dados em sua lista. Vamos remover aqueles com `na.omit()`.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+
+users %>%
+  count(location, sort = TRUE) %>%
+  mutate(location = reorder(location,n)) %>%
+  na.omit() %>%
+  top_n(20) %>%
+  ggplot(aes(x = location,y = n)) +
+  geom_col() +
+  coord_flip() +
+      labs(x = "Location",
+      y = "Count",
+      title = "Twitter users - unique locations ")
+
+```
+
+Olhando para seus dados, quais outras análises você sugere? Existem 314 locais únicos em sua lista. Entretanto, nem todos usuários especificaram suas localizações de maneira semelhante. Por exemplo, alguns acabaram de identificar seu país: Estados Unidos, por exemplo, e outros especificaram uma cidade e um estado. Você pode querer fazer uma limpeza destes dados para poder traçar melhor esta distribuição - especialmente se você quiser criar um mapa destes dados!

@@ -1,0 +1,34 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Encontros
+    weight: 19
+title: Encontros Síncronos 4, 5 e 6
+weight: 19
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places-research.github.io/class04_dataadm', height = "400px")
+```
+
+[LINK](https://places-research.github.io/class04_dataadm)
+
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/TkzyBr8Aw-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/TrrsMHB4gbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="1198" height="674" src="https://www.youtube.com/embed/FsiyOd_vArc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

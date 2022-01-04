@@ -1,0 +1,210 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 16
+title: Tutorial 4
+weight: 26
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+A poluição por plástico é um problema importante e crescente, afetando negativamente a saúde dos oceanos e da vida selvagem.
+[Our World in Data](https://ourworldindata.org/plastic-pollution) tem muitos  dados em vários níveis, em escala global, por país e ao longo do tempo.
+
+Para este laboratório, nos concentramos nos dados de 2010.
+
+Além disso, a National Geographic realizou um concurso de comunicação de visualização de dados sobre resíduos plásticos, como visto [aqui](https://www.nationalgeographic.org/funding-opportunities/innovation-challenges/plastic/dataviz/).
+
+# Objetivos de aprendizagem
+
+- Visualizar dados numéricos e categóricos e interpretar visualizações
+- Recriação de visualizações
+
+
+# Iniciando
+
+## Pacotes
+
+Usaremos o pacote **tidyverse*** para esta análise.
+Execute o seguinte código no Console para carregar este pacote.
+
+```{r load-packages, message=FALSE, eval=TRUE}
+library(tidyverse)
+```
+
+## Dados
+
+O conjunto de dados para esta tarefa pode ser encontrado no link a seguir, acessado por meio do comando:
+
+```{r load-data, message=FALSE, eval=TRUE}
+
+#url_file <- "atalho no seu computador/plastic-waste.csv"
+
+#plastic_waste <- read_csv(url_file)
+
+#library(readr)
+plastic_waste <- read_csv("D:/OneDrive - cefetmg.br/01_disciplinas/ERE/2020_2/R_adm/00_aulas/class07_dados_adm/data/plastic-waste.csv")
+
+View(plastic_waste)
+```
+
+As descrições das variáveis são as seguintes:
+
+-   `code`: código do país
+-   `entity`: Nome do país
+-   `continent`: Nome do continente
+-   `year`: Ano
+-   `gdp_per_cap`: PIB per capita internacional 2011 \$, taxa
+-   `plastic_waste_per_cap`: Quantidade de resíduos plásticos per capita em kg/dia
+-   `mismanaged_plastic_waste_per_cap`: Quantidade de resíduos plásticos mal administrados per capita em kg/dia
+-   `mismanaged_plastic_waste`: Toneladas de resíduos plásticos mal administrados
+-   `coastal_pop`: Número de indivíduos que vivem no litoral/na costa
+-   `total_pop`: População total de acordo com Gapminder
+
+# Warm up
+
+- Recorde que o RStudio está dividido em quatro painéis. Sem olhar, você pode nomeá-las todas e descrever brevemente seu propósito?
+
+- Verifique se o conjunto de dados foi carregado para o Ambiente. Quantas observações há no conjunto de dados? Ao clicar no conjunto de dados no Ambiente, você poderá inspecioná-lo com mais cuidado. Alternativamente, você pode digitar `View(plastic_waste)` no Console para fazer isso.
+
+- Dê uma rápida olhada nos dados e observe que há células que levam o valor `NA` - o que isso significa?
+
+# Exercícios
+
+Vamos começar dando uma olhada na distribuição de resíduos plásticos per capita em 2010.
+
+```{r plastic_waste_per_cap-hist, eval=TRUE}
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+  geom_histogram(binwidth = 0.2)
+```
+
+Um país se destaca como uma observação incomum no topo da distribuição.
+
+Uma maneira de identificar este país é filtrar os dados para países onde os resíduos plásticos per capita são maiores que 3,5 kg/pessoa.
+
+```{r plastic_waste_per_cap-max, eval=TRUE}
+plastic_waste %>%
+  filter(plastic_waste_per_cap > 3.5)
+```
+
+Você esperava este resultado?
+
+Você poderia considerar fazer alguma pesquisa sobre Trinidad e Tobago para ver por que os resíduos plásticos per capita são tão altos lá, ou se isto é um erro de dados.
+
+1.  Faça um histograma para a distribuição de resíduos plásticos per capita desagregados (facet) por continente. O que você pode dizer sobre como os continentes se comparam uns aos outros em termos de seus resíduos plásticos per capita?
+
+```{marginfigure}
+**NOTA:** A partir deste ponto, os gráficos e a saída do código não são exibidos nas instruções desta atividade, mas você mesmo pode e deve criar o código e ver os resultados.
+```
+
+Outra forma de visualizar os dados numéricos é utilizando gráficos de densidade.
+
+```{r plastic_waste_per_cap-dens}
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+  geom_density()
+```
+
+E comparar as distribuições entre continentes por curvas de densidade de coloração por continente.
+
+```{r plastic_waste_per_cap-dens-color}
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent)) +
+  geom_density()
+```
+
+O gráfico resultante pode ser um pouco difícil de ler, então vamos também preencher as curvas com cores.
+
+```{r plastic_waste_per_cap-dens-color-fill}
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density()
+```
+
+A sobreposição de cores torna difícil dizer o que está acontecendo com as distribuições nos continentes plotados devido a continentes plotados sobre eles.
+
+Podemos mudar o nível de transparência da cor de preenchimento para ajudar nisso.
+
+O argumento `alpha` recebe valores entre 0 e 1: 0 é completamente transparente e 1 é completamente opaco.
+Não há como dizer qual valor funcionará melhor, então você só precisa tentar alguns valores.
+
+```{r plastic_waste_per_cap-dens-color-fill-alpha}
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density(alpha = 0.7)
+```
+
+Isto ainda não parece ótimo...
+
+1.  Recriar as parcelas de densidade acima usando um nível `alpha` diferente (inferior) que funcione melhor para exibir as curvas de densidade para todos os continentes.
+
+2.  Descreva porque definimos a "cor" e "preenchimento" das curvas através do mapeamento estético do gráfico, mas definimos o nível "alpha" como uma característica da geometria de plotagem.
+
+E ainda outra maneira de visualizar esta relação é utilizando gráficos boxplot.
+
+```{r plastic_waste_per_cap-box}
+ggplot(data = plastic_waste, 
+       mapping = aes(x = continent, 
+                     y = plastic_waste_per_cap)) +
+  geom_boxplot()
+```
+
+1.  Converta os boxplot da tarefa anterior para [plot de violino](http://ggplot2.tidyverse.org/reference/geom_violin.html). O que os gráficos de violino revelam que os boxplot não revelam? Quais características são aparentes nas parcelas de box mas não nas parcelas de violino?
+
+```{marginfigure}
+**Lembrar:** Utilizamos `geom_point()` para fazer scatterplots.
+```
+
+1.  Visualizar a relação entre os resíduos plásticos per capita e os resíduos plásticos mal administrados per capita usando um gráfico de dispersão.
+    Descrever a relação.
+
+2.  Colorir os pontos no gráfico de dispersão por continente.
+    Parece haver alguma distinção clara entre continentes com relação a como os resíduos plásticos per capita e os resíduos plásticos mal administrados per capita estão associados?
+
+3.  Visualize a relação entre os resíduos plásticos per capita e a população total, assim como os resíduos plásticos per capita e a população costeira.
+    Você precisará fazer duas parcelas separadas.
+    Algum destes pares de variáveis parece estar associado de forma mais linear?
+
+# Envolvimento
+
+Não esperamos que você complete todos os exercícios dentro da hora reservada para a atividade durante o encontro síncrono.
+Você deve encontrar um tempo para se reunir com sua equipe e completá-los após o encontro.
+
+```{marginfigure}
+**Dica:** O eixo x é uma variável calculada. Um país com resíduos plásticos per capita acima de 3 kg/dia foi filtrado. E os dados não são representados apenas com pontos no gráfico, mas também com uma curva suave. O termo "smooth" deve ajudá-lo [escolha qual geom a usar](https://ggplot2.tidyverse.org/reference/index.html#section-geoms).
+```
+
+1.  Recrie o seguinte gráfico e interprete o que você vê no contexto dos dados.
+
+```{r echo=FALSE, message=FALSE, eval=TRUE, warning=FALSE}
+plastic_waste %>% 
+  mutate(coastal_pop_prop = coastal_pop / total_pop) %>%
+  filter(plastic_waste_per_cap < 3) %>%
+  ggplot(aes(x = coastal_pop_prop, y = plastic_waste_per_cap, color = continent)) + 
+    geom_point() +
+    geom_smooth(color = "black") +
+    scale_color_viridis_d() +
+    labs(x = "Coastal population proportion (Coastal / total population)", 
+         y = "Plastic waste per capita ", 
+         color = "Continent",
+         title = "Plastic waste vs. coastal population proportion",
+         subtitle = "by continent") +
+    theme_minimal()
+```

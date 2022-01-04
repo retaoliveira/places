@@ -1,0 +1,222 @@
+---
+date: 2021-05-05T00:00:00+01:00
+draft: false
+menu:
+  intro_r:
+    parent: 2 - Documentos reprodutíveis
+    weight: 18
+title: Introdução ao RMarkdown
+weight: 20
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+Assita o vídeo! É impactante, baseado em fatos reais! 
+
+<iframe width="738" height="400" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# TL;DR
+
+RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do [link](https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP)
+
+
+## O que é Markdown?
+
+Segundo o criador da linguagem:
+
+> Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+>
+> John Gruber
+
+Dicas de sintaxe da linguagem Markdown podem ser encontradas em:
+
+- [Sintaxe](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/)
+- [Tutorial](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md)
+
+
+## RMarkdown
+
+Vou colocar aqui algumas informações-chave sobre a construção geral de informações a partir do uso do RMarkdown. Entretanto, informações adicionais podem ser obtidas de maneira detalhada no site: 
+
++ [Documentos dinâmicos no R by Fernando Mayer & Walmes Zeviani](http://cursos.leg.ufpr.br/prr/capDocDin.html)
+
+
+### Formatação de texto
+
+- Textos em itálico são produzidos com um par de asteriscos `*Itálico*` ou de underscores `_Itálico_ `  
+- Textos em negrito são produzidos com dois pares de asteriscos: `**Negrito**`   
+- Um par de acentos til produz texto subscrito: `CO~2~` vira CO2   
+- Um par de acentos circunflexos produz texto sobrescrito: `x^2^` vira x2   
+- Hyperlinks são criados com a sintaxe `[texto](link): Clique [aqui](https://www.google.com/)` vira Clique aqui   
+- Imagens são inseridas com a sintaxe `![texto opcional](pasta/imagem.jpg)` ou `![texto opcional](link para imagem)`   
+
+#### Seções e subseções
+
+Para demarcar seções e subseções, utilize os `hashtags`. 
+
+#### Listas e ordenação
+
+Basta enumerar:
+
+1. Item 1
+2. Item 2
+
+### Incluindo tabelas
+
+Existem duas boas opções para produzir tabelas elegantes em documentos R Markdown:
+
+A função `knitr::kable()`
+
+```{r}
+iris %>% 
+  head() %>% 
+  knitr::kable()
+```
+
+A função `knitr::kable()` acompanhada do pacote `kableExtra`
+
+```{r}
+iris %>% 
+  head() %>% 
+  kableExtra::kable()
+```
+
+E tabelas interativas por meio do pacote `DT`:
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+iris %>% 
+  head() %>% 
+  DT::datatable()
+```
+
+
+Informações sobre a configuração dos packages considerados porm ser encontrados nos links: [`kableExtra`](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html), `
+
+### Incluindo figuras
+
+![Figura 1: RMarkdown](https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png)
+Eu prefiro incluir figuras por meio de `chunk`, pois a parametrização do `chunk` permite configurar a figura:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+knitr::include_graphics(img1_path)
+```
+
+[Dicas:](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/) 
+
+### `chunks`
+
+`chunks` são blocos de código que podem ser incluídos e rodados em um documento `.Rmd`. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em `R` é o atalho `Ctrl + Alt + i`. 
+
+O `chunk` deve ser iniciado por ````{r }` e alguns parâmetros definem opções para os `chunks`. 
+
+- `eval`: tipo logical. Executar (TRUE) ou não (FALSE) o código do `chunk`.
+
+- `echo`: tipo logical. Incluir o código do `chunk` ou não no documento compilado.
+
+- `warning`, `message` e `error`: tipo logical. Caso `error = TRUE`, o documento será compilado mesmo que o chunk retorne um erro.
+
+- `include`: tipo logical. Controla se o `chunk` e o output estarão presentes no documento final.
+
+- `cache`: tipo logical. Controla se o `chunk` poderá usar cache para criar uma pasta com arquivos cacheados. Útil para chunks de códigos que levam muito tempo para rodar.
+
+```{r nome-opcional-do-chunk, fig.height=7, fig.width = 11, warning = FALSE}
+x <- rnorm(30)
+x
+```
+
+Para definir uma opção da mesma maneira para todos os `chunks` do documento, é possível criar um `chunk` com o código `knitr::opts_chunk$set()`, como no exemplo abaixo:
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 8, collapse = TRUE)
+```
+
+As opções gerais de `chunks` podem ser encontradas no [link](https://yihui.org/knitr/options/).
+
+### Visualização 
+
+```{r}
+plot(x)
+```
+
+Também podemos fazer um histograma dessa variável simulada
+
+```{r}
+hist(x)
+```
+
+### Metadados - Cabeçalho
+
+#### `YAML` (Yet Another Markup Language)
+
+No `YAML`, os dados são escritos em forma de lista aninhada. Os metadados em `YAML` são colocados sempre no início de um documento, e são delimitados por `---`. 
+
+
+### Formatos de output
+- Compilar um documento em RMarkdown
+`knitr`
+
+Na [galeria do RStudio](https://rmarkdown.rstudio.com/gallery.html) diferentes estruturas de informação produzida por meio de `RMarkdown` podem ser encontradas! 
+
+- beamer_presentation
+
+- html_document
+
+- ioslides_presentation
+
+- pdf_document
+
+- slidy_document
+
+- powerpoint_presentation
+
+- word_document
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+output:
+  html_document:
+    toc: true
+    number_sections: yes
+  pdf_document:
+    keep_tex: true
+```
+
+
+### Divulgando
+
+No RStudio, crie um novo documento `R Markdown` escolhendo `Arquivo | Novo | R Markdown`.
+Clique no botão `Knit HTML` na barra de ferramentas do doc para visualizar seu documento.
+Na janela de pré-visualização, clique no botão `Publicar`.
+
+É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta `RPubs` ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca). 
+
+Uma vez terminado e clicando no botão `Continue` na parte inferior, você irá diretamente para o artigo publicado. 
+
+Você pode optar por atualizar seu conteúdo.
+
+
+---
+
+# Rode o seu primeiro documento em RMarkdown!
+
+1. Salve o [arquivo](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ) em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade. 
+
+2. Abra o arquivo no RStudio: `File | Open File` e navegue até o arquivo `01-covid.Rmd` selecionando-o. 
+
+3. Você identificará o arquivo por meio do `YAML` com `title: "Mortes por COVID-19"`
+
+4. Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do `RMarkdown` para que sejam instalados `packages` necessários para rodar esse `.Rmd`
+
+4. Clique no botão de `knitr`. 
+
+Aprecie o seu primeiro documento! 
+
+

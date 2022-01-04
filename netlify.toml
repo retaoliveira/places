@@ -1,16 +1,17 @@
 [build]
-  publish = "public"
-  command = "hugo --minify --gc"
-  
+command = 'hugo'
+publish = 'docs'
 [build.environment]
-  HUGO_VERSION = "0.88.1"
-  HUGO_BASEURL = "/"
+HUGO_VERSION = '0.88.1'
 
-[[headers]]
-  for = "/*" # This defines which paths this specific [[headers]] block will cover.
 
-[headers.values]
-  X-Frame-Options = "DENY"
-  X-XSS-Protection = "1; mode=block"
-  Referrer-Policy = "same-origin"
-  Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+[context]
+[context.branch-deploy]
+command = 'hugo -F -b $DEPLOY_PRIME_URL'
+
+[context.deploy-preview]
+command = 'hugo -F -b $DEPLOY_PRIME_URL'
+
+[context.production]
+[context.production.environment]
+HUGO_ENV = 'production'

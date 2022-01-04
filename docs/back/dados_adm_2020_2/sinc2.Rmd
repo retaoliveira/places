@@ -1,0 +1,24 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos:
+    parent: Apresentações
+    weight: 6
+title: Encontro Síncrono 2
+weight: 6
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places-research.github.io/class02_datapos', height = "400px")
+```
+[LINK](https://places-research.github.io/class02_datapos)
