@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logística on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/cursos/log_all/</link>
+    <description>Recent content in Logística on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/cursos/log_all/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Afinal, o que é Logística?</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/definir_log/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/definir_log/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Definir Logística é um grande desafio. Vários autores fizeram diferentes propostas de definições ao longo do tempo. Penso que o logística é muito mais um conjunto de princípios do que uma operação. “Fazer” logística relaciona-se à promover o acesso a bens de consumo e serviços, essenciais à vida humana e promovidos pelo consumo, destinados ao consumidor final da maneira mais eficiente e responsiva possível.&lt;/p&gt;
+&lt;iframe width=&#34;894&#34; height=&#34;503&#34; src=&#34;https://www.youtube.com/embed/Il0frfdhPbg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Conhecer um pouco sobre o futuro das profissões é essencial para que possamos entender o mundo em que vivemos:&lt;/p&gt;
+&lt;iframe width=&#34;891&#34; height=&#34;501&#34; src=&#34;https://www.youtube.com/embed/2j00U6lUC-c&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;668&#34; height=&#34;501&#34; src=&#34;https://www.youtube.com/embed/Ngf8Jq2nuGc&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;As operações que envolvem esses princípios apresentam-se em diferentes dimensões, contextos e níveis de integração. Estão fundamentalmente relacionadas a um posicionamento estratégico de fluxos e entregas necessários para que seja possível deixar o consumidor feliz e garantir a competitividade das empresas. Esse é o objetivo finalístico das operações logísticas. Não existe otimização dessas operações, mas sim, a busca de um &lt;code&gt;TRADE-OFF&lt;/code&gt; entre &lt;code&gt;nível de serviço&lt;/code&gt; e &lt;code&gt;custo.&lt;/code&gt;&lt;/p&gt;
+&lt;iframe width=&#34;894&#34; height=&#34;503&#34; src=&#34;https://www.youtube.com/embed/5Ky98pI3FBQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;A implementação da Logística no contexto empresarial passou por diferentes etapas, desde uma atuação fragmentada das operações até a integração estratégica da cadeia produtiva. Quando há plena integração quanto ao processo de decisão em relação à &lt;code&gt;ENTREGA&lt;/code&gt;, a estrutura consolidada é denominada &lt;code&gt;Cadeia de Suprimentos&lt;/code&gt;.
+&lt;strong&gt;Cadeia de suprimentos&lt;/strong&gt; é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o &lt;em&gt;trade-off&lt;/em&gt; entre &lt;strong&gt;responsividade&lt;/strong&gt; e &lt;strong&gt;eficiência&lt;/strong&gt;, além de garantia de um contexto sustentável de desenvolvimento por ações &lt;strong&gt;socialmente responsáveis&lt;/strong&gt; e &lt;strong&gt;resilientes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Desafios contemporâneos permeiam as decisões logísticas ao longo da cadeia de suprimentos. Ao longo deste curso, vamos explorar esses desafios e a expectativa de mudanças estruturais: conceituais e práticas.&lt;/p&gt;
+&lt;iframe width=&#34;894&#34; height=&#34;503&#34; src=&#34;https://www.youtube.com/embed/fAa9xxquj14&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.quiz.com.br/qa/4839/&#34;&gt;Quiz de verificação de aprendizagem&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/63o70UWJthM&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gestão da cadeia de suprimentos</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/gcs/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/gcs/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gestão-cadeia-de-suprimentos&#34;&gt;Gestão Cadeia de Suprimentos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#alinhamento-estratégico&#34;&gt;Alinhamento estratégico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#escopo-do-alinhamento-estratégico&#34;&gt;Escopo do alinhamento estratégico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#os-benefícios-principais-advindos-do-alinhamento-estratégico&#34;&gt;Os benefícios principais advindos do alinhamento estratégico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#desafios-para-alinhamento-estratégico&#34;&gt;Desafios para alinhamento estratégico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fatores-chave-de-desempenho-na-gestão-da-cadeia-de-suprimentos&#34;&gt;Fatores-chave de desempenho na Gestão da Cadeia de Suprimentos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#instalações&#34;&gt;Instalações&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#estoque&#34;&gt;Estoque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transporte&#34;&gt;Transporte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#informação&#34;&gt;Informação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sourcing&#34;&gt;Sourcing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#precificação&#34;&gt;Precificação&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;div id=&#34;gestão-cadeia-de-suprimentos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gestão Cadeia de Suprimentos&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Cadeia de suprimentos&lt;/strong&gt; é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o &lt;em&gt;trade-off&lt;/em&gt; entre &lt;strong&gt;responsividade&lt;/strong&gt; e &lt;strong&gt;eficiência&lt;/strong&gt;, além de garantia de um contexto sustentável de desenvolvimento por ações &lt;strong&gt;socialmente responsáveis&lt;/strong&gt; e &lt;strong&gt;resilientes.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alinhamento-estratégico&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Alinhamento estratégico&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Entender a &lt;code&gt;incerteza&lt;/code&gt; do cliente e da cadeia de suprimentos.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;oferta e demanda
+&lt;ul&gt;
+&lt;li&gt;previsíveis&lt;/li&gt;
+&lt;li&gt;incertas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Entender as &lt;code&gt;capacidades&lt;/code&gt; da cadeia de suprimentos e desenhar o alinhamento estratégico com foco no equilíbrio entre &lt;code&gt;responsividade&lt;/code&gt; e &lt;code&gt;eficiência&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Combinar a responsividade da cadeia de suprimentos e a incerteza implícita de demanda e oferta.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escopo-do-alinhamento-estratégico&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Escopo do alinhamento estratégico&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Escopo de operação interna: redução do custo local&lt;/li&gt;
+&lt;li&gt;Escopo intrafuncional: redução do custo funcional&lt;/li&gt;
+&lt;li&gt;Escopo interfuncional: maximização do lucro da empresa&lt;/li&gt;
+&lt;li&gt;Escopo entre empresas: maximização do excedente da cadeia de suprimentos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;os-benefícios-principais-advindos-do-alinhamento-estratégico&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Os benefícios principais advindos do alinhamento estratégico&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Melhoria na satisfação do cliente&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Gestão efetiva do fluxo de capital, do custo e da qualidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Foco, propiciando organizações mais enxutas e eficientes&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Melhoria na tomada de decisões no nível adequado&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Otimização do desempenho dos fornecedores&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Nível de detalhamento dos dados permitindo a geração da informação-base para a tomada de decisões&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Agilidade no fluxo da informação&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;desafios-para-alinhamento-estratégico&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Desafios para alinhamento estratégico&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Aumento da variedade de produtos e redução dos ciclos de vida&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Globalização e aumento da incerteza&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Clientes mais exigentes&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Maior visibilidade da cadeia de suprimentos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Fragmentação da propriedade da cadeia de suprimentos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tecnologia em constante transformação e ambiente de negócios&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Meio ambiente e sustentabilidade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fatores-chave-de-desempenho-na-gestão-da-cadeia-de-suprimentos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fatores-chave de desempenho na Gestão da Cadeia de Suprimentos&lt;/h2&gt;
+&lt;div id=&#34;instalações&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Instalações&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Instalações&lt;/strong&gt; são os locais físicos reais na rede da cadeia de suprimentos onde o produto é armazenado, montado ou fabricado. Decisões com relação à função, localização, capacidade e flexibilidade das instalações têm impacto significativo sobre o desempenho da cadeia de suprimentos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estoque&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Estoque&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Estoque&lt;/strong&gt; abrange todas as matérias-primas, o trabalho em processo e os produtos acabados dentro de uma cadeia de suprimentos. Mudar políticas de estoque pode alterar de modo significativo a eficiência e a responsividade da cadeia de suprimentos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transporte&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Transporte&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Transporte&lt;/strong&gt; envolve a movimentação de estoque de um ponto para outro na cadeia de suprimentos. Opções de transporte têm grande impacto sobre a responsividade e a eficiência da cadeia de suprimentos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;informação&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Informação&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Informação&lt;/strong&gt; consiste em dados e análise referentes a instalações, estoque, transporte, custos, preços e clientes por toda a cadeia de suprimentos. A informação é potencialmente o maior fator-chave de desempenho na cadeia, pois afeta diretamente cada um dos demais fatores.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sourcing&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Sourcing&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Sourcing&lt;/strong&gt; é a escolha de quem realizará determinada atividade da cadeia de suprimentos, como produção, armazenamento, transporte ou a gestão da informação. Decisões de contratação afetam tanto a responsividade quanto a eficiência de uma cadeia de suprimentos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;precificação&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Precificação&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Precificação&lt;/strong&gt; (pricing) determina o quanto uma empresa cobrará por bens e serviços que ela torna disponíveis na cadeia de suprimentos. Preços afetam o comportamento do comprador do bem ou serviço, afetando, assim, o desempenho e a demanda da cadeia de suprimentos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística 4.0</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/40/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/40/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho.&lt;/p&gt;
+&lt;p&gt;Essas mudanças são fruto da quarta revolução industrial estruturada por meio do uso de tecnologia para convergência entre os mundos físico, digital e biológico. Trata-se de um processo de transformação que beneficiará apenas os indivíduos e as sociedades que forem capazes de inovar e se adaptar.&lt;/p&gt;
+&lt;p&gt;O termo Supply Chain 4.0 é geralmente associado à transformação digital oriunda da adoção e convergência de um conjunto de tecnologias disruptivas, como robótica, Inteligência Artificial (IA), big data, internet das coisas (IoT) e impressão 3D, dentre outras. Embora a tecnologia seja a protagonista, uma transformação cultural e do modelo de gestão são igualmente fundamentais para alcançar os níveis de performance pretendidos com a adoção destas soluções, obrigando a uma completa reconfiguração das cadeias de suprimentos com foco na satisfação do consumidor. Com a aceleração da transformação digital no enfrentamento dos desafios impostos pela pandemia, entender os aspectos relevantes para reconfiguração da cadeia é fundamental, não só para superar a crise, mas também para se posicionar como líder no pós-pandemia.&lt;/p&gt;
+&lt;p&gt;Seguem duas publicações interessantes sobre os impactos da 4a revolução industrial na gestão da cadeia de suprimentos. Percebam que a primeira é de &lt;code&gt;2008&lt;/code&gt; e a segunda de &lt;code&gt;2020&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/2008.pdf&#34;&gt;Futuro e Tendências em Logística e Supply Chain&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/2020_varejo.pdf&#34;&gt;Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tecnologia da Informação aplicada à Logística</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/ti/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/ti/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;O mundo como conhecemos está em acelerada e abrangente mudança. O avanço tecnológico, materializado por meio da internet, da realidade aumentada, da inteligência artificial, da internet das coisas, dentre outros adventos, tem promovido possibilidades de aprendizagem, ação, interação e solução de problemas reais de maneira criativa e efetiva. Ainda, a estrutura econômica atual está sendo modificada, por meio de novas relações de produção e trabalho.&lt;/p&gt;
+&lt;p&gt;Essas mudanças são fruto da quarta revolução industrial estruturada por meio do uso de tecnologia para convergência entre os mundos físico, digital e biológico. Trata-se de um processo de transformação que beneficiará apenas os indivíduos e as sociedades que forem capazes de inovar e se adaptar.&lt;/p&gt;
+&lt;p&gt;No ambiente empresarial, a logística começou a tomar forma no início dos anos 50, momento em que universidades americanas (repletas de grandes cientistas de vários países do mundo pósguerra) e com suas indústrias preservadas (o palco da 2ª Guerra não foi em território dos EUA), iniciou o processo de crescimento acelerado. O marketing logo virou ciência na academia e aí se incorporou o “P” (place) e criou-se o conceito de “Distribuição Comercial” que logo virou “Distribuição Física” e nos anos 80 assumiu a mega função empresarial: logística. Na virada dos anos 90 vieram os softwares (como WMS, TMS, ERP) e mais à frente tantas tecnologias que “turbinaram” a logística. Mas será que
+funciona mesmo?&lt;/p&gt;
+&lt;p&gt;Nesse contexto, as Tecnologias da Informação (TICs) se tornam cada vez mais parte intrínseca da gestão da cadeia de suprimentos. Assim, neste curso, não discutiremos as TICs de maneira isolada, como uma das atividades-chave da GCS. As TICs farão parte de toda a exploração de conteúdo necessária para desenvolvimento de competências.&lt;/p&gt;
+&lt;p&gt;Seguem dois artigos interessantes para que sejam avaliados conceitos e prática das TICs nas operações logísticas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/ti2013.pdf&#34;&gt;Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/ti_pratica.pdf&#34;&gt;Logística + Tecnologia: na prática a teoria é outra&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transportes</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/transportes/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/transportes/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#transportes&#34;&gt;Transportes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#elementos-básicos-para-a-operação-de-transportes&#34;&gt;Elementos básicos para a operação de transportes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modos-de-transporte-para-movimentação-de-cargas&#34;&gt;Modos de transporte para movimentação de cargas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#qual-os-problemas-do-brasil-em-relação-à-movimentação-de-cargas-em-escala-regional&#34;&gt;Qual o(s) problema(s) do Brasil em relação à movimentação de cargas em escala regional?&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#no-mundo.&#34;&gt;No mundo….&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#movimentação-global-de-contêineres&#34;&gt;Movimentação global de contêineres&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#qual-o-nosso-problema&#34;&gt;Qual o nosso problema?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#qual-o-nosso-problema-1&#34;&gt;Qual o nosso problema?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-resolver&#34;&gt;Como resolver?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-resolver-1&#34;&gt;Como resolver?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-resolver-2&#34;&gt;Como resolver?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conceitos-chave&#34;&gt;Conceitos-chave&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conceitos-chave-1&#34;&gt;Conceitos-chave&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#equipamentos-para-unitização-e-movimentação-de-cargas&#34;&gt;EQUIPAMENTOS PARA UNITIZAÇÃO E MOVIMENTAÇÃO DE CARGAS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#consolidação-x-unitização&#34;&gt;Consolidação x Unitização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-equipamentos-de-unitização&#34;&gt;Tipos de Equipamentos de Unitização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#vantagens-e-desvantagens-da-unitização&#34;&gt;Vantagens e desvantagens da Unitização&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#vantagens&#34;&gt;Vantagens:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-equipamentos-de-unitização-1&#34;&gt;Tipos de Equipamentos de Unitização&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#pallet-conceitos-padrões-internacionais-e-utilização&#34;&gt;Pallet: Conceitos, Padrões Internacionais e Utilização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#pallet-e-seus-tipos&#34;&gt;Pallet e seus Tipos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#equipamentos-de-movimentação-de-pallets&#34;&gt;Equipamentos de Movimentação de Pallets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#contêiner-conceito-padronização-e-medidas&#34;&gt;Contêiner: Conceito, Padronização e Medidas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#lingas&#34;&gt;Lingas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transporte-aéreo-uld-unit-load-devices&#34;&gt;Transporte aéreo – ULD (Unit Load Devices)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#planejamento-estratégico-das-empresas&#34;&gt;PLANEJAMENTO ESTRATÉGICO DAS EMPRESAS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definir-a-missão-visão-e-valores-da-empresa&#34;&gt;Definir a Missão, Visão e Valores da empresa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definir-os-objetivos-estratégicos&#34;&gt;Definir os Objetivos Estratégicos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definir-os-objetivos-táticos-metas&#34;&gt;Definir os Objetivos Táticos (Metas)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definir-os-objetivos-operacionais-planos-de-ação&#34;&gt;Definir os Objetivos Operacionais (Planos de Ação)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#elaborar-um-orçamento-empresarial&#34;&gt;Elaborar um Orçamento Empresarial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#indicadores-de-avaliação-de-transporte&#34;&gt;INDICADORES DE AVALIAÇÃO DE TRANSPORTE&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#kpi-key-performance-indicators-indicador-chave-de-desempenho&#34;&gt;KPI – Key Performance Indicators – Indicador-chave de desempenho&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definição&#34;&gt;Definição&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#função&#34;&gt;Função&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#classificação-dos-kpis&#34;&gt;Classificação dos KPIs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#processos-operacionais-que-serão-trabalhados-na-gestão-do-transporte-de-cargas-por-meio-de-indicadores-kpis&#34;&gt;Processos operacionais que serão trabalhados na gestão do transporte de cargas por meio de indicadores KPIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#unidades-e-indicadores-de-avaliação-de-transporte&#34;&gt;UNIDADES E INDICADORES DE AVALIAÇÃO DE TRANSPORTE&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#objetivo-medir-os-seguintes-atributos&#34;&gt;Objetivo: medir os seguintes atributos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#natureza-dos-indicadores&#34;&gt;Natureza dos indicadores&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#diretos-simples&#34;&gt;Diretos simples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#razões&#34;&gt;Razões&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#outros&#34;&gt;Outros&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#especificação-e-avaliação-de-veículos&#34;&gt;ESPECIFICAÇÃO E AVALIAÇÃO DE VEÍCULOS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#características-da-carga&#34;&gt;Características da Carga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#características-do-transporte&#34;&gt;Características do Transporte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#características-das-rotas&#34;&gt;Características das Rotas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#avaliação-de-desempenho-de-veículos&#34;&gt;Avaliação de Desempenho de Veículos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dimensionamento-de-frotas&#34;&gt;DIMENSIONAMENTO DE FROTAS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#conceito-de-rotação-de-ciclo&#34;&gt;Conceito de Rotação de ciclo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conceito-de-existência-vhe&#34;&gt;Conceito de Existência (VHE)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conceito-de-imobilização-vhi&#34;&gt;Conceito de Imobilização (VHI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conceito-de-avarias-em-trânsito-vha&#34;&gt;Conceito de Avarias em trânsito (VHA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#utilização-da-disponibilidade-vhu&#34;&gt;Utilização da disponibilidade (VHU)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#não-utilização-da-disponibilidade-vhnu&#34;&gt;Não Utilização da Disponibilidade (VHNU)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dimensionamento-de-frotas-1&#34;&gt;Dimensionamento de Frotas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#planejamento-da-manutenção&#34;&gt;PLANEJAMENTO DA MANUTENÇÃO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#operação-de-frotas&#34;&gt;OPERAÇÃO DE FROTAS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#roteirização&#34;&gt;Roteirização&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#controle-de-custos-operacionais-no-transporte&#34;&gt;CONTROLE DE CUSTOS OPERACIONAIS NO TRANSPORTE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#investimentos-em-transportes&#34;&gt;INVESTIMENTOS EM TRANSPORTES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;transportes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Transportes&lt;/h2&gt;
+&lt;div id=&#34;elementos-básicos-para-a-operação-de-transportes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Elementos básicos para a operação de transportes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Elementos Básicos
+Força Motriz
+Veículo
+Via&lt;/li&gt;
+&lt;li&gt;Fatores Dimensionais
+Quantidade
+Distância
+Tempo&lt;/li&gt;
+&lt;li&gt;Tipos de deslocamento
+Coleta
+Circulação
+Entrega&lt;/li&gt;
+&lt;li&gt;Atividades
+Carga
+Descarga
+Transbordo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;modos-de-transporte-para-movimentação-de-cargas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Modos de transporte para movimentação de cargas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Rodoviário&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ferroviário&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Aquaviário&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dutoviário&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Aéreo&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Eletrônico&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;qual-os-problemas-do-brasil-em-relação-à-movimentação-de-cargas-em-escala-regional&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Qual o(s) problema(s) do Brasil em relação à movimentação de cargas em escala regional?&lt;/h2&gt;
+&lt;div id=&#34;no-mundo.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;No mundo….&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/zero_emission.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/electric%20vechicle.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/growth_emission.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;movimentação-global-de-contêineres&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Movimentação global de contêineres&lt;/h3&gt;
+&lt;p&gt;Preço praticado x oscilações na movimentação&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/cont_trade.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;qual-o-nosso-problema&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Qual o nosso problema?&lt;/h3&gt;
+&lt;p&gt;Preço do petróleo?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/diesel.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Demanda x oferta?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/peroba.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Desequilíbrio da matriz modal?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/matriz_modal.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/matriz.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/ferro.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/investimento.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/matriz_compara.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/ferrovias_mundo.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;### Qual o nosso problema?
+Matriz modal?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/conteiner.png&#34; /&gt;&lt;!-- --&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;qual-o-nosso-problema-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Qual o nosso problema?&lt;/h3&gt;
+&lt;p&gt;Matriz modal?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/preco.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-resolver&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Como resolver?&lt;/h3&gt;
+&lt;p&gt;“Bolsa Caminhoneiro”?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/bolsa.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-resolver-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Como resolver?&lt;/h3&gt;
+&lt;p&gt;“Bolsa Caminhoneiro”?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/rebate.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-resolver-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Como resolver?&lt;/h3&gt;
+&lt;p&gt;Realocação de recursos?
+Eliminar piso de gastos com educação e saúde para subsidiar Diesel?
+Intervir na Petrobrás?
+Privatizar a Petrobras?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/calamidade.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conceitos-chave&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Conceitos-chave&lt;/h1&gt;
+&lt;div id=&#34;escolha-modal&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Escolha modal&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/escolha.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conceitos-chave-1&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Conceitos-chave&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Intermodalidade x Multimodalidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Unitização e fracionamento&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Conteinerização&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Sincromodality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;equipamentos-para-unitização-e-movimentação-de-cargas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;EQUIPAMENTOS PARA UNITIZAÇÃO E MOVIMENTAÇÃO DE CARGAS&lt;/h1&gt;
+&lt;div id=&#34;consolidação-x-unitização&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Consolidação x Unitização&lt;/h2&gt;
+&lt;p&gt;Consolidação de cargas: consiste em criar grandes carregamentos, a partir de vários outros pequenos, a fim de obter economia de escala no custo dos fretes e aumentar o nível do serviço ao cliente (Tyan etalii 2003)&lt;/p&gt;
+&lt;p&gt;Unitização de cargas: significa unir vários volumes pequenos em um único maior, para facilitar a movimentação, armazenagem e transporte, reduzindo os tempos de terminal, eliminando o manuseio direto da mercadoria e fazendo com que a transferência, do ponto de origem até o seu destino final, possa ser realizada com apenas um volume.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-equipamentos-de-unitização&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tipos de Equipamentos de Unitização&lt;/h2&gt;
+&lt;p&gt;Os equipamentos de unitização não são embalagens.&lt;/p&gt;
+&lt;p&gt;Os tipos mais comuns de unitização de cargas são as seguintes:
+• Cargas paletizadas&lt;br /&gt;
+• Cargas pré-lingadas&lt;br /&gt;
+• Contêineres&lt;br /&gt;
+• Formas especiais&lt;/p&gt;
+&lt;p&gt;Pré-lingagem: a carga é condicionada em redes especiais de nylon ou corda, de forma a proporcionar fácil manuseio por guindastes, permitindo o aumento da velocidade de carregamento e descarregamento.&lt;/p&gt;
+&lt;p&gt;Paletização (Paletes/Pallets): são utilizados engradados de madeira como suportes de cargas que ficam atadas a estes, os quais, possuem vãos em sua parte inferior de modo a permitir o encaixe dos garfos das empilhadeiras, gerando, desta forma, uma otimização do manuseio da carga.&lt;/p&gt;
+&lt;p&gt;Conteinerização: consiste na alocação de cargas em um receptáculo em forma de baú chamado contêiner, que proporciona maior segurança e facilidade de manuseio e transporte. Devido a sua característica intermodal e padronização internacional, a conteinerização é a unitização de carga mais largamente utilizada no transporte internacional.&lt;/p&gt;
+&lt;p&gt;ULD – Unit Load Devices: Unidades próprias para unitização de cargas, ou seja, os conteiners e pallets utilizados na carga aérea. Estes distinguem-se em formatos e tamanhos, bem como em sua concepção e utilização, daqueles utilizados no transporte marítimo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vantagens-e-desvantagens-da-unitização&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Vantagens e desvantagens da Unitização&lt;/h2&gt;
+&lt;div id=&#34;vantagens&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Vantagens:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;redução do número de volumes a manipular;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;menor número de manuseios da carga;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;menor utilização de mão-de-obra;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;possibilidade do uso de mecanização;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;diminui avarias e roubos;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;outros…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;É importante ressaltar que há diferença entre o que se denomina como recipiente para unitização de carga e a unidade de transporte de carga, pois enquanto o primeiro é um equipamento para unitização de pequenos volumes, o segundo trata-se do próprio veículo transportador, que é um recipiente no momento em que está transportando granéis líquidos e sólidos como uma só carga unitizada.&lt;/p&gt;
+&lt;p&gt;O avanço no embarque de cargas deu-se com a criação do conceito de carga unitizada, primeiramente, de forma mais rudimentar, através de amarrados, tambores, redes, etc. e, posteriormente, através da criação de pallets e, principalmente, pela criação do container, a grande vedete da unitização.&lt;/p&gt;
+&lt;p&gt;No começo, a conteinerização teve seus problemas, visto que estas grandes caixas não eram padronizadas e cada armador, negociante ou construtor tinha as suas próprias unidades, de tamanhos completamente diferentes. Além disso, havia a falta de estrutura dos portos que não possuíam equipamentos adequados para o seu manuseio.&lt;/p&gt;
+&lt;p&gt;Com o decorrer do tempo, o problema do tamanho foi resolvido e hoje, através da ISO (International Organization for Standardization), os contêineres são padronizados e utilizados mundialmente, sendo que os portos também estão, em menor ou maior grau, equipados para sua movimentação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-equipamentos-de-unitização-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tipos de Equipamentos de Unitização&lt;/h2&gt;
+&lt;div id=&#34;pallet-conceitos-padrões-internacionais-e-utilização&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pallet: Conceitos, Padrões Internacionais e Utilização&lt;/h3&gt;
+&lt;div id=&#34;as-vantagens-dos-paletes-são&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;As vantagens dos paletes são:&lt;/h4&gt;
+&lt;p&gt;• Redução de perdas, roubos e avarias à carga;&lt;br /&gt;
+• Redução de rotulagem e marcação dos embarques, pois não é necessário realizar as operações para cada item;&lt;br /&gt;
+• Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;&lt;br /&gt;
+• Aumento da capacidade das instalações de estocagem, por meio de maiores alturas de empilhamento;&lt;br /&gt;
+• Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo aumento da rotatividade dos mesmos;&lt;br /&gt;
+• Redução das taxas de estiva no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador quando ele contrata e paga o serviço de estiva da mercadoria a bordo do navio;&lt;br /&gt;
+• Descontos e franquias concedidos sobre o valor do frete básico marítimo (liner-terms);&lt;br /&gt;
+• Possibilidade de aplicação do conceito de “sistema global de transportes”, no qual a carga se movimenta na forma unitizada desde as dependências do produtor até a loja de varejo, onde a mercadoria pode ser vendida diretamente do pallet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;as-desvantagens-dos-paletes-são&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;As desvantagens dos paletes são:&lt;/h4&gt;
+&lt;p&gt;• Espaços perdidos dentro da unidade de carga;&lt;br /&gt;
+• Investimentos na aquisição de pallets, acessórios para a fixação da mercadoria à plataforma e equipamentos para a movimentação das unidades de carga (sensivelmente menores que os necessários para a movimentação de contêineres);&lt;br /&gt;
+• O peso próprio da plataforma e o volume da mesma podem aumentar o valor do frete, se os transportadores não estabelecerem franquias para essas características físicas do pallet;&lt;br /&gt;
+• Eventual exigência de modificações nos lay-outs das instalações do exportador e dos terminais intermediários.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pallet-e-seus-tipos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pallet e seus Tipos&lt;/h3&gt;
+&lt;p&gt;Pallet é uma unidade semelhante a um estrado plano, construído principalmente de madeira, podendo, porém, ser também de alumínio, aço, plástico, fibra, polipropileno, papelão, com determinadas características para facilitar a unitização, armazenagem e transporte de pequenos volumes.&lt;/p&gt;
+&lt;p&gt;Os pallets podem ser descartáveis, ou seja, construídos para serem utilizados em apenas uma viagem (one way), ou para uso constante. A adoção de cada tipo depende da logística escolhida, que envolve um estudo sobre custos e o seu retorno.&lt;/p&gt;
+&lt;p&gt;No formato, o pallet pode ser quadrado ou retangular. Quanto às faces, para acomodação de cargas, pode ser simples (mais frágil), dando à carga a possibilidade de utilização apenas desta face; ou ter duas faces diferentes, sendo uma para receber a carga e a outra apenas de suporte; ou ainda ter duas faces iguais, ou seja, ser um pallet reversível, podendo ser utilizado para carga em qualquer uma das duas faces.&lt;/p&gt;
+&lt;p&gt;O pallet deve dispor de asas (aletas), que são saliências para içamento, ou seja, extensão das faces para além das vigas que o compõem, para que possa ser operado por guindastes e outros equipamentos, e não somente por meio de ganchos especiais de içamento.&lt;/p&gt;
+&lt;p&gt;Deverá haver também, uma altura livre entre as duas faces, para possibilitar a entrada dos garfos dos equipamentos mecânicos.&lt;/p&gt;
+&lt;p&gt;Preferencialmente, precisa ter quatro lados que permitam a entrada dos equipamentos para agilização na sua movimentação, o que fica limitado quando possui apenas duas entradas.&lt;/p&gt;
+&lt;p&gt;O pallet tem de ser suficientemente resistente e adequadamente construído, oferecendo segurança para:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Sustentar, em repouso ou quando movimentada, a carga que sobre ele é depositada;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Permitir a manipulação e a movimentação da carga unitizada por meio de equipamento mecânico apropriado, tanto em terra quanto nos veículos transportadores, e nos embarques e desembarques.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As medidas e as demais características físicas do pallet a ser escolhido devem ser tais que se adaptem às várias fases do transporte e aos diferentes tipos de equipamentos mecânicos em operação nos portos de carga e de descarga, de forma que a movimentação da carga unitizada se realize com rapidez e segurança.&lt;/p&gt;
+&lt;p&gt;A uniformidade e as medidas dos volumes a serem paletizados são de grande importância para produzir uma carga unitizada, bem enquadrada em seus quatro lados, e nivelada na sua face superior, para permitir a melhor ocupação do espaço do veículo transportador.&lt;/p&gt;
+&lt;p&gt;A princípio, qualquer carga é paletizável, desde que adaptada ao pallet economicamente viável.&lt;/p&gt;
+&lt;p&gt;A amarração dos volumes para constituir uma carga unitizada rígida deve ser feita através do emprego de cintas, que podem ser de nylon, polipropileno, poliester, metálicas, complementadas, às vezes, por tábuas e sarrafos de madeira e folhas de papelão, bem como sacos ou filmes plásticos encolhíveis (shrink), ou filmes estiráveis de polietileno (stretch), que são esticados e colocados sobre a carga. Os filmes e os sacos têm a finalidade também de evitar o furto de volumes.&lt;/p&gt;
+&lt;p&gt;Com o crescimento internacional da unitização foi necessária a padronização das dimensões do pallet, visando a possibilidade de utilização em todos os modos. Dessa forma, a ISO aprovou medidas, muito embora a sua utilização nem sempre seja respeitada, já que se pode ver e operar pallets de vários tamanhos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;equipamentos-de-movimentação-de-pallets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Equipamentos de Movimentação de Pallets&lt;/h3&gt;
+&lt;p&gt;Os pallets são movimentados nos armazéns por paleteiras e empilhadeiras. Nos embarques e desembarques em caminhões ou vagões ferroviários são utilizadas empilhadeiras, e nos portos são usados guindastes, tanto do navio quanto do porto, que possuem ganchos, e outros equipamentos específicos para sua movimentação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;contêiner-conceito-padronização-e-medidas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Contêiner: Conceito, Padronização e Medidas&lt;/h2&gt;
+&lt;p&gt;Contêiner é uma caixa, construída em aço, alumínio ou fibra, criada para o transporte unitizado de mercadorias e suficientemente forte para resistir ao uso constante.&lt;/p&gt;
+&lt;p&gt;Constitui um equipamento do veículo transportador, que se caracteriza pela resistência e facilidade de transporte de mercadorias, por um ou mais modos. É provido de portas, escotilhas e aberturas que permitem o seu estufamento e esvaziamento com facilidade, cumprindo os objetivos propostos para sua criação e utilização.&lt;/p&gt;
+&lt;p&gt;Os contêineres são identificados com marcas, números, definição de espaço e peso que podem comportar, proprietário, tamanho, etc. Estas características de resistência e identificação visam dar ao contêiner vantagens sobre os demais equipamentos para unitização, tais como segurança, inviolabilidade, rapidez e redução de custos nos transportes. Também é dotado de dispositivos de segurança aduaneira, e deve atender às condições técnicas de segurança previstas pela Legislação Nacional e pelas Convenções Internacionais que são ratificadas pelo Brasil.&lt;/p&gt;
+&lt;div id=&#34;vantagens-e-desvantagens-dos-contêineres&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Vantagens e Desvantagens dos Contêineres&lt;/h4&gt;
+&lt;p&gt;As principais vantagens dos contêineres são:&lt;br /&gt;
+• Redução de perdas, roubos e avarias à carga;&lt;br /&gt;
+• Possíveis reduções de custos de rotulagem e embalagem, sendo estas observadas, principalmente, nos casos em que o contêiner é transportado porta (exportador) a porta (importador);&lt;br /&gt;
+• Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;&lt;br /&gt;
+• Estocagem de mercadoria em áreas descobertas. Este fator pode ser neutralizado se o exportador pagar taxa de demurrage (sobreestadia) pelo uso do contêiner além do prazo livre;&lt;br /&gt;
+• Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo, em conseqüência, aumento da rotatividade dos mesmos;&lt;br /&gt;
+• Carregamentos e descarregamentos de veículos e embarcações sob condições climáticas adversas;&lt;br /&gt;
+• Redução das taxas de capatazia no porto de embarque;&lt;br /&gt;
+• Redução das taxas de estiva, conferência e conserto de carga no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador na situação em que este contrata e paga o serviço de estiva da mercadoria a bordo do navio;
+• Possíveis reduções dos tempos totais de viagem, com o emprego de navios expressos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;as-principais-desvantagens-da-utilização-de-contêineres-são&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;As principais desvantagens da utilização de contêineres são:&lt;/h4&gt;
+&lt;p&gt;• Espaços perdidos dentro da unidade de carga;&lt;br /&gt;
+• Exigência de equipamentos de alto investimento para a movimentação da unidade de carga nos locais de expedição e recebimento e nos pontos de transferência de veículo de transporte;&lt;br /&gt;
+• Pagamento de aluguel do contêiner;&lt;br /&gt;
+• Pagamento de taxas de demurrage (sobreestadia) pelo uso do contêiner, quando este ficar à disposição do exportador por um período além do prazo livre;&lt;br /&gt;
+• Transporte do contêiner vazio para o local onde se faz a estufagem do mesmo;&lt;br /&gt;
+• A incorporação da tara do contêiner na tonelagem global de transporte pode acarretar acréscimos no valor do frete rodoviário, na situação em que a carroceria for do tipo reversível contêiner/carga seca;&lt;br /&gt;
+• Sujeito a pagamento de frete marítimo mínimo que pode exceder o frete da mercadoria transportada sob outra forma de acondicionamento;&lt;br /&gt;
+• Custos de reparos, reposição e retorno dos contêineres.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;medidas&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Medidas&lt;/h4&gt;
+&lt;p&gt;Os contêineres são padronizados com medidas lidas em pés (’) e polegadas (”). A única medida invariável é a sua largura que tem sempre 8’ (oito pés). A sua altura pode ser de 8’; 8’6” e 9’6”, sendo a primeira padrão ISSO e as demais padrão ASA. Quanto ao comprimento, os mais comuns e conhecidos são os de 10’, 20’, 30’, 40’ e 45’ , embora existam outras medidas como 24’, 28’, 32’. 35’ e 48’.&lt;/p&gt;
+&lt;p&gt;Geralmente no transporte marítimo, os contêineres mais utilizados são o de 20’ e 40’. O espaço útil varia com o tipo de contêiner.&lt;/p&gt;
+&lt;p&gt;A altura 9’6” refere-se ao contêiner denominado High Cube H/C e proporciona considerável aumento no espaço volumétrico. H/C é uma característica dos containers de 40’ e 45’.&lt;/p&gt;
+&lt;p&gt;Quanto ao peso, os de 20’ e 40’ podem comportar no máximo até 30.480 e 34.00 quilos, incluindo o peso do próprio equipamento, resultando em aproximadamente 28.000 e 30.000 quilos de carga útil (payload).&lt;/p&gt;
+&lt;p&gt;Os contêineres são modulares e os de 20’ são considerados como 1 módulo, sendo denominado TEU (Twenty feet equivalent unit), e servem de padrão para definição de tamanho de navio porta-contêiner. Os de 40’ são denominados FEU (forty feet equivalent unit), porém não são utilizados como medidas para navios. Foot, cujo plural é feet, é uma medida norte-americana e equivale a 30,48cm ou 0,3048m.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-e-finalidades-dos-contêineres&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tipos e Finalidades dos Contêineres&lt;/h4&gt;
+&lt;p&gt;Existem hoje, muitos tipos de contêineres criados adaptados para todos os tipos de carga, como granéis líquidos, granéis sólidos, refrigerados, petróleo, minérios e animais vivos.&lt;/p&gt;
+&lt;p&gt;DRY BOX: Totalmente fechado, com portas nos fundos, sendo o container mais utilizado e adequado para o transporte da maioria das cargas gerais secas existentes, como alimentos, Roupas, móveis, etc. Pode ser de 20’ ou 40’.&lt;/p&gt;
+&lt;p&gt;VENTILATED: semelhante ao dry box, porém com pequenas aberturas no alto das paredes laterais, podendo também tê-las na parte inferior das paredes, para permitir a entrada de ar, para transporte de cargas que requerem ventilação como café e cacau.&lt;/p&gt;
+&lt;p&gt;REEFER: também semelhante ao dry box, totalmente fechado, com portas nos fundos, apropriado para embarque de cargas perecíveis congeladas ou refrigeradas, que precisam ter a sua temperatura controlada, como carnes, sorvetes, frutas e verduras.&lt;/p&gt;
+&lt;p&gt;Pode ser integrado com motor próprio para refrigeração, cuja única desvantagem é a perda de espaço ocupado pelo motor. Como também insulado, que não tem motor próprio, tendo na parede da frente duas aberturas (válvulas) para entrada e saída de ar, que são fornecidos por força externa. O container reefer tem para controle de temperatura uma carta de Registro de Temperatura (Partlow Chart) e pode atingir até -25º C.&lt;/p&gt;
+&lt;p&gt;BULK CONTAINER: similar ao dry box, totalmente fechado, tendo aberturas no teto (escotilhas) para o seu carregamento e uma escotilha na parede do fundo, na parte inferior para descarregametno, apropriado para transporte de granéis sólidos como produtos agrícolas.&lt;/p&gt;
+&lt;p&gt;OPEN TOP: container sem teto, que é fechado com lonas para transporte de cargas que apresentam dificuldades para embarque pela porta dos fundos e necessitam de um acesso especial, embora também possua a porta normal nos fundos. Próprio para mercadorias que excedam a altura do container, cujas cargas não poderiam ser estufadas num container dry box tradicional.&lt;/p&gt;
+&lt;p&gt;HALF HEIGHT: container open top, sem teto, porém de meia altura – 4’ ou 4’3”, fechado com lonas e cabeceira basculante, adequado para embarque de minérios, cuja carga é extremamente densa e se embarcada em um open top, este não poderia ser utilizado integralmente quanto ao aspecto de volume, representando uma ocupação de espaço indevido no navio.&lt;/p&gt;
+&lt;p&gt;OPEN SIDE: com apenas três paredes, sem uma parede lateral, este container é apropriado para mercadorias que apresentam dificuldades para embarques pela porta dos fundos, ou que excedam um pouco a largura do equipamento ou ainda para agilização de sua estufagem.&lt;/p&gt;
+&lt;p&gt;FLAT RACK: container plataforma, sendo uma combinação dos open top e open side, sem as paredes laterais e sem teto, com cabeceiras fixas, ou dobráveis, adequado para cargas pesadas e grandes e que excedam um pouco as suas dimensões.&lt;/p&gt;
+&lt;p&gt;PLATAFORM: container plataforma sem paredes e sem teto, tendo apenas o piso apropriado para cargas de grandes dimensões ou muito pesadas.&lt;/p&gt;
+&lt;p&gt;TANK: container tanque, dentro de uma armação de tamanho padronizado, próprio para transporte de líquidos em geral, perigosos ou não.&lt;/p&gt;
+&lt;p&gt;Outro equipamento de unitização é o Big Bag, ou Container Flexível, que é um container feito em polipropileno, com alças, que acondiciona praticamente qualquer tipo de carga, sendo interessante para produtos a granel ou embalados em sacos, pois os mantém melhor acomodados e protegidos contra materiais pontiagudos, que podem furá-los ou rasgá-los.&lt;/p&gt;
+&lt;p&gt;Comporta até duas toneladas de mercadorias. Impermeável, pode ser armazenado em pátios abertos, empilhado uniformemente e transportado em qualquer modo, sem que este tenha que sofrer adaptações de nenhuma espécie, em face da sua configuração e praticidade. Apresenta-se, portanto, como um container de fácil manipulação, tanto no ensacamento, armazenamento e movimentação quanto nos embarques e desembarques. É reutilizável e dobrável, por isso adequado para retorno vazio, já que não ocupa demasiado espaço no navio ou no container.&lt;/p&gt;
+&lt;p&gt;O container, por ser um equipamento de grande utilização no transporte, que requer uma grande quantidade em estoque para que possa circular com mercadorias pelo mundo, sem que haja faltas. Normalmente as empresas de transporte, principalmente as marítimas, utilizam o sistema de leasing, sendo alugados por dia, para uma viagem simples, viagem completa, ida e volta, por um curto prazo ou até para prazos maiores a 1 ano. O valor do aluguel varia com o seu tipo e tamanho, porém é sempre na base do dia. Mesmo para aluguel de longo prazo, em que o pagamento é feito mensalmente, o cálculo é sempre diário.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estufagem-e-equipamentos-de-movimentação&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Estufagem e Equipamentos de Movimentação&lt;/h4&gt;
+&lt;p&gt;Estufar ou ovar é o ato de encher o container com mercadorias, podendo ser estas a granel, embaladas ou paletizadas. Desovar é o ato de retirar mercadorias do mesmo.&lt;/p&gt;
+&lt;p&gt;Deve-se evitar conteinerizar mercadorias que possuam um grau de umidade muito alto, pois podem apresentar combustão espontânea, como é o caso da farinha de peixe, algodão e farelo de soja. Também não se deve estufar mercadorias completamente diferentes entre si, como por exemplo, em relação a umidade, odor, peso específico, controles diferenciados de temperatura, e nem deixar espaços vazios no container, que precisa ser totalmente ocupado ou Ter sua carga amarrada, escorada, etc.&lt;/p&gt;
+&lt;p&gt;O armador costuma proceder a uma inspeção prévia, anterior à entrega, denominada PTI (Pre Trip Inspection), cuja validade é de 30 dias e que tem a finalidade de entregar ao embarcador o container em perfeitas condições de utilização.&lt;/p&gt;
+&lt;p&gt;O container está sujeito a todos os tipos de movimento e, portanto, a mercadoria deve estar estufada adequadamente, principalmente para evitar o excesso de peso em um dos lados, como também as mercadorias mais pesadas devem ser colocadas sob as mais leves. Os espaços vazios devem ser preenchidos com madeira, cavaletes, estrados, bolsas de ar, ou qualquer estrutura que impeça a carga de se movimentar dentro do container. As mercadorias mais pesadas tem melhor aproveitamento nos containers de 20’ e as mais volumosas em um de 40’, devido aos espaços físicos disponíveis e ao peso que cada tipo de container pode suportar, além do custo do frete a considerar.&lt;/p&gt;
+&lt;p&gt;Nos portos e nos terminais a movimentação é realizada com reachtackers e toplifts, que são empilhadeiras próprias para a movimentação e empilhamento de containeres, e os Transtainers, que são guindastes montados sobre grandes estruturas que correm sobre trilhos e se movimentam ao longo do cais, empilhando e transferindo containers de um ponto a outro.
+Nos embarques e desembarques são utilizados Portainers, que são guindastes de pórticos usados para pegar os container com seus spreaders (quadros que se engatam nos containers e os levantam). São utilizados também equipamentos dos navios como pontes rolantes, guindastes comuns, com cabos de aço que pegam os containers.&lt;/p&gt;
+&lt;p&gt;Nos deslocamentos e transportes dos containers são usados conjuntos formados por cavalos mecânicos acoplados a trailers, boogies, chassis e plataforma, que são equipamentos especiais para acomodar o container. Estes equipamentos podem ser geradores de energia aos reefers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lingas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lingas&lt;/h3&gt;
+&lt;div id=&#34;vantagens-e-desvantagens-das-lingas&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Vantagens e Desvantagens das Lingas&lt;/h4&gt;
+&lt;p&gt;As principais vantagens das lingas são:&lt;br /&gt;
+• Redução de perdas, roubos e avarias à carga;&lt;br /&gt;
+• Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;&lt;br /&gt;
+• Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo, em conseqüência, aumento da rotatividade dos mesmos;&lt;br /&gt;
+• Redução das taxas de capatazia no porto de embarque. Na maioria dos portos, apenas quando o peso da unidade de carga excede 1.000 kg.&lt;br /&gt;
+• Redução das taxas de estiva no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador quando ele contrata e paga o serviço de estiva da mercadoria a bordo do navio;&lt;/p&gt;
+&lt;p&gt;Dentre as desvantagens das lingas, se destacam:&lt;br /&gt;
+• Investimentos na aquisição de lingas e equipamentos para movimentação das unidades de carga;&lt;br /&gt;
+• Custos de reposição e retorno das lingas, caso não sejam descartáveis (em princípio, esses custos são sensivelmente menores do que os pertinentes ao conteiner e ao pallet).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transporte-aéreo-uld-unit-load-devices&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Transporte aéreo – ULD (Unit Load Devices)&lt;/h3&gt;
+&lt;p&gt;ULD – Unit Load Devices : Unidades próprias para unitização de cargas, ou seja , os conteiners e pallets utilizados na carga aérea. Estes distinguem-se em formatos e tamanhos , bem como em sua concepção e utilização, daqueles utilizados no transporte marítimo. Os ULD poderão ser entregues aos embarcadores ou destinatários por um período máximo de 48 horas, não considerados sábados, domingos e feriados. Serão cobrados cerca de US$ 25,00 por dia ou pro rata pelo atraso na sua devolução.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;planejamento-estratégico-das-empresas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;PLANEJAMENTO ESTRATÉGICO DAS EMPRESAS&lt;/h2&gt;
+&lt;p&gt;(texto obtido em &lt;a href=&#34;http://www.treasy.com.br/blog/5-passos-para-criar-um-planejamento-estrategico-para-sua-empresa&#34; class=&#34;uri&#34;&gt;http://www.treasy.com.br/blog/5-passos-para-criar-um-planejamento-estrategico-para-sua-empresa&lt;/a&gt;)&lt;/p&gt;
+&lt;div id=&#34;definir-a-missão-visão-e-valores-da-empresa&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Definir a Missão, Visão e Valores da empresa&lt;/h3&gt;
+&lt;p&gt;O primeiro passo de qualquer Planejamento Estratégico é definir Missão, Visão e Valores da organização. Este passo é que dá o “norte” a ser seguido. Sem estas definições, o restante do planejamento perde o sentido.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Missão: é a declaração sobre o que a organização é, qual seu propósito fundamental, a finalidade de sua existência, o motivo pela qual foi criada. A missão define a identidade da empresa e não costuma mudar ao longo do tempo. Por exemplo, a missão da Treasy é “Simplificar o Planejamento Financeiro das organizações”.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Visão: representa um estado futuro para a organização, onde ela deseja chegar, o que quer alcançar. Diferente da missão, a visão é criada para um período de tempo pré-determinado, portanto a visão pode mudar ao longo do tempo, de acordo com o momento que organização se encontra. Por exemplo, A Kopenhagen, tem como visão “Ser um grupo competitivo que atue de forma abrangente no segmento alimentício, através de um portfólio de produtos com qualidade, representado por marcas fortes, com características e propostas únicas”.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Valores: são princípios, ou crenças, que servem de guia, ou critério, para os comportamentos, atitudes e decisões de todas e quaisquer pessoas, que no exercício das suas responsabilidades, e na busca dos seus objetivos, estejam executando a missão, na direção da visão. Alguns exemplos de valores: Respeito, Confiança, Comprometimento, Responsabilidade, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;definir-os-objetivos-estratégicos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definir os Objetivos Estratégicos&lt;/h2&gt;
+&lt;p&gt;Com base na Visão estabelecida no passo anterior, é hora de definir os Objetivos Estratégicos para a organização.&lt;/p&gt;
+&lt;p&gt;Os Objetivos Estratégicos são as metas globais e amplas da organização e devem estar diretamente relacionadas a missão da empresa. Ou seja, a cada Objetivo Estratégico alcançado, a empresa deve caminhar para mais perto de alcançar sua visão.&lt;/p&gt;
+&lt;p&gt;Alguns exemplos de objetivos estratégicos:&lt;br /&gt;
+- Aumentar a satisfação dos clientes em 20%;&lt;br /&gt;
+- Reduzir os custos produtivos em 15%;&lt;br /&gt;
+- Elevar o índice de capacitação dos funcionários em 30%;&lt;/p&gt;
+&lt;p&gt;Uma dica para é sempre começar a definição dos objetivos com um verbo e quantifica-los.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;definir-os-objetivos-táticos-metas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definir os Objetivos Táticos (Metas)&lt;/h2&gt;
+&lt;p&gt;Os Objetivos Táticos são os objetivos que abrangem cada unidade específica da organização. São geralmente objetivos divisionais ou departamentais relacionados com as áreas de produção, finanças, marketing e de recursos humanos da organização.&lt;/p&gt;
+&lt;p&gt;Os Objetivos Táticos devem ser criados de forma a garantir que os Objetivos Estratégicos sejam alcançados.&lt;/p&gt;
+&lt;p&gt;Alguns exemplos:
+- Garantir que os pedidos de clientes sejam atendidos em no máximo 1 dia;
+- Garantir que nenhum produto com defeito seja comercializado;
+- Garantir que 100% dos funcionários possuam graduação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;definir-os-objetivos-operacionais-planos-de-ação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definir os Objetivos Operacionais (Planos de Ação)&lt;/h2&gt;
+&lt;p&gt;Já os Objetivos Operacionais são os objetivos específicos e voltados para a execução das operações da organização referem-se geralmente a cada tarefa ou operação especificamente.&lt;/p&gt;
+&lt;p&gt;Os Objetivos Operacionais devem ser criados em formato de projetos ou planos de ação, como subdivisões dos Objetivos Táticos. Ou seja, são as ações que precisarão ser feitas para garantir que os objetivos táticos sejam alcançados.&lt;/p&gt;
+&lt;p&gt;Exemplos:
+- Implantar um sistema de separação e rastreamento dos pedidos;
+- Implantar um programa de qualidade total;
+- Fechar parceria com uma universidade para capacitar os funcionários.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;elaborar-um-orçamento-empresarial&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Elaborar um Orçamento Empresarial&lt;/h2&gt;
+&lt;p&gt;O Orçamento Empresarial é a tradução do Planejamento Estratégico em números.&lt;/p&gt;
+&lt;p&gt;Depois que sua empresa definiu qual sua Visão (onde e quando quer chegar), desdobrou esta Visão em Objetivos Estratégicos, subdividiu estes objetivos em metas (Objetivos Táticos) e criou planos de ação (Objetivos Operacionais) para alcançar estas metas, o próximo passo é transformar tudo isto em números com ajuda do Orçamento Empresarial.&lt;/p&gt;
+&lt;p&gt;Seguindo nosso exemplo, no Orçamento, as metas de faturamento vão se tornar Projeções de Vendas, as metas de capacitação dos funcionários vão refletir nas Projeções de Despesas Operacionais, a implantação do sistema de rastreamento se tornará um Investimento Operacional, a melhoria dos processos produtivos terão impacto direto sobre a Projeção de Custos Produtivos e assim por diante.&lt;/p&gt;
+&lt;p&gt;Desta forma, sua empresa possuirá um plano completo de quanto precisa faturar, quais são os limites de custos e despesas que precisa respeitar, quais investimentos precisa realizar e pode acompanhar o números ao longo do ano, verificando se está caminhando para alcançar sua visão ou se precisa de algum ajuste na operação. Chamamos isto de Acompanhamento e Controle Orçamentário.&lt;/p&gt;
+&lt;p&gt;Está é uma prática extremamente necessária no processo de Planejamento de qualquer empresa e uma etapa importantíssima do Orçamento Empresarial.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;indicadores-de-avaliação-de-transporte&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;INDICADORES DE AVALIAÇÃO DE TRANSPORTE&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;As estatísticas sobre os tráfegos representam dados em termos físicos, que refletem o interesse de traduzir as atividades das empresas em termos monetários.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;As estatísticas operacionais dos transportes registram por períodos estabelecidos (dia, decênio, quinzena, mês, ano), os resultados alcançados.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Uma vez consolidadas (por veículo, fluxo, linha, rota, empresa etc) estas estatísticas são convertidas em informações, através dos indicadores de desempenho.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;kpi-key-performance-indicators-indicador-chave-de-desempenho&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;KPI – Key Performance Indicators – Indicador-chave de desempenho&lt;/h2&gt;
+&lt;div id=&#34;definição&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Definição&lt;/h3&gt;
+&lt;p&gt;De maneira sintética, os KPIs podem ser definidos como um valor quantitativo, resultante de uma análise de dados e métricas, que possibilita a mensuração dos processos de produção e a consequente gestão deste processo, visando atingir as metas da empresa.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;função&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Função&lt;/h3&gt;
+&lt;p&gt;São utilizados para mensurar o desempenho dos processos em uma empresa. A partir das informações analisadas é possível estabelecer metas para o alcance dos objetivos gerais da empresa.&lt;/p&gt;
+&lt;p&gt;Por meio dos KPIs, os colaboradores tomam conhecimento e atuam na missão da empresa.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;classificação-dos-kpis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Classificação dos KPIs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Indicadores Estratégicos: são os indicadores primários da organização, que serão acompanhados diretamente pela diretoria e seu principal propósito é demonstrar de forma rápida se os Objetivos Estratégicos estão sendo alcançados. Exemplo: Faturamento Bruto.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Indicadores Táticos: aqui são indicadores secundários, que serão acompanhados pelas gerencias de cada departamento. Apesar de não serem estratégicos, seus resultados devem ser intimamente ligados aos resultados dos Indicadores Estratégicos. Exemplo: Faturamento por Linha de Produto ou por Canal de Vendas;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Indicadores Operacionais: por fim, indicadores que serão acompanhados pelos especialistas de cada área. Estes indicadores tem a função de fornecer mais detalhes para entendimento dos resultados dos Indicadores Táticos e Estratégicos. Exemplo: Número de Vendedores por Canal de Vendas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;É preciso muita atenção na hora de escolher quais indicadores utilizar em sua empresa. Indicadores mal definidos podem gerar decisões equivocadas. Busque sempre criar Indicadores Inteligentes, que reflitam a estratégia e a realidade da organização.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;processos-operacionais-que-serão-trabalhados-na-gestão-do-transporte-de-cargas-por-meio-de-indicadores-kpis&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Processos operacionais que serão trabalhados na gestão do transporte de cargas por meio de indicadores KPIs&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;Especificação e avaliação de veículos&lt;/li&gt;
+&lt;li&gt;Dimensionamento de frotas&lt;/li&gt;
+&lt;li&gt;Operação de frotas&lt;/li&gt;
+&lt;li&gt;Controle de custos operacionais no transporte&lt;/li&gt;
+&lt;li&gt;Planejamento da manutenção&lt;/li&gt;
+&lt;li&gt;Investimentos em transportes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unidades-e-indicadores-de-avaliação-de-transporte&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;UNIDADES E INDICADORES DE AVALIAÇÃO DE TRANSPORTE&lt;/h2&gt;
+&lt;div id=&#34;objetivo-medir-os-seguintes-atributos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Objetivo: medir os seguintes atributos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Previsão de demanda&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Produção (oferta) – Planejada/Programada/Realizada&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Desvios – Plan x Prog / Prog x Real&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Eficiência: A eficiência preocupa-se com os meios, com os métodos e procedimentos planejados e organizados a fim de assegurar otimização dos recursos disponíveis&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Eficácia: Capacidade da organização em cumprir as suas metas e objetivos previamente fixados.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Efetividade: eficiência + eficácia&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Confiabilidade: índice de falhas&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Segurança operacional&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Produtividade: produção/recursos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Economicidade: Característica da alternativa, mais econômica para a solução de determinado problema.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Rentabilidade: lucro e lucratividade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;natureza-dos-indicadores&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Natureza dos indicadores&lt;/h2&gt;
+&lt;div id=&#34;diretos-simples&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Diretos simples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;veículos, viagens, passageiros, toneladas etc&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;MKBF – Mean kilometer between failure&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Ocorrências absolutas de acidentes, avarias etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;diretos-compostos&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Diretos compostos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Caracterizar percursos realizados e tempos consumidos nas operações e seus períodos de realização. Veículos – carregados e vazios no período, pela extensão etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;indicadores-de-percurso&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Indicadores de Percurso&lt;/h4&gt;
+&lt;p&gt;– Exemplo de indicadores de percurso&lt;br /&gt;
+» Ton. útil = Peso da carga remunerada&lt;br /&gt;
+» Ton morta = Peso da tara&lt;br /&gt;
+» Ton bruta = ton útil + ton morta&lt;br /&gt;
+» Veíc.Km = percursos dos veículos&lt;br /&gt;
+» Pass.Km = percurso dos passageiros&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registros estatísticos dos fluxos de tráfegos - percurso. Os fluxos de tráfegos podem ser registrados:&lt;br /&gt;
+» em toneladas transportadas&lt;br /&gt;
+» em passageiros&lt;br /&gt;
+» em toneladas-km e passageiros-km realizados (percurso das tons e passageiros - TKU e Pkm)&lt;br /&gt;
+» Estes últimos resultados são obtidos efetuando os produtos das toneladas ou passageiros transportados pelas respectivas distancias percorridas, num dado período.&lt;br /&gt;
+» Este método deve ser considerado porquê permite evitar os riscos de contagem múltipla das toneladas e passageiros transportados, nos casos das rupturas de carga&lt;br /&gt;
+» As rupturas de carga representam pontos baldeados e integrações modais e intermodais, trocas de veículos etc.&lt;br /&gt;
+» Seja o caso de uma expedição de 10t efetuada sobre uma distância média de 1.055km (gráfico e tabela a seguir).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;indicadores-de-tempo&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Indicadores de Tempo&lt;/h4&gt;
+&lt;p&gt;Tempos previstos e gastos nos deslocamentos das quantidades envolvidas. Estes indicadores são obtidos pelos produtos das quantidades envolvidas pelos correspondentes tempos gastos nas operações&lt;br /&gt;
+» Exemplo de indicadores de tempo&lt;br /&gt;
+» veíc - dia = dias dos veículos no período&lt;br /&gt;
+» veíc - hora = horas dos veículos no período&lt;br /&gt;
+– As estatísticas por veículos, viagem etc são registrados em horas e minutos, no período considerado&lt;br /&gt;
+– Apenas a soma dos tempos é arredondada para que se evite distorções dos resultados&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;razões&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Razões&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Os indicadores expressos por razoes permitem que se façam avaliações mais seguras dos resultados das operações.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Velocidades e distâncias&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Ocupações&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outros&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Outros&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;especificação-e-avaliação-de-veículos&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ESPECIFICAÇÃO E AVALIAÇÃO DE VEÍCULOS&lt;/h1&gt;
+&lt;div id=&#34;características-da-carga&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Características da Carga&lt;/h2&gt;
+&lt;p&gt;• Tipo (sólida, granel, sacaria&lt;br /&gt;
+• Peso específico (kg/m3) ou volume unitário&lt;br /&gt;
+• Volume m3&lt;br /&gt;
+• Fragilidade&lt;br /&gt;
+• Tipo de embalagem&lt;br /&gt;
+• Limite de empilhamento&lt;br /&gt;
+• Possibilidade de unitização&lt;br /&gt;
+• Temperatura de conservação&lt;br /&gt;
+• Nível de umidade admissível&lt;br /&gt;
+• Prazo de validade&lt;br /&gt;
+• Legislação&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;características-do-transporte&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Características do Transporte&lt;/h2&gt;
+&lt;p&gt;• Identificação de ponto de origem e destino&lt;br /&gt;
+• Determinação da demanda e frequência de abastecimento/atendimento&lt;br /&gt;
+• Sistemas de carga e descarga (identificação/compatibilização)&lt;br /&gt;
+• Horários de funcionamento dos locais de origem e destino&lt;br /&gt;
+• Dias úteis disponíveis por mês&lt;br /&gt;
+• Tempo de carga e descarga (espera, pesagem, conferência e emissão de documentos)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;características-das-rotas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Características das Rotas&lt;/h2&gt;
+&lt;p&gt;• Distâncias entre os pontos de origem e destino&lt;br /&gt;
+• Tipo de estrada (pavimentação e trânsito)&lt;br /&gt;
+• Topografia (rampa máxima)&lt;br /&gt;
+• Pesos máximos permitidos em pontes e viadutos&lt;br /&gt;
+• Distância máxima entre os pontos de abastecimento, assistência técnica&lt;br /&gt;
+• Legislação de trânsito&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;avaliação-de-desempenho-de-veículos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Avaliação de Desempenho de Veículos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Indicadores de Produtividade&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Velocidade Operacional&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tempo de Carga e Descarga&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horas de trabalho&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consumo&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dimensionamento-de-frotas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;DIMENSIONAMENTO DE FROTAS&lt;/h1&gt;
+&lt;div id=&#34;conceito-de-rotação-de-ciclo&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conceito de Rotação de ciclo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Considera os tempos de um veículo desde o início de um carregamento, englobando tempos de carregamentos na origem, viagem de ida (percurso carregado), descarga no destino e viagem de volta (percurso de vazio) até o ponto do carregamento subseqüente n + 1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C = Tc + Tvc + Td + Tvv&lt;/p&gt;
+&lt;p&gt;– C = Ciclo&lt;br /&gt;
+– Tt = Tempo em terminais = Tc + Td&lt;br /&gt;
+– Tc = Tempo de carregamento&lt;br /&gt;
+– Td = Tempo de descarga&lt;br /&gt;
+– Tv = Tempo de viagem = Tvc + Tvv&lt;br /&gt;
+– Tvc = Tempo de viagem do veículo carregado&lt;br /&gt;
+– Tvv = Tempo de viagem do veículo vazio&lt;/p&gt;
+&lt;p&gt;Essa métrica de cálculo é a mais simples possível. O tempo de ciclo, de forma genérica, pode ser definido como o tempo necessário para cumprimento de um roteiro de entregas (ou coletas), visando dimensionar o tempo necessário para que um mesmo veículo possa ser aproveitado em viagens subsequentes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conceito-de-existência-vhe&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conceito de Existência (VHE)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Existência = tempo total de todos os veículos que integraram a frota durante o período considerado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conceito-de-imobilização-vhi&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conceito de Imobilização (VHI)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dentro de oficinas para reparos devidos acidentes e defeitos e para manutenções correntes e pesados.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Imob. = veículos-hora imobilizados em oficinas = VHI&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Nota: Os tempos de imobilização são contados somente em veículos dentro das oficinas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conceito-de-avarias-em-trânsito-vha&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conceito de Avarias em trânsito (VHA)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Oficina, após remoção, ou até sua plena reparação no próprio local. Pode gerar impacto, se em via de tráfego forçado, na circulação de outros veículos ou composições.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conflito se deve ser alocado à imobilização ou à não utilização da disponibilidade&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;utilização-da-disponibilidade-vhu&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Utilização da disponibilidade (VHU)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;O veículo-hora efetivamente utilizado para produção (em trem, em manobra)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;não-utilização-da-disponibilidade-vhnu&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Não Utilização da Disponibilidade (VHNU)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Paralização = veíc. hora (existentes - imobilizados — avariados em trânsito — utilizados) no mês&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exemplo:
+- Para uma frota de 10 veículos, tem-se o horizonte de planejamento de um mês (30 dias). Sabe-se que 15% da frota está constantemente imobilizada. Sabe-se ainda que 5% da frota não produz transporte devido a avarias ao longo do percurso. A eficiência operacional (oferta) que visa a adequação da frota à demanda por transporte é baixa, pois há uma carência de profissionais para alocação de veículos de forma adequada aos fluxos de transporte. Assim, os veículos destinados à produção ficam parados por cerca de 30% do tempo. Pede-se:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Determine o total de veículos-hora que a empresa dispõe para a produção de transporte. Demonstre esse cálculo, considerando cada parcela que compõe as horas disponíveis para a produção.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dimensionamento-de-frotas-1&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Dimensionamento de Frotas&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Uma empresa, proprietária de uma frota de veículos destinados ao transporte rodoviário, precisa calcular quantos veículos serão necessários para efetuar a movimentação de 100.000 toneladas-úteis de carga no período de um mês.
+Sabe-se que a imobilização de veículos é, em média, 10% da frota total e a utilização de veículos chega a 95% dos ativos disponíveis. Sabe-se ainda que a capacidade nominal do veículo é 27 toneladas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;O tempo de ciclo para os veículos na rota entre os pontos A e B é equivalente a 4 dias.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;Calcule o número de veículos necessários para a movimentação de toda a demanda de transporte no cenário proposto.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Se houvesse uma redução de um dia no ciclo, qual seria o impacto na necessidade de veículos.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Verifique a alteração da necessidade de veículos considerando um incremento no ciclo de meio dia, totalizando 4,5 dias, mas com aumento do carregamento de cada veículo para a capacidade nominal.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;planejamento-da-manutenção&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;PLANEJAMENTO DA MANUTENÇÃO&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operação-de-frotas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;OPERAÇÃO DE FROTAS&lt;/h1&gt;
+&lt;div id=&#34;roteirização&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Roteirização&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;controle-de-custos-operacionais-no-transporte&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;CONTROLE DE CUSTOS OPERACIONAIS NO TRANSPORTE&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;investimentos-em-transportes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;INVESTIMENTOS EM TRANSPORTES&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Impactos da pandemia COVID-19 nos transportes</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/transportes_covid/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/transportes_covid/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Algumas notícias interessantes sobre os impactos da pandemia COVID-19 na movimentação internacional de cargas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.porteconomics.eu/wpsp-iaph-barometer-cargo-flows-impacting-hinterland-transport/&#34;&gt;Cargo flows impacting hinterland transport&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.porteconomics.eu/disruptions-and-resilience-in-global-container-shipping-and-ports-covid-19-pandemic-vs-2008-2009-financial-crisis/&#34;&gt;Disruptions and resilience in global container shipping and ports: covid-19 pandemic vs. 2008-2009 financial crisis&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.porteconomics.eu/the-correlation-between-the-behaviour-of-ports-and-freight-rates-in-latin-america-and-the-caribbean-during-the-covid19-pandemic/&#34;&gt;The correlation between the behaviour of ports and freight rates in Latin America and the Caribbean during the COVID19 pandemic&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.porttechnology.org/news/all-areas-of-the-supply-chain-must-work-together-in-post-pandemic-world/&#34;&gt;All areas of the supply chain must work together in post-pandemic world&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://portalacepg.com.br/movimentacao-de-conteineres-no-porto-de-santos-sp-bate-recorde-em-outubro/&#34;&gt;Movimentação de contêineres no Porto de Santos, SP, bate recorde em outubro&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DICA: Para quem tem alguma dificuldade com o uso de língua estrangeira para leitura, há extensões para navegadores e apps que permitem tradução de páginas. Um app excelente é o &lt;a href=&#34;https://www.deepl.com/translator&#34;&gt;DeepL&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gestão de estoques</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/estoques/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/estoques/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definição&#34;&gt;Definição&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#por-que-surgem-os-estoques&#34;&gt;Por que surgem os estoques?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#razões-para-existência-de-estoques&#34;&gt;Razões para existência de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-estoque&#34;&gt;Tipos de estoque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#influência-de-estoques-na-competitividade-das-empresas&#34;&gt;Influência de estoques na competitividade das empresas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#decisões-de-estoques&#34;&gt;Decisões de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#objetivos-da-gestão-de-estoques&#34;&gt;Objetivos da gestão de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#principais-incertezas-que-impactam-o-planejamento-de-estoques&#34;&gt;Principais incertezas que impactam o planejamento de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34;&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gestão-de-estoques&#34;&gt;Gestão de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sku&#34;&gt;SKU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#curva-abc&#34;&gt;Curva ABC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#giro-de-estoque&#34;&gt;Giro de estoque&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;definição&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definição&lt;/h2&gt;
+&lt;p&gt;“Os estoques são recursos ociosos que possuem valor econômico.”
+.small[
+Joseph G. Monks: Administração da Produção]&lt;/p&gt;
+&lt;p&gt;“Entende-se por estoque quaisquer quantidades de bens físicos que sejam conservados, de forma improdutiva, por algum intervalo de tempo.”
+.small[
+Daniel Moreira: Administração da Produção e Operações]&lt;/p&gt;
+&lt;p&gt;“Estoques são acúmulos de materiais entre fases dos processos de transformação, que proporcionam um grau de independência entre as fases”
+.small[
+Henrique L.Correa: Administração da Produção e Operações]&lt;/p&gt;
+&lt;p&gt;Estoques são materiais ou produtos que ficam fisicamente disponíveis pela empresa, até o momento de ingressarem no processo produtivo ou seguirem para a comercialização direta ao consumidor final. Os estoques podem ser de matérias-primas e outros insumos, produtos em processos, produtos acabados disponíveis para a comercialização e todos os demais materiais e insumos que a empresa utiliza e que necessitam estar armazenados nas suas dependências.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;por-que-surgem-os-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Por que surgem os estoques?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Impossível ou inviável coordenar suprimento e demanda:
+&lt;ul&gt;
+&lt;li&gt;capacidade&lt;/li&gt;
+&lt;li&gt;informação&lt;/li&gt;
+&lt;li&gt;custo de obtenção&lt;/li&gt;
+&lt;li&gt;restrições tecnológicas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Especular com os estoques:
+&lt;ul&gt;
+&lt;li&gt;escassez&lt;/li&gt;
+&lt;li&gt;oportunidade&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Incerteza de previsões de suprimento e/ou demanda:
+&lt;ul&gt;
+&lt;li&gt;estoques de segurança&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Preencher o “pipeline” - canais de distribuição&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;razões-para-existência-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Razões para existência de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;compras ou produção de forma mais econômica&lt;/li&gt;
+&lt;li&gt;redução de fretes&lt;/li&gt;
+&lt;li&gt;prevenir incertezas (desabastecimentos)&lt;/li&gt;
+&lt;li&gt;reduzir efeitos de sazonalidades&lt;/li&gt;
+&lt;li&gt;diferentes ritmos de produção entre fases&lt;/li&gt;
+&lt;li&gt;reduzir custos de ociosidades&lt;/li&gt;
+&lt;li&gt;melhor atendimento a consumidores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-estoque&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tipos de estoque&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Estoque Isolador ou Estoque de Segurança - tem como função compensar as incertezas inerentes ao fornecimento e demanda. Ex: máquina problemática!!!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque de Ciclo - ocorre porque um ou mais estágios na operação não podem fornecer todos os itens que produzem simultaneamente. Ex: fabricações em batelada - Padaria / Processos Químicos.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque de Antecipação - ocorre principalmente nos produtos de grande variação de demanda. Ex: chocolate, sorvete, cerveja.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estoque no Canal de Distribuição - ocorrem porque o material não pode ser transportado instantaneamente entre o ponto de produção e o ponto de venda.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;influência-de-estoques-na-competitividade-das-empresas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Influência de estoques na competitividade das empresas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Influência nos custos;&lt;/li&gt;
+&lt;li&gt;Influência na velocidade de entrega;&lt;/li&gt;
+&lt;li&gt;Influência na confiabilidade de entregas;&lt;/li&gt;
+&lt;li&gt;Influência sobre a flexibilidade de saídas - quando se tem estoques de diferentes produtos tem-se flexibilidade para atender as diferentes necessidades, mas perde-se flexibilidade em qualquer mudança de pedido feita pelo cliente.&lt;/li&gt;
+&lt;li&gt;Influência sobre a qualidade do produto - a produção com qualidade reduz o nível de estoque da empresa pois corre-se um risco menor de se perder o material.&lt;/li&gt;
+&lt;li&gt;Influência sobre o serviço prestado ao cliente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decisões-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Decisões de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Quanto pedir
+&lt;ul&gt;
+&lt;li&gt;Custos de estoques&lt;/li&gt;
+&lt;li&gt;Lote econômico de compras&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Quando pedir
+&lt;ul&gt;
+&lt;li&gt;Revisões contínuas e periódicas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Como controlar o sistema
+&lt;ul&gt;
+&lt;li&gt;Curva ABC&lt;/li&gt;
+&lt;li&gt;Inventário&lt;/li&gt;
+&lt;li&gt;planejamento de estoques de segurança&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;objetivos-da-gestão-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Objetivos da gestão de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cálculo do nível de estoque cíclico&lt;/li&gt;
+&lt;li&gt;Cálculo do nível de estoque de segurança&lt;/li&gt;
+&lt;li&gt;Determinação de Lote Econômico de Compra&lt;/li&gt;
+&lt;li&gt;Atualização de inventário&lt;/li&gt;
+&lt;li&gt;Replanejamento do suprimento&lt;/li&gt;
+&lt;li&gt;Determinação do ponto de pedido&lt;/li&gt;
+&lt;li&gt;Recebimento e armazenagem de materiais&lt;/li&gt;
+&lt;li&gt;Conservar material em condições adequadas&lt;/li&gt;
+&lt;li&gt;Entregar material mediante requisição&lt;/li&gt;
+&lt;li&gt;Documentação&lt;/li&gt;
+&lt;li&gt;Organização do almoxarifado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;principais-incertezas-que-impactam-o-planejamento-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Principais incertezas que impactam o planejamento de estoques&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Incertezas quanto à demanda (consumo)&lt;/li&gt;
+&lt;li&gt;Incertezas em relação à entrega (atrasos, por exemplo)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/h1&gt;
+&lt;div id=&#34;gestão-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gestão de estoques&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/rmQnVTLwc3E&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/DjwadLdgiic&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/_aQf-tKNrTs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sku&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;SKU&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/jRBOE04Rrdg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;curva-abc&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Curva ABC&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/sB0-Fcqvz7I&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;giro-de-estoque&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Giro de estoque&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/ucFtX-pf9oA&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Omnichannel</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/omnichannel/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/omnichannel/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Omnichannel é uma estratégia de uso simultâneo e interligado de diferentes canais de comunicação, com o objetivo de estreitar a relação entre online e offline, aprimorando, assim, a experiência do cliente. Essa tendência do varejo permite a convergência do virtual e do físico.&lt;/p&gt;
+&lt;p&gt;Internet Física&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Armazenagem</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/armazenagem/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/armazenagem/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#endereçamento-de-armazenagem&#34;&gt;Endereçamento de armazenagem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#picking&#34;&gt;Picking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#recebimento-e-conferência&#34;&gt;Recebimento e conferência&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#inventário&#34;&gt;Inventário&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#gestão-estratégica-de-armazenagem&#34;&gt;Gestão estratégica de armazenagem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#armazenagem-no-brasil&#34;&gt;Armazenagem no Brasil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#armazéns-automatizados&#34;&gt;Armazéns automatizados&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;endereçamento-de-armazenagem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Endereçamento de armazenagem&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/fRyiGVmB2i0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;picking&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Picking&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/h8JBZ8qLiy0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;recebimento-e-conferência&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Recebimento e conferência&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/BFyPEMWRpuM&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inventário&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inventário&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/iKNPIiL0KtQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;gestão-estratégica-de-armazenagem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gestão estratégica de armazenagem&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/2lLqjzOgUBE&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;armazenagem-no-brasil&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Armazenagem no Brasil&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/o-mfwZ4OIT0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/HI46Nj8s5DM&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:6772601182000087040/&#34; class=&#34;uri&#34;&gt;https://www.linkedin.com/feed/update/urn:li:activity:6772601182000087040/&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;946&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/LQ4AeoQgDvY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/g78M9H8H0MQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/TgJxCloUya0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/d5NettAAiWc&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;armazéns-automatizados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Armazéns automatizados&lt;/h2&gt;
+&lt;iframe width=&#34;1145&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/xWApW5pSa4M&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/S8zDRu72HD0&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/IMPbKVb8y8s&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/4DKrcpa8Z_E&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/Ox05Bks2Q3s&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sourcing</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/compras/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/compras/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34;&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gestão-de-estoques&#34;&gt;Gestão de estoques&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Em elaboração&lt;/p&gt;
+&lt;hr&gt;
+&lt;div id=&#34;alguns-vídeos-interessantes-para-entender-um-pouco-mais-sobre-estoques&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Alguns vídeos interessantes para entender um pouco mais sobre estoques&lt;/h1&gt;
+&lt;div id=&#34;gestão-de-estoques&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gestão de estoques&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Redes logísticas</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/redes/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/redes/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#opções-de-projetos-para-uma-rede-de-transporte&#34;&gt;OPÇÕES DE PROJETOS PARA UMA REDE DE TRANSPORTE&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#rede-de-entrega-direta&#34;&gt;Rede de entrega direta&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;opções-de-projetos-para-uma-rede-de-transporte&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;OPÇÕES DE PROJETOS PARA UMA REDE DE TRANSPORTE&lt;/h1&gt;
+&lt;p&gt;O projeto da rede de transporte é fator decisivo para garantir responsividade e custo competitivo na cadeia de suprimentos.&lt;/p&gt;
+&lt;div id=&#34;rede-de-entrega-direta&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rede de entrega direta&lt;/h2&gt;
+&lt;p&gt;Todas as entregas acontecem diretamente do fornecedor para o varejista. Neste caso, a rota de cada carregamento é pré-determinada, sendo necessário definir apenas o volume a ser transportado e o meio de transporte mais eficiente.&lt;/p&gt;
+&lt;p&gt;Vantagens:
+- eliminação de intermediários logísticos, como atacadistas ou centros de distribuição;&lt;br /&gt;
+- simplicidade de operação e coordenação;&lt;br /&gt;
+- decisão sobre embarque é local;&lt;br /&gt;
+- baixa interferência entre fluxos;&lt;br /&gt;
+- tempo de transporte do fornecedor até ao ponto de varejo é reduzido.&lt;/p&gt;
+&lt;p&gt;São aconselháveis quando o tamanho das lojas varejistas for suficientemente grande para justificar lotes de suprimentos ótimos próximos à carga cheia proveniente de cada fornecedor.&lt;/p&gt;
+&lt;p&gt;Desvantagens:
+- no caso de lojas pequenas, a rede de entrega direta é onerosa;&lt;br /&gt;
+- geraria um elevado custo de estoque na cadeia de suprimentos;&lt;br /&gt;
+- os custos de recebimento são altos porque cada fornecedor deve fazer uma entrega separada.&lt;/p&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Custos Logísticos</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/custos/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/custos/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#previsão-de-custos-operacionais-no-transporte-de-cargas&#34;&gt;1. PREVISÃO DE CUSTOS OPERACIONAIS NO TRANSPORTE DE CARGAS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#o-segredo-da-boa-decisão&#34;&gt;1.1 O Segredo da Boa Decisão&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#o-que-se-entende-por-orçamento&#34;&gt;O que se entende por orçamento?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#e-quanto-ao-controle-de-custos&#34;&gt;E quanto ao controle de custos?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#classificação-dos-custos&#34;&gt;1.2 Classificação dos Custos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-custos&#34;&gt;1.2.1 Tipos de Custos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#componentes-dos-custos&#34;&gt;1.2.2 Componentes dos Custos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#considerações-metodológicas&#34;&gt;1.2.3 Considerações Metodológicas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#fatores-que-influenciam-nos-custos&#34;&gt;1.3 Fatores que Influenciam nos Custos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#métodos-de-cálculo-de-custos-operacionais&#34;&gt;1.4 Métodos de Cálculo de Custos Operacionais&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#método-dos-custos-médios-desagregados&#34;&gt;1.4.1 Método dos Custos Médios Desagregados&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;previsão-de-custos-operacionais-no-transporte-de-cargas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;1. PREVISÃO DE CUSTOS OPERACIONAIS NO TRANSPORTE DE CARGAS&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;o-segredo-da-boa-decisão&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;1.1 O Segredo da Boa Decisão&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Um sistema eficaz de orçamento e de controle de custos permite a tomada de melhores
+decisões”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;o-que-se-entende-por-orçamento&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;O que se entende por orçamento?&lt;/h3&gt;
+&lt;p&gt;É o documento através do qual são realizadas as previsões de receitas e despesas, referentes a um serviço ou conjunto de atividades que ocorrerão em um determinado período de tempo. Tal documento é indispensável para que a empresa possa obter o máximo rendimento dos recursos empregados e o equilíbrio de suas finanças. Através dele, a administração fixa e define as metas a atingir. Convém ressaltar que o orçamento de uma empresa depende do orçamento de cada serviço a ser realizado e, no caso dos transportes, é imprescindível que se faça uma boa previ são dos custos de operação dos veículos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;e-quanto-ao-controle-de-custos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;E quanto ao controle de custos?&lt;/h3&gt;
+&lt;p&gt;A administração precisa sempre avaliar os impactos de suas decisões sobre os custos. O gerente eficaz, por sua vez, deve ter um bom conhecimento acerca dos mesmos, de modo a poder converter essas informações em subsídios que propici em decisões acertadas. A figura apresentada a seguir ilustra tal sistema de tomada de decisões.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;classificação-dos-custos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.2 Classificação dos Custos&lt;/h2&gt;
+&lt;p&gt;A análise econômica costuma fazer a distinção, apresentada a seguir, entre os custos de produção.&lt;/p&gt;
+&lt;div id=&#34;tipos-de-custos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.2.1 Tipos de Custos&lt;/h3&gt;
+&lt;p&gt;Em nível macro, os custos operacionais dos veículos rodoviários podem ser classificados da forma como se segue.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Diretos&lt;/strong&gt;&lt;br /&gt;
+Correspondem aos custos fixos mais os variáveis.&lt;br /&gt;
+— Custos Fixos: Englobam o conjunto de gastos, cujo valor, dentro de limites razoáveis de produção, não varia em função do nível de atividade da em presa ou grau de utilização do equipamento.&lt;br /&gt;
+— Custos Variáveis: São proporcionais à utilização.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Indiretos ou Administrativos&lt;/strong&gt;&lt;br /&gt;
+São os custos necessários para manter o sistema de transporte da empresa.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;componentes-dos-custos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.2.2 Componentes dos Custos&lt;/h3&gt;
+&lt;p&gt;Colocando em prática os conceitos acima descritos, são apresentados os seguintes componentes para tais custos:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Fixos&lt;/strong&gt;
+— Depreciação: corresponde à redução de valor que o veículo vai sofrendo com o decorrer do tempo.&lt;br /&gt;
+— Remuneração do capital: qualquer investimento que se faça pressupõe um retorno ou remuneração do capital aplicado. É isso que o empresário espera ao investir em uma empresa de transportes. Portanto, a cada serviço que ela presta, a mesma tem que embutir em seus custos a remuneração do capital aplicado pelo investidor.&lt;br /&gt;
+— Salário da tripulação: corresponde ao pagamento de motoristas, cobradores, ajudantes etc. e respectivos encargos sociais.&lt;br /&gt;
+— Licenciamento.&lt;br /&gt;
+— Seguros.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Variáveis&lt;/strong&gt;&lt;br /&gt;
+— Combustível.&lt;br /&gt;
+— Óleo lubrificante do motor.
+— Óleo lubrificante da transmissão.&lt;br /&gt;
+— Lavagem e lubrificação.&lt;br /&gt;
+— Material rodante: corresponde a pneus, câmaras, recapagens e protetores.&lt;br /&gt;
+— Peças, acessórios e material de oficina.&lt;br /&gt;
+— Mão-de-obra para manutenção dos veículos.&lt;br /&gt;
+• Custos Indiretos ou Administrativos&lt;br /&gt;
+— Pessoal de armazéns, escritórios e respectivos encargos sociais.&lt;br /&gt;
+— Impressos.&lt;br /&gt;
+— Publicidade.&lt;br /&gt;
+— Aluguéis de armazéns e escritórios.&lt;br /&gt;
+— Comunicações.&lt;br /&gt;
+— Impostos e taxas legais.&lt;br /&gt;
+— Construção, conservação e limpeza.&lt;br /&gt;
+— Viagens e estadas.&lt;br /&gt;
+— Despesas financeiras.&lt;br /&gt;
+— Despesas diversas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;considerações-metodológicas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.2.3 Considerações Metodológicas&lt;/h3&gt;
+&lt;p&gt;Esta classificação de custos pode ser feita de maneira diferente, conforme a aplicação a ser realizada. Por exemplo, no caso do cálculo de tarifas de ônibus urbano, segundo a metodologia desenvolvida pelo Geipot, os custos administrativos estão incluídos nos custos fixos, conforme descrito a seguir:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Variáveis&lt;/strong&gt;&lt;br /&gt;
+— Combustível.&lt;br /&gt;
+— Lubrificantes.&lt;br /&gt;
+— Rodagem.&lt;br /&gt;
+— Peças e acessórios.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custos Fixos&lt;/strong&gt;&lt;br /&gt;
+— Custo de Capital:&lt;br /&gt;
+— Depreciação.&lt;br /&gt;
+— Remuneração.&lt;br /&gt;
+— Despesas com Pessoal.&lt;br /&gt;
+— Despesas Administrativas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fatores-que-influenciam-nos-custos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.3 Fatores que Influenciam nos Custos&lt;/h2&gt;
+&lt;p&gt;O administrador deve sempre estar atento ao fato de que muitos fatores deter minam variações substanciais nos custos ou na sua composição. Dentre eles, podem-se citar:&lt;/p&gt;
+&lt;p&gt;— Quilometragem Desenvolvida: O custo por quilômetro diminui quanto mais o veículo rodar, pois o custo fixo é dividido pela quilometragem. Há, contudo, que se observar o uso da velocidade econômica de operação do veículo, pois o aumento da velocidade pode influenciar no consumo de combustível, de pneus e de manutenção, tirando a vantagem obtida com a nova quilometragem.&lt;/p&gt;
+&lt;p&gt;— Tipo de Tráfego: É sabido que na cidade o veículo gasta mais combustível por quilômetro rodado e tem um desgaste maior do que em áreas não urbanas.&lt;/p&gt;
+&lt;p&gt;— Tipo de Via: O custo varia também em função do tipo de estrada por onde o ônibus ou o caminhão trafegar. Isto engloba superfície de rolamento, condição de conservação, topografia, sinuosidade etc.&lt;/p&gt;
+&lt;p&gt;— Região: Conforme o lugar onde a transportadora atua, os salários, impostos, preços de combustível etc. podem ser diferentes.&lt;/p&gt;
+&lt;p&gt;— Porte do Veículo: Um fator de redução do custo por tonelada/quilômetro ou passageiro/quilômetro transportado é a maior capacidade do veículo, desde que bem aproveitada.&lt;/p&gt;
+&lt;p&gt;— Desequilíbrio nos Fluxos: Outro fator de variação nos custos é o desequilíbrio nos fluxos. No caso do transporte de passageiros, eles costumam ser pendulares (quem vai volta), o que geralmente não ocorre para as cargas.&lt;/p&gt;
+&lt;p&gt;Essa medida também deve ser avaliada com atenção, uma vez que o tráfego de veículos vazios reduz os custos em alguns aspectos, mas aumenta em outros. Como exemplo, podem-se citar a redução do custo de combustível e o aumento de carroçarias que quebram quando trafegam vazias. Além disso, numa avaliação global, tal desequilíbrio, por provocar muitos retornos vazios, reduzirá a produtividade dos veículos. Daí a necessidade de se adicionar um percentual para quantificar o aumento do custo de retorno.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;métodos-de-cálculo-de-custos-operacionais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.4 Métodos de Cálculo de Custos Operacionais&lt;/h2&gt;
+&lt;p&gt;Uma vez constatada a vital importância do conhecimento dos custos operacionais, aborda-se adiante, a questão de como calculá-los.
+Tanto a literatura quanto a prática dispõem de diversos métodos, dos quais os principais são abordados a seguir.&lt;/p&gt;
+&lt;div id=&#34;método-dos-custos-médios-desagregados&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.4.1 Método dos Custos Médios Desagregados&lt;/h3&gt;
+&lt;p&gt;É amplamente utilizado pelas empresas e também divulgado através de revistas especializadas no setor de transportes. Oferece estimativas bastante razoáveis de custo operacional de veículos rodoviários. Essas estimativas têm como base a apropriação de cada componente desse custo.&lt;/p&gt;
+&lt;p&gt;O método está baseado em parâmetros médios de consumo. Não é sensível, portanto, a variações específicas de velocidades e carregamento dos veículos e nem das condições físicas e de tráfego das rodovias, ou seja, é calculado levando se em conta as condições médias de tráfego, rodagem, carregamento e velocidade.&lt;/p&gt;
+&lt;p&gt;Apesar de tais limitações, ele tem diversos méritos, destacando-se a praticidade e o cálculo desagregado por componente de custo (depreciação, combustíveis, pneus, salários, manutenção etc.). Possibilita ainda que cada empresa possa inserir, junto ao mesmo,
+parâmetros referentes a cada tipo, modelo ou categoria de veículo (de acordo com o nível de precisão com que ela deseje trabalhar) e requer informações sobre preços unitários e parâmetros de consumo por parte dos veículos.&lt;/p&gt;
+&lt;p&gt;Dado que a empresa pode alimentar o sistema de cálculo com parâmetros observados em sua frota, o método permite, diferentemente dos demais, que sejam calculados custos também nas vias urbanas, onde há particularidades, tais como: tipo de calçamento, fluxos
+interrompidos etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desafios contemporâneos</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/log_atual/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/log_atual/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#desafios-contemporâneos&#34;&gt;Desafios contemporâneos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#alguns-desafios-dapara-logística-4.0&#34;&gt;Alguns desafios da/para Logística 4.0:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dark-economy-como-solução-logística&#34;&gt;“Dark economy” como solução logística&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ameaças-à-responsividade-e-à-eficiência-na-gestão-das-cadeias-de-suprimentos&#34;&gt;Ameaças à responsividade e à eficiência na Gestão das Cadeias de Suprimentos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#enquanto-isso.-transformações-importantes-em-curso&#34;&gt;Enquanto isso…. Transformações importantes em curso!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;desafios-contemporâneos&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Desafios contemporâneos&lt;/h1&gt;
+&lt;p&gt;Desafios contemporâneos permeiam as decisões logísticas ao longo da cadeia de suprimentos. Ao longo deste curso, vamos explorar esses desafios e a expectativa de mudanças estruturais: conceituais e práticas.&lt;/p&gt;
+&lt;div id=&#34;alguns-desafios-dapara-logística-4.0&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Alguns desafios da/para Logística 4.0:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;redução nos volumes de estoque de matéria-prima&lt;/strong&gt; ao longo da cadeia de suprimentos e o desenvolvimento de &lt;strong&gt;fornecedores&lt;/strong&gt; aptos ao atendimento de pedidos seguindo as necessidades reais do negócio;&lt;/li&gt;
+&lt;li&gt;pela &lt;strong&gt;diminuição dos custos com perda de ativos e com transportes&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;pela transformação da organização dos processos de &lt;strong&gt;estocagem e armazenagem&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;por &lt;strong&gt;integrar e compartilhar dados&lt;/strong&gt; mediante plataformas abertas;&lt;/li&gt;
+&lt;li&gt;por &lt;strong&gt;desburocratizar processos&lt;/strong&gt; e &lt;strong&gt;obter diferenciais competitivos&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;por &lt;strong&gt;aumentar os níveis de segurança&lt;/strong&gt; do sistema;&lt;/li&gt;
+&lt;li&gt;pela &lt;strong&gt;identificação de problemas&lt;/strong&gt;, permitindo a adoção rápida e prática de soluções pertinentes;&lt;/li&gt;
+&lt;li&gt;por proporcionar o &lt;strong&gt;fluxo de informações, serviços e produtos.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;digitalização&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;virtualização dos processos&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;conectividade&lt;/strong&gt; e &lt;strong&gt;visibilidade&lt;/strong&gt; (visão)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;transparência de processos e atuação&lt;/strong&gt; (entendimento)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;capacidade preditiva&lt;/strong&gt; (estar preparado) e&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;adaptabilidade&lt;/strong&gt; ao sistema (otimização).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.grupotpc.com/blog/logistica-4-0/&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RESILIÊNCIA? RESPONSABILIDADE? BEM ESTAR?&lt;/strong&gt;
+&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dark-economy-como-solução-logística&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;“Dark economy” como solução logística&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;iframe width=&#34;894&#34; height=&#34;503&#34; src=&#34;https://www.youtube.com/embed/QJI0_FuddDs&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://kitchencentral.com.br/darkkitchens/?utm_source=gsearch&amp;amp;utm_channel=search&amp;amp;utm_campaign=brazil_gs_bh&amp;amp;utm_ad=1&amp;amp;gclid=CjwKCAiAu8SABhAxEiwAsodSZHc5lYEqh3rAGaYP6MS4lhCoLDo9F33_5pB5-q1dsEFyJfbHJOWg3xoCs3IQAvD_BwE&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/praca.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://guia.folha.uol.com.br/restaurantes/2020/06/praca-de-alimentacao-virtual-e-novidade-em-aplicativos-de-delivery.shtml&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;p&gt;“Os horários de abertura são determinados pelos próprios estabelecimentos. Como um último recurso, em casos críticos em que o restaurante não consegue acompanhar a demanda ou na área específica os entregadores já estiverem com alta taxa de ocupação, essa medida é tomada momentaneamente para equilibrar a oferta e demanda. Isso evita grande impactos para os restaurantes, tanto em sua operação como em avaliação de clientes que poderiam ter um nível de experiência ruim.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://boteclando.blogosfera.uol.com.br/2020/07/04/ifood-fecha-restaurantes-abertos-e-prejudica-estabelecimentos/&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;p&gt;Mais notícias interessantes…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://boteclando.blogosfera.uol.com.br/2020/07/04/ifood-fecha-restaurantes-abertos-e-prejudica-estabelecimentos/&#34;&gt;Restaurantes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://economia.uol.com.br/noticias/bbc/2020/02/08/como-apps-de-entrega-estao-levando-pequenos-restaurantes-a-falencia.htm&#34;&gt;Restaurantes 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.scuadra.com.br/blog/tendencias-2021-no-setor-de-restaurantes-e-delivery/&#34;&gt;Restaurantes 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ameaças-à-responsividade-e-à-eficiência-na-gestão-das-cadeias-de-suprimentos&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Ameaças à responsividade e à eficiência na Gestão das Cadeias de Suprimentos&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/cam.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/cam2.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/cam3.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/cam4.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnnbrasil.com.br/business/2021/01/26/chamado-de-greve-dos-caminhoneiros-ganha-apoio-de-confederacao-cnttl&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;enquanto-isso.-transformações-importantes-em-curso&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Enquanto isso…. Transformações importantes em curso!&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/auto.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@recogni/autonomous-vehicles-and-last-mile-delivery-2249bb16fdd7&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/drone.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blogs.sw.siemens.com/thought-leadership/2020/04/16/autonomous-last-mile-delivery/&#34;&gt;Fonte&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/dagjQW_jgtE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/WKf-VDAHZi8&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;894&#34; height=&#34;503&#34; src=&#34;https://www.youtube.com/embed/NrmMk1Myrxc&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desempenho Logístico</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/kpi/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/kpi/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#kpis&#34;&gt;KPIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#prazos-de-entrega&#34;&gt;Prazos de entrega&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#nível-de-serviço-ao-cliente&#34;&gt;Nível de serviço ao cliente&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#níveis-de-estoque&#34;&gt;Níveis de estoque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#uso-de-recursos&#34;&gt;Uso de recursos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#indicadores-de-serviço-na-logística&#34;&gt;Indicadores de Serviço na Logística&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#decisões-e-métricas-de-desempenho-em-cada-atividade-chave&#34;&gt;Decisões e métricas de desempenho em cada atividade-chave&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#instalações&#34;&gt;Instalações&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#estoque&#34;&gt;Estoque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#transporte&#34;&gt;Transporte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#informação&#34;&gt;Informação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sourcing&#34;&gt;Sourcing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#precificação&#34;&gt;Precificação&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;kpis&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;KPIs&lt;/h2&gt;
+&lt;p&gt;KPIs (Key Performance Indicators) ou medidas de desempenho devem estar vinculadas à estratégia organizacional. Os indicadores de desempenho representam um conjunto de medidas que focam nos aspectos de desempenho que são críticos para o presente e o futuro da organização.&lt;/p&gt;
+&lt;p&gt;Um indicador de desempenho deve demonstrar claramente que ação deve ser tomada e quando deve ser tomada.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Os indicadores não podem ser individuais. Nenhuma medida individual define o desempenho da cadeia: existem muitas dimensões a serem consideradas. Cuidado com avaliações isoladas.&lt;/li&gt;
+&lt;li&gt;Atenção para medidas conflitantes, que podem acentuar os problemas dos silos ao invés de resolvê-los.&lt;/li&gt;
+&lt;li&gt;O requerimento é buscar um balanceamento através da cadeia de abastecimento e se preparar para possíveis mudanças.&lt;/li&gt;
+&lt;li&gt;Medir, interpretar ou analisar as medidas exige um perfil profissional adequado que deve ser desenvolvido.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Existem quatro elementos que são fundamentais para o desenvolvimento destas medidas de desempenho:
+- Parceria com fornecedores, clientes e pessoal interno
+- Transferência de poder para as pessoas das pontas
+- Integração das medidas, relatórios e melhoria de desempenho
+- Conexão das medidas de desempenho à estratégia corporativa&lt;/p&gt;
+&lt;p&gt;As medidas de desempenho dos negócios basicamente passam pelos seguintes processos: montar a estratégia, planejar, monitorar e analisar e, por fim, ajustar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prazos-de-entrega&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prazos de entrega&lt;/h2&gt;
+&lt;p&gt;Os prazos de entrega ou tempos de ciclo correspondem aos tempos totais absorvidos pela cadeia desde o início até o final do processo e normalmente está conectado ao atendimento ao cliente e podem variar dependendo da segmentação da indústria. Por exemplo, organizações voltadas para produção sob pedido ou mesmo projetos podem estabelecer prazos através de cronograma. Há organizações que trabalham com conceitos de estoque, como é o caso de empresas de ciclo rápido como alimentos e o atendimento é efetuado com base nos estoques disponíveis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nível-de-serviço-ao-cliente&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Nível de serviço ao cliente&lt;/h2&gt;
+&lt;p&gt;Interessante que esta função está atrelada a uma série de indicadores e não apenas a um indicador. Ele corresponde ao atendimento vinculado ao produto, prazo, quantidade ou outra medida que eventualmente tenha sido estabelecida e concordada com o cliente. É um conjunto de medidas para medir a satisfação do cliente.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;níveis-de-estoque&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Níveis de estoque&lt;/h2&gt;
+&lt;p&gt;Esta medida é fundamental, pois afeta os custos totais de estoque. Uma vez que estoque carrega custos, o sugerido é que se tenham estoques mínimos ou necessários para atender as demandas ou oscilações das mesmas. As medidas de níveis de estoques mostram a eficiência operacional e financeira da cadeia e gera impactos significativos nos resultados das empresas se mal administrados.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;uso-de-recursos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Uso de recursos&lt;/h2&gt;
+&lt;p&gt;O objetivo aqui é utilizar eficientemente todos os recursos da cadeia incluindo os prédios, transportes, pessoas, equipamentos visando maximizar o atendimento ao cliente, com baixos níveis de estoque e prazos de entrega adequados.&lt;/p&gt;
+&lt;p&gt;A Cadeia de Abastecimento e seu aspecto logístico têm papel importantíssimo no contexto do atendimento e serviço ao cliente.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;indicadores-de-serviço-na-logística&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Indicadores de Serviço na Logística&lt;/h2&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/8R65LEMLY5E&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;decisões-e-métricas-de-desempenho-em-cada-atividade-chave&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Decisões e métricas de desempenho em cada atividade-chave&lt;/h2&gt;
+&lt;div id=&#34;instalações&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Instalações&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Instalações&lt;/strong&gt; são os locais físicos reais na rede da cadeia de suprimentos onde o produto é armazenado, montado ou fabricado. Decisões com relação à função, localização, capacidade e flexibilidade das instalações têm impacto significativo sobre o desempenho da cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;As empresas podem elevar a responsividade por meio do aumento do número de instalações, tornando-os mais flexíveis, ou elevando a capacidade.
+Cada uma dessas ações, no entanto, tem um custo. Assim, cada cadeia de suprimentos deve encontrar o equilíbrio apropriado ao projetar sua rede de instalações.&lt;/p&gt;
+&lt;p&gt;Para instalações de produção, as empresas precisam decidir se serão flexíveis, dedicadas ou uma combinação dos dois. Decidir onde uma empresa localizará suas instalações se constitui numa grande parte do projeto de uma cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;As empresas devem também determinar a capacidade de uma instalação realizar sua função ou funções pretendidas.&lt;/p&gt;
+&lt;p&gt;Um gestor deverá acompanhar as seguintes &lt;code&gt;métricas relacionadas à instalação&lt;/code&gt; que influenciam no desempenho da cadeia de suprimentos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas à instalação&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Capacidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Utilização&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tempo ocioso de processamento/preparação/parada&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo de produção por unidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Perda de qualidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tempo de fluxo/ciclo teórico de produção&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tempo de fluxo/ciclo médio real&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Eficiência de tempo de fluxo&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Variedade de produtos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Contribuição de volume dos 20% maiores SKUs e clientes&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tamanho médio de lote de produção&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Nível de serviço de produção&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estoque&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Estoque&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Estoque&lt;/strong&gt; abrange todas as matérias-primas, o trabalho em processo e os produtos acabados dentro de uma cadeia de suprimentos. Mudar políticas de estoque pode alterar de modo significativo a eficiência e a responsividade da cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;O estoque existe na cadeia de suprimentos por causa de um descompasso entre oferta e demanda. O estoque afeta os ativos mantidos, os custos incorridos e a responsividade proporcionada pela cadeia de suprimentos. O estoque também tem um impacto significativo sobre o tempo de fluxo de material em uma cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Estoque cíclico&lt;/code&gt; é a quantidade média de estoque usada para atender à demanda entre os recebimentos de remessas do fornecedor.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Estoque de segurança&lt;/code&gt; é aquele mantido caso a demanda ultrapasse a expectativa; ele é preservado para combater a incerteza.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Estoque sazonal&lt;/code&gt; é aquele criado para combater variabilidade previsível na demanda.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Nível de disponibilidade de produto&lt;/code&gt; é a fração de demanda que é atendida prontamente a partir do produto mantido no estoque.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas a estoque&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tempo cíclico C2C&lt;/li&gt;
+&lt;li&gt;Estoque médio&lt;/li&gt;
+&lt;li&gt;Giro de estoque&lt;/li&gt;
+&lt;li&gt;Produtos com mais de um número específico de dias de estoque&lt;/li&gt;
+&lt;li&gt;Tamanho médio de lote de reposição&lt;/li&gt;
+&lt;li&gt;Estoque de segurança médio&lt;/li&gt;
+&lt;li&gt;Estoque sazonal&lt;/li&gt;
+&lt;li&gt;Taxa de atendimento&lt;/li&gt;
+&lt;li&gt;Fração de tempo sem estoque&lt;/li&gt;
+&lt;li&gt;Estoque obsoleto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transporte&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Transporte&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Transporte&lt;/strong&gt; envolve a movimentação de estoque de um ponto para outro na cadeia de suprimentos. Opções de transporte têm grande impacto sobre a responsividade e a eficiência da cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;O transporte move o produto entre diferentes estágios em uma cadeia de suprimentos e afeta tanto a responsividade como a eficiência. O transporte mais rápido é mais caro, mas permite que uma cadeia de suprimentos seja mais responsiva. Como resultado, a cadeia de suprimentos pode ter estoques menores e poucas instalações.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Projeto de rede de transporte&lt;/code&gt; refere-se à coleção de meios de transporte, locais e rotas ao longo das quais o produto pode ser entregue.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Escolha do modo de transporte&lt;/code&gt; é a definição do modo de transporte, sendo a maneira como um produto é movido de um local da cadeia de suprimentos para outro.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas a transporte&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Custo médio de transporte de recebimento&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tamanho médio de recebimento&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo médio de transporte de recebimento por embarque&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo médio de transporte do embarque&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tamanho médio de embarque&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo médio de transporte de envio por embarque&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Fração transportada por modo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;informação&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Informação&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Informação&lt;/strong&gt; consiste em dados e análise referentes a instalações, estoque, transporte, custos, preços e clientes por toda a cadeia de suprimentos. A informação é potencialmente o maior fator-chave de desempenho na cadeia, pois afeta diretamente cada um dos demais fatores.&lt;/p&gt;
+&lt;p&gt;A boa informação pode ajudar na utilização dos ativos da cadeia de suprimentos e na coordenação dos fluxos da cadeia de suprimentos para aumentar a responsividade e diminuir os custos.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Empurrar x Puxar&lt;/code&gt; Ao projetar processos de cadeia de suprimentos, gestores precisam determinar se esses processos fazem parte da fase empurrar ou puxar na cadeia.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Coordenação e compartilhamento de informações&lt;/code&gt; A coordenação da cadeia de suprimentos ocorre quando todos os estágios de uma cadeia trabalham com o objetivo de maximizar a lucratividade total da cadeia de suprimentos com base em informação compartilhada.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Planejamento de vendas e operações&lt;/code&gt; (PVO) é o processo de criação de um plano de oferta geral (produção e estoques) para atender o nível previsto de demanda (vendas).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas à informação&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Horizonte de previsão&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Frequência de atualização&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Erro de previsão&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Fatores sazonais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Fatores sazonais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Razão entre variabilidade da demanda e variabilidade do pedido&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sourcing&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Sourcing&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Sourcing&lt;/strong&gt; é a escolha de quem realizará determinada atividade da cadeia de suprimentos, como produção, armazenamento, transporte ou a gestão da informação. Decisões de contratação afetam tanto a responsividade quanto a eficiência de uma cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;Sourcing é o conjunto de processos de negócios exigidos para a aquisição de bens e serviços.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Internalizar ou terceirizar&lt;/code&gt; A decisão de sourcing mais significativa para uma empresa é se ela realizará uma tarefa internamente ou se contratará serviços de terceiros.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Seleção de fornecedor&lt;/code&gt; Os gestores devem decidir sobre o número de fornecedores que terão para determinada atividade.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Aquisição&lt;/code&gt; A aquisição é o processo de obter bens e serviços dentro da cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas a Sourcing&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dias pendentes de contas a pagar&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Preço médio de compra&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Faixa de preço de compra&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Quantidade média de compra&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Qualidade do fornecimento&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tempo de execução de fornecimento&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Percentagem de entregas de imediato&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Confiabilidade do fornecedor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;precificação&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Precificação&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Precificação&lt;/strong&gt; (pricing) determina o quanto uma empresa cobrará por bens e serviços que ela torna disponíveis na cadeia de suprimentos. Preços afetam o comportamento do comprador do bem ou serviço, afetando, assim, o desempenho e a demanda da cadeia de suprimentos.&lt;/p&gt;
+&lt;p&gt;Precificação é o processo pelo qual uma empresa decide quanto cobrar dos clientes por seus bens e serviços.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Precificação e economias de escala&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Preços baixos todo dia versus preços altos e baixos&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Preço fixo versus precificação por menu&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Métricas relacionadas à precificação&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Margem de lucro&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Dias de vendas pendentes&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo fixo incremental por pedido&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Custo variável incremental por unidade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Preço médio de venda&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tamanho médio de pedido&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Faixa de preço de venda&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Faixa de vendas periódicas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística Urbana - definições</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/log_urb/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/log_urb/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://podeditora.com.br/wp-content/uploads/2019/04/Livro-A-logistca-urbana-no-Brasil-site.pdf&#34;&gt;Livro&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Matemática Financeira</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/mat_fin/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/mat_fin/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#matemática-financeira&#34;&gt;1. MATEMÁTICA FINANCEIRA&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#juro&#34;&gt;1.1 Juro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#taxa-de-juros&#34;&gt;1.2 Taxa de Juros&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#juros-simples&#34;&gt;1.2.1 Juros Simples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#juros-composto&#34;&gt;1.2.2 Juros Composto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#valor-presente&#34;&gt;1.3 Valor Presente&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#série-uniforme-de-pagamentos&#34;&gt;1.4 Série Uniforme de Pagamentos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#inflação&#34;&gt;1.5 Inflação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#correção-monetária&#34;&gt;1.6 Correção Monetária&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sistema-de-amortização&#34;&gt;1.7 Sistema de Amortização&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#sistema-francês-de-amortização---price&#34;&gt;1.7.1 Sistema Francês de Amortização - PRICE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sistema-de-amortização-constante---sac&#34;&gt;1.7.2 Sistema de Amortização Constante - SAC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sistema-de-pagamento-único&#34;&gt;1.7.3 Sistema de Pagamento Único&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;matemática-financeira&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;1. MATEMÁTICA FINANCEIRA&lt;/h1&gt;
+&lt;div id=&#34;juro&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.1 Juro&lt;/h2&gt;
+&lt;p&gt;É a remuneração do capital pelo seu uso alternativo. Genericamente, todas as formas de remuneração de capital podem ser consideradas como um juro&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;taxa-de-juros&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.2 Taxa de Juros&lt;/h2&gt;
+&lt;p&gt;É a razão entre os juros, recebidos ou pagos, no fim de um período de tempo e o capital inicialmente empregado&lt;/p&gt;
+&lt;div id=&#34;juros-simples&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.2.1 Juros Simples&lt;/h3&gt;
+&lt;p&gt;Apenas o capital inicial, conhecido como Principal (P), rende juros em um determinado período (n), a uma taxa de juros dada (i).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/2.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;**Exercício*:**
+Um capital de R$ 10.000,00 foi aplicado por 3 meses, a juros simples. Calcule o valor a ser resgatado no final deste período à taxa de 4% a.m.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;juros-composto&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.2.2 Juros Composto&lt;/h3&gt;
+&lt;p&gt;Os juros formado a cada período são incorporador ao capital inicial, passando também a produzir juros.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/3.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exercício:&lt;/strong&gt;
+Considere um empréstimo de R$ 10.000,00 que deve ser resgatado ao final de 3 anos, conjuntamente aos juros acumulados, cuja taxa de juros é de 10% a.a.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;valor-presente&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.3 Valor Presente&lt;/h2&gt;
+&lt;p&gt;O valor presente, ou valor atual, de uma certa quantia numa data futura é o valor equivalente à quantia em questão na data zero, a uma taxa de juros i.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/4.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exercício:&lt;/strong&gt;
+Determine a quantia que deve ser investida, hoje, a fim de acumular R$ 100.000,00 em 5 anos, à uma taxa de 10% a.a.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;série-uniforme-de-pagamentos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.4 Série Uniforme de Pagamentos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;É uma sucessão de recebimentos, desembolsos ou prestações, de mesmo valor, representados por R, divididos regularmente num período de tempo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O somatório do valor acumulado de vários pagamentos, montante (M), é calculado pela expressão a seguir:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/5.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Uma pessoa deposita anualmente R$ 5.000,00 numa conta especial particular. Qual será o saldo daqui a 5 anos, para uma remuneração de 8% a.a. concedida pelo banco?&lt;/p&gt;
+&lt;p&gt;Procedendo-se o inverso da expressão anterior, pode-se obter o valor de um único pagamento ou prestação R, a partir de montante conhecido, conforme a seguir:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/6.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Determine o valor que deve ser depositado trimestralmente numa conta a prazo fixo, que oferece juros de 7,5% a.t., para acumularmos R$ 25.000,00 em 2 anos.&lt;/p&gt;
+&lt;p&gt;Pode-se ainda determinar o valor presente da série uniforme pelo somatório dos valores atuais de cada uma das prestações&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/7.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Determine o valor à vista de um eletrodoméstico vendido em 6 prestações mensais de R$ 200,00, sabendo-se que o juros cobrados foram de 6% a.m.&lt;/p&gt;
+&lt;p&gt;Para determinação do valor de um pagamento quando o principal é conhecido, inverte-se a expressão anterior&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/mat_fin/8.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Uma pessoa adquire um freezer por R$ 800,00, dando de entrada R$ 300,00. Determine a prestação mensal para um financiamento do restante em 4 meses, à taxa de 5% a.m.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inflação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.5 Inflação&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;O excesso de moeda na economia gera inflação, que nada mais é que um aumento generalizado e sistemático dos preços face ao aumento da demanda dos bens de consumo e serviços. Já a deflação é caracterizada por um declínio sistemático de preços. (Wannacott e Wannacott, 1986)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;O poder aquisitivo diminui quando existe inflação. Para uma inflação de 50%, num determinado mês, haveria urna perda do poder de compra da moeda de 33%. De fato, se urna mercadoria estivesse custando, no início do mês, R&lt;span class=&#34;math inline&#34;&gt;\(100,00, passaria a custar, no final do mesmo mês, R\)&lt;/span&gt; 150,00, e, desta forma, o poder aquisitivo cairia de 100% para 67% (100/150), ou seja, haveria uma perda de 33%. (Hirschfeld, 1986)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As análises econômicas de projetos de investimento não levam em conta a inflação, baseado na premissa de que todos os preços envolvidos são por ela afetados uniformemente. Desta forma, tais análises são realizadas supondo-se condições estáveis da moeda, já que também seria impossível se prever, com exatidão, as condições futuras&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;correção-monetária&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.6 Correção Monetária&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A correção monetária, uma invenção brasileira, é uma taxa que tem o objetivo de tentar recompor o poder aquisitivo dos preços dos bens e serviços atingidos pela inflação, que pode ou não refletir integralmente as taxas de inflação. Um índice de correção monetária relativa a um setor da economia não é necessariamente igual à inflação ocorrida neste mesmo setor.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A maioria das análises de projetos trabalham com preços constantes, isto é, a partir da suposição de que os preços e custos aumentam de acordo com as taxas de inflação, sejam elas quais forem, de maneira que seu valor permaneça constante, se expresso em moeda estável.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sistema-de-amortização&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.7 Sistema de Amortização&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Quando se contrai um empréstimo ou se recorre a um financiamento, evidentemente, o valor recebido nesta operação, ou seja, o principal, terá que ser restituído à respectiva instituição financeira, acrescido da sua remuneração, que são os juros.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As formas de devolução do principal mais juros são denominadas de Sistemas de Amortização. Os Sistemas de Amortização mais utilizados são apresentados a seguir, complementados por exemplos numéricos. (Hirschfeld, 1984)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;sistema-francês-de-amortização---price&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.7.1 Sistema Francês de Amortização - PRICE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Este sistema também é conhecido corno Sistema PRICE é muito utilizado em todos os setores financeiros, principalmente nas compras a prazo de bens de consumo, através do crédito direto ao consumidor.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;No Sistema PRICE, as prestações são iguais e sucessivas, onde cada prestação é composta por duas parcelas: juros e amortização do capital; cujo cálculo baseia-se numa série uniforme de pagamentos.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Exercício: Calcular os valores das parcelas de juros e amortizações referentes a um empréstimo de R$ 100.000, pelo sistema PRICE, a uma taxa de 5 % a.m. e prazo de 5 meses.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sistema-de-amortização-constante---sac&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.7.2 Sistema de Amortização Constante - SAC&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Este sistema é muito utilizado em financiamentos internacionais de bancos de desenvolvimento e no sistema financeiro de habitação brasileiro, bem corno em financiamentos de longos prazos.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As prestações do Sistema SAC são sucessivas e decrescentes em progressão aritmética, cujo valor de cada prestação é composto por uma parcela de juros e outra de amortização constante do capital.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Exercício: Calcular os valores das parcelas de juros e amortizações referentes a um empréstimo de R$ 100.000, pelo sistema SAC, a uma taxa de 5 % a.m. e prazo de 5 meses.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sistema-de-pagamento-único&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.7.3 Sistema de Pagamento Único&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Este é o sistema mais simples e é muito utilizado para financiamentos industriais de capital de giro. O tomador simplesmente paga os juros e amortiza o principal no final do empréstimo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nível de Serviço</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/nivel_servico/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/nivel_servico/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#serviço-ao-cliente&#34;&gt;Serviço ao cliente&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#redução-de-custo&#34;&gt;Redução de custo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#agregação-de-valor&#34;&gt;Agregação de valor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cadeias-de-suprimento-orientadas-pelo-mercado&#34;&gt;Cadeias de suprimento orientadas pelo mercado&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#quais-as-vantagens-de-realizar-diagnóstico-externo-do-sistema-logístico&#34;&gt;Quais as vantagens de realizar diagnóstico externo do sistema logístico?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;serviço-ao-cliente&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Serviço ao cliente&lt;/h2&gt;
+&lt;p&gt;Todas as atividades necessárias para receber, aceitar, processar, enviar e faturar os pedidos dos clientes, controlar para que as atividades possam ser executadas em conformidade com o planejamento e assegurar-se que o cliente está satisfeito. O objetivo do serviço ao cliente é &lt;strong&gt;CRIAR VALOR&lt;/strong&gt; para o cliente.&lt;/p&gt;
+&lt;p&gt;Os diferenciais competitivos nas operações logísticas são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vantagem em CUSTO&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Vantagem em VALOR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;redução-de-custo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Redução de custo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Realizando uma boa gestão de estoques&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Otimizando processos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Melhorando a produtividade&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Introduzindo novas tecnologias&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Otimizando recursos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Através da negociação com fornecedores&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Utilizando modais alternativos&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Otimizando utilização de espaços / transporte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;agregação-de-valor&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Agregação de valor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Disponibilizando o produto no momento desejado&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Fazendo entregas rápidas&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Sendo consistente nas entregas ao cliente&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Aumentando a frequência de entrega&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Tornando fácil o processo de compras&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Disponibilizando informações confiáveis em tempo real&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Oferecendo flexibilidade; local entrega, horário, embalagem, serviços especiais&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Corrigindo rapidamente qualquer erro, ou reagindo a eventos não esperados&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Não há nenhum valor no produto ou serviço até estar nas mãos do cliente ou consumidor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cadeias-de-suprimento-orientadas-pelo-mercado&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cadeias de suprimento orientadas pelo mercado&lt;/h2&gt;
+&lt;p&gt;As cadeias de suprimentos tradicionais eram projetadas para &lt;code&gt;otimizar as operações internas&lt;/code&gt; da empresa fornecedora. Desse modo, um fabricante poderia ser motivado a estabelecer acordos de fornecimento e distribuição que permitissem a maximização da eficiência na produção.
+Porém, esta estratégia não é &lt;code&gt;centrada no cliente&lt;/code&gt;; a cadeia de suprimentos não foi projetada em torno das necessidades do cliente.&lt;/p&gt;
+&lt;p&gt;Com a constante transferência de poder no canal de distribuição, do produtor para o consumidor, essa filosofia convencional tem-se tornado cada vez menos apropriada. Em vez de projetar cadeias de suprimentos da fábrica para fora, &lt;code&gt;o desafio é projetá-las do cliente para dentro&lt;/code&gt;.
+Essa nova perspectiva enxerga o consumidor, não no fim da cadeia de suprimentos, mas no início.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;quais-as-vantagens-de-realizar-diagnóstico-externo-do-sistema-logístico&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Quais as vantagens de realizar diagnóstico externo do sistema logístico?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ilos.com.br/web/diagnostico-externo-do-sistema-logistico-utilizando-pesquisas-de-servico-ao-cliente-para-identificacao-de-oportunidades-de-melhoria/&#34;&gt;DIAGNÓSTICO EXTERNO DO SISTEMA LOGÍSTICO: UTILIZANDO PESQUISAS DE SERVIÇO AO CLIENTE PARA IDENTIFICAÇÃO DE OPORTUNIDADES DE MELHORIA por Maria Fernanda Hijjar&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Consumer Centric Supply Chain Framework</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/ccscf/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/ccscf/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#consumer-centric-supply-chain-framework&#34;&gt;Consumer Centric Supply Chain Framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;consumer-centric-supply-chain-framework&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Consumer Centric Supply Chain Framework&lt;/h2&gt;
+&lt;p&gt;As transformações pelas quais a área de Supply Chain Management (SCM) tem passado nos últimos anos, com a oferta de novos serviços logísticos, digitalização de estruturas, robotização e uso massivo de tecnologia para apoio à decisão, são frutos do empoderamento do consumidor, que ganha um papel central na construção e gestão de uma cadeia de suprimentos orientada para o atendimento de suas necessidades e expectativas, desafiando os modelos clássicos de operações. No contexto atual, em que discutimos uma “nova realidade” pós-pandemia, será proposto um framework de SCM
+orientado por uma visão centrada no consumidor e discutida a forma de usá-lo para diagnosticar lacunas e priorizar ações na construção de um “Consumer Centric Supply Chain”.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/ccscf.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/logistics/funcoes_ccscf.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Fonte: &lt;a href=&#34;https://github.com/retaoliveira/relements/raw/main/texto/ccscf.pdf&#34;&gt;Consumer Centric Supply Chain Framework&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística verde, reversa e sustentável</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/sustentavel/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/sustentavel/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#logística-verde-logística-reversa-e-logística-sustentável&#34;&gt;LOGÍSTICA VERDE, LOGÍSTICA REVERSA E LOGÍSTICA SUSTENTÁVEL&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#logística-verde-x-logística-reversa&#34;&gt;1.1 Logística Verde x Logística Reversa&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definição-de-logística-reversa&#34;&gt;1.1.1 Definição de Logística Reversa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#logística-verde&#34;&gt;1.1.2 Logística Verde&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cadeia-de-suprimentos-sustentáveis&#34;&gt;1.2 Cadeia de Suprimentos Sustentáveis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;logística-verde-logística-reversa-e-logística-sustentável&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;LOGÍSTICA VERDE, LOGÍSTICA REVERSA E LOGÍSTICA SUSTENTÁVEL&lt;/h1&gt;
+&lt;p&gt;O conceito de cadeia de suprimentos verde, o qual integra escolha de gerenciamento ambientais para a conversão de recursos em produtos que podem ser utilizados novamente na cadeia de suprimentos, surgiu na década de 1990.
+Produzir produtos ambientalmente amigáveis tem se tornado um importante elemento de marketing, sendo um elemento de recuperação de valor para as empresas.&lt;/p&gt;
+&lt;p&gt;O gerenciamento da cadeia de suprimentos verde une o pensamento ambiental ao gerenciamento da cadeia de suprimentos, incluindo o design do produto, o fornecimento e seleção de materiais, o processo de manufatura, a entrega do produto final aos consumidores, bem como o gerenciamento final do produto após sua vida útil.&lt;/p&gt;
+&lt;p&gt;A preservação do meio ambiente é uma preocupação que tem passado pelos diversos sistemas logísticos existentes nas últimas décadas, daí surge a proposta da logística verde, ecologística ou ainda logística ecológica, que é definida como a área da logística que se preocupa com os aspectos e impactos ambientais, causados por toda atividade logística (DONATO, 2008).&lt;/p&gt;
+&lt;p&gt;A logística verde abrange o planejamento da produção, a gestão de materiais e sua distribuição física, contribuindo para a criação de estratégias ambientalmente amigáveis ao longo de cadeias de suprimentos. No entanto, alguns paradoxos e trade-offs surgem durante o estudo, sugerindo que a aplicação das práticas de logística verde possa ser mais difícil do que realmente é (QUIUMENTO, 2011).&lt;/p&gt;
+&lt;div id=&#34;logística-verde-x-logística-reversa&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.1 Logística Verde x Logística Reversa&lt;/h2&gt;
+&lt;p&gt;A logística reversa trata os resíduos após sua geração enquanto que a logística verde tem como objetivo principal atender aos princípios de sustentabilidade ambiental como a produção limpa, que prevê que sejam gerados menos resíduos ao final do processo produtivo e preconizam a utilização de matérias que sejam mais facilmente recicláveis e se decomponham mais facilmente no meio ambiente.&lt;/p&gt;
+&lt;p&gt;A logística reversa operacionaliza o retorno dos resíduos após sua geração e sua revalorização e reinserção econômica. Assim, a logística reversa é parte da logística verde. Ambas necessitam mais do que processos gerenciais, pois precisam da colaboração do consumidor.&lt;/p&gt;
+&lt;div id=&#34;definição-de-logística-reversa&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.1.1 Definição de Logística Reversa&lt;/h3&gt;
+&lt;p&gt;É o processo de planejamento, implementação e controle do fluxo de matérias-primas, estoque em processamento e produtos acabados e seu fluxo de informação do ponto de consumo até o ponto de origem, com o objetivo de recuperar valor ou realizar um descarte adequado.
+Pode ser realizada no pós-venda ou no pós-consumo, reinserindo os resíduos no processo produtivo ou de negócios, fechando o ciclo logístico total.&lt;/p&gt;
+&lt;p&gt;De forma mais abrangente, Leite (2003) conceitua logística reversa da seguinte maneira. A logística reversa é responsável por tornar possível o retorno de materiais e produtos, após sua venda e consumo, aos centros produtivos e de negócios, por meio dos canais reversos de distribuição agregando valor aos mesmos.&lt;/p&gt;
+&lt;p&gt;A logística reversa é a área da logística empresarial que planeja, opera e controla o fluxo e as informações logísticas correspondentes, do retorno dos bens de pós-venda e pós-consumo ao ciclo de negócios ou ao ciclo produtivo, por meio dos canais de distribuição reversos, agregando-lhes valor de diversas naturezas: econômico, ecológico, legal, logístico, de imagem corporativa, entre outros.&lt;/p&gt;
+&lt;p&gt;Hawks (2006) is that reverse logistics is “the process of planning, implementing, and controlling the efficient, cost effective flow of raw materials, in-process inventory, finished goods and related information from the point of consumption to the point of origin for the purpose of recapturing value or proper disposal.”&lt;/p&gt;
+&lt;p&gt;O Reverse Logistics Executive Council – RLEC define logística reversa como sendo o processo de movimentação de mercadorias do seu destino final típico para outro ponto, com o objetivo de obter valor de outra maneira indisponível, ou com o objetivo de efetuar a disposição final dos produtos. Desta forma, as atividades da logística reversa incluem:
+1. O processamento do retorno de mercadorias por danos, sazonalidade, reestocagem, salvador e excesso do estoque;
+2. Reciclagem dos materiais das embalagens ou reutilização de embalagens, recondicionamento ou manufatura dos produtos;
+3. Descarte de equipamentos obsoletos ou materiais perigosos;
+4. Recuperação do patrimônio&lt;/p&gt;
+&lt;p&gt;O processo de logística reversa tem três pontos de vista principais: logístico, financeiro e ambiental:
+1. Logístico: o ciclo de vida de um produto não se encerra com a entrega de um produto ao cliente. Os produtos se tornam obsoletos, danificados ou não funcionam e devem retornar ao cliente para serem adequadamente descartados, reparados ou reaproveitados&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Financeiro: existe custo relacionado ao fluxo reverso&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ambiental: os impactos do produto sobre o meio ambiente devem ser considerados por toda a vida.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A reciclagem é uma atividade de importância significativa para a logística reversa.&lt;/p&gt;
+&lt;p&gt;A logística reversa apresenta duas áreas primárias de atuação: pós-venda e pós-consumo.&lt;/p&gt;
+&lt;p&gt;Pós-venda refere-se ao planejamento, controle e destinação dos bens sem uso ou com pouco uso que retornam à cadeia de distribuição por motivos como devoluções por problemas de garantia, avarias no transporte, excesso de estoque, prazo de validade expirado, entre outros. Exemplos: Recall, venda pela internet (devolução no prazo de 7 dias), editoras.&lt;/p&gt;
+&lt;p&gt;O pós-consumo refere-se à área da logística reversa que trata dos bens ao final da sua vida útil, após utilização, com possibilidade de reutilização de embalagens e dos resíduos industriais.&lt;/p&gt;
+&lt;p&gt;O conceito de logística reversa vem fomentar a implementação de produção com foco berço ao berço e não mais berço à cova – o retorno dos resíduos gerados nos processos produtos e de vendas ao ciclo produtivo e/ou de negócios, analisando e implementando práticas que contribuam para a revalorização dos mesmos e a preservação ao meio ambiente.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;logística-verde&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1.1.2 Logística Verde&lt;/h3&gt;
+&lt;p&gt;A logística verde está relacionada a iniciativas e preocupações com os aspectos da atividade logística e seu entorno (sociedade, meio ambiente, economia, etc.). E a primeira e grande preocupação dos administradores e tomadores de decisão são os custos associados a essas iniciativas. É na avaliação do trade-off entre o verde e o financeiro que está o ponto crucial dessa forma de se fazer logística.
+Inegavelmente, um dos propósitos primais da logística é reduzir custos (especialmente de transporte). Entretanto, as estratégias de redução de custos são usualmente antagônicas à consideração da variável ambiental na gestão empresarial. Um exemplo bem simples seria a programação de entrega de produtos usando uma frota de veículo antiga ou uma frota de veículos renovada. Certamente a aquisição da frota antiga é mais barata do que a aquisição da frota renovada.&lt;/p&gt;
+&lt;p&gt;O que acontece é que os custos relacionados a possíveis economias logísticas não “somem”, não evaporam no ar, mas são externalizados no sistema. Isso quer dizer que quem assume essa diferença de custo é o meio ambiente, com consequências como maior emissão de CO2, maiores riscos de vazamentos e acidentes, destinação irresponsável dos insumos, maior geração de resíduos, entre outros. Como o meio ambiente é uma fonte não renovável de geração de recursos, esses custos causam prejuízos irreparáveis à nossa geração e às gerações futuras.
+A adoção de politicas de logística sem a consideração ambiental – consequentemente mais baratas, causa uma primeira percepção do usuário, do consumidor e do gestor de benefícios na redução dos custos financeiros diretos.&lt;/p&gt;
+&lt;p&gt;Entretanto, o fenômeno hoje é que a sociedade está cada vez menos propensa a aceitar e absorver esse custo irreparável, e a pressão tem invariavelmente crescido para inclusão de considerações ambientais nas operações logísticas. Por tal motivo, a preocupação com a preservação do meio ambiente está diretamente relacionada à sobrevivência das corporações.&lt;/p&gt;
+&lt;p&gt;Outro ponto que é mais difícil de ser mensurado diretamente é relação entre o investimento em políticas ambientais e os retornos financeiros da empresa. Segundo avaliação do DSJI (Dow Jones Sustainability Group Index), o índice de benchmark mais reconhecido mundialmente na questão de sustentabilidade e responsabilidade ambiental, baseado na análise dos desempenhos econômicos, ambientais e sociais (com pesos iguais para as três variáveis) de mais de 3000 companhias globais, as empresas que adotam procedimentos operacionais com vistas a reduzir os impactos ambientais de suas atividades estão obtendo em geral um maior retorno financeiro. Para comprovar essa relação, foi realizado um estudo por pesquisadores da Universidade de Granada na Espanha, disponibilizado gratuitamente aqui (disponível em inglês) utilizando a base de dados do DSJI. Segundo os pesquisadores, em uma avaliação de curto prazo, a correlação entre o desempenho econômico e o investimento em alternativas ambientais é negativa. Ou seja, o desempenho econômico é prejudicado com a implantação de políticas ambientais nos primeiros anos.&lt;/p&gt;
+&lt;p&gt;Assim, para que a adoção de políticas ambientais torne-se vantajosa é necessário que haja uma readequação da mentalidade de investimento das companhias, tornando-as capazes de absorver e avaliar objetivos de longo prazo.&lt;/p&gt;
+&lt;p&gt;Quem pode desempenhar um papel importante nesse aumento de capacidade de percepção dos benefícios das políticas ambientais é o governo, com a adoção de medidas legais e financeiras que beneficiem as práticas ambientais.&lt;/p&gt;
+&lt;p&gt;Hoje, segundo pesquisa elaborada durante o Green Logistics Forum realizado na Europa em 2010, 94% dos profissionais do alto nível que atuam no setor de logística e cadeia de suprimentos consideram a questão da Logística Verde como prioridade para o seu negócio. Mas será que todos sabem de fato sobre o que se trata a Logística Verde? Qual sua implicação, suas possibilidades e consequências? E que ações tomar para tornar sua logística verde?&lt;/p&gt;
+&lt;p&gt;Bom, vamos procurar esclarecer esses pontos aqui aos poucos, com exemplos, ideias, iniciativas que funcionaram (ou que não funcionaram), projetos de pesquisa, definições, e tudo mais que puder enriquecer essa discussão. Esse meu primeiroartigo é dedicado à definição de logística verde e quais as implicações imediatas que essa “atitude” traz para as corporações de forma geral.&lt;/p&gt;
+&lt;p&gt;Como afirmado anteriormente, o objetivo principal da logística é coordenar as atividades de armazenagem, circulação e distribuição de produtos de forma a atender às necessidades do cliente a um custo mínimo. No passado, esse custo foi definido em termos puramente monetários. Com o aumento da preocupação com o meio ambiente, as empresas devem ter em conta os custos externos da logística associada principalmente com a mudança climática, poluição do ar, poluição sonora, risco de acidentes, entre outros. Assim, surge a necessidade de equilibrar a atividade logística em três grandes pilares: econômico/financeiro, social e meio ambiente, em um processo de equilíbrio sustentável que considere e beneficie esses três objetivos&lt;/p&gt;
+&lt;p&gt;A logística Verde ou Ecologística é a parte da logística que se preocupa com os aspectos e impactos ambientais causados pela atividade logística. Por se tratar de uma ciência em desenvolvimento ainda existe uma grande confusão conceitual a respeito desde conceito. Muitas pessoas confundem logística verde com logística reversa.&lt;/p&gt;
+&lt;p&gt;Conforme Donato (2008), alguns FATORES que deu início a movimentação da logística verde, foram :&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;a crescente poluição ambiental decorrente da emissão dos gases gerados pela combustão incompleta dos combustíveis fósseis durante os diversos sistemas de transportes;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a crescente contaminação dos recursos naturais como consequencia de cargas desprotegidas, tais como: caminhões com produtos químicos que acidentam e contaminam rios, navios petroleiros que contaminam os oceanos;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;movimentação e armazenagem, destacou-se o fator de extrema importância que forma os impactos causados por vazamento dos diversos produtos contidos através de rompimento dos diques de contenção, utilizados pela armazenagem de resíduos da atividade produtiva (mineração e celulose);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a necessidade de desenvolvimento de projetos adequados à efetiva necessidade do produto contido, de forma a evitar qualquer as ações geradas pelo transporte ou armazenagem não causem avarias à embalagem em produtos químicos, petroquímicos, defensivos agrícolas e farmacêuticos.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;O objetivo principal da logística verde é o de atender aos princípios de sustentabilidade ambiental como o da produção limpa, onde a responsabilidade é do começo ao fim, ou seja, quem produz deve se responsabilizar- se também pelo destino final dos produtos gerados, de forma a reduzir o impacto ambiental que eles causam. Assim as empresas devem organizar canais reversos, retorno de materiais após seu ciclo de utilização, para terem a melhor destinação, seja por reparo, reutilização ou reciclagem.&lt;/p&gt;
+&lt;p&gt;A logística verde será um referencial importante para as empresas que queiram ter um diferencial competitivo no mercado. Um dos desafios dos empresários que atuam na logística verde é construir um modelo de distribuição reversa com parte da cadeia de distribuição direta, pois com a rapidez que um produto é lançado no mercado, o rápido avanço da tecnologia, juntamente com um grande fluxo de informações, a alta competitividade das empresa e o crescimento da consciência ecológica quanto às consequências provocadas pelos produtos e seus descartes no meio ambiente, com isso estão contribuindo para conscientização da adoção de novos comportamentos por parte das organizações e da sociedade.&lt;/p&gt;
+&lt;p&gt;As empresas devem buscar um desempenho razoável em todas as competências logísticas, posicionamento, integração, agilidade e mensuração. Para o sucesso na implementação de estratégias de operação de logística deve-se sempre adotar a administração de um sistema de medida de avaliação desempenho e além de tudo uma estrutura organizacional apropriada para se atingir a excelência nas operações.&lt;/p&gt;
+&lt;p&gt;Exemplos de AÇÕES relacionadas à logística verde:&lt;/p&gt;
+&lt;p&gt;Uso de biocombustível, em especial o biodiesel, em adição ao combustível fóssil, uma prática comum em empresas de transporte coletivo;&lt;/p&gt;
+&lt;p&gt;Uso de embalagens secundárias reutilizáveis, reduzindo o consumo de papelão. Uma prática comum em empresas de autopeças e alimentícias, como a Pesico;&lt;/p&gt;
+&lt;p&gt;Uso de sistemas de ventilação natural e iluminação natural em armazéns e centros de distribuição;&lt;/p&gt;
+&lt;p&gt;Ações para prolongar a vida útil de pneus e o uso mais intensivo de pneus recauchutados;&lt;/p&gt;
+&lt;p&gt;A logística verde é um tema que passou a ter mais importância em tempos recentes. Dos artigos encontrados, 137 estudos eram pertinentes à análise ou relacionado ao assunto, estes trabalhos são datados a partir do ano de 1994, houve maior crescimento e desenvolvimento a partir de 2007, e nos anos mais recentes, 2011 e 2012, essa quantidade de publicações aumentou consideravelmente em relação aos outros períodos, o que evidencia a preocupação e o interesse de pesquisas em Logística Verde.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cadeia-de-suprimentos-sustentáveis&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1.2 Cadeia de Suprimentos Sustentáveis&lt;/h2&gt;
+&lt;p&gt;Carter e Rogers (2008) publicaram um artigo onde lançam as bases de uma nova teoria para o gerenciamento da cadeia de suprimentos na perspectiva da sustentabilidade. Neste artigo, Carter e Rogers (2008) definem cadeia de suprimentos sustentáveis como: “Cadeias de Suprimentos Sustentáveis são definidas como uma integração estratégica e transparente para a realização de uma organização com objetivos econômicos, ambientais e sociais com coordenação sistêmica através de processos de negócio interorganizacionais chaves para o incremento de longo prazo do desempenho econômico individual das empresas e da cadeia de suprimentos”. Outro trabalho que também reúne elementos teóricos a partir de uma extensa revisão da literatura especializada sobre o gerenciamento de cadeias de suprimentos sustentáveis foi feito por Seuring e Müller (2008). Neste artigo, os autores estudaram 191 artigos publicados entre 1994 e 2007 a fim de reunir o estado da arte nas pesquisas a cerca de sustentabilidade e gerenciamento da cadeia de suprimentos. Este estudo de Seuring e Müller (2008) faz parte de um volume especial do periódico Journal of Clean Production dedicado ao tema Sustentabilidade e Cadeia de Suprimentos, no qual se pode verificar a pertinência do tema e a certeza que esta modelo de gestão de cadeia de suprimentos prevalecerá como referencial teórico na busca pela competitividade.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

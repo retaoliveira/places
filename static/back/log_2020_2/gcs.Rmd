@@ -1,0 +1,99 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Unidade 1 - Definindo Logística
+    weight: 10
+title: Gestão da cadeia de suprimentos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+---
+
+## Gestão Cadeia de Suprimentos
+
+**Cadeia de suprimentos** é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o _trade-off_ entre **responsividade** e **eficiência**, além de garantia de um contexto sustentável de desenvolvimento por ações **socialmente responsáveis** e **resilientes.** 
+
+
+---
+
+## Alinhamento estratégico
+
+1. Entender a `incerteza` do cliente e da cadeia de suprimentos.
+  - oferta e demanda
+    - previsíveis
+    - incertas
+
+2. Entender as `capacidades` da cadeia de suprimentos e desenhar o alinhamento estratégico com foco no equilíbrio entre `responsividade` e `eficiência`.
+
+3. Combinar a responsividade da cadeia de suprimentos e a incerteza implícita de demanda e oferta. 
+
+
+## Escopo do alinhamento estratégico
+
+- Escopo de operação interna: redução do custo local
+- Escopo intrafuncional: redução do custo funcional
+- Escopo interfuncional: maximização do lucro da empresa
+- Escopo entre empresas: maximização do excedente da cadeia de suprimentos
+
+
+## Os benefícios principais advindos do alinhamento estratégico
+- Melhoria na satisfação do cliente   
+- Gestão efetiva do fluxo de capital, do custo e da qualidade   
+- Foco, propiciando organizações mais enxutas e eficientes   
+- Melhoria na tomada de decisões no nível adequado   
+- Otimização do desempenho dos fornecedores   
+- Nível de detalhamento dos dados permitindo a geração da informação-base para a tomada de decisões   
+- Agilidade no fluxo da informação   
+
+## Desafios para alinhamento estratégico
+
+- Aumento da variedade de produtos e redução dos ciclos de vida   
+- Globalização e aumento da incerteza   
+- Clientes mais exigentes   
+- Maior visibilidade da cadeia de suprimentos   
+- Fragmentação da propriedade da cadeia de suprimentos   
+- Tecnologia em constante transformação e ambiente de negócios   
+- Meio ambiente e sustentabilidade   
+
+---
+
+## Fatores-chave de desempenho na Gestão da Cadeia de Suprimentos
+
+### Instalações
+
+**Instalações** são os locais físicos reais na rede da cadeia de suprimentos onde o produto é armazenado, montado ou fabricado. Decisões com relação à função, localização, capacidade e flexibilidade das instalações têm impacto significativo sobre o desempenho da cadeia de suprimentos.
+
+### Estoque
+
+**Estoque** abrange todas as matérias-primas, o trabalho em processo e os produtos acabados dentro de uma cadeia de suprimentos. Mudar políticas de estoque pode alterar de modo significativo a eficiência e a responsividade da cadeia de suprimentos.
+
+### Transporte
+
+**Transporte** envolve a movimentação de estoque de um ponto para outro na cadeia de suprimentos. Opções de transporte têm grande impacto sobre a responsividade e a eficiência da cadeia de suprimentos.
+
+### Informação
+
+**Informação** consiste em dados e análise referentes a instalações, estoque, transporte, custos, preços e clientes por toda a cadeia de suprimentos. A informação é potencialmente o maior fator-chave de desempenho na cadeia, pois afeta diretamente cada um dos demais fatores.
+
+### Sourcing
+
+**Sourcing** é a escolha de quem realizará determinada atividade da cadeia de suprimentos, como produção, armazenamento, transporte ou a gestão da informação. Decisões de contratação afetam tanto a responsividade quanto a eficiência de uma cadeia de suprimentos.
+
+### Precificação
+
+**Precificação** (pricing) determina o quanto uma empresa cobrará por bens e serviços que ela torna disponíveis na cadeia de suprimentos. Preços afetam o comportamento do comprador do bem ou serviço, afetando, assim, o desempenho e a demanda da cadeia de suprimentos.
+
+
+
+
+
+

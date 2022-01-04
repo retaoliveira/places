@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RMarkdown on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/rmarkdown/</link>
+    <description>Recent content in RMarkdown on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 26 Dec 2020 19:23:01 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como comecei a usar RMarkdown</title>
+      <link>https://retaoliveira.github.io/post/uso-markdown/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/uso-markdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/uso-markdown/
+index.pt_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Períodos de pandemia são sempre interessantes! Falo como se tivesse passado por diversos momentos como este; felizmente, isso não é verdade! Entretanto, foi nesse período que descobri o Rmarkdown.&lt;/p&gt;
+&lt;p&gt;O isolamento social trouxe possibilidades, como eu aprender o R. Pesquisando sobre Latex, tive acesso a diferentes linguagens para elaboração de relatórios reprodutíveis e dinâmicos. A necessidade faz a “força”. Resolvi explorar as possibilidades antes de me dedicar a aprender efetivamente alguma linguagem e descobri que o Rmarkdown é bem mais intuitivo e dinâmico do que o Latex, apesar de ainda precisar do Latex para implementação de equações, por exemplo.&lt;/p&gt;
+&lt;p&gt;Com &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;RMarkdown&lt;/a&gt;, é possível:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar um documento em um relatório em diferentes formatos de saída, como PDF, HTML e Word.&lt;/li&gt;
+&lt;li&gt;Produzir slides para apresentações.&lt;/li&gt;
+&lt;li&gt;Criar dashboards interativas, com layouts atraentes e que se adaptam à tela do usuário.&lt;/li&gt;
+&lt;li&gt;Criar relatórios interativos com Shiny.&lt;/li&gt;
+&lt;li&gt;Escrever artigos científicos ou livros.&lt;/li&gt;
+&lt;li&gt;Criar blogs ou sites.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para começar a explorar esse mundo de textos dinâmicos, você precisa inicialmente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;quot;knitr&amp;quot;)
+# install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depois, crie um novo arquivo de RMarkdown usando o comando File &amp;gt; New &amp;gt; File menu e selecione R &amp;gt; RMarkdown na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione Adicionar R Markdown (ou Adicionar &amp;gt; Novo Item e selecionando R Markdown na lista).&lt;/p&gt;
+&lt;p&gt;Todo documento RMarkdown é composto por três importantes tipos de conteúdo: + Um cabeçalho &lt;code&gt;YAML&lt;/code&gt; delimitado antes e depois por — + &lt;code&gt;chunks&lt;/code&gt; de códigos R ou outra linguagem compatível delimitado por ``&lt;code&gt;. + Texto estruturado com formatação simples em&lt;/code&gt;#` para títulos e outros caracteres de formatação&lt;/p&gt;
+&lt;p&gt;Se ficarem interessados em packages para construção de documentos em Rmarkdown, tenho usado:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(vitae)
+library(pagedown)
+library(flexdashboard)
+library(rticles)
+library(bookdown)
+library(distill)
+library(hugodown)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alguns links para quem quiser se aventurar na composição de artigos científicos, textos acadêmicos e não-acadêmicos, apresentações, dashboards, sites e outras possibilidades que o Rmarkdown nos proporciona.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/rladiesbh/rmarkdown-o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-1cb1bb57769d&#34;&gt;RMarkdown: o mínimo que você precisa saber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cursos.leg.ufpr.br/prr/capDocDin.html&#34;&gt;Pesquisa Reproduzível com R by Fernando Mayer e Walmes Zeviani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.leg.ufpr.br/~fernandomayer/palestra/useR-2015/Rmarkdown-rautu.html#outline&#34;&gt;Rmarkdown-rautu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pet-estatistica.github.io/site/download/posts/postJAYME2.html#introducao&#34;&gt;Iniciação do RMarkdown by Jayme Gomes dos Santos Junior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sillasgonzaga.com/material/curso_visualizacao/apresentacao-de-dados-com-relatorios.html&#34;&gt;Introdução a R para Visualização e Apresentação de Dados by Sillas Gonzaga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;R Markdown: The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Credits: Ilustração por Alisson Horst&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

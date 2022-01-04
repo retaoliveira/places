@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Análise de dados para gestão organizacional on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/disciplinas/dados_grad/</link>
+    <description>Recent content in Análise de dados para gestão organizacional on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/disciplinas/dados_grad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Padlet da disciplina</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/padlet/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/padlet/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;padlet-embed&#34; style=&#34;border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:480px;height:352px;max-width:100%&#34;&gt;
+&lt;iframe src=&#34;https://padlet.com/padlets/czkontp9cegkgfhx/embeds/preview_embed&#34; style=&#34;width:100%;height:100%;display:block;padding:0;margin:0&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projeto Integrador</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/projects/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/projects/</guid>
+      <description>&lt;p&gt;Os projetos integradores são parte estruturante do curso e, portanto, visam promover a sistematização e a consolidação da aprendizagem. Ainda, tem como objetivo proporcionar aos estudantes a capacidade de implementação do conhecimento adquirido ao longo deste curso de maneira aplicada e em uma situação-problema real.&lt;/p&gt;
+&lt;p&gt;Este projeto será desenvolvido ao longo de toda a disciplina e deve ser relacionado com cada unidade de ensino. Seu conteúdo deve ser estruturado seguindo normas cultas de linguagem, clareza em relação ao problema em investigação e aos objetivos propostos.&lt;/p&gt;
+&lt;p&gt;Consideraremos três dimensões para construção do projeto integrador:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Situações-problemas: a aprendizagem deve ser iniciada com situações reais e do cotidiano. A ideia é criar um olhar investigativo para o mundo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Conteúdos interdisciplinares e práticos: rompe com as fronteiras tradicionais do conhecimento, ao passo que relaciona disciplinas e até mesmo promove a articulação de áreas. Além disso, a produção de conhecimento do projeto integrador deve ser aplicável em situações reais.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Trabalho coletivo: desenvolve as habilidades dos alunos para trabalhar em equipe.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;etapas-essenciais-para-desenvolvimento-de-um-projeto-de-suporte-à-decisão-que-contemple-análise-de-dados&#34;&gt;Etapas essenciais para desenvolvimento de um projeto de suporte à decisão que contemple análise de dados&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Definição do problema - O primeiro e mais crítico passo é delinear as questões que pretende abordar por meio da análise de dados e desenhar hipóteses a partir da caracterização do problema.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Coleta de dados - A coleta de dados é um passo muito crucial e não tão fácil como parece. O processo requer tempo e esforço. Nenhum conjunto de dados contém dados como se espera e envolve pesquisa, arranjos, reordenações e montagem final.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Limpeza e transformação de dados - Se quiser que os seus resultados sejam consistentes, deve certificar-se de que a limpeza dos dados foi feita corretamente. Na essência, a limpeza de dados elimina dados desnecessários e duplicados da coleta de dados.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Representação dos dados - representações gráficas permitem importantes insights sobre o fenômeno ou processo em investigação.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Análise dos dados - Nesta fase, tem de detectar tendências e padrões nos dados coletados, agrupá-los em conformidade, e compreender o comportamento dos dados para que seja possível caracterizar o processo em investigação.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modelagem dos dados - Nesta fase, os dados são divididos em duas partes - uma para formação e desenvolvimento de modelos, e a outra para testes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Otimização e implementação do modelo - Nesta etapa, o modelo é implementado visando acurácia e eficiência das análises.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Comunicação da análise, discussão e resultados. Nessa etapa, os grupos deverão reservar parte do instrumento de comunicação para discussão ética do uso dos dados para a análise em curso e discutir implicações nos curso, médio e longo prazos para a sociedade, apresentando aspectos positivos e negativos da exploração de dados para suporte ao processo decisório em questão.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nesse projeto, em função da natureza da disciplina que tem como objetivo proporcionar aos estudantes competências para realização de análise exploratória de dados, as etapas 6 e 7 não serão exploradas no projeto integrador.&lt;/p&gt;
+&lt;h2 id=&#34;entregas-parciais&#34;&gt;Entregas parciais&lt;/h2&gt;
+&lt;p&gt;As entregas parciais deverão ser realizadas conforme o cronograma a seguir que está alinhado com as etapas apresentadas anteriormente:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;Etapa concluída&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01/07&lt;/td&gt;
+&lt;td&gt;Descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;26/08&lt;/td&gt;
+&lt;td&gt;Dados processados (limpeza e transformação) e estrutura do instrumento de comunicação esboçada&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;09/09&lt;/td&gt;
+&lt;td&gt;Análise e discussão dos resultados e instrumento de comunicação final&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10/09&lt;/td&gt;
+&lt;td&gt;Apresentação do instrumento final para a turma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;organização-das-atividades&#34;&gt;Organização das atividades:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Composição dos grupos de trabalho:&lt;/strong&gt; Cada grupo será composto por &lt;strong&gt;4 (quatro) alunos&lt;/strong&gt;. Esse grupo deve se manter para realização dos &lt;code&gt;TUTORIAIS&lt;/code&gt;, realizadas após e antes dos encontros síncronos, e para construção do &lt;code&gt;PROJETO INTEGRADOR&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Planejamento da execução do trabalho:&lt;/strong&gt; Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;ideias-para-desenvolvimento-do-projeto-integrador&#34;&gt;Ideias para desenvolvimento do projeto integrador&lt;/h3&gt;
+&lt;p&gt;Para que você tenha a maior chance de sucesso neste projeto, é importante que você escolha um conjunto de dados adequado. Isto significa que os dados devem ser prontamente acessíveis e suficientemente grandes para que múltiplos relacionamentos possam ser explorados. Como tal, seu conjunto de dados deve ter pelo menos 50 observações e entre 10 a 20 variáveis (exceções podem ser feitas, mas você deve falar comigo primeiro). As variáveis do conjunto de dados devem incluir variáveis categóricas, variáveis numéricas discretas e variáveis numéricas contínuas.&lt;/p&gt;
+&lt;p&gt;Se você estiver usando um conjunto de dados que vem em um formato que não trabalhamos no curso, certifique-se de que você seja capaz de carregá-lo em R, pois isso pode ser complicado dependendo da fonte. Se você estiver tendo problemas, peça ajuda antes que seja tarde demais.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Nota sobre a reutilização de conjuntos de dados da classe:&lt;/code&gt; Não reutilizar conjuntos de dados usados em exemplos, tarefas de casa ou laboratórios da classe.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Abaixo segue uma lista de repositórios de dados que podem ser de interesse. Você não está limitado a estes recursos e, de fato, é encorajado a se aventurar além deles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;TidyTuesday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.opendata.nhs.scot/&#34;&gt;NHS Scotland Open Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://edinburghopendata.info/&#34;&gt;Edinburgh Open Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://statistics.gov.scot/home&#34;&gt;Open access to Scotland’s official statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bikeshare.com/data/&#34;&gt;Bikeshare data portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://data.gov.uk/&#34;&gt;UK Gov Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/datasets&#34;&gt;Kaggle datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openintrostat.github.io/openintro/&#34;&gt;OpenIntro datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/awesomedata/awesome-public-datasets&#34;&gt;Awesome public datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chronicdata.cdc.gov/Youth-Risk-Behaviors/DASH-Youth-Risk-Behavior-Surveillance-System-YRBSS/q6p7-56au&#34;&gt;Youth Risk Behavior Surveillance System (YRBSS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.icpsr.umich.edu/icpsrweb/content/ICPSR/fenway.html&#34;&gt;PRISM Data Archive Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dataverse.harvard.edu/&#34;&gt;Harvard Dataverse&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Algumas ideias para desenvolvimento do projeto são apresentadas a seguir. Essas ideias não são compulsórias. O grupo pode propor outros problemas para serem analisados. O importante é ter em mente que os dados para caracterização de determinados processos ou fenômenos podem não estar abertos e disponíveis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Análise de Sentimento&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A análise dos sentimentos é o processo de análise das palavras para determinar opiniões e sentimentos que têm diferentes polaridades - positivas, negativas ou neutras. O método também se baseia nos nomes &lt;code&gt;polarity detection e opinion mining&lt;/code&gt;. Nesse tipo de classificação, os dados (sentimentos) são categorizados em diferentes classes; estas classes podem ser binárias (positivas e negativas), neutras ou múltiplas (felizes, tristes, zangadas, e assim por diante).&lt;/p&gt;
+&lt;p&gt;O processo de análise dos sentimentos pode ser utilizado para determinar a natureza das opiniões refletidas nos websites, feeds das redes sociais, documentos, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Análise de dados de Uber ou de dados de mobilidade da Google e da Apple&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Uma componente crucial da aprendizagem de máquinas é a narrativa de dados; esse processo ajuda as empresas a compreenderem o histórico e o contexto de várias operações, assim como gestores públicos a entenderem os fenômenos urbanos, por exemplo. A visualização de dados ajuda os gestores a compreender conjuntos de dados complexos, o que, por sua vez, suporta as decisões.&lt;/p&gt;
+&lt;p&gt;A análise de dados de mobilidade é um projeto de visualização de dados, onde &lt;code&gt;R&lt;/code&gt; e as suas bibliotecas são utilizadas para analisar parâmetros ou variáveis como as &lt;code&gt;viagens durante um dia&lt;/code&gt;, ou as &lt;code&gt;viagens mensais durante um ano&lt;/code&gt;. Estas visualizações para diferentes períodos de tempo e em diferentes escalas podem ser geradas utilizando o &amp;lsquo;Uber Pickups in New York City Dataset&amp;rsquo; ou os dados de mobilidade da Google e da Apple disponibilizados a partir do início da pandemia. As bibliotecas e pacotes essenciais do &lt;code&gt;R&lt;/code&gt; que precisam de ser importados para este projeto incluem, por exemplo - &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;, &lt;code&gt;lubridate&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;tidyr&lt;/code&gt;, &lt;code&gt;DT&lt;/code&gt;, e &lt;code&gt;scales&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Sistema de Recomendação de Filmes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Já alguma vez se perguntou como é que o &lt;code&gt;Netflix&lt;/code&gt; sugere filmes e séries web dos generos que lhe atraem instantaneamente? Diferentes plataformas de streaming como &lt;code&gt;Netflix&lt;/code&gt; e &lt;code&gt;Amazon Prime&lt;/code&gt; utilizam algo conhecido como o &lt;code&gt;Sistema de Recomendação&lt;/code&gt;; esse sistema utiliza um processo de seleção e classificação para sugerir conteúdos com base nas preferências do utilizador, padrões de observação e histórico de navegação. Os dados de navegação do utilizador fornecem a entrada para o Sistema de Recomendações.&lt;/p&gt;
+&lt;p&gt;Enquanto um Sistema de Recomendação baseado no conteúdo sugere filmes que são semelhantes ao que se viu no passado, a &lt;code&gt;Recomendação de Filtragem Colaborativa&lt;/code&gt; fornece sugestões com respeito a outros utilizadores com as mesmas preferências e históricos de visualização.&lt;/p&gt;
+&lt;p&gt;Essa ideia pode ser realizada para análise de dados do &lt;code&gt;Spotify&lt;/code&gt; ou da &lt;code&gt;Amazon&lt;/code&gt;, por exemplo.&lt;/p&gt;
+&lt;p&gt;É possível ainda explorar bases como o &lt;code&gt;imdb&lt;/code&gt;, que permitem investigar as produções cinematográficas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Segmentação de clientes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;segmentação de clientes&lt;/code&gt; é um dos tópicos mais importantes para a gestão estratética e mercadológica de empresas. Sempre que as empresas precisam de identificar potenciais clientes, podemos considerar o método de Segmentação de Clientes. Por meio desse método, a base de clientes é dividida e agrupada de acordo com algumas características semelhantes que são relevantes para o mercado, tais como idade, sexo, interesses, e hábitos de despesa.&lt;/p&gt;
+&lt;p&gt;É uma forma eficiente para as empresas desenvolverem as suas estratégias de marketing com uma probabilidade reduzida de &lt;code&gt;riscos&lt;/code&gt; relacionados com o investimento. Os dados coletados pelas empresas ajudam-nas a compreender melhor as preferências e requisitos dos clientes individuais, o que pode gerar vantagens competitivas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Predição de Preferência de Vinho&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A prova de vinhos é uma profissão única em si mesma. Pode ser bastante desafiante prever o que o cliente pode gostar, com base nas suas preferências passadas. Contudo, seria mais fácil para os restaurantes recomendar um vinho aos seus clientes se os seus gostos e preferências fossem previamente identificados. As propriedades físico-químicas do vinho podem ser utilizadas para processos de extração de dados e identificar as preferências dos clientes.&lt;/p&gt;
+&lt;p&gt;A abordagem adotada no projeto de Previsão das Preferências do Vinho e sua relação com preço de venda, pode ser aplicada a produtos semelhantes para modelar os gostos dos clientes, ajudando assim no marketing alvo. Uma base disponível para essa análise é a do aplicativo &lt;code&gt;Vivino&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. Análise da adesão ao distanciamento social como medidas não farmacológicas de contenção da difusão do COVID-19&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Caracterizar a adesão da população ao distanciamento por meio dos dados de mobilidade da Google e da Apple e relacionar os níveis de adesão em diferentes localidades com, por exemplo, índices de desenvolvimento humano.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7. Análise do Legislativo Brasileiro&lt;/strong&gt;
+Entendimento dos padrões de votação e outras atividades do corpo legislativo Brasileiro ao longo dos anos por meio do package &lt;code&gt;bRasilLegis&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;rubrica-de-avaliação&#34;&gt;Rubrica de avaliação&lt;/h3&gt;
+&lt;p&gt;Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto integrador que são úteis para nortear o desenvolvimento do trabalho. Esta atividade será avaliada em &lt;code&gt;60 pontos&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Certifique-se que você está cadastrado ao servidor da disciplina no &lt;code&gt;Teams&lt;/code&gt;, pois o processo de desenvolvimento do projeto será tão importante quanto seu resultado para a avaliação e eu acompanharei as discussões, análises e resultados por lá.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Os &lt;code&gt;60 pontos&lt;/code&gt; serão distribuídos em:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Relatório/instrumento de comunicação&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Apresentação do projeto&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Trabalho em equipe - avaliação pelos pares&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Segue a discriminação geral da pontuação:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;90%-100% &lt;/code&gt;- &lt;strong&gt;Esforço notável&lt;/strong&gt;. O estudante compreende como aplicar os fundamentos considerados na análise, pode argumentar de maneira consistente, pode identificar fraquezas no argumento e pode comunicar claramente os resultados.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;80%-89%&lt;/code&gt; - &lt;strong&gt;Bom esforço&lt;/strong&gt;. O estudante compreende a maioria dos conceitos, reúne um argumento adequado, identifica alguns pontos fracos de seu argumento e comunica claramente a maioria dos resultados aos outros.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;70%-79%&lt;/code&gt; - &lt;strong&gt;Esforço para aprovação&lt;/strong&gt;. O estudante tem uma má compreensão dos conceitos em diversas áreas, tem alguma dificuldade em juntar resultados em um argumento convincente, e a comunicação dos resultados às vezes não é clara.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;60%-69%&lt;/code&gt; - &lt;strong&gt;Esforço limítrofe&lt;/strong&gt;. O estudante está fazendo algum esforço, mas tem uma má compreensão de muitos conceitos e é incapaz de montar um argumento convincente. A comunicação dos resultados não é clara.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Abaixo de 60%&lt;/code&gt; - O estudante não está fazendo um esforço suficiente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;relatórioinstrumento-de-comunicação&#34;&gt;Relatório/Instrumento de comunicação&lt;/h4&gt;
+&lt;h5 id=&#34;1-caracterização-do-problema-em-análise-5-pontos&#34;&gt;1. Caracterização do problema em análise (5 pontos)&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Relevância do problema para o contexto do processo decisório&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Necessidade de investigação orientada por dados para suporte ao processo decisório&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pertinência das hipóteses geradas&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Consistência do objetivo geral proposto&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;2-organização-limpeza-e-transformação-dos-dados-10-pontos&#34;&gt;2. Organização, limpeza e transformação dos dados (10 pontos)&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Escolha das fontes para coleta de dados&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Escolha e implementação dos instrumentos para organização e limpeza dos dados&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Organização final dos dados&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Escolha e implementação das variáveis e indicadores para análise&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;3-representação-dos-dados-para-suporte-à-decisão-5-pontos&#34;&gt;3. Representação dos dados para suporte à decisão (5 pontos)&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Escolha e implementação dos instrumentos de visualização&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reprodutibilidade da visualização&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Capacidade de representação do fenômeno ou processo em análise&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;4-instrumento-de-comunicação-rmarkdown-5-pontos&#34;&gt;4. Instrumento de comunicação RMarkdown (5 pontos)&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Formalidade textual&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conteúdo do instrumento representa o desenvolvimento do trabalho&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;O instrumento é objetivo quanto à caracterização do problema&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reprodutibilidade do instrumento de comunicação&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Adequação dos instrumentos de comunicação ao público-alvo&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;5-resultados-e-discussões-5-pontos&#34;&gt;5. Resultados e discussões (5 pontos)&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Interpretação das condicionantes dos problemas em investigação&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discussão dos dados em relação às hipóteses inicialmente determinadas&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discussão de preceitos éticos do uso de dados no contexto do trabalho&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discussão das implicações no curto, médio e longo prazos para a sociedade&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Criatividade e pensamento crítico&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;apresentação-do-projeto-15-pontos&#34;&gt;Apresentação do projeto (15 pontos)&lt;/h4&gt;
+&lt;p&gt;10 minutos no máximo, e cada membro da equipe deve dizer algo substancial. Você pode apresentar ao vivo durante o encontro ou pré-gravar e enviar seu vídeo para ser reproduzido durante o encontro.&lt;/p&gt;
+&lt;p&gt;Prepare um &lt;code&gt;slide deck&lt;/code&gt; usando o pacote chamado &lt;code&gt;xaringan&lt;/code&gt; e sintaxe R Markdown. Não há um limite para quantos slides você pode usar, apenas um limite de tempo (10 minutos no total). Cada membro da equipe deve ter a oportunidade de falar durante a apresentação. Sua apresentação não deve ser apenas um relato de tudo o que você tentou (&amp;ldquo;então fizemos isto, depois fizemos isto, etc.&amp;quot;), mas deve transmitir &lt;strong&gt;quais escolhas você fez, e por quê, e o que você encontrou&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;O esquema de notas (rubrica) para a apresentação é o seguinte:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Pontuação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Gerenciamento de tempo: A equipe dividiu bem o tempo entre si ou foi cortada ao longo do tempo?&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Conteúdo: A questão da pesquisa está bem projetada e os dados estão sendo usados de forma relevante para a questão da pesquisa?&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Profissionalismo: Até que ponto a equipe se apresentou bem? A apresentação parece ter sido bem praticada? Todos tiveram a oportunidade de dizer algo significativo sobre o projeto?&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Trabalho em equipe: A equipe apresentou uma história unificada, ou pareceu um trabalho independente remendado em conjunto?&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Slides: Os slides são bem organizados, legíveis, não estão cheios de texto, apresentando figuras com etiquetas legíveis, lendas, etc.?&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;trabalho-em-equipe---avaliação-pelos-pares-15-pontos&#34;&gt;Trabalho em equipe - avaliação pelos pares (15 pontos)&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projeto 1</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/project1/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/project1/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;pré-requisitos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pré-requisitos&lt;/h2&gt;
+&lt;p&gt;Para desenvolver esta tarefa você precisará dos seguintes pacotes:
+- &lt;code&gt;rMarkdown&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;knitr&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;rpubs&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;prettydoc&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringan&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringarExtra&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;xaringanthemer&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;flexdashboard&lt;/code&gt;&lt;br /&gt;
+- &lt;code&gt;kableExtra&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;atividades-para-consolidação-do-projeto-01&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Atividades para consolidação do Projeto 01:&lt;/h2&gt;
+&lt;p&gt;Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia &lt;strong&gt;08/07/2021&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;criar-um-documento-de-comunicação-relatório-apresentação-ou-outro-de-sua-escolha-em-rmarkdown.-faremos-nesta-etapa-a-entrega-considerando-o-projeto-integrador-que-deve-ser-composta-pela-descrição-do-problema-em-investigação-hipóteses-desenhadas-pelo-grupo-coleta-preliminar-de-dados-e-plano-de-análise-dos-dados.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Criar um documento de comunicação (relatório, apresentação ou outro de sua escolha) em &lt;code&gt;RMarkdown&lt;/code&gt;. Faremos, nesta etapa, a entrega considerando o projeto integrador, que deve ser composta pela descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados.&lt;/h3&gt;
+&lt;div id=&#34;criar-arquivo-rmarkdown-.rmd&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1. Criar arquivo &lt;code&gt;RMarkdown&lt;/code&gt; (.Rmd)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Criar um novo arquivo rmarkdown &lt;code&gt;.Rmd&lt;/code&gt; no &lt;code&gt;Rstudio&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;O nome do arquivo deverá ser: grupo#-r-proj01.Rmd (exemplo: grupo1-r-proj01.Rmd)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;editar-o-cabeçalho-yaml-no-topo-do-documento-incluindo&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;2. Editar o cabeçalho YAML no topo do documento, incluindo:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Data&lt;/li&gt;
+&lt;li&gt;Título que represente o conteúdo do relatório&lt;/li&gt;
+&lt;li&gt;Autores do grupo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bônus: descubra em uma breve pesquisa na internet como colocar um código para que a data seja sempre aquela do sistema operacional do computador.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;descreva-o-problema-que-será-abordado-pelo-grupo-no-projeto-integrador-da-disciplina.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;3. Descreva o problema que será abordado pelo grupo no projeto integrador da disciplina.&lt;/h4&gt;
+&lt;p&gt;Lembre-se que para definição do problema, o primeiro e mais crítico passo é delinear as questões que pretende abordar por meio da análise de dados e desenhar hipóteses referentes à caracterização do problema.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;colete-dados-preliminares-e-apresente-aqui-uma-tabela-contendo-os-dados-coletadas-e-as-respectivas-fontes.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;4. Colete dados preliminares e apresente aqui uma tabela contendo os dados coletadas e as respectivas fontes.&lt;/h4&gt;
+&lt;p&gt;Inclua colunas na tabela apresentando variáveis e tipos dos dados apresentados em cada variável. Nesse momento, não se preocupem em apresentar os dados ou quaisquer análises preliminares.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;apresente-um-plano-de-análise-de-dados-contendo-as-estratégias-metodológicas-que-o-grupo-pensa-serem-adequadas-para-os-tipos-de-dados-e-para-o-objetivo-do-trabalho.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;5. Apresente um plano de análise de dados, contendo as estratégias metodológicas que o grupo pensa serem adequadas para os tipos de dados e para o objetivo do trabalho.&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;explique-por-que-o-seu-projeto-é-relevante-e-como-pode-ser-considerado-como-subsídio-em-processos-decisórios-organizacionais.&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;6. Explique por que o seu projeto é relevante e como pode ser considerado como subsídio em processos decisórios organizacionais.&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rubrica-de-avaliação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rubrica de avaliação&lt;/h2&gt;
+&lt;p&gt;Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto integrador que são úteis para nortear o desenvolvimento do trabalho.&lt;/p&gt;
+&lt;div id=&#34;relatório-rmarkdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Relatório RMarkdown&lt;/h3&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;19%&#34; /&gt;
+&lt;col width=&#34;80%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Sintaxe do código&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;HTML e Rmd apresentados&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;YAML contém título, autor e data&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;O arquivo foi nomeado conforme diretrizes&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;A gramática e a ortografia são excelentes - sem erros de ortografia&lt;/td&gt;
+&lt;td&gt;0,5 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Dados&lt;/td&gt;
+&lt;td&gt;40%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Dados apresentados de maneira clara e relevante&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;A estratégia de análise dos dados é clara e pertinente&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;19%&#34; /&gt;
+&lt;col width=&#34;80%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Proporção da nota&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Justificativa e contextualização&lt;/td&gt;
+&lt;td&gt;40%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Relevância&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Descrição da contextualização do projeto em subsídio a processos decisórios&lt;/td&gt;
+&lt;td&gt;2 pontos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aprendizagem-independente-opcional&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Aprendizagem independente (opcional)&lt;/h3&gt;
+&lt;p&gt;Há vários materiais, tutoriais e cursos sobre R gratuitos produzidos nos últimos anos. É realmente difícil escolher um para começar. Minha sugestão para quem estiver perdida ou perdido e quiser estudar um pouco mais é fazer o curso “&lt;a href=&#34;https://www.datacamp.com/courses/free-introduction-to-r&#34;&gt;Introduction to R&lt;/a&gt;” no site Datacamp.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontro Síncrono 1</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc1/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc1/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class01_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class01_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/5lqgtGO433M&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontro Síncrono 2</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc2/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc2/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class02_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class02_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/8cZ5TcKx5oY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontro Síncrono 3</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc3/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc3/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class03_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class03_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/20IucWjr0I4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontros Síncronos 4, 5 e 6</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc4/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc4/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class04_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class04_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1280&#34; height=&#34;720&#34; src=&#34;https://www.youtube.com/embed/TkzyBr8Aw-M&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1280&#34; height=&#34;720&#34; src=&#34;https://www.youtube.com/embed/TrrsMHB4gbY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1198&#34; height=&#34;674&#34; src=&#34;https://www.youtube.com/embed/FsiyOd_vArc&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mais sobre gráficos</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc8/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc8/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class05_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class05_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 1</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial1/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial1/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Baixe o arquivo .Rmd e abra no RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4s4ofaosi8svi4w/tutorial1.Rmd?dl=0&#34;&gt;Arquivo&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Instale os pacotes:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&#34;tidyverse&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#34;tinytex&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#34;knitr&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#34;flexdashboard&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#34;xaringan&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#34;xaringanthemer&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Chame as bibliotecas dos pacotes instalados&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;tidyverse&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;tinytex&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;knitr&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;flexdashboard&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;xaringan&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library(&#34;xaringanthemer&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Corrija os problemas de códigos nos respectivos chunks.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Rode o arquivo .Rmd por meio do comando a seguir (copie e cole o comando no console + enter), substituindo o nome do arquivo pelo endereço &lt;strong&gt;completo&lt;/strong&gt; em seu computador.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;rmarkdown::render(&#34;ENDEREÇAMENTODOARQUIVO.Rmd&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Salve o .Rmd e submeta-o por meio da tarefa no Sigaa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;preparação-para-o-exercício&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Preparação para o exercício:&lt;/h2&gt;
+&lt;p&gt;Carregue o &lt;em&gt;data frame&lt;/em&gt; &lt;em&gt;mtcars&lt;/em&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(mtcars)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;encontre-o-erro-em-todos-os-códigos-abaixo-corrija-os-e-rode-o-script&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Encontre o erro em todos os códigos abaixo, corrija-os e rode o script:&lt;/h2&gt;
+&lt;p&gt;Q1)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Head(mtcars)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 2</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial2/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial2/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Baixe o arquivo e abra no RStudio. &lt;a href=&#34;https://www.dropbox.com/s/027ibiwzsfz128v/tutorial2.Rmd?dl=0&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Execute as operações assinaladas nos exercícios a seguir.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Salve o .Rmd e submeta-o por meio desta tarefa.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;operações-matemáticas-e-vetores&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Operações matemáticas e vetores&lt;/h1&gt;
+&lt;div id=&#34;exercícios&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercícios:&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Questão 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Qual é a classe dos vetores abaixo? Imprima o vetor com &lt;em&gt;print&lt;/em&gt; e tente advinhar. Use a função &lt;em&gt;class&lt;/em&gt; para descobrir a resposta.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;v1 &amp;lt;- c(1, 2, TRUE, 4)
+v2 &amp;lt;- c(&amp;quot;T&amp;quot;, &amp;quot;TRUE&amp;quot;, &amp;quot;FALSE&amp;quot;, &amp;quot;T&amp;quot;)
+v3 &amp;lt;- c(&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;)
+v4 &amp;lt;- c(1, &amp;quot;4&amp;quot;, 4, 1)
+v5 &amp;lt;- c(1, 2, &amp;quot;feijao com arroz&amp;quot;)
+v6 &amp;lt;- c(&amp;quot;Beatriz&amp;quot;, &amp;quot;Pedro&amp;quot;, TRUE)
+v7 &amp;lt;- c(T, T, F, T, F, F, 42)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Você consegue identificar as regras de combinação de tipos de dados diferentes em um mesmo vetor? Se tiver dúvidas, pergunte.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questão 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veja as cores de veículos comercializados por uma concessionária na semana passada.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colours &amp;lt;- factor(c(&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,
+                    &amp;quot;silver&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,
+                    &amp;quot;red&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,&amp;quot;silver&amp;quot;),
+                  levels=c(&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;white&amp;quot;,&amp;quot;silver&amp;quot;,&amp;quot;black&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Se você colocar o código a seguir, o que acontece? Por que? Responda na atividade da semana.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colours[4] &amp;lt;- &amp;quot;orange&amp;quot;
+colours&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] red    blue   red    &amp;lt;NA&amp;gt;   silver red    white  silver red    red   
+## [11] white  silver silver
+## Levels: red blue white silver black&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Utilize a função &lt;code&gt;table&lt;/code&gt; para determinar a quantidade de automóveis comercializados de cada cor. Pesquise na internet e pergunte caso tenha dúvidas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questão 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Considere:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;car.type &amp;lt;- factor(c(&amp;quot;saloon&amp;quot;,&amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;,
+    &amp;quot;saloon&amp;quot;,&amp;quot;convertible&amp;quot;,&amp;quot;hatchback&amp;quot;,&amp;quot;convertible&amp;quot;,
+    &amp;quot;saloon&amp;quot;, &amp;quot;hatchback&amp;quot;,&amp;quot;saloon&amp;quot;, &amp;quot;saloon&amp;quot;,
+    &amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;),
+    levels=c(&amp;quot;saloon&amp;quot;,&amp;quot;hatchback&amp;quot;,&amp;quot;convertible&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Gere a tabela de frequências para os dados &lt;code&gt;car.type&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Experimente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(car.type, colours)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              colours
+## car.type      red blue white silver black
+##   saloon        2    1     1      2     0
+##   hatchback     3    0     0      1     0
+##   convertible   0    0     1      1     0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Qual a diferença entre o uso da função &lt;code&gt;table&lt;/code&gt; com um ou argumentos?
+Qual a diferença entre &lt;code&gt;table(car.type, colours)&lt;/code&gt; e &lt;code&gt;table(colours, car.type)&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questão 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Crie dois novos vetores. No primeiro, anote (invente) o número de palavras que você escreveu no último trabalho acadêmico ou relatório técnico em cada semana, considerando os últimos três meses. No segundo, anote (chute, novamente) quantos litros de café você tomou em cada semana.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Nomeie os elementos dos 2 vetores.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Calcule sua produtividade em “palavras por Litro de café”. Atribua o resultado a um novo vetor.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontros Síncronos 7 e 8</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc5/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc5/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class08_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class08_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/YkDYceKggMQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/V0w1QjnngKo&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 3</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial3/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial3/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;div id=&#34;diretrizes-gerais&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Diretrizes gerais:&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Baixe o arquivo e abra no RStudio. &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EWhJIYOWS7FJgdMe8znoLQwBWko-J1AFpwNbpeswSuD7fQ?e=H21RLg&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Execute as operações assinaladas nos exercícios a seguir.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Salve o .Rmd e submeta-o por meio desta tarefa.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;dê-uma-olhada-no-dataframe-starwars.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Dê uma olhada no dataframe Starwars.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(starwars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 87
+## Columns: 14
+## $ name       &amp;lt;chr&amp;gt; &amp;quot;Luke Skywalker&amp;quot;, &amp;quot;C-3PO&amp;quot;, &amp;quot;R2-D2&amp;quot;, &amp;quot;Darth Vader&amp;quot;, &amp;quot;Leia Or~
+## $ height     &amp;lt;int&amp;gt; 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180, 2~
+## $ mass       &amp;lt;dbl&amp;gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 84.0, 77.~
+## $ hair_color &amp;lt;chr&amp;gt; &amp;quot;blond&amp;quot;, NA, NA, &amp;quot;none&amp;quot;, &amp;quot;brown&amp;quot;, &amp;quot;brown, grey&amp;quot;, &amp;quot;brown&amp;quot;, N~
+## $ skin_color &amp;lt;chr&amp;gt; &amp;quot;fair&amp;quot;, &amp;quot;gold&amp;quot;, &amp;quot;white, blue&amp;quot;, &amp;quot;white&amp;quot;, &amp;quot;light&amp;quot;, &amp;quot;light&amp;quot;, &amp;quot;~
+## $ eye_color  &amp;lt;chr&amp;gt; &amp;quot;blue&amp;quot;, &amp;quot;yellow&amp;quot;, &amp;quot;red&amp;quot;, &amp;quot;yellow&amp;quot;, &amp;quot;brown&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;blue&amp;quot;,~
+## $ birth_year &amp;lt;dbl&amp;gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0, 57.0, ~
+## $ sex        &amp;lt;chr&amp;gt; &amp;quot;male&amp;quot;, &amp;quot;none&amp;quot;, &amp;quot;none&amp;quot;, &amp;quot;male&amp;quot;, &amp;quot;female&amp;quot;, &amp;quot;male&amp;quot;, &amp;quot;female&amp;quot;,~
+## $ gender     &amp;lt;chr&amp;gt; &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;masculine&amp;quot;, &amp;quot;femini~
+## $ homeworld  &amp;lt;chr&amp;gt; &amp;quot;Tatooine&amp;quot;, &amp;quot;Tatooine&amp;quot;, &amp;quot;Naboo&amp;quot;, &amp;quot;Tatooine&amp;quot;, &amp;quot;Alderaan&amp;quot;, &amp;quot;T~
+## $ species    &amp;lt;chr&amp;gt; &amp;quot;Human&amp;quot;, &amp;quot;Droid&amp;quot;, &amp;quot;Droid&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Human&amp;quot;, &amp;quot;Huma~
+## $ films      &amp;lt;list&amp;gt; &amp;lt;&amp;quot;The Empire Strikes Back&amp;quot;, &amp;quot;Revenge of the Sith&amp;quot;, &amp;quot;Return~
+## $ vehicles   &amp;lt;list&amp;gt; &amp;lt;&amp;quot;Snowspeeder&amp;quot;, &amp;quot;Imperial Speeder Bike&amp;quot;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;quot;Imp~
+## $ starships  &amp;lt;list&amp;gt; &amp;lt;&amp;quot;X-wing&amp;quot;, &amp;quot;Imperial shuttle&amp;quot;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;quot;TIE Advanced x1&amp;quot;,~&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;modifique-o-seguinte-gráfico-para-que-a-cor-de-todos-os-pontos-seja-rosa.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = &amp;quot;#30509C&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/courses/dados_grad/tutorial3_files/figure-html/scatterplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adicione-texto-no-título-eixos-x-e-y-e-tamanho-dos-pontos.-remova-o-comentário-para-ver-o-efeito.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = &amp;quot;#30509C&amp;quot;) +
+  labs(
+    #title = &amp;quot;___&amp;quot;,
+    #x = &amp;quot;___&amp;quot;, 
+    #y = &amp;quot;___&amp;quot;,
+    #___
+    )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing missing values (geom_point).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/courses/dados_grad/tutorial3_files/figure-html/scatterplot-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-única-variável-categórica-do-conjunto-de-dados-e-faça-um-gráfico-de-barras-de-sua-distribuição.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.&lt;/h3&gt;
+&lt;p&gt;(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com &lt;code&gt;eval = FALSE&lt;/code&gt; porque o código atual ali não é válido e, portanto, o documento não permitia o &lt;code&gt;knit&lt;/code&gt;. Uma vez substituído o código por um código válido, defina a opção “eval = TRUE”, ou remova a opção “eval” por completo, uma vez que está definida como “TRUE” por padrão).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(starwars, aes(___)) +
+  geom___&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-única-variável-numérica-e-faça-um-histograma-dela.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma única variável numérica e faça um histograma dela.&lt;/h3&gt;
+&lt;p&gt;(Desta vez nenhum código inicial é fornecido, você está por sua conta!)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-uma-variável-numérica-e-uma-variável-categórica-e-faça-uma-visualização-você-escolhe-o-tipo-para-visualizar-a-relação-entre-as-duas-variáveis.-junto-com-seu-código-e-sua-saída-forneça-uma-interpretação-da-visualização.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-duas-variáveis-categóricas-e-faça-uma-visualização-para-entender-visualmente-a-relação-entre-as-duas-variáveis.-junto-com-seu-código-e-saída-forneça-uma-interpretação-da-visualização.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;escolha-duas-variáveis-numéricas-e-duas-variáveis-categóricas-e-faça-uma-visualização-que-incorpore-todas-elas-e-forneça-uma-interpretação-com-sua-resposta.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 4</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial4/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial4/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;p&gt;A poluição por plástico é um problema importante e crescente, afetando negativamente a saúde dos oceanos e da vida selvagem.
+&lt;a href=&#34;https://ourworldindata.org/plastic-pollution&#34;&gt;Our World in Data&lt;/a&gt; tem muitos dados em vários níveis, em escala global, por país e ao longo do tempo.&lt;/p&gt;
+&lt;p&gt;Para este laboratório, nos concentramos nos dados de 2010.&lt;/p&gt;
+&lt;p&gt;Além disso, a National Geographic realizou um concurso de comunicação de visualização de dados sobre resíduos plásticos, como visto &lt;a href=&#34;https://www.nationalgeographic.org/funding-opportunities/innovation-challenges/plastic/dataviz/&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;objetivos-de-aprendizagem&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Objetivos de aprendizagem&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizar dados numéricos e categóricos e interpretar visualizações&lt;/li&gt;
+&lt;li&gt;Recriação de visualizações&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;iniciando&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Iniciando&lt;/h1&gt;
+&lt;div id=&#34;pacotes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pacotes&lt;/h2&gt;
+&lt;p&gt;Usaremos o pacote &lt;strong&gt;tidyverse&lt;/strong&gt;* para esta análise.
+Execute o seguinte código no Console para carregar este pacote.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dados&lt;/h2&gt;
+&lt;p&gt;O conjunto de dados para esta tarefa pode ser encontrado no link a seguir, acessado por meio do comando:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#url_file &amp;lt;- &amp;quot;atalho no seu computador/plastic-waste.csv&amp;quot;
+
+#plastic_waste &amp;lt;- read_csv(url_file)
+
+#library(readr)
+plastic_waste &amp;lt;- read_csv(&amp;quot;D:/OneDrive - cefetmg.br/01_disciplinas/ERE/2020_2/R_adm/00_aulas/class07_dados_adm/data/plastic-waste.csv&amp;quot;)
+
+View(plastic_waste)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As descrições das variáveis são as seguintes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;code&lt;/code&gt;: código do país&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;entity&lt;/code&gt;: Nome do país&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;continent&lt;/code&gt;: Nome do continente&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;year&lt;/code&gt;: Ano&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gdp_per_cap&lt;/code&gt;: PIB per capita internacional 2011 $, taxa&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;plastic_waste_per_cap&lt;/code&gt;: Quantidade de resíduos plásticos per capita em kg/dia&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mismanaged_plastic_waste_per_cap&lt;/code&gt;: Quantidade de resíduos plásticos mal administrados per capita em kg/dia&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mismanaged_plastic_waste&lt;/code&gt;: Toneladas de resíduos plásticos mal administrados&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coastal_pop&lt;/code&gt;: Número de indivíduos que vivem no litoral/na costa&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;total_pop&lt;/code&gt;: População total de acordo com Gapminder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;warm-up&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Warm up&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Recorde que o RStudio está dividido em quatro painéis. Sem olhar, você pode nomeá-las todas e descrever brevemente seu propósito?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Verifique se o conjunto de dados foi carregado para o Ambiente. Quantas observações há no conjunto de dados? Ao clicar no conjunto de dados no Ambiente, você poderá inspecioná-lo com mais cuidado. Alternativamente, você pode digitar &lt;code&gt;View(plastic_waste)&lt;/code&gt; no Console para fazer isso.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dê uma rápida olhada nos dados e observe que há células que levam o valor &lt;code&gt;NA&lt;/code&gt; - o que isso significa?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercícios&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Exercícios&lt;/h1&gt;
+&lt;p&gt;Vamos começar dando uma olhada na distribuição de resíduos plásticos per capita em 2010.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+  geom_histogram(binwidth = 0.2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 51 rows containing non-finite values (stat_bin).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/courses/dados_grad/tutorial4_files/figure-html/plastic_waste_per_cap-hist-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Um país se destaca como uma observação incomum no topo da distribuição.&lt;/p&gt;
+&lt;p&gt;Uma maneira de identificar este país é filtrar os dados para países onde os resíduos plásticos per capita são maiores que 3,5 kg/pessoa.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plastic_waste %&amp;gt;%
+  filter(plastic_waste_per_cap &amp;gt; 3.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 10
+##   code  entity              continent  year gdp_per_cap plastic_waste_p~ mismanaged_plas~
+##   &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;               &amp;lt;chr&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
+## 1 TTO   Trinidad and Tobago North Am~  2010      31261.              3.6             0.19
+## # ... with 3 more variables: mismanaged_plastic_waste &amp;lt;dbl&amp;gt;, coastal_pop &amp;lt;dbl&amp;gt;,
+## #   total_pop &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Você esperava este resultado?&lt;/p&gt;
+&lt;p&gt;Você poderia considerar fazer alguma pesquisa sobre Trinidad e Tobago para ver por que os resíduos plásticos per capita são tão altos lá, ou se isto é um erro de dados.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Faça um histograma para a distribuição de resíduos plásticos per capita desagregados (facet) por continente. O que você pode dizer sobre como os continentes se comparam uns aos outros em termos de seus resíduos plásticos per capita?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;marginfigure&#34;&gt;&lt;code&gt;**NOTA:** A partir deste ponto, os gráficos e a saída do código não são exibidos nas instruções desta atividade, mas você mesmo pode e deve criar o código e ver os resultados.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Outra forma de visualizar os dados numéricos é utilizando gráficos de densidade.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;E comparar as distribuições entre continentes por curvas de densidade de coloração por continente.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent)) +
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O gráfico resultante pode ser um pouco difícil de ler, então vamos também preencher as curvas com cores.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A sobreposição de cores torna difícil dizer o que está acontecendo com as distribuições nos continentes plotados devido a continentes plotados sobre eles.&lt;/p&gt;
+&lt;p&gt;Podemos mudar o nível de transparência da cor de preenchimento para ajudar nisso.&lt;/p&gt;
+&lt;p&gt;O argumento &lt;code&gt;alpha&lt;/code&gt; recebe valores entre 0 e 1: 0 é completamente transparente e 1 é completamente opaco.
+Não há como dizer qual valor funcionará melhor, então você só precisa tentar alguns valores.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density(alpha = 0.7)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Isto ainda não parece ótimo…&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Recriar as parcelas de densidade acima usando um nível &lt;code&gt;alpha&lt;/code&gt; diferente (inferior) que funcione melhor para exibir as curvas de densidade para todos os continentes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Descreva porque definimos a “cor” e “preenchimento” das curvas através do mapeamento estético do gráfico, mas definimos o nível “alpha” como uma característica da geometria de plotagem.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;E ainda outra maneira de visualizar esta relação é utilizando gráficos boxplot.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = plastic_waste, 
+       mapping = aes(x = continent, 
+                     y = plastic_waste_per_cap)) +
+  geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Converta os boxplot da tarefa anterior para &lt;a href=&#34;http://ggplot2.tidyverse.org/reference/geom_violin.html&#34;&gt;plot de violino&lt;/a&gt;. O que os gráficos de violino revelam que os boxplot não revelam? Quais características são aparentes nas parcelas de box mas não nas parcelas de violino?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;marginfigure&#34;&gt;&lt;code&gt;**Lembrar:** Utilizamos `geom_point()` para fazer scatterplots.&lt;/code&gt;&lt;/pre&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Visualizar a relação entre os resíduos plásticos per capita e os resíduos plásticos mal administrados per capita usando um gráfico de dispersão.
+Descrever a relação.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Colorir os pontos no gráfico de dispersão por continente.
+Parece haver alguma distinção clara entre continentes com relação a como os resíduos plásticos per capita e os resíduos plásticos mal administrados per capita estão associados?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Visualize a relação entre os resíduos plásticos per capita e a população total, assim como os resíduos plásticos per capita e a população costeira.
+Você precisará fazer duas parcelas separadas.
+Algum destes pares de variáveis parece estar associado de forma mais linear?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;envolvimento&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Envolvimento&lt;/h1&gt;
+&lt;p&gt;Não esperamos que você complete todos os exercícios dentro da hora reservada para a atividade durante o encontro síncrono.
+Você deve encontrar um tempo para se reunir com sua equipe e completá-los após o encontro.&lt;/p&gt;
+&lt;pre class=&#34;marginfigure&#34;&gt;&lt;code&gt;**Dica:** O eixo x é uma variável calculada. Um país com resíduos plásticos per capita acima de 3 kg/dia foi filtrado. E os dados não são representados apenas com pontos no gráfico, mas também com uma curva suave. O termo &amp;quot;smooth&amp;quot; deve ajudá-lo [escolha qual geom a usar](https://ggplot2.tidyverse.org/reference/index.html#section-geoms).&lt;/code&gt;&lt;/pre&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Recrie o seguinte gráfico e interprete o que você vê no contexto dos dados.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/courses/dados_grad/tutorial4_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 5</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial5/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial5/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(ggplot2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# From TidyTuesday: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md
+hotels &amp;lt;- read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;exercícios&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exercícios&lt;/h2&gt;
+&lt;div id=&#34;exercício-1.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 1.&lt;/h3&gt;
+&lt;p&gt;As pessoas estão viajando por um capricho?
+Vamos ver…&lt;/p&gt;
+&lt;p&gt;Preencha os espaços em branco para filtragem de reservas de hotel onde o hóspede é &lt;strong&gt;não&lt;/strong&gt; dos EUA (código do país &lt;code&gt;USA&lt;/code&gt;) e o &lt;code&gt;lead_time&lt;/code&gt; é menos de 1 dia.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Você precisará definir &lt;code&gt;eval=TRUE&lt;/code&gt; quando tiver uma resposta que queira experimentar.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotels_no_usa &amp;lt;- filter(hotels, country != &amp;quot;USA&amp;quot;, lead_time &amp;lt; 1)
+hotels_no_usa_cancelled &amp;lt;- select(hotels_no_usa, hotel, is_canceled)
+
+ggplot(hotels_no_usa, aes(x = arrival_date_year)) +
+  geom_bar()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/courses/dados_grad/tutorial5_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotels_no_usa_pipe &amp;lt;- hotels %&amp;gt;% 
+  filter(country != &amp;quot;USA&amp;quot; &amp;amp; lead_time &amp;lt; 100) %&amp;gt;% 
+  select(hotel, is_canceled, lead_time) %&amp;gt;% 
+  filter(hotel == &amp;quot;Resort Hotel&amp;quot;) %&amp;gt;% 
+  arrange(lead_time)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# on the fly
+hotels %&amp;gt;%
+  filter(
+    country != &amp;quot;USA&amp;quot;, 
+    lead_time &amp;lt; 1
+    )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6,174 x 32
+##    hotel        is_canceled lead_time arrival_date_year arrival_date_month
+##    &amp;lt;chr&amp;gt;              &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;             &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;             
+##  1 Resort Hotel           0         0              2015 July              
+##  2 Resort Hotel           0         0              2015 July              
+##  3 Resort Hotel           0         0              2015 July              
+##  4 Resort Hotel           0         0              2015 July              
+##  5 Resort Hotel           0         0              2015 July              
+##  6 Resort Hotel           0         0              2015 July              
+##  7 Resort Hotel           0         0              2015 July              
+##  8 Resort Hotel           0         0              2015 July              
+##  9 Resort Hotel           0         0              2015 July              
+## 10 Resort Hotel           0         0              2015 July              
+## # ... with 6,164 more rows, and 27 more variables:
+## #   arrival_date_week_number &amp;lt;dbl&amp;gt;, arrival_date_day_of_month &amp;lt;dbl&amp;gt;,
+## #   stays_in_weekend_nights &amp;lt;dbl&amp;gt;, stays_in_week_nights &amp;lt;dbl&amp;gt;, adults &amp;lt;dbl&amp;gt;,
+## #   children &amp;lt;dbl&amp;gt;, babies &amp;lt;dbl&amp;gt;, meal &amp;lt;chr&amp;gt;, country &amp;lt;chr&amp;gt;,
+## #   market_segment &amp;lt;chr&amp;gt;, distribution_channel &amp;lt;chr&amp;gt;, is_repeated_guest &amp;lt;dbl&amp;gt;,
+## #   previous_cancellations &amp;lt;dbl&amp;gt;, previous_bookings_not_canceled &amp;lt;dbl&amp;gt;,
+## #   reserved_room_type &amp;lt;chr&amp;gt;, assigned_room_type &amp;lt;chr&amp;gt;, ...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Com registro de objeto
+
+hotel &amp;lt;- hotels %&amp;gt;% 
+  filter(country != &amp;quot;USA&amp;quot;, lead_time &amp;lt; 1) %&amp;gt;% 
+  select(country, lead_time) 
+
+# Sem pipe
+
+hotels_sem_pipe &amp;lt;- filter(hotels, country != &amp;quot;USA&amp;quot;, lead_time &amp;lt; 1)
+hotels_sem_pipe &amp;lt;- select(hotels_sem_pipe, country, lead_time)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-2.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 2.&lt;/h3&gt;
+&lt;p&gt;Quantas marcações envolvem pelo menos 1 criança &lt;strong&gt;ou&lt;/strong&gt; bebê?&lt;/p&gt;
+&lt;p&gt;No seguinte &lt;code&gt;chunk&lt;/code&gt;, substitua&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[AT LEAST]&lt;/code&gt; com o operador lógico para “pelo menos” (em dois lugares)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[OR]&lt;/code&gt; com o operador lógico para “ou”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Você precisará definir &lt;code&gt;eval=TRUE&lt;/code&gt; quando tiver uma resposta que queira experimentar.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotels_crianca &amp;lt;- hotels %&amp;gt;% 
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
+  mutate(teste_coluna = children + babies) %&amp;gt;% 
+  mutate(teste2 = children + babies + adults) %&amp;gt;% 
+  select(hotel, is_canceled, lead_time, teste2, teste_coluna)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotels %&amp;gt;%
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1)
+
+# Com registro de objeto
+hotel_bebe_chil &amp;lt;- hotels %&amp;gt;%
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-3.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 3.&lt;/h3&gt;
+&lt;p&gt;Você acha que é mais provável encontrar reservas com crianças ou bebês em hotéis urbanos ou resorts hoteleiros?
+Teste sua intuição.&lt;/p&gt;
+&lt;p&gt;Usando &lt;code&gt;filter()&lt;/code&gt; determine o número de reservas em hotéis resort que têm mais de 1 criança &lt;strong&gt;ou&lt;/strong&gt; bebê no quarto?&lt;/p&gt;
+&lt;p&gt;Então, faça o mesmo para hotéis urbanos, e compare o número de linhas no dataframe filtrado resultantes.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Com registro de objeto
+hotel_bebe_chil_resort &amp;lt;- hotels %&amp;gt;%
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
+  filter(hotel == &amp;quot;Resort Hotel&amp;quot;)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)
+hotel_bebe_chil_resort_sem_pipe &amp;lt;- filter(hotel_bebe_chil_resort, hotel == &amp;quot;Resort Hotel&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Com registro de objeto
+hotel_bebe_chil_city &amp;lt;- hotels %&amp;gt;%
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
+  mutate(hotel = tolower(hotel)) %&amp;gt;% 
+  filter(hotel == &amp;quot;city hotel&amp;quot;)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &amp;lt;- filter(hotels, children &amp;gt;= 1 | babies &amp;gt;= 1)
+hotel_bebe_chil_city_sem_pipe &amp;lt;- filter(hotel_bebe_chil_sem_pipe, hotel == &amp;quot;City Hotel&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hotel_bebe_chil_class &amp;lt;- hotels %&amp;gt;% 
+  filter(children &amp;gt;= 1 | babies &amp;gt;= 1) %&amp;gt;% 
+  group_by(hotel) %&amp;gt;% 
+  summarise(n = max(stays_in_weekend_nights))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-4&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 4&lt;/h3&gt;
+&lt;p&gt;Criar uma tabela de freqüência do número de &lt;code&gt;adults&lt;/code&gt; em uma reserva.&lt;/p&gt;
+&lt;p&gt;Mostre os resultados em ordem decrescente para que a observação mais comum esteja no topo.&lt;/p&gt;
+&lt;p&gt;Qual é o número mais comum de adultos em reservas neste conjunto de dados?&lt;/p&gt;
+&lt;p&gt;Há algum resultado surpreendente?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Não esqueça de rotular também seu &lt;code&gt;chunk&lt;/code&gt; R (onde diz &lt;code&gt;lable-me-1&lt;/code&gt;).
+Seu rótulo deve ser curto, informativo, e não deve incluir espaços.
+Também não deve repetir uma etiqueta anterior, caso contrário o R Markdown lhe dará um erro sobre a repetição de etiquetas R em pedaços.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-5&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 5&lt;/h3&gt;
+&lt;p&gt;Repita o exercício 4, uma vez para reservas canceladas (&lt;code&gt;is_canceled&lt;/code&gt; codificado como 1) e uma vez para reservas não canceladas (&lt;code&gt;is_canceled&lt;/code&gt; codificado como 0).&lt;/p&gt;
+&lt;p&gt;O que isto revela sobre os resultados surpreendentes que você observou no exercício anterior?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Não se esqueça de rotular também seu &lt;code&gt;chunk&lt;/code&gt; de R (onde diz &lt;code&gt;label-me-2&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# add code here
+# pay attention to correctness and code style&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-6&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 6&lt;/h3&gt;
+&lt;p&gt;Calcular a tarifa mínima, média, mediana e máxima média diária (&lt;code&gt;adr&lt;/code&gt;) agrupados por tipo de &lt;code&gt;hotel&lt;/code&gt; para que você possa obter estas estatísticas separadamente para hotéis de resorts e cidades.&lt;/p&gt;
+&lt;p&gt;Que tipo de hotel é mais caro, em média?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# add code here
+# pay attention to correctness and code style&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exercício-7&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exercício 7&lt;/h3&gt;
+&lt;p&gt;Observamos dois valores incomuns nas estatísticas resumidas acima – um mínimo negativo, e um máximo muito alto).
+Que tipos de hotéis são estes?&lt;/p&gt;
+&lt;p&gt;Localize estas observações no conjunto de dados e descubra a data de chegada (ano e mês), assim como quantas pessoas (adultos, crianças e bebês) permaneceram no quarto.&lt;/p&gt;
+&lt;p&gt;Você pode investigar os dados no espectador para localizar estes valores, mas de preferência você deve identificá-los de forma reprodutível com algum código.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dica:&lt;/strong&gt; Por exemplo, você pode &lt;code&gt;filter&lt;/code&gt; para o dado quantidade &lt;code&gt;adr&lt;/code&gt; e &lt;code&gt;select&lt;/code&gt; as colunas relevantes.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# add code here
+# pay attention to correctness and code style&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dicionário-de-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dicionário de dados&lt;/h2&gt;
+&lt;p&gt;Abaixo está o dicionário de dados completo.
+Note que é longo (há muitas variáveis nos dados), mas utilizamos um conjunto limitado de variáveis para nossa análise.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;6%&#34; /&gt;
+&lt;col width=&#34;2%&#34; /&gt;
+&lt;col width=&#34;90%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;variable&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;class&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;hotel&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Hotel (H1 = Resort Hotel or H2 = City Hotel)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;is_canceled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Value indicating if the booking was canceled (1) or not (0)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;lead_time&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of days that elapsed between the entering date of the booking into the PMS and the arrival date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;arrival_date_year&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Year of arrival date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;arrival_date_month&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Month of arrival date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;arrival_date_week_number&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Week number of year for arrival date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;arrival_date_day_of_month&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Day of arrival date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;stays_in_weekend_nights&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;stays_in_week_nights&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;adults&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of adults&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;children&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of children&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;babies&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of babies&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;meal&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of meal booked. Categories are presented in standard hospitality meal packages: &lt;br&gt; Undefined/SC – no meal package;&lt;br&gt;BB – Bed &amp;amp; Breakfast; &lt;br&gt; HB – Half board (breakfast and one other meal – usually dinner); &lt;br&gt; FB – Full board (breakfast, lunch and dinner)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;country&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Country of origin. Categories are represented in the ISO 3155–3:2013 format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;market_segment&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Market segment designation. In categories, the term “TA” means “Travel Agents” and “TO” means “Tour Operators”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;distribution_channel&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Booking distribution channel. The term “TA” means “Travel Agents” and “TO” means “Tour Operators”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;is_repeated_guest&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Value indicating if the booking name was from a repeated guest (1) or not (0)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;previous_cancellations&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of previous bookings that were cancelled by the customer prior to the current booking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;previous_bookings_not_canceled&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of previous bookings not cancelled by the customer prior to the current booking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;reserved_room_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Code of room type reserved. Code is presented instead of designation for anonymity reasons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;assigned_room_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type due to hotel operation reasons (e.g. overbooking) or by customer request. Code is presented instead of designation for anonymity reasons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;booking_changes&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of changes/amendments made to the booking from the moment the booking was entered on the PMS until the moment of check-in or cancellation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;deposit_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Indication on if the customer made a deposit to guarantee the booking. This variable can assume three categories:&lt;br&gt;No Deposit – no deposit was made;&lt;br&gt;Non Refund – a deposit was made in the value of the total stay cost;&lt;br&gt;Refundable – a deposit was made with a value under the total cost of stay.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;agent&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ID of the travel agency that made the booking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;company&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ID of the company/entity that made the booking or responsible for paying the booking. ID is presented instead of designation for anonymity reasons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;days_in_waiting_list&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of days the booking was in the waiting list before it was confirmed to the customer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;customer_type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type of booking, assuming one of four categories:&lt;br&gt;Contract - when the booking has an allotment or other type of contract associated to it;&lt;br&gt;Group – when the booking is associated to a group;&lt;br&gt;Transient – when the booking is not part of a group or contract, and is not associated to other transient booking;&lt;br&gt;Transient-party – when the booking is transient, but is associated to at least other transient booking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;adr&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;required_car_parking_spaces&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of car parking spaces required by the customer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;total_of_special_requests&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Number of special requests made by the customer (e.g. twin bed or high floor)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;reservation_status&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;character&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Reservation last status, assuming one of three categories:&lt;br&gt;Canceled – booking was canceled by the customer;&lt;br&gt;Check-Out – customer has checked in but already departed;&lt;br&gt;No-Show – customer did not check-in and did inform the hotel of the reason why&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;reservation_status_date&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 6</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial6/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/tutorial6/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;div id=&#34;bibliotecas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bibliotecas&lt;/h2&gt;
+&lt;p&gt;Essas funções servem para carregar as bibliotecas dos pacotes que serão necessários para a análise.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;carregar-arquivos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Carregar arquivos&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Façam o download do arquivo .zip.&lt;/li&gt;
+&lt;li&gt;Removam os arquivos de dados do arquivo .zip.&lt;/li&gt;
+&lt;li&gt;Carregue os arquivos de dados usando a função &lt;code&gt;read_csv&lt;/code&gt; e atribuindo cada conjunto de dados a um objeto&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;manipulação-de-dados---mulheres-cientistas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Manipulação de dados - mulheres cientistas&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Faça a junção dos dataframes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ordene por ano de nascimento&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Filtre apenas as linhas que têm informações sobre ano de nascimento e ano de morte&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Encontre as pesquisadoras que estão vivas&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gere um dataframe considerando apenas a coluna com o nome das cientistas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dataframe_junto &amp;lt;- professions %&amp;gt;%
+  left_join(dates, by=&amp;quot;name&amp;quot;) %&amp;gt;% 
+  left_join(works, by=&amp;quot;name&amp;quot;) %&amp;gt;% 
+  select(name, known_for) %&amp;gt;% 
+  filter(!is.na(known_for))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;manipulação-de-dados---matrículas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Manipulação de dados - matrículas&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Gere um dataframe com os alunos matriculados e que responderam estar frequentando as aulas.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gere um dataframe com os alunos matriculados e que responderam &lt;strong&gt;não&lt;/strong&gt; estar frequentando as aulas.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gere um dataframe com os alunos que estão frequentando as aulas e que não estão matriculados.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data1 &amp;lt;- enrolment %&amp;gt;% 
+  left_join(survey, by=&amp;quot;id&amp;quot;)
+
+data2 &amp;lt;- survey %&amp;gt;% 
+  left_join(enrolment, by=&amp;quot;id&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;manipulação-de-dados---compras&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Manipulação de dados - compras&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Gere um dataframe com a síntese da soma da receita da loja por consumidor&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontros Síncronos 9 e 10</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc9/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc9/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class09_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class09_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/V7x1OCLQ6NE&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontros Síncronos 11 e 12</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc12/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc12/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class10_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class10_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/CSEo55VJjzc&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Encontros Síncronos 13</title>
+      <link>https://retaoliveira.github.io/disciplinas/dados_grad/sinc13/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/disciplinas/dados_grad/sinc13/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;D:/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+
+&lt;iframe src=&#34;https://places-research.github.io/class11_dataadm&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://places-research.github.io/class11_dataadm&#34;&gt;LINK&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1147&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/wem6mp912QE&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

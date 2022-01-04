@@ -1,0 +1,146 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 5 - Gestão de estoques e armazenagem
+    weight: 12
+title: Gestão de estoques
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 12
+---
+
+## Definição 
+
+“Os estoques são recursos ociosos que possuem valor econômico.” 
+.small[
+Joseph G. Monks: Administração da Produção
+]
+
+“Entende-se por estoque quaisquer quantidades de bens físicos que sejam conservados, de forma improdutiva, por algum intervalo de tempo.”
+.small[
+Daniel Moreira:  Administração da Produção e Operações
+]
+
+“Estoques são acúmulos de materiais entre fases dos processos de transformação, que proporcionam um grau de independência entre as fases”
+.small[
+Henrique L.Correa: Administração da Produção e Operações
+]
+
+Estoques são materiais ou produtos que ficam fisicamente disponíveis pela empresa, até o momento de ingressarem no processo produtivo ou seguirem para a comercialização direta ao consumidor final. Os estoques podem ser de matérias-primas e outros insumos, produtos em processos, produtos acabados disponíveis para a comercialização e todos os demais materiais e insumos que a empresa utiliza e que necessitam estar armazenados nas suas dependências.
+
+## Por que surgem os estoques?
+
+- Impossível  ou inviável coordenar suprimento e demanda:
+  - capacidade
+  - informação
+  - custo de obtenção
+  - restrições tecnológicas
+  
+- Especular com os estoques:
+  - escassez
+  - oportunidade
+
+- Incerteza de previsões de suprimento e/ou demanda: 
+  - estoques de segurança
+
+- Preencher o “pipeline”  - canais de distribuição
+
+
+## Razões para existência de estoques
+
+- compras ou produção de forma mais econômica 
+- redução de fretes
+- prevenir incertezas (desabastecimentos)
+- reduzir efeitos de sazonalidades
+- diferentes ritmos de produção entre fases
+- reduzir custos de ociosidades
+- melhor atendimento a consumidores
+
+
+## Tipos de estoque
+
+- Estoque Isolador ou Estoque de Segurança - tem como função compensar as incertezas inerentes ao fornecimento e demanda. Ex: máquina problemática!!!
+
+- Estoque de Ciclo - ocorre porque um ou mais estágios na operação não podem fornecer todos os itens que produzem simultaneamente. Ex: fabricações em batelada - Padaria / Processos Químicos.
+
+- Estoque de Antecipação - ocorre principalmente nos produtos de grande variação de demanda. Ex: chocolate, sorvete, cerveja.
+
+- Estoque no Canal de Distribuição - ocorrem porque o material não pode ser transportado instantaneamente entre o ponto de produção e o ponto de venda.
+
+
+## Influência de estoques na competitividade das empresas
+
+- Influência nos custos;
+- Influência na velocidade de entrega;
+- Influência na confiabilidade de entregas;
+- Influência sobre a flexibilidade de saídas - quando se tem estoques de diferentes produtos tem-se flexibilidade para atender as diferentes necessidades, mas perde-se flexibilidade em qualquer mudança de pedido feita pelo cliente.
+- Influência sobre a qualidade do produto - a produção com qualidade reduz o nível de estoque da empresa pois corre-se um risco menor de se perder o material.
+- Influência sobre o serviço prestado ao cliente.
+
+## Decisões de estoques
+
+- Quanto pedir
+  - Custos de estoques
+  - Lote econômico de compras
+  
+- Quando pedir
+  - Revisões contínuas e periódicas
+  
+- Como controlar o sistema
+  - Curva ABC
+  - Inventário
+  - planejamento de estoques de segurança
+
+
+## Objetivos da gestão de estoques
+
+-	Cálculo do nível de estoque cíclico
+-	Cálculo do nível de estoque de segurança
+-	Determinação de Lote Econômico de Compra
+-	Atualização de inventário
+-	Replanejamento do suprimento
+-	Determinação do ponto de pedido
+-	Recebimento e armazenagem de materiais
+-	Conservar material em condições adequadas
+-	Entregar material mediante requisição
+-	Documentação
+-	Organização do almoxarifado
+
+
+## Principais incertezas que impactam o planejamento de estoques
+- Incertezas quanto à demanda (consumo)
+- Incertezas em relação à entrega (atrasos, por exemplo)
+
+<hr>
+
+# Alguns vídeos interessantes para entender um pouco mais sobre estoques
+
+## Gestão de estoques
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/rmQnVTLwc3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/DjwadLdgiic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/_aQf-tKNrTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## SKU
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/jRBOE04Rrdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Curva ABC
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/sB0-Fcqvz7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Giro de estoque
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/ucFtX-pf9oA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

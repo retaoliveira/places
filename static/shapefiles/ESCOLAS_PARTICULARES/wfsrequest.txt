@@ -1,0 +1,1 @@
+http://bhmapogcbase.pbh.gov.br:80/bhmapogcbase/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ide_bhgeo:ESCOLAS_PARTICULARES&srsName=EPSG:31983&outputFormat=SHAPE-ZIP

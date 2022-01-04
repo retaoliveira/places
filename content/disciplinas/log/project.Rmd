@@ -1,0 +1,38 @@
+---
+date: "2021-08-02T00:00:00+01:00"
+draft: true
+menu:
+  log:
+    parent: Projetos
+    weight: 6
+title: Projeto Final
+toc: true
+type: docs
+weight: 17
+---
+
+
+## Objetivos de aprendizagem
+
+Ao final desta atividade os alunos devem ser capazes de relacionar os conceitos de `Logística` e `Gestão da Cadeia de Suprimentos` com os pilares para gestão estratégica da cadeia de suprimentos. 
+
+
+## Atividades para consolidação do Projeto Final:
+
+Os estudantes deverão:
+
+1. Caracterização dos intermediários mercadológicos, estratégias de procurement e mapeamento dos fluxos e estratégias da cadeia de suprimentos em relação à sua cadeia de valor e detalhamento da estrutura operacional dos pilares da cadeia de suprimentos. Nesta etapa é necessário detalhar métricas de mensuração financeira e operacional.
+
+2. Detalhamento da estratégia da empresa em relação à demanda final - mercado consumidor - considerando objetivos e metas no curto, médio e longo prazos e como é feita a previsão de demanda.
+
+3. Caracterização dos elementos geradores de custo explorando trade-off entre responsividade e eficiência à luz das atividades-chave; e 
+Análise da estratégia em relação à coordenação da demanda e da oferta, os riscos, o outsourcing e a digitalização da cadeia de suprimentos. Explorar o conceito de compartilhamento na cadeia de suprimentos e os impactos do contexto disruptivo nos fluxos e no abastecimento ao mercado.
+
+4. Relatório final contendo ainda implicações para a sociedade discutindo as tendências atuais e:
+-	as relações de trabalho
+- o impacto ambiental
+-	o impacto na qualidade de vida das pessoas
+-	o impacto da estratégia empresarial na longevidade dos negócios envolvidos na cadeia de suprimentos
+
+5. Apresentação do projeto para a turma
+

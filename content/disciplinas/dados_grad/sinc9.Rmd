@@ -1,0 +1,27 @@
+---
+date: "2021-06-30T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Encontros
+    weight: 31
+title: Encontros Síncronos 9 e 10
+weight: 31
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places-research.github.io/class09_dataadm', height = "400px")
+```
+
+[LINK](https://places-research.github.io/class09_dataadm)
+
+<iframe width="1147" height="645" src="https://www.youtube.com/embed/V7x1OCLQ6NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

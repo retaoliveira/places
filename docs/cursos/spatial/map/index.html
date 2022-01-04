@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Packages  Uma introdução ao package tmap  Quick tmap Mapa completo por meio do tmap  Sistemas de coordenadas  Base de dados EPGS Alterar projeções  Como salvar meu mapa Adicionando mapa de contexto Visualização de fenômenos sociais no espaço  Mapas coropléticos Mapas de pontos Representação de fluxos Mapas de calor Cartogramas Símbolos proporcionais  Plotar pontos a partir de coordenadas    Packages library(raster) library(rJava) library(OpenStreetMap) library(RgoogleMaps) library(grid) library(rgdal) library(tidyverse) library(reshape2) library(ggmosaic) library(GISTools) library(sp) library(sf) library(tmap) library(tmaptools) library(mapview)  # carregar o dado data(&quot;georgia&quot;) # converter o dado em sf georgia_sf &lt;- st_as_sf(georgia) class(georgia_sf) ## [1] &quot;sf&quot; &quot;data.">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/cursos/spatial/map/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.e55ba78edbbd6fe458261591367a7d35.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://retaoliveira.github.io/cursos/spatial/map/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://retaoliveira.github.io/cursos/spatial/map/">
+  <meta property="og:title" content="Construindo mapas e representações | Profa. Renata Oliveira">
+  <meta property="og:description" content="Packages  Uma introdução ao package tmap  Quick tmap Mapa completo por meio do tmap  Sistemas de coordenadas  Base de dados EPGS Alterar projeções  Como salvar meu mapa Adicionando mapa de contexto Visualização de fenômenos sociais no espaço  Mapas coropléticos Mapas de pontos Representação de fluxos Mapas de calor Cartogramas Símbolos proporcionais  Plotar pontos a partir de coordenadas    Packages library(raster) library(rJava) library(OpenStreetMap) library(RgoogleMaps) library(grid) library(rgdal) library(tidyverse) library(reshape2) library(ggmosaic) library(GISTools) library(sp) library(sf) library(tmap) library(tmaptools) library(mapview)  # carregar o dado data(&quot;georgia&quot;) # converter o dado em sf georgia_sf &lt;- st_as_sf(georgia) class(georgia_sf) ## [1] &quot;sf&quot; &quot;data."><meta property="og:image" content="https://retaoliveira.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://retaoliveira.github.io/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Construindo mapas e representações | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/spatial/">Análise espacial</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/spatial/map/">Localização como atributo de suporte à decisão</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/cursos/spatial/map/">Construindo mapas e representações</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Construindo mapas e representações</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#packages">Packages</a>
+<ul>
+<li><a href="#uma-introdução-ao-package-tmap">Uma introdução ao package <code>tmap</code></a>
+<ul>
+<li><a href="#quick-tmap">Quick <code>tmap</code></a></li>
+<li><a href="#mapa-completo-por-meio-do-tmap">Mapa completo por meio do <code>tmap</code></a></li>
+</ul></li>
+<li><a href="#sistemas-de-coordenadas">Sistemas de coordenadas</a>
+<ul>
+<li><a href="#base-de-dados-epgs">Base de dados EPGS</a></li>
+<li><a href="#alterar-projeções">Alterar projeções</a></li>
+</ul></li>
+<li><a href="#como-salvar-meu-mapa">Como salvar meu mapa</a></li>
+<li><a href="#adicionando-mapa-de-contexto">Adicionando mapa de contexto</a></li>
+<li><a href="#visualização-de-fenômenos-sociais-no-espaço">Visualização de fenômenos sociais no espaço</a>
+<ul>
+<li><a href="#mapas-coropléticos">Mapas coropléticos</a></li>
+<li><a href="#mapas-de-pontos">Mapas de pontos</a></li>
+<li><a href="#representação-de-fluxos">Representação de fluxos</a></li>
+<li><a href="#mapas-de-calor">Mapas de calor</a></li>
+<li><a href="#cartogramas">Cartogramas</a></li>
+<li><a href="#símbolos-proporcionais">Símbolos proporcionais</a></li>
+</ul></li>
+<li><a href="#plotar-pontos-a-partir-de-coordenadas">Plotar pontos a partir de coordenadas</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="packages" class="section level1">
+<h1>Packages</h1>
+<pre class="r"><code>library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)</code></pre>
+<hr>
+<pre class="r"><code># carregar o dado
+data(&quot;georgia&quot;) 
+
+# converter o dado em sf
+georgia_sf &lt;- st_as_sf(georgia)
+class(georgia_sf)</code></pre>
+<pre><code>## [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
+<pre class="r"><code>georgia_sf # representa as dez primeiras feições</code></pre>
+<pre><code>## Simple feature collection with 159 features and 14 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
+## CRS:            +proj=longlat +ellps=WGS84
+## First 10 features:
+##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
+## 0 31.75339 -82.28558    15744     75.6     8.2  11.43  0.64   19.9    20.76
+## 1 31.29486 -82.87474     6213    100.0     6.4  11.77  1.58   26.0    26.86
+## 2 31.55678 -82.45115     9566     61.7     6.6  11.11  0.27   24.1    15.42
+## 3 31.33084 -84.45401     3615    100.0     9.4  13.17  0.11   24.8    51.67
+## 4 33.07193 -83.25085    39530     42.7    13.3   8.64  1.43   17.5    42.39
+## 5 34.35270 -83.50054    10308    100.0     6.4  11.37  0.34   15.1     3.49
+## 6 33.99347 -83.71181    29721     64.6     9.2  10.63  0.92   14.7    11.44
+## 7 34.23840 -84.83918    55911     75.2     9.0   9.66  0.82   10.7     9.21
+## 8 31.75940 -83.21976    16245     47.0     7.6  12.81  0.33   22.0    31.33
+## 9 31.27424 -83.23179    14153     66.2     7.5  11.98  1.19   19.3    11.62
+##          X       Y    ID     Name MedInc                       geometry
+## 0 941396.6 3521764 13001  Appling  32152 MULTIPOLYGON (((-82.2252 31...
+## 1 895553.0 3471916 13003 Atkinson  27657 MULTIPOLYGON (((-82.6293 31...
+## 2 930946.4 3502787 13005    Bacon  29342 MULTIPOLYGON (((-82.52171 3...
+## 3 745398.6 3474765 13007    Baker  29610 MULTIPOLYGON (((-84.1407 31...
+## 4 849431.3 3665553 13009  Baldwin  36414 MULTIPOLYGON (((-83.27423 3...
+## 5 819317.3 3807616 13011    Banks  41783 MULTIPOLYGON (((-83.39851 3...
+## 6 803747.1 3769623 13013   Barrow  49829 MULTIPOLYGON (((-83.53751 3...
+## 7 699011.5 3793408 13015   Bartow  47309 MULTIPOLYGON (((-84.6533 34...
+## 8 863020.8 3520432 13017 Ben Hill  28009 MULTIPOLYGON (((-83.17781 3...
+## 9 859915.8 3466377 13019  Berrien  33786 MULTIPOLYGON (((-83.1461 31...</code></pre>
+<div id="uma-introdução-ao-package-tmap" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Uma introdução ao package <code>tmap</code></h2>
+<p>O package <code>tmap</code> permite o uso de novas funcionalidades para gerar mapas e funções para extração de dados do Google Maps e do OpenStreetMap. O foco do package <code>tmap</code> é a construção de mapas temáticos. Podem ser considerados dados <code>sp</code> e <code>sf</code>. A gramática para construção dos mapas é similar àquela do package <code>ggplot</code>. Assim, a representação de dados espaciais por meio do <code>tmap</code> conta com a manipulação de cada elemento do mapa separadamente em diferentes camadas.
+Para limpar o workspace, digite:</p>
+<pre class="r"><code>rm(list=ls())</code></pre>
+<div id="quick-tmap" class="section level3">
+<h3>Quick <code>tmap</code></h3>
+<p>A função <code>qtm()</code> pode ser utilizada para composição de mapas de maneira expressa (quick). O código a seguir permite carregar o dado <code>georgia</code>, recriar o dado <code>georgia_sf</code> e gerar um mapa expresso.</p>
+<pre class="r"><code>data(&quot;georgia&quot;)
+ls()</code></pre>
+<pre><code>## [1] &quot;georgia&quot;       &quot;georgia.polys&quot; &quot;georgia2&quot;</code></pre>
+<p>Para criar o objeto <code>sf</code> <code>georgia_sf</code>, faça:</p>
+<pre class="r"><code>georgia_sf &lt;- st_as_sf(georgia)</code></pre>
+<p>Finalmente, crie o mapa expresso utilizando:</p>
+<pre class="r"><code>library(tmap)
+qtm(georgia, fill=&quot;red&quot;, style = &quot;natural&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>O uso do parâmetro <code>style</code> permite configurações rápidas de mapas por meio do package <code>tmap</code>. Explore a função <code>qtm</code> para entender os demais temas possíveis.</p>
+<p>O parâmetro <code>fill</code> pode ser utilizado para especificar uma cor ou a variável a ser mapeada.</p>
+<pre class="r"><code>qtm(georgia_sf, fill = &quot;MedInc&quot;, text =&quot;Name&quot;, text.size=0.5, format = &quot;World_wide&quot;, style = &quot;classic&quot;, text.root = 5, fill.title = &quot;Median Income&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="mapa-completo-por-meio-do-tmap" class="section level3">
+<h3>Mapa completo por meio do <code>tmap</code></h3>
+<p>Para gerar mapas completos por meio do package <code>tmap</code>, é necessário utilizar a função <code>tm_shape</code>acompanhada de uma outra função que especifique o precisa ser plotado. Antes de plotar, um objeto contendo a linha da divisa estadual da Georgia pode ser criada por meio da função <code>st_union()</code> do package <code>sf</code>. Uma alternativa para dados <code>sp</code> é função <code>gUnaryUnion()</code> do package <code>rgeos</code>, carregado juntamente com o package <code>GISTools</code>.</p>
+<pre class="r"><code># união das feições para composição do limite estadual
+g &lt;- st_union(georgia_sf)
+
+# plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill(&quot;tomato&quot;) +
+  tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Incluir alguns estilos:</p>
+<pre class="r"><code># plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill(&quot;tomato&quot;) +
+  tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;) +
+  tm_style(&quot;natural&quot;, bg.color = &quot;grey90&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Incluir limite estadual. Repare que a função <code>tm_shape</code> vai ser chamada novamente uma vez que outro objeto será incluído no mapa.</p>
+<pre class="r"><code>tm_shape(georgia_sf) + 
+  tm_fill(&quot;tomato&quot;) +
+  tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;) +
+  tm_style(&quot;natural&quot;, bg.color = &quot;grey90&quot;) +
+  tm_shape(g) + 
+  tm_borders(lwd=2) # lwd - line width - espessura da linha</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Incluindo todos os parâmetros juntos:</p>
+<pre class="r"><code>tm_shape(georgia_sf) + 
+  tm_fill(&quot;tomato&quot;) +
+  tm_borders(lty=&quot;dashed&quot;, col = &quot;gold&quot;) +
+  tm_style(&quot;natural&quot;, bg.color = &quot;grey90&quot;) +
+  tm_shape(g) + 
+  tm_borders(lwd=2) +
+  tm_layout(title = &quot;O estado da Georgia&quot;,
+            title.size = 1,
+            title.position = c(0.55, &quot;top&quot;))</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Experimente esses outros parâmetros da função <code>qtm</code>.</p>
+<pre class="r"><code>data(World, rivers, metro, land)
+
+# just the map
+qtm(World)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r"><code># choropleth
+qtm(World, fill = &quot;economy&quot;, format = &quot;World&quot;, style = &quot;col_blind&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<pre class="r"><code># choropleth with more specifications
+qtm(World, fill=&quot;HPI&quot;, fill.n = 9, fill.palette = &quot;div&quot;,
+    fill.title = &quot;Happy Planet Index&quot;, fill.id = &quot;name&quot;, 
+    style = &quot;gray&quot;, format = &quot;World&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<pre class="r"><code># Alternative to previous map - RECOMENDED
+tm_shape(World) +
+    tm_polygons(&quot;HPI&quot;, n = 9, palette = &quot;div&quot;,
+        title = &quot;Happy Planet Index&quot;, id = &quot;name&quot;) +
+    tm_style(&quot;gray&quot;) +
+    tm_format(&quot;World&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
+<pre class="r"><code># Bubble map
+qtm(World, borders = NULL) + 
+qtm(metro, symbols.size = &quot;pop2010&quot;, 
+    symbols.title.size= &quot;Metropolitan Areas&quot;, 
+    symbols.id= &quot;name&quot;,
+    format = &quot;World&quot;)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-5.png" width="672" /></p>
+<p>Para plotar dois mapas juntos com dados diferentes, experimente o seguinte código:</p>
+<pre class="r"><code>library(tmap)
+
+t1 &lt;- tm_shape(georgia_sf) +
+              tm_fill(&quot;coral&quot;) +
+              tm_borders() +
+              tm_layout(bg.color = &quot;grey85&quot;)
+
+t2 &lt;- tm_shape(georgia2) +
+              tm_fill(&quot;orange&quot;) +
+              tm_borders() +
+              tm_layout(asp=0.86, bg.color = &quot;grey95&quot;) #alinhar a segunda figura
+t1</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<pre class="r"><code>t2</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<p>Para especificar o layout da figura combinando os mapas:</p>
+<pre class="r"><code>library(grid)
+
+# abrir uma nova página de plotagem
+grid.newpage()
+
+# definir o layout
+pushViewport(viewport(layout = grid.layout(1,2)))
+
+#  Plotar usando o comando print
+print(t1, vp=viewport(layout.pos.col = 1, height = 5))
+print(t2, vp=viewport(layout.pos.col = 2, height = 5))</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+Repare que t1 é um objeto <code>sf</code> e t2 é um objeto <code>sp</code> e apresentam sistemas de referência diferentes.</p>
+<p>Para consultar os diferentes sistemas de projeção, verifique utilizando a função <code>crs</code>.</p>
+<pre class="r"><code>crs(georgia_sf)</code></pre>
+<pre><code>## Warning in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
+<pre><code>## Warning in showSRID(SRS_string, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition</code></pre>
+<pre><code>## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs</code></pre>
+<pre class="r"><code>crs(georgia2)</code></pre>
+<pre><code>## CRS arguments:
+##  +proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0.0
+## +y_0=0.0 +ellps=GRS80 +units=m +datum=NAD83 +no_defs +towgs84=0,0,0</code></pre>
+<p>Para nomear os atributos, verifique o data.frame do objeto <code>georgia_sf</code>. Utilize a função <code>names()</code> para ter acesso a uma lista de nomes de todos os atributos.</p>
+<pre class="r"><code>names(georgia_sf)</code></pre>
+<pre><code>##  [1] &quot;Latitude&quot; &quot;Longitud&quot; &quot;TotPop90&quot; &quot;PctRural&quot; &quot;PctBach&quot;  &quot;PctEld&quot;  
+##  [7] &quot;PctFB&quot;    &quot;PctPov&quot;   &quot;PctBlack&quot; &quot;X&quot;        &quot;Y&quot;        &quot;ID&quot;      
+## [13] &quot;Name&quot;     &quot;MedInc&quot;   &quot;geometry&quot;</code></pre>
+<pre class="r"><code># Construir um data frame com os nomes. 
+data.frame(georgia_sf)[,13]</code></pre>
+<pre><code>##   [1] &quot;Appling&quot;       &quot;Atkinson&quot;      &quot;Bacon&quot;         &quot;Baker&quot;        
+##   [5] &quot;Baldwin&quot;       &quot;Banks&quot;         &quot;Barrow&quot;        &quot;Bartow&quot;       
+##   [9] &quot;Ben Hill&quot;      &quot;Berrien&quot;       &quot;Bibb&quot;          &quot;Bleckley&quot;     
+##  [13] &quot;Brantley&quot;      &quot;Brooks&quot;        &quot;Bryan&quot;         &quot;Bulloch&quot;      
+##  [17] &quot;Burke&quot;         &quot;Butts&quot;         &quot;Calhoun&quot;       &quot;Camden&quot;       
+##  [21] &quot;Candler&quot;       &quot;Carroll&quot;       &quot;Catoosa&quot;       &quot;Charlton&quot;     
+##  [25] &quot;Chatham&quot;       &quot;Chattahoochee&quot; &quot;Chattooga&quot;     &quot;Cherokee&quot;     
+##  [29] &quot;Clarke&quot;        &quot;Clay&quot;          &quot;Clayton&quot;       &quot;Clinch&quot;       
+##  [33] &quot;Cobb&quot;          &quot;Coffee&quot;        &quot;Colquitt&quot;      &quot;Columbia&quot;     
+##  [37] &quot;Cook&quot;          &quot;Coweta&quot;        &quot;Crawford&quot;      &quot;Crisp&quot;        
+##  [41] &quot;Dade&quot;          &quot;Dawson&quot;        &quot;Decatur&quot;       &quot;DeKalb&quot;       
+##  [45] &quot;Dodge&quot;         &quot;Dooly&quot;         &quot;Dougherty&quot;     &quot;Douglas&quot;      
+##  [49] &quot;Early&quot;         &quot;Echols&quot;        &quot;Effingham&quot;     &quot;Elbert&quot;       
+##  [53] &quot;Emanuel&quot;       &quot;Evans&quot;         &quot;Fannin&quot;        &quot;Fayette&quot;      
+##  [57] &quot;Floyd&quot;         &quot;Forsyth&quot;       &quot;Franklin&quot;      &quot;Fulton&quot;       
+##  [61] &quot;Gilmer&quot;        &quot;Glascock&quot;      &quot;Glynn&quot;         &quot;Gordon&quot;       
+##  [65] &quot;Grady&quot;         &quot;Greene&quot;        &quot;Gwinnett&quot;      &quot;Habersham&quot;    
+##  [69] &quot;Hall&quot;          &quot;Hancock&quot;       &quot;Haralson&quot;      &quot;Harris&quot;       
+##  [73] &quot;Hart&quot;          &quot;Heard&quot;         &quot;Henry&quot;         &quot;Houston&quot;      
+##  [77] &quot;Irwin&quot;         &quot;Jackson&quot;       &quot;Jasper&quot;        &quot;Jeff Davis&quot;   
+##  [81] &quot;Jefferson&quot;     &quot;Jenkins&quot;       &quot;Johnson&quot;       &quot;Jones&quot;        
+##  [85] &quot;Lamar&quot;         &quot;Lanier&quot;        &quot;Laurens&quot;       &quot;Lee&quot;          
+##  [89] &quot;Liberty&quot;       &quot;Lincoln&quot;       &quot;Long&quot;          &quot;Lowndes&quot;      
+##  [93] &quot;Lumpkin&quot;       &quot;McDuffie&quot;      &quot;McIntosh&quot;      &quot;Macon&quot;        
+##  [97] &quot;Madison&quot;       &quot;Marion&quot;        &quot;Meriwether&quot;    &quot;Miller&quot;       
+## [101] &quot;Mitchell&quot;      &quot;Monroe&quot;        &quot;Montgomery&quot;    &quot;Morgan&quot;       
+## [105] &quot;Murray&quot;        &quot;Muscogee&quot;      &quot;Newton&quot;        &quot;Oconee&quot;       
+## [109] &quot;Oglethorpe&quot;    &quot;Paulding&quot;      &quot;Peach&quot;         &quot;Pickens&quot;      
+## [113] &quot;Pierce&quot;        &quot;Pike&quot;          &quot;Polk&quot;          &quot;Pulaski&quot;      
+## [117] &quot;Putnam&quot;        &quot;Quitman&quot;       &quot;Rabun&quot;         &quot;Randolph&quot;     
+## [121] &quot;Richmond&quot;      &quot;Rockdale&quot;      &quot;Schley&quot;        &quot;Screven&quot;      
+## [125] &quot;Seminole&quot;      &quot;Spalding&quot;      &quot;Stephens&quot;      &quot;Stewart&quot;      
+## [129] &quot;Sumter&quot;        &quot;Talbot&quot;        &quot;Taliaferro&quot;    &quot;Tattnall&quot;     
+## [133] &quot;Taylor&quot;        &quot;Telfair&quot;       &quot;Terrell&quot;       &quot;Thomas&quot;       
+## [137] &quot;Tift&quot;          &quot;Toombs&quot;        &quot;Towns&quot;         &quot;Treutlen&quot;     
+## [141] &quot;Troup&quot;         &quot;Turner&quot;        &quot;Twiggs&quot;        &quot;Union&quot;        
+## [145] &quot;Upson&quot;         &quot;Walker&quot;        &quot;Walton&quot;        &quot;Ware&quot;         
+## [149] &quot;Warren&quot;        &quot;Washington&quot;    &quot;Wayne&quot;         &quot;Webster&quot;      
+## [153] &quot;Wheeler&quot;       &quot;White&quot;         &quot;Whitfield&quot;     &quot;Wilcox&quot;       
+## [157] &quot;Wilkes&quot;        &quot;Wilkinson&quot;     &quot;Worth&quot;</code></pre>
+<p>Para incluir os nomes, faça:</p>
+<pre class="r"><code>tm_shape(georgia_sf) +
+              tm_fill(&quot;white&quot;) +
+              tm_borders() +
+              tm_text(&quot;Name&quot;, size=0.3) +
+              tm_layout(frame = FALSE)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+Para criar um subconjunto dos dados, é possível fazer uma seleção criando uma camada com o subconjunto por meio dos índices:</p>
+<pre class="r"><code>index &lt;- c(81, 82, 83, 150, 62, 53, 21, 16, 124, 121, 17)
+georgia_sub &lt;- georgia_sf[index, ]</code></pre>
+<p>Para sobrepor os mapas com as duas camadas, faça:</p>
+<pre class="r"><code>tm_shape(georgia_sf) +
+              tm_fill(&quot;white&quot;) +
+              tm_borders(&quot;grey&quot;, lwd=0.5) +
+tm_shape(g) +
+              tm_borders(lwd=2) +
+tm_shape(georgia_sub) +
+              tm_fill(&quot;lightblue&quot;) +
+              tm_borders() +
+              tm_layout(frame = TRUE, title = &quot;Georgia com subconjunto&quot;, title.size=1, title.position = c(0.02, &quot;bottom&quot;))</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<hr />
+</div>
+</div>
+<div id="sistemas-de-coordenadas" class="section level2">
+<h2>Sistemas de coordenadas</h2>
+<p>Verificar qual o sistema de referência em uso de dados espaciais vetoriais</p>
+<pre class="r"><code>library(sf)
+st_crs(georgia_sf)</code></pre>
+<pre><code>## Coordinate Reference System:
+##   User input:  +proj=longlat +ellps=WGS84 
+##   wkt:
+## GEOGCRS[&quot;unknown&quot;,
+##     DATUM[&quot;Unknown based on WGS84 ellipsoid&quot;,
+##         ELLIPSOID[&quot;WGS 84&quot;,6378137,298.257223563,
+##             LENGTHUNIT[&quot;metre&quot;,1],
+##             ID[&quot;EPSG&quot;,7030]]],
+##     PRIMEM[&quot;Greenwich&quot;,0,
+##         ANGLEUNIT[&quot;degree&quot;,0.0174532925199433],
+##         ID[&quot;EPSG&quot;,8901]],
+##     CS[ellipsoidal,2],
+##         AXIS[&quot;longitude&quot;,east,
+##             ORDER[1],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433,
+##                 ID[&quot;EPSG&quot;,9122]]],
+##         AXIS[&quot;latitude&quot;,north,
+##             ORDER[2],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433,
+##                 ID[&quot;EPSG&quot;,9122]]]]</code></pre>
+<p>Verificar qual o sistema de referência em uso em dados espaciais matriciais</p>
+<pre class="r"><code>library(raster)
+# crs(elev.r)</code></pre>
+<div id="sintaxe-proj4" class="section level4">
+<h4>Sintaxe <code>Proj4</code></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Parâmetro</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>+a</td>
+<td>Semimajor radius of the ellipsoid axis</td>
+</tr>
+<tr class="even">
+<td>+b</td>
+<td>Semiminor radius of the ellipsoid axis</td>
+</tr>
+<tr class="odd">
+<td>+datum</td>
+<td>Datum name</td>
+</tr>
+<tr class="even">
+<td>+ellps</td>
+<td>Ellipsoid name</td>
+</tr>
+<tr class="odd">
+<td>+lat_0</td>
+<td>Latitude of origin</td>
+</tr>
+<tr class="even">
+<td>+lat_1</td>
+<td>Latitude of first standard parallel</td>
+</tr>
+<tr class="odd">
+<td>+lat_2</td>
+<td>Latitude of second standard parallel</td>
+</tr>
+<tr class="even">
+<td>+lat_ts</td>
+<td>Latitude of true scale</td>
+</tr>
+<tr class="odd">
+<td>+lon_0</td>
+<td>Central meridian</td>
+</tr>
+<tr class="even">
+<td>+over</td>
+<td>Allow longitude output outside -180 to 180 range, disables wrapping</td>
+</tr>
+<tr class="odd">
+<td>+proj</td>
+<td>Projection name</td>
+</tr>
+<tr class="even">
+<td>+south</td>
+<td>Denotes southern hemisphere UTM zone</td>
+</tr>
+<tr class="odd">
+<td>+units</td>
+<td>meters, US survey feet, etc.</td>
+</tr>
+<tr class="even">
+<td>+x_0</td>
+<td>False easting</td>
+</tr>
+<tr class="odd">
+<td>+y_0</td>
+<td>False northing</td>
+</tr>
+<tr class="even">
+<td>+zone</td>
+<td>UTM zone</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://proj.org/operations/projections/">Projeções disponíveis no Proj4</a></p>
+</div>
+<div id="base-de-dados-epgs" class="section level3">
+<h3>Base de dados EPGS</h3>
+<p><a href="https://spatialreference.org/ref/epsg/">Spatial Reference EPSG</a></p>
+</div>
+<div id="alterar-projeções" class="section level3">
+<h3>Alterar projeções</h3>
+<pre class="r"><code>georgia_sf_crs &lt;- st_transform(georgia_sf, crs = 3035)
+
+st_crs(georgia_sf_crs)</code></pre>
+<hr />
+</div>
+</div>
+<div id="como-salvar-meu-mapa" class="section level2">
+<h2>Como salvar meu mapa</h2>
+<pre class="r"><code>data(newhaven)
+
+pdf(file = &#39;map.pdf&#39;) # salva o mapa como pdf.
+
+tm_shape(blocks) +
+    tm_borders() +
+tm_shape(roads) +
+  tm_lines(col = &quot;red&quot;) +
+# embellish the map
+tm_scale_bar(width = 0.22) +
+tm_compass(position = c(0.8, 0.07)) +
+tm_layout(frame = F, title = &quot;New Haven, CT&quot;, 
+            title.size = 1.5, 
+            title.position = c(0.55, &quot;top&quot;), 
+            legend.outside = T) 
+
+dev.off() # desconectar o arquivo gerado do ambiente de trabalho. </code></pre>
+<p>É possível salvar por meio de outros formatos.</p>
+<p>pdf()<br />
+png()<br />
+tiff()</p>
+<hr />
+</div>
+<div id="adicionando-mapa-de-contexto" class="section level2">
+<h2>Adicionando mapa de contexto</h2>
+<p>Em algumas situações um mapa de fundo é interessante. Há várias maneiras de fazer essa inclusão. Pelo <code>OpenStreetMap</code>, a ideia é fazer a definição da área a ser representada, fazer o download e plotar o mapa de fundo. Depois acrescentar o mapa em desenvolvimento.</p>
+<pre class="r"><code>library(OpenStreetMap)
+# define upper left, lower right corners 
+georgia.sub &lt;- georgia[index,]
+ul &lt;- as.vector(cbind(bbox(georgia.sub)[2,2], 
+    bbox(georgia.sub)[1,1]))
+lr &lt;- as.vector(cbind(bbox(georgia.sub)[2,1], 
+    bbox(georgia.sub)[1,2]))
+# download the map tile
+MyMap &lt;- openmap(ul,lr)
+# now plot the layer and the backdrop
+par(mar = c(0,0,0,0))
+plot(MyMap, removeMargin=FALSE)
+plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)</code></pre>
+<p><img src="/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+</div>
+<div id="visualização-de-fenômenos-sociais-no-espaço" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Visualização de fenômenos sociais no espaço</h2>
+<div id="mapas-coropléticos" class="section level3">
+<h3>Mapas coropléticos</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/coropl.png" width="50%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="mapas-de-pontos" class="section level3">
+<h3>Mapas de pontos</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/pontos.png" width="50%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="representação-de-fluxos" class="section level3">
+<h3>Representação de fluxos</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/fluxos.png" width="50%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="mapas-de-calor" class="section level3">
+<h3>Mapas de calor</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/calor.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="cartogramas" class="section level3">
+<h3>Cartogramas</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/1_cartograma.png" width="50%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="símbolos-proporcionais" class="section level3">
+<h3>Símbolos proporcionais</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/pontos_propo.png" width="55%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+</div>
+<div id="plotar-pontos-a-partir-de-coordenadas" class="section level2">
+<h2>Plotar pontos a partir de coordenadas</h2>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 5, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2021 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.d44a21cce25b8eb2cd3c8404affc0855.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

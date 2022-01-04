@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Dicionário de dados do Twitter Data dictionary
+Sentimentos no Twitter para CSV O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site Tweet Sentiment to CSV. São 100 tweets sobre o termos pesquisado.
+Links interessantes sobre esse tópico são:  Como investigar tweets com rtweet r R by Abraji Intro to rtweet: Collecting Twitter Data by Michael W. Kearney Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer Github Mariana Cartaxo Text Mining example codes (tweets) Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde Github Judite Cypreste Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia A Guide to Mining and Analysing Tweets with R by Céline Van den Rul Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul Análise de Conteúdo (twitteR) by Nelson Crepalde Twitter sentiment analysis  Conteúdo adicional Text Mining and Analytics, University of Illinois at Urbana-Champaign: https://www.">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.e55ba78edbbd6fe458261591367a7d35.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/">
+  <meta property="og:title" content="Mineração de Texto | Profa. Renata Oliveira">
+  <meta property="og:description" content="Dicionário de dados do Twitter Data dictionary
+Sentimentos no Twitter para CSV O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site Tweet Sentiment to CSV. São 100 tweets sobre o termos pesquisado.
+Links interessantes sobre esse tópico são:  Como investigar tweets com rtweet r R by Abraji Intro to rtweet: Collecting Twitter Data by Michael W. Kearney Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer Github Mariana Cartaxo Text Mining example codes (tweets) Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde Github Judite Cypreste Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia A Guide to Mining and Analysing Tweets with R by Céline Van den Rul Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul Análise de Conteúdo (twitteR) by Nelson Crepalde Twitter sentiment analysis  Conteúdo adicional Text Mining and Analytics, University of Illinois at Urbana-Champaign: https://www."><meta property="og:image" content="https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/featured.jpg">
+  <meta property="twitter:image" content="https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/featured.jpg"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2020-12-27T13:08:19-03:00">
+  
+  <meta property="article:modified_time" content="2020-12-27T13:08:19-03:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Mineração de Texto | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/2020-12-27-mineracao-de-texto/featured_hufd5a5daf51c94a703fd9fce38bf49a72_1445086_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Photo by Taisiia Shestopal</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Mineração de Texto</h1>
+
+      
+
+      
+
+
+
+<meta content="2020-12-27 13:08:19 -0300 -03" itemprop="datePublished">
+<meta content="2020-12-27 13:08:19 -0300 -03" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Dec 27, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 minutos de leitura
+  </span>
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/category/r/">R</a>, <a href="/category/analise-de-dados/">Análise de dados</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/&amp;text=Minera%c3%a7%c3%a3o%20de%20Texto" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/&amp;t=Minera%c3%a7%c3%a3o%20de%20Texto" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Minera%c3%a7%c3%a3o%20de%20Texto&amp;body=https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/&amp;title=Minera%c3%a7%c3%a3o%20de%20Texto" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Minera%c3%a7%c3%a3o%20de%20Texto%20https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2 id="dicionário-de-dados-do-twitter">Dicionário de dados do Twitter</h2>
+<p><a href="https://developer.twitter.com/en/docs/twitter-api/data-dictionary/introduction">Data dictionary</a></p>
+<h2 id="sentimentos-no-twitter-para-csv">Sentimentos no Twitter para CSV</h2>
+<p>O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site <a href="https://twitter-sentiment-csv.herokuapp.com/">Tweet Sentiment to CSV</a>. São 100 tweets sobre o termos pesquisado.</p>
+<h2 id="links-interessantes-sobre-esse-tópico-são">Links interessantes sobre esse tópico são:</h2>
+<ul>
+<li><a href="https://www.abraji.org.br/help-desk/como-investigar-tweets-com-rtweet-e-r">Como investigar tweets com rtweet r R by Abraji</a></li>
+<li><a href="https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html">Intro to rtweet: Collecting Twitter Data by Michael W. Kearney</a></li>
+<li><a href="https://paulovasconcellos.com.br/aprenda-a-fazer-um-analisador-de-sentimentos-do-twitter-em-python-3979454f2d0d">Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos</a></li>
+<li><a href="https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/use-twitter-api-r/">Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer</a></li>
+<li><a href="https://github.com/marianacrtx/tweets">Github Mariana Cartaxo</a></li>
+<li><a href="https://rstudio-pubs-static.s3.amazonaws.com/66739_c4422a1761bd4ee0b0bb8821d7780e12.html">Text Mining example codes (tweets)</a></li>
+<li><a href="https://neylsoncrepalde.github.io/2016-11-18-ocupacao-na-ufmg-e-interevencao-policial/">Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde</a></li>
+<li><a href="https://github.com/juditecypreste/Aprenda-Python-analisando-os-tuites-do-nosso-presidente">Github Judite Cypreste</a></li>
+<li><a href="https://medium.com/@arthuremanuel.carosia/an%C3%A1lise-de-sentimentos-no-twitter-sobre-o-governo-bolsonaro-15396a22e757">Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia</a></li>
+<li><a href="https://towardsdatascience.com/a-guide-to-mining-and-analysing-tweets-with-r-2f56818fdd16">A Guide to Mining and Analysing Tweets with R by Céline Van den Rul</a></li>
+<li><a href="https://medium.com/@celine.vdr/mining-tweets-of-us-candidates-on-mass-shootings-before-and-after-the-2018-midterms-90cc18ff652a">Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul</a></li>
+<li><a href="https://neylsoncrepalde.github.io/2016-03-18-analise-de-conteudo-twitter/">Análise de Conteúdo (twitteR) by Nelson Crepalde</a></li>
+<li><a href="https://github.com/vineetdhanawat/twitter-sentiment-analysis">Twitter sentiment analysis</a></li>
+</ul>
+<h2 id="conteúdo-adicional">Conteúdo adicional</h2>
+<p>Text Mining and Analytics, University of Illinois at Urbana-Champaign: <a href="https://www.coursera.org/learn/text-mining/home/info">https://www.coursera.org/learn/text-mining/home/info</a>.</p>
+<p>Text Mining with R: A Tidy Approach, Julia Silge and David Robinson: <a href="http://tidytextmining.com/">http://tidytextmining.com/</a>.</p>
+<p>Intro to Text mining using R, Ted Kwartler: <a href="https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/">https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/</a>.</p>
+<p>Intro to Text Mining Using tm, openNLP and topicmodels, Ted Kwartler: <a href="http://www.slideshare.net/odsc/tedkwartlerworkshop1">http://www.slideshare.net/odsc/tedkwartlerworkshop1</a>.</p>
+<p>Text Mining: An Overview, David Madigan: <a href="http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf">http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf</a>.</p>
+<p>Text-Mining Tutorial, Marko Grobelnik e Dunja Mladenic: <a href="http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf">http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf</a>.</p>
+<p>Text mining, Ian H. Witten: <a href="http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf">http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf</a>.</p>
+<p>Text Mining: Applications and Theory, Michael W. Berry e Jacob Kogan: <a href="http://www.mohamedrabeea.com/books/book1_1165.pdf">http://www.mohamedrabeea.com/books/book1_1165.pdf</a>.</p>
+<p>Web Search and Text analysis: <a href="https://www.williamwebber.com/research/teaching/comp90042/2014s1/">https://www.williamwebber.com/research/teaching/comp90042/2014s1/</a>.</p>
+<p>CS 6501: Text Mining: <a href="http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/">http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/</a>.
+Speech and Language Processing: <a href="https://web.stanford.edu/~jurafsky/slp3/">https://web.stanford.edu/~jurafsky/slp3/</a>.</p>
+<p>CETEMPúblico: <a href="http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO">http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO</a>.</p>
+<p>An Introduction to Text Mining: <a href="http://port.sas.ac.uk/course/view.php?id=53">http://port.sas.ac.uk/course/view.php?id=53</a>.</p>
+<p>Similarity Measures for Text Document Clustering.
+Sobre a construção de um léxico da afetividade para o processamento computacional do português.
+Evaluating CETEMPúblico, a free resource for Portuguese.
+Working on Sentiment Analysis on Twitter with Portuguese Language.
+Sentiment Analysis on Twitter Data for Portuguese Language.
+Sentiment Analysis Using R Language.
+Sentiment analysis with machine learning in R.
+SentimentAnalysis package.</p>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/r/">R</a>
+  
+  <a class="badge badge-light" href="/tag/analise-textual/">Análise textual</a>
+  
+  <a class="badge badge-light" href="/tag/twitter/">Twitter</a>
+  
+  <a class="badge badge-light" href="/tag/manipulacao-de-dados/">Manipulação de dados</a>
+  
+  <a class="badge badge-light" href="/tag/limpeza-de-dados/">Limpeza de dados</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/author/avatar_hu61bba55111ab04077a4b331e478cb9e0_230315_250x250_fill_lanczos_center_3.png" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://retaoliveira.github.io/">Renata Oliveira</a></h5>
+      <h6 class="card-subtitle">Professor at the Department of Applied Social Sciences</h6>
+      <p class="card-text" itemprop="description">My research interests include spatial analysis, city logistics and accessibility.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/retaoliveira" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com.br/citations?user=V6EX45EAAAAJ&amp;hl=pt-BR" target="_blank" rel="noopener">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/retaoliveira" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.linkedin.com/in/renata-oliveira-574471/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/">Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</a></li>
+          
+          <li><a href="/post/2020-12-26-blogs-sobre-r-em-portugues/">Blogs sobre R em Português</a></li>
+          
+          <li><a href="/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/">Packages interessantes do R para Análise de dados e espacial</a></li>
+          
+          <li><a href="/post/2020-12-26-r-para-analise-espacial/">R Para Análise Espacial</a></li>
+          
+          <li><a href="/post/como-deixar-o-r-com-a-minha-cara/">Como deixar o R com a minha cara</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/post/2020-12-27-acesso-a-api-do-twitter/" rel="next">Acesso à API do Twitter</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/post/e-books-sobre-r/" rel="prev">E-books sobre R</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.d44a21cce25b8eb2cd3c8404affc0855.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2021 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

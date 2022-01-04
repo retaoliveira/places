@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manipulação de dados on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/manipulacao-de-dados/</link>
+    <description>Recent content in Manipulação de dados on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sun, 27 Dec 2020 13:08:19 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/manipulacao-de-dados/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mineração de Texto</title>
+      <link>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</link>
+      <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</guid>
+      <description>&lt;h2 id=&#34;dicionário-de-dados-do-twitter&#34;&gt;Dicionário de dados do Twitter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.twitter.com/en/docs/twitter-api/data-dictionary/introduction&#34;&gt;Data dictionary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sentimentos-no-twitter-para-csv&#34;&gt;Sentimentos no Twitter para CSV&lt;/h2&gt;
+&lt;p&gt;O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site &lt;a href=&#34;https://twitter-sentiment-csv.herokuapp.com/&#34;&gt;Tweet Sentiment to CSV&lt;/a&gt;. São 100 tweets sobre o termos pesquisado.&lt;/p&gt;
+&lt;h2 id=&#34;links-interessantes-sobre-esse-tópico-são&#34;&gt;Links interessantes sobre esse tópico são:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.abraji.org.br/help-desk/como-investigar-tweets-com-rtweet-e-r&#34;&gt;Como investigar tweets com rtweet r R by Abraji&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html&#34;&gt;Intro to rtweet: Collecting Twitter Data by Michael W. Kearney&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://paulovasconcellos.com.br/aprenda-a-fazer-um-analisador-de-sentimentos-do-twitter-em-python-3979454f2d0d&#34;&gt;Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/use-twitter-api-r/&#34;&gt;Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/marianacrtx/tweets&#34;&gt;Github Mariana Cartaxo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio-pubs-static.s3.amazonaws.com/66739_c4422a1761bd4ee0b0bb8821d7780e12.html&#34;&gt;Text Mining example codes (tweets)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-11-18-ocupacao-na-ufmg-e-interevencao-policial/&#34;&gt;Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/juditecypreste/Aprenda-Python-analisando-os-tuites-do-nosso-presidente&#34;&gt;Github Judite Cypreste&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@arthuremanuel.carosia/an%C3%A1lise-de-sentimentos-no-twitter-sobre-o-governo-bolsonaro-15396a22e757&#34;&gt;Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/a-guide-to-mining-and-analysing-tweets-with-r-2f56818fdd16&#34;&gt;A Guide to Mining and Analysing Tweets with R by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@celine.vdr/mining-tweets-of-us-candidates-on-mass-shootings-before-and-after-the-2018-midterms-90cc18ff652a&#34;&gt;Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-03-18-analise-de-conteudo-twitter/&#34;&gt;Análise de Conteúdo (twitteR) by Nelson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vineetdhanawat/twitter-sentiment-analysis&#34;&gt;Twitter sentiment analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conteúdo-adicional&#34;&gt;Conteúdo adicional&lt;/h2&gt;
+&lt;p&gt;Text Mining and Analytics, University of Illinois at Urbana-Champaign: &lt;a href=&#34;https://www.coursera.org/learn/text-mining/home/info&#34;&gt;https://www.coursera.org/learn/text-mining/home/info&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining with R: A Tidy Approach, Julia Silge and David Robinson: &lt;a href=&#34;http://tidytextmining.com/&#34;&gt;http://tidytextmining.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text mining using R, Ted Kwartler: &lt;a href=&#34;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&#34;&gt;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text Mining Using tm, openNLP and topicmodels, Ted Kwartler: &lt;a href=&#34;http://www.slideshare.net/odsc/tedkwartlerworkshop1&#34;&gt;http://www.slideshare.net/odsc/tedkwartlerworkshop1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: An Overview, David Madigan: &lt;a href=&#34;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&#34;&gt;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text-Mining Tutorial, Marko Grobelnik e Dunja Mladenic: &lt;a href=&#34;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&#34;&gt;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text mining, Ian H. Witten: &lt;a href=&#34;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&#34;&gt;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: Applications and Theory, Michael W. Berry e Jacob Kogan: &lt;a href=&#34;http://www.mohamedrabeea.com/books/book1_1165.pdf&#34;&gt;http://www.mohamedrabeea.com/books/book1_1165.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Web Search and Text analysis: &lt;a href=&#34;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&#34;&gt;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CS 6501: Text Mining: &lt;a href=&#34;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&#34;&gt;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&lt;/a&gt;.
+Speech and Language Processing: &lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34;&gt;https://web.stanford.edu/~jurafsky/slp3/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CETEMPúblico: &lt;a href=&#34;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&#34;&gt;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An Introduction to Text Mining: &lt;a href=&#34;http://port.sas.ac.uk/course/view.php?id=53&#34;&gt;http://port.sas.ac.uk/course/view.php?id=53&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarity Measures for Text Document Clustering.
+Sobre a construção de um léxico da afetividade para o processamento computacional do português.
+Evaluating CETEMPúblico, a free resource for Portuguese.
+Working on Sentiment Analysis on Twitter with Portuguese Language.
+Sentiment Analysis on Twitter Data for Portuguese Language.
+Sentiment Analysis Using R Language.
+Sentiment analysis with machine learning in R.
+SentimentAnalysis package.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

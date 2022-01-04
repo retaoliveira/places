@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="DefiniçõesVocabulário básico para uso do GitHub:Como operacionalizar?DefiniçõesGit é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, Git não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer “alguma besteira”, você pode voltar para a última versão salva.">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/cursos/intro_r/git_r/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.e55ba78edbbd6fe458261591367a7d35.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://retaoliveira.github.io/cursos/intro_r/git_r/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://retaoliveira.github.io/cursos/intro_r/git_r/">
+  <meta property="og:title" content="Git e Github | Profa. Renata Oliveira">
+  <meta property="og:description" content="DefiniçõesVocabulário básico para uso do GitHub:Como operacionalizar?DefiniçõesGit é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, Git não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer “alguma besteira”, você pode voltar para a última versão salva."><meta property="og:image" content="https://retaoliveira.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://retaoliveira.github.io/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Git e Github | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/">R como instrumentos para a análise de dados</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/install/">1 - Análise de dados para gestão</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/install/">Instalação de R, RStudio e Git</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_dataana/">Introdução à Análise de Dados</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_r/">Conhecendo o R</a>
+      </li>
+      
+      <li class="active">
+        <a href="/cursos/intro_r/git_r/">Git e Github</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/swirl/">Como acessar o tutorial da disciplina no swirl</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/intro_rmarkdown/">2 - Documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/intro_rmarkdown/">Introdução ao RMarkdown</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/abrindo_dados/">3 - Estrutura de dados no R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/abrindo_dados/">Abrindo dados no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/estrutura_dados/">Tipos de dados, objetos e operadores no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/tidyverse/">Overview - Tidyverse</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/ggplot/">4 - Estatística descritiva e mineração de dados</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/ggplot/">Visualização de dados</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/estatistica/">Introdução à estatística descritiva</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/twitter/">6 - Análise textual</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/twitter/">Como coletar, manipular e representar dados de Tweets</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/reprodutibility/">7 - Tópico avançado em documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/reprodutibility/">Documentos parametrizados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/mkt_seg/">8 - Segmentação de mercado</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/mkt_seg/">Segmentação de mercado</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Git e Github</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#definições">Definições</a></li>
+<li><a href="#vocabulário-básico-para-uso-do-github">Vocabulário básico para uso do <code>GitHub</code>:</a></li>
+<li><a href="#como-operacionalizar">Como operacionalizar?</a></li>
+</ul>
+</div>
+
+<div id="definições" class="section level2">
+<h2>Definições</h2>
+<p><code>Git</code> é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, <code>Git</code> não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer “alguma besteira”, você pode voltar para a última versão salva. É como chegar a um “ponto de salvamento” em um videogame no qual você pode voltar se seu personagem morrer.</p>
+<p><code>GitHub</code> é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.</p>
+</div>
+<div id="vocabulário-básico-para-uso-do-github" class="section level2">
+<h2>Vocabulário básico para uso do <code>GitHub</code>:</h2>
+<ul>
+<li><p><code>Repositório</code>: Quando você faz uma conta no <code>Github</code>, a primeira coisa que você vai querer fazer é criar um repositório (ou repo). Este é o lugar para armazenar todos os seus arquivos para um determinado projeto.</p></li>
+<li><p><code>Fork:</code> Digamos que você realmente gosta do projeto de outra pessoa no <code>GitHub</code> e você gostaria de fazer uma cópia dele em sua conta para ajustar como você quiser? Bem, esse processo é chamado de <code>forking</code>. Para fazer isso, encontre um reporte que você gosta e clique no botão <code>fork</code> no canto direito.</p></li>
+<li><p><code>Branch</code>: Esta é uma “versão paralela” de um projeto que você pode ajustar sem impactar o projeto original.</p></li>
+<li><p><code>Remote</code>: A cópia de seus arquivos que residem no <code>GitHub.com</code>. É o endereço “destinatário” do seu projeto na plataforma online.</p></li>
+<li><p><code>Local:</code> A cópia de seus arquivos que residem em seu computador. É um espelho do repositório remoto.</p></li>
+<li><p><code>Commit</code>: Uma alteração em um arquivo, geralmente apresentada com uma mensagem sua para indicar o que foi alterado.</p></li>
+<li><p><code>Push</code>: Uma vez que você realize mudanças em seus arquivos locais, você quer enviá-las (ou empurrá-las) para seu repositório remoto, tornando-as disponíveis para outros.</p></li>
+<li><p><code>Pull</code>: Se várias pessoas estiverem trabalhando em seu repositório remoto, elas podem ter feito uma mudança que não está refletida em sua versão local. Você pode <code>puxar</code> a versão mais nova para o seu computador para trabalhar nela.</p></li>
+</ul>
+</div>
+<div id="como-operacionalizar" class="section level2">
+<h2>Como operacionalizar?</h2>
+<p>Vá ao site do <a href="Github.com">Github.com</a> e crie uma conta gratuita. Faça seu login.
+Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.</p>
+<p>Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios <code>local</code>e <code>remoto</code>. O próprio <code>Github</code> tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o <a href="https://www.gitkraken.com/">GitKraken</a>.</p>
+<p>Ainda tenho que me acostumar a utilizar o <code>RStudio</code> para gerenciar versão no <code>Github</code>. Sim, é possível. Mas até agora achei que o <code>GitKraken</code> é mais rápido e eficiente.</p>
+<hr />
+<p>Créditos</p>
+<p><a href="https://amber.rbind.io/2016/12/19/website/" class="uri">https://amber.rbind.io/2016/12/19/website/</a></p>
+<hr />
+<p>Fonte interessante: <a href="https://happygitwithr.com/">Happy Git with R</a></p>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/cursos/intro_r/intro_r/" rel="next">Conhecendo o R</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/cursos/intro_r/intro_dataana/" rel="prev">Introdução à Análise de Dados</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 5, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2021 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.d44a21cce25b8eb2cd3c8404affc0855.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

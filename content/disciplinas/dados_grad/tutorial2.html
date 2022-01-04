@@ -1,0 +1,86 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 13
+title: Tutorial 2
+weight: 20
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+  <link rel="stylesheet" href="D:/assets/css/custom.css" type="text/css" />
+
+
+<div id="diretrizes-gerais" class="section level2">
+<h2>Diretrizes gerais:</h2>
+<ol style="list-style-type: decimal">
+<li><p>Baixe o arquivo e abra no RStudio. <a href="https://www.dropbox.com/s/027ibiwzsfz128v/tutorial2.Rmd?dl=0">Link</a></p></li>
+<li><p>Execute as operações assinaladas nos exercícios a seguir.</p></li>
+<li><p>Salve o .Rmd e submeta-o por meio desta tarefa.</p></li>
+</ol>
+<blockquote>
+<p>Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (). O R trabalha com barras normais (/) para endereçamento.</p>
+</blockquote>
+</div>
+<div id="operações-matemáticas-e-vetores" class="section level1">
+<h1>Operações matemáticas e vetores</h1>
+<div id="exercícios" class="section level2">
+<h2>Exercícios:</h2>
+<p><strong>Questão 1:</strong></p>
+<p>Qual é a classe dos vetores abaixo? Imprima o vetor com <em>print</em> e tente advinhar. Use a função <em>class</em> para descobrir a resposta.</p>
+<pre class="r"><code>v1 &lt;- c(1, 2, TRUE, 4)
+v2 &lt;- c(&quot;T&quot;, &quot;TRUE&quot;, &quot;FALSE&quot;, &quot;T&quot;)
+v3 &lt;- c(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;)
+v4 &lt;- c(1, &quot;4&quot;, 4, 1)
+v5 &lt;- c(1, 2, &quot;feijao com arroz&quot;)
+v6 &lt;- c(&quot;Beatriz&quot;, &quot;Pedro&quot;, TRUE)
+v7 &lt;- c(T, T, F, T, F, F, 42)</code></pre>
+<p>Você consegue identificar as regras de combinação de tipos de dados diferentes em um mesmo vetor? Se tiver dúvidas, pergunte.</p>
+<p><strong>Questão 2:</strong></p>
+<p>Veja as cores de veículos comercializados por uma concessionária na semana passada.</p>
+<pre class="r"><code>colours &lt;- factor(c(&quot;red&quot;,&quot;blue&quot;,&quot;red&quot;,&quot;white&quot;,
+                    &quot;silver&quot;,&quot;red&quot;,&quot;white&quot;,&quot;silver&quot;,
+                    &quot;red&quot;,&quot;red&quot;,&quot;white&quot;,&quot;silver&quot;,&quot;silver&quot;),
+                  levels=c(&quot;red&quot;,&quot;blue&quot;,&quot;white&quot;,&quot;silver&quot;,&quot;black&quot;))</code></pre>
+<p>Se você colocar o código a seguir, o que acontece? Por que? Responda na atividade da semana.</p>
+<pre class="r"><code>colours[4] &lt;- &quot;orange&quot;
+colours</code></pre>
+<pre><code>##  [1] red    blue   red    &lt;NA&gt;   silver red    white  silver red    red   
+## [11] white  silver silver
+## Levels: red blue white silver black</code></pre>
+<p>Utilize a função <code>table</code> para determinar a quantidade de automóveis comercializados de cada cor. Pesquise na internet e pergunte caso tenha dúvidas.</p>
+<p><strong>Questão 3:</strong></p>
+<p>Considere:</p>
+<pre class="r"><code>car.type &lt;- factor(c(&quot;saloon&quot;,&quot;saloon&quot;,&quot;hatchback&quot;,
+    &quot;saloon&quot;,&quot;convertible&quot;,&quot;hatchback&quot;,&quot;convertible&quot;,
+    &quot;saloon&quot;, &quot;hatchback&quot;,&quot;saloon&quot;, &quot;saloon&quot;,
+    &quot;saloon&quot;,&quot;hatchback&quot;),
+    levels=c(&quot;saloon&quot;,&quot;hatchback&quot;,&quot;convertible&quot;))</code></pre>
+<p>Gere a tabela de frequências para os dados <code>car.type</code>.</p>
+<p>Experimente:</p>
+<pre class="r"><code>table(car.type, colours)</code></pre>
+<pre><code>##              colours
+## car.type      red blue white silver black
+##   saloon        2    1     1      2     0
+##   hatchback     3    0     0      1     0
+##   convertible   0    0     1      1     0</code></pre>
+<p>Qual a diferença entre o uso da função <code>table</code> com um ou argumentos?
+Qual a diferença entre <code>table(car.type, colours)</code> e <code>table(colours, car.type)</code>?</p>
+<p><strong>Questão 4:</strong></p>
+<ul>
+<li><p>Crie dois novos vetores. No primeiro, anote (invente) o número de palavras que você escreveu no último trabalho acadêmico ou relatório técnico em cada semana, considerando os últimos três meses. No segundo, anote (chute, novamente) quantos litros de café você tomou em cada semana.</p></li>
+<li><p>Nomeie os elementos dos 2 vetores.</p></li>
+<li><p>Calcule sua produtividade em “palavras por Litro de café”. Atribua o resultado a um novo vetor.</p></li>
+</ul>
+</div>
+</div>

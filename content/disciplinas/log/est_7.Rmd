@@ -1,0 +1,39 @@
+---
+date: "2021-07-20T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 25
+title: Sustentabilidade e Logística
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 25
+---
+
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **08/09**
+
+## Pergunta 1
+
+Qual o papel da cadeia de suprimentos na transformação das empresas à luz das demandas de ESG (_Environmental Social Governance_)? Detalhe sua resposta considerando as **quatro principais atividades-chave** da gestão da cadeia de suprimentos e as dimensões **social, econômica e ambiental**.
+
+## Pergunta 2
+
+Quais Objetivos de Desenvolvimento Sustentável (ODS) podem ser endereçados por meio da gestão da cadeia de suprimentos? Explique as medidas que podem favorecer os ODS.  
+
+<hr>
+
+Algumas referências para desenvolvimento deste trabalho: 
+
+- [Supply Chain tem impacto direto na agenda EGS](https://revistamundologistica.com.br/artigos/supply-chain-tem-impacto-direto-na-agenda-esg)
+
+- [Profissional do Futuro](https://revistamundologistica.com.br/blog/luis/8-competencias-essenciais-ao-profissional-de-logistica-em-2025)
+
+- [Economia circular e inovação em supply chain](https://github.com/retaoliveira/relements/raw/main/texto/circular.pdf)
+
+- [2021, o ano da retomada ou da continuidade?](https://github.com/retaoliveira/relements/raw/main/texto/future.pdf)

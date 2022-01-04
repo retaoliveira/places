@@ -1,0 +1,129 @@
+---
+date: "2021-08-25T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: "10 - Logística e Sustentabilidade"
+    weight: 100
+title: Logística verde, reversa e sustentável
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 100
+---
+
+# LOGÍSTICA VERDE, LOGÍSTICA REVERSA E LOGÍSTICA SUSTENTÁVEL
+
+O conceito de cadeia de suprimentos verde, o qual integra escolha de gerenciamento ambientais para a conversão de recursos em produtos que podem ser utilizados novamente na cadeia de suprimentos, surgiu na década de 1990. 
+Produzir produtos ambientalmente amigáveis tem se tornado um importante elemento de marketing, sendo um elemento de recuperação de valor para as empresas. 
+
+O gerenciamento da cadeia de suprimentos verde une o pensamento ambiental ao gerenciamento da cadeia de suprimentos, incluindo o design do produto, o fornecimento e seleção de materiais, o processo de manufatura, a entrega do produto final aos consumidores, bem como o gerenciamento final do produto após sua vida útil. 
+
+A preservação do meio ambiente é uma preocupação que tem passado pelos diversos sistemas logísticos existentes nas últimas décadas, daí surge a proposta da logística verde, ecologística ou ainda logística ecológica, que é definida como a área da logística que se preocupa com os aspectos e impactos ambientais, causados por toda atividade logística (DONATO, 2008).
+
+A logística verde abrange o planejamento da produção, a gestão de materiais e sua distribuição física, contribuindo para a criação de estratégias ambientalmente amigáveis ao longo de cadeias de suprimentos. No entanto, alguns paradoxos e trade-offs surgem durante o estudo, sugerindo que a aplicação das práticas de logística verde possa ser mais difícil do que realmente é (QUIUMENTO, 2011).
+
+## 1.1	Logística Verde x Logística Reversa
+
+A logística reversa trata os resíduos após sua geração enquanto que a logística verde tem como objetivo principal atender aos princípios de sustentabilidade ambiental como a produção limpa, que prevê que sejam gerados menos resíduos ao final do processo produtivo e preconizam a utilização de matérias que sejam mais facilmente recicláveis e se decomponham mais facilmente no meio ambiente. 
+
+A logística reversa operacionaliza o retorno dos resíduos após sua geração e sua revalorização e reinserção econômica. Assim, a logística reversa é parte da logística verde. Ambas necessitam mais do que processos gerenciais, pois precisam da colaboração do consumidor. 
+
+
+### 1.1.1	Definição de Logística Reversa
+
+É o processo de planejamento, implementação e controle do fluxo de matérias-primas, estoque em processamento e produtos acabados e seu fluxo de informação do ponto de consumo até o ponto de origem, com o objetivo de recuperar valor ou realizar um descarte adequado. 
+Pode ser realizada no pós-venda ou no pós-consumo, reinserindo os resíduos no processo produtivo ou de negócios, fechando o ciclo logístico total. 
+
+De forma mais abrangente, Leite (2003) conceitua logística reversa da seguinte maneira. A logística reversa é responsável por tornar possível o retorno de materiais e produtos, após sua venda e consumo, aos centros produtivos e de negócios, por meio dos canais reversos de distribuição agregando valor aos mesmos.
+
+A logística reversa é a área da logística empresarial que planeja, opera e controla o fluxo e as informações logísticas correspondentes, do retorno dos bens de pós-venda e pós-consumo ao ciclo de negócios ou ao ciclo produtivo, por meio dos canais de distribuição reversos, agregando-lhes valor de diversas naturezas: econômico, ecológico, legal, logístico, de imagem corporativa, entre outros. 
+
+Hawks (2006) is that reverse logistics is “the process of planning, implementing, and controlling the efficient, cost effective flow of raw materials, in-process inventory, finished goods and related information from the point of consumption to the point of origin for the purpose of recapturing value or proper disposal.”
+
+O Reverse Logistics Executive Council – RLEC define logística reversa como sendo o processo de movimentação de mercadorias do seu destino final típico para outro ponto, com o objetivo de obter valor de outra maneira indisponível, ou com o objetivo de efetuar a disposição final dos produtos. Desta forma, as atividades da logística reversa incluem: 
+1.	O processamento do retorno de mercadorias por danos, sazonalidade, reestocagem, salvador e excesso do estoque;
+2.	Reciclagem dos materiais das embalagens ou reutilização de embalagens, recondicionamento ou manufatura dos produtos;
+3.	Descarte de equipamentos obsoletos ou materiais perigosos;
+4.	Recuperação do patrimônio 
+
+O processo de logística reversa tem três pontos de vista principais: logístico, financeiro e ambiental:
+1.	Logístico: o ciclo de vida de um produto não se encerra com a entrega de um produto ao cliente. Os produtos se tornam obsoletos, danificados ou não funcionam e devem retornar ao cliente para serem adequadamente descartados, reparados ou reaproveitados
+
+2.	Financeiro: existe custo relacionado ao fluxo reverso
+
+3.	Ambiental: os impactos do produto sobre o meio ambiente devem ser considerados por toda a vida. 
+
+A reciclagem é uma atividade de importância significativa para a logística reversa. 
+
+A logística reversa apresenta duas áreas primárias de atuação: pós-venda e pós-consumo. 
+
+Pós-venda refere-se ao planejamento, controle e destinação dos bens sem uso ou com pouco uso que retornam à cadeia de distribuição por motivos como devoluções por problemas de garantia, avarias no transporte, excesso de estoque, prazo de validade expirado, entre outros. Exemplos: Recall, venda pela internet (devolução no prazo de 7 dias), editoras.
+
+O pós-consumo refere-se à área da logística reversa que trata dos bens ao final da sua vida útil, após utilização, com possibilidade de reutilização de embalagens e dos resíduos industriais. 
+
+O conceito de logística reversa vem fomentar a implementação de produção com foco berço ao berço e não mais berço à cova – o retorno dos resíduos gerados nos processos produtos e de vendas ao ciclo produtivo e/ou de negócios, analisando e implementando práticas que contribuam para a revalorização dos mesmos e a preservação ao meio ambiente. 
+
+### 1.1.2	Logística Verde
+
+A logística verde está relacionada a iniciativas e preocupações com os aspectos da atividade logística e seu entorno (sociedade, meio ambiente, economia, etc.). E a primeira e grande preocupação dos administradores e tomadores de decisão são os custos associados a essas iniciativas. É na avaliação do trade-off entre o verde e o financeiro que está o ponto crucial dessa forma de se fazer logística.
+Inegavelmente, um dos propósitos primais da logística é reduzir custos (especialmente de transporte). Entretanto, as estratégias de redução de custos são usualmente antagônicas à consideração da variável ambiental na gestão empresarial. Um exemplo bem simples seria a programação de entrega de produtos usando uma frota de veículo antiga ou uma frota de veículos renovada. Certamente a aquisição da frota antiga é mais barata do que a aquisição da frota renovada.
+
+O que acontece é que os custos relacionados a possíveis economias logísticas não “somem”, não evaporam no ar, mas são externalizados no sistema. Isso quer dizer que quem assume essa diferença de custo é o meio ambiente, com consequências como maior emissão de CO2, maiores riscos de vazamentos e acidentes, destinação irresponsável dos insumos, maior geração de resíduos, entre outros. Como o meio ambiente é uma fonte não renovável de geração de recursos, esses custos causam prejuízos irreparáveis à nossa geração e às gerações futuras.
+A adoção de politicas de logística sem a consideração ambiental – consequentemente mais baratas, causa uma primeira percepção do usuário, do consumidor e do gestor de benefícios na redução dos custos financeiros diretos.
+
+Entretanto, o fenômeno hoje é que a sociedade está cada vez menos propensa a aceitar e absorver esse custo irreparável, e a pressão tem invariavelmente crescido para inclusão de considerações ambientais nas operações logísticas. Por tal motivo, a preocupação com a preservação do meio ambiente está diretamente relacionada à sobrevivência das corporações.
+
+Outro ponto que é mais difícil de ser mensurado diretamente é relação entre o investimento em políticas ambientais e os retornos financeiros da empresa. Segundo avaliação do DSJI (Dow Jones Sustainability Group Index), o índice de benchmark mais reconhecido mundialmente na questão de sustentabilidade e responsabilidade ambiental, baseado na análise dos desempenhos econômicos, ambientais e sociais (com pesos iguais para as três variáveis) de mais de 3000 companhias globais, as empresas que adotam procedimentos operacionais com vistas a reduzir os impactos ambientais de suas atividades estão obtendo em geral um maior retorno financeiro. Para comprovar essa relação, foi realizado um estudo por pesquisadores da Universidade de Granada na Espanha, disponibilizado gratuitamente aqui (disponível em inglês) utilizando a base de dados do DSJI. Segundo os pesquisadores, em uma avaliação de curto prazo, a correlação entre o desempenho econômico e o investimento em alternativas ambientais é negativa. Ou seja, o desempenho econômico é prejudicado com a implantação de políticas ambientais nos primeiros anos.
+
+Assim, para que a adoção de políticas ambientais torne-se vantajosa é necessário que haja uma readequação da mentalidade de investimento das companhias, tornando-as capazes de absorver e avaliar objetivos de longo prazo.
+
+Quem pode desempenhar um papel importante nesse aumento de capacidade de percepção dos benefícios das políticas ambientais é o governo, com a adoção de medidas legais e financeiras que beneficiem as práticas ambientais.
+
+Hoje, segundo pesquisa elaborada durante o Green Logistics Forum realizado na Europa em 2010, 94% dos profissionais do alto nível que atuam no setor de logística e cadeia de suprimentos consideram a questão da Logística Verde como prioridade para o seu negócio. Mas será que todos sabem de fato sobre o que se trata a Logística Verde? Qual sua implicação, suas possibilidades e consequências? E que ações tomar para tornar sua logística verde?
+
+Bom, vamos procurar esclarecer esses pontos aqui aos poucos, com exemplos, ideias, iniciativas que funcionaram (ou que não funcionaram), projetos de pesquisa, definições, e tudo mais que puder enriquecer essa discussão. Esse meu primeiroartigo é dedicado à definição de logística verde e quais as implicações imediatas que essa “atitude” traz para as corporações de forma geral.
+
+Como afirmado anteriormente, o objetivo principal da logística é coordenar as atividades de armazenagem, circulação e distribuição de produtos de forma a atender às necessidades do cliente a um custo mínimo. No passado, esse custo foi definido em termos puramente monetários. Com o aumento da preocupação com o meio ambiente, as empresas devem ter em conta os custos externos da logística associada principalmente com a mudança climática, poluição do ar, poluição sonora, risco de acidentes, entre outros. Assim, surge a necessidade de equilibrar a atividade logística em três grandes pilares: econômico/financeiro, social e meio ambiente, em um processo de equilíbrio sustentável que considere e beneficie esses três objetivos
+
+A logística Verde ou Ecologística é a parte da logística que se preocupa com os aspectos e impactos ambientais causados pela atividade logística. Por se tratar de uma ciência em desenvolvimento ainda existe uma grande confusão conceitual a respeito desde conceito. Muitas pessoas confundem logística verde com logística reversa. 
+
+Conforme Donato (2008), alguns FATORES que deu início a movimentação da logística verde, foram :
+
+a) a crescente poluição ambiental decorrente da emissão dos gases gerados pela combustão incompleta dos combustíveis fósseis durante os diversos sistemas de transportes; 
+
+b) a crescente contaminação dos recursos naturais como consequencia de cargas desprotegidas, tais como: caminhões com produtos químicos que acidentam e contaminam rios, navios petroleiros que contaminam os oceanos; 
+
+c) movimentação e armazenagem, destacou-se o fator de extrema importância que forma os impactos causados por vazamento dos diversos produtos contidos através de rompimento dos diques de contenção, utilizados pela armazenagem de resíduos da atividade produtiva (mineração e celulose); 
+
+d) a necessidade de desenvolvimento de projetos adequados à efetiva necessidade do produto contido, de forma a evitar qualquer as ações geradas pelo transporte ou armazenagem não causem avarias à embalagem em produtos químicos, petroquímicos, defensivos agrícolas e farmacêuticos. 
+
+O objetivo principal da logística verde é o de atender aos princípios de sustentabilidade ambiental como o da produção limpa, onde a responsabilidade é do começo ao fim, ou seja, quem produz deve se responsabilizar- se também pelo destino final dos produtos gerados, de forma a reduzir o impacto ambiental que eles causam. Assim as empresas devem organizar canais reversos, retorno de materiais após seu ciclo de utilização, para terem a melhor destinação, seja por reparo, reutilização ou reciclagem. 
+
+A logística verde será um referencial importante para as empresas que queiram ter um diferencial competitivo no mercado. Um dos desafios dos empresários que atuam na logística verde é construir um modelo de distribuição reversa com parte da cadeia de distribuição direta, pois com a rapidez que um produto é lançado no mercado, o rápido avanço da tecnologia, juntamente com um grande fluxo de informações, a alta competitividade das empresa e o crescimento da consciência ecológica quanto às consequências provocadas pelos produtos e seus descartes no meio ambiente, com isso estão contribuindo para conscientização da adoção de novos comportamentos por parte das organizações e da sociedade. 
+
+As empresas devem buscar um desempenho razoável em todas as competências logísticas, posicionamento, integração, agilidade e mensuração. Para o sucesso na implementação de estratégias de operação de logística deve-se sempre adotar a administração de um sistema de medida de avaliação desempenho e além de tudo uma estrutura organizacional apropriada para se atingir a excelência nas operações.
+
+Exemplos de AÇÕES relacionadas à logística verde:
+
+Uso de biocombustível, em especial o biodiesel, em adição ao combustível fóssil, uma prática comum em empresas de transporte coletivo;
+
+Uso de embalagens secundárias reutilizáveis, reduzindo o consumo de papelão. Uma prática comum em empresas de autopeças e alimentícias, como a Pesico;
+
+Uso de sistemas de ventilação natural e iluminação natural em armazéns e centros de distribuição; 
+
+Ações para prolongar a vida útil de pneus e o uso mais intensivo de pneus recauchutados; 
+
+A logística verde é um tema que passou a ter mais importância em tempos recentes. Dos artigos encontrados, 137 estudos eram pertinentes à análise ou relacionado ao assunto, estes trabalhos são datados a partir do ano de 1994, houve maior crescimento e desenvolvimento a partir de 2007, e nos anos mais recentes, 2011 e 2012, essa quantidade de publicações aumentou consideravelmente em relação aos outros períodos, o que evidencia a preocupação e o interesse de pesquisas em Logística Verde.
+ 
+
+## 1.2	Cadeia de Suprimentos Sustentáveis
+Carter e Rogers (2008) publicaram um artigo onde lançam as bases de uma nova teoria para o gerenciamento da cadeia de suprimentos na perspectiva da sustentabilidade. Neste artigo, Carter e Rogers (2008) definem cadeia de suprimentos sustentáveis como: “Cadeias de Suprimentos Sustentáveis são definidas como uma integração estratégica e transparente para a realização de uma organização com objetivos econômicos, ambientais e sociais com coordenação sistêmica através de processos de negócio interorganizacionais chaves para o incremento de longo prazo do desempenho econômico individual das empresas e da cadeia de suprimentos”. Outro trabalho que também reúne elementos teóricos a partir de uma extensa revisão da literatura especializada sobre o gerenciamento de cadeias de suprimentos sustentáveis foi feito por Seuring e Müller (2008). Neste artigo, os autores estudaram 191 artigos publicados entre 1994 e 2007 a fim de reunir o estado da arte nas pesquisas a cerca de sustentabilidade e gerenciamento da cadeia de suprimentos. Este estudo de Seuring e Müller (2008) faz parte de um volume especial do periódico Journal of Clean Production dedicado ao tema Sustentabilidade e Cadeia de Suprimentos, no qual se pode verificar a pertinência do tema e a certeza que esta modelo de gestão de cadeia de suprimentos prevalecerá como referencial teórico na busca pela competitividade.
+
+
+
+

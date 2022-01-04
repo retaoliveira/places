@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="TL;DR  O que é Markdown? RMarkdown  Formatação de texto Incluindo tabelas Incluindo figuras chunks Visualização Metadados - Cabeçalho Formatos de output Divulgando   Rode o seu primeiro documento em RMarkdown!   Assita o vídeo! É impactante, baseado em fatos reais!
+ TL;DR RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do link">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/cursos/intro_r/intro_rmarkdown/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.e55ba78edbbd6fe458261591367a7d35.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://retaoliveira.github.io/cursos/intro_r/intro_rmarkdown/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://retaoliveira.github.io/cursos/intro_r/intro_rmarkdown/">
+  <meta property="og:title" content="Introdução ao RMarkdown | Profa. Renata Oliveira">
+  <meta property="og:description" content="TL;DR  O que é Markdown? RMarkdown  Formatação de texto Incluindo tabelas Incluindo figuras chunks Visualização Metadados - Cabeçalho Formatos de output Divulgando   Rode o seu primeiro documento em RMarkdown!   Assita o vídeo! É impactante, baseado em fatos reais!
+ TL;DR RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do link"><meta property="og:image" content="https://retaoliveira.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://retaoliveira.github.io/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Introdução ao RMarkdown | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/">R como instrumentos para a análise de dados</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/install/">1 - Análise de dados para gestão</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/install/">Instalação de R, RStudio e Git</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_dataana/">Introdução à Análise de Dados</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_r/">Conhecendo o R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/git_r/">Git e Github</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/swirl/">Como acessar o tutorial da disciplina no swirl</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/intro_rmarkdown/">2 - Documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/cursos/intro_r/intro_rmarkdown/">Introdução ao RMarkdown</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/abrindo_dados/">3 - Estrutura de dados no R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/abrindo_dados/">Abrindo dados no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/estrutura_dados/">Tipos de dados, objetos e operadores no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/tidyverse/">Overview - Tidyverse</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/ggplot/">4 - Estatística descritiva e mineração de dados</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/ggplot/">Visualização de dados</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/estatistica/">Introdução à estatística descritiva</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/twitter/">6 - Análise textual</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/twitter/">Como coletar, manipular e representar dados de Tweets</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/reprodutibility/">7 - Tópico avançado em documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/reprodutibility/">Documentos parametrizados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/mkt_seg/">8 - Segmentação de mercado</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/mkt_seg/">Segmentação de mercado</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Introdução ao RMarkdown</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/places/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/places/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/places/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/places/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/places/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/places/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/places/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/places/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/places/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/custom.css" type="text/css" />
+
+<div id="TOC">
+<ul>
+<li><a href="#tldr">TL;DR</a>
+<ul>
+<li><a href="#o-que-é-markdown">O que é Markdown?</a></li>
+<li><a href="#rmarkdown">RMarkdown</a>
+<ul>
+<li><a href="#formatação-de-texto">Formatação de texto</a></li>
+<li><a href="#incluindo-tabelas">Incluindo tabelas</a></li>
+<li><a href="#incluindo-figuras">Incluindo figuras</a></li>
+<li><a href="#chunks"><code>chunks</code></a></li>
+<li><a href="#visualização">Visualização</a></li>
+<li><a href="#metadados---cabeçalho">Metadados - Cabeçalho</a></li>
+<li><a href="#formatos-de-output">Formatos de output</a></li>
+<li><a href="#divulgando">Divulgando</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#rode-o-seu-primeiro-documento-em-rmarkdown">Rode o seu primeiro documento em RMarkdown!</a></li>
+</ul>
+</div>
+
+<p>Assita o vídeo! É impactante, baseado em fatos reais!</p>
+<iframe width="738" height="400" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div id="tldr" class="section level1">
+<h1>TL;DR</h1>
+<p>RMarkdown é uma linguagem para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do <a href="https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP">link</a></p>
+<div id="o-que-é-markdown" class="section level2">
+<h2>O que é Markdown?</h2>
+<p>Segundo o criador da linguagem:</p>
+<blockquote>
+<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
+<p>John Gruber</p>
+</blockquote>
+<p>Dicas de sintaxe da linguagem Markdown podem ser encontradas em:</p>
+<ul>
+<li><a href="https://blog.da2k.com.br/2015/02/08/aprenda-markdown/">Sintaxe</a></li>
+<li><a href="https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md">Tutorial</a></li>
+</ul>
+</div>
+<div id="rmarkdown" class="section level2">
+<h2>RMarkdown</h2>
+<p>Vou colocar aqui algumas informações-chave sobre a construção geral de informações a partir do uso do RMarkdown. Entretanto, informações adicionais podem ser obtidas de maneira detalhada no site:</p>
+<ul>
+<li><a href="http://cursos.leg.ufpr.br/prr/capDocDin.html">Documentos dinâmicos no R by Fernando Mayer &amp; Walmes Zeviani</a></li>
+</ul>
+<div id="formatação-de-texto" class="section level3">
+<h3>Formatação de texto</h3>
+<ul>
+<li>Textos em itálico são produzidos com um par de asteriscos <code>*Itálico*</code> ou de underscores <code>_Itálico_</code><br />
+</li>
+<li>Textos em negrito são produzidos com dois pares de asteriscos: <code>**Negrito**</code><br />
+</li>
+<li>Um par de acentos til produz texto subscrito: <code>CO~2~</code> vira CO2<br />
+</li>
+<li>Um par de acentos circunflexos produz texto sobrescrito: <code>x^2^</code> vira x2<br />
+</li>
+<li>Hyperlinks são criados com a sintaxe <code>[texto](link): Clique [aqui](https://www.google.com/)</code> vira Clique aqui<br />
+</li>
+<li>Imagens são inseridas com a sintaxe <code>![texto opcional](pasta/imagem.jpg)</code> ou <code>![texto opcional](link para imagem)</code></li>
+</ul>
+<div id="seções-e-subseções" class="section level4">
+<h4>Seções e subseções</h4>
+<p>Para demarcar seções e subseções, utilize os <code>hashtags</code>.</p>
+</div>
+<div id="listas-e-ordenação" class="section level4">
+<h4>Listas e ordenação</h4>
+<p>Basta enumerar:</p>
+<ol style="list-style-type: decimal">
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+</div>
+</div>
+<div id="incluindo-tabelas" class="section level3">
+<h3>Incluindo tabelas</h3>
+<p>Existem duas boas opções para produzir tabelas elegantes em documentos R Markdown:</p>
+<p>A função <code>knitr::kable()</code></p>
+<pre class="r"><code>iris %&gt;% 
+  head() %&gt;% 
+  knitr::kable()</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+</tbody>
+</table>
+<p>A função <code>knitr::kable()</code> acompanhada do pacote <code>kableExtra</code></p>
+<pre class="r"><code>iris %&gt;% 
+  head() %&gt;% 
+  kableExtra::kable()</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+Sepal.Length
+</th>
+<th style="text-align:right;">
+Sepal.Width
+</th>
+<th style="text-align:right;">
+Petal.Length
+</th>
+<th style="text-align:right;">
+Petal.Width
+</th>
+<th style="text-align:left;">
+Species
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5.1
+</td>
+<td style="text-align:right;">
+3.5
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.9
+</td>
+<td style="text-align:right;">
+3.0
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.7
+</td>
+<td style="text-align:right;">
+3.2
+</td>
+<td style="text-align:right;">
+1.3
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.6
+</td>
+<td style="text-align:right;">
+3.1
+</td>
+<td style="text-align:right;">
+1.5
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5.0
+</td>
+<td style="text-align:right;">
+3.6
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5.4
+</td>
+<td style="text-align:right;">
+3.9
+</td>
+<td style="text-align:right;">
+1.7
+</td>
+<td style="text-align:right;">
+0.4
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+</tbody>
+</table>
+<p>E tabelas interativas por meio do pacote <code>DT</code>:</p>
+<pre class="r"><code>iris %&gt;% 
+  head() %&gt;% 
+  DT::datatable()</code></pre>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[5.1,4.9,4.7,4.6,5,5.4],[3.5,3,3.2,3.1,3.6,3.9],[1.4,1.4,1.3,1.5,1.4,1.7],[0.2,0.2,0.2,0.2,0.2,0.4],["setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>Informações sobre a configuração dos packages considerados porm ser encontrados nos links: <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"><code>kableExtra</code></a>, `</p>
+</div>
+<div id="incluindo-figuras" class="section level3">
+<h3>Incluindo figuras</h3>
+<p><img src="https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png" alt="Figura 1: RMarkdown" />
+Eu prefiro incluir figuras por meio de <code>chunk</code>, pois a parametrização do <code>chunk</code> permite configurar a figura:</p>
+<pre class="r"><code>knitr::include_graphics(img1_path)</code></pre>
+<p><a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Dicas:</a></p>
+</div>
+<div id="chunks" class="section level3">
+<h3><code>chunks</code></h3>
+<p><code>chunks</code> são blocos de código que podem ser incluídos e rodados em um documento <code>.Rmd</code>. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em <code>R</code> é o atalho <code>Ctrl + Alt + i</code>.</p>
+<p>O <code>chunk</code> deve ser iniciado por ```<code>{r }</code> e alguns parâmetros definem opções para os <code>chunks</code>.</p>
+<ul>
+<li><p><code>eval</code>: tipo logical. Executar (TRUE) ou não (FALSE) o código do <code>chunk</code>.</p></li>
+<li><p><code>echo</code>: tipo logical. Incluir o código do <code>chunk</code> ou não no documento compilado.</p></li>
+<li><p><code>warning</code>, <code>message</code> e <code>error</code>: tipo logical. Caso <code>error = TRUE</code>, o documento será compilado mesmo que o chunk retorne um erro.</p></li>
+<li><p><code>include</code>: tipo logical. Controla se o <code>chunk</code> e o output estarão presentes no documento final.</p></li>
+<li><p><code>cache</code>: tipo logical. Controla se o <code>chunk</code> poderá usar cache para criar uma pasta com arquivos cacheados. Útil para chunks de códigos que levam muito tempo para rodar.</p></li>
+</ul>
+<pre class="r"><code>x &lt;- rnorm(30)
+x</code></pre>
+<pre><code>##  [1]  0.85301979 -1.20670342 -2.22819565 -1.64121807 -0.01532080 -0.46151015
+##  [7]  0.57836682 -0.86865502  0.07392585 -1.14114997  0.28009723  0.02311227
+## [13]  0.54236216 -0.54058459 -0.69211749  0.52809306  2.62622924 -0.08507349
+## [19]  1.65361651 -0.46970572  1.59696520 -0.23543453  0.16921561 -0.79719001
+## [25]  0.63282570  1.27541352  0.60651845 -0.32445256  0.69333907  0.23582679</code></pre>
+<p>Para definir uma opção da mesma maneira para todos os <code>chunks</code> do documento, é possível criar um <code>chunk</code> com o código <code>knitr::opts_chunk$set()</code>, como no exemplo abaixo:</p>
+<p>As opções gerais de <code>chunks</code> podem ser encontradas no <a href="https://yihui.org/knitr/options/">link</a>.</p>
+</div>
+<div id="visualização" class="section level3">
+<h3>Visualização</h3>
+<pre class="r"><code>plot(x)</code></pre>
+<p><img src="/places/conteudo/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<p>Também podemos fazer um histograma dessa variável simulada</p>
+<pre class="r"><code>hist(x)</code></pre>
+<p><img src="/places/conteudo/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+</div>
+<div id="metadados---cabeçalho" class="section level3">
+<h3>Metadados - Cabeçalho</h3>
+<div id="yaml-yet-another-markup-language" class="section level4">
+<h4><code>YAML</code> (Yet Another Markup Language)</h4>
+<p>No <code>YAML</code>, os dados são escritos em forma de lista aninhada. Os metadados em <code>YAML</code> são colocados sempre no início de um documento, e são delimitados por <code>---</code>.</p>
+</div>
+</div>
+<div id="formatos-de-output" class="section level3">
+<h3>Formatos de output</h3>
+<ul>
+<li>Compilar um documento em RMarkdown
+<code>knitr</code></li>
+</ul>
+<p>Na <a href="https://rmarkdown.rstudio.com/gallery.html">galeria do RStudio</a> diferentes estruturas de informação produzida por meio de <code>RMarkdown</code> podem ser encontradas!</p>
+<ul>
+<li><p>beamer_presentation</p></li>
+<li><p>html_document</p></li>
+<li><p>ioslides_presentation</p></li>
+<li><p>pdf_document</p></li>
+<li><p>slidy_document</p></li>
+<li><p>powerpoint_presentation</p></li>
+<li><p>word_document</p></li>
+</ul>
+<pre class="r"><code>output:
+  html_document:
+    toc: true
+    number_sections: yes
+  pdf_document:
+    keep_tex: true</code></pre>
+</div>
+<div id="divulgando" class="section level3">
+<h3>Divulgando</h3>
+<p>No RStudio, crie um novo documento <code>R Markdown</code> escolhendo <code>Arquivo | Novo | R Markdown</code>.
+Clique no botão <code>Knit HTML</code> na barra de ferramentas do doc para visualizar seu documento.
+Na janela de pré-visualização, clique no botão <code>Publicar</code>.</p>
+<p>É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta <code>RPubs</code> ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca).</p>
+<p>Uma vez terminado e clicando no botão <code>Continue</code> na parte inferior, você irá diretamente para o artigo publicado.</p>
+<p>Você pode optar por atualizar seu conteúdo.</p>
+<hr />
+</div>
+</div>
+</div>
+<div id="rode-o-seu-primeiro-documento-em-rmarkdown" class="section level1">
+<h1>Rode o seu primeiro documento em RMarkdown!</h1>
+<ol style="list-style-type: decimal">
+<li><p>Salve o <a href="https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ">arquivo</a> em um diretório que você consiga acessar depois. Sugiro criar um diretório para essa finalidade.</p></li>
+<li><p>Abra o arquivo no RStudio: <code>File | Open File</code> e navegue até o arquivo <code>01-covid.Rmd</code> selecionando-o.</p></li>
+<li><p>Você identificará o arquivo por meio do <code>YAML</code> com <code>title: "Mortes por COVID-19"</code></p></li>
+<li><p>Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do <code>RMarkdown</code> para que sejam instalados <code>packages</code> necessários para rodar esse <code>.Rmd</code></p></li>
+<li><p>Clique no botão de <code>knitr</code>.</p></li>
+</ol>
+<p>Aprecie o seu primeiro documento!</p>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/cursos/intro_r/twitter/" rel="next">Como coletar, manipular e representar dados de Tweets</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/cursos/intro_r/swirl/" rel="prev">Como acessar o tutorial da disciplina no swirl</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 5, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2021 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.d44a21cce25b8eb2cd3c8404affc0855.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,670 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Unidade 4 - Transportes e distribuição física
+    weight: 10
+title: Transportes
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+
+## Transportes
+
+### Elementos básicos para a operação de transportes
+
+- Elementos Básicos
+	Força Motriz
+	Veículo
+	Via
+- Fatores Dimensionais
+	Quantidade
+	Distância
+	Tempo
+- Tipos de deslocamento
+	Coleta
+	Circulação
+	Entrega
+- Atividades
+	Carga
+	Descarga
+	Transbordo
+
+
+## Modos de transporte para movimentação de cargas
+
++ Rodoviário
+
++ Ferroviário
+
++ Aquaviário
+
++ Dutoviário
+
++ Aéreo
+
++ Eletrônico
+
+
+
+
+## Qual o(s) problema(s) do Brasil em relação à movimentação de cargas em escala regional?
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/zero_emission.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/electric vechicle.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/growth_emission.png")
+```
+
+### Movimentação global de contêineres
+
+Preço praticado x oscilações na movimentação
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/cont_trade.png")
+```
+
+### Qual o nosso problema?
+
+Preço do petróleo?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/diesel.png")
+```
+
+Demanda x oferta?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/peroba.png")
+```
+
+Desequilíbrio da matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/matriz_modal.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/matriz.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/ferro.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/investimento.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/matriz_compara.png")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/ferrovias_mundo.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/conteiner.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/preco.png")
+```
+
+---
+
+### Como resolver?
+
+"Bolsa Caminhoneiro"?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/bolsa.png")
+```
+
+---
+
+### Como resolver?
+
+"Bolsa Caminhoneiro"?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/rebate.png")
+```
+
+### Como resolver?
+
+Realocação de recursos? 
+Eliminar piso de gastos com educação e saúde para subsidiar Diesel?
+Intervir na Petrobrás?
+Privatizar a Petrobras?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/calamidade.png")
+```
+
+# Conceitos-chave
+
+
+#### Escolha modal
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/logistics/escolha.png")
+```
+
+# Conceitos-chave
+
+- Intermodalidade x Multimodalidade   
+- Unitização e fracionamento   
+- Conteinerização   
+- Sincromodality   
+
+# EQUIPAMENTOS PARA UNITIZAÇÃO E MOVIMENTAÇÃO DE CARGAS
+
+##	Consolidação x Unitização
+
+Consolidação de cargas: consiste em criar grandes carregamentos, a partir de vários outros pequenos, a fim de obter economia de escala no custo dos fretes e aumentar o nível do serviço ao cliente (Tyan etalii 2003)
+
+Unitização de cargas: significa unir vários volumes pequenos em um único maior, para facilitar a movimentação, armazenagem e transporte, reduzindo os tempos de terminal, eliminando o manuseio direto da mercadoria e fazendo com que a transferência, do ponto de origem até o seu destino final, possa ser realizada com apenas um volume.
+
+## Tipos de Equipamentos de Unitização
+
+Os equipamentos de unitização não são embalagens.
+
+Os tipos mais comuns de unitização de cargas são as seguintes:
+•	Cargas paletizadas   
+•	Cargas pré-lingadas   
+•	Contêineres   
+•	Formas especiais   
+
+Pré-lingagem: a carga é condicionada em redes especiais de nylon ou corda, de forma a proporcionar fácil manuseio por guindastes, permitindo o aumento da velocidade de carregamento e descarregamento. 
+
+Paletização (Paletes/Pallets): são utilizados engradados de madeira como suportes de cargas que ficam atadas a estes, os quais, possuem vãos em sua parte inferior de modo a permitir o encaixe dos garfos das empilhadeiras, gerando, desta forma, uma otimização do manuseio da carga.
+
+Conteinerização: consiste na alocação de cargas em um receptáculo em forma de baú chamado contêiner, que proporciona maior segurança e facilidade de manuseio e transporte. Devido a sua característica intermodal e padronização internacional, a conteinerização é a unitização de carga mais largamente utilizada no transporte internacional.
+
+ULD – Unit Load Devices: Unidades próprias para unitização de cargas, ou seja, os conteiners e pallets utilizados na carga aérea. Estes distinguem-se em formatos e tamanhos, bem como em sua concepção e utilização, daqueles utilizados no transporte marítimo. 
+
+## Vantagens e desvantagens da Unitização
+
+### Vantagens: 
+- redução do número de volumes a manipular;   
+- menor número de manuseios da carga;   
+- menor utilização de mão-de-obra;   
+- possibilidade do uso de mecanização;   
+- diminui avarias e roubos;   
+- outros...   
+
+É importante ressaltar que há diferença entre o que se denomina como recipiente para unitização de carga e a unidade de transporte de carga, pois enquanto o primeiro é um equipamento para unitização de pequenos volumes, o segundo trata-se do próprio veículo transportador, que é um recipiente no momento em que está transportando granéis líquidos e sólidos como uma só carga unitizada.
+
+O avanço no embarque de cargas deu-se com a criação do conceito de carga unitizada, primeiramente, de forma mais rudimentar, através de amarrados, tambores, redes, etc. e, posteriormente, através da criação de pallets e, principalmente, pela criação do container, a grande vedete da unitização.
+
+No começo, a conteinerização teve seus problemas, visto que estas grandes caixas não eram padronizadas e cada armador, negociante ou construtor tinha as suas próprias unidades, de tamanhos completamente diferentes. Além disso, havia a falta de estrutura dos portos que não possuíam equipamentos adequados para o seu manuseio.
+
+Com o decorrer do tempo, o problema do tamanho foi resolvido e hoje, através da ISO (International Organization for Standardization), os contêineres são padronizados e utilizados mundialmente, sendo que os portos também estão, em menor ou maior grau, equipados para sua movimentação.
+
+## Tipos de Equipamentos de Unitização
+###	Pallet: Conceitos, Padrões Internacionais e Utilização
+
+#### As vantagens dos paletes são:   
+•	Redução de perdas, roubos e avarias à carga;   
+•	Redução de rotulagem e marcação dos embarques, pois não é necessário realizar as operações para cada item;   
+•	Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;   
+•	Aumento da capacidade das instalações de estocagem, por meio de maiores alturas de empilhamento;   
+•	Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo aumento da rotatividade dos mesmos;   
+•	Redução das taxas de estiva no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador quando ele contrata e paga o serviço de estiva da mercadoria a bordo do navio;   
+•	Descontos e franquias concedidos sobre o valor do frete básico marítimo (liner-terms);   
+•	Possibilidade de aplicação do conceito de "sistema global de transportes", no qual a carga se movimenta na forma unitizada desde as dependências do produtor até a loja de varejo, onde a mercadoria pode ser vendida diretamente do pallet.   
+
+#### As desvantagens dos paletes são:
+•	Espaços perdidos dentro da unidade de carga;   
+•	Investimentos na aquisição de pallets, acessórios para a fixação da mercadoria à plataforma e equipamentos para a movimentação das unidades de carga (sensivelmente menores que os necessários para a movimentação de contêineres);   
+•	O peso próprio da plataforma e o volume da mesma podem aumentar o valor do frete, se os transportadores não estabelecerem franquias para essas características físicas do pallet;   
+•	Eventual exigência de modificações nos lay-outs das instalações do exportador e dos terminais intermediários.   
+
+### Pallet e seus Tipos
+Pallet é uma unidade semelhante a um estrado plano, construído principalmente de madeira, podendo, porém, ser também de alumínio, aço, plástico, fibra, polipropileno, papelão, com determinadas características para facilitar a unitização, armazenagem e transporte de pequenos volumes.
+
+Os pallets podem ser descartáveis, ou seja, construídos para serem utilizados em apenas uma viagem (one way), ou para uso constante. A adoção de cada tipo depende da logística escolhida, que envolve um estudo sobre custos e o seu retorno.
+
+No formato, o pallet pode ser quadrado ou retangular. Quanto às faces, para acomodação de cargas, pode ser simples (mais frágil), dando à carga a possibilidade de utilização apenas desta face; ou ter duas faces diferentes, sendo uma para receber a carga e a outra apenas de suporte; ou ainda ter duas faces iguais, ou seja, ser um pallet reversível, podendo ser utilizado para carga em qualquer uma das duas faces.
+ 
+O pallet deve dispor de asas (aletas), que são saliências para içamento, ou seja, extensão das faces para além das vigas que o compõem, para que possa ser operado por guindastes e outros equipamentos, e não somente por meio de ganchos especiais de içamento.
+
+Deverá haver também, uma altura livre entre as duas faces, para possibilitar a entrada dos garfos dos equipamentos mecânicos.
+
+Preferencialmente, precisa ter quatro lados que permitam a entrada dos equipamentos para agilização na sua movimentação, o que fica limitado quando possui apenas duas entradas.
+
+O pallet tem de ser suficientemente resistente e adequadamente construído, oferecendo segurança para:
+
+1.	Sustentar, em repouso ou quando movimentada, a carga que sobre ele é depositada;  
+2.	Permitir a manipulação e a movimentação da carga unitizada por meio de equipamento mecânico apropriado, tanto em terra quanto nos veículos transportadores, e nos embarques e desembarques.   
+
+As medidas e as demais características físicas do pallet a ser escolhido devem ser tais que se adaptem às várias fases do transporte e aos diferentes tipos de equipamentos mecânicos em operação nos portos de carga e de descarga, de forma que a movimentação da carga unitizada se realize com rapidez e segurança.   
+
+A uniformidade e as medidas dos volumes a serem paletizados são de grande importância para produzir uma carga unitizada, bem enquadrada em seus quatro lados, e nivelada na sua face superior, para permitir a melhor ocupação do espaço do veículo transportador.   
+
+A princípio, qualquer carga é paletizável, desde que adaptada ao pallet economicamente viável.   
+
+A amarração dos volumes para constituir uma carga unitizada rígida deve ser feita através do emprego de cintas, que podem ser de nylon, polipropileno, poliester, metálicas, complementadas, às vezes, por tábuas e sarrafos de madeira e folhas de papelão, bem como sacos ou filmes plásticos encolhíveis (shrink), ou filmes estiráveis de polietileno (stretch), que são esticados e colocados sobre a carga. Os filmes e os sacos têm a finalidade também de evitar o furto de volumes.   
+
+Com o crescimento internacional da unitização foi necessária a padronização das dimensões do pallet, visando a possibilidade de utilização em todos os modos. Dessa forma, a ISO aprovou medidas, muito embora a sua utilização nem sempre seja respeitada, já que se pode ver e operar pallets de vários tamanhos.   
+
+
+### Equipamentos de Movimentação de Pallets
+
+Os pallets são movimentados nos armazéns por paleteiras e empilhadeiras. Nos embarques e desembarques em caminhões ou vagões ferroviários são utilizadas empilhadeiras, e nos portos são usados guindastes, tanto do navio quanto do porto, que possuem ganchos, e outros equipamentos específicos para sua movimentação.
+
+
+##	Contêiner: Conceito, Padronização e Medidas
+
+Contêiner é uma caixa, construída em aço, alumínio ou fibra, criada para o transporte unitizado de mercadorias e suficientemente forte para resistir ao uso constante.
+
+Constitui um equipamento do veículo transportador, que se caracteriza pela resistência e facilidade de transporte de mercadorias, por um ou mais modos. É provido de portas, escotilhas e aberturas que permitem o seu estufamento e esvaziamento com facilidade, cumprindo os objetivos propostos para sua criação e utilização.
+
+Os contêineres são identificados com marcas, números, definição de espaço e peso que podem comportar, proprietário, tamanho, etc. Estas características de resistência e identificação visam dar ao contêiner vantagens sobre os demais equipamentos para unitização, tais como segurança, inviolabilidade, rapidez e redução de custos nos transportes. Também é dotado de dispositivos de segurança aduaneira, e deve atender às condições técnicas de segurança previstas pela Legislação Nacional e pelas Convenções Internacionais que são ratificadas pelo Brasil.
+
+#### Vantagens e Desvantagens dos Contêineres
+
+As principais vantagens dos contêineres são:   
+•	Redução de perdas, roubos e avarias à carga;   
+•	Possíveis reduções de custos de rotulagem e embalagem, sendo estas observadas, principalmente, nos casos em que o contêiner é transportado porta (exportador) a porta (importador);   
+•	Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;   
+•	Estocagem de mercadoria em áreas descobertas. Este fator pode ser neutralizado se o exportador pagar taxa de demurrage (sobreestadia) pelo uso do contêiner além do prazo livre;   
+•	Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo, em conseqüência, aumento da rotatividade dos mesmos;   
+•	Carregamentos e descarregamentos de veículos e embarcações sob condições climáticas adversas;   
+•	Redução das taxas de capatazia no porto de embarque;   
+•	Redução das taxas de estiva, conferência e conserto de carga no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador na situação em que este contrata e paga o serviço de estiva da mercadoria a bordo do navio;
+•	Possíveis reduções dos tempos totais de viagem, com o emprego de navios expressos.
+
+#### As principais desvantagens da utilização de contêineres são:   
+
+•	Espaços perdidos dentro da unidade de carga;   
+•	Exigência de equipamentos de alto investimento para a movimentação da unidade de carga nos locais de expedição e recebimento e nos pontos de transferência de veículo de transporte;   
+•	Pagamento de aluguel do contêiner;   
+•	Pagamento de taxas de demurrage (sobreestadia) pelo uso do contêiner, quando este ficar à disposição do exportador por um período além do prazo livre;   
+•	Transporte do contêiner vazio para o local onde se faz a estufagem do mesmo;  
+•	A incorporação da tara do contêiner na tonelagem global de transporte pode acarretar acréscimos no valor do frete rodoviário, na situação em que a carroceria for do tipo reversível contêiner/carga seca;   
+•	Sujeito a pagamento de frete marítimo mínimo que pode exceder o frete da mercadoria transportada sob outra forma de acondicionamento;   
+•	Custos de reparos, reposição e retorno dos contêineres.
+
+#### Medidas
+
+Os contêineres são padronizados com medidas lidas em pés (’) e polegadas (”). A única medida invariável é a sua largura que tem sempre 8’ (oito pés). A sua altura pode ser de 8’; 8’6” e 9’6”, sendo a primeira padrão ISSO e as demais padrão ASA. Quanto ao comprimento, os mais comuns e conhecidos são os de 10’, 20’, 30’, 40’ e 45’ , embora existam outras medidas como 24’, 28’, 32’. 35’ e 48’.
+
+Geralmente no transporte marítimo, os contêineres mais utilizados são o de 20’ e 40’. O espaço útil varia com o tipo de contêiner.
+
+A altura 9’6” refere-se ao contêiner denominado High Cube H/C e proporciona considerável aumento no espaço volumétrico. H/C é uma característica dos containers de 40’ e 45’.
+
+Quanto ao peso, os de 20’ e 40’ podem comportar no máximo até 30.480 e 34.00 quilos, incluindo o peso do próprio equipamento, resultando em aproximadamente 28.000 e 30.000 quilos de carga útil (payload).
+
+Os contêineres são modulares e os de 20’ são considerados como 1 módulo, sendo denominado TEU (Twenty feet equivalent unit), e servem de padrão para definição de tamanho de navio porta-contêiner. Os de 40’ são denominados FEU (forty feet equivalent unit), porém não são utilizados como medidas para navios. Foot, cujo plural é feet, é uma medida norte-americana e equivale a 30,48cm ou 0,3048m.
+
+#### Tipos e Finalidades dos Contêineres
+
+Existem hoje, muitos tipos de contêineres criados adaptados para todos os tipos de carga, como granéis líquidos, granéis sólidos, refrigerados, petróleo, minérios e animais vivos.
+
+DRY BOX: Totalmente fechado, com portas nos fundos, sendo o container mais utilizado e adequado para o transporte da maioria das cargas gerais secas existentes, como alimentos, Roupas, móveis, etc. Pode ser de 20’ ou 40’.
+
+VENTILATED: semelhante ao dry box, porém com pequenas aberturas no alto das paredes laterais, podendo também tê-las na parte inferior das paredes, para permitir a entrada de ar, para transporte de cargas que requerem ventilação como café e cacau.
+
+REEFER: também semelhante ao dry box, totalmente fechado, com portas nos fundos, apropriado para embarque de cargas perecíveis congeladas ou refrigeradas, que precisam ter a sua temperatura controlada, como carnes, sorvetes, frutas e verduras.
+
+Pode ser integrado com motor próprio para refrigeração, cuja única desvantagem é a perda de espaço ocupado pelo motor. Como também insulado, que não tem motor próprio, tendo na parede da frente duas aberturas (válvulas) para entrada e saída de ar, que são fornecidos por força externa. O container reefer tem para controle de temperatura uma carta de Registro de Temperatura (Partlow Chart) e pode atingir até -25º C.
+
+BULK CONTAINER: similar ao dry box, totalmente fechado, tendo aberturas no teto (escotilhas) para o seu carregamento e uma escotilha na parede do fundo, na parte inferior para descarregametno, apropriado para transporte de granéis sólidos como produtos agrícolas.
+
+OPEN TOP: container sem teto, que é fechado com lonas para transporte de cargas que apresentam dificuldades para embarque pela porta dos fundos e necessitam de um acesso especial, embora também possua a porta normal nos fundos. Próprio para mercadorias que excedam a altura do container, cujas cargas não poderiam ser estufadas num container dry box tradicional.
+
+HALF HEIGHT: container open top, sem teto, porém de meia altura – 4’ ou 4’3”, fechado com lonas e cabeceira basculante, adequado para embarque de minérios, cuja carga é extremamente densa e se embarcada em um open top, este não poderia ser utilizado integralmente quanto ao aspecto de volume, representando uma ocupação de espaço indevido no navio.
+
+OPEN SIDE: com apenas três paredes, sem uma parede lateral, este container é apropriado para mercadorias que apresentam dificuldades para embarques pela porta dos fundos, ou que excedam um pouco a largura do equipamento ou ainda para agilização de sua estufagem.
+
+FLAT RACK: container plataforma, sendo uma combinação dos open top e open side, sem as paredes laterais e sem teto, com cabeceiras fixas, ou dobráveis, adequado para cargas pesadas e grandes e que excedam um pouco as suas dimensões.
+
+PLATAFORM: container plataforma sem paredes e sem teto, tendo apenas o piso apropriado para cargas de grandes dimensões ou muito pesadas.
+
+TANK: container tanque, dentro de uma armação de tamanho padronizado, próprio para transporte de líquidos em geral, perigosos ou não.
+
+Outro equipamento de unitização é o Big Bag, ou Container Flexível, que é um container feito em polipropileno, com alças, que acondiciona praticamente qualquer tipo de carga, sendo interessante para produtos a granel ou embalados em sacos, pois os mantém melhor acomodados e protegidos contra materiais pontiagudos, que podem furá-los ou rasgá-los.
+
+Comporta até duas toneladas de mercadorias. Impermeável, pode ser armazenado em pátios abertos, empilhado uniformemente e transportado em qualquer modo, sem que este tenha que sofrer adaptações de nenhuma espécie, em face da sua configuração e praticidade. Apresenta-se, portanto, como um container de fácil manipulação, tanto no ensacamento, armazenamento e movimentação quanto nos embarques e desembarques. É reutilizável e dobrável, por isso adequado para retorno vazio, já que não ocupa demasiado espaço no navio ou no container.
+
+O container, por ser um equipamento de grande utilização no transporte, que requer uma grande quantidade em estoque para que possa circular com mercadorias pelo mundo, sem que haja faltas. Normalmente as empresas de transporte, principalmente as marítimas, utilizam o sistema de leasing, sendo alugados por dia, para uma viagem simples, viagem completa, ida e volta, por um curto prazo ou até para prazos maiores a 1 ano. O valor do aluguel varia com o seu tipo e tamanho, porém é sempre na base do dia. Mesmo para aluguel de longo prazo, em que o pagamento é feito mensalmente, o cálculo é sempre diário.
+
+#### Estufagem e Equipamentos de Movimentação
+
+Estufar ou ovar é o ato de encher o container com mercadorias, podendo ser estas a granel, embaladas ou paletizadas. Desovar é o ato de retirar mercadorias do mesmo.
+
+Deve-se evitar conteinerizar mercadorias que possuam um grau de umidade muito alto, pois podem apresentar combustão espontânea, como é o caso da farinha de peixe, algodão e farelo de soja. Também não se deve estufar mercadorias completamente diferentes entre si, como por exemplo, em relação a umidade, odor, peso específico, controles diferenciados de temperatura, e nem deixar espaços vazios no container, que precisa ser totalmente ocupado ou Ter sua carga amarrada, escorada, etc.
+
+O armador costuma proceder a uma inspeção prévia, anterior à entrega, denominada PTI (Pre Trip Inspection), cuja validade é de 30 dias e que tem a finalidade de entregar ao embarcador o container em perfeitas condições de utilização.
+
+O container está sujeito a todos os tipos de movimento e, portanto, a mercadoria deve estar estufada adequadamente, principalmente para evitar o excesso de peso em um dos lados, como também as mercadorias mais pesadas devem ser colocadas sob as mais leves. Os espaços vazios devem ser preenchidos com madeira, cavaletes, estrados, bolsas de ar, ou qualquer estrutura que impeça a carga de se movimentar dentro do container. As mercadorias mais pesadas tem melhor aproveitamento nos containers de 20’ e as mais volumosas em um de 40’, devido aos espaços físicos disponíveis e ao peso que cada tipo de container pode suportar, além do custo do frete a considerar.
+
+Nos portos e nos terminais a movimentação é realizada com reachtackers e toplifts, que são empilhadeiras próprias para a movimentação e empilhamento de containeres, e os Transtainers, que são guindastes montados sobre grandes estruturas que correm sobre trilhos e se movimentam ao longo do cais, empilhando e transferindo containers de um ponto a outro.
+Nos embarques e desembarques são utilizados Portainers, que são guindastes de pórticos usados para pegar os container com seus spreaders (quadros que se engatam nos containers e os levantam). São utilizados também equipamentos dos navios como pontes rolantes, guindastes comuns, com cabos de aço que pegam os containers.
+
+Nos deslocamentos e transportes dos containers são usados conjuntos formados por cavalos mecânicos acoplados a trailers, boogies, chassis e plataforma, que são equipamentos especiais para acomodar o container. Estes equipamentos podem ser geradores de energia aos reefers.
+
+###	Lingas
+
+#### Vantagens e Desvantagens das Lingas
+
+ As principais vantagens das lingas são:   
+•	Redução de perdas, roubos e avarias à carga;   
+•	Possíveis reduções de utilização de mão-de-obra na movimentação da carga, nas dependências da empresa exportadora;   
+•	Maior rapidez nas operações de carregamento e descarregamento de veículos e embarcações, permitindo, em conseqüência, aumento da rotatividade dos mesmos;   
+•	Redução das taxas de capatazia no porto de embarque. Na maioria dos portos, apenas quando o peso da unidade de carga excede 1.000 kg.   
+•	Redução das taxas de estiva no porto de embarque. Esta vantagem só é diretamente apropriada pelo exportador quando ele contrata e paga o serviço de estiva da mercadoria a bordo do navio;   
+
+Dentre as desvantagens das lingas, se destacam:   
+•	Investimentos na aquisição de lingas e equipamentos para movimentação das unidades de carga;   
+•	Custos de reposição e retorno das lingas, caso não sejam descartáveis (em princípio, esses custos são sensivelmente menores do que os pertinentes ao conteiner e ao pallet).   
+
+### Transporte aéreo – ULD (Unit Load Devices)
+
+ULD – Unit Load Devices : Unidades próprias para unitização de cargas, ou seja , os conteiners e pallets utilizados na carga aérea. Estes distinguem-se em formatos e tamanhos , bem como em sua concepção e utilização, daqueles utilizados no transporte marítimo. Os ULD poderão ser entregues aos embarcadores ou destinatários por um período máximo de 48 horas, não considerados sábados, domingos e feriados. Serão cobrados cerca de US$ 25,00 por dia ou pro rata pelo atraso na sua devolução.
+
+## PLANEJAMENTO ESTRATÉGICO DAS EMPRESAS
+ (texto obtido em http://www.treasy.com.br/blog/5-passos-para-criar-um-planejamento-estrategico-para-sua-empresa)
+
+
+### Definir a Missão, Visão e Valores da empresa
+
+O primeiro passo de qualquer Planejamento Estratégico é definir Missão, Visão e Valores da organização. Este passo é que dá o “norte” a ser seguido. Sem estas definições, o restante do planejamento perde o sentido.
+
+- Missão: é a declaração sobre o que a organização é, qual seu propósito fundamental, a finalidade de sua existência, o motivo pela qual foi criada. A missão define a identidade da empresa e não costuma mudar ao longo do tempo. Por exemplo, a missão da Treasy é “Simplificar o Planejamento Financeiro das organizações”.
+
+- Visão: representa um estado futuro para a organização, onde ela deseja chegar, o que quer alcançar. Diferente da missão, a visão é criada para um período de tempo pré-determinado, portanto a visão pode mudar ao longo do tempo, de acordo com o momento que organização se encontra. Por exemplo, A Kopenhagen, tem como visão “Ser um grupo competitivo que atue de forma abrangente no segmento alimentício, através de um portfólio de produtos com qualidade, representado por marcas fortes, com características e propostas únicas”.
+
+-	Valores: são princípios, ou crenças, que servem de guia, ou critério, para os comportamentos, atitudes e decisões de todas e quaisquer pessoas, que no exercício das suas responsabilidades, e na busca dos seus objetivos, estejam executando a missão, na direção da visão. Alguns exemplos de valores: Respeito, Confiança, Comprometimento, Responsabilidade, etc.
+
+##	Definir os Objetivos Estratégicos
+
+Com base na Visão estabelecida no passo anterior, é hora de definir os Objetivos Estratégicos para a organização.
+
+Os Objetivos Estratégicos são as metas globais e amplas da organização e devem estar diretamente relacionadas a missão da empresa. Ou seja, a cada Objetivo Estratégico alcançado, a empresa deve caminhar para mais perto de alcançar sua visão.
+
+Alguns exemplos de objetivos estratégicos:   
+-	Aumentar a satisfação dos clientes em 20%;   
+-	Reduzir os custos produtivos em 15%;   
+-	Elevar o índice de capacitação dos funcionários em 30%;   
+
+Uma dica para é sempre começar a definição dos objetivos com um verbo e quantifica-los. 
+
+##	 Definir os Objetivos Táticos (Metas)
+
+Os Objetivos Táticos são os objetivos que abrangem cada unidade específica da organização. São geralmente objetivos divisionais ou departamentais relacionados com as áreas de produção, finanças, marketing e de recursos humanos da organização.
+
+Os Objetivos Táticos devem ser criados de forma a garantir que os Objetivos Estratégicos sejam alcançados.
+
+Alguns exemplos:
+-	Garantir que os pedidos de clientes sejam atendidos em no máximo 1 dia;
+-	Garantir que nenhum produto com defeito seja comercializado;
+-	Garantir que 100% dos funcionários possuam graduação.
+
+##	Definir os Objetivos Operacionais (Planos de Ação)
+
+Já os Objetivos Operacionais são os objetivos específicos e voltados para a execução das operações da organização referem-se geralmente a cada tarefa ou operação especificamente.
+
+Os Objetivos Operacionais devem ser criados em formato de projetos ou planos de ação, como subdivisões dos Objetivos Táticos. Ou seja, são as ações que precisarão ser feitas para garantir que os objetivos táticos sejam alcançados.
+
+Exemplos:
+-	Implantar um sistema de separação e rastreamento dos pedidos;
+- Implantar um programa de qualidade total;
+-	Fechar parceria com uma universidade para capacitar os funcionários.
+
+##	Elaborar um Orçamento Empresarial
+O Orçamento Empresarial é a tradução do Planejamento Estratégico em números.
+
+Depois que sua empresa definiu qual sua Visão (onde e quando quer chegar), desdobrou esta Visão em Objetivos Estratégicos, subdividiu estes objetivos em metas (Objetivos Táticos) e criou planos de ação (Objetivos Operacionais) para alcançar estas metas, o próximo passo é transformar tudo isto em números com ajuda do Orçamento Empresarial.
+
+Seguindo nosso exemplo, no Orçamento, as metas de faturamento vão se tornar Projeções de Vendas, as metas de capacitação dos funcionários vão refletir nas Projeções de Despesas Operacionais, a implantação do sistema de rastreamento se tornará um Investimento Operacional, a melhoria dos processos produtivos terão impacto direto sobre a Projeção de Custos Produtivos e assim por diante.
+
+Desta forma, sua empresa possuirá um plano completo de quanto precisa faturar, quais são os limites de custos e despesas que precisa respeitar, quais investimentos precisa realizar e pode acompanhar o números ao longo do ano, verificando se está caminhando para alcançar sua visão ou se precisa de algum ajuste na operação. Chamamos isto de Acompanhamento e Controle Orçamentário.
+
+Está é uma prática extremamente necessária no processo de Planejamento de qualquer empresa e uma etapa importantíssima do Orçamento Empresarial.
+
+# INDICADORES DE AVALIAÇÃO DE TRANSPORTE
+
+-	As estatísticas sobre os tráfegos representam dados em termos físicos, que refletem o interesse de traduzir as atividades das empresas em termos monetários.   
+-	As estatísticas operacionais dos transportes registram por períodos estabelecidos (dia, decênio, quinzena, mês, ano), os resultados alcançados.    
+-	Uma vez consolidadas (por veículo, fluxo, linha, rota, empresa etc) estas estatísticas são convertidas em informações, através dos indicadores de desempenho.   
+
+## KPI – Key Performance Indicators – Indicador-chave de desempenho
+
+###	Definição
+
+De maneira sintética, os KPIs podem ser definidos como um valor quantitativo, resultante de uma análise de dados e métricas, que possibilita a mensuração dos processos de produção e a consequente gestão deste processo, visando atingir as metas da empresa.
+
+###	Função
+
+São utilizados para mensurar o desempenho dos processos em uma empresa. A partir das informações analisadas é possível estabelecer metas para o alcance dos objetivos gerais da empresa. 
+
+Por meio dos KPIs, os colaboradores tomam conhecimento e atuam na missão da empresa. 
+
+###	Classificação dos KPIs
+- Indicadores Estratégicos: são os indicadores primários da organização, que serão acompanhados diretamente pela diretoria e seu principal propósito é demonstrar de forma rápida se os Objetivos Estratégicos estão sendo alcançados. Exemplo: Faturamento Bruto.
+
+-	Indicadores Táticos: aqui são indicadores secundários, que serão acompanhados pelas gerencias de cada departamento. Apesar de não serem estratégicos, seus resultados devem ser intimamente ligados aos resultados dos Indicadores Estratégicos. Exemplo: Faturamento por Linha de Produto ou por Canal de Vendas;
+
+-	Indicadores Operacionais: por fim, indicadores que serão acompanhados pelos especialistas de cada área. Estes indicadores tem a função de fornecer mais detalhes para entendimento dos resultados dos Indicadores Táticos e Estratégicos. Exemplo: Número de Vendedores por Canal de Vendas.
+
+É preciso muita atenção na hora de escolher quais indicadores utilizar em sua empresa. Indicadores mal definidos podem gerar decisões equivocadas. Busque sempre criar Indicadores Inteligentes, que reflitam a estratégia e a realidade da organização.
+
+##	Processos operacionais que serão trabalhados na gestão do transporte de cargas por meio de indicadores KPIs
+
+a.	Especificação e avaliação de veículos
+b.	Dimensionamento de frotas
+c.	Operação de frotas
+d.	Controle de custos operacionais no transporte
+e.	Planejamento da manutenção
+f.	Investimentos em transportes
+
+
+##	UNIDADES E INDICADORES DE AVALIAÇÃO DE TRANSPORTE
+
+###	Objetivo: medir os seguintes atributos
+
+-	Previsão de demanda   
+-	Produção (oferta) – Planejada/Programada/Realizada   
+- Desvios – Plan x Prog / Prog x Real   
+-	Eficiência: A eficiência preocupa-se com os meios, com os métodos e procedimentos planejados e organizados a fim de assegurar otimização dos recursos disponíveis   
+-	Eficácia: Capacidade da organização em cumprir as suas metas e objetivos previamente fixados.   
+-	Efetividade: eficiência + eficácia   
+-	Confiabilidade: índice de falhas   
+-	Segurança operacional   
+-	Produtividade: produção/recursos   
+-	Economicidade: Característica da alternativa, mais econômica para a solução de determinado problema.   
+-	Rentabilidade: lucro e lucratividade   
+
+##	Natureza dos indicadores
+
+###	Diretos simples
+
+-	veículos, viagens, passageiros, toneladas etc   
+-	MKBF – Mean kilometer between failure   
+-	Ocorrências absolutas de acidentes, avarias etc   
+
+#### Diretos compostos
+
+-	Caracterizar percursos realizados e tempos consumidos nas operações e seus períodos de realização. Veículos – carregados e vazios no período, pela extensão etc.
+
+#### Indicadores de Percurso
+
+–	Exemplo de indicadores de percurso   
+»	Ton. útil = Peso da carga remunerada   
+»	Ton morta = Peso da tara   
+»	Ton bruta = ton útil + ton morta   
+»	Veíc.Km = percursos dos veículos   
+»	Pass.Km = percurso dos passageiros   
+
+- Registros estatísticos dos fluxos de tráfegos - percurso. Os fluxos de tráfegos podem ser registrados:   
+»	em toneladas transportadas   
+»	em passageiros   
+»	em toneladas-km e passageiros-km realizados (percurso das tons e passageiros - TKU e Pkm)   
+»	Estes últimos resultados são obtidos efetuando os produtos das toneladas ou passageiros transportados pelas respectivas distancias percorridas, num dado período.   
+»	Este método deve ser considerado porquê permite evitar os riscos de contagem múltipla das toneladas e passageiros transportados, nos casos das rupturas de carga   
+»	As rupturas de carga representam pontos baldeados e integrações modais e intermodais, trocas de veículos etc.   
+»	Seja o caso de uma expedição de 10t efetuada sobre uma distância média de 1.055km (gráfico e tabela a seguir).   
+
+####	Indicadores de Tempo
+
+Tempos previstos e gastos nos deslocamentos das quantidades envolvidas. Estes indicadores são obtidos pelos produtos das quantidades envolvidas pelos correspondentes tempos gastos nas operações   
+»	Exemplo de indicadores de tempo   
+»	veíc - dia = dias dos veículos no período   
+»	veíc - hora = horas dos veículos no período   
+–	As estatísticas por veículos, viagem etc são registrados em horas e minutos, no período considerado   
+–	Apenas a soma dos tempos é arredondada para que se evite distorções dos resultados   
+
+###	Razões
+
+-	Os indicadores expressos por razoes permitem que se façam avaliações mais seguras dos resultados das operações.   
+-	Velocidades e distâncias   
+- Ocupações   
+
+### Outros
+ 
+# ESPECIFICAÇÃO E AVALIAÇÃO DE VEÍCULOS
+
+## Características da Carga
+
+•	Tipo (sólida, granel, sacaria   
+•	Peso específico (kg/m3) ou volume unitário   
+•	Volume m3   
+•	Fragilidade   
+•	Tipo de embalagem   
+•	Limite de empilhamento   
+•	Possibilidade de unitização   
+•	Temperatura de conservação   
+•	Nível de umidade admissível   
+•	Prazo de validade   
+•	Legislação   
+
+## Características do Transporte   
+
+•	Identificação de ponto de origem e destino   
+•	Determinação da demanda e frequência de abastecimento/atendimento   
+•	Sistemas de carga e descarga (identificação/compatibilização)   
+•	Horários de funcionamento dos locais de origem e destino   
+•	Dias úteis disponíveis por mês   
+•	Tempo de carga e descarga (espera, pesagem, conferência e emissão de documentos)   
+
+##	Características das Rotas
+
+•	Distâncias entre os pontos de origem e destino   
+•	Tipo de estrada (pavimentação e trânsito)   
+•	Topografia (rampa máxima)   
+•	Pesos máximos permitidos em pontes e viadutos   
+•	Distância máxima entre os pontos de abastecimento, assistência técnica   
+•	Legislação de trânsito   
+
+
+##	Avaliação de Desempenho de Veículos
+
+- Indicadores de Produtividade
+
+- Velocidade Operacional
+
+- Tempo de Carga e Descarga
+
+- Horas de trabalho
+
+- Consumo
+
+#	DIMENSIONAMENTO DE FROTAS 
+
+##	Conceito de Rotação de ciclo
+
+- Considera os tempos de um veículo desde o início de um carregamento, englobando tempos de carregamentos na origem, viagem de ida (percurso carregado), descarga no destino e viagem de volta (percurso de vazio) até o ponto do carregamento subseqüente n + 1.
+
+C = Tc + Tvc + Td + Tvv
+
+–	C = Ciclo   
+–	Tt = Tempo em terminais = Tc + Td   
+–	Tc = Tempo de carregamento   
+–	Td = Tempo de descarga   
+–	Tv = Tempo de viagem = Tvc + Tvv   
+–	Tvc = Tempo de viagem do veículo carregado   
+–	Tvv = Tempo de viagem do veículo vazio   
+
+Essa métrica de cálculo é a mais simples possível. O tempo de ciclo, de forma genérica, pode ser definido como o tempo necessário para cumprimento de um roteiro de entregas (ou coletas), visando dimensionar o tempo necessário para que um mesmo veículo possa ser aproveitado em viagens subsequentes. 
+
+##	Conceito de Existência (VHE)
+
+-	Existência = tempo total de todos os veículos que integraram a frota durante o período considerado.
+
+##	Conceito de Imobilização (VHI)
+
+-	Dentro de oficinas para reparos devidos acidentes e defeitos e para manutenções correntes e pesados.   
+-	Imob. = veículos-hora imobilizados em oficinas = VHI   
+- Nota: Os tempos de imobilização são contados somente em veículos dentro das oficinas   
+
+##	Conceito de Avarias em trânsito (VHA)
+
+-	Oficina, após remoção, ou até sua plena reparação no próprio local. Pode gerar impacto, se em via de tráfego forçado, na circulação de outros veículos ou composições.
+
+-	Conflito se deve ser alocado à imobilização ou à não utilização da disponibilidade
+
+##	Utilização da disponibilidade (VHU)
+
+- O veículo-hora efetivamente utilizado para produção (em trem, em manobra)
+
+##	Não Utilização da Disponibilidade (VHNU)
+
+-	Paralização = veíc. hora (existentes - imobilizados — avariados em trânsito — utilizados) no mês
+
+Exemplo:
+-	Para uma frota de 10 veículos, tem-se o horizonte de planejamento de um mês (30 dias). Sabe-se que 15% da frota está constantemente imobilizada. Sabe-se ainda que 5% da frota não produz transporte devido a avarias ao longo do percurso. A eficiência operacional (oferta) que visa a adequação da frota à demanda por transporte é baixa, pois há uma carência de profissionais para alocação de veículos de forma adequada aos fluxos de transporte. Assim, os veículos destinados à produção ficam parados por cerca de 30% do tempo. Pede-se:
+
+-	Determine o total de veículos-hora que a empresa dispõe para a produção de transporte. Demonstre esse cálculo, considerando cada parcela que compõe as horas disponíveis para a produção.
+
+# Dimensionamento de Frotas
+
+1. Uma empresa, proprietária de uma frota de veículos destinados ao transporte rodoviário, precisa calcular quantos veículos serão necessários para efetuar a movimentação de 100.000 toneladas-úteis de carga no período de um mês. 
+Sabe-se que a imobilização de veículos é, em média, 10% da frota total e a utilização de veículos chega a 95% dos ativos disponíveis. Sabe-se ainda que a capacidade nominal do veículo é 27 toneladas. 
+
+O tempo de ciclo para os veículos na rota entre os pontos A e B é equivalente a 4 dias. 
+
+a)	Calcule o número de veículos necessários para a movimentação de toda a demanda de transporte no cenário proposto. 
+
+b)	Se houvesse uma redução de um dia no ciclo, qual seria o impacto na necessidade de veículos. 
+
+c)	Verifique a alteração da necessidade de veículos considerando um incremento no ciclo de meio dia, totalizando 4,5 dias, mas com aumento do carregamento de cada veículo para a capacidade nominal. 
+
+#	PLANEJAMENTO DA MANUTENÇÃO
+
+#	OPERAÇÃO DE FROTAS
+
+## Roteirização
+
+#	CONTROLE DE CUSTOS OPERACIONAIS NO TRANSPORTE
+
+#	INVESTIMENTOS EM TRANSPORTES
+
+

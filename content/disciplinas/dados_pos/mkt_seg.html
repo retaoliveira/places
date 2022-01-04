@@ -1,0 +1,361 @@
+---
+date: '2020-12-24'
+draft: false
+menu:
+  dados_pos:
+    parent: Unidade 5 - Segmentação de mercado
+    weight: 10
+title: Segmentação de mercado
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#funções">Funções</a>
+<ul>
+<li><a href="#normalização-minmax">Normalização MinMax</a></li>
+</ul></li>
+<li><a href="#o-que-é-segmentação-de-mercado">O que é segmentação de mercado?</a>
+<ul>
+<li><a href="#como-implementar-a-segmentação-de-clientes-no-r">Como implementar a segmentação de clientes no R?</a></li>
+</ul></li>
+<li><a href="#visualização-de-gênero-do-cliente">Visualização de gênero do cliente</a></li>
+<li><a href="#visualização-da-distribuição-etária">Visualização da distribuição etária</a></li>
+<li><a href="#análise-da-renda-anual-dos-clientes">Análise da renda anual dos clientes</a></li>
+<li><a href="#análise-da-pontuação-de-gastos-dos-clientes">Análise da pontuação de gastos dos clientes</a>
+<ul>
+<li><a href="#k-means-cluster-para-segmentação-de-mercado">K-Means Cluster para segmentação de mercado</a>
+<ul>
+<li><a href="#determinando-o-número-de-clusters-ótimos">Determinando o número de clusters ótimos</a></li>
+</ul></li>
+<li><a href="#o-conjunto-de-agrupamentos-pode-ser-visualizado-por-meio-da-função">O conjunto de agrupamentos pode ser visualizado por meio da função:</a></li>
+<li><a href="#relacionando-as-variáveis">Relacionando as variáveis:</a></li>
+<li><a href="#síntese">Síntese</a></li>
+</ul></li>
+</ul>
+</div>
+
+<pre class="r"><code>library(gmodels)
+library(factoextra)</code></pre>
+<pre><code>## Carregando pacotes exigidos: ggplot2</code></pre>
+<pre><code>## Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa</code></pre>
+<pre class="r"><code>library(FactoMineR)
+library(ggplot2)
+library(ggcorrplot)
+library(psych)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;psych&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:ggplot2&#39;:
+## 
+##     %+%, alpha</code></pre>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.0.4</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v tibble  3.0.6     v dplyr   1.0.4
+## v tidyr   1.1.2     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.1
+## v purrr   0.3.4</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x psych::%+%()    masks ggplot2::%+%()
+## x psych::alpha()  masks ggplot2::alpha()
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(outliers)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;outliers&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:psych&#39;:
+## 
+##     outlier</code></pre>
+<pre class="r"><code>library(hrbrthemes)
+library(ggplot2)
+library(dplyr)
+library(plotly)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<pre class="r"><code>library(viridis)</code></pre>
+<pre><code>## Carregando pacotes exigidos: viridisLite</code></pre>
+<pre class="r"><code>library(hrbrthemes)
+library(knitr)
+library(kableExtra)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;kableExtra&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     group_rows</code></pre>
+<div id="funções" class="section level1">
+<h1>Funções</h1>
+<div id="normalização-minmax" class="section level2">
+<h2>Normalização MinMax</h2>
+<pre class="r"><code>norm_minmax &lt;- function(x){
+                           (x- min(x)) /(max(x)-min(x))
+}</code></pre>
+</div>
+</div>
+<div id="o-que-é-segmentação-de-mercado" class="section level1">
+<h1>O que é segmentação de mercado?</h1>
+<p>Segmentação de mercado é o processo de divisão da base de clientes em vários grupos de indivíduos que compartilham uma semelhança de diferentes maneiras que são relevantes para o marketing, tais como sexo, idade, interesses e hábitos de gastos diversos.</p>
+<p>As empresas que implantam a segmentação de clientes consideram que cada cliente tem requisitos diferentes e exigem um esforço de marketing específico para tratá-los adequadamente. As empresas visam obter uma abordagem mais profunda do cliente que estão almejando. Portanto, seu objetivo tem que ser específico e deve ser adaptado para atender às exigências individuais de cada cliente. Além disso, através dos dados coletados, as empresas podem obter uma compreensão mais profunda das preferências dos clientes, bem como os requisitos para descobrir segmentos valiosos que lhes proporcionariam o máximo lucro. Desta forma, elas podem estratificar suas técnicas de marketing de forma mais eficiente e minimizar a possibilidade de risco ao seu investimento.</p>
+<p>A técnica de segmentação de clientes depende de vários diferenciais-chave que dividem os clientes em grupos a serem analisados. Dados relacionados à demografia, geografia, status econômico, bem como padrões comportamentais, desempenham um papel crucial na determinação da direção da empresa em direção aos vários segmentos.</p>
+<div id="como-implementar-a-segmentação-de-clientes-no-r" class="section level2">
+<h2>Como implementar a segmentação de clientes no R?</h2>
+<p>Na primeira etapa deste projeto de ciência de dados, vamos realizar a exploração de dados. Importaremos os pacotes essenciais necessários para esta função e, em seguida, leremos nossos dados. Finalmente, analisaremos os dados de entrada para obter as informações necessárias.</p>
+<pre class="r"><code>customer_data=read.csv(&quot;https://raw.githubusercontent.com/retaoliveira/relements/main/data/Mall_Customers.csv?token=AKYVP2TU37DVTLG7CB6DYE3AM53OW&quot;)
+
+str(customer_data)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    200 obs. of  5 variables:
+##  $ CustomerID            : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ Genre                 : chr  &quot;Male&quot; &quot;Male&quot; &quot;Female&quot; &quot;Female&quot; ...
+##  $ Age                   : int  19 21 20 23 31 22 35 23 64 30 ...
+##  $ Annual.Income..k..    : int  15 15 16 16 17 17 18 18 19 19 ...
+##  $ Spending.Score..1.100.: int  39 81 6 77 40 76 6 94 3 72 ...</code></pre>
+<pre class="r"><code>names(customer_data)</code></pre>
+<pre><code>## [1] &quot;CustomerID&quot;             &quot;Genre&quot;                  &quot;Age&quot;                   
+## [4] &quot;Annual.Income..k..&quot;     &quot;Spending.Score..1.100.&quot;</code></pre>
+<p>Temos uma variável que é uma identificação do consumidor, uma variável de gênero, uma de idade, outra de renda anual em k$ e um score de gastos que varia entre 1 e 100.</p>
+<p>Vamos agora exibir as primeiras seis linhas de nosso conjunto de dados usando a função head() e usar a função summary() para emitir o resumo do mesmo.</p>
+<pre class="r"><code>head(customer_data)</code></pre>
+<pre><code>##   CustomerID  Genre Age Annual.Income..k.. Spending.Score..1.100.
+## 1          1   Male  19                 15                     39
+## 2          2   Male  21                 15                     81
+## 3          3 Female  20                 16                      6
+## 4          4 Female  23                 16                     77
+## 5          5 Female  31                 17                     40
+## 6          6 Female  22                 17                     76</code></pre>
+<pre class="r"><code>summary(customer_data$Age)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   18.00   28.75   36.00   38.85   49.00   70.00</code></pre>
+<pre class="r"><code>sd(customer_data$Age)</code></pre>
+<pre><code>## [1] 13.96901</code></pre>
+<pre class="r"><code>summary(customer_data$Annual.Income..k..)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   15.00   41.50   61.50   60.56   78.00  137.00</code></pre>
+<pre class="r"><code>sd(customer_data$Annual.Income..k..)</code></pre>
+<pre><code>## [1] 26.26472</code></pre>
+<pre class="r"><code>summary(customer_data$Age)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   18.00   28.75   36.00   38.85   49.00   70.00</code></pre>
+<pre class="r"><code>sd(customer_data$Spending.Score..1.100.)</code></pre>
+<pre><code>## [1] 25.82352</code></pre>
+<blockquote>
+<p>Faça uma interpretação das variáveis</p>
+</blockquote>
+<hr>
+</div>
+</div>
+<div id="visualização-de-gênero-do-cliente" class="section level1">
+<h1>Visualização de gênero do cliente</h1>
+<p>Criaremos um barplot para mostrar a distribuição de gênero em nosso conjunto de dados de clientes_dados.</p>
+<pre class="r"><code>a &lt;- table(customer_data$Genre)
+
+ggplot(customer_data, aes(x = Genre)) +
+  geom_bar(fill=&quot;red&quot;) +
+  ggtitle(&quot;Usando o BarPlot para exibir a comparação de gênero&quot;) +
+  theme_ipsum() +
+  labs(x = &quot;Gênero&quot;, y = &quot;Número de ocorrências&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Pelo gráfico acima, observamos que o número de mulheres é maior do que o de homens.</p>
+</div>
+<div id="visualização-da-distribuição-etária" class="section level1">
+<h1>Visualização da distribuição etária</h1>
+<p>Vamos traçar um histograma para visualizar a distribuição e traçar a freqüência das idades dos clientes. Primeiramente, procederemos com um resumo da variável Idade.</p>
+<pre class="r"><code>summary(customer_data$Age)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   18.00   28.75   36.00   38.85   49.00   70.00</code></pre>
+<pre class="r"><code>ggplot(customer_data, aes(x = Age)) +
+  geom_histogram(binwidth = 5) +
+  theme_ipsum() </code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>boxplot(customer_data$Age,
+       col=&quot;#ff0066&quot;,
+       main=&quot;Boxplot for Descriptive Analysis of Age&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(customer_data, aes(y = Age)) +
+  geom_boxplot(fill=&quot;#ff0066&quot;) +
+  theme_ipsum() </code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p>A partir das duas visualizações acima, concluímos que a idade mediana do cliente está entre 30 e 35 anos. A idade mínima dos clientes é 18 anos, enquanto que a idade máxima é 70 anos.</p>
+</div>
+<div id="análise-da-renda-anual-dos-clientes" class="section level1">
+<h1>Análise da renda anual dos clientes</h1>
+<p>Nesta seção do projeto R, vamos criar visualizações para analisar a renda anual dos clientes. Traçaremos um histograma e então procederemos a examinar estes dados usando um gráfico de densidade.</p>
+<pre class="r"><code>summary(customer_data$Annual.Income..k..)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   15.00   41.50   61.50   60.56   78.00  137.00</code></pre>
+<pre class="r"><code>ggplot(customer_data) +
+  geom_histogram(aes(x = Annual.Income..k..), binwidth = 10, fill = &quot;#660033&quot;) +
+  theme_ipsum() +
+  ggtitle(&quot;Histogram for Annual Income&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(customer_data) +
+  geom_density(aes(x = Annual.Income..k..), fill=&quot;#69b3a2&quot;, color=&quot;#e9ecef&quot;, alpha=0.8) +
+  theme_ipsum() +
+  ggtitle(&quot;Histogram for Annual Income&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Da análise descritiva acima, concluímos que a renda mínima anual dos clientes é de 15 e a máxima renda é de 137 mil $ anuais. As pessoas que ganham uma renda média de 70 têm a maior contagem de freqüência em nossa distribuição de histogramas. O salário médio de todos os clientes é de 60,56.</p>
+</div>
+<div id="análise-da-pontuação-de-gastos-dos-clientes" class="section level1">
+<h1>Análise da pontuação de gastos dos clientes</h1>
+<pre class="r"><code>summary(customer_data$Spending.Score..1.100.)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    1.00   34.75   50.00   50.20   73.00   99.00</code></pre>
+<pre class="r"><code>ggplot(customer_data, aes(y = Spending.Score..1.100.)) +
+  geom_boxplot(fill=&quot;#ff0066&quot;) +
+  theme_ipsum() </code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(customer_data) +
+  geom_histogram(aes(x = Spending.Score..1.100.), binwidth = 10, fill = &quot;#660033&quot;) +
+  theme_ipsum() +
+  ggtitle(&quot;HistoGgram for Spending Score&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Podemos ver que a Análise Descritiva da Pontuação de Gastos é que Min é 1, Max é 99 e a média é 50,20. Pelo histograma, concluímos que os clientes entre as classes 40 e 50 são os mais frequentes entre todas as classes.</p>
+<div id="k-means-cluster-para-segmentação-de-mercado" class="section level2">
+<h2>K-Means Cluster para segmentação de mercado</h2>
+<p>Ao utilizar o algoritmo K-Means clustering, o primeiro passo é indicar o número de clusters (k) que desejamos produzir. O algoritmo começa com a seleção aleatória de <code>k</code> objetos do conjunto de dados que servirão como os centros iniciais de nossos clusters.</p>
+<p>Estes objetos selecionados são os meios de agrupamento, também conhecidos como centroides. Então, os objetos restantes são atribuídos aos centróides mais próximos. Esses centróides são definidos pela Distância Euclidiana presente entre o objeto e o cluster. Nos referimos a esta etapa como “atribuição de agrupamento”.</p>
+<p>Quando a atribuição é concluída, o algoritmo procede para calcular o novo valor médio de cada agrupamento presente nos dados. Após o recálculo dos centros, as observações são verificadas, identificando se elas estão mais próximas de um agrupamento diferente. Usando a média atualizada do cluster, os objetos passam por uma reatribuição. Isto passa repetidamente por várias iterações até que as atribuições de agrupamento parem de se alterar. Os clusters que estão presentes na iteração atual são os mesmos que foram obtidos na iteração anterior.</p>
+<div id="determinando-o-número-de-clusters-ótimos" class="section level3">
+<h3>Determinando o número de clusters ótimos</h3>
+<p>Ao trabalhar com clusters, é preciso especificar o número de clusters a serem utilizados. Para ajudá-lo a determinar os clusters ideais, há três métodos populares. Consideraremos o método de cotovelo.</p>
+<p>O principal objetivo por trás de métodos de partição de clusters como o K-Means é definir os clusters de forma que a variação intra-cluster permaneça mínima.</p>
+<p>No R, é possível implementar essa análise por meio da função a seguir.</p>
+<pre class="r"><code>df &lt;- customer_data %&gt;% 
+  mutate(Genre = ifelse(Genre == &quot;Male&quot;, 1, 2)) %&gt;% 
+  select(&quot;Genre&quot;, &quot;Age&quot;, &quot;Annual.Income..k..&quot;, &quot;Spending.Score..1.100.&quot;)
+  
+fviz_nbclust(df, kmeans, method = &quot;wss&quot;)+
+  geom_vline(xintercept = 6, linetype = 2)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Do gráfico acima, concluímos que 6 é um número apropriado de clusters.</p>
+<p>Usando a função <code>fviz_nbclust()</code>, é possível determinar e visualizar o número ideal de clusters por meio do método da silhueta:</p>
+<pre class="r"><code>library(NbClust)
+library(factoextra)
+
+fviz_nbclust(customer_data[,3:5], kmeans, method = &quot;silhouette&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>Agora, tomemos k = 6 como nosso número de clusters inicial.</p>
+<pre class="r"><code>set.seed(12345)
+km.res &lt;- kmeans(df, 6, nstart=25)
+print(km.res)</code></pre>
+<pre><code>## K-means clustering with 6 clusters of sizes 39, 22, 35, 21, 38, 45
+## 
+## Cluster means:
+##      Genre      Age Annual.Income..k.. Spending.Score..1.100.
+## 1 1.538462 32.69231           86.53846               82.12821
+## 2 1.590909 25.27273           25.72727               79.36364
+## 3 1.428571 41.68571           88.22857               17.28571
+## 4 1.619048 44.14286           25.14286               19.52381
+## 5 1.657895 27.00000           56.65789               49.13158
+## 6 1.555556 56.15556           53.37778               49.08889
+## 
+## Clustering vector:
+##   [1] 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4 2 4
+##  [38] 2 4 2 6 2 6 5 4 2 6 5 5 5 6 5 5 6 6 6 6 6 5 6 6 5 6 6 6 5 6 6 5 5 6 6 6 6
+##  [75] 6 5 6 5 5 6 6 5 6 6 5 6 6 5 5 6 6 5 6 5 5 5 6 5 6 5 5 6 6 5 6 5 6 6 6 6 6
+## [112] 5 5 5 5 5 6 6 6 6 5 5 5 1 5 1 3 1 3 1 3 1 5 1 3 1 3 1 3 1 3 1 5 1 3 1 3 1
+## [149] 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3
+## [186] 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1
+## 
+## Within cluster sum of squares by cluster:
+## [1] 13982.051  4105.136 16699.429  7737.333  7751.447  8073.244
+##  (between_SS / total_SS =  81.1 %)
+## 
+## Available components:
+## 
+## [1] &quot;cluster&quot;      &quot;centers&quot;      &quot;totss&quot;        &quot;withinss&quot;     &quot;tot.withinss&quot;
+## [6] &quot;betweenss&quot;    &quot;size&quot;         &quot;iter&quot;         &quot;ifault&quot;</code></pre>
+<p>Na saída de nossa operação de kmeans, observamos uma lista com várias informações-chave. A partir daí, concluímos que as informações úteis são:</p>
+<ul>
+<li>cluster - Este é um vetor de vários inteiros que denotam o cluster que tem uma alocação de cada ponto.+</li>
+<li>totss - Isto representa a soma total dos quadrados.</li>
+<li>centers - Matriz composta de vários centros de agrupamento</li>
+<li>withinss - Este é um vetor que representa a soma intra-cluster dos quadrados tendo um componente por cluster.</li>
+<li>tot.withinss - Denota a soma total intra-cluster de quadrados.</li>
+<li>betweenss - Esta é a soma dos quadrados entre os quadrados de um cluster.</li>
+<li>size - O número total de pontos que cada aglomerado possui.</li>
+</ul>
+<p>As médias das variáveis para os agrupamentos podem ser obtidas por meio da função:</p>
+<pre class="r"><code>cluster_result &lt;- aggregate(df, by=list(cluster=km.res$cluster), mean)
+cluster_result</code></pre>
+<pre><code>##   cluster    Genre      Age Annual.Income..k.. Spending.Score..1.100.
+## 1       1 1.538462 32.69231           86.53846               82.12821
+## 2       2 1.590909 25.27273           25.72727               79.36364
+## 3       3 1.428571 41.68571           88.22857               17.28571
+## 4       4 1.619048 44.14286           25.14286               19.52381
+## 5       5 1.657895 27.00000           56.65789               49.13158
+## 6       6 1.555556 56.15556           53.37778               49.08889</code></pre>
+</div>
+</div>
+<div id="o-conjunto-de-agrupamentos-pode-ser-visualizado-por-meio-da-função" class="section level2">
+<h2>O conjunto de agrupamentos pode ser visualizado por meio da função:</h2>
+<pre class="r"><code>df2 &lt;- cbind(df, cluster=km.res$cluster)
+
+km.res$centers</code></pre>
+<pre><code>##      Genre      Age Annual.Income..k.. Spending.Score..1.100.
+## 1 1.538462 32.69231           86.53846               82.12821
+## 2 1.590909 25.27273           25.72727               79.36364
+## 3 1.428571 41.68571           88.22857               17.28571
+## 4 1.619048 44.14286           25.14286               19.52381
+## 5 1.657895 27.00000           56.65789               49.13158
+## 6 1.555556 56.15556           53.37778               49.08889</code></pre>
+<pre class="r"><code>a &lt;- fviz_cluster(km.res, data=df2,
+             palette = c(&quot;#2E9FDF&quot;, &quot;#00AFBB&quot;, &quot;#E7B800&quot;, &quot;#FC4E07&quot;, &quot;#E46726&quot;, &quot;#6D9EC1&quot;),
+             #ellipse.type=&quot;euclid&quot;,
+             star.plot=TRUE,
+             repel=TRUE)
+
+a + theme_ipsum()</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+</div>
+<div id="relacionando-as-variáveis" class="section level2">
+<h2>Relacionando as variáveis:</h2>
+<pre class="r"><code>ggplot(df2, aes(x =Annual.Income..k.., y = Spending.Score..1.100.)) + 
+  geom_point(stat = &quot;identity&quot;, aes(color = as.factor(cluster))) +
+  scale_color_discrete(name=&quot; &quot;,
+              breaks=c(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;,&quot;6&quot;),
+              labels=c(&quot;Cluster 1&quot;, &quot;Cluster 2&quot;, &quot;Cluster 3&quot;, &quot;Cluster 4&quot;, &quot;Cluster 5&quot;,&quot;Cluster 6&quot;)) +
+  ggtitle(&quot;Segments of Mall Customers&quot;, subtitle = &quot;Using K-means Clustering&quot;)</code></pre>
+<p><img src="/places/courses/dados_pos/mkt_seg_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<blockquote>
+<p>Complete a análise a seguir identificando os agrupamentos:</p>
+</blockquote>
+<p>Da visualização acima, observamos que há uma distribuição de 6 clusters como segue:</p>
+<ul>
+<li><p>Cluster ___ e ___ - Estes clusters representam os dados do cliente com o salário médio de renda, bem como o gasto médio anual de salário.</p></li>
+<li><p>Cluster ___ - Este cluster representa o cliente_dados com uma alta renda anual, bem como um alto gasto anual.</p></li>
+<li><p>Cluster ___ - Este grupo denota os dados do cliente com baixa renda anual, bem como o baixo gasto anual de renda.</p></li>
+<li><p>Cluster ___ - Este cluster denota uma alta renda anual e um baixo gasto anual.</p></li>
+<li><p>Cluster ___ - Este cluster representa uma baixa renda anual, mas seu alto gasto anual.</p></li>
+</ul>
+<p>Com a ajuda do clustering, podemos compreender muito melhor as variáveis, o que nos leva a tomar decisões cuidadosas. Com a identificação dos clientes, as empresas podem lançar produtos e serviços que visam clientes com base em vários parâmetros como renda, idade, padrões de gastos, etc. Além disso, padrões mais complexos, como revisões de produtos, são levados em consideração para melhor segmentação.</p>
+</div>
+<div id="síntese" class="section level2">
+<h2>Síntese</h2>
+<p>Neste projeto de ciência de dados, passamos pelo modelo de segmentação do cliente. Desenvolvemos isto por meio de um algoritmo de clustering chamado K-means clustering. Analisamos e visualizamos os dados e depois procedemos à implementação de nosso algoritmo.</p>
+<hr>
+<p><em>Créditos</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://data-flair.training/blogs/r-data-science-project-customer-segmentation/">Projeto Data Science - Segmentação de clientes usando o aprendizado de máquinas em R</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

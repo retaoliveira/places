@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/hugo/</link>
+    <description>Recent content in Hugo on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 26 Dec 2020 19:23:01 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

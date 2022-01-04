@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logística Urbana on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/cursos/log_urb/</link>
+    <description>Recent content in Logística Urbana on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/cursos/log_urb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Desafios da Logística Urbana</title>
+      <link>https://retaoliveira.github.io/cursos/log_urb/desafios/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_urb/desafios/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/xQ-MuZguCK4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/Rdu1krb6SJQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/oFSL9HAhnew&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;iframe width=&#34;900&#34; height=&#34;506&#34; src=&#34;https://www.youtube.com/embed/oGgDelr8uls&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

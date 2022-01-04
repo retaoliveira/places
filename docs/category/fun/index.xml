@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fun on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/category/fun/</link>
+    <description>Recent content in Fun on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 26 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/category/fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Como deixar o R com a minha cara</title>
+      <link>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</guid>
+      <description>&lt;p&gt;Para trocar o tema, basta fazer o download do tema favorito (ou criar o seu) e carrega no RStudio. Para isso:&lt;/p&gt;
+&lt;p&gt;Tools -&amp;gt; Global Options -&amp;gt; Appearance -&amp;gt; Add&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tmtheme-editor.herokuapp.com/#!/editor/theme/Abdal%20Black%20Hackers&#34;&gt;Temas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

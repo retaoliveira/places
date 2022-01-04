@@ -1,0 +1,38 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 5
+title: Tecnologia da Informação 
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 5
+---
+
+O prazo de entrega desta atividade pelo SIGAA é **16/03**. 
+
+> Não se esqueçam de incluir o nome dos membros do grupo na postagem!
+
+
+Leia os artigos: 
+
+- [Tecnologia da Informação aplicada à Logística by Paulo R. Bertaglia](https://github.com/retaoliveira/relements/raw/main/texto/ti2013.pdf)
+
+- [Logística + Tecnologia: na prática a teoria é outra](https://github.com/retaoliveira/relements/raw/main/texto/ti_pratica.pdf) 
+
+- [Supply Chain 4.0 - a reconfiguração das cadeias de suprimentos](https://github.com/retaoliveira/relements/raw/main/texto/2020_varejo.pdf)
+
+e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
+
+
+1. Quais as contribuições essenciais das TICs para a gestão da cadeia de suprimentos? Existem aspectos negativos da implementação de TI quando o objetivo da gestão da cadeia de suprimentos está centrado no trade-off entre responsividade e eficiência? Há diferenças do papel das TICs quando os conceitos de sustentabilidade e resiliência são considerados como objetivos estratégicos da SCM?
+
+2. Vocês acreditam que tecnologias como a Impressão 3D podem viabilizar uma gestão da cadeia de suprimentos mais responsiva e eficiente? Explique o seu ponto de vista. 
+

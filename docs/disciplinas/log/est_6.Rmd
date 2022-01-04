@@ -1,0 +1,75 @@
+---
+date: "2021-07-20T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 20
+title: Redes Logísticas e Custos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **18/08**
+
+# Exercício 1
+
+Uma empresa constituída de 3 fábricas produz um componente que é vendido a um preço fixo de entrega de R$ 2,20 por unidade. Os custos de transporte das fábricas para os clientes são mostrados a seguir:
+
+
+|   |	A	|B	|C|	D	|E|
+|---|---|----|---|----|---|
+Fábrica I	| $R\$0,04$  |	$R\$0,08$ |	$R\$0,10$|	$R\$0,14$|	$R\$0,15$
+Fábrica II|	$R\$0,07$ |	$R\$0,05$ | $R\$0,11$	| $R\$0,11$ | $R\$0,16$
+Fábrica III	| $R\$0,11$	|$R\$0,08$ | $R\$0,08$	| $R\$0,11$ | $R\$0,15$
+
+
+Previsões de vendas indicam que as entregas mensais serão de: 2.000 unidades para o cliente A, 2.200 para B, 3.000 para C, 3.500 para D e 4.000 para E. As capacidades máximas de produção mensal são de 5.500 na fábrica I, 10.000 em II, e 15.000 em III. Os custos diretos para produzir cada unidade são de $R\$ 2,00$ na fábrica I, $R\$ 1,90$ na fábrica II e $R\$ 1,80$ na fábrica III.
+
+a)	Quais são as variáveis de decisão em questão no problema proposto?
+
+b)	Defina a Função Objetivo do Problema visando a maximização do lucro, considerando as parcelas de vendas, produção e transporte, e considerando que o produtor é responsável pelos custos de transporte.
+
+c)	Escreva as restrições devido à demanda e às capacidades produtivas.
+
+d)	Estruture o problema na Forma Formal de um problema de PL.
+
+e)	Resolva o problema com a ajuda do Solver – Excel. Qual o valor atribuído pela ferramenta ao Lucro Máximo? Qual o esquema de produção e transporte proposto pelo sistema?
+
+f)	Quais os dois clientes mais interessantes para a empresa? Por quê? 
+
+# Exercício 2
+
+Uma empresa fabricante de aparelhos elétricos compra motores para fabricação de seus produtos. A demanda anual para produção equivale a 120.000 motores e o custo unitário de aquisição de cada motor é de $R\$ 120,00$. A demanda permaneceu constante ao longo dos últimos anos e deve permanecer assim por algum tempo.
+
+Cada motor pesa cerca de 4,5 quilogramas e o lote de compras atualmente definido para aquisição destes componentes é de 3.000 unidades. Após recebimento do pedido, o fornecedor demora 1 (um) dia para expedição dos motores.
+
+Os custos anuais para manutenção de estoque dos motores são de 25% do valor de aquisição. 
+
+O gerente da fábrica recebeu uma proposta para realizar o transporte dos motores e deve decidir qual irá aceitar. Os detalhes da operação de transporte são apresentados a seguir. 
+
+|Transportadora	|Lote de Compra Ótimo (un)	|Tempo em trânsito (dias)	|Custo unitário de transporte (R$/kg)|
+|---|---|---|---|
+|AMRailroad|	2000|	5	|0,144|
+|Northeast Trucking	|1000	|3|	0,167|
+|Golden Freightways|	500|	3|	0,178|
+|Golden Freightways	|1500|	3	|0,178|
+|Golden Freightways	|2500	|3	|0,133|
+|Golden Freightways	|3000	|3	|0,089|
+|Golden Freightways	|4000	|3|	0,079|
+
+A partir do cálculo do custo total de estoque (cíclico) e dos custos de transporte, determine qual a alternativa mais econômica. 
+
+<hr>
+
+- [Link para arquivo com cálculos](https://www.dropbox.com/s/jy45ct453y7zsjb/ea_6.xlsx?dl=0)
+
+- Vídeo sobre como ativar o Solver no Excel
+
+<iframe width="1218" height="645" src="https://www.youtube.com/embed/CXbibyCtUNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

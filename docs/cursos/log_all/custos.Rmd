@@ -1,0 +1,127 @@
+---
+date: "2021-08-25T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 9 - Custos logísticos
+    weight: 20
+title: Custos Logísticos
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+# 1. PREVISÃO DE CUSTOS OPERACIONAIS NO TRANSPORTE DE CARGAS
+
+# 1.1 O Segredo da Boa Decisão
+
+>“Um sistema eficaz de orçamento e de controle de custos permite a tomada de melhores 
+decisões”. 
+
+### O que se entende por orçamento?   
+É o documento através do qual são realizadas as previsões de receitas e despesas, referentes a um serviço ou conjunto de atividades que ocorrerão em um determinado período de tempo. Tal documento é indispensável para que a empresa possa obter o máximo rendimento dos recursos empregados e o equilíbrio de suas finanças. Através dele, a administração fixa e define as metas a atingir. Convém ressaltar que o orçamento de uma empresa depende do orçamento de cada serviço a ser realizado e, no caso dos transportes, é imprescindível que se faça uma boa previ são dos custos de operação dos veículos.
+
+### E quanto ao controle de custos?   
+A administração precisa sempre avaliar os impactos de suas decisões sobre os custos. O gerente eficaz, por sua vez, deve ter um bom conhecimento acerca dos mesmos, de modo a poder converter essas informações em subsídios que propici em decisões acertadas. A figura apresentada a seguir ilustra tal sistema de tomada de decisões. 
+
+## 1.2 Classificação dos Custos   
+A análise econômica costuma fazer a distinção, apresentada a seguir, entre os custos de produção.
+
+### 1.2.1 Tipos de Custos   
+Em nível macro, os custos operacionais dos veículos rodoviários podem ser classificados da forma como se segue.
+
+**Custos Diretos**   
+Correspondem aos custos fixos mais os variáveis.   
+— Custos Fixos: Englobam o conjunto de gastos, cujo valor, dentro de limites razoáveis de produção, não varia em função do nível de atividade da em presa ou grau de utilização do equipamento.   
+— Custos Variáveis: São proporcionais à utilização.   
+
+**Custos Indiretos ou Administrativos**   
+São os custos necessários para manter o sistema de transporte da empresa.   
+
+### 1.2.2 Componentes dos Custos   
+Colocando em prática os conceitos acima descritos, são apresentados os seguintes componentes para tais custos:   
+
+**Custos Fixos**
+— Depreciação: corresponde à redução de valor que o veículo vai sofrendo com o decorrer do tempo.   
+— Remuneração do capital: qualquer investimento que se faça pressupõe um retorno ou remuneração do capital aplicado. É isso que o empresário espera ao investir em uma empresa de transportes. Portanto, a cada serviço que ela presta, a mesma tem que embutir em seus custos a remuneração do capital aplicado pelo investidor.   
+— Salário da tripulação: corresponde ao pagamento de motoristas, cobradores, ajudantes etc. e respectivos encargos sociais.   
+— Licenciamento.   
+— Seguros.   
+
+**Custos Variáveis**   
+— Combustível.   
+— Óleo lubrificante do motor.
+— Óleo lubrificante da transmissão.   
+— Lavagem e lubrificação.   
+— Material rodante: corresponde a pneus, câmaras, recapagens e protetores.   
+— Peças, acessórios e material de oficina.   
+— Mão-de-obra para manutenção dos veículos.   
+• Custos Indiretos ou Administrativos   
+— Pessoal de armazéns, escritórios e respectivos encargos sociais.   
+— Impressos.   
+— Publicidade.   
+— Aluguéis de armazéns e escritórios.   
+— Comunicações.   
+— Impostos e taxas legais.   
+— Construção, conservação e limpeza.   
+— Viagens e estadas.   
+— Despesas financeiras.   
+— Despesas diversas.   
+
+
+### 1.2.3 Considerações Metodológicas   
+Esta classificação de custos pode ser feita de maneira diferente, conforme a aplicação a ser realizada. Por exemplo, no caso do cálculo de tarifas de ônibus urbano, segundo a metodologia desenvolvida pelo Geipot, os custos administrativos estão incluídos nos custos fixos, conforme descrito a seguir:   
+
+**Custos Variáveis**   
+— Combustível.   
+— Lubrificantes.   
+— Rodagem.   
+— Peças e acessórios.  
+
+**Custos Fixos**   
+— Custo de Capital:   
+  — Depreciação.   
+  — Remuneração.   
+— Despesas com Pessoal.   
+— Despesas Administrativas.   
+
+## 1.3 Fatores que Influenciam nos Custos   
+
+O administrador deve sempre estar atento ao fato de que muitos fatores deter minam variações substanciais nos custos ou na sua composição. Dentre eles, podem-se citar:
+
+— Quilometragem Desenvolvida: O custo por quilômetro diminui quanto mais o veículo rodar, pois o custo fixo é dividido pela quilometragem. Há, contudo, que se observar o uso da velocidade econômica de operação do veículo, pois o aumento da velocidade pode influenciar no consumo de combustível, de pneus e de manutenção, tirando a vantagem obtida com a nova quilometragem.   
+
+— Tipo de Tráfego: É sabido que na cidade o veículo gasta mais combustível por quilômetro rodado e tem um desgaste maior do que em áreas não urbanas.   
+
+— Tipo de Via: O custo varia também em função do tipo de estrada por onde o ônibus ou o caminhão trafegar. Isto engloba superfície de rolamento, condição de conservação, topografia, sinuosidade etc.    
+
+— Região: Conforme o lugar onde a transportadora atua, os salários, impostos, preços de combustível etc. podem ser diferentes.   
+
+— Porte do Veículo: Um fator de redução do custo por tonelada/quilômetro ou passageiro/quilômetro transportado é a maior capacidade do veículo, desde que bem aproveitada.   
+
+— Desequilíbrio nos Fluxos: Outro fator de variação nos custos é o desequilíbrio nos fluxos. No caso do transporte de passageiros, eles costumam ser pendulares (quem vai volta), o que geralmente não ocorre para as cargas.   
+
+Essa medida também deve ser avaliada com atenção, uma vez que o tráfego de veículos vazios reduz os custos em alguns aspectos, mas aumenta em outros. Como exemplo, podem-se citar a redução do custo de combustível e o aumento de carroçarias que quebram quando trafegam vazias. Além disso, numa avaliação global, tal desequilíbrio, por provocar muitos retornos vazios, reduzirá a produtividade dos veículos. Daí a necessidade de se adicionar um percentual para quantificar o aumento do custo de retorno.
+
+## 1.4 Métodos de Cálculo de Custos Operacionais
+
+Uma vez constatada a vital importância do conhecimento dos custos operacionais, aborda-se adiante, a questão de como calculá-los.
+Tanto a literatura quanto a prática dispõem de diversos métodos, dos quais os principais são abordados a seguir.
+
+### 1.4.1 Método dos Custos Médios Desagregados
+
+É amplamente utilizado pelas empresas e também divulgado através de revistas especializadas no setor de transportes. Oferece estimativas bastante razoáveis de custo operacional de veículos rodoviários. Essas estimativas têm como base a apropriação de cada componente desse custo.
+
+O método está baseado em parâmetros médios de consumo. Não é sensível, portanto, a variações específicas de velocidades e carregamento dos veículos e nem das condições físicas e de tráfego das rodovias, ou seja, é calculado levando se em conta as condições médias de tráfego, rodagem, carregamento e velocidade.
+
+Apesar de tais limitações, ele tem diversos méritos, destacando-se a praticidade e o cálculo desagregado por componente de custo (depreciação, combustíveis, pneus, salários, manutenção etc.). Possibilita ainda que cada empresa possa inserir, junto ao mesmo, 
+parâmetros referentes a cada tipo, modelo ou categoria de veículo (de acordo com o nível de precisão com que ela deseje trabalhar) e requer informações sobre preços unitários e parâmetros de consumo por parte dos veículos.
+
+Dado que a empresa pode alimentar o sistema de cálculo com parâmetros observados em sua frota, o método permite, diferentemente dos demais, que sejam calculados custos também nas vias urbanas, onde há particularidades, tais como: tipo de calçamento, fluxos 
+interrompidos etc.
+

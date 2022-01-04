@@ -1,0 +1,70 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 18
+title: Tutorial 6
+weight: 28
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+  <link rel="stylesheet" href="D:/assets/css/custom.css" type="text/css" />
+
+
+<div id="bibliotecas" class="section level2">
+<h2>Bibliotecas</h2>
+<p>Essas funções servem para carregar as bibliotecas dos pacotes que serão necessários para a análise.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+</div>
+<div id="carregar-arquivos" class="section level2">
+<h2>Carregar arquivos</h2>
+<ol style="list-style-type: decimal">
+<li>Façam o download do arquivo .zip.</li>
+<li>Removam os arquivos de dados do arquivo .zip.</li>
+<li>Carregue os arquivos de dados usando a função <code>read_csv</code> e atribuindo cada conjunto de dados a um objeto</li>
+</ol>
+</div>
+<div id="manipulação-de-dados---mulheres-cientistas" class="section level1">
+<h1>Manipulação de dados - mulheres cientistas</h1>
+<ol style="list-style-type: decimal">
+<li><p>Faça a junção dos dataframes</p></li>
+<li><p>Ordene por ano de nascimento</p></li>
+<li><p>Filtre apenas as linhas que têm informações sobre ano de nascimento e ano de morte</p></li>
+<li><p>Encontre as pesquisadoras que estão vivas</p></li>
+<li><p>Gere um dataframe considerando apenas a coluna com o nome das cientistas.</p></li>
+</ol>
+<pre class="r"><code>dataframe_junto &lt;- professions %&gt;%
+  left_join(dates, by=&quot;name&quot;) %&gt;% 
+  left_join(works, by=&quot;name&quot;) %&gt;% 
+  select(name, known_for) %&gt;% 
+  filter(!is.na(known_for))</code></pre>
+</div>
+<div id="manipulação-de-dados---matrículas" class="section level1">
+<h1>Manipulação de dados - matrículas</h1>
+<ol style="list-style-type: decimal">
+<li><p>Gere um dataframe com os alunos matriculados e que responderam estar frequentando as aulas.</p></li>
+<li><p>Gere um dataframe com os alunos matriculados e que responderam <strong>não</strong> estar frequentando as aulas.</p></li>
+<li><p>Gere um dataframe com os alunos que estão frequentando as aulas e que não estão matriculados.</p></li>
+</ol>
+<pre class="r"><code>data1 &lt;- enrolment %&gt;% 
+  left_join(survey, by=&quot;id&quot;)
+
+data2 &lt;- survey %&gt;% 
+  left_join(enrolment, by=&quot;id&quot;)</code></pre>
+</div>
+<div id="manipulação-de-dados---compras" class="section level1">
+<h1>Manipulação de dados - compras</h1>
+<ol style="list-style-type: decimal">
+<li>Gere um dataframe com a síntese da soma da receita da loja por consumidor</li>
+</ol>
+</div>

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Estatística descritiva para sumarização de dados com o R Já apresentamos os operadores relativos às estatísticas descritivas básicas. Segue uma síntese:
+Operadores aritméticos R    Operador Descrição     x &#43; y Adição de x com y   x - y Subtração de y em x   x * y Multiplicação de x e y   x / y Divisão de x por y   xy ou x**y x elevado a y-ésima potência   x%%y Resto da divisão de x por y (módulo)   x%/%y Parte inteira da divisão de x por y    Operadores de comparação no R    Operador Significado     == igual a   !">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://retaoliveira.github.io/cursos/intro_r/estatistica/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.e55ba78edbbd6fe458261591367a7d35.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://retaoliveira.github.io/cursos/intro_r/estatistica/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://retaoliveira.github.io/cursos/intro_r/estatistica/">
+  <meta property="og:title" content="Introdução à estatística descritiva | Profa. Renata Oliveira">
+  <meta property="og:description" content="Estatística descritiva para sumarização de dados com o R Já apresentamos os operadores relativos às estatísticas descritivas básicas. Segue uma síntese:
+Operadores aritméticos R    Operador Descrição     x &#43; y Adição de x com y   x - y Subtração de y em x   x * y Multiplicação de x e y   x / y Divisão de x por y   xy ou x**y x elevado a y-ésima potência   x%%y Resto da divisão de x por y (módulo)   x%/%y Parte inteira da divisão de x por y    Operadores de comparação no R    Operador Significado     == igual a   !"><meta property="og:image" content="https://retaoliveira.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://retaoliveira.github.io/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Introdução à estatística descritiva | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/">R como instrumentos para a análise de dados</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/install/">1 - Análise de dados para gestão</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/install/">Instalação de R, RStudio e Git</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_dataana/">Introdução à Análise de Dados</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/intro_r/">Conhecendo o R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/git_r/">Git e Github</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/swirl/">Como acessar o tutorial da disciplina no swirl</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/intro_rmarkdown/">2 - Documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/intro_rmarkdown/">Introdução ao RMarkdown</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/abrindo_dados/">3 - Estrutura de dados no R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/abrindo_dados/">Abrindo dados no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/estrutura_dados/">Tipos de dados, objetos e operadores no R</a>
+      </li>
+      
+      <li >
+        <a href="/cursos/intro_r/tidyverse/">Overview - Tidyverse</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/ggplot/">4 - Estatística descritiva e mineração de dados</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/ggplot/">Visualização de dados</a>
+      </li>
+      
+      <li class="active">
+        <a href="/cursos/intro_r/estatistica/">Introdução à estatística descritiva</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/twitter/">6 - Análise textual</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/twitter/">Como coletar, manipular e representar dados de Tweets</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/reprodutibility/">7 - Tópico avançado em documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/reprodutibility/">Documentos parametrizados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/cursos/intro_r/mkt_seg/">8 - Segmentação de mercado</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/cursos/intro_r/mkt_seg/">Segmentação de mercado</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nesta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#estatística-descritiva-para-sumarização-de-dados-com-o-r">Estatística descritiva para sumarização de dados com o R</a>
+      <ul>
+        <li><a href="#operadores-aritméticos-r">Operadores aritméticos R</a></li>
+        <li><a href="#operadores-de-comparação-no-r">Operadores de comparação no R</a></li>
+        <li><a href="#operadores-lógicos-no-r">Operadores lógicos no R</a></li>
+        <li><a href="#algumas-funções-estatísticas-para-sumarização-de-dados">Algumas funções estatísticas para sumarização de dados</a></li>
+        <li><a href="#tratamento-de-dados-omissos">Tratamento de dados omissos</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-de-verificação-de-aprendizagem">Atividades de verificação de aprendizagem</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Introdução à estatística descritiva</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            <h2 id="estatística-descritiva-para-sumarização-de-dados-com-o-r">Estatística descritiva para sumarização de dados com o R</h2>
+<p>Já apresentamos os operadores relativos às estatísticas descritivas básicas. Segue uma síntese:</p>
+<h3 id="operadores-aritméticos-r">Operadores aritméticos R</h3>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x + y</td>
+<td>Adição de x com y</td>
+</tr>
+<tr>
+<td>x - y</td>
+<td>Subtração de y em x</td>
+</tr>
+<tr>
+<td>x * y</td>
+<td>Multiplicação de x e y</td>
+</tr>
+<tr>
+<td>x / y</td>
+<td>Divisão de x por y</td>
+</tr>
+<tr>
+<td>xy ou x**y</td>
+<td>x elevado a y-ésima potência</td>
+</tr>
+<tr>
+<td>x%%y</td>
+<td>Resto da divisão de x por y (módulo)</td>
+</tr>
+<tr>
+<td>x%/%y</td>
+<td>Parte inteira da divisão de x por y</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operadores-de-comparação-no-r">Operadores de comparação no R</h3>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>igual a</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>diferente de</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>maior que</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>menor que</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>maior ou igual a</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>menor ou igual a</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Os operadores de comparação sempre retornam um valor lógico TRUE ou FALSE.</p>
+</blockquote>
+<h3 id="operadores-lógicos-no-r">Operadores lógicos no R</h3>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descrição</th>
+<th>Explicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>AND lógico</td>
+<td>Versão vetorizada. Compara dois elementos do tipo vetor e retorna um vetor de TRUEs e FALSEs</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>AND lógico</td>
+<td>Versão não-vetorizada. Compara apenas o primeiro valor de cada vetor, retornando um valor lógico.</td>
+</tr>
+<tr>
+<td>|</td>
+<td>OR lógico</td>
+<td>Versão vetorizada. Compara dois elementos do tipo vetor e retorna um vetor de TRUEs e FALSEs</td>
+</tr>
+<tr>
+<td>||</td>
+<td>OR lógico</td>
+<td>Versão não-vetorizada. Compara apenas o primeiro valor de cada vetor, retornando um valor lógico.</td>
+</tr>
+<tr>
+<td>!</td>
+<td>NOT lógico</td>
+<td>Negação lógica. Retorna um valor lógico único ou um vetor de TRUE / FALSE.</td>
+</tr>
+<tr>
+<td>xor</td>
+<td>XOR</td>
+<td>Ou Exclusivo. Retorna valor lógico TRUE se ambos os valores de entrada forem diferentes entre si, e retorna FALSE se os valores forem iguais.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Também conhecidos como operadores booleanos, permitem trabalhar com múltiplas condições relacionais na mesma expressão, e retornam valores lógicos verdadeiro ou falso.</p>
+</blockquote>
+<h3 id="algumas-funções-estatísticas-para-sumarização-de-dados">Algumas funções estatísticas para sumarização de dados</h3>
+<table>
+<thead>
+<tr>
+<th>Funções</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>min()</code></td>
+<td>mínimo</td>
+</tr>
+<tr>
+<td><code>max()</code></td>
+<td>máximo</td>
+</tr>
+<tr>
+<td><code>range()</code></td>
+<td>amplitude</td>
+</tr>
+<tr>
+<td><code>mean()</code></td>
+<td>média</td>
+</tr>
+<tr>
+<td><code>sum()</code></td>
+<td>soma</td>
+</tr>
+<tr>
+<td><code>median()</code></td>
+<td>mediana</td>
+</tr>
+<tr>
+<td><code>sd()</code></td>
+<td>desvio-padrão</td>
+</tr>
+<tr>
+<td><code>IQR()</code></td>
+<td>intervalo interquantil</td>
+</tr>
+<tr>
+<td><code>quantile()</code></td>
+<td>quartis</td>
+</tr>
+<tr>
+<td><code>var()</code></td>
+<td>variância</td>
+</tr>
+<tr>
+<td><code>cor()</code></td>
+<td>correlação</td>
+</tr>
+<tr>
+<td><code>summary()</code></td>
+<td>métricas de sumarização</td>
+</tr>
+<tr>
+<td><code>rowMeans()</code></td>
+<td>média das linhas</td>
+</tr>
+<tr>
+<td><code>colMeans()</code></td>
+<td>média das colunas</td>
+</tr>
+<tr>
+<td><code>rowSums()</code></td>
+<td>soma das linhas</td>
+</tr>
+<tr>
+<td><code>colSums()</code></td>
+<td>soma das colunas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tratamento-de-dados-omissos">Tratamento de dados omissos</h3>
+<p>O R permite que sejam armazenados, em vetores e data.frames, o valor <code>NA</code> (Not Available), que representa dados que ainda não são conhecidos.</p>
+<blockquote>
+<p><code>x == NA</code> trará sempre um resultado FALSE, mesmo que <code>x</code> não seja conhecido.</p>
+</blockquote>
+<p>
+<hr>
+<p>
+<h2 id="atividades-de-verificação-de-aprendizagem">Atividades de verificação de aprendizagem</h2>
+<p><strong>Questão 1:</strong>
+Abra o <code>data.frame</code> &ldquo;iris&rdquo;.</p>
+<pre tabindex="0"><code class="language-{r" data-lang="{r">a &lt;- iris
+class(iris)
+</code></pre><p>a. Calcule estatísticas básicas de cada variável. Copie e cole no Canvas (código e resultado).</p>
+<p>Veja o exemplo:</p>
+<pre tabindex="0"><code class="language-{r" data-lang="{r">summary(iris$Sepal.Length)
+</code></pre><p>b. Para que serve p símbolo <code>$</code> após o nome do data.frame?
+c. Por meio das funções <code>hist()</code> e <code>boxplot()</code>, respectivamente, gere um exemplo de cada gráfico para a variável que você escolher. Copie e cole no Canvas.</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/cursos/intro_r/swirl/" rel="next">Como acessar o tutorial da disciplina no swirl</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/cursos/intro_r/tidyverse/" rel="prev">Overview - Tidyverse</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 5, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2021 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.d44a21cce25b8eb2cd3c8404affc0855.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

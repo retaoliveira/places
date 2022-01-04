@@ -1,0 +1,28 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Apresentações
+    weight: 31
+title: Encontros Síncronos 4 e 5
+weight: 31
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: true
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_url('https://places-research.github.io/class05_log', height = "400px")
+```
+
+[LINK](https://places-research.github.io/class05_log)
+
+<iframe width="964" height="542" src="https://www.youtube.com/embed/jE6g4YJ_vVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

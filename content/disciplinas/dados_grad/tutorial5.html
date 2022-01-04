@@ -1,0 +1,355 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 17
+title: Tutorial 5
+weight: 27
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+  <link rel="stylesheet" href="D:/assets/css/custom.css" type="text/css" />
+
+
+<pre class="r"><code>library(tidyverse)
+library(ggplot2)</code></pre>
+<pre class="r"><code># From TidyTuesday: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md
+hotels &lt;- read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv&quot;)</code></pre>
+<div id="exercícios" class="section level2">
+<h2>Exercícios</h2>
+<div id="exercício-1." class="section level3">
+<h3>Exercício 1.</h3>
+<p>As pessoas estão viajando por um capricho?
+Vamos ver…</p>
+<p>Preencha os espaços em branco para filtragem de reservas de hotel onde o hóspede é <strong>não</strong> dos EUA (código do país <code>USA</code>) e o <code>lead_time</code> é menos de 1 dia.</p>
+<p><strong>Nota:</strong> Você precisará definir <code>eval=TRUE</code> quando tiver uma resposta que queira experimentar.</p>
+<pre class="r"><code>hotels_no_usa &lt;- filter(hotels, country != &quot;USA&quot;, lead_time &lt; 1)
+hotels_no_usa_cancelled &lt;- select(hotels_no_usa, hotel, is_canceled)
+
+ggplot(hotels_no_usa, aes(x = arrival_date_year)) +
+  geom_bar()</code></pre>
+<p><img src="/places/courses/dados_grad/tutorial5_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>hotels_no_usa_pipe &lt;- hotels %&gt;% 
+  filter(country != &quot;USA&quot; &amp; lead_time &lt; 100) %&gt;% 
+  select(hotel, is_canceled, lead_time) %&gt;% 
+  filter(hotel == &quot;Resort Hotel&quot;) %&gt;% 
+  arrange(lead_time)</code></pre>
+<pre class="r"><code># on the fly
+hotels %&gt;%
+  filter(
+    country != &quot;USA&quot;, 
+    lead_time &lt; 1
+    )</code></pre>
+<pre><code>## # A tibble: 6,174 x 32
+##    hotel        is_canceled lead_time arrival_date_year arrival_date_month
+##    &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;             &lt;dbl&gt; &lt;chr&gt;             
+##  1 Resort Hotel           0         0              2015 July              
+##  2 Resort Hotel           0         0              2015 July              
+##  3 Resort Hotel           0         0              2015 July              
+##  4 Resort Hotel           0         0              2015 July              
+##  5 Resort Hotel           0         0              2015 July              
+##  6 Resort Hotel           0         0              2015 July              
+##  7 Resort Hotel           0         0              2015 July              
+##  8 Resort Hotel           0         0              2015 July              
+##  9 Resort Hotel           0         0              2015 July              
+## 10 Resort Hotel           0         0              2015 July              
+## # ... with 6,164 more rows, and 27 more variables:
+## #   arrival_date_week_number &lt;dbl&gt;, arrival_date_day_of_month &lt;dbl&gt;,
+## #   stays_in_weekend_nights &lt;dbl&gt;, stays_in_week_nights &lt;dbl&gt;, adults &lt;dbl&gt;,
+## #   children &lt;dbl&gt;, babies &lt;dbl&gt;, meal &lt;chr&gt;, country &lt;chr&gt;,
+## #   market_segment &lt;chr&gt;, distribution_channel &lt;chr&gt;, is_repeated_guest &lt;dbl&gt;,
+## #   previous_cancellations &lt;dbl&gt;, previous_bookings_not_canceled &lt;dbl&gt;,
+## #   reserved_room_type &lt;chr&gt;, assigned_room_type &lt;chr&gt;, ...</code></pre>
+<pre class="r"><code># Com registro de objeto
+
+hotel &lt;- hotels %&gt;% 
+  filter(country != &quot;USA&quot;, lead_time &lt; 1) %&gt;% 
+  select(country, lead_time) 
+
+# Sem pipe
+
+hotels_sem_pipe &lt;- filter(hotels, country != &quot;USA&quot;, lead_time &lt; 1)
+hotels_sem_pipe &lt;- select(hotels_sem_pipe, country, lead_time)</code></pre>
+</div>
+<div id="exercício-2." class="section level3">
+<h3>Exercício 2.</h3>
+<p>Quantas marcações envolvem pelo menos 1 criança <strong>ou</strong> bebê?</p>
+<p>No seguinte <code>chunk</code>, substitua</p>
+<ul>
+<li><code>[AT LEAST]</code> com o operador lógico para “pelo menos” (em dois lugares)</li>
+<li><code>[OR]</code> com o operador lógico para “ou”</li>
+</ul>
+<p><strong>Nota:</strong> Você precisará definir <code>eval=TRUE</code> quando tiver uma resposta que queira experimentar.</p>
+<pre class="r"><code>hotels_crianca &lt;- hotels %&gt;% 
+  filter(children &gt;= 1 | babies &gt;= 1) %&gt;% 
+  mutate(teste_coluna = children + babies) %&gt;% 
+  mutate(teste2 = children + babies + adults) %&gt;% 
+  select(hotel, is_canceled, lead_time, teste2, teste_coluna)</code></pre>
+<pre class="r"><code>hotels %&gt;%
+  filter(children &gt;= 1 | babies &gt;= 1)
+
+# Com registro de objeto
+hotel_bebe_chil &lt;- hotels %&gt;%
+  filter(children &gt;= 1 | babies &gt;= 1)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &lt;- filter(hotels, children &gt;= 1 | babies &gt;= 1)</code></pre>
+</div>
+<div id="exercício-3." class="section level3">
+<h3>Exercício 3.</h3>
+<p>Você acha que é mais provável encontrar reservas com crianças ou bebês em hotéis urbanos ou resorts hoteleiros?
+Teste sua intuição.</p>
+<p>Usando <code>filter()</code> determine o número de reservas em hotéis resort que têm mais de 1 criança <strong>ou</strong> bebê no quarto?</p>
+<p>Então, faça o mesmo para hotéis urbanos, e compare o número de linhas no dataframe filtrado resultantes.</p>
+<pre class="r"><code># Com registro de objeto
+hotel_bebe_chil_resort &lt;- hotels %&gt;%
+  filter(children &gt;= 1 | babies &gt;= 1) %&gt;% 
+  filter(hotel == &quot;Resort Hotel&quot;)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &lt;- filter(hotels, children &gt;= 1 | babies &gt;= 1)
+hotel_bebe_chil_resort_sem_pipe &lt;- filter(hotel_bebe_chil_resort, hotel == &quot;Resort Hotel&quot;)</code></pre>
+<pre class="r"><code># Com registro de objeto
+hotel_bebe_chil_city &lt;- hotels %&gt;%
+  filter(children &gt;= 1 | babies &gt;= 1) %&gt;% 
+  mutate(hotel = tolower(hotel)) %&gt;% 
+  filter(hotel == &quot;city hotel&quot;)
+
+# Sem pipe
+
+hotel_bebe_chil_sem_pipe &lt;- filter(hotels, children &gt;= 1 | babies &gt;= 1)
+hotel_bebe_chil_city_sem_pipe &lt;- filter(hotel_bebe_chil_sem_pipe, hotel == &quot;City Hotel&quot;)</code></pre>
+<pre class="r"><code>hotel_bebe_chil_class &lt;- hotels %&gt;% 
+  filter(children &gt;= 1 | babies &gt;= 1) %&gt;% 
+  group_by(hotel) %&gt;% 
+  summarise(n = max(stays_in_weekend_nights))</code></pre>
+</div>
+<div id="exercício-4" class="section level3">
+<h3>Exercício 4</h3>
+<p>Criar uma tabela de freqüência do número de <code>adults</code> em uma reserva.</p>
+<p>Mostre os resultados em ordem decrescente para que a observação mais comum esteja no topo.</p>
+<p>Qual é o número mais comum de adultos em reservas neste conjunto de dados?</p>
+<p>Há algum resultado surpreendente?</p>
+<p><strong>Nota:</strong> Não esqueça de rotular também seu <code>chunk</code> R (onde diz <code>lable-me-1</code>).
+Seu rótulo deve ser curto, informativo, e não deve incluir espaços.
+Também não deve repetir uma etiqueta anterior, caso contrário o R Markdown lhe dará um erro sobre a repetição de etiquetas R em pedaços.</p>
+</div>
+<div id="exercício-5" class="section level3">
+<h3>Exercício 5</h3>
+<p>Repita o exercício 4, uma vez para reservas canceladas (<code>is_canceled</code> codificado como 1) e uma vez para reservas não canceladas (<code>is_canceled</code> codificado como 0).</p>
+<p>O que isto revela sobre os resultados surpreendentes que você observou no exercício anterior?</p>
+<p><strong>Note:</strong> Não se esqueça de rotular também seu <code>chunk</code> de R (onde diz <code>label-me-2</code>).</p>
+<pre class="r"><code># add code here
+# pay attention to correctness and code style</code></pre>
+</div>
+<div id="exercício-6" class="section level3">
+<h3>Exercício 6</h3>
+<p>Calcular a tarifa mínima, média, mediana e máxima média diária (<code>adr</code>) agrupados por tipo de <code>hotel</code> para que você possa obter estas estatísticas separadamente para hotéis de resorts e cidades.</p>
+<p>Que tipo de hotel é mais caro, em média?</p>
+<pre class="r"><code># add code here
+# pay attention to correctness and code style</code></pre>
+</div>
+<div id="exercício-7" class="section level3">
+<h3>Exercício 7</h3>
+<p>Observamos dois valores incomuns nas estatísticas resumidas acima – um mínimo negativo, e um máximo muito alto).
+Que tipos de hotéis são estes?</p>
+<p>Localize estas observações no conjunto de dados e descubra a data de chegada (ano e mês), assim como quantas pessoas (adultos, crianças e bebês) permaneceram no quarto.</p>
+<p>Você pode investigar os dados no espectador para localizar estes valores, mas de preferência você deve identificá-los de forma reprodutível com algum código.</p>
+<p><strong>Dica:</strong> Por exemplo, você pode <code>filter</code> para o dado quantidade <code>adr</code> e <code>select</code> as colunas relevantes.</p>
+<pre class="r"><code># add code here
+# pay attention to correctness and code style</code></pre>
+</div>
+</div>
+<div id="dicionário-de-dados" class="section level2">
+<h2>Dicionário de dados</h2>
+<p>Abaixo está o dicionário de dados completo.
+Note que é longo (há muitas variáveis nos dados), mas utilizamos um conjunto limitado de variáveis para nossa análise.</p>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="2%" />
+<col width="90%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">variable</th>
+<th align="left">class</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">hotel</td>
+<td align="left">character</td>
+<td align="left">Hotel (H1 = Resort Hotel or H2 = City Hotel)</td>
+</tr>
+<tr class="even">
+<td align="left">is_canceled</td>
+<td align="left">double</td>
+<td align="left">Value indicating if the booking was canceled (1) or not (0)</td>
+</tr>
+<tr class="odd">
+<td align="left">lead_time</td>
+<td align="left">double</td>
+<td align="left">Number of days that elapsed between the entering date of the booking into the PMS and the arrival date</td>
+</tr>
+<tr class="even">
+<td align="left">arrival_date_year</td>
+<td align="left">double</td>
+<td align="left">Year of arrival date</td>
+</tr>
+<tr class="odd">
+<td align="left">arrival_date_month</td>
+<td align="left">character</td>
+<td align="left">Month of arrival date</td>
+</tr>
+<tr class="even">
+<td align="left">arrival_date_week_number</td>
+<td align="left">double</td>
+<td align="left">Week number of year for arrival date</td>
+</tr>
+<tr class="odd">
+<td align="left">arrival_date_day_of_month</td>
+<td align="left">double</td>
+<td align="left">Day of arrival date</td>
+</tr>
+<tr class="even">
+<td align="left">stays_in_weekend_nights</td>
+<td align="left">double</td>
+<td align="left">Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel</td>
+</tr>
+<tr class="odd">
+<td align="left">stays_in_week_nights</td>
+<td align="left">double</td>
+<td align="left">Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel</td>
+</tr>
+<tr class="even">
+<td align="left">adults</td>
+<td align="left">double</td>
+<td align="left">Number of adults</td>
+</tr>
+<tr class="odd">
+<td align="left">children</td>
+<td align="left">double</td>
+<td align="left">Number of children</td>
+</tr>
+<tr class="even">
+<td align="left">babies</td>
+<td align="left">double</td>
+<td align="left">Number of babies</td>
+</tr>
+<tr class="odd">
+<td align="left">meal</td>
+<td align="left">character</td>
+<td align="left">Type of meal booked. Categories are presented in standard hospitality meal packages: <br> Undefined/SC – no meal package;<br>BB – Bed &amp; Breakfast; <br> HB – Half board (breakfast and one other meal – usually dinner); <br> FB – Full board (breakfast, lunch and dinner)</td>
+</tr>
+<tr class="even">
+<td align="left">country</td>
+<td align="left">character</td>
+<td align="left">Country of origin. Categories are represented in the ISO 3155–3:2013 format</td>
+</tr>
+<tr class="odd">
+<td align="left">market_segment</td>
+<td align="left">character</td>
+<td align="left">Market segment designation. In categories, the term “TA” means “Travel Agents” and “TO” means “Tour Operators”</td>
+</tr>
+<tr class="even">
+<td align="left">distribution_channel</td>
+<td align="left">character</td>
+<td align="left">Booking distribution channel. The term “TA” means “Travel Agents” and “TO” means “Tour Operators”</td>
+</tr>
+<tr class="odd">
+<td align="left">is_repeated_guest</td>
+<td align="left">double</td>
+<td align="left">Value indicating if the booking name was from a repeated guest (1) or not (0)</td>
+</tr>
+<tr class="even">
+<td align="left">previous_cancellations</td>
+<td align="left">double</td>
+<td align="left">Number of previous bookings that were cancelled by the customer prior to the current booking</td>
+</tr>
+<tr class="odd">
+<td align="left">previous_bookings_not_canceled</td>
+<td align="left">double</td>
+<td align="left">Number of previous bookings not cancelled by the customer prior to the current booking</td>
+</tr>
+<tr class="even">
+<td align="left">reserved_room_type</td>
+<td align="left">character</td>
+<td align="left">Code of room type reserved. Code is presented instead of designation for anonymity reasons</td>
+</tr>
+<tr class="odd">
+<td align="left">assigned_room_type</td>
+<td align="left">character</td>
+<td align="left">Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type due to hotel operation reasons (e.g. overbooking) or by customer request. Code is presented instead of designation for anonymity reasons</td>
+</tr>
+<tr class="even">
+<td align="left">booking_changes</td>
+<td align="left">double</td>
+<td align="left">Number of changes/amendments made to the booking from the moment the booking was entered on the PMS until the moment of check-in or cancellation</td>
+</tr>
+<tr class="odd">
+<td align="left">deposit_type</td>
+<td align="left">character</td>
+<td align="left">Indication on if the customer made a deposit to guarantee the booking. This variable can assume three categories:<br>No Deposit – no deposit was made;<br>Non Refund – a deposit was made in the value of the total stay cost;<br>Refundable – a deposit was made with a value under the total cost of stay.</td>
+</tr>
+<tr class="even">
+<td align="left">agent</td>
+<td align="left">character</td>
+<td align="left">ID of the travel agency that made the booking</td>
+</tr>
+<tr class="odd">
+<td align="left">company</td>
+<td align="left">character</td>
+<td align="left">ID of the company/entity that made the booking or responsible for paying the booking. ID is presented instead of designation for anonymity reasons</td>
+</tr>
+<tr class="even">
+<td align="left">days_in_waiting_list</td>
+<td align="left">double</td>
+<td align="left">Number of days the booking was in the waiting list before it was confirmed to the customer</td>
+</tr>
+<tr class="odd">
+<td align="left">customer_type</td>
+<td align="left">character</td>
+<td align="left">Type of booking, assuming one of four categories:<br>Contract - when the booking has an allotment or other type of contract associated to it;<br>Group – when the booking is associated to a group;<br>Transient – when the booking is not part of a group or contract, and is not associated to other transient booking;<br>Transient-party – when the booking is transient, but is associated to at least other transient booking</td>
+</tr>
+<tr class="even">
+<td align="left">adr</td>
+<td align="left">double</td>
+<td align="left">Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights</td>
+</tr>
+<tr class="odd">
+<td align="left">required_car_parking_spaces</td>
+<td align="left">double</td>
+<td align="left">Number of car parking spaces required by the customer</td>
+</tr>
+<tr class="even">
+<td align="left">total_of_special_requests</td>
+<td align="left">double</td>
+<td align="left">Number of special requests made by the customer (e.g. twin bed or high floor)</td>
+</tr>
+<tr class="odd">
+<td align="left">reservation_status</td>
+<td align="left">character</td>
+<td align="left">Reservation last status, assuming one of three categories:<br>Canceled – booking was canceled by the customer;<br>Check-Out – customer has checked in but already departed;<br>No-Show – customer did not check-in and did inform the hotel of the reason why</td>
+</tr>
+<tr class="even">
+<td align="left">reservation_status_date</td>
+<td align="left">double</td>
+<td align="left">Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel</td>
+</tr>
+</tbody>
+</table>
+</div>

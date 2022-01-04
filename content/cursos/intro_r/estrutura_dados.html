@@ -1,0 +1,192 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  intro_r:
+    parent: 3 - Estrutura de dados no R
+    weight: 10
+title: Tipos de dados, objetos e operadores no R
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 40
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#tipos-de-dados-no-r">Tipos de dados no R</a></li>
+<li><a href="#tipos-de-classes-no-r">Tipos de classes no R</a></li>
+<li><a href="#dicas-de-sites-com-informação-interessante">Dicas de sites com informação interessante</a></li>
+</ul>
+</div>
+
+<div id="tipos-de-dados-no-r" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Tipos de dados no R</h3>
+<p>No R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.</p>
+<p>A função de teste retorna sempre <code>TRUE</code> ou <code>FALSE</code>, pois é uma <code>função lógica</code>.</p>
+<p>A função de conversão, quando possível, transforma os dados em diferentes tipos.</p>
+<p>Funções de teste apresentam a estrutura <code>is.character()</code> e funções de conversão são <code>as.character()</code>.</p>
+<p>Neste curso não detalharemos todos os tipos de dados, mas apresentaremos apenas os mais importantes para a análise de dados em caráter exploratório. No blog, temos diversas sugestões de tutoriais e documentação geral que contempla todos os tipos de dados e capacidade de interoperabilidade do R.</p>
+<div id="character" class="section level4">
+<h4>Character</h4>
+<p>Variáveis <code>character</code> são aquelas que contém texto. Para designar uma variável como texto, precisamos colocar seus valores entre aspas. Dados do tipo texto são comuns em variáveis categóricas.</p>
+<p>Experimente:</p>
+<pre class="r"><code>d &lt;- &quot;texto&quot;
+is.character(d)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="numeric" class="section level4">
+<h4>Numeric</h4>
+<p>Dados <code>numeric</code> são números. A função <code>numeric</code> pode ser utilizada para gerar um vetor com elementos numéricos com valor 0.</p>
+<p>Faça:</p>
+<pre class="r"><code># Criar vetor de cinco posições com valores 0
+numeric(5)</code></pre>
+<pre><code>## [1] 0 0 0 0 0</code></pre>
+<pre class="r"><code># Gera valor character
+e &lt;- &quot;1980&quot;
+
+# Teste
+is.numeric(e)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code># Conversão
+f &lt;- as.numeric(&quot;1980&quot;)
+
+# Teste
+is.numeric(f)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="logical" class="section level4">
+<h4>Logical</h4>
+<p>A função <code>logical</code> gera um vetor lógico com o tamanho desejado e por padrão, cada elemento do vetor recebe o valor <code>FALSE</code>.</p>
+<blockquote>
+<p>Um objeto de qualquer uma desses tipos é chamado de <strong>objeto atômico</strong>.</p>
+</blockquote>
+<p>Mãos à obra:</p>
+<pre class="r"><code>logical(3)</code></pre>
+<pre><code>## [1] FALSE FALSE FALSE</code></pre>
+<pre class="r"><code># Conversão
+as.logical(c(7,5,0))</code></pre>
+<pre><code>## [1]  TRUE  TRUE FALSE</code></pre>
+<pre class="r"><code># TRUE e FALSE podem ser convertidos em 1 ou 0
+as.logical(c(7,5,0))*1</code></pre>
+<pre><code>## [1] 1 1 0</code></pre>
+<p>Os valores no vetor que são diferentes de <em>zero</em>, recebem o valor <code>TRUE</code>.</p>
+<blockquote>
+<p>A função <strong><code>c</code></strong>(<em>combine</em>) é utilizada para composição de um vetor, combinando valores identificados por índices.</p>
+</blockquote>
+</div>
+</div>
+<div id="tipos-de-classes-no-r" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Tipos de classes no R</h3>
+<p>Diferentes tipos de dados podem ser utilizados para popular diferentes estruturas de dados ou <code>classes</code>. As classes mais comumente utilizadas para análise de dados espaciais são: vetores, matrizes, data frames, listas e factores.</p>
+<p>É por meio das classes que as funções e operadores conseguem saber exatamente o que fazer com um objeto.</p>
+<p>Experimente:</p>
+<pre class="r"><code>1+1</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>Faça <code>"a" + "b"</code></p>
+<p>O operador <code>+</code> verifica que “a” e “b” não são números (ou que não são do tipo <code>numeric</code>) e devolve uma mensagem de erro informando isso.</p>
+<div id="vetores" class="section level4">
+<h4>Vetores</h4>
+<p>O R é construído com base no conceito de vetores e matrizes. As maior parte das operações é feita para os elementos.</p>
+<pre class="r"><code># Definição de vetores
+vector(mode = &quot;numeric&quot;, length = 8)</code></pre>
+<pre><code>## [1] 0 0 0 0 0 0 0 0</code></pre>
+<pre class="r"><code>vector(length = 8)</code></pre>
+<pre><code>## [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<pre class="r"><code>tmp &lt;- data.frame(a=10:15, b=15:20)</code></pre>
+</div>
+<div id="fatores" class="section level4">
+<h4>Fatores</h4>
+<p>Fatores são vetores de categorias específicas, definidas por meio do parâmetro <code>levels</code>. A ordem dos fatores pode ser especificada pela função <code>ordered</code>. Experimente:</p>
+<pre class="r"><code># Vetor de texto
+tipos.casas &lt;- c(&quot;casa&quot;, &quot;apartamento&quot;, &quot;apartamento&quot;, &quot;sobrado&quot;)
+
+# Vetor de fatores
+tipos.casas &lt;- factor(c(&quot;casa&quot;, &quot;apartamento&quot;, &quot;apartamento&quot;, &quot;sobrado&quot;), levels=c(&quot;casa&quot;, &quot;apartamento&quot;, &quot;sobrado&quot;))</code></pre>
+<p>Quando utilizamos dados em estrutura de fatores, é possível gerar sínteses rápidas e simples por meio da função <code>table</code>.</p>
+<pre class="r"><code>table(tipos.casas)</code></pre>
+<pre><code>## tipos.casas
+##        casa apartamento     sobrado 
+##           1           2           1</code></pre>
+<p>Dados fatoriais são úteis para o tratamento de dados categóricos, ou que pertencem a um determinado número de classes predeterminadas. Existem muitas feições representadas por meio de dados espaciais que são estruturadas em variáveis discretas.</p>
+<p>LEMBRANDO….. Dados podem ser:
+<img src="https://retaoliveira.github.io/relements/figures/continuous_discrete.png" alt="Discretos x Contínuos" />
+<img src="https://retaoliveira.github.io/relements/figures/nominal_ordinal_binary.png" alt="Discreto x Contínuo" /></p>
+<p>Para ordenar dados fatoriais, utilizamos a função <code>ordered</code>.</p>
+<pre class="r"><code>renda_1 &lt;- factor(c(&quot;alta&quot;, &quot;alta&quot;, &quot;baixa&quot;, &quot;baixa&quot;, &quot;media&quot;, &quot;alta&quot;), levels=c(&quot;baixa&quot;, &quot;media&quot;, &quot;alta&quot;)) 
+
+renda_2 &lt;- ordered(c(&quot;alta&quot;, &quot;alta&quot;, &quot;baixa&quot;, &quot;baixa&quot;, &quot;media&quot;, &quot;alta&quot;), levels=c(&quot;baixa&quot;, &quot;media&quot;, &quot;alta&quot;)) </code></pre>
+</div>
+<div id="listas" class="section level4">
+<h4>Listas</h4>
+<p>Os tipos de dados <code>character</code>, <code>numeric</code> e <code>logical</code> só podem ser associados a classes de dados nas quais TODOS os elementos são do mesmo tipo. A classe <code>listas</code> não tem esse requisito. As listas têm posições (índices) para diferentes topos de elementos.</p>
+<p>Para acessar um elemento em um vetor, utilizamos <code>[]</code>.</p>
+<pre class="r"><code>vector_teste &lt;- c(5:10)
+vector_teste</code></pre>
+<pre><code>## [1]  5  6  7  8  9 10</code></pre>
+<pre class="r"><code>vector_teste[4]</code></pre>
+<pre><code>## [1] 8</code></pre>
+<p>Para acessar um elemento em uma lista por meio de sua posição, utilizamos <code>[[]]</code>.</p>
+<pre class="r"><code>colaborador &lt;- list(name=&quot;Renata Oliveira&quot;, ano.inicio = 2006, posicao = &quot;Professora&quot;)
+colaborador</code></pre>
+<pre><code>## $name
+## [1] &quot;Renata Oliveira&quot;
+## 
+## $ano.inicio
+## [1] 2006
+## 
+## $posicao
+## [1] &quot;Professora&quot;</code></pre>
+</div>
+<div id="matrizes-data.frames-e-tibble" class="section level4">
+<h4>Matrizes, data.frames e tibble</h4>
+<p>Matrizes são um conjunto de vetores. As linhas e colunas das matrizes podem ser nomeadas. Na análise espacial de um dado vetorial, temos uma tabela de atributos em estrutura matricial. As linhas representam as feições e as colunas são os atributos dessas feições. Na representação de dados raster, linhas e colunas representam latitudes e longitudes ou células raster.</p>
+<p><code>Data frames</code> e <code>tibble</code> são estruturas tabulares de dados que, diferentemente das matrizes (<code>matrix</code>), permitem representar diferentes atributos (e tipos de dados) em diferentes colunas. Esses tipos de classes são utilizadas para organizar dados espaciais (pontos, linhas, áreas e pixels).</p>
+<p>Em tabelas de dados espaciais, cada informação representa um fenômeno real por meio de uma feição geográfica e os campos representam atributos associados com cada feição (população, área, altitude etc.).</p>
+<p>A classe <code>data.frame</code> no R é composta por uma série de vetores de <strong>comprimento igual</strong> (número de observações) que juntos formam uma estrutura de dados bi-dimensional. Cada vetor registra valores de um atributo específico. Essa é a classe de dados mais comumente utilizada para armazenar dados no R.</p>
+<pre class="r"><code>df &lt;- data.frame(dist=seq(0, 400, 100), city=c(&quot;Belo Horizonte&quot;, &quot;São Paulo&quot;, &quot;Rio de Janeiro&quot;, &quot;Brasília&quot;, &quot;Salvador&quot;))
+str(df)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    5 obs. of  2 variables:
+##  $ dist: num  0 100 200 300 400
+##  $ city: chr  &quot;Belo Horizonte&quot; &quot;São Paulo&quot; &quot;Rio de Janeiro&quot; &quot;Brasília&quot; ...</code></pre>
+<blockquote>
+<p>A função <code>seq</code> possibilita a criação de uma sequência de dados por meio de três parâmetros: seq(<code>valor_inicial</code>, <code>valor_final</code>, <code>intervalo</code>).</p>
+</blockquote>
+<p>Tibbles e data.frames não são muito diferentes. Há alguns detalhes quanto à transformação de dados na criação dessas classes, mas, em linhas gerais, a estrutura de dados em <code>tibble</code> é mais eficiente e organizada.</p>
+<p>As seguintes funções são adequadas tanto para <code>data.frames</code> como para <code>tibble</code>:<br />
+<code>names()</code><br />
+<code>colnames()</code><br />
+<code>rownames()</code><br />
+<code>length()</code><br />
+<code>ncol()</code><br />
+<code>nrow()</code></p>
+<blockquote>
+<p>Explore a documentação do <code>tibble</code> em: <code>vignette("tibble")</code></p>
+</blockquote>
+<p>Os objetos dessas duas classes podem ser selecionados por meio da estrutura <code>data.frame[linha, coluna]</code>, na qual os parâmetros linhas e coluna são os índices desses elementos.</p>
+<p>Para combinar <code>data.frame</code> e <code>tibble</code> por linhas ou colunas utilizamos, respectivamente, as funções <code>rbind()</code> e <code>cbind()</code>.</p>
+<p>Até aqui, já ficou claro que a escolha ou identificação dos tipos e das classes de dados espaciais e não espaciais é muito importante para sua análise.</p>
+<p>Algumas funções para manipulação de dataframes:</p>
+<p>head() # - Mostra as primeiras 6 linhas.<br />
+tail() # - Mostra as últimas 6 linhas.<br />
+dim() # - Número de linhas e de colunas.<br />
+names() # - Os nomes das colunas (variáveis).<br />
+str() # - Estrutura do data.frame. Mostra, entre outras coisas, as classes de cada coluna.<br />
+cbind() # - Acopla duas tabelas lado a lado.<br />
+rbind() # - Empilha duas tabelas.</p>
+</div>
+</div>
+<div id="dicas-de-sites-com-informação-interessante" class="section level1">
+<h1>Dicas de sites com informação interessante</h1>
+<p><a href="https://lhmet.github.io/adar-ebook/vetor.html" class="uri">https://lhmet.github.io/adar-ebook/vetor.html</a></p>
+<p><a href="http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html" class="uri">http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html</a></p>
+<p><a href="http://www.estatisticacomr.uff.br/?p=564" class="uri">http://www.estatisticacomr.uff.br/?p=564</a></p>
+<p><a href="https://livro.curso-r.com/3-r-base.html" class="uri">https://livro.curso-r.com/3-r-base.html</a></p>
+<p><a href="https://www.msperlin.com/padfeR/operacoes-basicas.html" class="uri">https://www.msperlin.com/padfeR/operacoes-basicas.html</a></p>
+</div>

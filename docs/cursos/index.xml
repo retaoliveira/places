@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cursos on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/cursos/</link>
+    <description>Recent content in Cursos on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 03 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/cursos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logística</title>
+      <link>https://retaoliveira.github.io/cursos/log_all/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_all/</guid>
+      <description>&lt;p&gt;Neste tema vamos conhecer fundamentos e questões que compõe&lt;/p&gt;
+&lt;p&gt;Falar de como chegar ao conceito de Logística&amp;hellip;&lt;/p&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logística Urbana</title>
+      <link>https://retaoliveira.github.io/cursos/log_urb/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/log_urb/</guid>
+      <description>&lt;p&gt;Neste tema vamos conhecer fundamentos e questões que compõe&lt;/p&gt;
+&lt;p&gt;Falar de como chegar ao conceito de Logística&amp;hellip;&lt;/p&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://retaoliveira.github.io/cursos/intro_r/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/intro_r/</guid>
+      <description>&lt;p&gt;Alguns argumentos para eu ter optado pelo R para meus cursos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A maioria das pessoas interessadas em aprender a analisar dados para suporte ao processo decisório, aplicado à gestão de negócios ou à proposição de políticas públicas não são cientistas da computação.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A maioria das atividades em gestão envolve comunicação, estruturados como relatórios, dashboards, e aplicações web interactivas que permitam aos decisores entender a estrutura e a dinâmica dos processos e tomar decisões bem informadas visando o cumprimento dos objetivos inicialmente propostos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Assim, o R é adequado para processos em que as organizações precisam testar teorias, explicar as relações de causa e efeito, iterar rapidamente, e tomar decisões. Além disso, os recursos de comunicação são eficientes e diversificados, incluindo relatórios empresariais, apresentações e aplicações web que podem ser construídos utilizando um fluxo de trabalho reproduzível.&lt;/p&gt;
+&lt;p&gt;Este curso não tem a pretenção de formar analistas de sistemas, cientistas ou engenheiros de computação ou técnicos de informática. Assim, as funcionalidades apresentadas nos encontros e nas atividades propostas são orientadas à implementação prática e fundamentadas em teoria sobre a tomada de decisão orientada por informação (DOD).&lt;/p&gt;
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geocomputing e Análise Espacial</title>
+      <link>https://retaoliveira.github.io/cursos/spatial/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/spatial/</guid>
+      <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Urban Analytics</title>
+      <link>https://retaoliveira.github.io/cursos/urban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/urban/</guid>
+      <description>&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+    };
+    */
+    (function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;https://https-places-research-github-io-places.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&#34;dsq-count-scr&#34; src=&#34;//https-places-research-github-io-places.disqus.com/count.js&#34; async&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

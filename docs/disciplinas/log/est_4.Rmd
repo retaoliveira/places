@@ -1,0 +1,31 @@
+---
+date: "2021-07-20T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Estudos autônomos
+    weight: 15
+title: Gestão de Transportes 
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 15
+---
+
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **04/08**
+
+Leia do artigo [O uso da tecnologia nas adversidades da gestão de transportes](https://github.com/retaoliveira/relements/raw/main/texto/ti_transportes.pdf) e responda as perguntas que seguem na atividade no Sigaa referente ao representante do grupo.
+
+> Não se esqueçam de incluir o nome dos membros do grupo na postagem!
+
+1. Como as TICs podem contribuir para a mitigação dos impactos disruptivos e da pandemia COVID 19 na gestão de transportes?
+
+2. Discuta o **problema estrutural** brasileiro quanto ao **transporte de cargas** em escala regional que compromete o alinhamento estratégico na cadeia de suprimentos, a eficiência, a responsividade, a sustentabilidade, a resiliência e a competitividade de produtos brasileiros no mercado internacional.
+
+3. Na sua opinião, faz sentido os caminhoneiros demandarem intervenção das autoridades públicas para imposição de uma tabela de fretes mínimos ao mercado? Justifique. 
+
+

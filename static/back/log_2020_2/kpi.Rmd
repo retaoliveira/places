@@ -1,0 +1,202 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  log:
+    parent: Unidade 2 - Desempenho e nível de serviço
+    weight: 20
+title: Desempenho Logístico
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+## KPIs
+
+KPIs (Key Performance Indicators) ou medidas de desempenho devem estar vinculadas à estratégia organizacional. Os indicadores de desempenho representam um conjunto de medidas que focam nos aspectos de desempenho que são críticos para o presente e o futuro da organização.
+
+Um indicador de desempenho deve demonstrar claramente que ação deve ser tomada e quando deve ser tomada.
+
+- Os indicadores não podem ser individuais. Nenhuma medida individual define o desempenho da cadeia: existem muitas dimensões a serem consideradas. Cuidado com avaliações isoladas.
+- Atenção para medidas conflitantes, que podem acentuar os problemas dos silos ao invés de resolvê-los.
+- O requerimento é buscar um balanceamento através da cadeia de abastecimento e se preparar para possíveis mudanças.
+- Medir, interpretar ou analisar as medidas exige um perfil profissional adequado que deve ser desenvolvido.
+
+Existem quatro elementos que são fundamentais para o desenvolvimento destas medidas de desempenho:
+- Parceria com fornecedores, clientes e pessoal interno
+- Transferência de poder para as pessoas das pontas
+- Integração das medidas, relatórios e melhoria de desempenho
+- Conexão das medidas de desempenho à estratégia corporativa
+
+As medidas de desempenho dos negócios basicamente passam pelos seguintes processos: montar a estratégia, planejar, monitorar e analisar e, por fim, ajustar.
+
+## Prazos de entrega 
+Os prazos de entrega ou tempos de ciclo correspondem aos tempos totais absorvidos pela cadeia desde o início até o final do processo e normalmente está conectado ao atendimento ao cliente e podem variar dependendo da segmentação da indústria. Por exemplo, organizações voltadas para produção sob pedido ou mesmo projetos podem estabelecer prazos através de cronograma. Há organizações que trabalham com conceitos de estoque, como é o caso de empresas de ciclo rápido como alimentos e o atendimento é efetuado com base nos estoques disponíveis. 
+
+## Nível de serviço ao cliente
+Interessante que esta função está atrelada a uma série de indicadores e não apenas a um indicador. Ele corresponde ao atendimento vinculado ao produto, prazo, quantidade ou outra medida que eventualmente tenha sido estabelecida e concordada com o cliente. É um conjunto de medidas para medir a satisfação do cliente.
+
+## Níveis de estoque
+Esta medida é fundamental, pois afeta os custos totais de estoque. Uma vez que estoque carrega custos, o sugerido é que se tenham estoques mínimos ou necessários para atender as demandas ou oscilações das mesmas. As medidas de níveis de estoques mostram a eficiência operacional e financeira da cadeia e gera impactos significativos nos resultados das empresas se mal administrados.
+
+## Uso de recursos
+O objetivo aqui é utilizar eficientemente todos os recursos da cadeia incluindo os prédios, transportes, pessoas, equipamentos visando maximizar o atendimento ao cliente, com baixos níveis de estoque e prazos de entrega adequados.
+
+A Cadeia de Abastecimento e seu aspecto logístico têm papel importantíssimo no contexto do atendimento e serviço ao cliente.
+
+---
+
+## Decisões e métricas de desempenho em cada atividade-chave 
+
+### Instalações
+
+**Instalações** são os locais físicos reais na rede da cadeia de suprimentos onde o produto é armazenado, montado ou fabricado. Decisões com relação à função, localização, capacidade e flexibilidade das instalações têm impacto significativo sobre o desempenho da cadeia de suprimentos.
+
+As empresas podem elevar a responsividade por meio do aumento do número de instalações, tornando-os mais flexíveis, ou elevando a capacidade.
+Cada uma dessas ações, no entanto, tem um custo. Assim, cada cadeia de suprimentos deve encontrar o equilíbrio apropriado ao projetar sua rede de instalações.
+
+Para instalações de produção, as empresas precisam decidir se serão flexíveis, dedicadas ou uma combinação dos dois. Decidir onde uma empresa localizará suas instalações se constitui numa grande parte do projeto de uma cadeia de suprimentos.
+
+As empresas devem também determinar a capacidade de uma instalação realizar sua função ou funções pretendidas.
+
+Um gestor deverá acompanhar as seguintes `métricas relacionadas à instalação` que influenciam no desempenho da cadeia de suprimentos:
+
+`Métricas relacionadas à instalação` 
+
+- Capacidade   
+- Utilização   
+- Tempo ocioso de processamento/preparação/parada   
+- Custo de produção por unidade    
+- Perda de qualidade   
+- Tempo de fluxo/ciclo teórico de produção   
+- Tempo de fluxo/ciclo médio real   
+- Eficiência de tempo de fluxo   
+- Variedade de produtos   
+- Contribuição de volume dos 20% maiores SKUs e clientes    
+- Tamanho médio de lote de produção   
+- Nível de serviço de produção   
+
+
+### Estoque
+
+**Estoque** abrange todas as matérias-primas, o trabalho em processo e os produtos acabados dentro de uma cadeia de suprimentos. Mudar políticas de estoque pode alterar de modo significativo a eficiência e a responsividade da cadeia de suprimentos.
+
+O estoque existe na cadeia de suprimentos por causa de um descompasso entre oferta e demanda. O estoque afeta os ativos mantidos, os custos incorridos e a responsividade proporcionada pela cadeia de suprimentos. O estoque também tem um impacto significativo sobre o tempo de fluxo de material em uma cadeia de suprimentos.
+
+`Estoque cíclico` é a quantidade média de estoque usada para atender à demanda entre os recebimentos de remessas do fornecedor.
+
+`Estoque de segurança` é aquele mantido caso a demanda ultrapasse a expectativa; ele é preservado para combater a incerteza.
+
+`Estoque sazonal` é aquele criado para combater variabilidade previsível na demanda.
+
+`Nível de disponibilidade de produto` é a fração de demanda que é atendida prontamente a partir do produto mantido no estoque.
+
+`Métricas relacionadas a estoque`
+
+- Tempo cíclico C2C
+- Estoque médio 
+- Giro de estoque 
+- Produtos com mais de um número específico de dias de estoque
+- Tamanho médio de lote de reposição
+- Estoque de segurança médio
+- Estoque sazonal
+- Taxa de atendimento
+- Fração de tempo sem estoque
+- Estoque obsoleto
+
+### Transporte
+
+**Transporte** envolve a movimentação de estoque de um ponto para outro na cadeia de suprimentos. Opções de transporte têm grande impacto sobre a responsividade e a eficiência da cadeia de suprimentos.
+
+O transporte move o produto entre diferentes estágios em uma cadeia de suprimentos e afeta tanto a responsividade como a eficiência. O transporte mais rápido é mais caro, mas permite que uma cadeia de suprimentos seja mais responsiva. Como resultado, a cadeia de suprimentos pode ter estoques menores e poucas instalações.
+
+
+`Projeto de rede de transporte` refere-se à coleção de meios de transporte, locais e rotas ao longo das quais o produto pode ser entregue.
+
+`Escolha do modo de transporte` é a definição do modo de transporte, sendo a maneira como um produto é movido de um local da cadeia de suprimentos para outro.
+
+`Métricas relacionadas a transporte`
+
+- Custo médio de transporte de recebimento   
+- Tamanho médio de recebimento   
+- Custo médio de transporte de recebimento por embarque   
+- Custo médio de transporte do embarque   
+- Tamanho médio de embarque   
+- Custo médio de transporte de envio por embarque   
+- Fração transportada por modo   
+
+
+### Informação
+
+**Informação** consiste em dados e análise referentes a instalações, estoque, transporte, custos, preços e clientes por toda a cadeia de suprimentos. A informação é potencialmente o maior fator-chave de desempenho na cadeia, pois afeta diretamente cada um dos demais fatores.
+
+A boa informação pode ajudar na utilização dos ativos da cadeia de suprimentos e na coordenação dos fluxos da cadeia de suprimentos para aumentar a responsividade e diminuir os custos.
+
+`Empurrar x Puxar` Ao projetar processos de cadeia de suprimentos, gestores precisam determinar se esses processos fazem parte da fase empurrar ou puxar na cadeia.
+
+`Coordenação e compartilhamento de informações` A coordenação da cadeia de suprimentos ocorre quando todos os estágios de uma cadeia trabalham com o objetivo de maximizar a lucratividade total da cadeia de suprimentos com base em informação compartilhada.
+
+`Planejamento de vendas e operações` (PVO) é o processo de criação de um plano de oferta geral (produção e estoques) para atender o nível previsto de demanda (vendas).
+
+`Métricas relacionadas à informação`
+
+- Horizonte de previsão   
+- Frequência de atualização   
+- Erro de previsão    
+- Fatores sazonais   
+- Fatores sazonais   
+- Razão entre variabilidade da demanda e variabilidade do pedido   
+
+
+### Sourcing
+
+**Sourcing** é a escolha de quem realizará determinada atividade da cadeia de suprimentos, como produção, armazenamento, transporte ou a gestão da informação. Decisões de contratação afetam tanto a responsividade quanto a eficiência de uma cadeia de suprimentos.
+
+Sourcing é o conjunto de processos de negócios exigidos para a aquisição de bens e serviços. 
+
+`Internalizar ou terceirizar` A decisão de sourcing mais significativa para uma empresa é se ela realizará uma tarefa internamente ou se contratará serviços de terceiros.
+
+`Seleção de fornecedor` Os gestores devem decidir sobre o número de fornecedores que terão para determinada atividade.
+
+`Aquisição` A aquisição é o processo de obter bens e serviços dentro da cadeia de suprimentos.
+
+`Métricas relacionadas a Sourcing`
+
+- Dias pendentes de contas a pagar  
+- Preço médio de compra  
+- Faixa de preço de compra   
+- Quantidade média de compra   
+- Qualidade do fornecimento   
+- Tempo de execução de fornecimento   
+- Percentagem de entregas de imediato   
+- Confiabilidade do fornecedor   
+
+
+### Precificação
+
+**Precificação** (pricing) determina o quanto uma empresa cobrará por bens e serviços que ela torna disponíveis na cadeia de suprimentos. Preços afetam o comportamento do comprador do bem ou serviço, afetando, assim, o desempenho e a demanda da cadeia de suprimentos.
+
+Precificação é o processo pelo qual uma empresa decide quanto cobrar dos clientes por seus bens e serviços.
+
+`Precificação e economias de escala`
+
+`Preços baixos todo dia versus preços altos e baixos`
+
+`Preço fixo versus precificação por menu`
+
+`Métricas relacionadas à precificação`
+
+- Margem de lucro   
+- Dias de vendas pendentes   
+- Custo fixo incremental por pedido   
+- Custo variável incremental por unidade   
+- Preço médio de venda   
+- Tamanho médio de pedido   
+- Faixa de preço de venda   
+- Faixa de vendas periódicas   
+

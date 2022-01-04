@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/category/r/</link>
+    <description>Recent content in R on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/category/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogdown</title>
+      <link>https://retaoliveira.github.io/post/blogdown/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/blogdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/blogdown/
+index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://portfolio.peter-baumgartner.net/#about&#34; class=&#34;uri&#34;&gt;https://portfolio.peter-baumgartner.net/#about&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hannesdatta&#34; class=&#34;uri&#34;&gt;https://github.com/hannesdatta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.hannesdatta.com/&#34; class=&#34;uri&#34;&gt;https://www.hannesdatta.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/docs/&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/content/docs/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugo-online-course.netlify.app/course/example/python/&#34; class=&#34;uri&#34;&gt;https://hugo-online-course.netlify.app/course/example/python/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usando o Github Desktop - Git sem coding</title>
+      <link>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</guid>
+      <description>&lt;p&gt;Algumas dicas de como utilizar o Github Desktop para fazer uso do Git e do Github sem a necessidade de aprender as linhas de comando.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instale o aplicativo conforme seu sistema operacional. Se você utilizar o Windows, faça o download no &lt;a href=&#34;https://desktop.github.com/&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crie uma conta no &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vá em File &amp;raquo; Options &amp;raquo; Accounts &amp;raquo; Sign in&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/1git.png%22&#34; alt=&#34;File&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/2git.png%22&#34; alt=&#34;Options&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/3git.png%22&#34; alt=&#34;Account&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/4git.png%22&#34; alt=&#34;Sign in&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/5git.png%22&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Para mais informações, acesse o site &lt;a href=&#34;https://docs.github.com/pt/desktop&#34;&gt;Github Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Acesso à API do Twitter</title>
+      <link>https://retaoliveira.github.io/post/2020-12-27-acesso-a-api-do-twitter/</link>
+      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-27-acesso-a-api-do-twitter/</guid>
+      <description>&lt;h2 id=&#34;como-obter-e-usar-tokens-de-acesso-à-api-do-twitter-para-uso-no-pacote-rtweet&#34;&gt;Como obter e usar tokens de acesso à &lt;code&gt;API&lt;/code&gt; do &lt;code&gt;Twitter&lt;/code&gt; para uso no pacote &lt;code&gt;rtweet&lt;/code&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;criando-um-aplicativo-no-twitter&#34;&gt;Criando um aplicativo no Twitter&lt;/h3&gt;
+&lt;p&gt;Para criar um aplicativo no Twitter, você precisará primeiro solicitar uma conta de desenvolvedor. Este processo, juntamente com uma explicação detalhada pode ser encontrado em &lt;a href=&#34;developer.twitter.com&#34;&gt;developer.twitter.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Uma vez que você tenha adquirido uma conta de desenvolvedor, navegue até &lt;a href=&#34;developer.twitter.com/pt/apps&#34;&gt;developer.twitter.com/pt/apps&lt;/a&gt;. Clique no botão azul que diz: &lt;em&gt;Create a New App&lt;/em&gt;, e então preencha o formulário com os seguintes campos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;App Name&lt;/code&gt;: Como seu aplicativo será chamado&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Application Description&lt;/code&gt;: Como seu aplicativo será descrito para seus usuários&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Website URLs&lt;/code&gt;: Website associado ao app-I. Recomendo usar a URL em seu perfil no Twitter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Callback URLs&lt;/code&gt;: &lt;strong&gt;IMPORTANTE&lt;/strong&gt; digite exatamente o seguinte: &lt;code&gt;http://127.0.0.1:1410&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tell us how this app will be used&lt;/code&gt;: Seja claro e honesto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quando você tiver preenchido os campos obrigatórios do formulário, clique no botão azul &lt;code&gt;Criar&lt;/code&gt;, na parte inferior. Leia atentamente e indique se você aceita os termos do desenvolvedor.&lt;/p&gt;
+&lt;p&gt;Mais detalhes podem ser encontrados na &lt;a href=&#34;https://cran.r-project.org/web/packages/rtweet/vignettes/auth.html&#34;&gt;Vignette&lt;/a&gt; sobre esse processo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mineração de Texto</title>
+      <link>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</link>
+      <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</guid>
+      <description>&lt;h2 id=&#34;dicionário-de-dados-do-twitter&#34;&gt;Dicionário de dados do Twitter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.twitter.com/en/docs/twitter-api/data-dictionary/introduction&#34;&gt;Data dictionary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sentimentos-no-twitter-para-csv&#34;&gt;Sentimentos no Twitter para CSV&lt;/h2&gt;
+&lt;p&gt;O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site &lt;a href=&#34;https://twitter-sentiment-csv.herokuapp.com/&#34;&gt;Tweet Sentiment to CSV&lt;/a&gt;. São 100 tweets sobre o termos pesquisado.&lt;/p&gt;
+&lt;h2 id=&#34;links-interessantes-sobre-esse-tópico-são&#34;&gt;Links interessantes sobre esse tópico são:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.abraji.org.br/help-desk/como-investigar-tweets-com-rtweet-e-r&#34;&gt;Como investigar tweets com rtweet r R by Abraji&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html&#34;&gt;Intro to rtweet: Collecting Twitter Data by Michael W. Kearney&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://paulovasconcellos.com.br/aprenda-a-fazer-um-analisador-de-sentimentos-do-twitter-em-python-3979454f2d0d&#34;&gt;Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/use-twitter-api-r/&#34;&gt;Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/marianacrtx/tweets&#34;&gt;Github Mariana Cartaxo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio-pubs-static.s3.amazonaws.com/66739_c4422a1761bd4ee0b0bb8821d7780e12.html&#34;&gt;Text Mining example codes (tweets)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-11-18-ocupacao-na-ufmg-e-interevencao-policial/&#34;&gt;Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/juditecypreste/Aprenda-Python-analisando-os-tuites-do-nosso-presidente&#34;&gt;Github Judite Cypreste&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@arthuremanuel.carosia/an%C3%A1lise-de-sentimentos-no-twitter-sobre-o-governo-bolsonaro-15396a22e757&#34;&gt;Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/a-guide-to-mining-and-analysing-tweets-with-r-2f56818fdd16&#34;&gt;A Guide to Mining and Analysing Tweets with R by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@celine.vdr/mining-tweets-of-us-candidates-on-mass-shootings-before-and-after-the-2018-midterms-90cc18ff652a&#34;&gt;Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-03-18-analise-de-conteudo-twitter/&#34;&gt;Análise de Conteúdo (twitteR) by Nelson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vineetdhanawat/twitter-sentiment-analysis&#34;&gt;Twitter sentiment analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conteúdo-adicional&#34;&gt;Conteúdo adicional&lt;/h2&gt;
+&lt;p&gt;Text Mining and Analytics, University of Illinois at Urbana-Champaign: &lt;a href=&#34;https://www.coursera.org/learn/text-mining/home/info&#34;&gt;https://www.coursera.org/learn/text-mining/home/info&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining with R: A Tidy Approach, Julia Silge and David Robinson: &lt;a href=&#34;http://tidytextmining.com/&#34;&gt;http://tidytextmining.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text mining using R, Ted Kwartler: &lt;a href=&#34;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&#34;&gt;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text Mining Using tm, openNLP and topicmodels, Ted Kwartler: &lt;a href=&#34;http://www.slideshare.net/odsc/tedkwartlerworkshop1&#34;&gt;http://www.slideshare.net/odsc/tedkwartlerworkshop1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: An Overview, David Madigan: &lt;a href=&#34;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&#34;&gt;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text-Mining Tutorial, Marko Grobelnik e Dunja Mladenic: &lt;a href=&#34;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&#34;&gt;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text mining, Ian H. Witten: &lt;a href=&#34;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&#34;&gt;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: Applications and Theory, Michael W. Berry e Jacob Kogan: &lt;a href=&#34;http://www.mohamedrabeea.com/books/book1_1165.pdf&#34;&gt;http://www.mohamedrabeea.com/books/book1_1165.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Web Search and Text analysis: &lt;a href=&#34;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&#34;&gt;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CS 6501: Text Mining: &lt;a href=&#34;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&#34;&gt;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&lt;/a&gt;.
+Speech and Language Processing: &lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34;&gt;https://web.stanford.edu/~jurafsky/slp3/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CETEMPúblico: &lt;a href=&#34;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&#34;&gt;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An Introduction to Text Mining: &lt;a href=&#34;http://port.sas.ac.uk/course/view.php?id=53&#34;&gt;http://port.sas.ac.uk/course/view.php?id=53&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarity Measures for Text Document Clustering.
+Sobre a construção de um léxico da afetividade para o processamento computacional do português.
+Evaluating CETEMPúblico, a free resource for Portuguese.
+Working on Sentiment Analysis on Twitter with Portuguese Language.
+Sentiment Analysis on Twitter Data for Portuguese Language.
+Sentiment Analysis Using R Language.
+Sentiment analysis with machine learning in R.
+SentimentAnalysis package.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogs sobre R em Português</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-blogs-sobre-r-em-portugues/</link>
+      <pubDate>Sat, 26 Dec 2020 17:34:50 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-blogs-sobre-r-em-portugues/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/marcosvital&#34;&gt;Marcos Vital&lt;/a&gt; nos presenteou com a organização de uma &lt;a href=&#34;https://github.com/marcosvital/blogs-de-R-no-Brasil&#34;&gt;lista de blogs&lt;/a&gt;  sobre R no Brasil.&lt;/p&gt;
+&lt;p&gt;Outras dicas!!!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/wevsena/curso_r_tce/curso_r_tce.html#exercicios-2&#34;&gt;Curso Básico de Linguagem R by Eduardo Ferreira e Weverton Lisboa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Packages interessantes do R para Análise de dados e espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thengl/GeoMLA&#34;&gt;RFsp — Random Forest for spatial data (R tutorial) by Hengl, T., Nussbaum, M., and Wright, M.N.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Para Análise Espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</guid>
+      <description>&lt;p&gt;A comunidade acadêmica tem caminhado para abertura de licença de uso e reprodução de material didático, bases de dados, e conteúdo que pode ajudar a construção de competências e a aprendizagem em diferentes contextos. A universalização da informação é responsabilidade do docente que acredita na mudança por meio da educação. A Internet tem possibilitado tanto a publicação como o acesso a diferentes formas de apresentação de conteúdo que, em conjunto, contribuem para a formação de profissionais e outros acadêmicos. Infelizmente vivemos em um país onde a desigualdade ainda diferencia as pessoas, também em relação ao acesso à Internet. Nesse contexto, a abertura pública de conteúdo faz-se ainda mais necessária e eficaz, contribuindo para pequenas ações que podem mudar o mundo.&lt;/p&gt;
+&lt;p&gt;Trago aqui algumas dicas de sites, livros e material para implementações práticas que foram generosamente publicados por seus autores.&lt;/p&gt;
+&lt;h3 id=&#34;em-português&#34;&gt;Em português&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geokrigagem.com.br/geoestatistica-no-r-licao7-analises-descritivas-dos-dados-tutorial/&#34;&gt;Lições de geoestatística no R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCO6x7sQurFTw0Su0vsexE5g&#34;&gt;Canal do Mercel Santos&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;em-inglês&#34;&gt;Em inglês&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf&#34;&gt;Introduction to visualising spatial data in R by Robin Lovelace (R.Lovelace@leeds.ac.uk), James Cheshire, Rachel Oldroyd and others&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geocompr.robinlovelace.net/&#34;&gt;Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://data-analytics.net/cep/Schedule_files/geospatial.html&#34;&gt;Geospatial Analysis in R by Major David Beskow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://slcladal.github.io/index.html&#34;&gt;Language Technology and Data Analysis Laboratory (LADAL) of the School of Languages and Cultures at the University of Queensland&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mgimond.github.io/Spatial/index.html&#34;&gt;Intro to GIS and Spatial Analysis by Manuel Gimond&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://edzer.github.io/UseR2017/&#34;&gt;Spatial Data in R: New Directions by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spacetimewithr.org/&#34;&gt;Spatio-Temporal Statistics with R by Christopher K. Wikle, Andrew Zammit-Mangion, and Noel Cressie&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf&#34;&gt;Use R! by Robert Gentleman Kurt Hornik Giovanni Parmigiani&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-1-4614-7618-4.pdf&#34;&gt;Applied Spatial Data Analysis with R by Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html&#34;&gt;Geospatial Data in R and beyond by Barry Rowlingson&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;spatial-analyst.net&#34;&gt;spatial-analyst.net by Tomislav Hengl&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cengel.github.io/rspatial/&#34;&gt;Introduction to Mapping and Spatial Analysis with R by Branner Earth Sciences Library - Teaching Corner&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://north-road.github.io/qgis-processing-r/&#34;&gt;Processing R Provider by North Road and Jan Caha&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rspatial.org/&#34;&gt;Spatial Data Science with R by Robert J. Hijmans&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.r-spatial.org/&#34;&gt;R Spatial software blogs and ideas by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://keen-swartz-3146c4.netlify.app/&#34;&gt;Spatial Data Science by Edzer Pebesma, Roger Bivand&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gastonsanchez.com/visually-enforced/how-to/2014/01/15/Center-data-in-R/&#34;&gt;Visually Enforced by Gaston Sanchez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/corey_sparks/105700&#34;&gt;Exploratory Spatial Data Analysis by coreysparks&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spatialanalysis.github.io/lab_tutorials/Applications_of_Spatial_Weights.html&#34;&gt;Applications of Spatial Weights by Luc Anselin and Grant Morrison1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/FelipeSantos/LISA_tmap_geoda&#34;&gt;Local Moran’s I and spatial scales (using R and tmap) by Felipe Santos Marquez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/helson/608377&#34;&gt;Outlier detection in spatial data using  by Helson Gomes de Souza&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rafapereirabr/urban_centrality_index_2013&#34;&gt;Urban centrality index by Rafael Pereira&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-best&#34;&gt;The BEST&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://maczokni.github.io/crimemapping_textbook_bookdown/&#34;&gt;Crime Mapping in R by Juanjo Medina and Reka Solymosi&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dicas-e-dúvidas&#34;&gt;Dicas e dúvidas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rafapereirabr/5348193abf779625f5e8c5090776a228&#34;&gt;Map of bivariate spatial correlation in R (bivariate LISA) by Rafael Pereira&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como deixar o R com a minha cara</title>
+      <link>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</guid>
+      <description>&lt;p&gt;Para trocar o tema, basta fazer o download do tema favorito (ou criar o seu) e carrega no RStudio. Para isso:&lt;/p&gt;
+&lt;p&gt;Tools -&amp;gt; Global Options -&amp;gt; Appearance -&amp;gt; Add&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tmtheme-editor.herokuapp.com/#!/editor/theme/Abdal%20Black%20Hackers&#34;&gt;Temas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como comecei a usar RMarkdown</title>
+      <link>https://retaoliveira.github.io/post/uso-markdown/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/uso-markdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/uso-markdown/
+index.pt_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Períodos de pandemia são sempre interessantes! Falo como se tivesse passado por diversos momentos como este; felizmente, isso não é verdade! Entretanto, foi nesse período que descobri o Rmarkdown.&lt;/p&gt;
+&lt;p&gt;O isolamento social trouxe possibilidades, como eu aprender o R. Pesquisando sobre Latex, tive acesso a diferentes linguagens para elaboração de relatórios reprodutíveis e dinâmicos. A necessidade faz a “força”. Resolvi explorar as possibilidades antes de me dedicar a aprender efetivamente alguma linguagem e descobri que o Rmarkdown é bem mais intuitivo e dinâmico do que o Latex, apesar de ainda precisar do Latex para implementação de equações, por exemplo.&lt;/p&gt;
+&lt;p&gt;Com &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;RMarkdown&lt;/a&gt;, é possível:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar um documento em um relatório em diferentes formatos de saída, como PDF, HTML e Word.&lt;/li&gt;
+&lt;li&gt;Produzir slides para apresentações.&lt;/li&gt;
+&lt;li&gt;Criar dashboards interativas, com layouts atraentes e que se adaptam à tela do usuário.&lt;/li&gt;
+&lt;li&gt;Criar relatórios interativos com Shiny.&lt;/li&gt;
+&lt;li&gt;Escrever artigos científicos ou livros.&lt;/li&gt;
+&lt;li&gt;Criar blogs ou sites.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para começar a explorar esse mundo de textos dinâmicos, você precisa inicialmente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;quot;knitr&amp;quot;)
+# install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depois, crie um novo arquivo de RMarkdown usando o comando File &amp;gt; New &amp;gt; File menu e selecione R &amp;gt; RMarkdown na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione Adicionar R Markdown (ou Adicionar &amp;gt; Novo Item e selecionando R Markdown na lista).&lt;/p&gt;
+&lt;p&gt;Todo documento RMarkdown é composto por três importantes tipos de conteúdo: + Um cabeçalho &lt;code&gt;YAML&lt;/code&gt; delimitado antes e depois por — + &lt;code&gt;chunks&lt;/code&gt; de códigos R ou outra linguagem compatível delimitado por ``&lt;code&gt;. + Texto estruturado com formatação simples em&lt;/code&gt;#` para títulos e outros caracteres de formatação&lt;/p&gt;
+&lt;p&gt;Se ficarem interessados em packages para construção de documentos em Rmarkdown, tenho usado:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(vitae)
+library(pagedown)
+library(flexdashboard)
+library(rticles)
+library(bookdown)
+library(distill)
+library(hugodown)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alguns links para quem quiser se aventurar na composição de artigos científicos, textos acadêmicos e não-acadêmicos, apresentações, dashboards, sites e outras possibilidades que o Rmarkdown nos proporciona.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/rladiesbh/rmarkdown-o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-1cb1bb57769d&#34;&gt;RMarkdown: o mínimo que você precisa saber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cursos.leg.ufpr.br/prr/capDocDin.html&#34;&gt;Pesquisa Reproduzível com R by Fernando Mayer e Walmes Zeviani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.leg.ufpr.br/~fernandomayer/palestra/useR-2015/Rmarkdown-rautu.html#outline&#34;&gt;Rmarkdown-rautu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pet-estatistica.github.io/site/download/posts/postJAYME2.html#introducao&#34;&gt;Iniciação do RMarkdown by Jayme Gomes dos Santos Junior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sillasgonzaga.com/material/curso_visualizacao/apresentacao-de-dados-com-relatorios.html&#34;&gt;Introdução a R para Visualização e Apresentação de Dados by Sillas Gonzaga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;R Markdown: The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Credits: Ilustração por Alisson Horst&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/
+index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/
+index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

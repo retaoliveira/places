@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geocomputing e Análise Espacial on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/cursos/spatial/</link>
+    <description>Recent content in Geocomputing e Análise Espacial on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/cursos/spatial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Construindo mapas e representações</title>
+      <link>https://retaoliveira.github.io/cursos/spatial/map/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://retaoliveira.github.io/cursos/spatial/map/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/places/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#packages&#34;&gt;Packages&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#uma-introdução-ao-package-tmap&#34;&gt;Uma introdução ao package &lt;code&gt;tmap&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#quick-tmap&#34;&gt;Quick &lt;code&gt;tmap&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mapa-completo-por-meio-do-tmap&#34;&gt;Mapa completo por meio do &lt;code&gt;tmap&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sistemas-de-coordenadas&#34;&gt;Sistemas de coordenadas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#base-de-dados-epgs&#34;&gt;Base de dados EPGS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#alterar-projeções&#34;&gt;Alterar projeções&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-salvar-meu-mapa&#34;&gt;Como salvar meu mapa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#adicionando-mapa-de-contexto&#34;&gt;Adicionando mapa de contexto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#visualização-de-fenômenos-sociais-no-espaço&#34;&gt;Visualização de fenômenos sociais no espaço&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#mapas-coropléticos&#34;&gt;Mapas coropléticos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mapas-de-pontos&#34;&gt;Mapas de pontos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#representação-de-fluxos&#34;&gt;Representação de fluxos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mapas-de-calor&#34;&gt;Mapas de calor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cartogramas&#34;&gt;Cartogramas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#símbolos-proporcionais&#34;&gt;Símbolos proporcionais&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#plotar-pontos-a-partir-de-coordenadas&#34;&gt;Plotar pontos a partir de coordenadas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;packages&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Packages&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# carregar o dado
+data(&amp;quot;georgia&amp;quot;) 
+
+# converter o dado em sf
+georgia_sf &amp;lt;- st_as_sf(georgia)
+class(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;sf&amp;quot;         &amp;quot;data.frame&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia_sf # representa as dez primeiras feições&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Simple feature collection with 159 features and 14 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -85.6052 ymin: 30.35541 xmax: -80.84126 ymax: 35.00068
+## CRS:            +proj=longlat +ellps=WGS84
+## First 10 features:
+##   Latitude  Longitud TotPop90 PctRural PctBach PctEld PctFB PctPov PctBlack
+## 0 31.75339 -82.28558    15744     75.6     8.2  11.43  0.64   19.9    20.76
+## 1 31.29486 -82.87474     6213    100.0     6.4  11.77  1.58   26.0    26.86
+## 2 31.55678 -82.45115     9566     61.7     6.6  11.11  0.27   24.1    15.42
+## 3 31.33084 -84.45401     3615    100.0     9.4  13.17  0.11   24.8    51.67
+## 4 33.07193 -83.25085    39530     42.7    13.3   8.64  1.43   17.5    42.39
+## 5 34.35270 -83.50054    10308    100.0     6.4  11.37  0.34   15.1     3.49
+## 6 33.99347 -83.71181    29721     64.6     9.2  10.63  0.92   14.7    11.44
+## 7 34.23840 -84.83918    55911     75.2     9.0   9.66  0.82   10.7     9.21
+## 8 31.75940 -83.21976    16245     47.0     7.6  12.81  0.33   22.0    31.33
+## 9 31.27424 -83.23179    14153     66.2     7.5  11.98  1.19   19.3    11.62
+##          X       Y    ID     Name MedInc                       geometry
+## 0 941396.6 3521764 13001  Appling  32152 MULTIPOLYGON (((-82.2252 31...
+## 1 895553.0 3471916 13003 Atkinson  27657 MULTIPOLYGON (((-82.6293 31...
+## 2 930946.4 3502787 13005    Bacon  29342 MULTIPOLYGON (((-82.52171 3...
+## 3 745398.6 3474765 13007    Baker  29610 MULTIPOLYGON (((-84.1407 31...
+## 4 849431.3 3665553 13009  Baldwin  36414 MULTIPOLYGON (((-83.27423 3...
+## 5 819317.3 3807616 13011    Banks  41783 MULTIPOLYGON (((-83.39851 3...
+## 6 803747.1 3769623 13013   Barrow  49829 MULTIPOLYGON (((-83.53751 3...
+## 7 699011.5 3793408 13015   Bartow  47309 MULTIPOLYGON (((-84.6533 34...
+## 8 863020.8 3520432 13017 Ben Hill  28009 MULTIPOLYGON (((-83.17781 3...
+## 9 859915.8 3466377 13019  Berrien  33786 MULTIPOLYGON (((-83.1461 31...&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;uma-introdução-ao-package-tmap&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Uma introdução ao package &lt;code&gt;tmap&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;O package &lt;code&gt;tmap&lt;/code&gt; permite o uso de novas funcionalidades para gerar mapas e funções para extração de dados do Google Maps e do OpenStreetMap. O foco do package &lt;code&gt;tmap&lt;/code&gt; é a construção de mapas temáticos. Podem ser considerados dados &lt;code&gt;sp&lt;/code&gt; e &lt;code&gt;sf&lt;/code&gt;. A gramática para construção dos mapas é similar àquela do package &lt;code&gt;ggplot&lt;/code&gt;. Assim, a representação de dados espaciais por meio do &lt;code&gt;tmap&lt;/code&gt; conta com a manipulação de cada elemento do mapa separadamente em diferentes camadas.
+Para limpar o workspace, digite:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rm(list=ls())&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;quick-tmap&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Quick &lt;code&gt;tmap&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;A função &lt;code&gt;qtm()&lt;/code&gt; pode ser utilizada para composição de mapas de maneira expressa (quick). O código a seguir permite carregar o dado &lt;code&gt;georgia&lt;/code&gt;, recriar o dado &lt;code&gt;georgia_sf&lt;/code&gt; e gerar um mapa expresso.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(&amp;quot;georgia&amp;quot;)
+ls()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;georgia&amp;quot;       &amp;quot;georgia.polys&amp;quot; &amp;quot;georgia2&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para criar o objeto &lt;code&gt;sf&lt;/code&gt; &lt;code&gt;georgia_sf&lt;/code&gt;, faça:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia_sf &amp;lt;- st_as_sf(georgia)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finalmente, crie o mapa expresso utilizando:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tmap)
+qtm(georgia, fill=&amp;quot;red&amp;quot;, style = &amp;quot;natural&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;O uso do parâmetro &lt;code&gt;style&lt;/code&gt; permite configurações rápidas de mapas por meio do package &lt;code&gt;tmap&lt;/code&gt;. Explore a função &lt;code&gt;qtm&lt;/code&gt; para entender os demais temas possíveis.&lt;/p&gt;
+&lt;p&gt;O parâmetro &lt;code&gt;fill&lt;/code&gt; pode ser utilizado para especificar uma cor ou a variável a ser mapeada.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;qtm(georgia_sf, fill = &amp;quot;MedInc&amp;quot;, text =&amp;quot;Name&amp;quot;, text.size=0.5, format = &amp;quot;World_wide&amp;quot;, style = &amp;quot;classic&amp;quot;, text.root = 5, fill.title = &amp;quot;Median Income&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mapa-completo-por-meio-do-tmap&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mapa completo por meio do &lt;code&gt;tmap&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Para gerar mapas completos por meio do package &lt;code&gt;tmap&lt;/code&gt;, é necessário utilizar a função &lt;code&gt;tm_shape&lt;/code&gt;acompanhada de uma outra função que especifique o precisa ser plotado. Antes de plotar, um objeto contendo a linha da divisa estadual da Georgia pode ser criada por meio da função &lt;code&gt;st_union()&lt;/code&gt; do package &lt;code&gt;sf&lt;/code&gt;. Uma alternativa para dados &lt;code&gt;sp&lt;/code&gt; é função &lt;code&gt;gUnaryUnion()&lt;/code&gt; do package &lt;code&gt;rgeos&lt;/code&gt;, carregado juntamente com o package &lt;code&gt;GISTools&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# união das feições para composição do limite estadual
+g &amp;lt;- st_union(georgia_sf)
+
+# plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill(&amp;quot;tomato&amp;quot;) +
+  tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Incluir alguns estilos:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# plotar as camadas espaciais
+tm_shape(georgia_sf) + 
+  tm_fill(&amp;quot;tomato&amp;quot;) +
+  tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;) +
+  tm_style(&amp;quot;natural&amp;quot;, bg.color = &amp;quot;grey90&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Incluir limite estadual. Repare que a função &lt;code&gt;tm_shape&lt;/code&gt; vai ser chamada novamente uma vez que outro objeto será incluído no mapa.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) + 
+  tm_fill(&amp;quot;tomato&amp;quot;) +
+  tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;) +
+  tm_style(&amp;quot;natural&amp;quot;, bg.color = &amp;quot;grey90&amp;quot;) +
+  tm_shape(g) + 
+  tm_borders(lwd=2) # lwd - line width - espessura da linha&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Incluindo todos os parâmetros juntos:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) + 
+  tm_fill(&amp;quot;tomato&amp;quot;) +
+  tm_borders(lty=&amp;quot;dashed&amp;quot;, col = &amp;quot;gold&amp;quot;) +
+  tm_style(&amp;quot;natural&amp;quot;, bg.color = &amp;quot;grey90&amp;quot;) +
+  tm_shape(g) + 
+  tm_borders(lwd=2) +
+  tm_layout(title = &amp;quot;O estado da Georgia&amp;quot;,
+            title.size = 1,
+            title.position = c(0.55, &amp;quot;top&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Experimente esses outros parâmetros da função &lt;code&gt;qtm&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(World, rivers, metro, land)
+
+# just the map
+qtm(World)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# choropleth
+qtm(World, fill = &amp;quot;economy&amp;quot;, format = &amp;quot;World&amp;quot;, style = &amp;quot;col_blind&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# choropleth with more specifications
+qtm(World, fill=&amp;quot;HPI&amp;quot;, fill.n = 9, fill.palette = &amp;quot;div&amp;quot;,
+    fill.title = &amp;quot;Happy Planet Index&amp;quot;, fill.id = &amp;quot;name&amp;quot;, 
+    style = &amp;quot;gray&amp;quot;, format = &amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Alternative to previous map - RECOMENDED
+tm_shape(World) +
+    tm_polygons(&amp;quot;HPI&amp;quot;, n = 9, palette = &amp;quot;div&amp;quot;,
+        title = &amp;quot;Happy Planet Index&amp;quot;, id = &amp;quot;name&amp;quot;) +
+    tm_style(&amp;quot;gray&amp;quot;) +
+    tm_format(&amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Bubble map
+qtm(World, borders = NULL) + 
+qtm(metro, symbols.size = &amp;quot;pop2010&amp;quot;, 
+    symbols.title.size= &amp;quot;Metropolitan Areas&amp;quot;, 
+    symbols.id= &amp;quot;name&amp;quot;,
+    format = &amp;quot;World&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-12-5.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Para plotar dois mapas juntos com dados diferentes, experimente o seguinte código:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tmap)
+
+t1 &amp;lt;- tm_shape(georgia_sf) +
+              tm_fill(&amp;quot;coral&amp;quot;) +
+              tm_borders() +
+              tm_layout(bg.color = &amp;quot;grey85&amp;quot;)
+
+t2 &amp;lt;- tm_shape(georgia2) +
+              tm_fill(&amp;quot;orange&amp;quot;) +
+              tm_borders() +
+              tm_layout(asp=0.86, bg.color = &amp;quot;grey95&amp;quot;) #alinhar a segunda figura
+t1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Para especificar o layout da figura combinando os mapas:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(grid)
+
+# abrir uma nova página de plotagem
+grid.newpage()
+
+# definir o layout
+pushViewport(viewport(layout = grid.layout(1,2)))
+
+#  Plotar usando o comando print
+print(t1, vp=viewport(layout.pos.col = 1, height = 5))
+print(t2, vp=viewport(layout.pos.col = 2, height = 5))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;
+Repare que t1 é um objeto &lt;code&gt;sf&lt;/code&gt; e t2 é um objeto &lt;code&gt;sp&lt;/code&gt; e apresentam sistemas de referência diferentes.&lt;/p&gt;
+&lt;p&gt;Para consultar os diferentes sistemas de projeção, verifique utilizando a função &lt;code&gt;crs&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in showSRID(uprojargs, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in showSRID(SRS_string, format = &amp;quot;PROJ&amp;quot;, multiline = &amp;quot;NO&amp;quot;, prefer_proj
+## = prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in Proj4
+## definition&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## CRS arguments: +proj=longlat +ellps=WGS84 +no_defs&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crs(georgia2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## CRS arguments:
+##  +proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0.0
+## +y_0=0.0 +ellps=GRS80 +units=m +datum=NAD83 +no_defs +towgs84=0,0,0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para nomear os atributos, verifique o data.frame do objeto &lt;code&gt;georgia_sf&lt;/code&gt;. Utilize a função &lt;code&gt;names()&lt;/code&gt; para ter acesso a uma lista de nomes de todos os atributos.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Latitude&amp;quot; &amp;quot;Longitud&amp;quot; &amp;quot;TotPop90&amp;quot; &amp;quot;PctRural&amp;quot; &amp;quot;PctBach&amp;quot;  &amp;quot;PctEld&amp;quot;  
+##  [7] &amp;quot;PctFB&amp;quot;    &amp;quot;PctPov&amp;quot;   &amp;quot;PctBlack&amp;quot; &amp;quot;X&amp;quot;        &amp;quot;Y&amp;quot;        &amp;quot;ID&amp;quot;      
+## [13] &amp;quot;Name&amp;quot;     &amp;quot;MedInc&amp;quot;   &amp;quot;geometry&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Construir um data frame com os nomes. 
+data.frame(georgia_sf)[,13]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   [1] &amp;quot;Appling&amp;quot;       &amp;quot;Atkinson&amp;quot;      &amp;quot;Bacon&amp;quot;         &amp;quot;Baker&amp;quot;        
+##   [5] &amp;quot;Baldwin&amp;quot;       &amp;quot;Banks&amp;quot;         &amp;quot;Barrow&amp;quot;        &amp;quot;Bartow&amp;quot;       
+##   [9] &amp;quot;Ben Hill&amp;quot;      &amp;quot;Berrien&amp;quot;       &amp;quot;Bibb&amp;quot;          &amp;quot;Bleckley&amp;quot;     
+##  [13] &amp;quot;Brantley&amp;quot;      &amp;quot;Brooks&amp;quot;        &amp;quot;Bryan&amp;quot;         &amp;quot;Bulloch&amp;quot;      
+##  [17] &amp;quot;Burke&amp;quot;         &amp;quot;Butts&amp;quot;         &amp;quot;Calhoun&amp;quot;       &amp;quot;Camden&amp;quot;       
+##  [21] &amp;quot;Candler&amp;quot;       &amp;quot;Carroll&amp;quot;       &amp;quot;Catoosa&amp;quot;       &amp;quot;Charlton&amp;quot;     
+##  [25] &amp;quot;Chatham&amp;quot;       &amp;quot;Chattahoochee&amp;quot; &amp;quot;Chattooga&amp;quot;     &amp;quot;Cherokee&amp;quot;     
+##  [29] &amp;quot;Clarke&amp;quot;        &amp;quot;Clay&amp;quot;          &amp;quot;Clayton&amp;quot;       &amp;quot;Clinch&amp;quot;       
+##  [33] &amp;quot;Cobb&amp;quot;          &amp;quot;Coffee&amp;quot;        &amp;quot;Colquitt&amp;quot;      &amp;quot;Columbia&amp;quot;     
+##  [37] &amp;quot;Cook&amp;quot;          &amp;quot;Coweta&amp;quot;        &amp;quot;Crawford&amp;quot;      &amp;quot;Crisp&amp;quot;        
+##  [41] &amp;quot;Dade&amp;quot;          &amp;quot;Dawson&amp;quot;        &amp;quot;Decatur&amp;quot;       &amp;quot;DeKalb&amp;quot;       
+##  [45] &amp;quot;Dodge&amp;quot;         &amp;quot;Dooly&amp;quot;         &amp;quot;Dougherty&amp;quot;     &amp;quot;Douglas&amp;quot;      
+##  [49] &amp;quot;Early&amp;quot;         &amp;quot;Echols&amp;quot;        &amp;quot;Effingham&amp;quot;     &amp;quot;Elbert&amp;quot;       
+##  [53] &amp;quot;Emanuel&amp;quot;       &amp;quot;Evans&amp;quot;         &amp;quot;Fannin&amp;quot;        &amp;quot;Fayette&amp;quot;      
+##  [57] &amp;quot;Floyd&amp;quot;         &amp;quot;Forsyth&amp;quot;       &amp;quot;Franklin&amp;quot;      &amp;quot;Fulton&amp;quot;       
+##  [61] &amp;quot;Gilmer&amp;quot;        &amp;quot;Glascock&amp;quot;      &amp;quot;Glynn&amp;quot;         &amp;quot;Gordon&amp;quot;       
+##  [65] &amp;quot;Grady&amp;quot;         &amp;quot;Greene&amp;quot;        &amp;quot;Gwinnett&amp;quot;      &amp;quot;Habersham&amp;quot;    
+##  [69] &amp;quot;Hall&amp;quot;          &amp;quot;Hancock&amp;quot;       &amp;quot;Haralson&amp;quot;      &amp;quot;Harris&amp;quot;       
+##  [73] &amp;quot;Hart&amp;quot;          &amp;quot;Heard&amp;quot;         &amp;quot;Henry&amp;quot;         &amp;quot;Houston&amp;quot;      
+##  [77] &amp;quot;Irwin&amp;quot;         &amp;quot;Jackson&amp;quot;       &amp;quot;Jasper&amp;quot;        &amp;quot;Jeff Davis&amp;quot;   
+##  [81] &amp;quot;Jefferson&amp;quot;     &amp;quot;Jenkins&amp;quot;       &amp;quot;Johnson&amp;quot;       &amp;quot;Jones&amp;quot;        
+##  [85] &amp;quot;Lamar&amp;quot;         &amp;quot;Lanier&amp;quot;        &amp;quot;Laurens&amp;quot;       &amp;quot;Lee&amp;quot;          
+##  [89] &amp;quot;Liberty&amp;quot;       &amp;quot;Lincoln&amp;quot;       &amp;quot;Long&amp;quot;          &amp;quot;Lowndes&amp;quot;      
+##  [93] &amp;quot;Lumpkin&amp;quot;       &amp;quot;McDuffie&amp;quot;      &amp;quot;McIntosh&amp;quot;      &amp;quot;Macon&amp;quot;        
+##  [97] &amp;quot;Madison&amp;quot;       &amp;quot;Marion&amp;quot;        &amp;quot;Meriwether&amp;quot;    &amp;quot;Miller&amp;quot;       
+## [101] &amp;quot;Mitchell&amp;quot;      &amp;quot;Monroe&amp;quot;        &amp;quot;Montgomery&amp;quot;    &amp;quot;Morgan&amp;quot;       
+## [105] &amp;quot;Murray&amp;quot;        &amp;quot;Muscogee&amp;quot;      &amp;quot;Newton&amp;quot;        &amp;quot;Oconee&amp;quot;       
+## [109] &amp;quot;Oglethorpe&amp;quot;    &amp;quot;Paulding&amp;quot;      &amp;quot;Peach&amp;quot;         &amp;quot;Pickens&amp;quot;      
+## [113] &amp;quot;Pierce&amp;quot;        &amp;quot;Pike&amp;quot;          &amp;quot;Polk&amp;quot;          &amp;quot;Pulaski&amp;quot;      
+## [117] &amp;quot;Putnam&amp;quot;        &amp;quot;Quitman&amp;quot;       &amp;quot;Rabun&amp;quot;         &amp;quot;Randolph&amp;quot;     
+## [121] &amp;quot;Richmond&amp;quot;      &amp;quot;Rockdale&amp;quot;      &amp;quot;Schley&amp;quot;        &amp;quot;Screven&amp;quot;      
+## [125] &amp;quot;Seminole&amp;quot;      &amp;quot;Spalding&amp;quot;      &amp;quot;Stephens&amp;quot;      &amp;quot;Stewart&amp;quot;      
+## [129] &amp;quot;Sumter&amp;quot;        &amp;quot;Talbot&amp;quot;        &amp;quot;Taliaferro&amp;quot;    &amp;quot;Tattnall&amp;quot;     
+## [133] &amp;quot;Taylor&amp;quot;        &amp;quot;Telfair&amp;quot;       &amp;quot;Terrell&amp;quot;       &amp;quot;Thomas&amp;quot;       
+## [137] &amp;quot;Tift&amp;quot;          &amp;quot;Toombs&amp;quot;        &amp;quot;Towns&amp;quot;         &amp;quot;Treutlen&amp;quot;     
+## [141] &amp;quot;Troup&amp;quot;         &amp;quot;Turner&amp;quot;        &amp;quot;Twiggs&amp;quot;        &amp;quot;Union&amp;quot;        
+## [145] &amp;quot;Upson&amp;quot;         &amp;quot;Walker&amp;quot;        &amp;quot;Walton&amp;quot;        &amp;quot;Ware&amp;quot;         
+## [149] &amp;quot;Warren&amp;quot;        &amp;quot;Washington&amp;quot;    &amp;quot;Wayne&amp;quot;         &amp;quot;Webster&amp;quot;      
+## [153] &amp;quot;Wheeler&amp;quot;       &amp;quot;White&amp;quot;         &amp;quot;Whitfield&amp;quot;     &amp;quot;Wilcox&amp;quot;       
+## [157] &amp;quot;Wilkes&amp;quot;        &amp;quot;Wilkinson&amp;quot;     &amp;quot;Worth&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para incluir os nomes, faça:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) +
+              tm_fill(&amp;quot;white&amp;quot;) +
+              tm_borders() +
+              tm_text(&amp;quot;Name&amp;quot;, size=0.3) +
+              tm_layout(frame = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
+Para criar um subconjunto dos dados, é possível fazer uma seleção criando uma camada com o subconjunto por meio dos índices:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;index &amp;lt;- c(81, 82, 83, 150, 62, 53, 21, 16, 124, 121, 17)
+georgia_sub &amp;lt;- georgia_sf[index, ]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para sobrepor os mapas com as duas camadas, faça:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_shape(georgia_sf) +
+              tm_fill(&amp;quot;white&amp;quot;) +
+              tm_borders(&amp;quot;grey&amp;quot;, lwd=0.5) +
+tm_shape(g) +
+              tm_borders(lwd=2) +
+tm_shape(georgia_sub) +
+              tm_fill(&amp;quot;lightblue&amp;quot;) +
+              tm_borders() +
+              tm_layout(frame = TRUE, title = &amp;quot;Georgia com subconjunto&amp;quot;, title.size=1, title.position = c(0.02, &amp;quot;bottom&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sistemas-de-coordenadas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sistemas de coordenadas&lt;/h2&gt;
+&lt;p&gt;Verificar qual o sistema de referência em uso de dados espaciais vetoriais&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sf)
+st_crs(georgia_sf)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Coordinate Reference System:
+##   User input:  +proj=longlat +ellps=WGS84 
+##   wkt:
+## GEOGCRS[&amp;quot;unknown&amp;quot;,
+##     DATUM[&amp;quot;Unknown based on WGS84 ellipsoid&amp;quot;,
+##         ELLIPSOID[&amp;quot;WGS 84&amp;quot;,6378137,298.257223563,
+##             LENGTHUNIT[&amp;quot;metre&amp;quot;,1],
+##             ID[&amp;quot;EPSG&amp;quot;,7030]]],
+##     PRIMEM[&amp;quot;Greenwich&amp;quot;,0,
+##         ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433],
+##         ID[&amp;quot;EPSG&amp;quot;,8901]],
+##     CS[ellipsoidal,2],
+##         AXIS[&amp;quot;longitude&amp;quot;,east,
+##             ORDER[1],
+##             ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433,
+##                 ID[&amp;quot;EPSG&amp;quot;,9122]]],
+##         AXIS[&amp;quot;latitude&amp;quot;,north,
+##             ORDER[2],
+##             ANGLEUNIT[&amp;quot;degree&amp;quot;,0.0174532925199433,
+##                 ID[&amp;quot;EPSG&amp;quot;,9122]]]]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Verificar qual o sistema de referência em uso em dados espaciais matriciais&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(raster)
+# crs(elev.r)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;sintaxe-proj4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Sintaxe &lt;code&gt;Proj4&lt;/code&gt;&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Parâmetro&lt;/th&gt;
+&lt;th&gt;Significado&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+a&lt;/td&gt;
+&lt;td&gt;Semimajor radius of the ellipsoid axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+b&lt;/td&gt;
+&lt;td&gt;Semiminor radius of the ellipsoid axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+datum&lt;/td&gt;
+&lt;td&gt;Datum name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+ellps&lt;/td&gt;
+&lt;td&gt;Ellipsoid name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+lat_0&lt;/td&gt;
+&lt;td&gt;Latitude of origin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+lat_1&lt;/td&gt;
+&lt;td&gt;Latitude of first standard parallel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+lat_2&lt;/td&gt;
+&lt;td&gt;Latitude of second standard parallel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+lat_ts&lt;/td&gt;
+&lt;td&gt;Latitude of true scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+lon_0&lt;/td&gt;
+&lt;td&gt;Central meridian&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+over&lt;/td&gt;
+&lt;td&gt;Allow longitude output outside -180 to 180 range, disables wrapping&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+proj&lt;/td&gt;
+&lt;td&gt;Projection name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+south&lt;/td&gt;
+&lt;td&gt;Denotes southern hemisphere UTM zone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+units&lt;/td&gt;
+&lt;td&gt;meters, US survey feet, etc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+x_0&lt;/td&gt;
+&lt;td&gt;False easting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;+y_0&lt;/td&gt;
+&lt;td&gt;False northing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;+zone&lt;/td&gt;
+&lt;td&gt;UTM zone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://proj.org/operations/projections/&#34;&gt;Projeções disponíveis no Proj4&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;base-de-dados-epgs&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Base de dados EPGS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://spatialreference.org/ref/epsg/&#34;&gt;Spatial Reference EPSG&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alterar-projeções&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Alterar projeções&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;georgia_sf_crs &amp;lt;- st_transform(georgia_sf, crs = 3035)
+
+st_crs(georgia_sf_crs)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-salvar-meu-mapa&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Como salvar meu mapa&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(newhaven)
+
+pdf(file = &amp;#39;map.pdf&amp;#39;) # salva o mapa como pdf.
+
+tm_shape(blocks) +
+    tm_borders() +
+tm_shape(roads) +
+  tm_lines(col = &amp;quot;red&amp;quot;) +
+# embellish the map
+tm_scale_bar(width = 0.22) +
+tm_compass(position = c(0.8, 0.07)) +
+tm_layout(frame = F, title = &amp;quot;New Haven, CT&amp;quot;, 
+            title.size = 1.5, 
+            title.position = c(0.55, &amp;quot;top&amp;quot;), 
+            legend.outside = T) 
+
+dev.off() # desconectar o arquivo gerado do ambiente de trabalho. &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;É possível salvar por meio de outros formatos.&lt;/p&gt;
+&lt;p&gt;pdf()&lt;br /&gt;
+png()&lt;br /&gt;
+tiff()&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adicionando-mapa-de-contexto&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Adicionando mapa de contexto&lt;/h2&gt;
+&lt;p&gt;Em algumas situações um mapa de fundo é interessante. Há várias maneiras de fazer essa inclusão. Pelo &lt;code&gt;OpenStreetMap&lt;/code&gt;, a ideia é fazer a definição da área a ser representada, fazer o download e plotar o mapa de fundo. Depois acrescentar o mapa em desenvolvimento.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(OpenStreetMap)
+# define upper left, lower right corners 
+georgia.sub &amp;lt;- georgia[index,]
+ul &amp;lt;- as.vector(cbind(bbox(georgia.sub)[2,2], 
+    bbox(georgia.sub)[1,1]))
+lr &amp;lt;- as.vector(cbind(bbox(georgia.sub)[2,1], 
+    bbox(georgia.sub)[1,2]))
+# download the map tile
+MyMap &amp;lt;- openmap(ul,lr)
+# now plot the layer and the backdrop
+par(mar = c(0,0,0,0))
+plot(MyMap, removeMargin=FALSE)
+plot(spTransform(georgia.sub, osm()), add = TRUE, lwd = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/places/conteudo/spatial/map_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualização-de-fenômenos-sociais-no-espaço&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Visualização de fenômenos sociais no espaço&lt;/h2&gt;
+&lt;div id=&#34;mapas-coropléticos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mapas coropléticos&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/coropl.png&#34; width=&#34;50%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mapas-de-pontos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mapas de pontos&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/pontos.png&#34; width=&#34;50%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;representação-de-fluxos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Representação de fluxos&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/fluxos.png&#34; width=&#34;50%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mapas-de-calor&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mapas de calor&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/calor.png&#34; width=&#34;60%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cartogramas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Cartogramas&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/1_cartograma.png&#34; width=&#34;50%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;símbolos-proporcionais&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Símbolos proporcionais&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/pontos_propo.png&#34; width=&#34;55%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;plotar-pontos-a-partir-de-coordenadas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Plotar pontos a partir de coordenadas&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

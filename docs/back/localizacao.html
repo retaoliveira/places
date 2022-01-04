@@ -1,0 +1,412 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 6 - Localização e redes logísticas
+    weight: 12
+title: Localização
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 15
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#competências-a-serem-desenvolvidas">Competências a serem desenvolvidas</a></li>
+<li><a href="#pensamento-espacial">Pensamento espacial</a></li>
+<li><a href="#representações-sistemas-geodésicos-modelos-e-datum">Representações: sistemas geodésicos, modelos e datum</a>
+<ul>
+<li><a href="#geóide">Geóide</a></li>
+<li><a href="#elipsóide-de-revolução">Elipsóide de revolução</a></li>
+<li><a href="#sistemas-geodésicos">Sistemas geodésicos</a>
+<ul>
+<li><a href="#datum">Datum</a></li>
+</ul></li>
+<li><a href="#sistemas-de-referências">Sistemas de referências</a>
+<ul>
+<li><a href="#sistemas-de-coordenadas-geográficas">Sistemas de coordenadas geográficas</a></li>
+<li><a href="#sistemas-de-coordenadas-projetadas---projeções-cartográficas">Sistemas de coordenadas projetadas - projeções cartográficas</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sistemas-de-informações-geográficas">Sistemas de Informações Geográficas</a>
+<ul>
+<li><a href="#definições-de-gis">Definições de GIS</a></li>
+<li><a href="#por-que-fazer-cartografia-digital">Por que fazer cartografia digital?</a></li>
+<li><a href="#geocodificação">Geocodificação</a></li>
+</ul></li>
+<li><a href="#unidades-espaciais-e-representação-de-fenômenos-espaciais">Unidades espaciais e representação de fenômenos espaciais</a></li>
+<li><a href="#dados-espaciais">Dados espaciais</a>
+<ul>
+<li><a href="#estrutura-do-shapefile">Estrutura do shapefile</a></li>
+</ul></li>
+<li><a href="#distâncias">Distâncias</a></li>
+<li><a href="#qgis">QGIS</a>
+<ul>
+<li><a href="#ambiente-e-funcionalidades-básicas-do-qgis">Ambiente e funcionalidades básicas do QGIS</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="competências-a-serem-desenvolvidas" class="section level1">
+<h1>Competências a serem desenvolvidas</h1>
+<p>Ao final desse mini-curso, os alunos deverão ser capazes de discutir os seguintes conceitos:</p>
+<ul>
+<li>Pensamento espacial<br />
+</li>
+<li>Introdução à cartografia
+<ul>
+<li>forma e dimensões terrestres<br />
+</li>
+<li>representações: sistemas geodésicos, modelos e datum<br />
+</li>
+<li>sistemas de coordenadas geográficas e projetadas<br />
+</li>
+</ul></li>
+<li>Sistemas de Informações Geográficas (<em>Geographic Information Systems</em>)<br />
+</li>
+<li>Unidades espaciais e representação de fenômenos espaciais<br />
+</li>
+<li>Distâncias<br />
+</li>
+<li>QGIS
+<ul>
+<li>Ambiente e funcionalidades básicas do QGIS<br />
+</li>
+<li>Complementos: instalação e para que servem<br />
+</li>
+<li>Mudança de datum e sistemas de coordenadas<br />
+</li>
+<li>Tabela de atributos<br />
+</li>
+<li>Estruturas de dados espaciais
+<ul>
+<li>classificação: vetoriais e matriciais<br />
+</li>
+<li>interoperabilidade<br />
+</li>
+<li>geocodificação<br />
+</li>
+</ul></li>
+<li>Funções básicas em GIS
+<ul>
+<li>seleção por atributo e por localização<br />
+</li>
+<li>join por código e join espacial<br />
+</li>
+<li>mapas temáticos<br />
+</li>
+<li>geração de centroides e agregação de variaveis<br />
+</li>
+<li>conceito de redes<br />
+</li>
+<li>layout de impressão</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="pensamento-espacial" class="section level1">
+<h1>Pensamento espacial</h1>
+<blockquote>
+<p>” todas as coisas são parecidas mas coisas mais próximas se parecem mais que coisas mais distantes”. Waldo Tobler</p>
+</blockquote>
+<ul>
+<li><p>Encontrar significado em formas, tamanho, orientação, localização, direção ou trajetória de objetos, processos e fenômenos</p></li>
+<li><p>Encontrar significado na localização relativa de múltiplos objetos, processos e fenômenos.</p>
+<ul>
+<li>O que diferencia dados espaciais e não espaciais?<br />
+</li>
+<li>O que existe em uma determinada localização?<br />
+</li>
+<li>Onde posso encontrar um determinado objeto?<br />
+</li>
+<li>O que mudou ao longo do tempo?<br />
+</li>
+<li>Qual o melhor caminho?<br />
+</li>
+<li>Como os objetos são distribuídos no espaço?<br />
+</li>
+<li>Como as condições serão alteradas no futuro?</li>
+</ul></li>
+</ul>
+<p><img src="img/pensamento_espacial.png" width="50%" /></p>
+</div>
+<div id="representações-sistemas-geodésicos-modelos-e-datum" class="section level1">
+<h1>Representações: sistemas geodésicos, modelos e datum</h1>
+<div id="geóide" class="section level3">
+<h3>Geóide</h3>
+<p>Forma irregular, com ondulações e depressões</p>
+<p><img src="img/gravidade_terra.png" width="50%" /></p>
+<p>É preciso buscar um modelo mais simples para representar a Terra.</p>
+<p><strong>Geóide</strong>: Superfície delimitada pelo nível médio dos mares supostamente prolongado por sob os continentes<br />
+<strong>Elipsóide</strong>: Modelo matemático que define a superfície da Terra.</p>
+<p><img src="img/geoide.png" width="30%" /></p>
+</div>
+<div id="elipsóide-de-revolução" class="section level3">
+<h3>Elipsóide de revolução</h3>
+<p>Ao girar em torno de seu eixo menor, uma ELIPSE forma um volume achatado nos pólos</p>
+<p>É a figura matemática que mais se aproxima da forma do geóide. Parâmetros são simples</p>
+<p>Parâmetros
+a = semi-eixo maior; b = semi-eixo menor; f = achatamento = (a-b)/a</p>
+<p>Em geral, cada país ou grupo de países adotou um elipsóide de referência para os trabalhos geodésicos e topográficos que mais se aproxima do geóide na região considerada.</p>
+<p><img src="img/elipsoi_1.png" width="30%" /></p>
+<p><img src="img/elipsoide_2.png" width="30%" /></p>
+</div>
+<div id="sistemas-geodésicos" class="section level2">
+<h2>Sistemas geodésicos</h2>
+<p>Permitem estabelecer uma relação entre um ponto determinado do terreno e um elipsóide de referência.<br />
+Elegem um elipsóide de revolução que melhor se ajuste às características locais do geóide.</p>
+<p>A posição deste elipsóide em relação à Terra, bem como sua forma e tamanho, constituem um conjunto de parâmetros que usualmente são denominados Datum Geodésico.</p>
+<div id="datum" class="section level3">
+<h3>Datum</h3>
+<p>Marco geodésico, horizontal ou vertical, usado como ponto de origem do sistema geodésico (referência)</p>
+<ul>
+<li><p>Datum Vertical ou Altimétrico: referência para altitude (marco “zero” – 0 m)<br />
+<img src="img/datum.png" width="50%" /></p></li>
+<li><p>Datum Horizontal ou Planimétrico: referência para coordenadas planimétricas<br />
+<img src="img/geoide_geocentrico.png" width="30%" /></p></li>
+</ul>
+<p><img src="img/geoide_topocentrico.png" width="30%" /></p>
+<p>SIRGAS 2000 - Sistema de Referência Geocêntrico para as Américas<br />
+Datum Global, Geocêntrico</p>
+<p>SAD-69 - Sistema Geodésico Sul-Americano 1969<br />
+Datum Local, Topocêntrico</p>
+</div>
+</div>
+<div id="sistemas-de-referências" class="section level2">
+<h2>Sistemas de referências</h2>
+<p>Como estabelecer localizações na Superfície Terrestre?</p>
+<ul>
+<li><p>Adotar um modelo matemático da Terra: Datum Geodésico (SAD-69, SIRGAS 2000…)</p></li>
+<li><p>Adotar um sistema capaz de localizar qualquer lugar da Terra: Sistema de Coordenadas</p></li>
+</ul>
+<div id="sistemas-de-coordenadas-geográficas" class="section level3">
+<h3>Sistemas de coordenadas geográficas</h3>
+<p>Sistemas de coordenadas geográficas são necessários para a expressão da posição de pontos sobre uma superfície.</p>
+<p>Considerando que esta superfície seja curvilínea (elipsóide ou esfera), cada ponto da superfície terrestre é localizado na interseção de um meridiano e paralelo e seu posicionamento é dado por meio de <strong>valores angulares</strong> que correspondem a sua <strong>latitude</strong> e <strong>longitude</strong>.</p>
+<p><img src="img/graus.png" width="30%" /></p>
+<p><strong>Meridianos</strong><br />
+- Num modelo esférico, os meridianos são semi-círculos gerados a partir da interseção de planos verticais que contém o eixo de rotação terrestre com a superfície da Terra.</p>
+<ul>
+<li><p>Um semicírculo define um meridiano que com seu antimeridiano formam um círculo máximo.</p></li>
+<li><p>O meridiano de origem, é denominado Meridiano de Greenwich, com o seu antimeridiano, divide a Terra em dois hemisférios: leste e oeste.</p></li>
+<li><p>A leste deste meridiano, os valores da coordenadas são crescentes, variando entre 0° e +180°.</p></li>
+<li><p>A oeste, as medidas são decrescentes, variando entre 0° e -180°.</p></li>
+</ul>
+<p><strong>Paralelos</strong><br />
+- Paralelos são círculos cujo plano é perpendicular ao eixo dos pólos.</p>
+<ul>
+<li><p>O Equador é o paralelo que divide a Terra em dois hemisférios (Norte e Sul) e é considerado o paralelo de origem (0°).</p></li>
+<li><p>Partindo-se do Equador em direção aos pólos tem-se vários planos paralelos ao Equador, cujos tamanhos vão diminuindo até que se reduzam a pontos nos pólos Norte (+90°) e Sul (-90°).</p></li>
+</ul>
+<p><strong>Latitude e Longitude</strong><br />
+- Longitude (letra grega lambda λ): É a distância angular entre o lugar e o meridiano de origem, contada sobre um plano paralelo ao Equador.<br />
+- Latitude (letra grega phi ϕ): É a distância angular entre o lugar e o plano do Equador, contada sobre o plano do meridiano que passa no lugar.</p>
+<p><img src="img/lat_long.png" width="30%" /></p>
+</div>
+<div id="sistemas-de-coordenadas-projetadas---projeções-cartográficas" class="section level3">
+<h3>Sistemas de coordenadas projetadas - projeções cartográficas</h3>
+<p>Para confeccionar um mapa, precisamos de um método segundo o qual a cada ponto da superfície terrestre corresponda um ponto do mapa e vice versa: <strong>sistema de projeções</strong>.</p>
+<p>A projeção cartográfica <strong>transforma</strong> uma posição sobre a superfície terrestre, identificada por latitude e longitude em uma posição em coordenadas cartesianas/planas (x,y).</p>
+<p><img src="img/projecao.png" width="30%" /></p>
+<p>Sistemas de coordenadas planas devem ser utilizados para representação de pequenas porções da superfície terrestre (mapas de grande escala). Coordenadas planas não são utilizadas para mapas de pequenas escalas pelo seu potencial de distorção.</p>
+<p><img src="img/laranja1.png" width="30%" /></p>
+<p><img src="img/laranja%202.png" width="30%" /></p>
+<p>Representar uma superfície curva (a Terra) em um plano sempre envolve deformações. <strong>Não existe projeção ideal</strong>.</p>
+<p><img src="img/erro_proj1.png" width="30%" /></p>
+<p><img src="img/proj.jpg" width="30%" /></p>
+<p>As projeções podem ser:<br />
+- Projeção conforme (conformidade): Mantêm ângulos (forma), mas não os tamanhos<br />
+- Projeção equidistante: Mantêm distância, mas deforma áreas e ângulos<br />
+- Projeção equivalente: Mantêm áreas, mas distorce as formas<br />
+- Projeções afiláticas: Não conserva nenhuma das propriedades. Busca reduzir distorções de maneira geral.</p>
+<p><strong>Classificação das projeções geográficas</strong><br />
+Quanto à Superfície de Projeção:<br />
+- Plana ou Azimutal<br />
+- Cilíndrica<br />
+- Cônica<br />
+- Polissuperficiais (poliédrica, policilíndrica, policônica)</p>
+<p>Quanto ao Tipo de Contato:<br />
+- Tangente</p>
+<p><img src="img/planotangente.png" width="30%" /></p>
+<ul>
+<li>Secante</li>
+</ul>
+<p><img src="img/planosecante.png" width="30%" /></p>
+<div id="utm" class="section level4">
+<h4>UTM</h4>
+<p>O Sistema de projeção Universal Transversa de Mercato apresenta uma superfície de Projeção com 60 cilindros transversos, cada um com uma amplitude de 6 graus em longitude = 60 fusos.</p>
+<p>Cada fuso possui um meridiano central, com 3 graus para cada lado. Os 60 fusos são enumerados a partir do anti-meridiano de Greenwich.</p>
+<p><img src="img/mercartor.png" width="30%" /></p>
+<p>A unidade é o <strong>metro</strong> tendo como origem o Equador e o Meridiano Central. No hemisfério Sul, o sistema possui o valor 10.000.000,00 m no Equador para a corrdenada Norte, decrescendo para o Sul. E o valor 500.000,00 m no Meridiano Central para a coordenada leste, decrescendo para Oeste e crescendo para leste.</p>
+<p>As Coordenadas UTM definem posições bi-dimensionais e horizontais.</p>
+<ul>
+<li><p>Fusos UTM no território brasileiro: Fusos 18 a 25</p></li>
+<li><p>Belo Horizonte: Fuso 23</p></li>
+</ul>
+<p><img src="img/utm.png" width="30%" /></p>
+<p><img src="img/utm_br.png" width="30%" /></p>
+<p><img src="img/utm1.png" width="30%" /></p>
+<p><img src="img/utm2.png" width="30%" /></p>
+<p><img src="img/utm5.png" width="30%" /></p>
+</div>
+</div>
+</div>
+</div>
+<div id="sistemas-de-informações-geográficas" class="section level1">
+<h1>Sistemas de Informações Geográficas</h1>
+<p>GIS significa “Sistema de Informação Geográfica” ou “Geographic Information System”.</p>
+<p>Os GIS são um conjunto de ferramentas usadas para coleta e tratamento de informações espaciais, geração de saídas na forma de mapas, relatórios, arquivos digitais, etcc.</p>
+<ul>
+<li><p>Deve prover recursos para sua armazenagem, gerenciamento, manipulação e análise.</p></li>
+<li><p>Geoprocessamento representa qualquer tipo de processamento de dados georeferenciados (conceito muito mais abrangente).</p></li>
+<li><p>Um SIG é capaz de processar dados gráficos e não gráficos (alfanuméricos), com ferramentas de análises espaciais e modelagens de superfícies.</p></li>
+</ul>
+<p>Assim como usamos um processador de texto para escrever documentos e lidar com palavras em um computador, podemos usar um aplicativo GIS para lidar com informações espaciais em um computador.</p>
+<div id="definições-de-gis" class="section level3">
+<h3>Definições de GIS</h3>
+<p>“Conjunto poderoso de ferramentas para coletar, armazenar, recuperar, transformar e visualizar dados sobre o mundo real”(Burrough)</p>
+<p>“Um sistema de suporte à decisão que integra dados referenciados espacialmente num ambiente de respostas a problemas” (Cowen)</p>
+<p>“Um banco de dados indexados espacialmente, sobre o qual opera um conjunto de procedimentos para responder a consultas sobre entidades espaciais” (Smith)</p>
+</div>
+<div id="por-que-fazer-cartografia-digital" class="section level3">
+<h3>Por que fazer cartografia digital?</h3>
+<p>Fazer mapas mais rapidamente.<br />
+Fazer mapas mais baratos.<br />
+Fazer mapas para usos específicos.<br />
+Fazer mapas em situações em que não há disponibilidade de pessoal especializado.<br />
+Permitir experimentos com representações espaciais diversas dos mesmos dados.<br />
+Facilitar atualização de mapas.<br />
+Facilitar análises de dados que exigem interação entre estatística e mapas.<br />
+Minimizar a necessidade de mapas em papel.<br />
+Fazer mapas que não podem ser representados em papel, como em 3D, por exemplo.</p>
+</div>
+<div id="geocodificação" class="section level3">
+<h3>Geocodificação</h3>
+<p>A geocodificação é um processo que permite transformar dados de localização como coordenadas, endereços e nomes de estabelecimentos em uma geolocalização com latitude e longitude.</p>
+</div>
+</div>
+<div id="unidades-espaciais-e-representação-de-fenômenos-espaciais" class="section level1">
+<h1>Unidades espaciais e representação de fenômenos espaciais</h1>
+<p>A escolha das unidades espaciais dependende tanto da disponibilidade de dados como do fenômeno em análise. Mais informações e discussões serão feitas sobre o conceito de MAUP.</p>
+</div>
+<div id="dados-espaciais" class="section level1">
+<h1>Dados espaciais</h1>
+<p>Dados espaciais podem apresentar diferentes formatos e comporem diferentes estruturas. Por agora, utilizaremos apenas o formato criado pela ESRI denominado <code>shapefile</code>.</p>
+<p><img src="img/vector-vs-raster.png" width="30%" /></p>
+<div id="estrutura-do-shapefile" class="section level2">
+<h2>Estrutura do shapefile</h2>
+<p><code>.dbf</code> – Banco de dados – Informações dos atributos das feições<br />
+<code>.prj</code> – Sistemas de coordenadas geográficas<br />
+<code>.snb</code> e <code>.sbx</code> – Armazenam os índices espaciais das feições<br />
+<code>.shp</code> – Armazenam a geometria das feições<br />
+<code>.shx</code> – Armazena o índice da geometria das feições – busca rápida<br />
+<code>.xml</code> - metadado em formato XML</p>
+</div>
+</div>
+<div id="distâncias" class="section level1">
+<h1>Distâncias</h1>
+<p>Diferentes conceitos de distância podem ser utilizados no tratamento de dados espaciais visando representar a impedância entre funções/atividades urbanas (conectividade).</p>
+<ul>
+<li>A <code>Distância Euclidiana</code> é definida como a soma da raiz quadrada da diferença entre x e y em suas respectivas dimensões.
+<ul>
+<li>Distância Euclideana: √((x1 – x2)² + (y1 – y2)²).</li>
+</ul></li>
+<li>A <code>Distância Manhattan</code> tem uma definição mais simples na qual é apenas a soma das diferenças entre x e y em cada dimensão.
+<ul>
+<li>Distância Manhattan: |x1 – x2| + |y1 – y2|.</li>
+</ul></li>
+</ul>
+<p>A <strong>Distância Euclidiana</strong> seria o segmento de uma reta que conceta dois pontos no espaço. A <strong>Distância Manhattan</strong> seria um segmento de retas na vertical e na horizontal semelhante a uma rota veicular em áreas urbanas.</p>
+<p>A distância em rede é aquela equivalente ao deslocamento real no ambiente construído e se aproxima mais da realidade. Entretanto, o esforço computacional e a demanda por dados é sempre maior.</p>
+</div>
+<div id="qgis" class="section level1">
+<h1>QGIS</h1>
+<div id="ambiente-e-funcionalidades-básicas-do-qgis" class="section level2">
+<h2>Ambiente e funcionalidades básicas do QGIS</h2>
+<p><strong>1. Ambiente geral</strong></p>
+<p><img src="img/q1.png" width="60%" /></p>
+<p><strong>2. Complementos</strong></p>
+<p><img src="img/q2.png" width="60%" /></p>
+<p><strong>3. Acesso aos dados espaciais</strong></p>
+<p>Vamos trabalhar com dados na estrutura <code>shapefile</code> - camadas vetoriais</p>
+<p><img src="img/q3.png" width="60%" /></p>
+<p><img src="img/q4.png" width="60%" /></p>
+<p><strong>4. Mudança de atributos dos shapefiles</strong></p>
+<p>Mudança de cores das camadas</p>
+<ul>
+<li>acesso às propriedades da camada</li>
+</ul>
+<p><img src="img/q7.png" width="60%" /></p>
+<ul>
+<li>Recursos para alteração da representação das feições nas camadas</li>
+</ul>
+<p><img src="img/q5.png" width="60%" /></p>
+<blockquote>
+<p>Pode haver incompatibilidade entre feições causadas pela qualidade do dado vetorial ou por uso de diferentes projeções. Isso não inviabiliza o uso do dado espacial, mas podem ser necessárias conversões de sistemas de referência ou mesmo tratamento da geometria das feições.</p>
+</blockquote>
+<p><img src="img/q8.png" width="60%" /></p>
+<p><strong>5. Mudança de datum e sistemas de coordenadas</strong></p>
+<p><strong>Transformações on-the-fly</strong></p>
+<p>O mecanismo de transformações <code>on-the-fly</code> realiza reprojeções automáticas para fins de visualização/renderização.</p>
+<p>São reprojeções dinâmicas, que não afetam o dado original</p>
+<p><img src="img/q9.png" width="60%" /></p>
+<p><img src="img/q10.png" width="60%" /></p>
+<p><img src="img/q11.png" width="60%" /></p>
+<p><img src="img/q12.png" width="60%" /></p>
+<p><strong>Reprojetar ou converter</strong><br />
+Para reprojetar ou converter para outro formato:
+Salvar a camada com o novo sistema de referência/formato
+Botão direito sobre a camada &gt; Save as…</p>
+<p><img src="img/q13.png" width="60%" /></p>
+<p><img src="img/q14.png" width="60%" /></p>
+<p><strong>6. Tabela de atributos</strong></p>
+<p>A <code>tabela de atributos</code> pode ser acessada pelo mesmo menu da camada. Na <code>tabela de atributos</code> são apresentadas as observações e os atributos de cada feição geométrica gerreferenciada. É análoga a uma planilha ou a um data.frame (<code>R</code>). É importante lembrar que só é possível associar um banco de dados (tabela de atributos) a um dado vetorial. Cada observação é uma feição geométrica desse dado.</p>
+<p><img src="img/q17.png" width="60%" /></p>
+<p><img src="img/q18.png" width="60%" /></p>
+<p><strong>7. Geocodificação</strong></p>
+<p>O complemento que utilizo para geocodificação é o <code>MMQGIS</code>, que conecta direto com as APIs do Google e do OSM. Para fazer a geocodificação pelo Google, é necessária chave de acesso e token, pois acima de 2.500 requisiçoes por IP por dia são cobradas. Assim, recomendo a utilização do <code>OSM</code>.</p>
+<p>O arquivo a ser organizado e importado no <code>QGIS</code> para geocodificação é no formato <code>.csv</code> e codificação <code>UTF-8</code>. Nesse arquivo devem ser organizadas as informações sobre o endereço em quatro colunas:<br />
+- address<br />
+- city<br />
+- state<br />
+- country</p>
+<p>Na primeira coluna colocamos o endereço completo sem as informações de cidade, estado e país.</p>
+<p><img src="img/q16.png" width="60%" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qvUgWpidJ5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIeLmrR7Kz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9UAn8M9tZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><strong>8. Mapas temáticos</strong></p>
+<p>Mapas temáticos são representações em feições geométricas do atributo de interesse utilizando elementos visuais para visualização da estrutura espacial desses dados.</p>
+<p><img src="img/q22.png" width="60%" /></p>
+<p><img src="img/q23.png" width="60%" /></p>
+<p><img src="img/q24.png" width="60%" /></p>
+<p><img src="img/q25.png" width="60%" /></p>
+<p><img src="img/q26.png" width="60%" /></p>
+<p><strong>9. Geração de Layout de impressão</strong><br />
+Para gerarmos o layout de impressão dos mapas, é necessário acessar o ambiente de edição do layout.</p>
+<p><img src="img/q19.png" width="60%" /></p>
+<p>O ambiente de edição de layout tem a seguinte estrutura:</p>
+<p><img src="img/q20.png" width="60%" /></p>
+<p>Para inserir os elementos gráficos e textuais no layout, você deve acessar o menu à esquerda da página em branco e incluir mapas, legendas, indicador de norte, escala, dentre outros elementos.</p>
+<p><img src="img/q21.png" width="60%" /></p>
+<p><strong>10. Manipulação de dados</strong><br />
+1. seleção por atributo e por localização<br />
+2. join por código e join espacial<br />
+3. geração de centroides e agregação de variaveis</p>
+<p><strong>11. Dados no formato raster</strong></p>
+<p><a href="https://metadados.ana.gov.br/geonetwork/srv/pt/metadata.show?uuid=830d00e6-9924-469d-b24b-aff67a1fd432">Metadados ANA</a></p>
+<p><strong>12. GeoDa para análise espacial e econometria espacial</strong><br />
+<a href="https://geodacenter.github.io/">GeoDa - Documentação e download</a></p>
+</div>
+</div>

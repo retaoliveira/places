@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Análise espacial on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/analise-espacial/</link>
+    <description>Recent content in Análise espacial on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 26 Dec 2020 17:25:22 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/analise-espacial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Para Análise Espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</guid>
+      <description>&lt;p&gt;A comunidade acadêmica tem caminhado para abertura de licença de uso e reprodução de material didático, bases de dados, e conteúdo que pode ajudar a construção de competências e a aprendizagem em diferentes contextos. A universalização da informação é responsabilidade do docente que acredita na mudança por meio da educação. A Internet tem possibilitado tanto a publicação como o acesso a diferentes formas de apresentação de conteúdo que, em conjunto, contribuem para a formação de profissionais e outros acadêmicos. Infelizmente vivemos em um país onde a desigualdade ainda diferencia as pessoas, também em relação ao acesso à Internet. Nesse contexto, a abertura pública de conteúdo faz-se ainda mais necessária e eficaz, contribuindo para pequenas ações que podem mudar o mundo.&lt;/p&gt;
+&lt;p&gt;Trago aqui algumas dicas de sites, livros e material para implementações práticas que foram generosamente publicados por seus autores.&lt;/p&gt;
+&lt;h3 id=&#34;em-português&#34;&gt;Em português&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geokrigagem.com.br/geoestatistica-no-r-licao7-analises-descritivas-dos-dados-tutorial/&#34;&gt;Lições de geoestatística no R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCO6x7sQurFTw0Su0vsexE5g&#34;&gt;Canal do Mercel Santos&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;em-inglês&#34;&gt;Em inglês&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf&#34;&gt;Introduction to visualising spatial data in R by Robin Lovelace (R.Lovelace@leeds.ac.uk), James Cheshire, Rachel Oldroyd and others&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geocompr.robinlovelace.net/&#34;&gt;Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://data-analytics.net/cep/Schedule_files/geospatial.html&#34;&gt;Geospatial Analysis in R by Major David Beskow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://slcladal.github.io/index.html&#34;&gt;Language Technology and Data Analysis Laboratory (LADAL) of the School of Languages and Cultures at the University of Queensland&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mgimond.github.io/Spatial/index.html&#34;&gt;Intro to GIS and Spatial Analysis by Manuel Gimond&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://edzer.github.io/UseR2017/&#34;&gt;Spatial Data in R: New Directions by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spacetimewithr.org/&#34;&gt;Spatio-Temporal Statistics with R by Christopher K. Wikle, Andrew Zammit-Mangion, and Noel Cressie&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf&#34;&gt;Use R! by Robert Gentleman Kurt Hornik Giovanni Parmigiani&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-1-4614-7618-4.pdf&#34;&gt;Applied Spatial Data Analysis with R by Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html&#34;&gt;Geospatial Data in R and beyond by Barry Rowlingson&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;spatial-analyst.net&#34;&gt;spatial-analyst.net by Tomislav Hengl&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cengel.github.io/rspatial/&#34;&gt;Introduction to Mapping and Spatial Analysis with R by Branner Earth Sciences Library - Teaching Corner&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://north-road.github.io/qgis-processing-r/&#34;&gt;Processing R Provider by North Road and Jan Caha&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rspatial.org/&#34;&gt;Spatial Data Science with R by Robert J. Hijmans&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.r-spatial.org/&#34;&gt;R Spatial software blogs and ideas by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://keen-swartz-3146c4.netlify.app/&#34;&gt;Spatial Data Science by Edzer Pebesma, Roger Bivand&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gastonsanchez.com/visually-enforced/how-to/2014/01/15/Center-data-in-R/&#34;&gt;Visually Enforced by Gaston Sanchez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/corey_sparks/105700&#34;&gt;Exploratory Spatial Data Analysis by coreysparks&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spatialanalysis.github.io/lab_tutorials/Applications_of_Spatial_Weights.html&#34;&gt;Applications of Spatial Weights by Luc Anselin and Grant Morrison1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/FelipeSantos/LISA_tmap_geoda&#34;&gt;Local Moran’s I and spatial scales (using R and tmap) by Felipe Santos Marquez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/helson/608377&#34;&gt;Outlier detection in spatial data using  by Helson Gomes de Souza&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rafapereirabr/urban_centrality_index_2013&#34;&gt;Urban centrality index by Rafael Pereira&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-best&#34;&gt;The BEST&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://maczokni.github.io/crimemapping_textbook_bookdown/&#34;&gt;Crime Mapping in R by Juanjo Medina and Reka Solymosi&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dicas-e-dúvidas&#34;&gt;Dicas e dúvidas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rafapereirabr/5348193abf779625f5e8c5090776a228&#34;&gt;Map of bivariate spatial correlation in R (bivariate LISA) by Rafael Pereira&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

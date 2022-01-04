@@ -1,0 +1,70 @@
+---
+title: 'Como comecei a usar RMarkdown'
+author: 'Renata Oliveira'
+date: '2020-12-24'
+slug: uso-markdown
+categories:
+  - R
+tags:
+  - RMarkdown
+  - R
+subtitle: ''
+plotly: true
+summary: ''
+authors: []
+lastmod: '2020-12-24T11:29:31-03:00'
+featured: no
+image:
+  caption: 'Ilustração por Alison Horst'
+  focal_point: ''
+  preview_only: no
+projects: []
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+    number_sections: true
+    fig_width: 6
+---
+
+<script src="{{< blogdown/postref >}}index.pt_files/header-attrs/header-attrs.js"></script>
+
+
+<p>Períodos de pandemia são sempre interessantes! Falo como se tivesse passado por diversos momentos como este; felizmente, isso não é verdade! Entretanto, foi nesse período que descobri o Rmarkdown.</p>
+<p>O isolamento social trouxe possibilidades, como eu aprender o R. Pesquisando sobre Latex, tive acesso a diferentes linguagens para elaboração de relatórios reprodutíveis e dinâmicos. A necessidade faz a “força”. Resolvi explorar as possibilidades antes de me dedicar a aprender efetivamente alguma linguagem e descobri que o Rmarkdown é bem mais intuitivo e dinâmico do que o Latex, apesar de ainda precisar do Latex para implementação de equações, por exemplo.</p>
+<p>Com <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>, é possível:</p>
+<ul>
+<li>Compilar um documento em um relatório em diferentes formatos de saída, como PDF, HTML e Word.</li>
+<li>Produzir slides para apresentações.</li>
+<li>Criar dashboards interativas, com layouts atraentes e que se adaptam à tela do usuário.</li>
+<li>Criar relatórios interativos com Shiny.</li>
+<li>Escrever artigos científicos ou livros.</li>
+<li>Criar blogs ou sites.</li>
+</ul>
+<p>Para começar a explorar esse mundo de textos dinâmicos, você precisa inicialmente:</p>
+<pre class="r"><code># install.packages(&quot;knitr&quot;)
+# install.packages(&quot;rmarkdown&quot;)</code></pre>
+<p>Depois, crie um novo arquivo de RMarkdown usando o comando File &gt; New &gt; File menu e selecione R &gt; RMarkdown na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione Adicionar R Markdown (ou Adicionar &gt; Novo Item e selecionando R Markdown na lista).</p>
+<p>Todo documento RMarkdown é composto por três importantes tipos de conteúdo: + Um cabeçalho <code>YAML</code> delimitado antes e depois por — + <code>chunks</code> de códigos R ou outra linguagem compatível delimitado por ``<code>. + Texto estruturado com formatação simples em</code>#` para títulos e outros caracteres de formatação</p>
+<p>Se ficarem interessados em packages para construção de documentos em Rmarkdown, tenho usado:</p>
+<pre class="r"><code>library(vitae)
+library(pagedown)
+library(flexdashboard)
+library(rticles)
+library(bookdown)
+library(distill)
+library(hugodown)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)</code></pre>
+<p>Alguns links para quem quiser se aventurar na composição de artigos científicos, textos acadêmicos e não-acadêmicos, apresentações, dashboards, sites e outras possibilidades que o Rmarkdown nos proporciona.</p>
+<ul>
+<li><a href="https://medium.com/rladiesbh/rmarkdown-o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-1cb1bb57769d">RMarkdown: o mínimo que você precisa saber</a></li>
+<li><a href="http://cursos.leg.ufpr.br/prr/capDocDin.html">Pesquisa Reproduzível com R by Fernando Mayer e Walmes Zeviani</a></li>
+<li><a href="http://www.leg.ufpr.br/~fernandomayer/palestra/useR-2015/Rmarkdown-rautu.html#outline">Rmarkdown-rautu</a></li>
+<li><a href="https://pet-estatistica.github.io/site/download/posts/postJAYME2.html#introducao">Iniciação do RMarkdown by Jayme Gomes dos Santos Junior</a></li>
+<li><a href="http://sillasgonzaga.com/material/curso_visualizacao/apresentacao-de-dados-com-relatorios.html">Introdução a R para Visualização e Apresentação de Dados by Sillas Gonzaga</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund</a></li>
+</ul>
+<hr />
+<p>Credits: Ilustração por Alisson Horst</p>

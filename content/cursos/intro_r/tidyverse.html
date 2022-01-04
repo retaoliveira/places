@@ -1,0 +1,118 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  intro_r:
+    parent: 3 - Estrutura de dados no R
+    weight: 30
+title: Overview - Tidyverse
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#instalação-e-uso-do-package-tidyverse">Instalação e uso do Package <code>tidyverse</code></a></li>
+<li><a href="#estrutura-básica-do-tidyverse">Estrutura básica do tidyverse</a></li>
+<li><a href="#importação-de-dados">Importação de dados</a></li>
+<li><a href="#wrangle">Wrangle</a></li>
+<li><a href="#programa">Programa</a></li>
+<li><a href="#modelo">Modelo</a></li>
+<li><a href="#alguns-links-interessantes-para-aprender-tidyverse">Alguns links interessantes para aprender <code>tidyverse</code></a></li>
+</ul>
+</div>
+
+<div id="instalação-e-uso-do-package-tidyverse" class="section level3">
+<h3>Instalação e uso do Package <code>tidyverse</code></h3>
+<p>Instale todos os pacotes no tidyverse executando <code>install.packages("tidyverse")</code>.</p>
+<p>Execute a <code>library(tidyverse)</code> para carregar o núcleo do tidyverse e torná-lo disponível em sua sessão R atual.</p>
+<p>Saiba mais sobre o pacote tidyverse em <a href="https://tidyverse.tidyverse.org">https://tidyverse.tidyverse.org</a>.</p>
+</div>
+<div id="estrutura-básica-do-tidyverse" class="section level3">
+<h3>Estrutura básica do tidyverse</h3>
+<p>A estrutura básica do tidyverse inclui os pacotes que você provavelmente usará nas análises de dados. Os seguintes pacotes estão incluídos:</p>
+<div id="ggplot2" class="section level4">
+<h4>ggplot2</h4>
+<p>O <code>ggplot2</code> é um sistema de criação gráfica declarativa, baseado na Gramática de gráficos. Você fornece os dados, diz ao <code>ggplot2</code> como mapear variáveis para a estética, quais elementos gráficos utilizar, e ele cuida dos detalhes.</p>
+</div>
+<div id="dplyr" class="section level4">
+<h4>dplyr</h4>
+<p><code>dplyr</code> fornece uma gramática de manipulação de dados, fornecendo um conjunto consistente de comandos que resolvem os desafios mais comuns de manipulação de dados.</p>
+</div>
+<div id="tidyr" class="section level4">
+<h4>tidyr</h4>
+<p><code>tidyr</code> fornece um conjunto de funções que ajudam você a obter organizar os dados. Dados organizados são dados com uma estrutura consistente: em resumo, cada variável vai em uma coluna, e cada coluna é uma variável.</p>
+</div>
+<div id="readr" class="section level4">
+<h4>readr</h4>
+<p><code>readr</code> fornece uma maneira rápida e amigável de ler dados tabulares (como csv, tsv, e fwf). Ele é projetado para analisar de forma flexível muitos tipos de dados.</p>
+</div>
+<div id="purrr" class="section level4">
+<h4>purrr</h4>
+<p><code>purrr</code> melhora o conjunto de ferramentas de programação funcional (FP) do <code>R</code>, fornecendo um conjunto completo e consistente de ferramentas para trabalhar com funções e vetores. Uma vez que você domina os conceitos básicos, o <code>purrr</code> permite que você substitua muitos <code>loops</code> por códigos mais fáceis de escrever e mais expressivos.</p>
+</div>
+<div id="tibble" class="section level4">
+<h4>tibble</h4>
+<p><code>tibble</code> é uma representação moderna do <code>dataframe</code>. <code>Tibbles</code> são dataframes preguiçosos e rudes: eles fazem menos e reclamam mais, forçando você a enfrentar os problemas mais cedo, normalmente levando a um código mais limpo e expressivo.</p>
+</div>
+<div id="stringr" class="section level4">
+<h4>stringr</h4>
+<p><code>stringr</code> fornece um conjunto coeso de funções projetadas para tornar o trabalho com texto o mais fácil possível. Ele é construído sobre o <code>stringi</code>, que usa a biblioteca <code>ICU C</code> para fornecer implementações rápidas e corretas de manipulações comuns de texto</p>
+</div>
+<div id="forcats" class="section level4">
+<h4>forcats</h4>
+<p><code>forcats</code> fornece um conjunto de ferramentas úteis que resolvem problemas comuns com fatores. R utiliza fatores para lidar com variáveis categóricas, variáveis que têm um conjunto fixo e conhecido de valores possíveis.</p>
+<p>O <code>tidyverse</code> também inclui muitos outros pacotes com uso mais especializado. Eles não são carregados automaticamente com <code>biblioteca(tidyverse)</code>, então você precisará carregar cada um deles com sua própria chamada à biblioteca.</p>
+</div>
+</div>
+<div id="importação-de-dados" class="section level3">
+<h3>Importação de dados</h3>
+<p>Assim como o <code>readr</code>, o pacote tidyverse instala uma série de outros pacotes para a leitura de dados:</p>
+<ul>
+<li><a href="https://github.com/r-dbi/DBI"><code>DBI</code></a> para bancos de dados relacionais. Você precisará emparelhar <code>DBI</code> com um backend específico de banco de dados como <code>RSQLite</code> , <code>RMariaDB</code>, <code>RPostgres</code>, ou <code>odbc.</code> Saiba mais em <a href="https://db.rstudio.com">https://db.rstudio.com</a>.</li>
+<li><a href="https://haven.tidyverse.org/"><code>haven</code></a> para dados SPSS, Stata, e SAS.</li>
+<li><a href="https://github.com/r-lib/httr"><code>httr</code></a> para web APIs.</li>
+<li><a href="https://readxl.tidyverse.org/"><code>readxl</code></a> para planilhas .xls e .xlsx.</li>
+<li><a href="https://github.com/tidyverse/rvest"><code>rvest</code></a> para raspagem da web.</li>
+<li><a href="https://github.com/jeroen/jsonlite#jsonlite"><code>jsonlite</code></a> para JSON. (mantido por Jeroen Ooms.)</li>
+<li><a href="https://github.com/r-lib/xml2"><code>xml2</code></a> para XML.</li>
+</ul>
+</div>
+<div id="wrangle" class="section level3">
+<h3>Wrangle</h3>
+<p>Além de <code>tidyr</code> e <code>dplyr</code>, há cinco pacotes (incluindo <code>stringr</code> e <code>forcats</code>) que são projetados para trabalhar com tipos específicos de dados:</p>
+<ul>
+<li><a href="https://lubridate.tidyverse.org/"><code>lubridate</code></a> para datas e datas-horas.</li>
+<li><a href="https://github.com/tidyverse/hms"><code>hms</code></a> para valores de data e hora do dia.</li>
+<li><a href="https://github.com/tidyverse/blob"><code>blob</code></a> para armazenamento de dados blob (binários).</li>
+</ul>
+</div>
+<div id="programa" class="section level3">
+<h3>Programa</h3>
+<p>Além do <code>purrr</code>, que fornece métodos muito consistentes e naturais para iteração em objetos R, há dois pacotes adicionais que ajudam nos desafios gerais de programação:</p>
+<ul>
+<li><p><a href="https://magrittr.tidyverse.org/"><code>magrittr</code></a> fornece o <code>pipe</code>, <code>%&gt;%</code>. Ele também fornece um número de operadores de pipe mais especializados (como <code>%$%</code> e <code>%&lt;&gt;%</code>) que podem ser úteis em outras aplicações.</p></li>
+<li><p><a href="https://github.com/tidyverse/glue"><code>glue</code></a> fornece uma alternativa à <code>paste()</code> que facilita a combinação de dados e texto.</p></li>
+</ul>
+</div>
+<div id="modelo" class="section level3">
+<h3>Modelo</h3>
+<p>A modelagem com o <code>tidyverse</code> possibilita a coleção de pacotes de <code>tidymodels</code>, que em grande parte substituem o pacote <code>modelr</code> usado no <code>R4DS.</code> Estes pacotes fornecem uma base abrangente para a criação e utilização de modelos de todos os tipos. Visite o <a href="https://www.tidymodels.org/start/">Guia de Introdução</a> ou, para exemplos mais detalhados, vá direto para a página <a href="https://www.tidymodels.org/learn/">Aprender</a>.</p>
+</div>
+<div id="alguns-links-interessantes-para-aprender-tidyverse" class="section level2">
+<h2>Alguns links interessantes para aprender <code>tidyverse</code></h2>
+<ul>
+<li><a href="https://www.tidyverse.org/learn/">Learn the tidyverse</a></li>
+<li><a href="https://github.com/rstudio-education/remaster-the-tidyverse/">Remaster tidyverse by Garret</a></li>
+<li><a href="https://programminghistorian.org/en/lessons/data_wrangling_and_management_in_R">Data wrangling</a></li>
+<li><a href="https://bookdown.org/ndphillips/YaRrr/">YaRrr! The Pirate’s Guide to R Nathaniel D. Phillips</a></li>
+</ul>
+</div>

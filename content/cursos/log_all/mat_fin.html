@@ -1,0 +1,139 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 9 - Custos logísticos
+    weight: 17
+title: Matemática Financeira
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 20
+---
+
+<script src="/places/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#matemática-financeira">1. MATEMÁTICA FINANCEIRA</a>
+<ul>
+<li><a href="#juro">1.1 Juro</a></li>
+<li><a href="#taxa-de-juros">1.2 Taxa de Juros</a>
+<ul>
+<li><a href="#juros-simples">1.2.1 Juros Simples</a></li>
+<li><a href="#juros-composto">1.2.2 Juros Composto</a></li>
+</ul></li>
+<li><a href="#valor-presente">1.3 Valor Presente</a></li>
+<li><a href="#série-uniforme-de-pagamentos">1.4 Série Uniforme de Pagamentos</a></li>
+<li><a href="#inflação">1.5 Inflação</a></li>
+<li><a href="#correção-monetária">1.6 Correção Monetária</a></li>
+<li><a href="#sistema-de-amortização">1.7 Sistema de Amortização</a>
+<ul>
+<li><a href="#sistema-francês-de-amortização---price">1.7.1 Sistema Francês de Amortização - PRICE</a></li>
+<li><a href="#sistema-de-amortização-constante---sac">1.7.2 Sistema de Amortização Constante - SAC</a></li>
+<li><a href="#sistema-de-pagamento-único">1.7.3 Sistema de Pagamento Único</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="matemática-financeira" class="section level1">
+<h1>1. MATEMÁTICA FINANCEIRA</h1>
+<div id="juro" class="section level2">
+<h2>1.1 Juro</h2>
+<p>É a remuneração do capital pelo seu uso alternativo. Genericamente, todas as formas de remuneração de capital podem ser consideradas como um juro</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/1.png" /><!-- --></p>
+</div>
+<div id="taxa-de-juros" class="section level2">
+<h2>1.2 Taxa de Juros</h2>
+<p>É a razão entre os juros, recebidos ou pagos, no fim de um período de tempo e o capital inicialmente empregado</p>
+<div id="juros-simples" class="section level3">
+<h3>1.2.1 Juros Simples</h3>
+<p>Apenas o capital inicial, conhecido como Principal (P), rende juros em um determinado período (n), a uma taxa de juros dada (i).</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/2.png" /><!-- --></p>
+<p>**Exercício*:**
+Um capital de R$ 10.000,00 foi aplicado por 3 meses, a juros simples. Calcule o valor a ser resgatado no final deste período à taxa de 4% a.m.</p>
+</div>
+<div id="juros-composto" class="section level3">
+<h3>1.2.2 Juros Composto</h3>
+<p>Os juros formado a cada período são incorporador ao capital inicial, passando também a produzir juros.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/3.png" /><!-- --></p>
+<p><strong>Exercício:</strong>
+Considere um empréstimo de R$ 10.000,00 que deve ser resgatado ao final de 3 anos, conjuntamente aos juros acumulados, cuja taxa de juros é de 10% a.a.</p>
+</div>
+</div>
+<div id="valor-presente" class="section level2">
+<h2>1.3 Valor Presente</h2>
+<p>O valor presente, ou valor atual, de uma certa quantia numa data futura é o valor equivalente à quantia em questão na data zero, a uma taxa de juros i.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/4.png" /><!-- --></p>
+<p><strong>Exercício:</strong>
+Determine a quantia que deve ser investida, hoje, a fim de acumular R$ 100.000,00 em 5 anos, à uma taxa de 10% a.a.</p>
+</div>
+<div id="série-uniforme-de-pagamentos" class="section level2">
+<h2>1.4 Série Uniforme de Pagamentos</h2>
+<ul>
+<li>É uma sucessão de recebimentos, desembolsos ou prestações, de mesmo valor, representados por R, divididos regularmente num período de tempo</li>
+</ul>
+<p>O somatório do valor acumulado de vários pagamentos, montante (M), é calculado pela expressão a seguir:</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/5.png" /><!-- --></p>
+<p>Uma pessoa deposita anualmente R$ 5.000,00 numa conta especial particular. Qual será o saldo daqui a 5 anos, para uma remuneração de 8% a.a. concedida pelo banco?</p>
+<p>Procedendo-se o inverso da expressão anterior, pode-se obter o valor de um único pagamento ou prestação R, a partir de montante conhecido, conforme a seguir:</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/6.png" /><!-- --></p>
+<p>Determine o valor que deve ser depositado trimestralmente numa conta a prazo fixo, que oferece juros de 7,5% a.t., para acumularmos R$ 25.000,00 em 2 anos.</p>
+<p>Pode-se ainda determinar o valor presente da série uniforme pelo somatório dos valores atuais de cada uma das prestações</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/7.png" /><!-- --></p>
+<p>Determine o valor à vista de um eletrodoméstico vendido em 6 prestações mensais de R$ 200,00, sabendo-se que o juros cobrados foram de 6% a.m.</p>
+<p>Para determinação do valor de um pagamento quando o principal é conhecido, inverte-se a expressão anterior</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mat_fin/8.png" /><!-- --></p>
+<p>Uma pessoa adquire um freezer por R$ 800,00, dando de entrada R$ 300,00. Determine a prestação mensal para um financiamento do restante em 4 meses, à taxa de 5% a.m.</p>
+</div>
+<div id="inflação" class="section level2">
+<h2>1.5 Inflação</h2>
+<ul>
+<li><p>O excesso de moeda na economia gera inflação, que nada mais é que um aumento generalizado e sistemático dos preços face ao aumento da demanda dos bens de consumo e serviços. Já a deflação é caracterizada por um declínio sistemático de preços. (Wannacott e Wannacott, 1986)</p></li>
+<li><p>O poder aquisitivo diminui quando existe inflação. Para uma inflação de 50%, num determinado mês, haveria urna perda do poder de compra da moeda de 33%. De fato, se urna mercadoria estivesse custando, no início do mês, R<span class="math inline">\(100,00, passaria a custar, no final do mesmo mês, R\)</span> 150,00, e, desta forma, o poder aquisitivo cairia de 100% para 67% (100/150), ou seja, haveria uma perda de 33%. (Hirschfeld, 1986)</p></li>
+<li><p>As análises econômicas de projetos de investimento não levam em conta a inflação, baseado na premissa de que todos os preços envolvidos são por ela afetados uniformemente. Desta forma, tais análises são realizadas supondo-se condições estáveis da moeda, já que também seria impossível se prever, com exatidão, as condições futuras</p></li>
+</ul>
+</div>
+<div id="correção-monetária" class="section level2">
+<h2>1.6 Correção Monetária</h2>
+<ul>
+<li><p>A correção monetária, uma invenção brasileira, é uma taxa que tem o objetivo de tentar recompor o poder aquisitivo dos preços dos bens e serviços atingidos pela inflação, que pode ou não refletir integralmente as taxas de inflação. Um índice de correção monetária relativa a um setor da economia não é necessariamente igual à inflação ocorrida neste mesmo setor.</p></li>
+<li><p>A maioria das análises de projetos trabalham com preços constantes, isto é, a partir da suposição de que os preços e custos aumentam de acordo com as taxas de inflação, sejam elas quais forem, de maneira que seu valor permaneça constante, se expresso em moeda estável.</p></li>
+</ul>
+</div>
+<div id="sistema-de-amortização" class="section level2">
+<h2>1.7 Sistema de Amortização</h2>
+<ul>
+<li><p>Quando se contrai um empréstimo ou se recorre a um financiamento, evidentemente, o valor recebido nesta operação, ou seja, o principal, terá que ser restituído à respectiva instituição financeira, acrescido da sua remuneração, que são os juros.</p></li>
+<li><p>As formas de devolução do principal mais juros são denominadas de Sistemas de Amortização. Os Sistemas de Amortização mais utilizados são apresentados a seguir, complementados por exemplos numéricos. (Hirschfeld, 1984)</p></li>
+</ul>
+<div id="sistema-francês-de-amortização---price" class="section level3">
+<h3>1.7.1 Sistema Francês de Amortização - PRICE</h3>
+<ul>
+<li><p>Este sistema também é conhecido corno Sistema PRICE é muito utilizado em todos os setores financeiros, principalmente nas compras a prazo de bens de consumo, através do crédito direto ao consumidor.</p></li>
+<li><p>No Sistema PRICE, as prestações são iguais e sucessivas, onde cada prestação é composta por duas parcelas: juros e amortização do capital; cujo cálculo baseia-se numa série uniforme de pagamentos.</p></li>
+<li><p>Exercício: Calcular os valores das parcelas de juros e amortizações referentes a um empréstimo de R$ 100.000, pelo sistema PRICE, a uma taxa de 5 % a.m. e prazo de 5 meses.</p></li>
+</ul>
+</div>
+<div id="sistema-de-amortização-constante---sac" class="section level3">
+<h3>1.7.2 Sistema de Amortização Constante - SAC</h3>
+<ul>
+<li><p>Este sistema é muito utilizado em financiamentos internacionais de bancos de desenvolvimento e no sistema financeiro de habitação brasileiro, bem corno em financiamentos de longos prazos.</p></li>
+<li><p>As prestações do Sistema SAC são sucessivas e decrescentes em progressão aritmética, cujo valor de cada prestação é composto por uma parcela de juros e outra de amortização constante do capital.</p></li>
+<li><p>Exercício: Calcular os valores das parcelas de juros e amortizações referentes a um empréstimo de R$ 100.000, pelo sistema SAC, a uma taxa de 5 % a.m. e prazo de 5 meses.</p></li>
+</ul>
+</div>
+<div id="sistema-de-pagamento-único" class="section level3">
+<h3>1.7.3 Sistema de Pagamento Único</h3>
+<ul>
+<li>Este é o sistema mais simples e é muito utilizado para financiamentos industriais de capital de giro. O tomador simplesmente paga os juros e amortiza o principal no final do empréstimo.</li>
+</ul>
+</div>
+</div>
+</div>

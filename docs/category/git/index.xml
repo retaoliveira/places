@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/category/git/</link>
+    <description>Recent content in Git on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/category/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Usando o Github Desktop - Git sem coding</title>
+      <link>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</guid>
+      <description>&lt;p&gt;Algumas dicas de como utilizar o Github Desktop para fazer uso do Git e do Github sem a necessidade de aprender as linhas de comando.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instale o aplicativo conforme seu sistema operacional. Se você utilizar o Windows, faça o download no &lt;a href=&#34;https://desktop.github.com/&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crie uma conta no &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vá em File &amp;raquo; Options &amp;raquo; Accounts &amp;raquo; Sign in&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/1git.png%22&#34; alt=&#34;File&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/2git.png%22&#34; alt=&#34;Options&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/3git.png%22&#34; alt=&#34;Account&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/4git.png%22&#34; alt=&#34;Sign in&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/5git.png%22&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Para mais informações, acesse o site &lt;a href=&#34;https://docs.github.com/pt/desktop&#34;&gt;Github Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Principais comandos do Git</title>
+      <link>https://retaoliveira.github.io/post/principais-comandos-do-git/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/principais-comandos-do-git/</guid>
+      <description>&lt;h1 id=&#34;o-que-é-sistema-de-controle-de-versão&#34;&gt;O que é Sistema de Controle de Versão?&lt;/h1&gt;
+&lt;p&gt;O sistema de controle de versão é uma estrutura que nos permite acrescentar e supervisionar várias entregas e fases de um item de produto sem realmente manter diferentes documentos ou pastas. Além disso, eles tornam a melhoria dentro de um grupo mais sensata e menos estressante, pois os desenvolvedores não precisam trocar pastas, mas, em vez disso, falam com uma fonte solitária onde cada uma das progressões está acontecendo e tudo é salvo.&lt;/p&gt;
+&lt;h2 id=&#34;o-que-é-git&#34;&gt;O que é Git?&lt;/h2&gt;
+&lt;p&gt;Git é o VCS (Version Control Systems) mais utilizado. Git rastreia as progressões que você faz nos documentos, assim você tem um registro do que foi feito, e você pode voltar a adaptações explícitas caso você precise a qualquer momento. Git também torna a cooperação mais simples, permitindo que as mudanças feitas por inúmeros indivíduos sejam todas convertidas em uma única fonte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;agora-vamos-falar-sobre-alguns-dos-comandos-úteis-de-git-que-você-deve-conhecer&#34;&gt;Agora vamos falar sobre alguns dos comandos úteis de Git que você deve conhecer.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt;: adiciona todos os arquivos&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit&lt;/code&gt;: registra o arquivo permanentemente&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config&lt;/code&gt;: ele controla o conjunto para o projeto/arquivo de salvamento local&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git help&lt;/code&gt;: exibe todas as informações necessárias sobre os comandos de git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git status&lt;/code&gt;: dá todas as informações sobre o ramo atual&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log&lt;/code&gt;: conheça os commits anteriores&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff&lt;/code&gt;: realiza um trabalho de difusão de fontes de informação Git. Estas fontes de informação podem ser alterações, ramos, registros e outras.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reset --hard&lt;/code&gt;: apaga todas suas alterações não commitadas | comando perigoso&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remoto adicionar &amp;lt;url ou endereço&amp;gt;&lt;/code&gt;: para adicionar um novo endereço remoto&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remove rm&lt;/code&gt;: para remover o arquivo do repositório Git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;: para empurrar arquivos locais para o github&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch&lt;/code&gt;: um ramo onde são feitas as alterações - é um arquivo de alterações.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout&lt;/code&gt;: permite que você explore entre os ramos gerados pelo git branch&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tag&lt;/code&gt;: as tags são utilizadas para assinalar uma alteração como importante&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git fetch&lt;/code&gt;: este comando faz com que seu git local recupere os dados mais recentes da primeira meta-informação&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rebase&lt;/code&gt;: você pode pegar cada uma das alterações que foram submetidas a um ramo e reproduzi-las em um ramo alternativo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config -global color.ui true&lt;/code&gt;: veja cores diferentes em saídas diferentes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;: cria um novo repositório git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;Novo arquivo Readme.md&amp;quot;&lt;/code&gt;: salva suas mudanças no repositório local&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge&lt;/code&gt;: permite pegar as linhas autônomas de alterações feitas no ramo e coordená-las em no ramo &lt;strong&gt;main&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull &amp;lt;repo link&amp;gt;&lt;/code&gt;: para fazer o download da pasta a partir do repositório remoto&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash save&lt;/code&gt;: armazena arquivos rastreados modificados&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash drop&lt;/code&gt;: descarta os arquivos mais recentes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir project&lt;/code&gt;: criar nova pasta de projeto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: Use o Github desktop ou o Git Kraken. Facilitam bem a vida e você não tem que lembrar os comandos diretos.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

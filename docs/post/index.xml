@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/post/</link>
+    <description>Recent content in Posts on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 09:37:49 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pacotes para Análise Exploratória de Dados no R</title>
+      <link>https://retaoliveira.github.io/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</link>
+      <pubDate>Fri, 10 Sep 2021 09:37:49 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-09-10-pacotes-para-analise-exploratoria-de-dados-no-r/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/easystats/see&#34;&gt;https://github.com/easystats/see&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/interactions/vignettes/interactions.html&#34;&gt;https://cran.r-project.org/web/packages/interactions/vignettes/interactions.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ssc.wisc.edu/sscc/pubs/DWE/book/preface.html&#34;&gt;https://ssc.wisc.edu/sscc/pubs/DWE/book/preface.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogdown</title>
+      <link>https://retaoliveira.github.io/post/blogdown/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/blogdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/blogdown/
+index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://portfolio.peter-baumgartner.net/#about&#34; class=&#34;uri&#34;&gt;https://portfolio.peter-baumgartner.net/#about&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hannesdatta&#34; class=&#34;uri&#34;&gt;https://github.com/hannesdatta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.hannesdatta.com/&#34; class=&#34;uri&#34;&gt;https://www.hannesdatta.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/docs/&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/content/docs/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugo-online-course.netlify.app/course/example/python/&#34; class=&#34;uri&#34;&gt;https://hugo-online-course.netlify.app/course/example/python/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curso Sensacional em Métodos de Análise Espacial</title>
+      <link>https://retaoliveira.github.io/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</link>
+      <pubDate>Thu, 09 Sep 2021 12:34:12 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-09-09-curso-sensacional-em-metodos-de-analise-espacial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://darribas.org/gds_course/content/bA/concepts_A.html&#34;&gt;http://darribas.org/gds_course/content/bA/concepts_A.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dados e Ética Podem Caminhar Juntos?</title>
+      <link>https://retaoliveira.github.io/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</link>
+      <pubDate>Fri, 03 Sep 2021 15:47:26 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-09-03-dados-e-etica-podem-caminhar-juntos/</guid>
+      <description>&lt;p&gt;Com cada vez mais pessoas usando produtos digitais, termos como &lt;em&gt;rastreamento&lt;/em&gt; ou &lt;em&gt;coleta de dados&lt;/em&gt;, &lt;em&gt;GDPR&lt;/em&gt;, &lt;em&gt;preferências de cookies&lt;/em&gt;, &lt;em&gt;criptografia&lt;/em&gt;, &lt;em&gt;autenticação multi-fator&lt;/em&gt; tornaram-se parte de nosso vocabulário cotidiano. Existe um território digital onde nós existimos e que precisamos navegar. Isto não apenas implica que temos identidades digitais, mas também significa que precisamos aprender a cuidar e proteger essas identidades.&lt;/p&gt;
+&lt;p&gt;As empresas que criam os produtos digitais que usamos todos os dias devem ter a responsabilidade de projetar produtos que respeitem e protejam as identidades, dados e informações sensíveis dos usuários. Dessa discussão deriva a &lt;strong&gt;Ética dos Dados&lt;/strong&gt;, definida pelos professores e filósofos de Oxford Luciano Floridi e Mariarosaria Taddeo como:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Um novo ramo da Ética que estuda e avalia problemas morais relacionados a dados (incluindo geração, gravação, curadoria, processamento, disseminação, compartilhamento e uso), algoritmos (incluindo inteligência artificial, agentes artificiais, aprendizagem de máquinas e robôs) e práticas correspondentes (incluindo inovação responsável, programação, hacking e códigos profissionais), a fim de formular e apoiar soluções moralmente boas (por exemplo, condutas corretas ou valores corretos)&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;quais-são-os-principais-problemas-éticos-que-vemos-em-relação-à-coleta-e-tratamento-de-dados-hoje&#34;&gt;Quais são os principais problemas éticos que vemos em relação à coleta e tratamento de dados hoje?&lt;/h2&gt;
+&lt;p&gt;A questão tem várias camadas: uma primeira camada em nível de empresa, uma segunda em nível de plataforma, e uma terceira que se situa em nível de usuário. Cada uma dessas camadas apresenta questões de gerenciamento éticos de dados e de privacidade, e muitas delas ocorrem porque há uma falta de compreensão em modelos comerciais robustos para dados coletados e armazenados.&lt;/p&gt;
+&lt;p&gt;O principal problema é que os usuários não têm conhecimento suficiente, e a falta de uma regra de direito mundial só piora a situação. Essa situação permite que as empresas continuem perpetuando o uso de dados da maneira que convém porque os usuários aceitam passivamente qualquer condição &amp;ldquo;para que possam usar o serviço&amp;rdquo;. Na Europa, existe a legislação GDPR em vigor, mas ela freqüentemente dá aos usuários uma falsa sensação de proteção, pois a segurança dos dados não é tão freqüente e prolongada quanto acreditamos.&lt;/p&gt;
+&lt;p&gt;Em 2001, o analista do Gartner, Doug Laney, introduziu o conceito dos 3V como uma forma de ajudar a conceituar os Big Data; eles são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Volume - a grande quantidade de Big Data.&lt;/li&gt;
+&lt;li&gt;Variedade - os muitos formatos diferentes de Big Data disponíveis.&lt;/li&gt;
+&lt;li&gt;Velocidade - a grande velocidade na qual os Big Data são processados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ao longo dos anos, como o campo dos grandes dados evoluiu para se tornar mais focado no usuário, o modelo 3V também evoluiu para incluir mais dois Vs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Veracidade - a qualidade dos dados sendo processados e analisados; dados de alta veracidade contêm muitas informações significativas que podem ser usadas para análise, enquanto dados de baixa veracidade contêm poucas ou nenhumas informações significativas - de outra forma chamados de ruído.&lt;/li&gt;
+&lt;li&gt;Valor - o nível de insights valiosos que podem ser obtidos dos dados para melhorar a experiência do cliente e as decisões comerciais.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;o-que-é-ética-do-big-data&#34;&gt;O que é Ética do Big Data?&lt;/h2&gt;
+&lt;p&gt;O campo da ética dos Big Data é definido como aquele responsável pelo delineamento, defesa e recomendação de conceitos de práticas certas e erradas quando se trata do uso de dados, com ênfase particular nos dados pessoais. A ética dos Big Data visa criar um &lt;strong&gt;código de conduta ética e moral para a utilização dos dados&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Há cinco áreas principais da ética de dados que esboçam o potencial para o uso inadequado dos dados:&lt;/p&gt;
+&lt;h3 id=&#34;1-consentimento-informado&#34;&gt;1. Consentimento Informado&lt;/h3&gt;
+&lt;p&gt;Consentir significa que você dá permissão, sem restrições, para que os dados sejam utilizados e explorados comercialmente.&lt;/p&gt;
+&lt;h3 id=&#34;2-privacidade&#34;&gt;2. Privacidade&lt;/h3&gt;
+&lt;p&gt;Você pode entender o conceito de grande privacidade de dados dividindo-o em três categorias:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A condição de privacidade&lt;/li&gt;
+&lt;li&gt;O direito à privacidade&lt;/li&gt;
+&lt;li&gt;A perda de privacidade e a invasão&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-titularidade&#34;&gt;3. Titularidade&lt;/h3&gt;
+&lt;p&gt;Podemos dividir a propriedade dos dados em duas categorias:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O direito de controlar dados - editar, gerenciar, compartilhar e excluir dados&lt;/li&gt;
+&lt;li&gt;O direito de se beneficiar de dados - lucro com o uso ou venda de dados&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-polarização-de-algoritmos-e-objetividade&#34;&gt;4. Polarização de algoritmos e objetividade&lt;/h3&gt;
+&lt;p&gt;Os algoritmos são projetados por humanos, os conjuntos de dados que eles estudam são selecionados e preparados por humanos, e os humanos têm preconceitos. A interseccionalidade dos dados é essencial!&lt;/p&gt;
+&lt;h3 id=&#34;5-distribuição-do-acesso-aos-dados&#34;&gt;5. Distribuição do acesso aos dados&lt;/h3&gt;
+&lt;p&gt;A distribuição do acesso aos dados dados procura definir o estado atual do acesso aos dados; a compreensão e a capacidade de mineração dos grandes dados está isolada nas mãos de algumas grandes corporações.&lt;/p&gt;
+&lt;h2 id=&#34;acordo-de-processamento-de-dados-gdpr-influência-no-digital&#34;&gt;Acordo de Processamento de Dados GDPR: influência no digital&lt;/h2&gt;
+&lt;p&gt;O Regulamento Geral de Proteção de Dados ( GDPR ) foi introduzido na Europa em 2016 como uma resposta direta a essas grandes preocupações éticas com os dados. O regulamento seguiu um compromisso da Comissão da UE de &amp;ldquo;proteger e promover os direitos dos cidadãos, para tornar o ambiente on-line da UE o mais seguro do mundo&amp;rdquo;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O direito de ser informado&lt;/li&gt;
+&lt;li&gt;O direito de acesso&lt;/li&gt;
+&lt;li&gt;O direito à retificação&lt;/li&gt;
+&lt;li&gt;O direito ao apagamento&lt;/li&gt;
+&lt;li&gt;O direito de restringir o processamento&lt;/li&gt;
+&lt;li&gt;O direito à portabilidade de dados&lt;/li&gt;
+&lt;li&gt;O direito de objeção&lt;/li&gt;
+&lt;li&gt;Direitos em relação à tomada de decisão automatizada e à elaboração de perfis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fontes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hurree.medium.com/the-ethics-of-big-data-b5c485d98280&#34;&gt;The Ethics of Big Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/demagsign/can-data-and-ethics-live-together-98f47b07171&#34;&gt;Can Data and Ethics live together&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/somos-tera/o-que-e-etica-de-dados-3ce4702cdfc1&#34;&gt;O que é ética de dados?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usando o Github Desktop - Git sem coding</title>
+      <link>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/usando-o-github-desktop-git-sem-coding/</guid>
+      <description>&lt;p&gt;Algumas dicas de como utilizar o Github Desktop para fazer uso do Git e do Github sem a necessidade de aprender as linhas de comando.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instale o aplicativo conforme seu sistema operacional. Se você utilizar o Windows, faça o download no &lt;a href=&#34;https://desktop.github.com/&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crie uma conta no &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vá em File &amp;raquo; Options &amp;raquo; Accounts &amp;raquo; Sign in&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/1git.png%22&#34; alt=&#34;File&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/2git.png%22&#34; alt=&#34;Options&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/3git.png%22&#34; alt=&#34;Account&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/4git.png%22&#34; alt=&#34;Sign in&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%22https://retaoliveira.github.io/relements/figures/5git.png%22&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Para mais informações, acesse o site &lt;a href=&#34;https://docs.github.com/pt/desktop&#34;&gt;Github Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A farra dos preços baixos no Uber e no Airbnb está próxima do fim</title>
+      <link>https://retaoliveira.github.io/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</link>
+      <pubDate>Mon, 21 Jun 2021 17:10:58 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-06-21-a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.terra.com.br/noticias/tecnologia/a-farra-dos-precos-baixos-no-uber-e-no-airbnb-esta-proxima-do-fim,1859fe282da8d13c5d7a416e6afe6529g19nwc79.html&#34;&gt;A farra dos preços baixos no Uber e no Airbnb está próxima&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Principais comandos do Git</title>
+      <link>https://retaoliveira.github.io/post/principais-comandos-do-git/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/principais-comandos-do-git/</guid>
+      <description>&lt;h1 id=&#34;o-que-é-sistema-de-controle-de-versão&#34;&gt;O que é Sistema de Controle de Versão?&lt;/h1&gt;
+&lt;p&gt;O sistema de controle de versão é uma estrutura que nos permite acrescentar e supervisionar várias entregas e fases de um item de produto sem realmente manter diferentes documentos ou pastas. Além disso, eles tornam a melhoria dentro de um grupo mais sensata e menos estressante, pois os desenvolvedores não precisam trocar pastas, mas, em vez disso, falam com uma fonte solitária onde cada uma das progressões está acontecendo e tudo é salvo.&lt;/p&gt;
+&lt;h2 id=&#34;o-que-é-git&#34;&gt;O que é Git?&lt;/h2&gt;
+&lt;p&gt;Git é o VCS (Version Control Systems) mais utilizado. Git rastreia as progressões que você faz nos documentos, assim você tem um registro do que foi feito, e você pode voltar a adaptações explícitas caso você precise a qualquer momento. Git também torna a cooperação mais simples, permitindo que as mudanças feitas por inúmeros indivíduos sejam todas convertidas em uma única fonte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;agora-vamos-falar-sobre-alguns-dos-comandos-úteis-de-git-que-você-deve-conhecer&#34;&gt;Agora vamos falar sobre alguns dos comandos úteis de Git que você deve conhecer.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt;: adiciona todos os arquivos&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit&lt;/code&gt;: registra o arquivo permanentemente&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config&lt;/code&gt;: ele controla o conjunto para o projeto/arquivo de salvamento local&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git help&lt;/code&gt;: exibe todas as informações necessárias sobre os comandos de git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git status&lt;/code&gt;: dá todas as informações sobre o ramo atual&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log&lt;/code&gt;: conheça os commits anteriores&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git diff&lt;/code&gt;: realiza um trabalho de difusão de fontes de informação Git. Estas fontes de informação podem ser alterações, ramos, registros e outras.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reset --hard&lt;/code&gt;: apaga todas suas alterações não commitadas | comando perigoso&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remoto adicionar &amp;lt;url ou endereço&amp;gt;&lt;/code&gt;: para adicionar um novo endereço remoto&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remove rm&lt;/code&gt;: para remover o arquivo do repositório Git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;: para empurrar arquivos locais para o github&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch&lt;/code&gt;: um ramo onde são feitas as alterações - é um arquivo de alterações.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout&lt;/code&gt;: permite que você explore entre os ramos gerados pelo git branch&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tag&lt;/code&gt;: as tags são utilizadas para assinalar uma alteração como importante&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git fetch&lt;/code&gt;: este comando faz com que seu git local recupere os dados mais recentes da primeira meta-informação&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rebase&lt;/code&gt;: você pode pegar cada uma das alterações que foram submetidas a um ramo e reproduzi-las em um ramo alternativo.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config -global color.ui true&lt;/code&gt;: veja cores diferentes em saídas diferentes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;: cria um novo repositório git&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;Novo arquivo Readme.md&amp;quot;&lt;/code&gt;: salva suas mudanças no repositório local&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge&lt;/code&gt;: permite pegar as linhas autônomas de alterações feitas no ramo e coordená-las em no ramo &lt;strong&gt;main&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull &amp;lt;repo link&amp;gt;&lt;/code&gt;: para fazer o download da pasta a partir do repositório remoto&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash save&lt;/code&gt;: armazena arquivos rastreados modificados&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stash drop&lt;/code&gt;: descarta os arquivos mais recentes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir project&lt;/code&gt;: criar nova pasta de projeto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: Use o Github desktop ou o Git Kraken. Facilitam bem a vida e você não tem que lembrar os comandos diretos.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Atuação Do Mercado Imobiliário Sobre a Estrutura Urbana</title>
+      <link>https://retaoliveira.github.io/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</link>
+      <pubDate>Tue, 27 Apr 2021 15:30:38 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-04-27-felicidade-atuacao-do-mercado-imobiliario-sobre-a-estrutura-urbana/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www1.folha.uol.com.br/cotidiano/2021/04/moradia-se-aproxima-do-transporte-em-sp-e-arranha-ceus-surgem-em-areas-de-casas-na-periferia.shtml&#34;&gt;Link para reportagem sobre as transformações urbanas em relação à proximdidade ao transporte em SP e arranha-céus surgem em áreas de casas na periferia&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutoriais interativos</title>
+      <link>https://retaoliveira.github.io/post/tutoriais-interativos/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/tutoriais-interativos/</guid>
+      <description>&lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o &amp;ldquo;oráculo&amp;rdquo; universal Google.&lt;/p&gt;
+&lt;p&gt;Os estudantes um procedimento breve para conseguirem abrir o tutorial:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Salvar o arquivo nesta mensagem em um diretório em seu computador.&lt;/li&gt;
+&lt;li&gt;Abrir o RStudio e procedam com a instalação do package swirl: &lt;code&gt;install.packages(&amp;quot;swirl&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carregar a biblioteca do swirl: &lt;code&gt;library(swirl)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instalar o tutorial: &lt;code&gt;install_course()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Abrir o menu de tutoriais &lt;code&gt;swirl::swirl()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu.&lt;/li&gt;
+&lt;li&gt;Selecionar 1: &lt;code&gt;introR&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.&lt;/p&gt;
+&lt;p&gt;In a &lt;code&gt;chunk&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;install.packages(&amp;quot;swirl&amp;quot;)
+library(swirl)
+
+install_course()
+swirl()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O arquivo pode ser acessado no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o &lt;a href=&#34;http://swirlstats.com/scn/&#34;&gt;Swirl Course Network&lt;/a&gt;. A instalação é feita também com a função &lt;code&gt;install_course()&lt;/code&gt;, mas nesse caso você precisa digitar o nome do curso como em:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;swirl::install_course(&amp;quot;A_(very)_short_introduction_to_R&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dicas de R e glossário de termos mais comuns</title>
+      <link>https://retaoliveira.github.io/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</link>
+      <pubDate>Tue, 05 Jan 2021 20:05:57 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-01-05-dicas-de-r-e-glossario-de-termos-mais-comuns/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/business-science/free_r_tips&#34;&gt;Free R Tips - Business Science&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://carpentries-incubator.github.io/open-science-with-r/reference.html&#34;&gt;Introduction to Open Data Science with R: Glossary&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uso de Inteligência Artificial na Gestão Pública</title>
+      <link>https://retaoliveira.github.io/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</link>
+      <pubDate>Tue, 05 Jan 2021 20:00:17 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-01-05-uso-de-inteligencia-artificial-na-gestao-publica/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://news.cision.com/fi/city-of-helsinki/r/helsinki-and-amsterdam-first-cities-in-the-world-to-launch-open-ai-register,c3204076&#34;&gt;Ai Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1uLTBnKBrbMBp1w7vSO_GdLtP9ev7GM_W/view?usp=sharing&#34;&gt;Artificial Intelligence as a Public Service: Learning from Amsterdam and Helsinki by Luciano Floridi&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cores Em Visualização De Dados</title>
+      <link>https://retaoliveira.github.io/post/2021-01-05-cores-em-visualizacao-de-dados/</link>
+      <pubDate>Tue, 05 Jan 2021 11:08:32 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-01-05-cores-em-visualizacao-de-dados/</guid>
+      <description>&lt;p&gt;The objective of data visualization is to communicate key results from the data analysis workflow. And while a chart must look aesthetically appealing, its primary objective is not to ‘look pretty’.&lt;/p&gt;
+&lt;p&gt;Use of color in a visualisation should be to help disseminate key findings instead of being part of some sort of artistic endeavor&lt;/p&gt;
+&lt;h3 id=&#34;rule-1--use-color-when-you-should-not-when-you-can&#34;&gt;Rule 1 : Use color when you should, not when you can&lt;/h3&gt;
+&lt;p&gt;Use of color should be carefully strategized to communicate key findings and this decision, therefore, cannot be left for automated algorithms to make. Most data should be in neutral colors like grey with bright colors reserved for directing attention to significant or atypical data points.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/acolor.png&#34; alt=&#34;Usar cores?&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-2-utilize-color-to-group-related-data-points&#34;&gt;Rule 2: Utilize color to group related data points&lt;/h3&gt;
+&lt;p&gt;Color can be used to group data points of similar value and to render the extent of this similarity using the following two color palettes :&lt;/p&gt;
+&lt;p&gt;A sequential color palettes is composed of varying intensities of a single hue of color at uniform saturation. Variability in luminance of adjacent colors corresponds to the variation in data values that they are used to render.&lt;/p&gt;
+&lt;p&gt;A divergent color palettes is made of two sequential color palettes (each of a different hue) stacked next to each other with an inflection point in the middle. These become helpful when visualizing data with variations in two different directions.&lt;/p&gt;
+&lt;p&gt;The chart below on the left uses a sequential color palette made of a single hue (green) for values ranging from -0.25 to +0.25 while chart on the right uses a divergent color scheme with different hues for positive (blue) and negative (red) values.
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/bcolor.png&#34; alt=&#34;Sequenciais&#34;&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/ccolor.png&#34; alt=&#34;Divergentes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the map on the right, positive and negative values can be identified immediately based on color alone. We can immediately conclude that the population of mid-western and southern towns had declined and that in the east and west coast has increased. This key insight into the data is not immediately obvious in the chart on the left where not color itself, but the intensity of color green must be used to read the map.
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/dcolor.png&#34; alt=&#34;Divergente para mapas&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-3-use-categorical-colors-for-unrelated-data&#34;&gt;Rule 3: Use categorical colors for unrelated data&lt;/h3&gt;
+&lt;p&gt;Categorical color palettes are derived from colors of different hues but uniform saturation and intensity and can be used to visualize unrelated data points of completely dissimilar origin or unrelated values. Check out this visualisation of different ethnicities in New York City. There is no correlation between the data for different ethnicities and a categorical palette is therefore used here.&lt;/p&gt;
+&lt;p&gt;Sequential and divergent color palettes should be used to render changes in magnitude by encoding qualitative values while categorical color palettes should be used to render unrelated data categories by encoding quantitative values.
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/ecolor.png&#34; alt=&#34;Cores em categorias&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-4-categorical-colors-have-few-easily-discernible-bins&#34;&gt;Rule 4: Categorical colors have few easily discernible bins&lt;/h3&gt;
+&lt;p&gt;While the use of different colors can help distinguish between different data points, a chart should at most comprise of 6–8 distinct color categories for each of those to be readily distinguishable.&lt;/p&gt;
+&lt;p&gt;Use of a separate colour for each of the 15 countries makes the chart on the left difficult to read, especially for countries with fewer satellites. The one on the right is much more readable at the cost of losing information on countries with fewer satellites, all of which is grouped in the “others” bin.
+Note that we have used a categorical color scheme here as the data for each country is completely uncorrelated. The number of India satellites, for instance, is completely independent of those of say France.
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/fcolor.png&#34; alt=&#34;Muitas cores?&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-5-change-in-chart-type-can-often-reduce-the-need-for-colors&#34;&gt;Rule 5: Change in chart type can often reduce the need for colors&lt;/h3&gt;
+&lt;p&gt;A pie chart probably is not the best option in the previous example. The resulting loss of categories may not always be acceptable. Plotting a bar chart instead, we can use a single color and retain all 15 data categories.&lt;/p&gt;
+&lt;p&gt;If there is a need for more than 6–8 different colours (hues) in a visualization, either merge some of the categories or explore other charts types
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/gcolor.png&#34; alt=&#34;Mudar o gráfico?&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-6-when-not-to-use-sequential-color-scheme&#34;&gt;Rule 6: When not to use sequential color scheme&lt;/h3&gt;
+&lt;p&gt;For the subtle difference in color of a sequential palette to be readily apparent, these colors must be places right next to each other like in the chart on the left below. When place away from each other like in a scatter plot, the subtle differences become difficult to grasp.&lt;/p&gt;
+&lt;p&gt;Sequential color schemes are difficult to interpret when the data points are not located immediately next to each other as in the scatter plot on the right. These colors may only be used to visualize relative values as in the chart on the left. [made by author]
+Best use of a sequential color scheme is to render relative difference in values. It is not suitable for plotting absolute values which are best rendered with a categorical color scheme.
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/hcolor.png&#34; alt=&#34;Quando não usar cores sequenciais&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rule-7-choose-appropriate-background&#34;&gt;Rule 7: Choose appropriate background&lt;/h3&gt;
+&lt;p&gt;Check out this animation by Akiyoshi Kitaoka that demonstrates how our perception of color of the moving square changes with changes in its background. The human perception of colors is not absolute. It is made relative to the surroundings.&lt;/p&gt;
+&lt;p&gt;Perceived colour of an object is dependent not only on the colour of the object itself but also of its background. This leads us to conclude the following with respect to use of background colors in charts :
+Different objects grouped by same colour should also have same background. This in general means that variations in the background colour must be minimised.&lt;/p&gt;
+&lt;h3 id=&#34;rule-8-not-everyone-can-see-all-colors&#34;&gt;Rule 8: Not everyone can see all colors&lt;/h3&gt;
+&lt;p&gt;Roughly 10% of the world population is colour blind and to make coloured infographics accessible to everyone, avoid use of combinations of red and green. Shown below are how people with three different kinds of color blindness view the same map.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/cores/icolor.png&#34; alt=&#34;Acessibilidade por meio de cores&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The impetus of visualisation is to tell the story behind data. Only a thoughtful use of colour can help strengthen key arguments in this story.
+Tools for selecting colour combinations.&lt;/p&gt;
+&lt;p&gt;Summarised below are some resources that I have found helpful in my work on the use of colours in data analysis and visualization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Colour brewer &lt;a href=&#34;https://colorbrewer2.org/#type=qualitative&amp;amp;scheme=Set3&amp;amp;n=6&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;d3-interpolate &lt;a href=&#34;https://github.com/d3/d3-interpolate&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Colourco &lt;a href=&#34;https://colourco.de/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Color Palette Helper &lt;a href=&#34;https://vis4.net/palettes/#/9%7Cd%7C00429d,96ffea,ffffe0%7Cffffe0,ff005e,93003a%7C1%7C1&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I want hue &lt;a href=&#34;https://medialab.github.io/iwanthue/&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;colorspace &lt;a href=&#34;https://colorspace.r-forge.r-project.org/articles/colorspace.html&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tmaptools palette explorer &lt;a href=&#34;https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Leaflet colors &lt;a href=&#34;https://rstudio.github.io/leaflet/colors.html&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Crédito: Este artigo é uma tradução do artigo &lt;a href=&#34;https://towardsdatascience.com/8-rules-for-optimal-use-of-color-in-data-visualization-b283ae1fc1e2&#34;&gt;8 Rules for optimal use of color in data visualization Why color is key for effective data visualization by Assem Kashyap &lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Podcasts De Logística</title>
+      <link>https://retaoliveira.github.io/post/2021-01-05-podcasts-de-logistica/</link>
+      <pubDate>Tue, 05 Jan 2021 11:04:29 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-01-05-podcasts-de-logistica/</guid>
+      <description>&lt;p&gt;PODCASTS sobre logística:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8zODk1MDYucnNz?sa=X&amp;amp;ved=0CAYQrrcFahcKEwj4lr6S8oTuAhUAAAAAHQAAAAAQOA&#34;&gt;GuiaKast&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xMjQzYzA5NC9wb2RjYXN0L3Jzcw?sa=X&amp;amp;ved=0CAMQ4aUDahgKEwj4lr6S8oTuAhUAAAAAHQAAAAAQsQE&#34;&gt;Café com Logística&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown Ou Rmarkdown</title>
+      <link>https://retaoliveira.github.io/post/2021-01-02-markdown-ou-rmarkdown/</link>
+      <pubDate>Sat, 02 Jan 2021 14:31:19 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2021-01-02-markdown-ou-rmarkdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.markdowntutorial.com/lesson/1/&#34;&gt;https://www.markdowntutorial.com/lesson/1/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fundamentos De Estatística</title>
+      <link>https://retaoliveira.github.io/post/2020-12-31-fundamentos-de-estatistica/</link>
+      <pubDate>Thu, 31 Dec 2020 13:30:05 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-31-fundamentos-de-estatistica/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://beta.rstudioconnect.com/content/3350/dplyr_tutorial.html&#34;&gt;Univariate and bivariate descriptive analysis by Gert Janssenswillen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://statlearning.com/&#34;&gt;An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://statlearning.com/code.html&#34;&gt;An Introduction to Statistical Learning - Lab&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/the-six-traps-in-data-analysis-and-how-to-escape-them-ea9d2e3bad46&#34;&gt;The six traps in data analysis and how to escape them by Julia Luz&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dicas Sobre Rmarkdown</title>
+      <link>https://retaoliveira.github.io/post/2020-12-30-dicas-sobre-rmarkdown/</link>
+      <pubDate>Wed, 30 Dec 2020 20:47:37 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-30-dicas-sobre-rmarkdown/</guid>
+      <description>&lt;p&gt;O site &lt;a href=&#34;https://holtzy.github.io/Pimp-my-rmd/#hide_code&#34;&gt;Pimp my rmd&lt;/a&gt; traz uma série de dicas interessantes para construção de arquivos com linguagem RMarkdown.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;R Markdown - The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://m-clark.github.io/Introduction-to-Rmarkdown/customization.html#html-css&#34;&gt;Introduction to R Markdown by Michael Clark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usando Git e Github</title>
+      <link>https://retaoliveira.github.io/post/usando-git-e-github/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/usando-git-e-github/</guid>
+      <description>&lt;h2 id=&#34;definições&#34;&gt;Definições&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Git&lt;/code&gt; é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, &lt;code&gt;Git&lt;/code&gt; não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer &amp;ldquo;alguma besteira&amp;rdquo;, você pode voltar para a última versão salva. É como chegar a um &amp;ldquo;ponto de salvamento&amp;rdquo; em um videogame no qual você pode voltar se seu personagem morrer.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GitHub&lt;/code&gt; é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.&lt;/p&gt;
+&lt;h2 id=&#34;vocabulário-básico-para-uso-do-github&#34;&gt;Vocabulário básico para uso do &lt;code&gt;GitHub&lt;/code&gt;:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Repositório&lt;/code&gt;: Quando você faz uma conta no &lt;code&gt;Github&lt;/code&gt;, a primeira coisa que você vai querer fazer é criar um repositório (ou repo). Este é o lugar para armazenar todos os seus arquivos para um determinado projeto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Fork:&lt;/code&gt; Digamos que você realmente gosta do projeto de outra pessoa no &lt;code&gt;GitHub&lt;/code&gt; e você gostaria de fazer uma cópia dele em sua conta para ajustar como você quiser? Bem, esse processo é chamado de &lt;code&gt;forking&lt;/code&gt;. Para fazer isso, encontre um reporte que você gosta e clique no botão &lt;code&gt;fork&lt;/code&gt; no canto direito.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Branch&lt;/code&gt;: Esta é uma &amp;ldquo;versão paralela&amp;rdquo; de um projeto que você pode ajustar sem impactar o projeto original.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Remote&lt;/code&gt;: A cópia de seus arquivos que residem no &lt;code&gt;GitHub.com&lt;/code&gt;. É o endereço &amp;ldquo;destinatário&amp;rdquo; do seu projeto na plataforma online.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Local:&lt;/code&gt; A cópia de seus arquivos que residem em seu computador. É um espelho do repositório remoto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Commit&lt;/code&gt;: Uma alteração em um arquivo, geralmente apresentada com uma mensagem sua para indicar o que foi alterado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Push&lt;/code&gt;: Uma vez que você realize mudanças em seus arquivos locais, você quer enviá-las (ou empurrá-las) para seu repositório remoto, tornando-as disponíveis para outros.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Pull&lt;/code&gt;: Se várias pessoas estiverem trabalhando em seu repositório remoto, elas podem ter feito uma mudança que não está refletida em sua versão local. Você pode &lt;code&gt;puxar&lt;/code&gt; a versão mais nova para o seu computador para trabalhar nela.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;como-operacionalizar&#34;&gt;Como operacionalizar?&lt;/h2&gt;
+&lt;p&gt;Vá ao site do &lt;a href=&#34;Github.com&#34;&gt;Github.com&lt;/a&gt; e crie uma conta gratuita. Faça seu login. 
+Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.&lt;/p&gt;
+&lt;p&gt;Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios &lt;code&gt;local&lt;/code&gt;e &lt;code&gt;remoto&lt;/code&gt;. O próprio &lt;code&gt;Github&lt;/code&gt; tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o &lt;a href=&#34;https://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ainda tenho que me acostumar a utilizar o &lt;code&gt;RStudio&lt;/code&gt; para gerenciar versão no &lt;code&gt;Github&lt;/code&gt;. Sim, é possível. Mas até agora achei que o &lt;code&gt;GitKraken&lt;/code&gt; é mais rápido e eficiente.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dica: acesse o &lt;a href=&#34;https://retaoliveira.github.io/places/post/principais-comandos-do-git/&#34;&gt;post&lt;/a&gt; para dicas de comandos básicos do &lt;code&gt;Git&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Créditos&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Acesso à API do Twitter</title>
+      <link>https://retaoliveira.github.io/post/2020-12-27-acesso-a-api-do-twitter/</link>
+      <pubDate>Sun, 27 Dec 2020 13:39:12 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-27-acesso-a-api-do-twitter/</guid>
+      <description>&lt;h2 id=&#34;como-obter-e-usar-tokens-de-acesso-à-api-do-twitter-para-uso-no-pacote-rtweet&#34;&gt;Como obter e usar tokens de acesso à &lt;code&gt;API&lt;/code&gt; do &lt;code&gt;Twitter&lt;/code&gt; para uso no pacote &lt;code&gt;rtweet&lt;/code&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;criando-um-aplicativo-no-twitter&#34;&gt;Criando um aplicativo no Twitter&lt;/h3&gt;
+&lt;p&gt;Para criar um aplicativo no Twitter, você precisará primeiro solicitar uma conta de desenvolvedor. Este processo, juntamente com uma explicação detalhada pode ser encontrado em &lt;a href=&#34;developer.twitter.com&#34;&gt;developer.twitter.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Uma vez que você tenha adquirido uma conta de desenvolvedor, navegue até &lt;a href=&#34;developer.twitter.com/pt/apps&#34;&gt;developer.twitter.com/pt/apps&lt;/a&gt;. Clique no botão azul que diz: &lt;em&gt;Create a New App&lt;/em&gt;, e então preencha o formulário com os seguintes campos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;App Name&lt;/code&gt;: Como seu aplicativo será chamado&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Application Description&lt;/code&gt;: Como seu aplicativo será descrito para seus usuários&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Website URLs&lt;/code&gt;: Website associado ao app-I. Recomendo usar a URL em seu perfil no Twitter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Callback URLs&lt;/code&gt;: &lt;strong&gt;IMPORTANTE&lt;/strong&gt; digite exatamente o seguinte: &lt;code&gt;http://127.0.0.1:1410&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tell us how this app will be used&lt;/code&gt;: Seja claro e honesto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quando você tiver preenchido os campos obrigatórios do formulário, clique no botão azul &lt;code&gt;Criar&lt;/code&gt;, na parte inferior. Leia atentamente e indique se você aceita os termos do desenvolvedor.&lt;/p&gt;
+&lt;p&gt;Mais detalhes podem ser encontrados na &lt;a href=&#34;https://cran.r-project.org/web/packages/rtweet/vignettes/auth.html&#34;&gt;Vignette&lt;/a&gt; sobre esse processo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mineração de Texto</title>
+      <link>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</link>
+      <pubDate>Sun, 27 Dec 2020 13:08:19 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-27-mineracao-de-texto/</guid>
+      <description>&lt;h2 id=&#34;dicionário-de-dados-do-twitter&#34;&gt;Dicionário de dados do Twitter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.twitter.com/en/docs/twitter-api/data-dictionary/introduction&#34;&gt;Data dictionary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sentimentos-no-twitter-para-csv&#34;&gt;Sentimentos no Twitter para CSV&lt;/h2&gt;
+&lt;p&gt;O download do arquivo .csv do Twitter a partir de termos de busca pode ser feito no site &lt;a href=&#34;https://twitter-sentiment-csv.herokuapp.com/&#34;&gt;Tweet Sentiment to CSV&lt;/a&gt;. São 100 tweets sobre o termos pesquisado.&lt;/p&gt;
+&lt;h2 id=&#34;links-interessantes-sobre-esse-tópico-são&#34;&gt;Links interessantes sobre esse tópico são:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.abraji.org.br/help-desk/como-investigar-tweets-com-rtweet-e-r&#34;&gt;Como investigar tweets com rtweet r R by Abraji&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html&#34;&gt;Intro to rtweet: Collecting Twitter Data by Michael W. Kearney&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://paulovasconcellos.com.br/aprenda-a-fazer-um-analisador-de-sentimentos-do-twitter-em-python-3979454f2d0d&#34;&gt;Aprenda a fazer um Analisador de Sentimentos do Twitter em Python by Paulo Vasconcellos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/use-twitter-api-r/&#34;&gt;Twitter Data in R Using Rtweet by Leah Wasser, Carson Farmer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/marianacrtx/tweets&#34;&gt;Github Mariana Cartaxo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio-pubs-static.s3.amazonaws.com/66739_c4422a1761bd4ee0b0bb8821d7780e12.html&#34;&gt;Text Mining example codes (tweets)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-11-18-ocupacao-na-ufmg-e-interevencao-policial/&#34;&gt;Ocupação na UFMG e intervenção policial - Twitter by Neylson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/juditecypreste/Aprenda-Python-analisando-os-tuites-do-nosso-presidente&#34;&gt;Github Judite Cypreste&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@arthuremanuel.carosia/an%C3%A1lise-de-sentimentos-no-twitter-sobre-o-governo-bolsonaro-15396a22e757&#34;&gt;Análise de Sentimentos no Twitter Sobre o Governo Bolsonaro by Arthur Carosia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/a-guide-to-mining-and-analysing-tweets-with-r-2f56818fdd16&#34;&gt;A Guide to Mining and Analysing Tweets with R by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@celine.vdr/mining-tweets-of-us-candidates-on-mass-shootings-before-and-after-the-2018-midterms-90cc18ff652a&#34;&gt;Mining Tweets of US candidates on mass shootings before and after the 2018 midterms by Céline Van den Rul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neylsoncrepalde.github.io/2016-03-18-analise-de-conteudo-twitter/&#34;&gt;Análise de Conteúdo (twitteR) by Nelson Crepalde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vineetdhanawat/twitter-sentiment-analysis&#34;&gt;Twitter sentiment analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conteúdo-adicional&#34;&gt;Conteúdo adicional&lt;/h2&gt;
+&lt;p&gt;Text Mining and Analytics, University of Illinois at Urbana-Champaign: &lt;a href=&#34;https://www.coursera.org/learn/text-mining/home/info&#34;&gt;https://www.coursera.org/learn/text-mining/home/info&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining with R: A Tidy Approach, Julia Silge and David Robinson: &lt;a href=&#34;http://tidytextmining.com/&#34;&gt;http://tidytextmining.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text mining using R, Ted Kwartler: &lt;a href=&#34;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&#34;&gt;https://opendatascience.com/conferences/ted-kwartler-intro-to-text-mining-using-r/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Intro to Text Mining Using tm, openNLP and topicmodels, Ted Kwartler: &lt;a href=&#34;http://www.slideshare.net/odsc/tedkwartlerworkshop1&#34;&gt;http://www.slideshare.net/odsc/tedkwartlerworkshop1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: An Overview, David Madigan: &lt;a href=&#34;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&#34;&gt;http://www.stat.columbia.edu/~madigan/W2025/notes/IntroTextMining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text-Mining Tutorial, Marko Grobelnik e Dunja Mladenic: &lt;a href=&#34;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&#34;&gt;http://profs.info.uaic.ro/~adiftene/Scoala/2012/APLN/Resurse/03_TM/Tutorial_Marko.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text mining, Ian H. Witten: &lt;a href=&#34;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&#34;&gt;http://www.cos.ufrj.br/~jano/LinkedDocuments/_papers/aula13/04-IHW-Textmining.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Text Mining: Applications and Theory, Michael W. Berry e Jacob Kogan: &lt;a href=&#34;http://www.mohamedrabeea.com/books/book1_1165.pdf&#34;&gt;http://www.mohamedrabeea.com/books/book1_1165.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Web Search and Text analysis: &lt;a href=&#34;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&#34;&gt;https://www.williamwebber.com/research/teaching/comp90042/2014s1/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CS 6501: Text Mining: &lt;a href=&#34;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&#34;&gt;http://www.cs.virginia.edu/~hw5x/Course/CS6501-Text-Mining/_site/lectures/&lt;/a&gt;.
+Speech and Language Processing: &lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34;&gt;https://web.stanford.edu/~jurafsky/slp3/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CETEMPúblico: &lt;a href=&#34;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&#34;&gt;http://www.linguateca.pt/acesso/corpus.php?corpus=CETEMPUBLICO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An Introduction to Text Mining: &lt;a href=&#34;http://port.sas.ac.uk/course/view.php?id=53&#34;&gt;http://port.sas.ac.uk/course/view.php?id=53&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarity Measures for Text Document Clustering.
+Sobre a construção de um léxico da afetividade para o processamento computacional do português.
+Evaluating CETEMPúblico, a free resource for Portuguese.
+Working on Sentiment Analysis on Twitter with Portuguese Language.
+Sentiment Analysis on Twitter Data for Portuguese Language.
+Sentiment Analysis Using R Language.
+Sentiment analysis with machine learning in R.
+SentimentAnalysis package.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>E-books sobre R</title>
+      <link>https://retaoliveira.github.io/post/e-books-sobre-r/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/e-books-sobre-r/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cdr.ibpad.com.br/&#34;&gt;Oliveira, Paulo Felipe de; Guerra, Saulo; McDonell, Robert. Ciência de Dados com R – Introdução. Brasília: Editora IBPAD, 2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidytextmining.com/&#34;&gt;Text Mining with R by Julia Silge and David Robinson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown: Creating Websites with R Markdown by Yihui Xie, Amber Thomas, Alison Presmanes Hill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://csgillespie.github.io/efficientR/&#34;&gt;Efficient R programming by Colin Gillespie and Robin Lovelace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.uesc.br/editora/livrosdigitais_20140513/r_cientistas.pdf&#34;&gt;R para ciências sociais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rafalab.github.io/dsbook/&#34;&gt;Data Analysis and Prediction Algorithms with R by Rafael A. Irizarry&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Segmentação de Mercado</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-segmentacao-de-mercado/</link>
+      <pubDate>Sat, 26 Dec 2020 20:35:22 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-segmentacao-de-mercado/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://diegousai.io/2019/05/a-gentle-introduction-to-customer-segmentation/&#34;&gt;A gentle Introduction to Customer Segmentation - Using K-Means Clustering to Understand Marketing Response&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/DiegoUsaiUK/Customer_Segmentation&#34;&gt;Using K-Means Clustering to Understand Marketing Response&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogs sobre R em Português</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-blogs-sobre-r-em-portugues/</link>
+      <pubDate>Sat, 26 Dec 2020 17:34:50 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-blogs-sobre-r-em-portugues/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/marcosvital&#34;&gt;Marcos Vital&lt;/a&gt; nos presenteou com a organização de uma &lt;a href=&#34;https://github.com/marcosvital/blogs-de-R-no-Brasil&#34;&gt;lista de blogs&lt;/a&gt;  sobre R no Brasil.&lt;/p&gt;
+&lt;p&gt;Outras dicas!!!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/wevsena/curso_r_tce/curso_r_tce.html#exercicios-2&#34;&gt;Curso Básico de Linguagem R by Eduardo Ferreira e Weverton Lisboa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Packages interessantes do R para Análise de dados e espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thengl/GeoMLA&#34;&gt;RFsp — Random Forest for spatial data (R tutorial) by Hengl, T., Nussbaum, M., and Wright, M.N.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R Para Análise Espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:25:22 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-r-para-analise-espacial/</guid>
+      <description>&lt;p&gt;A comunidade acadêmica tem caminhado para abertura de licença de uso e reprodução de material didático, bases de dados, e conteúdo que pode ajudar a construção de competências e a aprendizagem em diferentes contextos. A universalização da informação é responsabilidade do docente que acredita na mudança por meio da educação. A Internet tem possibilitado tanto a publicação como o acesso a diferentes formas de apresentação de conteúdo que, em conjunto, contribuem para a formação de profissionais e outros acadêmicos. Infelizmente vivemos em um país onde a desigualdade ainda diferencia as pessoas, também em relação ao acesso à Internet. Nesse contexto, a abertura pública de conteúdo faz-se ainda mais necessária e eficaz, contribuindo para pequenas ações que podem mudar o mundo.&lt;/p&gt;
+&lt;p&gt;Trago aqui algumas dicas de sites, livros e material para implementações práticas que foram generosamente publicados por seus autores.&lt;/p&gt;
+&lt;h3 id=&#34;em-português&#34;&gt;Em português&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geokrigagem.com.br/geoestatistica-no-r-licao7-analises-descritivas-dos-dados-tutorial/&#34;&gt;Lições de geoestatística no R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCO6x7sQurFTw0Su0vsexE5g&#34;&gt;Canal do Mercel Santos&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;em-inglês&#34;&gt;Em inglês&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf&#34;&gt;Introduction to visualising spatial data in R by Robin Lovelace (R.Lovelace@leeds.ac.uk), James Cheshire, Rachel Oldroyd and others&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://geocompr.robinlovelace.net/&#34;&gt;Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://data-analytics.net/cep/Schedule_files/geospatial.html&#34;&gt;Geospatial Analysis in R by Major David Beskow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://slcladal.github.io/index.html&#34;&gt;Language Technology and Data Analysis Laboratory (LADAL) of the School of Languages and Cultures at the University of Queensland&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mgimond.github.io/Spatial/index.html&#34;&gt;Intro to GIS and Spatial Analysis by Manuel Gimond&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://edzer.github.io/UseR2017/&#34;&gt;Spatial Data in R: New Directions by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spacetimewithr.org/&#34;&gt;Spatio-Temporal Statistics with R by Christopher K. Wikle, Andrew Zammit-Mangion, and Noel Cressie&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://gis.humboldt.edu/OLM/r/Spatial%20Analysis%20With%20R.pdf&#34;&gt;Use R! by Robert Gentleman Kurt Hornik Giovanni Parmigiani&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-1-4614-7618-4.pdf&#34;&gt;Applied Spatial Data Analysis with R by Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html&#34;&gt;Geospatial Data in R and beyond by Barry Rowlingson&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;spatial-analyst.net&#34;&gt;spatial-analyst.net by Tomislav Hengl&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cengel.github.io/rspatial/&#34;&gt;Introduction to Mapping and Spatial Analysis with R by Branner Earth Sciences Library - Teaching Corner&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://hautahi.com/rmaps&#34;&gt;Mapping Spatial Data in R by Hautahi Kingi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://north-road.github.io/qgis-processing-r/&#34;&gt;Processing R Provider by North Road and Jan Caha&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rspatial.org/&#34;&gt;Spatial Data Science with R by Robert J. Hijmans&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jessesadler.com/post/gis-with-r-intro/&#34;&gt;Introduction to GIS with R by Jesse Sadler&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.r-spatial.org/&#34;&gt;R Spatial software blogs and ideas by Edzer Pebesma&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://keen-swartz-3146c4.netlify.app/&#34;&gt;Spatial Data Science by Edzer Pebesma, Roger Bivand&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gastonsanchez.com/visually-enforced/how-to/2014/01/15/Center-data-in-R/&#34;&gt;Visually Enforced by Gaston Sanchez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/corey_sparks/105700&#34;&gt;Exploratory Spatial Data Analysis by coreysparks&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://spatialanalysis.github.io/lab_tutorials/Applications_of_Spatial_Weights.html&#34;&gt;Applications of Spatial Weights by Luc Anselin and Grant Morrison1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/FelipeSantos/LISA_tmap_geoda&#34;&gt;Local Moran’s I and spatial scales (using R and tmap) by Felipe Santos Marquez&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/helson/608377&#34;&gt;Outlier detection in spatial data using  by Helson Gomes de Souza&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rafapereirabr/urban_centrality_index_2013&#34;&gt;Urban centrality index by Rafael Pereira&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-best&#34;&gt;The BEST&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://maczokni.github.io/crimemapping_textbook_bookdown/&#34;&gt;Crime Mapping in R by Juanjo Medina and Reka Solymosi&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dicas-e-dúvidas&#34;&gt;Dicas e dúvidas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rafapereirabr/5348193abf779625f5e8c5090776a228&#34;&gt;Map of bivariate spatial correlation in R (bivariate LISA) by Rafael Pereira&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como deixar o R com a minha cara</title>
+      <link>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/como-deixar-o-r-com-a-minha-cara/</guid>
+      <description>&lt;p&gt;Para trocar o tema, basta fazer o download do tema favorito (ou criar o seu) e carrega no RStudio. Para isso:&lt;/p&gt;
+&lt;p&gt;Tools -&amp;gt; Global Options -&amp;gt; Appearance -&amp;gt; Add&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tmtheme-editor.herokuapp.com/#!/editor/theme/Abdal%20Black%20Hackers&#34;&gt;Temas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutoriais de R</title>
+      <link>https://retaoliveira.github.io/post/tutoriais-de-r/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/tutoriais-de-r/</guid>
+      <description>&lt;p&gt;Em inglês&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for data Science by Hadley Wickham and Garret Grolemund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;RMarkdown by RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://alison.rbind.io/project/tidyml/&#34;&gt;Introduction to Machine Learning with the Tidyverse by Alison Hill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uc-r.github.io/&#34;&gt;UC Business Analytics R Programming Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Em português&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://livro.curso-r.com/&#34;&gt;Curso-R - Livro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://material.curso-r.com/&#34;&gt;Curso-R - materiais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.curso-de-programacao-em-r-para-jornalistas.com/2019/10/27/saiba-mais-sobre-o-r/&#34;&gt;Curso de R para Jornalistas by Gabriela Caesar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutoriais para QGIS</title>
+      <link>https://retaoliveira.github.io/post/tutoriais-para-qgis/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/tutoriais-para-qgis/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.qgistutorials.com/pt_BR/&#34;&gt;QGIS Tutorials and Tips by Ujaval Gandhi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://spatialthoughts.com/&#34;&gt;Spatial Thoughts by Ujaval Gandhi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/automating-gis-workflows.html&#34;&gt;Automating GIS Workflows with QGIS (Full Course Material) by Ujaval Gandhi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como comecei a usar RMarkdown</title>
+      <link>https://retaoliveira.github.io/post/uso-markdown/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/uso-markdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/uso-markdown/
+index.pt_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Períodos de pandemia são sempre interessantes! Falo como se tivesse passado por diversos momentos como este; felizmente, isso não é verdade! Entretanto, foi nesse período que descobri o Rmarkdown.&lt;/p&gt;
+&lt;p&gt;O isolamento social trouxe possibilidades, como eu aprender o R. Pesquisando sobre Latex, tive acesso a diferentes linguagens para elaboração de relatórios reprodutíveis e dinâmicos. A necessidade faz a “força”. Resolvi explorar as possibilidades antes de me dedicar a aprender efetivamente alguma linguagem e descobri que o Rmarkdown é bem mais intuitivo e dinâmico do que o Latex, apesar de ainda precisar do Latex para implementação de equações, por exemplo.&lt;/p&gt;
+&lt;p&gt;Com &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;RMarkdown&lt;/a&gt;, é possível:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar um documento em um relatório em diferentes formatos de saída, como PDF, HTML e Word.&lt;/li&gt;
+&lt;li&gt;Produzir slides para apresentações.&lt;/li&gt;
+&lt;li&gt;Criar dashboards interativas, com layouts atraentes e que se adaptam à tela do usuário.&lt;/li&gt;
+&lt;li&gt;Criar relatórios interativos com Shiny.&lt;/li&gt;
+&lt;li&gt;Escrever artigos científicos ou livros.&lt;/li&gt;
+&lt;li&gt;Criar blogs ou sites.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para começar a explorar esse mundo de textos dinâmicos, você precisa inicialmente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;quot;knitr&amp;quot;)
+# install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depois, crie um novo arquivo de RMarkdown usando o comando File &amp;gt; New &amp;gt; File menu e selecione R &amp;gt; RMarkdown na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione Adicionar R Markdown (ou Adicionar &amp;gt; Novo Item e selecionando R Markdown na lista).&lt;/p&gt;
+&lt;p&gt;Todo documento RMarkdown é composto por três importantes tipos de conteúdo: + Um cabeçalho &lt;code&gt;YAML&lt;/code&gt; delimitado antes e depois por — + &lt;code&gt;chunks&lt;/code&gt; de códigos R ou outra linguagem compatível delimitado por ``&lt;code&gt;. + Texto estruturado com formatação simples em&lt;/code&gt;#` para títulos e outros caracteres de formatação&lt;/p&gt;
+&lt;p&gt;Se ficarem interessados em packages para construção de documentos em Rmarkdown, tenho usado:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(vitae)
+library(pagedown)
+library(flexdashboard)
+library(rticles)
+library(bookdown)
+library(distill)
+library(hugodown)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alguns links para quem quiser se aventurar na composição de artigos científicos, textos acadêmicos e não-acadêmicos, apresentações, dashboards, sites e outras possibilidades que o Rmarkdown nos proporciona.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/rladiesbh/rmarkdown-o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-1cb1bb57769d&#34;&gt;RMarkdown: o mínimo que você precisa saber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cursos.leg.ufpr.br/prr/capDocDin.html&#34;&gt;Pesquisa Reproduzível com R by Fernando Mayer e Walmes Zeviani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.leg.ufpr.br/~fernandomayer/palestra/useR-2015/Rmarkdown-rautu.html#outline&#34;&gt;Rmarkdown-rautu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pet-estatistica.github.io/site/download/posts/postJAYME2.html#introducao&#34;&gt;Iniciação do RMarkdown by Jayme Gomes dos Santos Junior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sillasgonzaga.com/material/curso_visualizacao/apresentacao-de-dados-com-relatorios.html&#34;&gt;Introdução a R para Visualização e Apresentação de Dados by Sillas Gonzaga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;R Markdown: The Definitive Guide by Yihui Xie, J. J. Allaire, Garrett Grolemund&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Credits: Ilustração por Alisson Horst&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/
+index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/post/2020-12-01-r-rmarkdown/
+index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

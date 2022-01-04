@@ -1,0 +1,83 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: true
+menu:
+  log:
+    parent: Projetos
+    weight: 18
+title: Projeto 2
+toc: true
+type: docs
+weight: 18
+---
+
+O PRAZO DE ENTREGA DESTA ATIVIDADE PELO SIGAA É: **14/04**
+
+> Não se esqueçam de incluir o nome dos membros do grupo na postagem!
+
+
+## Pré-requisitos
+
+Entender definições e fundamentos que compõe os conceitos `Logística` e `Gestão da Cadeia de Suprimentos`. 
+Entender que é necessária a integração estratégica da `cadeia de suprimentos` e os desafios a essa integração.
+Entender a necessidade de mensuração de indicadores que reflitam `responsividade` e `eficiência` para a gestão da cadeia de suprimentos. 
+Discutir de maneira apropriada as atividades-chave da gestão da cadeia de suprimentos `estoques`, `transportes`, `localização` e `informação`.
+Discutir de maneira crítica os desafios e soluções implementáveis no contexto da `logística urbana`, incluindo aspectos referentes à `logística sustentável`.
+
+## Objetivos de aprendizagem
+
+Ao final desta atividade os alunos devem ser capazes de discutir os desafios e particularidades das decisões locacionais em cadeia de suprimentos no abastecimento das cidades, considerando, inclusive, as demandas pela gestão de fluxos reversos em entregas urbanas. 
+
+## Atividades para consolidação do Projeto 02:
+
+Esta atividade tem valor de 20 pontos e deverá ser entregue por meio do sigaa.
+
+O prazo para entrega desta atividade é dia **14/04/2021**. 
+
+A atividade será composta por duas atividades:
+
+a. elaboração de um **mapa mental** desenhando a cadeia de suprimentos apresentada no Projeto Incremental 1. Deverão ser mapeados:
+      - localização das instalações logísticas que viabilizam a cadeia
+      - modos de transporte e veículos considerados para a fluxos inbound e outbound no abastecimento e na distribuição física de produtos
+      - política de estoques - se há necessidade de manutenção de estoque elevado para que seja possível garantir responsividade na cadeia
+      - a importância da informação e da digitalização na gestão da cadeia de suprimentos
+      - principais fornecedores
+      - as implicações sociais, econômicas e ambientais das decisões nessa cadeia de suprimentos
+
+b. apresentação do mapa mental para a turma no dia 14, com duração máxima de 5 minutos e chamando a atenção para os aspectos mais relevantes. 
+      
+O mapa mental deverá ser detalhado e ilustrado. Os alunos poderão escolher o meio de produção desse documento. Como sugestão, utilizem o `Mindmup 2.0` disponível como app adicional na plataforma Google Drive. Por meio dessa ferramenta, vocês poderão elaborar o mapa mental de maneira colaborativa e incluir o detalhamento especificado. 
+
+Ao final dessas diretrizes incluo alguns vídeos de como utilizar o `Mindmup 2.0`. 
+
+
+## Rubrica de avaliação
+
+A seguir, são apresentados os critérios considerados para a avaliação do projeto 2 que são úteis para nortear o desenvolvimento do trabalho. 
+
+### Rubrica de avaliação do projeto 2
+
+Item|Pontos
+----|-----------------
+Estrutura completa contendo os elementos solicitados |4 
+Coordenação lógica do encadeamento das atividades referentes à gestão da cadeia de suprimentos|4 
+Ilustração adequada dos elementos solicitados | 3 
+Apresentação das implicações sociais, econômicas e ambientais|4 
+
+Item|	Pontuação
+----|----------
+Gerenciamento de tempo: A equipe dividiu bem o tempo entre si ou foi cortada ao longo do tempo?|	1
+Profissionalismo: Até que ponto a equipe se apresentou bem? A apresentação parece ter sido bem praticada? Todos tiveram a oportunidade de dizer algo significativo sobre o projeto?	|2
+Trabalho em equipe: A equipe apresentou uma narrativa unificada, ou pareceu um trabalho independente remendado em conjunto?|	2
+
+<br></br>
+
+<hr>
+
+<iframe width="1068" height="601" src="https://www.youtube.com/embed/XY-YjF57wFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1068" height="601" src="https://www.youtube.com/embed/HsoDbVNVcGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1068" height="601" src="https://www.youtube.com/embed/LYxETsRqGI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1068" height="601" src="https://www.youtube.com/embed/lLZqv9aBVUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

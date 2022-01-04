@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>urban logistics on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/urban-logistics/</link>
+    <description>Recent content in urban logistics on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/urban-logistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spatial Analysis</title>
+      <link>https://retaoliveira.github.io/project/spatial/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/project/spatial/</guid>
+      <description>&lt;h2 id=&#34;spatial-analysis-applied-to-urban-logistics&#34;&gt;Spatial Analysis applied to Urban Logistics&lt;/h2&gt;
+&lt;p&gt;The urban distribution of goods is necessary to sustain the way of life in cities. However, several negative impacts related to this activity in urban areas are identified, such as: increased congestion, emission of pollutants, increased noise, less efficient transport operating conditions, among others. Thus, urban logistics, which aims to promote solutions to reduce these impacts, ensuring efficiency in the movement of goods, has been the object of investigation of researchers and professionals in Transport Engineering and related areas.&lt;/p&gt;
+&lt;p&gt;Consequently, quantitative methods are usually employed in the treatment of the aforementioned problems, considering, almost exclusively, the relationships between the identified attributes. On the other hand, even though transportation is an intrinsically spatial phenomenon, the problems, the challenges and the proposition of solutions for urban logistics are not commonly discussed considering the location of these activities in space. The spatialization of information and spatial analysis techniques can add significant value to the analysis related to the urban distribution of goods.&lt;/p&gt;
+&lt;p&gt;Thus, this project aims to relate the different problems faced to perform freight transport in urban areas and the techniques of spatial information processing and spatial analysis, aiming to structure a new methodological guideline for studies of this nature. Various publications on urban logistics will be explored for the identification and characterization of the problems faced in the execution of these activities. In addition, spatial techniques will be discussed and different free or open source software will be identified and explored for computational implementation. Real data, collected in other researches, will be used to validate the methodological proposals. These techniques will be explored from the point of view of several actors of the urban logistics and can be useful both in the proposition of solutions and consequent subsidy to the definition of public policies, and to the increment of the teaching methodology in the area of Transport Engineering.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Urban Logistics</title>
+      <link>https://retaoliveira.github.io/project/urban-logistics/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/project/urban-logistics/</guid>
+      <description>&lt;h2 id=&#34;spatial-analysis-applied-to-urban-logistics&#34;&gt;Spatial Analysis applied to Urban Logistics&lt;/h2&gt;
+&lt;p&gt;The urban distribution of goods is necessary to sustain the way of life in cities. However, several negative impacts related to this activity in urban areas are identified, such as: increased congestion, emission of pollutants, increased noise, less efficient transport operating conditions, among others. Thus, urban logistics, which aims to promote solutions to reduce these impacts, ensuring efficiency in the movement of goods, has been the object of investigation of researchers and professionals in Transport Engineering and related areas.&lt;/p&gt;
+&lt;p&gt;Consequently, quantitative methods are usually employed in the treatment of the aforementioned problems, considering, almost exclusively, the relationships between the identified attributes. On the other hand, even though transportation is an intrinsically spatial phenomenon, the problems, the challenges and the proposition of solutions for urban logistics are not commonly discussed considering the location of these activities in space. The spatialization of information and spatial analysis techniques can add significant value to the analysis related to the urban distribution of goods.&lt;/p&gt;
+&lt;p&gt;Thus, this project aims to relate the different problems faced to perform freight transport in urban areas and the techniques of spatial information processing and spatial analysis, aiming to structure a new methodological guideline for studies of this nature. Various publications on urban logistics will be explored for the identification and characterization of the problems faced in the execution of these activities. In addition, spatial techniques will be discussed and different free or open source software will be identified and explored for computational implementation. Real data, collected in other researches, will be used to validate the methodological proposals. These techniques will be explored from the point of view of several actors of the urban logistics and can be useful both in the proposition of solutions and consequent subsidy to the definition of public policies, and to the increment of the teaching methodology in the area of Transport Engineering.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Retailers and carriers’ viewpoint on Sorocaba’s city logistics: A spatial analysis</title>
+      <link>https://retaoliveira.github.io/publication/guedesfurquim-retailers-carriers-viewpoint-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/publication/guedesfurquim-retailers-carriers-viewpoint-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of accessibility from collection and delivery points: Towards the sustainability of the e-commerce delivery</title>
+      <link>https://retaoliveira.github.io/publication/de-oliveira-2019-a/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/publication/de-oliveira-2019-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Challenges to urban freight transport in historical cities: A case study for Sabará (Brazil)</title>
+      <link>https://retaoliveira.github.io/publication/de-oliveira-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/publication/de-oliveira-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proposição de modelos de geração de viagens para Belo Horizonte</title>
+      <link>https://retaoliveira.github.io/publication/de-oliveira-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/publication/de-oliveira-2017-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelo de geração de viagens de carga em áreas urbanas: um estudo para bares, restaurantes e supermercados</title>
+      <link>https://retaoliveira.github.io/publication/de-oliveira-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/publication/de-oliveira-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

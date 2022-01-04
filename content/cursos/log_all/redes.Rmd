@@ -1,0 +1,40 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: False
+menu:
+  log_all:
+    parent: 6 - Localização e redes logísticas
+    weight: 13
+title: Redes logísticas
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 16
+---
+
+# OPÇÕES DE PROJETOS PARA UMA REDE DE TRANSPORTE
+O projeto da rede de transporte é fator decisivo para garantir responsividade e custo competitivo na cadeia de suprimentos. 
+
+## Rede de entrega direta
+Todas as entregas acontecem diretamente do fornecedor para o varejista. Neste caso, a rota de cada carregamento é pré-determinada, sendo necessário definir apenas o volume a ser transportado e o meio de transporte mais eficiente. 
+
+Vantagens:
+- eliminação de intermediários logísticos, como atacadistas ou centros de distribuição;   
+- simplicidade de operação e coordenação;   
+- decisão sobre embarque é local;   
+- baixa interferência entre fluxos;   
+- tempo de transporte do fornecedor até ao ponto de varejo é reduzido.   
+
+São aconselháveis quando o tamanho das lojas varejistas for suficientemente grande para justificar lotes de suprimentos ótimos próximos à carga cheia proveniente de cada fornecedor. 
+
+Desvantagens:
+- no caso de lojas pequenas, a rede de entrega direta é onerosa;   
+- geraria um elevado custo de estoque na cadeia de suprimentos;   
+- os custos de recebimento são altos porque cada fornecedor deve fazer uma entrega separada.    
+
+
+<hr>

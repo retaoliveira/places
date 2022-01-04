@@ -1,0 +1,58 @@
+title: Profa. Renata Oliveira
+baseURL: https://retaoliveira.space/
+copyright: Renata Oliveira {year}
+publishDir: docs
+googleAnalytics: ''
+disqusShortname: ''
+theme: academia-hugo
+enableGitInfo: no
+defaultContentLanguage: pt
+hasCJKLanguage: no
+defaultContentLanguageInSubdir: no
+removePathAccents: yes
+paginate: 10
+enableEmoji: yes
+pluralizeListTitles: no
+enableRobotsTXT: yes
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles:
+  - \\.ipynb$
+  - .ipynb_checkpoints$
+  - \\.Rmd$
+  - \\.Rmarkdown$
+  - _cache$
+  - \\.knit\\.md$
+  - \\.utf8\\.md$
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+  css: reveal_custom.css
+blackfriday:
+  angledQuotes: no
+  extensions: backslashLineBreak
+  hrefTargetBlank: yes
+  latexDashes: yes
+imaging:
+  anchor: smart
+  quality: 75
+  resampleFilter: lanczos
+taxonomies:
+  author: authors
+  category: categories
+  publication_type: publication_types
+  tag: tags
+permalinks:
+  authors: /author/:slug/
+  categories: /category/:slug/
+  event: /talk/:slug/
+  publication_types: /publication-type/:slug/
+  tags: /tag/:slug/
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

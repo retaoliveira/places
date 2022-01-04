@@ -1,0 +1,94 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 18
+title: Tutorial 6
+weight: 28
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bibliotecas
+
+Essas funções servem para carregar as bibliotecas dos pacotes que serão necessários para a análise. 
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+## Carregar arquivos
+
+1. Façam o download do arquivo .zip. 
+2. Removam os arquivos de dados do arquivo .zip.
+3. Carregue os arquivos de dados usando a função `read_csv` e atribuindo cada conjunto de dados a um objeto
+
+
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=FALSE}
+professions <- read_csv("D:/Dropbox/Public/dados/professions.csv")
+dates <- read_csv("D:/Dropbox/Public/dados/dates.csv")
+works <- read_csv("D:/Dropbox/Public/dados/works.csv")
+enrolment <- read_csv("D:/Dropbox/Public/dados/enrolment.csv")
+survey <- read_csv("D:/Dropbox/Public/dados/survey.csv")
+purchases <- read_csv("D:/Dropbox/Public/dados/purchases.csv")
+prices <- read_csv("D:/Dropbox/Public/dados/prices.csv")
+```
+
+# Manipulação de dados - mulheres cientistas
+
+1. Faça a junção dos dataframes
+
+2. Ordene por ano de nascimento
+
+3. Filtre apenas as linhas que têm informações sobre ano de nascimento e ano de morte
+
+4. Encontre as pesquisadoras que estão vivas
+
+5. Gere um dataframe considerando apenas a coluna com o nome das cientistas.
+
+```{r}
+dataframe_junto <- professions %>%
+  left_join(dates, by="name") %>% 
+  left_join(works, by="name") %>% 
+  select(name, known_for) %>% 
+  filter(!is.na(known_for))
+
+```
+
+# Manipulação de dados - matrículas
+
+1. Gere um dataframe com os alunos matriculados e que responderam estar frequentando as aulas.
+
+2. Gere um dataframe com os alunos matriculados e que responderam **não** estar frequentando as aulas.
+
+3. Gere um dataframe com os alunos que estão frequentando as aulas e que não estão matriculados.
+
+
+```{r}
+data1 <- enrolment %>% 
+  left_join(survey, by="id")
+
+data2 <- survey %>% 
+  left_join(enrolment, by="id")
+```
+
+# Manipulação de dados - compras
+
+1. Gere um dataframe com a síntese da soma da receita da loja por consumidor 
+
+```{r}
+
+```
+

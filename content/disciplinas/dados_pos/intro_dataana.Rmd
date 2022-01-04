@@ -1,0 +1,45 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos:
+    parent: Unidade 1 - Análise de dados para gestão
+    weight: 10
+title: Introdução à Análise de Dados
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+## Análise de dados com R
+
+A ciência dos dados é um campo enorme, e não há como dominá-lo neste curso. Vamos explorar conceitos, fundamentos e desenvolver habilidades de análise de dados para suporte à tomada de decisão. A análise de dados tem grande potencial para ajudar as empresas e os tomadores de decisão a se concentrarem nas informações mais importantes dos dados que coletaram sobre o comportamento de seus clientes, clientes potenciais, externalidades, bem estar organizacional dentre outras dimensões. Essa abordagem permite a geração de informações a partir dos dados disponíveis que, inicialmente coletados, não revelam de forma clara e eficiente.
+
+O modelo conceitual da análise de dados contempla:
+
+![Modelo de Data Science](https://retaoliveira.github.io/relements/figures/dataR.png)
+
+Em síntese, são necessárias etapas de importação, organização, transformação, visualização e modelagem. Uma etapa usualmente negligenciada pelos acadêmicos é a comunicação. Entretanto, nas organizações, a capacidade de comunicação é essencial para garantir eficácia do processo de investigação dos problemas por meio de dados. 
+
+Quando seus dados estão organizados ("tidy"), tem-se uma estrutura onde cada coluna é uma variável, e cada linha é uma observação. Eventualmente são necessárias transformações dos dados para composição de indicadores de interesse ou para agregação/desagregação da informação. As etapas de organização e transformação dos dados, em conjunto, são denominadas "Data Wrangling". Essa denominação traz luz aos desafios que o processamento de dados implica em sua organização. 
+
+![Modelo de Data Science](https://retaoliveira.github.io/relements/figures/data_cowboy.png)
+
+A visão é um dos sentidos humanos mais importantes. A capacidade de visualizar a informação é interessante para: confirmar as hipóteses iniciais, identificar processos não esperados e levantar novas questões sobre os dados. Uma boa visualização também pode sugerir que você está fazendo a pergunta errada, ou que você precisa coletar dados diferentes. As visualizações podem surpreendê-lo e dependem da percepção e da interpretação humana, apresentando grande valor para a gestão organizacional.
+
+A perspectiva mais quantitativa da análise de dados contempla a modelagem. Modelos são ferramentas complementares à visualização. Uma vez que você tenha organizado o problema em investigação e desenhado hipóteses iniciais, é possível utilizar um modelo para respondê-las. Os modelos são uma ferramenta fundamentalmente matemática ou computacional, portanto, escaláveis. Entretanto, apresentam poucos elementos constitutivos da percepção humana e, portanto, do mundo real. Entretanto, mesmo que modelos não representem adequadamente os fenômenos e processos humanos, geralmente é mais barato comprar mais computadores do que comprar mais cérebros! Modelos são repletos de premissas e suposições, limitando a capacidade de representação da realidade complexa e subjetiva. Além disso, devido à sua própria natureza, um modelo não pode questionar suas próprias premissas - isso significa que um modelo não pode surpreendê-lo -, o que implica em riscos importantes de limitações do entendimento dos problemas em investigação.
+
+O último passo da análise de dados é a comunicação, uma parte absolutamente crítica de qualquer projeto. Não importa se seus modelos e visualização apresentam excelência e o tenham levado a compreender os dados, se você não puder comunicar seus resultados a outras pessoas.
+
+Neste curso não tenho a pretenção de tratar dados em escala (big data) ou considerar diferentes linguagens de programação. Ainda, os conceitos, fundamentos e ferramentas explorados neste curso apresentam caráter exploratório, ou seja, permitem a elaboração de hipóteses. Seria necessário um curso bem mais extenso para apresentar a implementação computacional de instrumentos de análise confirmatória. 
+
+Assim, sairemos deste curso com mais perguntas do que respostas, mas com mais maturidade, capacidade de análise e crítica sobre os fenômenos organizacionais. 
+
+
+
+

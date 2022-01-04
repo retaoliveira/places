@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packages on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/packages/</link>
+    <description>Recent content in Packages on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Sat, 26 Dec 2020 17:32:30 -0300</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Packages interessantes do R para Análise de dados e espacial</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</link>
+      <pubDate>Sat, 26 Dec 2020 17:32:30 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-packages-interessantes-do-r-para-analise-de-dados-e-espacial/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thengl/GeoMLA&#34;&gt;RFsp — Random Forest for spatial data (R tutorial) by Hengl, T., Nussbaum, M., and Wright, M.N.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

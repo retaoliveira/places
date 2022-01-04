@@ -1,0 +1,99 @@
+---
+date: "2021-06-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_grad:
+    parent: Tutoriais
+    weight: 15
+title: Tutorial 3
+weight: 25
+editor_options: 
+  markdown: 
+    wrap: 72
+output: 
+  blogdown::html_page:
+    toc: false
+    css: "/assets/css/custom.css"
+type: docs
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+## Diretrizes gerais:
+1. Baixe o arquivo e abra no RStudio. [Link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EWhJIYOWS7FJgdMe8znoLQwBWko-J1AFpwNbpeswSuD7fQ?e=H21RLg)
+
+2. Execute as operações assinaladas nos exercícios a seguir. 
+
+3. Salve o .Rmd e submeta-o por meio desta tarefa. 
+
+> Dica: As barras que delimitam o endereçamento do arquivo no seu computador, quando exibidas no explorer do Windows, são invertidas (\). O R trabalha com barras normais (/) para endereçamento. 
+
+```{r load-packages, include=FALSE}
+library(tidyverse)
+```
+
+### Dê uma olhada no dataframe Starwars.
+
+```{r glimpse-starwars}
+glimpse(starwars)
+```
+
+### Modifique o seguinte gráfico para que a cor de todos os pontos seja ROSA.
+
+```{r scatterplot}
+ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = "#30509C")
+```
+
+### Adicione texto no título, eixos x e y e tamanho dos pontos. Remova o comentário para ver o efeito.
+
+```{r scatterplot-labels}
+ggplot(starwars, 
+       aes(x = height, y = mass, color = gender, size = birth_year)) +
+  geom_point(color = "#30509C") +
+  labs(
+    #title = "___",
+    #x = "___", 
+    #y = "___",
+    #___
+    )
+```
+
+### Escolha uma única variável categórica do conjunto de dados e faça um gráfico de barras de sua distribuição.
+
+(Um pouco de código inicial é fornecido abaixo, e o chunk é definido para não ser rodado com `eval = FALSE` porque o código atual ali não é válido e, portanto, o documento não permitia o `knit`. Uma vez substituído o código por um código válido, defina a opção "eval = TRUE", ou remova a opção "eval" por completo, uma vez que está definida como "TRUE" por padrão).
+
+```{r barplot, eval = FALSE}
+ggplot(starwars, aes(___)) +
+  geom___
+```
+
+### Escolha uma única variável numérica e faça um histograma dela.
+
+(Desta vez nenhum código inicial é fornecido, você está por sua conta!)
+
+```{r histogram}
+
+```
+
+### Escolha uma variável numérica e uma variável categórica e faça uma visualização (você escolhe o tipo!) para visualizar a relação entre as duas variáveis. Junto com seu código e sua saída, forneça uma interpretação da visualização.
+
+```{r num-cat}
+
+```
+
+### Escolha duas variáveis categóricas e faça uma visualização para entender visualmente a relação entre as duas variáveis. Junto com seu código e saída, forneça uma interpretação da visualização.
+
+```{r cat-cat}
+
+```
+
+### Escolha duas variáveis numéricas e duas variáveis categóricas e faça uma visualização que incorpore todas elas e forneça uma interpretação com sua resposta.
+
+```{r multi}
+
+```
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogdown on Profa. Renata Oliveira</title>
+    <link>https://retaoliveira.github.io/tag/blogdown/</link>
+    <description>Recent content in Blogdown on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://retaoliveira.github.io/tag/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogdown</title>
+      <link>https://retaoliveira.github.io/post/blogdown/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/blogdown/</guid>
+      <description>
+&lt;script src=&#34;https://retaoliveira.github.io/post/blogdown/
+index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://portfolio.peter-baumgartner.net/#about&#34; class=&#34;uri&#34;&gt;https://portfolio.peter-baumgartner.net/#about&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hannesdatta&#34; class=&#34;uri&#34;&gt;https://github.com/hannesdatta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.hannesdatta.com/&#34; class=&#34;uri&#34;&gt;https://www.hannesdatta.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/docs/&#34; class=&#34;uri&#34;&gt;https://wowchemy.com/docs/content/docs/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugo-online-course.netlify.app/course/example/python/&#34; class=&#34;uri&#34;&gt;https://hugo-online-course.netlify.app/course/example/python/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desafios que enfrentei para construir e publicar este site com Blogdown e Hugo</title>
+      <link>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</link>
+      <pubDate>Sat, 26 Dec 2020 19:23:01 -0300</pubDate>
+      
+      <guid>https://retaoliveira.github.io/post/2020-12-26-desafios-que-enfrentei-para-construir-publicar-este-site-com-blogdown-e-hugo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, Alison Hill e sua equipe de desenvolvedores salvaram horas de trabalho no site por meio de funções implementadas no pacote &lt;code&gt;Blogdown&lt;/code&gt; que permite a verificação de problemas! Muito obrigada!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://alison.rbind.io/post/2020-12-27-blogdown-checks/&#34;&gt;Unbreak your blogdown site by Alison Hill&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,259 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: true
+menu:
+  spatial:
+    parent: Localização como atributo de suporte à decisão
+    weight: 30
+title: Dados espaciais
+editor_options: 
+  markdown: 
+    wrap: 30
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 30
+---
+
+## Instalação dos packages para manipulação de dados espaciais no R
+
+Inicialmente, faz-se necessária a instalação e carregamento dos packages:
+
+Package | utilização
+--------|-----------
+raster | informações espaciais matriciais
+OpenStreetMap | dados o OSM
+RgoogleMaps | dados do Google Maps
+grid | 
+rgdal | ler e escrever dados espaciais
+tidyverse | organização de dados
+reshape2 |
+ggmosaic |
+GISTools | ler e escrever dados espaciais
+sf | manipulação de dados espaciais
+tmap | mapas temáticos
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+library(raster)
+library(rJava)
+library(OpenStreetMap)
+library(RgoogleMaps)
+library(grid)
+library(rgdal)
+library(tidyverse)
+library(reshape2)
+library(ggmosaic)
+library(GISTools)
+library(sp)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(mapview)
+```
+
+<hr>
+
+## Introdução aos packages `sp` e `sf` {.tabset .tabset-fade .tabset-pills}
+
+O package `sf` é uma evolução do package `sp`. Na maioria dos casos, é interessante utilizar o `sf`, mas para algumas implementações, como por exemplo o uso de funções no `spdep` para técnicas de análise espacial, faz-se necessária a utilização do `sp`. 
+
+
+### Dados espaciais `sp` 
+Por meio do package `sp` é possível definir classes (ou objetos `sp`) para manipulação de dados vetoriais pontos, linhas e polígonos. 
+
+Formatos de dados espacais no R
+
+Sem atributos | Com atributos | Equivalente ESRI
+--------------|---------------|-----------------
+SpatialPoints | SpatialPointsDataFrame | Point shapefiles
+SpatiaLines | SpatialLinesDataFrame | Line shapefiles
+SpatialPolygons | SpatialPolygonsDataFrame | Polygon shapefiles
+
+---
+
+### Dados espaciais GISTools
+
+O package `GISTools` vem com diferentes bancos de dados que podem ajudar no entendimento das funções. Utilizaremos dois conjuntos dados para explorar as funcionalidades deste package, a saber: (i) dados representados em linhas e polígonos referentes aos municípios na Georgia, considerando New Haven e Connecticut nos EUA. Os dados de New Haven contemplam dados de estatísticas de crimes, rodovias, informações demográficas, ferrovias e locais. O dado da Georgia inclui os limites municipais com alguns atributos relacionados aos dados de 1990 (população total, população rural, que tem curso superior, estrangeira, idosos, linha da pobreza, negros, renda média).
+
+Para carregar os dados, utilize a função `data()`. 
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
+library(GISTools)
+data(newhaven)
+ls() # inspecionar os dados
+```
+
+Verifique as classes dos objetos:
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+class(breach)
+
+class(blocks)
+```
+Os dados associados ao objeto `blocks` podem ser visualizados por meio da função:
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
+head(data.frame(blocks))
+```
+
+O data frame de um objeto espacial `sp` também pode ser acessado por meio de `@data`:
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
+head(blocks@data)
+```
+
+Os dados das unidades censitárias de New Haven podem ser visualizados por meio de:
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+plot(blocks)
+```
+
+Para plotar as unidades censitárias e as rodovias em vermelho. A função `par` serve para plotar mais de um gráfico em uma mesma representação. Existem diferentes parâmetros para essa função. Por exemplo, o `mfrow` refere-se ao número de linhas e colunas para combinar as plotagens.O parâmetro `mar` ajuda na definição de margens.  
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+par(mar = c(0,0,0,0))
+plot(roads, col="red")
+plot(blocks, add=TRUE)
+```
+
+---
+
+### Dados espaciais `sf`
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/sf.png")
+```
+
+Uma nova classe de objetos espaciais no R foi definida por meio do package denominado `sf`. O objetivo de desenvolvimento deste package é padronizar o formato dos dados espaciais. 
+
+
+>Uma evolução de dados espaciais no R pode ser vista em [Spatial Data in R: New Directions by Edzer Pebesma](https://edzer.github.io/UseR2017/). 
+
+
+A ideia por trás do package `sf` é de que uma feição seja um objeto, ou seja, uma representação de um objeto do mundo real. As feições apresentam informações sobre onde estão localizadas na Terra, e atributos relacionados aos fenômenos reais. Existem  muitos tipos de objetos `sf` 
+
+
+>Mais informações sobre o package `sf` podem ser encontrada em [Simple Features for R](https://r-spatial.github.io/sf/)
+
+
+Os objetos espaciais mais usuais são:
+
+Tipo |	Descrição
+-----|-----------
+POINT	|zero-dimensional geometry containing a single point
+LINESTRING	|sequence of points connected by straight, non-self intersecting line pieces; one-dimensional geometry
+POLYGON	|geometry with a positive area (two-dimensional); sequence of points form a closed, non-self intersecting ring; the first ring denotes the exterior ring, zero or more subsequent rings denote holes in this exterior ring
+MULTIPOINT|	set of points; a MULTIPOINT is simple if no two Points in the MULTIPOINT are equal
+MULTILINESTRING	|set of linestrings
+MULTIPOLYGON	|set of polygons
+GEOMETRYCOLLECTION	|set of geometries of any type except GEOMETRYCOLLECTION
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE, results = 'hide'}
+library(sf)
+vignette(package = "sf") # visualizar as vignettes
+
+# vignette("sf1", package = "sf")
+
+```
+
+
+A forma mais simples de converter os dados considerados para análise das funções de `sp` em objetos do `sf` é por meio da função `st_as_sf()`.
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+# carregar o dado
+data("georgia") 
+
+# converter o dado em sf
+georgia_sf <- st_as_sf(georgia)
+class(georgia_sf)
+georgia_sf # representa as dez primeiras feições
+```
+
+```{r echo = TRUE, message=FALSE, warning=FALSE, include=TRUE}
+georgia #apresenta todas as feições
+```
+
+A função `plot` também funciona de maneira diferente. Ela permite criar objetos `sf` e se o objeto tiver atributos, ele demarcará com preenchimento das feições. Teste:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# todos os atributos
+plot(georgia_sf)
+
+#atributos selecionados
+plot(georgia_sf[,6])
+
+# atributos selecionados
+plot(georgia_sf[,c(4,5)])
+```
+
+Objetos `sf` apresentam data frame. O data frame de `sp` e `sf` podem ser comparados. No data frame dos objetos `sf` há atributos de geometria, diferentemente do data frame `sp`. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+head(data.frame(georgia))
+head(data.frame(georgia_sf))
+```
+
+Para converter dado espaciais `sf` para `sp`, faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+g2 <- as(georgia_sf, "Spatial")
+class(g2)
+```
+
+---
+
+## Lendo e escrevendo dados espaciais no R {.tabset .tabset-fade .tabset-pills}
+
+Muito frequentemente temos dados no formato _shapefile_ que precisam ser importados para o R. As funções dos packages `rgdal` e `sf` permitem essa importação. 
+
+### Lendo e escrevendo dados `sp`.
+
+As funções do `rgdal` para ler e escrever dados espaciais são, respectivamente: `readOGR()` e `writeOGR()`. O objeto `georgia` em `sp` pode ser convertido em _shapefile_ como a seguir:
+
+```{r message=FALSE, warning=FALSE}
+library(rgdal)
+writeOGR(obj=georgia, dsn="./shapefiles", layer="georgia", driver="ESRI Shapefile", overwrite_layer=TRUE)
+```
+
+Para ler um _shapefile_, faça:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+new_georgia <- readOGR(dsn="./shapefiles/georgia.shp")
+class(new_georgia)
+```
+
+`new_georgia` é um objeto `sp`. Observe que o parâmetro `dns` considerado na função `writeOGR` endereça o folder onde os arquivos _shapefile_ serão armazenados. Atribuir "." implica na inclusão dos arquivos no diretório padrão do projeto. 
+
+
+> As funções `setwd()` e `getwd()` são úteis para identificar o diretório raiz do projeto e para determinar o diretório de trabalho. Para informações sobre como utilizar a função, acesse ?setwd e ?getwd. 
+
+
+Funções para ler e escrever dados espaciais do tipo `raster` podem ser encontradas também no package `rgdal`. Explore pelo help as funções `writeGDAL` e `readGDAL`. 
+
+---
+
+### Lendo e escrevendo dados `sf`. 
+
+O package `sf` também tem funções que permitem ler e escrever dados espaciais. As funções para isso são `st_read()` e `st_write()`. Experimente:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# setwd("./shapefiles/")
+#g2 <- st_read("georgia.shp")
+```
+
+O diretório deve ser especificado para que os dados espaciais sejam varridos de forma efetiva pelas funções. Para escrever utilizando a função `st_write()` são necessários dois parâmetros: o objeto e o nome do arquivo. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# st_write(g2, "georgia.shp", delete_layer = TRUE)
+```
+
+Esse comando é igual a:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# st_write(g2, dsn="georgia.shp", layer="georgia.shp", driver = "ESRI Shapefile", delete_layer = TRUE)
+```
+
+
+---
+

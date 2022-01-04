@@ -1,0 +1,53 @@
+---
+date: "2020-12-275T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos:
+    parent: Pré-requisitos
+    weight: 10
+title: 'Como acessar o tutorial da disciplina no swirl'
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 10
+---
+
+Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o "oráculo" universal Google. 
+
+Os estudantes um procedimento breve para conseguirem abrir o tutorial:
+
+1. Salvar o arquivo nesta mensagem em um diretório em seu computador. 
+2. Abrir o RStudio e procedam com a instalação do package swirl: `install.packages("swirl")`
+3. Carregar a biblioteca do swirl: `library(swirl)`
+4. Instalar o tutorial: `install_course()`
+	- uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.
+5. Abrir o menu de tutoriais `swirl::swirl()`
+6. Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu. 
+7. Selecionar 1: `introR`
+
+Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.  
+
+In a `chunk`:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+install.packages("swirl")
+library(swirl)
+
+install_course()
+swirl()
+```
+
+O arquivo pode ser acessado no [link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG)
+
+<iframe width="1000" height="542" src="https://www.youtube.com/embed/HaZ4p16sv6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o [Swirl Course Network](http://swirlstats.com/scn/). A instalação é feita também com a função `install_course()`, mas nesse caso você precisa digitar o nome do curso como em: 
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+swirl::install_course("A_(very)_short_introduction_to_R")
+```
+
