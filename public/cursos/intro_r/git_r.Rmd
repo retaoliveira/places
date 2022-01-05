@@ -1,0 +1,38 @@
+---
+date: "2021-05-05T00:00:00+01:00"
+draft: false
+menu:
+  intro_r:
+    parent: 1 - Primeiros passos
+    weight: 13
+title: Git e Github
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+type: docs
+weight: 13
+---
+
+
+## Definições
+
+`Git` é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, `Git` não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer "alguma besteira", você pode voltar para a última versão salva. É como chegar a um "ponto de salvamento" em um videogame no qual você pode voltar se seu personagem morrer.
+
+`GitHub` é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.
+
+## Como instalar o Git no seu computador
+
+[Informações gerais e sistemas operacionais](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+[Download](https://git-scm.com/download/win)
+
+<iframe width="1218" height="645" src="https://www.youtube.com/embed/gHq5V9NZ2Do?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+----
+
+Fonte interessante: [Happy Git with R](https://happygitwithr.com/)
+
+

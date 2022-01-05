@@ -1,0 +1,109 @@
+---
+date: 2021-10-15T00:00:00+01:00
+draft: false
+menu:
+  intro_r:
+    parent: 1 - Primeiros passos
+    weight: 50
+title: Hello R! Estrutura, conceitos e funções básicas
+type: docs
+editor_options: 
+  markdown: 
+    wrap: 70
+output: 
+  blogdown::html_page:
+    toc: true
+weight: 390
+---
+
+# TL;DR
+
+Nessa seção apresentamos alguns conceitos importantes para que a utilização do `R` seja mais amigável! Algumas informações importantes que são detalhadas a seguir:
+
+- O `RStudio` é uma interface para uso do `R`
+- O `R` é sensível a caracteres maiúsculos e minúsculos.
+- Marcador de decimal para o R é `.`, mas pode ser configurado conforme arquivo. 
+- O `R` é estruturado em `package::função(objeto, parâmetros))`
+- Para utilizar pacotes, precisamos instalar (`install.packages("package")`), carregar (`library("package")`) e chamar as funções.  
+- As funções `getwd()`, `dir()` e `setwd()` ajudam a organizar o trabalho. 
+
+
+# R? O que é o R?
+
+## Conhecendo o R {.tabset .tabset-fade .tabset-pills}
+
+### Interface e funcionalidades
+
+Para uso do R no ambiente RStudio, é inicialmente necessário entender o seu funcionamento. O R é uma linguagem de programação, em plataforma open source, desenvolvida para análise de dados. SEJAM BEM VINDOS!
+
+![Bem vindo](https://retaoliveira.github.io/relements/figures/allison_horst/welcome_to_rstats_twitter.png)
+
+Em um primeiro momento, o conjunto R + RStudio parece pouco amigável, mas com o tempo, é impossível não apaixonar-se pelas infinitas possibilidades que temos ao utilizar o R.
+
+![Ódio x amor](https://retaoliveira.github.io/relements/figures/allison_horst/r_first_then.png)
+
+A comunidade do R é bastante ampla e colaborativa. Assim: BUSQUE AJUDA!!!!!
+
+![Suporte](https://retaoliveira.github.io/relements/figures/allison_horst/code_hero.jpg)
+
+
+# Definições básicas
+
+Termos| Definição
+------|----------
+`Script`| Os scripts são arquivos do R com comandos a serem executados. Para rodar um comando digitado no painel de edição dos Scripts ou do arquivo .Rmd do RStudio no Windows, basta fazer: `Ctrl+Enter`. 
+`Packages` ou `pacotes` | São um conjunto de funções organizadas em um arquivo que pode ser obtido em diferentes repositórios. Para utilização dos pacotes, é necessário instalá-los e, posteriormente, carregá-los na sessão por meio do comando `library`. 
+`funções` | São códigos que determina um algoritmo computacional e que têm diferentes objetivos. Pode haver mais de uma função para o mesmo objetivo. As funções são estruturadas por meio de um comando básico e parâmetros/argumentos que são incluídos entre parênteses após a função. 
+`objeto` | Objetos no R são elementos aos quais são aplicadas as funções
+`Console` | É o espaço no ambiente R onde você digita e roda os comandos do R. É a janela principal, onde é possível digitar os comandos, vizualizar os resultados e mensagens de alerta e mensagens de erros. Nesse ambiente, a seta (>) indica que o R esta pronto para receber um comando; sinal de mais (+) indica que o comando da linha anterior ainda não esta completo, faltando algo para o comando ser executado. A ausência de um desses dois simbólos (> ou +) indica que o R ainda não finalizou o processo do comando anterior. Os resultados de uma função são apresentados entre símbolos de cochetes ([]).
+ `Terminal` | É o espaço onde você digita e roda comandos do sistema (Windows, por exemplo)
+`RMarkdown` | Linguagem de texto do R
+`RStudio` | É uma IDE (Integrated Development Envirnonment) que permite uma interface gráfica amigável com os usuários. 
+`Help` | Janela onde são mostrados os textos de ajuda.
+`Plot` | Janela reservada para os resultados gráficos.
+`History` | Lista o histórico dos comandos já executados.
+`Environment` | Painel exclusivo do RStudio que lista os objetos criados na área de trabalho (workspace).
+`Files` | Painel exclusivo do RStudio, que lista os arquivos do computador. É semelhante ao gerenciador de arquivos padrão do sistema operacional.
+
+## Tipos de arquivos no R
+Os principais tipos de arquivos gerados por meio do `R` são:
+
+Extensão|Descrição
+--------|---------
+.R | Usado para salvar `scripts`.
+.RData | Usado para salvar os `objetos` da área de trabalho (workspace).
+.Rhistory | Usado para salvar o `histórico dos comandos` executados.
+.Rmd | Formato para salvar arquivos em `RMarkdown`
+
+## Local de trabalho
+O diretório de trabalho padrão é aquele ao qual o R foi associado. Entretanto, pode ser alterado, sem qualquer mudanças nos objetos da área de trabalho.
+
+![](https://retaoliveira.github.io/relements/figures/allison_horst/cracked_setwd.png)
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+getwd() # Mostrar o diretório de trabalho atual
+dir() # Listar os arquivos do diretório
+setwd() # Mudar o diretório de trabalho
+```
+
+É possivel salvar a área de trabalho inteira e carregar em outro momento.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+ls() # Listar os objetos da área de trabalho
+save.image("meu_workspace.RData") # Salvar área de trabalho
+load("meu_workspace.RData") # Carregar área de trabalho
+```
+
+## Variáveis, funções e *packages* 
+
+Sua estrutura fundamenta-se em uma grande variedade de ferramentas quantitativas, organizadas por meio de **objetos**, **funções** e **packages**. A instalação `base` do R já contempla uma série de funções e *packages*. *Packages* adicionais podem ser instalados quando for necessário ou interessante. Para instalação de *packages*, utiliza-se a função `install.packages()`.
+
+A priori, instale os seguintes pacotes no seu computador:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+install.packages(c("rmarkdown", "knitr", "dsbox", "tidyverse", "coronavirus", "lubridate", "glue", "scales", "ggrepel", "DT", "flexdashboard", "blogdown", "bookdown", "pagedown", "xaringan", "xaringanthemer", "janitor", "jsonlite", "kableExtra", "leaflet", "officedown", "openxlsx", "readr", "readxl", "devtools", "remotes", "swirl", "stringr", "tmap", "tmapstool", "rvest", "viridis", "installr", "distill", "rticles", "data.table", "ggplot2", "hrbrthemes", "plotly", "learnr", "prettydoc", "corrplot", "tufte", "ggpubr", "sf", "htmlwidgets"))
+```
+
+Ao longo do curso chamaremos as bibliotecas para que possamos implementar as funções. 
+
+<iframe width="1197" height="645" src="https://www.youtube.com/embed/dOasm9dKjKE?list=PLqDTVtdD-5aPagWJB6_0IaKN3IpIGhFU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

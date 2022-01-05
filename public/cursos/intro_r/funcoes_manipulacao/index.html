@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Introdução ao pacote dplyr Começando pelo meio: data frames Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.
+Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia.">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/sites/cranky-mestorf-a03ae7/css/academia.min.ce1482d82f467a7727ce777c4d020022.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/sites/cranky-mestorf-a03ae7/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/sites/cranky-mestorf-a03ae7/site.webmanifest">
+  <link rel="icon" type="image/png" href="/sites/cranky-mestorf-a03ae7/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/sites/cranky-mestorf-a03ae7/img/icon-192.png">
+
+  <link rel="canonical" href="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/">
+  <meta property="og:title" content="Manipulação e limpeza de dados | Profa. Renata Oliveira">
+  <meta property="og:description" content="Introdução ao pacote dplyr Começando pelo meio: data frames Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.
+Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia."><meta property="og:image" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/img/icon-192.png">
+  <meta property="twitter:image" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-15T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-15T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Manipulação e limpeza de dados | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/sites/cranky-mestorf-a03ae7/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/">Introdução ao R</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/install/">1 - Primeiros passos</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/install/">Instalação de R, RStudio e Git</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/git_r/">Git e Github</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/github/">Criando sua conta no Github</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_r/">Hello R! Estrutura, conceitos e funções básicas</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/swirl/">Hello R! Tutorial no swirl</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown/">2 - Documentos reprodutíveis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown/">Introdução ao RMarkdown</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/reprodutibility/">Documentos parametrizados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/tidyverse/">3 - Trabalhando com dados no R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/tidyverse/">Overview - Tidyverse</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/abrindo_dados/">Abrindo dados no R</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/estrutura_dados/">Tipos de dados e objetos no R</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/estatistica/">Operadores lógicos e aritméticos no R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot/">4 - Visualização de dados</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot/">Visualização de dados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/">5 - Funções para manipulação de dados</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/">Manipulação e limpeza de dados</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nesta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#novos-verbos-e-dados-de-survey">Novos verbos e dados de survey</a></li>
+    <li><a href="#fake-data">Fake data</a></li>
+    <li><a href="#agrupando-com-_filter_-e-_pull_">Agrupando com <em>filter</em> e <em>pull</em></a></li>
+    <li><a href="#_summarise_"><em>summarise</em></a></li>
+    <li><a href="#agrupando-com-_group_by_-by-e-_summarise_">Agrupando com <em>group_by</em> by e <em>summarise</em></a></li>
+    <li><a href="#funções-de-sumário-estatístico">Funções de sumário estatístico</a></li>
+    <li><a href="#transformando-um-agrupamento-em-um-crosstab-e-exportando">Transformando um agrupamento em um &ldquo;crosstab&rdquo; e exportando</a>
+      <ul>
+        <li><a href="#spread-e-gather-caindo-em-desuso">Spread e Gather caindo em desuso</a></li>
+      </ul>
+    </li>
+    <li><a href="#mutate-com-group-by">Mutate com Group By</a></li>
+    <li><a href="#mais-verbos-do-_dplyr_-_arrange_-e-_slice_">Mais verbos do <em>dplyr</em>: <em>arrange</em> e <em>slice</em></a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Manipulação e limpeza de dados</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            <h1 id="introdução-ao-pacote-dplyr">Introdução ao pacote dplyr</h1>
+<p>Começando pelo meio: data frames
+Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.</p>
+<p>Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia.</p>
+<p>As principais características de um data frame são: (1) cada coluna representa uma variável (ou característica) de um conjunto de observações; (2) cada linha representa uma observação e contém os valores de cada variável para tal observação. Vejamos um exemplo:</p>
+<p>Candidato	Partido	Votos
+Beatriz	PMDB	350
+Danilo	SOL	1598
+Pedro	PTB	784
+Davi	PSD	580
+Mateus	PV	2
+Note que em uma linha os elementos são de tipos de diferentes: na primeira coluna há uma nome (texto), na segunda uma sigla de partido (texto, mas limitado a um conjunto de siglas) e na terceira votos (número inteiros).</p>
+<p>Por outro lado, em cada coluna há somente elementos de um tipo. Por exemplo, há apenas números inteiros na coluna votos. Colunas são variáveis e por isso aceitam registros de um único tipo. Se você já fez um curso de estatísticas básica ou de métodos quantitativos deve se lembrar que as variáveis são classificadas da seguinte maneira:</p>
+<p>1- Discretas</p>
+<p>Nominais, que são categorias (normalmente texto) não ordenadas</p>
+<p>Ordinais, que são categorias (normalmente texto) ordenadas</p>
+<p>Inteiros, ou seja, o conjunto dos números inteiros</p>
+<p>2- Contínuas, números que podem assumir valores não inteiros</p>
+<p>Se destacamos uma coluna do nosso data frame, temos um vetor. Por exemplo, a variável &ldquo;Votos&rdquo; pode ser presentado da seguinte maneira: {350, 1598, 784, 580, 2}. Um data frame é um conjunto de variáveis (vetores!) dispostos na vertical e combinados um ao lado do outro.</p>
+<p>Data frame e vetores são objetos na linguagem R.</p>
+<p>Vamos ver como o R representa vetores e data frames na tela. Antes disso, é preciso &ldquo;abrir&rdquo; um data frame.</p>
+<p>Cadastro de Escolas
+Neste tutorial vamos trabalhar com as bases de dados da educação municipal da cidade de São Paulo. Em particular, vamos começar trabalhando com o cadastro de escolas da Prefeitura de São Paulo.</p>
+<p>A página na qual você encontrará o cadastro de escolas é essa aqui aqui. Comece baixando o dicionário de dados e os dados mais atuais.</p>
+<p>Abrindo dados em R com botão (aaaaaaargh!)
+Se você decidiu aprender a programar em R, provavelmente quer substituir a análise de dados com cliques no mouse que fazemos no editor de planilhas pela construção de scripts que documentam o passo a passo da análise. Daqui em diante estaremos num mundo sem botões. Exceto um, por enquanto, aí no canto direito superior chamado &ldquo;Import Dataset&rdquo;.</p>
+<p>Clique no botão (aaaaaaargh!). Veja que temos a opção de importar arquivos de texto com duas bibliotecas diferentes, base e readr (que é o pacote de abertura de dados do tidyverse) e dados em alguns outros formatos, como MS Excel e outros softwares de análise estatística.</p>
+<p>Use a primeira opção, &ldquo;From Text (base)&rdquo; para carregar os dados do cadastro de escola.</p>
+<p>Abrindo dados em R (com script)
+(Lembre-se de carregar o pacote tidyverse antes de prosseguir)</p>
+<p>library(tidyverse)
+Use o recurso &ldquo;Import Dataset&rdquo; enquanto não se sentir confortável com a linguagem. Mas, aos poucos, vá abandonando. Abrir dados em R é muito simples.</p>
+<p>Repetindo o procedimento, para abrir o cadastro de escola basta fazer:</p>
+<p>escolas &lt;- read_csv2(&ldquo;<a href="http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22">http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&quot;</a>)
+Em R, as funções &ldquo;read.&rdquo; são as funções de abertura de dados do base e as funções &ldquo;read_&rdquo; são as análogas do pacote readr, parte do tidyverse. Há funções &ldquo;read&rdquo; para abrir todos os tipos de dados, de arquivos de texto a páginas em HTML.</p>
+<p>No nosso caso, utilizamos a função read_csv2 para abrir um arquivo de texto cujos valores das colunas são separados por vírgula. Infelizmente, não há tempo para aprender sobre as variedades das funções de abertura de dados, mas você pode aprender um pouco mais aqui ou aqui.</p>
+<p>Note que utilizamos o URL dos dados diretamente. Não precisamos fazer download para uma pasta local para, depois, abrir os dados.</p>
+<p>Um jeito mais confortável, na mina opinião, de fazer a abertura de dados com um URL é guardar o URL em um objeto de texto e, depois, utilizar esse objeto como input da função:</p>
+<p>url_escolas &lt;- &ldquo;<a href="http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22">http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&quot;</a>
+escolas &lt;- read_csv2(url_escolas)
+Note que, pela segunda vez, utilizamos o símbolo &ldquo;&lt;-&rdquo;. Ele é um símbolo de atribuição, e é um das marcas mais importantes da linguagem. Atribuir, significa &ldquo;guardar na memória com um nome&rdquo;. O nome, é o que vai do lado esquerdo. A parte do lado direito da equação de atribuição é o objeto a ser guardado.</p>
+<p>Você pode usar &ldquo;=&rdquo; no lugar de &ldquo;&lt;-&rdquo;. Mas, avisamos desde já, há casos em que há ambiguidade e os símbolos não funcionam como esperado.</p>
+<p>Vamos avançar.</p>
+<p>Explorando sem olhar para a matriz de dados
+No editor de planilhas estamos acostumados a ver os dados, célula a célula. Mas será que é realmente útil ficar olhando para os dados? Você perceberá com o tempo que olhar os dados é desnecessário e até contraproducente.</p>
+<p>Você pode ver os dados clicando (aaaaaaargh!) no nome do objeto que está no &ldquo;Environment&rdquo; ou utilizando a função View (cuidado, o &ldquo;V&rdquo; é maiúsculo, algo raro em nomes de funções de R).</p>
+<p>View(escolas)
+Agora que carregamos o cadastro de escolas na memória, vamos conhecer um pouco sobre estes dados sem olhar para a matriz de dados.</p>
+<p>Podemos rapidamente olhar para uma &ldquo;amostra&rdquo; dos dados com a função head, que nos apresenta as 6 primeiras linhas do conjunto de dados.</p>
+<p>head(escolas)
+Com apenas as 6 primeiras linhas do data frame temos noção de todo o conjunto. Sabemos rapidamente que existem informações sobre o nome das escolas, seus códigos de cadastro, de que tipo de escola se trata, à qual diretoria regional de ensino (DRE) pertence, etc.</p>
+<p>Quantas escolas há? Há tantas escolas quantas linhas nos dados. Com nrow descobrimos quantas são.</p>
+<p>nrow(escolas)
+Quantas informações temos disponíveis para cada escola? Ou seja, quantas variáveis há no conjunto de dados?</p>
+<p>ncol(escolas)
+Qual é o nome das variáveis?</p>
+<p>names(escolas)
+Pausa para um comentário
+Podemos fazer comentários no meio do código. Basta usar # e tudo que seguir até o final da linha não será interpertado pelo R como código. Por exemplo:</p>
+<h1 id="imprime-o-nome-das-variaveis-do-data-frame-cadastro">Imprime o nome das variaveis do data frame cadastro</h1>
+<p>names(escolas)</p>
+<p>names(escolas) # Repetindo o comando acima com comentario em outro lugar
+Comentários são extremamente úteis para documentar seu código. Documentar é parte de programar e você deve pensar nas pessoas com as quais vai compartilhar o código e no fato de que com certeza não se lembrará do que fez em pouco tempo (garanto, você vai esquecer).</p>
+<p>Argumentos ou parâmetros das funções
+Note que em todas as funções que utilizamos até agora, escolas está dentro do parênteses que segue o nome da função. Essa sintaxe é característica das funções de R. O que vai entre parêntesis são os argumentos ou parâmetros da função, ou seja, os &ldquo;inputs&rdquo; que serão transformados.</p>
+<p>Uma função pode receber mais de um argumento. Pode também haver argumentos não obrigatórios, ou seja, para os quais não é necessário informar nada se você não quiser alterar os valores pré-definidos. Por exemplo, a função head contém o argumento n, que se refere ao número de linhas a serem impressas na tela, pré-estabelecido em 6 (você pode conhecer os argumentos da função na documentação do R usando ? antes do nome da função). Para alterar o parâmetro n para 10, por exemplo, basta fazer:</p>
+<p>head(x = escolas, n = 10)
+x é o argumento que já havíamos utilizado anteriormente e indica em que objeto a função head será aplicada. Dica: você pode omitir tanto &ldquo;x =&rdquo; quanto &ldquo;n =&rdquo; se você já conhecer a ordem de cada argumento no uso da função.</p>
+<p>Mais funções para explorar os dados
+Todos os objetos em R tem uma estrutura. Você pode investigar essa estrutura utilizando a função str. No caso de data frames, o output é legível (para outras classes de objeto isso não é verdade necessariamente):</p>
+<p>str(escolas)
+Há informações sobre o nome das variáveis, dispostas na vertical, tipo de dados (texto &ndash; char &ndash; ou números &ndash; num ou int) e uma amostra das primeiras observações.</p>
+<p>Uma função semelhante, e com resultado um pouco mais &ldquo;limpo&rdquo;, é glimpse, parte do dplyr:</p>
+<p>glimpse(escolas)
+Vamos agora renomear os dados.</p>
+<p>Renomeando variáveis
+Quando trabalhamos com dados que não coletamos, em geral, não vamos gostar dos nomes das variáveis que quem produziu os dados escolheu. Mais ainda, com certa frequência, obtemos dados cujos nomes das colunas são compostos ou contêm acentuação, cecedilha e demais caracteres especiais. Dá um tremendo trabalho usar nomes com tais característica, apesar de possível. O ideal é termos nomes sem espaço (você pode usar ponto ou subscrito para separar palavras em um nome composto) e que contenham preferencialmente letras minísculas sem acento e números.</p>
+<p>Vamos começar renomeando algumas variáveis no nosso banco de dados, cujos nomes vemos com o comando abaixo:</p>
+<p>names(escolas)
+O primeiro argumento da função rename deve ser a base de dados cujos nomes das variáveis serão renomeados. Depois da primeira vírgula, inserimos todos as modificações de nomes, novamente separadas por vírgulas, e da seguinte maneira. Exemplo: nome_novo = nome_velho. Exemplo: nome_novo = Nome_Velho. Veja o exemplo, em que damos novos nomes às variáveis &ldquo;tipoesc&rdquo;, &ldquo;latitute&rdquo; e &ldquo;longitude&rdquo;:</p>
+<p>escolas &lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Simples, não?</p>
+<p>Uma gramática, duas formas
+No tidyverse, existe uma outra sintaxe para executar a mesma tarefa de (re)nomeação. Vamos olhar para ela (lembre-se de carregar novamente os dados, pois os nomes velhos já não existem mais e não existe Ctrl+Z em R):</p>
+<p>escolas &lt;- read_csv2(url_escolas)</p>
+<p>escolas &lt;- escolas %&gt;%
+rename(tipo = tipoesc,
+lat = latitude,
+lon = longitude)
+Usando o operador %&gt;%, denominado pipe, retiramos de dentro da função rename o banco de dados cujas variáveis serão renomeadas. As quebras de linha depois do %&gt;% e dentro da função rename são opcionais. Porém, o pardão é &lsquo;verticalizar o código&rsquo; e colcar os &lsquo;verbos&rsquo; à esquerda, o que torna sua leitura mais confortável.</p>
+<p>Compare com o código que havíamos executado anteriormente:</p>
+<p>escolas &lt;- read_csv2(url_escolas)</p>
+<p>escolas &lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Essa outra sintaxe tem uma vantagem grande sobre a anterior: ela permite emendar uma operação de transformação do banco de dados na outra. Veremos adiante como fazer isso. Por enquanto, tenha em mente que o resultado é o mesmo para qualquer uma das duas formas.</p>
+<p>Vamos trabalhar com várias variáveis (sic) de uma única vez. Reabra o banco de dados:</p>
+<p>escolas &lt;- read_csv2(url_escolas)
+Renomeie as variáveis &ldquo;dre&rdquo;, &ldquo;codesc&rdquo;, &ldquo;tipoesc&rdquo;, &ldquo;nomesc&rdquo;, &ldquo;diretoria&rdquo;, &ldquo;latitude&rdquo;, &ldquo;longitude&rdquo; e &ldquo;codinep&rdquo;.</p>
+<p>escolas &lt;- escolas %&gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)
+Selecionando colunas
+Algumas colunas podem ser dispensáveis em nosso banco de dados a depender da análise. Por exemplo, pode ser que nos interessem apenas as variáveis que já renomeamos. Para selecionar um conjunto de variáveis, utilizaremos o segundo verbo do dplyr que aprenderemos: select</p>
+<p>escolas &lt;- select(escolas, dre_abreviatura, codigo, tipo, nome, dre, lat, lon, codigo_inep)
+ou usando o operador %&gt;%, chamado pipe,</p>
+<p>escolas &lt;- escolas %&gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Operador %&gt;% para &ldquo;emendar&rdquo; tarefas
+O que o operador pipe faz é simplesmente colocar o primeiro argumento da função (no caso acima, o data frame), fora e antes da própria função. Ele permite lermos o código, informalmente, da seguinte maneira: &ldquo;pegue o data frame x e aplique a ele esta função&rdquo;. Veremos abaixo que podemos fazer uma cadeia de operações (&ldquo;pipeline&rdquo;), que pode ser lida informalmente como: &ldquo;pegue o data frame x e aplique a ele esta função, e depois essa, e depois essa outra, etc&rdquo;.</p>
+<p>A grande vantagem de trabalharmos com o operador %&gt;% é não precisar repetir o nome do data frame diversas vezes ao aplicarmos a ele um conjunto de operações.</p>
+<p>Vejamos agora como usamos o operador %&gt;% para &ldquo;emendar&rdquo; tarefas, começando da abertura desde dados. Note que o primeiro input é o url da base de dados e, que, uma vez carregados, vai sendo transformado a cada novo verbo.</p>
+<p>escolas &lt;- read_csv2(url_escolas) %&gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Em uma única sequência de operações, abrimos os dados, alteramos os nomes das variáveis e selecionamos as que permaneceriam no banco de dados. Esta forma de programa, tenha certeza, é bastante mais econômica e mais fácil de ler, para que possamos identificar erros mais facilmente.</p>
+<p>Transformando variáveis
+Usaremos a função mutate para operar transformações nas variáveis existentes e criar variáveis novas. Há inúmeras transformações possíveis e elas lembram bastante as funções de outros softwares, como MS Excel. Vamos ver algumas das mais importantes.</p>
+<p>No nosso caso, o formato dos valores de latitude e longitude estão em formato diferente do convenional. Latitudes são representadas por números entre -90 e 90, com 8 casas decimais, e Longitudes por números entre -180 e 180, também com 8 casas decimais. Em nosso par de variáveis, latitude está sem separador de decimal está omitido. Faremos a correção divindo latitude por 1 milhão.</p>
+<p>No caso de longitude, a situação é ainda pior. Há vários separadores e a variável foi lida como texto. Teremos que limpar todos os separadores, transformar a variável em número e, ao final, dividir por 1 milhão para colocar o separador no lugar certo.</p>
+<p>escolas &lt;- escolas %&gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &ldquo;\.&rdquo;, &ldquo;&quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) 
+Como utilizamos os nomes das próprias variáveis à esquerda da operação de transformação, produziremos uma substituição e não haverá novas colunas na base de dados.</p>
+<p>Voltaremos ao verbo mutate no próximo tutorial e no exemplos abaixo.</p>
+<p>Filtrando linhas
+Por vezes, queremos trabalhar apenas com um conjunto de linhas do nosso banco de dados. Por exemplo, se quisermos selecionar apenas escolas municipais de educação infantil, utilizamos o verbo &lsquo;filter&rsquo; com a condição desejada. Note que estamos criando um novo data frame (ou seja, um novo objeto) que contém a seleção de linhas produzida:</p>
+<p>emeis &lt;- escolas %&gt;% 
+filter(tipo == &ldquo;EMEI&rdquo;)
+Além da igualdade, poderíamos usar outros símbolos: maior (&gt;). maior ou igual (&gt;=), menor (&lt;), menor ou igual (&lt;=) e diferente (!=) para selecionar casos. Para casos de NA, podemos usar a função is.na(), pois a igualdade &lsquo;== NA&rsquo; é inválida em R.</p>
+<p>Vamos supor agora que todos centros de educação infantil (creche) da rede direta, indireta e conveniada. Como combinar condições?</p>
+<p>creches &lt;- escolas %&gt;% 
+filter(tipo == &ldquo;CEI DIRET&rdquo; | tipo == &ldquo;CEI INDIR&rdquo; | tipo == &ldquo;CR.P.CONV&rdquo;)
+Note que, para dizer que para combinarmos as condições de seleção de linha, utilizamos uma barra vertical. A barra é o símbolo &ldquo;ou&rdquo;, e indica que todas as observações que atenderem a uma ou outra condição serão incluídas.</p>
+<p>Vamos supor que queremos estabelecer agora condições para a seleção de linhas a partir de duas variáveis. Por exemplo, queremos incluir as mesmas escolas já escolhidas e que também sejam da Diretoria Regional do Ipiranga. O símbolo da conjunção &ldquo;e&rdquo; é &ldquo;&amp;&rdquo;. Veja como utilizá-lo:</p>
+<p>creches &lt;- escolas %&gt;% 
+filter(tipo == &ldquo;CEI DIRET&rdquo; | 
+tipo == &ldquo;CEI INDIR&rdquo; | 
+tipo == &ldquo;CR.P.CONV&rdquo;)</p>
+<p>Ao usar duas variáveis diferentes para filter e a conjunção &ldquo;e&rdquo;, podemos escrever o comando separando as condições por vírgula e dispensar o operador &ldquo;&amp;&quot;:</p>
+<p>creches_ipiranga &lt;- escolas %&gt;% 
+filter((tipo == &ldquo;CEI DIRET&rdquo; | 
+tipo == &ldquo;CEI INDIR&rdquo; | 
+tipo == &ldquo;CR.P.CONV&rdquo;),
+dre == &ldquo;DIRETORIA REGIONAL DE EDUCACAO IPIRANGA&rdquo;)
+Você pode combinar quantas condições precisar. Se houver ambiguidade quanto à ordem das condições, use parênteses, como fizemos acima.</p>
+<p>Vamos uma aplicação interessante dos dados com os quais trabalhamos.</p>
+<p>Produzindo mapas no R
+Criamos acima um data frame que contém apenas centros de educação infantil com a informação de latitude e longitude já corrigida. Conseguimos &ldquo;reduzir&rdquo; e alterar os dados usando quatro &ldquo;verbos&rdquo; (funções) fundamentais de manipulação de dados: rename, select, mutate e filter.</p>
+<p>Precisaremos do pacote ggmap e osmdata para &ldquo;importar&rdquo; mapas de rua de serviços da web (Google e Open Street Maps, por exemplo) para, depois, fazer a combinação dos mapas com os pontos (escolas, a partir da latitude e longitude).</p>
+<h1 id="installpackagesosmdata">install.packages(&lsquo;osmdata&rsquo;)</h1>
+<h1 id="installpackagesggmap">install.packages(&lsquo;ggmap&rsquo;)</h1>
+<p>library(ggmap)
+library(osmdata)
+Sem entrar em detalhes, vamos utilizar as funções get_map e getbb para obter um mapa sobre o qual inseriremos nossos pontos.</p>
+<p>map_sp &lt;- get_map(getbb(&ldquo;Sao Paulo&rdquo;), 
+maptype = &ldquo;toner-background&rdquo;,
+zoom = 13)
+Podemos plotar o mapa que baixamos com a função plot:</p>
+<p>plot(map_sp)
+Mas ainda não é isso que queremos. Precisamos sobrepor ao mapa que baixamos os pontos correspondentes a cada uma dos CEIS. Veja como:</p>
+<p>ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)
+Legal, não? Não muito bonito, mas estamos no caminho.</p>
+<p>O código acima tem uma estrutura bastante diferente do que havíamos visto. Ele é parte de outra &ldquo;gramática&rdquo; do R, a &ldquo;grammar o graphics&rdquo; do pacote ggplot2. Veremos um pouco sobre ela em outro tutorial, mas vamos tentar destrinchar o código do mapa acima desde já.</p>
+<p>Começamos plotando o mapa de São Paulo obtido nas APIs do Open Street Maps e Google com a função ggmap. Criamos, assim, a primeira camada do mapa e &ldquo;organizará&rdquo; o sistema de coordenadas. Com geom_point, adicionaremos pontos ao mapa. Os pontos vem do data frame &ldquo;creches&rdquo; &ndash; por isso &ldquo;data = creches&rdquo; &ndash; e a informação utilizada, &ldquo;lat&rdquo; e &ldquo;lon&rdquo;, faz parte da &ldquo;aesthetics&rdquo; do mapa &ndash; por isso dentro do parênteses &ldquo;aes&rdquo;.</p>
+<p>Se você quiser aprender um pouco mais sobre mapas no R (e fazer mapas mais bonitos) aqui.</p>
+<p>Fim
+Espero que com este tutorial você tenha se familiarizado com a linguagem R e compreendido como utilizá-la trabalhar com os dados abertos da educação municipal. Organizando o que fizemos em um único &ldquo;bloco&rdquo; de cógido, vemos que é preciso pouco código para fazer algo relevante:</p>
+<p>library(tidyverse)
+library(ggmap)
+library(osmdata)</p>
+<p>creches &lt;- read_csv2(url_escolas) %&gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep) %&gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &ldquo;\.&rdquo;, &ldquo;&quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) %&gt;% 
+filter(tipo == &ldquo;CEI DIRET&rdquo; | 
+tipo == &ldquo;CEI INDIR&rdquo; | 
+tipo == &ldquo;CR.P.CONV&rdquo;)</p>
+<p>map_sp &lt;- get_map(getbb(&ldquo;Sao Paulo&rdquo;), 
+maptype = &ldquo;toner-background&rdquo;,
+zoom = 13)</p>
+<p>ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)</p>
+<h1 id="group-by-summarise-arrange-e-slice">Group by, Summarise, Arrange e Slice</h1>
+<h2 id="novos-verbos-e-dados-de-survey">Novos verbos e dados de survey</h2>
+<p>No tutorial passado vimos 4 dos principais verbos do <em>dplyr</em>: <em>rename</em>, <em>select</em>, <em>mutate</em> (para operações de colunas) e <em>filter</em> (para seleção de casos). Não produzimos, entretanto, uma das operações mais importantes na manipulação de <em>data_frames</em>: o agrupamento de casos a partir de uma ou mais variáveis. O agrupamento de casos em uma base de dados convencional é bastante simples, como veremos a seguir.</p>
+<h2 id="fake-data">Fake data</h2>
+<p>Para esta atividade, vamos trabalhar com um banco de dados falso criado para a atividade.</p>
+<p>Abra o banco de dados usando <em>read_delim</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">library(tidyverse)
+url_fake_data &lt;- &quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/fake_data.csv&quot;
+fake &lt;- read_delim(url_fake_data, delim = &quot;;&quot;, col_names = T)
+</code></pre><p>Fakeland é uma democracia muito estável que realiza eleições presidenciais a cada 4 anos. Vamos trabalhar com o conjunto de dados falso de cidadãos individuais de Fakeland que contém informações sobre suas características básicas e opiniões / posições políticas (falsas). A descrição das variáveis está abaixo:</p>
+<ul>
+<li><em>age</em>: idade</li>
+<li><em>sex</em>: sexo</li>
+<li><em>educ</em>: nível educacional</li>
+<li><em>income</em>: renda mensal medida em dinheiro falso (FM \ $)</li>
+<li><em>savings</em>: Dinheiro falso total (FM \ $) na conta de poupança</li>
+<li><em>marriage</em>: estado civil (sim = casado)</li>
+<li><em>kids</em>: número de filhos</li>
+<li><em>party</em>: afiliação partidária</li>
+<li><em>turnout</em>: intenção de votar nas próximas eleições</li>
+<li><em>vote_history</em>: número de eleições presidenciais votou desde as eleições de 2002</li>
+<li><em>economy</em>: opinião sobre o desempenho da economia nacional</li>
+<li><em>incumbent</em>: opinião sobre o desempenho do presidente</li>
+<li><em>candidate</em>: candidato preferido</li>
+</ul>
+<h2 id="agrupando-com-_filter_-e-_pull_">Agrupando com <em>filter</em> e <em>pull</em></h2>
+<p>Vamos supor que nos interessa comparar a renda entre grupos de sexo. Poderíamos, rapidamente selecionar as linhas de um dos grupos de sexo com o verbo <em>filter</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Male&quot;) 
+</code></pre><pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Female&quot;) 
+</code></pre><p>Com o comando <em>pull</em>, podemos &lsquo;retirar&rsquo; de um data frame uma coluna e tratá-la como um vetor destacado. <em>pull</em> é mais um (de vários) verbos do <em>dplyr</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Male&quot;) %&gt;%
+  pull(income)
+</code></pre><p>E, se adicionarmos à &lsquo;pipeline&rsquo; um comando simples de estatística descritiva &ndash; média, por exemplo &ndash; calculamos uma estatística para o grupo para o qual selecionamos com <em>filter</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Male&quot;) %&gt;%
+  pull(income) %&gt;%
+  mean()
+</code></pre><p>Note que não utilizamos o símbolo de atribuição &lsquo;&lt;-&rsquo; e, portanto, não armazenamos o resultado em nenhum objeto.</p>
+<p>Note também que podemos adicionar à pipeline qualquer função que não seja &lsquo;verbo&rsquo; do <em>dplyr</em>, como comando <em>mean</em>.</p>
+<p>Essa estratégia funciona para calcular uma medida qualquer para um grupo. Mas, em geral, interessa &lsquo;sumarizar&rsquo; um variável &ndash; como renda &ndash; por uma variável de grupo &ndash; como sexo &ndash; sem destacar cada uma das categorias. Vamos ver como fazer isso.</p>
+<h2 id="_summarise_"><em>summarise</em></h2>
+<p>Uma maneira altenartiva ao que acabamos de realizar é utilizar o verbo <em>summarise</em>. Com ele, não precisamos extrair a variável do data frame para gerar um sumário estatístico. Veja como é simples:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Male&quot;) %&gt;%
+  summarise(media_homens = mean(income))
+</code></pre><pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  filter(sex == &quot;Female&quot;) %&gt;%
+  summarise(media_mulheres = mean(income))
+</code></pre><h2 id="agrupando-com-_group_by_-by-e-_summarise_">Agrupando com <em>group_by</em> by e <em>summarise</em></h2>
+<p>Para agrupar os dados por uma ou mais variáveis na &lsquo;gramática&rsquo; do <em>dplyr</em> utilizamos o verbo <em>group_by</em> em combinação com <em>summarise</em>. Veja um exemplo antes de detalharmos seu uso:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(media_renda = mean(income))
+</code></pre><p>Veja que o resultado é uma tabela de duas linhas que contém a média de renda para grupo de sexo. O primeiro passo é justamente indicar qual é a variável &ndash; discreta &ndash; pela qual queremos agrupar os dados. Fazemos isso com <em>group_by</em></p>
+<p>Na sequência, utilizamos <em>summarise</em> para criar uma lista das operações que faremos em outras variáveis ao agrupar os dados. Por exemplo, estamos calculando a média da renda, que aparecerá com o nome &lsquo;media_renda&rsquo;, para cada um dos grupos de sexo.</p>
+<p>Execute novamente o código acima e observe atentamente sua estrutura antes de avançar.</p>
+<p>O verbo <em>summarise</em> permite mais de uma operação por agrupamento. Por exemplo, podemos calcular o desvio padrao da renda, a media da idade (&lsquo;age&rsquo;) e a soma do número de eleições nas quais votou (&lsquo;vote_history&rsquo;):</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(media_renda = mean(income),
+            stdev_renda = sd(income),
+            media_idade = mean(age),
+            soma_eleicoes = sum(vote_history))
+</code></pre><p>Simples, não? O comando <em>summarise</em> é bastante flexível e aceita diversas operações. Veremos as mais comuns adiante.</p>
+<p>E se quisermos, agora, utilizar mais de uma variável para agrupar os dados? Por exemplo, e se quisermos agrupar por sexo e candidato de preferência, como fazemos?</p>
+<p>Basta adicionar outra variável dentro do comando <em>group_by</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex, candidate) %&gt;%
+  summarise(media_renda = mean(income))
+</code></pre><p>Observe bem a estrutura dos resultados que obtivemos. Em primeiro lugar, o resultado é sempre um data frame. Sempre que estivermos preparando os dados para gerar tabelas ou com gráficos, como veremos no tutorial seguinte, produziremos um data frame para servir de &lsquo;input&rsquo; para o gráfico ou tabela.</p>
+<p>Em segundo, cada variável utilizada para agrupamento aparece como uma coluna diferente no novo data frame. Os dados estão &lsquo;colapsados&rsquo; ou &lsquo;achatados&rsquo; em um número de linhas que corresponde ao total de combinações de categorias das variáveis de agrupamento (por exemplo, &ldquo;Female e Rilari&rdquo;, &ldquo;Female e Trampi&rdquo;, etc).</p>
+<p>Se pararmos para pensar, o data frame resultante do último comando tem exatamente o número de células de uma tabela de duas entradas (&lsquo;crosstab&rsquo;), mas as informações das margens da tabela estão como variáveis. Veremos como modificar isso adiante.</p>
+<p>Finalmente, cada nova variável gerada com <em>summarise</em> em nosso data frame &lsquo;achatado&rsquo; recebe uma coluna. Para &lsquo;sumarizar&rsquo; uma variável &ndash; tirar média, somatória, contar, etc &ndash; precisamos sempre de uma função de sumário.</p>
+<h2 id="funções-de-sumário-estatístico">Funções de sumário estatístico</h2>
+<p>Vamos ver exemplos das funções de sumário estatístico mais utilizadas dentro do verbo <em>summarise</em>.</p>
+<p>1- Média</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(media = mean(income))
+</code></pre><p>2- Desvio padrão</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(desvpad = sd(income))
+</code></pre><p>3- Mediana</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(mediana = median(income))
+</code></pre><p>4- Quantis (no exemplo, quantis 10%, 25%, 75%, 90%)</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(quantil_10 = quantile(income, probs = 0.1),
+            quantil_25 = quantile(income, probs = 0.25),
+            quantil_75 = quantile(income, probs = 0.75),
+            quantil_90 = quantile(income, probs = 0.9))
+</code></pre><p>5- Mínimo e máximo</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(minimo = min(income),
+            maximo = max(income))
+</code></pre><p>6- Contagem e soma</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(contagem = n(),
+            soma = sum(age))
+</code></pre><p>Importante: quando houver algum &ldquo;NA&rdquo; (missing value) em uma variável numérica, é preciso utilizar o argumento &ldquo;na.rm = TRUE&rdquo; dentro da função de sumário. Veja como ficaria o código caso houvesse algum &ldquo;NA&rdquo;:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex) %&gt;%
+  summarise(media = mean(income, na.rm = TRUE))
+</code></pre><p>A sessão Useful <a href="https://r4ds.had.co.nz/transform.html#summarise-funs">Summary Functions</a> do livro R for Data Science traz uma relação mais completa de funçoes que podem ser usandas com summarise. O <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf">“cheatsheet” da RStudio</a> oferece uma lista para uso rápido.</p>
+<h2 id="transformando-um-agrupamento-em-um-crosstab-e-exportando">Transformando um agrupamento em um &ldquo;crosstab&rdquo; e exportando</h2>
+<p>Vamos retomar o exemplo do agrupamento por duas variáveis, sexo e candidato de preferência:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex, candidate) %&gt;%
+  summarise(media_renda = mean(income))
+</code></pre><p>Esse formato não costuma ser o usual em apresentação de dados. O mais comum é termos a informação que consta em nossas duas primeiras colunas como margens em uma tabela de duas entradas.</p>
+<p>Na linguagem de manipulação de dados, o resultado acima está no formato &ldquo;long&rdquo; e todas as variáveis são representadas como colunas. Uma tabela de 2 entradas corresponde ao formato &ldquo;wide&rdquo;.</p>
+<p>Há dois verbos no <em>dplyr</em> que transformam &ldquo;long&rdquo; em &ldquo;wide&rdquo; e vice-versa: <em>spread</em> e <em>gather</em>. Como <em>spread</em>, tranformamos o nosso resultado acima na tabela desejada:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex, candidate) %&gt;%
+  summarise(media_renda = mean(income)) %&gt;%
+  spread(sex, media_renda)
+</code></pre><p><em>spread</em> precisa de 2 argumentos: a &ldquo;key&rdquo;, que a variável que irá para a margem superior da tabela, e &ldquo;value&rdquo;, que é a variável que ficará em seu conteúdo.</p>
+<p>É fácil, inclusive, exportá-la para um editor de planilhas com a função <em>write_csv</em> (do pacote <em>readr</em>) ao final do pipeline:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex, candidate) %&gt;%
+  summarise(media_renda = mean(income)) %&gt;%
+  spread(sex, media_renda) %&gt;%
+  write_csv(&quot;tabela_candidato_sexo_renda.csv&quot;)
+</code></pre><p>Vá à sua pasta de trabalho e verifique que sua tabela está lá.</p>
+<p>Veja que, como introduzimos um comando de exportação ao final do pipelina, não geramos nenhum objeto. Não há símbolo de atribuição em nosso código. Esse é um dos objetivo do uso do pipe (%&gt;%): reduzir o número de objetos intermediários gerados.</p>
+<h3 id="spread-e-gather-caindo-em-desuso">Spread e Gather caindo em desuso</h3>
+<p>Há notícias de que os verbos <em>spread</em> e <em>gather</em> cairão em desuso. Seus substituos serão <em>pivot_wider</em> e <em>pivot_longer</em>. As 4 funções são parte do pacote <em>tidyr</em>, componente do <em>tidyverse</em>. O uso das novas funções é bem similar ao das antigas, e veja como fica a substituição de <em>spread</em> por <em>pivot_wider</em> no código que produzimos. É possível que sua instalação do <em>tidyverse</em> não contenha as novas funções e que o código abaixo não funcione.</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;%
+  group_by(sex, candidate) %&gt;%
+  summarise(media_renda = mean(income)) %&gt;%
+  pivot_wider(names_from = sex,
+              values_from = media_renda)
+</code></pre><h2 id="mutate-com-group-by">Mutate com Group By</h2>
+<p>Vamos supor que queremos manter os dados no mesmo formato, ou seja, sem &lsquo;achatá-los&rsquo; por uma variável discreta, mas queremos uma nova coluna que represente a soma de uma variável por grupo &ndash; para calcular percentuais de renda dentro de cada grupo de sexo, por exemplo. Vamos observar o resultado do uso conjunto de <em>group_by</em> e <em>mutate</em>. Para podermos observar o resultado, vamos armazenar os novos dados em um objeto chamado &lsquo;fake2&rsquo; e utilizar o comando <em>View</em>. A última coluna de nossos dados agora é a soma da renda dentro de cada grupo.</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake2 &lt;- fake %&gt;% 
+  group_by(sex) %&gt;%
+  mutate(renda_grupo = mean(income))
+
+View(fake2)
+</code></pre><p>Quando utilizarmos <em>group_by</em> sem o <em>summarise</em>, é importante &ldquo;desagrupar&rdquo; os data frame, ou &ldquo;desligar o agrupamento&rdquo;. Caso contrário, o agrupamento continuará ativo e afetando todas as operações seguintes. Repetindo o código com o desagrupamento:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake2 &lt;- fake %&gt;% 
+  group_by(sex) %&gt;%
+  mutate(renda_grupo = mean(income)) %&gt;%
+  ungroup()
+</code></pre><h2 id="mais-verbos-do-_dplyr_-_arrange_-e-_slice_">Mais verbos do <em>dplyr</em>: <em>arrange</em> e <em>slice</em></h2>
+<p>Se quisermos ordenar, de forma crescente, nossos dados por idade, por exemplo, basta usar o comando <em>arrange</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  arrange(age)
+</code></pre><p>Em ordem decrescente teríamos:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  arrange(-age)
+</code></pre><p>Se quisermos &lsquo;desempatar&rsquo; o ordenamento por idade por uma segunda variável, basta adicioná-la ao <em>arrange</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  arrange(-age, vote_history)
+</code></pre><p>Quando trabalhamos com bases de dados de survey faz pouco sentido ordená-las. Entretanto, quando trabalhamos numa escala menor, com poucas linhas, ou com a produção de tabelas, como nos exemplos acima, convém ordenar a tabela (veja que, neste ponto, faz pouco sentido diferenciar tabela de data frame, pois se tornam sinônimos) por alguma variável de interesse.</p>
+<p>Por exemplo, podemos ordenar os grupos de candidato de preferência por média de renda:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  group_by(candidate) %&gt;% 
+  summarise(media_renda = mean(income)) %&gt;% 
+  arrange(media_renda)
+</code></pre><p>Fácil e útil.</p>
+<p>Finalmente, vamos supor que queremos extrair da base de dados apenas os 10 indivíduos de menor idade Como &ldquo;recortar&rdquo; linhas dos dados pela posição das linhas?</p>
+<p>Em primeiro lugar, vamos ordenar os dados por idade. A seguir, vamos aplicar o verbo <em>slice</em> para recortar as 10 primeiras linhas:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  arrange(age) %&gt;% 
+  slice(1:10)
+</code></pre><p>Se quisessemos recortar do 25, por exemplo, ao último, sem precisar especificar qual é o número da última posição, utilizamos <em>n()</em>:</p>
+<pre tabindex="0"><code class="language-{r}" data-lang="{r}">fake %&gt;% 
+  arrange(age) %&gt;% 
+  slice(25:n())
+</code></pre><p>Note que a aplicação de <em>slice</em> não afeta em nada as colunas.</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot/" rel="next">Visualização de dados</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/reprodutibility/" rel="prev">Documentos parametrizados</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 15, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2022 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/sites/cranky-mestorf-a03ae7/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/sites/cranky-mestorf-a03ae7/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/sites/cranky-mestorf-a03ae7/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+/* -----------div tips------------- */
+
+div.ideia, div.nota, div.exemplo, div.exercicio, div.simulacao {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  color: #00295a;
+  /* color: #1f5386; */
+/*  background-color: #00295a;*/
+  /* background-color: #bed3ec; */
+  background-color: #d2e0f2;
+  border: solid 5px #dfedff;
+  border-radius: 10px;
+}
+
+div.teste {
+  background-image: url("img/idea.png");
+}
+
+
+justa {
+  text-align: justify;
+}
+
+blackbox {
+  padding: 1em;
+  background: black;
+  color: #d10000;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-image: url("img/iconfinder_Symbol-Construction_49259.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 21px;
+}
+

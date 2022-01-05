@@ -1,0 +1,89 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  dados_pos:
+    parent: Projetos
+    weight: 12
+title: Projeto 1
+toc: true
+type: docs
+weight: 12
+---
+
+## Pré-requisitos
+
+Para desenvolver esta tarefa você precisará dos seguintes pacotes:
+- `rMarkdown`
+- `knitr`
+- `rpubs`
+- `prettydoc`
+- `xaringan`
+- `xaringarExtra`
+- `xaringanthemer`
+- `flexdashboard`
+- `kableExtra`
+
+Será necessário também que ao menos um representante do grupo crie uma conta na plataforma [RPubs](https://rpubs.com/)
+
+## Atividades para consolidação do Projeto 01:
+
+Esta atividade tem valor de 10 pontos e, apesar de estar relacionada ao projeto integrador, é avaliada de maneira separada. O prazo para entrega desta atividade é dia **09/02/2021**. 
+
+### Criar um documento de comunicação (relatório, apresentação ou outro de sua escolha) em `RMarkdown`. Faremos, nesta etapa, a entrega considerando o projeto integrador, que deve ser composta pela descrição do problema em investigação, hipóteses desenhadas pelo grupo, coleta preliminar de dados e plano de análise dos dados.
+
+#### 1. Criar arquivo `RMarkdown` (.Rmd)
+- Criar um novo arquivo rmarkdown `.Rmd` no `Rstudio`. 
+- O nome do arquivo deverá ser: grupo#-r-proj01.Rmd (exemplo: grupo1-r-proj01.Rmd)
+
+#### 2. Editar o cabeçalho YAML no topo do documento, incluindo:
+- Data
+- Título que represente o conteúdo do relatório
+- Autores do grupo
+
+Bônus: descubra em uma breve pesquisa na internet como colocar um código para que a data seja sempre aquela do sistema operacional do computador. 
+
+#### 3. Descreva o problema que será abordado pelo grupo no projeto integrador da disciplina. 
+
+Lembre-se que para definição do problema, o primeiro e mais crítico passo é delinear as questões que pretende abordar por meio da análise de dados e desenhar hipóteses referentes à caracterização do problema.
+
+#### 4. Colete dados preliminares e apresente aqui uma tabela contendo os dados coletadas e as respectivas fontes.
+
+Inclua colunas na tabela apresentando variáveis e tipos dos dados apresentados em cada variável. Nesse momento, não se preocupem em apresentar os dados ou quaisquer análises preliminares. 
+
+#### 5. Apresente um plano de análise de dados, contendo as estratégias metodológicas que o grupo pensa serem adequadas para os tipos de dados e para o objetivo do trabalho. 
+
+#### 6. Explique por que o seu projeto é relevante e como pode ser considerado como subsídio em processos decisórios organizacionais. 
+
+## Rubrica de avaliação
+
+Embora a presença nos encontros síncronos não seja explicitamente acompanhada, a participação neste curso conta para sua nota. A seguir, são apresentados os critérios considerados para a avaliação do projeto 1 que são úteis para nortear o desenvolvimento do trabalho. 
+
+### Relatório RMarkdown
+
+|Item|Proporção da nota
+|----|-----------------
+|Sintaxe do código |20%
+|HTML e Rmd apresentados|0,5 pontos
+|YAML contém título, autor e data|0,5 pontos
+|O arquivo foi nomeado conforme diretrizes|0,5 pontos
+|A gramática e a ortografia são excelentes - sem erros de ortografia|0,5 pontos
+
+|Item|Proporção da nota
+|----|-----------------
+|Dados|40%
+|Dados apresentados de maneira clara e relevante|2 pontos 	 
+|A estratégia de análise dos dados é clara e pertinente |2 pontos
+
+|Item|Proporção da nota
+|----|-----------------
+|Justificativa e contextualização|40%
+|Relevância|2 pontos
+|Descrição da contextualização do projeto em subsídio a processos decisórios|2 pontos
+
+### Aprendizagem independente (opcional)
+
+Há vários materiais, tutoriais e cursos sobre R gratuitos produzidos nos últimos anos. É realmente difícil escolher um para começar. Minha sugestão para quem estiver perdida ou perdido e quiser estudar um pouco mais é fazer o curso "[Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)" no site Datacamp.
+
+
+

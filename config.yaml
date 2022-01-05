@@ -31,7 +31,7 @@ outputs:
   section:
     - HTML
     - RSS
-  css: reveal_custom.css
+  css: "css/custom.css"
 blackfriday:
   angledQuotes: no
   extensions: backslashLineBreak

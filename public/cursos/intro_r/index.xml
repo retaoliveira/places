@@ -1,0 +1,2249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Profa. Renata Oliveira</title>
+    <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/</link>
+    <description>Recent content in R on Profa. Renata Oliveira</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>Renata Oliveira {year}</copyright>
+    <lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview - Tidyverse</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/tidyverse/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/tidyverse/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#instalação-e-uso-do-package-tidyverse&#34;&gt;Instalação e uso do Package &lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#estrutura-básica-do-tidyverse&#34;&gt;Estrutura básica do tidyverse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#importação-de-dados&#34;&gt;Importação de dados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wrangle&#34;&gt;Wrangle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#programa&#34;&gt;Programa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modelo&#34;&gt;Modelo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#alguns-links-interessantes-para-aprender-tidyverse&#34;&gt;Alguns links interessantes para aprender &lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;instalação-e-uso-do-package-tidyverse&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Instalação e uso do Package &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Instale todos os pacotes no tidyverse executando &lt;code&gt;install.packages(&#34;tidyverse&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Execute a &lt;code&gt;library(tidyverse)&lt;/code&gt; para carregar o núcleo do tidyverse e torná-lo disponível em sua sessão R atual.&lt;/p&gt;
+&lt;p&gt;Saiba mais sobre o pacote tidyverse em &lt;a href=&#34;https://tidyverse.tidyverse.org&#34;&gt;https://tidyverse.tidyverse.org&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estrutura-básica-do-tidyverse&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Estrutura básica do tidyverse&lt;/h3&gt;
+&lt;p&gt;A estrutura básica do tidyverse inclui os pacotes que você provavelmente usará nas análises de dados. Os seguintes pacotes estão incluídos:&lt;/p&gt;
+&lt;div id=&#34;ggplot2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;ggplot2&lt;/h4&gt;
+&lt;p&gt;O &lt;code&gt;ggplot2&lt;/code&gt; é um sistema de criação gráfica declarativa, baseado na Gramática de gráficos. Você fornece os dados, diz ao &lt;code&gt;ggplot2&lt;/code&gt; como mapear variáveis para a estética, quais elementos gráficos utilizar, e ele cuida dos detalhes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;dplyr&lt;/code&gt; fornece uma gramática de manipulação de dados, fornecendo um conjunto consistente de comandos que resolvem os desafios mais comuns de manipulação de dados.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tidyr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;tidyr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;tidyr&lt;/code&gt; fornece um conjunto de funções que ajudam você a obter organizar os dados. Dados organizados são dados com uma estrutura consistente: em resumo, cada variável vai em uma coluna, e cada coluna é uma variável.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;readr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;readr&lt;/code&gt; fornece uma maneira rápida e amigável de ler dados tabulares (como csv, tsv, e fwf). Ele é projetado para analisar de forma flexível muitos tipos de dados.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;purrr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;purrr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;purrr&lt;/code&gt; melhora o conjunto de ferramentas de programação funcional (FP) do &lt;code&gt;R&lt;/code&gt;, fornecendo um conjunto completo e consistente de ferramentas para trabalhar com funções e vetores. Uma vez que você domina os conceitos básicos, o &lt;code&gt;purrr&lt;/code&gt; permite que você substitua muitos &lt;code&gt;loops&lt;/code&gt; por códigos mais fáceis de escrever e mais expressivos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tibble&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;tibble&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;tibble&lt;/code&gt; é uma representação moderna do &lt;code&gt;dataframe&lt;/code&gt;. &lt;code&gt;Tibbles&lt;/code&gt; são dataframes preguiçosos e rudes: eles fazem menos e reclamam mais, forçando você a enfrentar os problemas mais cedo, normalmente levando a um código mais limpo e expressivo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;stringr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;stringr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;stringr&lt;/code&gt; fornece um conjunto coeso de funções projetadas para tornar o trabalho com texto o mais fácil possível. Ele é construído sobre o &lt;code&gt;stringi&lt;/code&gt;, que usa a biblioteca &lt;code&gt;ICU C&lt;/code&gt; para fornecer implementações rápidas e corretas de manipulações comuns de texto&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;forcats&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;forcats&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;forcats&lt;/code&gt; fornece um conjunto de ferramentas úteis que resolvem problemas comuns com fatores. R utiliza fatores para lidar com variáveis categóricas, variáveis que têm um conjunto fixo e conhecido de valores possíveis.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;tidyverse&lt;/code&gt; também inclui muitos outros pacotes com uso mais especializado. Eles não são carregados automaticamente com &lt;code&gt;biblioteca(tidyverse)&lt;/code&gt;, então você precisará carregar cada um deles com sua própria chamada à biblioteca.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;importação-de-dados&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Importação de dados&lt;/h3&gt;
+&lt;p&gt;Assim como o &lt;code&gt;readr&lt;/code&gt;, o pacote tidyverse instala uma série de outros pacotes para a leitura de dados:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/r-dbi/DBI&#34;&gt;&lt;code&gt;DBI&lt;/code&gt;&lt;/a&gt; para bancos de dados relacionais. Você precisará emparelhar &lt;code&gt;DBI&lt;/code&gt; com um backend específico de banco de dados como &lt;code&gt;RSQLite&lt;/code&gt; , &lt;code&gt;RMariaDB&lt;/code&gt;, &lt;code&gt;RPostgres&lt;/code&gt;, ou &lt;code&gt;odbc.&lt;/code&gt; Saiba mais em &lt;a href=&#34;https://db.rstudio.com&#34;&gt;https://db.rstudio.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://haven.tidyverse.org/&#34;&gt;&lt;code&gt;haven&lt;/code&gt;&lt;/a&gt; para dados SPSS, Stata, e SAS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/r-lib/httr&#34;&gt;&lt;code&gt;httr&lt;/code&gt;&lt;/a&gt; para web APIs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://readxl.tidyverse.org/&#34;&gt;&lt;code&gt;readxl&lt;/code&gt;&lt;/a&gt; para planilhas .xls e .xlsx.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tidyverse/rvest&#34;&gt;&lt;code&gt;rvest&lt;/code&gt;&lt;/a&gt; para raspagem da web.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jeroen/jsonlite#jsonlite&#34;&gt;&lt;code&gt;jsonlite&lt;/code&gt;&lt;/a&gt; para JSON. (mantido por Jeroen Ooms.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/r-lib/xml2&#34;&gt;&lt;code&gt;xml2&lt;/code&gt;&lt;/a&gt; para XML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wrangle&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Wrangle&lt;/h3&gt;
+&lt;p&gt;Além de &lt;code&gt;tidyr&lt;/code&gt; e &lt;code&gt;dplyr&lt;/code&gt;, há cinco pacotes (incluindo &lt;code&gt;stringr&lt;/code&gt; e &lt;code&gt;forcats&lt;/code&gt;) que são projetados para trabalhar com tipos específicos de dados:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lubridate.tidyverse.org/&#34;&gt;&lt;code&gt;lubridate&lt;/code&gt;&lt;/a&gt; para datas e datas-horas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tidyverse/hms&#34;&gt;&lt;code&gt;hms&lt;/code&gt;&lt;/a&gt; para valores de data e hora do dia.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tidyverse/blob&#34;&gt;&lt;code&gt;blob&lt;/code&gt;&lt;/a&gt; para armazenamento de dados blob (binários).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;programa&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Programa&lt;/h3&gt;
+&lt;p&gt;Além do &lt;code&gt;purrr&lt;/code&gt;, que fornece métodos muito consistentes e naturais para iteração em objetos R, há dois pacotes adicionais que ajudam nos desafios gerais de programação:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://magrittr.tidyverse.org/&#34;&gt;&lt;code&gt;magrittr&lt;/code&gt;&lt;/a&gt; fornece o &lt;code&gt;pipe&lt;/code&gt;, &lt;code&gt;%&amp;gt;%&lt;/code&gt;. Ele também fornece um número de operadores de pipe mais especializados (como &lt;code&gt;%$%&lt;/code&gt; e &lt;code&gt;%&amp;lt;&amp;gt;%&lt;/code&gt;) que podem ser úteis em outras aplicações.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tidyverse/glue&#34;&gt;&lt;code&gt;glue&lt;/code&gt;&lt;/a&gt; fornece uma alternativa à &lt;code&gt;paste()&lt;/code&gt; que facilita a combinação de dados e texto.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;modelo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Modelo&lt;/h3&gt;
+&lt;p&gt;A modelagem com o &lt;code&gt;tidyverse&lt;/code&gt; possibilita a coleção de pacotes de &lt;code&gt;tidymodels&lt;/code&gt;, que em grande parte substituem o pacote &lt;code&gt;modelr&lt;/code&gt; usado no &lt;code&gt;R4DS.&lt;/code&gt; Estes pacotes fornecem uma base abrangente para a criação e utilização de modelos de todos os tipos. Visite o &lt;a href=&#34;https://www.tidymodels.org/start/&#34;&gt;Guia de Introdução&lt;/a&gt; ou, para exemplos mais detalhados, vá direto para a página &lt;a href=&#34;https://www.tidymodels.org/learn/&#34;&gt;Aprender&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alguns-links-interessantes-para-aprender-tidyverse&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Alguns links interessantes para aprender &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidyverse.org/learn/&#34;&gt;Learn the tidyverse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio-education/remaster-the-tidyverse/&#34;&gt;Remaster tidyverse by Garret&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://programminghistorian.org/en/lessons/data_wrangling_and_management_in_R&#34;&gt;Data wrangling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/ndphillips/YaRrr/&#34;&gt;YaRrr! The Pirate’s Guide to R Nathaniel D. Phillips&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abrindo dados no R</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/abrindo_dados/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/abrindo_dados/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#abrindo-dados-no-r&#34;&gt;Abrindo dados no R&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#pacotes-no-r&#34;&gt;Pacotes no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#caminhos-no-r&#34;&gt;Caminhos no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readr&#34;&gt;Readr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tibbles&#34;&gt;Tibbles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dados-em-arquivos-editores-de-planilhas&#34;&gt;Dados em arquivos editores de planilhas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#um-pouco-sobre-donwload-e-manipulação-de-arquivos&#34;&gt;Um pouco sobre donwload e manipulação de arquivos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#voltando-às-planilhas&#34;&gt;Voltando às planilhas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Este tutorial é de autoria do professor Leonardo S. Barone e pode ser encontrado no &lt;a href=&#34;https://github.com/leobarone/cebrap_lab_cetic_programacao_r/blob/master/tutorials/tutorial04.md&#34;&gt;link&lt;/a&gt;. Agradeço pela generosidade em compartilhar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;abrindo-dados-no-r&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Abrindo dados no R&lt;/h1&gt;
+&lt;p&gt;Neste tutorial vamos cobrir uma série de métodos disponíveis para abrirmos arquivos de texto, editores de planilhas e de outros softwares de análise de dados no R. Vamos dar atenção aos argumentos das funções de forma a solucionar dificuldades de abertura de dados com diferentes características ou em sistemas operacionais variados.&lt;/p&gt;
+&lt;div id=&#34;pacotes-no-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pacotes no R&lt;/h2&gt;
+&lt;p&gt;Antes de avançarmos à tarefa principal, vamos aprender um pouco mais sobre pacotes. Já foi destacado diversas vezes que uma das vantagens do R é a existência de uma comunidade produtiva e que desenvolve continuamente novas funcionalidades, tudo em código aberto.&lt;/p&gt;
+&lt;p&gt;Para instalarmos um novo pacote de R que esteja disponível no CRAN – “The Comprehensive R Archive Network” – utilizamos a função &lt;em&gt;install.packages&lt;/em&gt;. Veja o exemplo com o pacote &lt;em&gt;beepr&lt;/em&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;beepr&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note que o nome do pacote deve estar em parêntese e aspas. Além disso, é possível que você tenha sido perguntada sobre de qual servidor do CRAN você quer baixar o pacote. A escolha em nada muda o resultado, exceto o tempo de duração do download.&lt;/p&gt;
+&lt;p&gt;Uma vez que um pacote foi instalado, ele está disponível em seu computador, mas não ainda para uso neste script e sessão R. Apenas depois de executarmos a função &lt;em&gt;library&lt;/em&gt; é que teremos o pacote em nossa “biblioteca” de funções.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(beepr)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Você pode dispensar as aspas ao usar a função &lt;em&gt;library&lt;/em&gt;, pois é opcional.&lt;/p&gt;
+&lt;p&gt;Se você quiser usar rapidamente apenas uma função de um pacote sem carregá-lo, você pode utilizar a função precedidade por “:” duas vezes e o nome do pacote. Veja o exemplo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;beepr::beep()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;caminhos-no-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Caminhos no R&lt;/h2&gt;
+&lt;p&gt;Cada opção para importar dados para R depende de informar a R onde procurar no seu disco pelo arquivo. R sempre começa a procurar no ‘diretório de trabalho’. Você pode verificar em qual diretório está trabalhando executando o seguinte comando:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;getwd()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;E como eu altero o “wd” (&lt;em&gt;working directory&lt;/em&gt;)?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setwd(&amp;quot;C:\\User\\Documents&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Simples e muito útil para evitar escrevermos “labirintos de pastas” cada vez que queremos importar dados. Agora só precisamos nos referir ao nome do arquivo (e não a sua pasta) para abrí-lo. É uma boa prática manter todos os arquivos, scripts e saídas importados em uma pasta de projeto bem organizada.&lt;/p&gt;
+&lt;p&gt;Um detalhe fundamental para quem usa Windows: os caminhos devem ser escritos com duas barras no lugar de uma, como no exemplo acima. É uma chatice e a melhor solução é mudar definitivamente para Linux e nunca mais pagar por software proprietário.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readr&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Readr&lt;/h2&gt;
+&lt;p&gt;Existem muitas funções para abrir arquivos de dados, mas para simplificar neste curso, vamos nos concentrar em um conjunto de funções do pacote &lt;em&gt;Readr&lt;/em&gt;. O pacote &lt;em&gt;readr&lt;/em&gt;, parte do &lt;em&gt;tidyverse&lt;/em&gt; (conjunto de pacotes com o qual vamos trabalhar), contém funções para abertura de dados ‘retangulares’ (.csv, .tsv, .txt).&lt;/p&gt;
+&lt;p&gt;A maneira mais fácil de acessar as funções do &lt;em&gt;Readr&lt;/em&gt; é abrir a biblioteca do &lt;em&gt;tidyverse&lt;/em&gt; (instale-a primeira, se necessário).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Provavelmente a função mais usada no &lt;em&gt;Readr&lt;/em&gt; é &lt;em&gt;read_csv&lt;/em&gt;, que abre arquivos .csv. Em vez de abrir arquivos do nosso computador, também podemos abrir links e, para simplificar, disponibilizamos vários arquivos em nosso repositório do github. Você pode colar o url de cada arquivo no navegador para ver o seu formato antes de executar o código.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;file1 &amp;lt;- &amp;quot;https://raw.githubusercontent.com/retaoliveira/relements/main/data/file1.txt&amp;quot;
+dados &amp;lt;- read_csv(file1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;dados&lt;/em&gt; deve aperecer como um objeto em seu ‘Environment’. A função &lt;em&gt;read_delim&lt;/em&gt; nos dá mais flexibilidade para lidar com tipos incomuns de arquivos. Por exemplo, podemos especificar o caractere usado para separar as colunas (por padrão, esta é a vírgula em read_csv):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados &amp;lt;- read_delim(file1, 
+                    delim = &amp;quot;,&amp;quot;)
+
+file_semi_colon &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/bf_amostra_hp.csv&amp;quot;
+dados &amp;lt;- read_delim(file_semi_colon, 
+                    delim = &amp;quot;;&amp;quot;)
+
+file_tab &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/bf_amostra_ht.csv&amp;quot;
+dados &amp;lt;- read_delim(file_tab, 
+                    delim = &amp;quot;\t&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O padrão de &lt;em&gt;read_delim&lt;/em&gt; (e &lt;em&gt;read_csv&lt;/em&gt;) é importar a primeira linha como nome das variáveis. Se nossos dados não tiverem um &lt;em&gt;header&lt;/em&gt; (cabeçalho, ou seja, nomes das variáveis na primeira linhas), a primeira linha de dados se torna equivocadamente o nome das variáveis (inclusive os números, que aparecem antecedidos por um “X”). Para corrigir o problema utilizamos o argumento “col_names”, que deve ser igual a “FALSE” para os dados armezenados sem nomes de colunas, por exemplo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;file_sem_header &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/bf_amostra_nv.csv&amp;quot;
+dados &amp;lt;- read_delim(file_sem_header, 
+                    col_names = F, 
+                    delim = &amp;quot;,&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Além dos valores lógicos, “col_names” também aceita um vetor com novos nomes para as colunas como argumento:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados &amp;lt;- read_delim(file_sem_header, 
+                    col_names = c(&amp;quot;estado&amp;quot;, &amp;quot;municipio_cod&amp;quot;, &amp;quot;municipio_nome&amp;quot;,
+                                  &amp;quot;NIS&amp;quot;, &amp;quot;transferido&amp;quot;),
+                    delim = &amp;quot;,&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por vezes, é interessante definir as classes das variáveis a serem importadas, para evitar novas transformações quando os dados forem importados. O argumento &lt;em&gt;col_types&lt;/em&gt; deve ser uma sequência de caracteres onde “c” = “character”, “d” = “double”, “l” = “logical” e “i” = “integer”. Por exemplo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados &amp;lt;- read_delim(file1, 
+                    delim = &amp;quot;,&amp;quot;, 
+                    col_types = &amp;quot;cicid&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Perceba que quando abrimos os dados sem especificar o tipo da coluna, a função &lt;em&gt;read_csv&lt;/em&gt; tenta identificá-los.&lt;/p&gt;
+&lt;p&gt;Uma complexidade de abertura de dados brasileiros é o uso da vírgula como separador decimal e o ponto para indicar milhares. Temos que especificar no argumento &lt;em&gt;locale&lt;/em&gt; essas diferenças.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados &amp;lt;- read_delim(file1, 
+                    delim = &amp;quot;,&amp;quot;, 
+                    locale = locale(decimal_mark=&amp;quot;,&amp;quot;,grouping_mark=&amp;quot;.&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Também podemos usar &lt;em&gt;locale&lt;/em&gt; para especificar o formato da hora, o formato da data e o encoding do arquivo que estamos lendo.&lt;/p&gt;
+&lt;p&gt;Finalmente, é comum termos problemas para abrir arquivos que contenham caracteres especiais, pois há diferentes formas do computador transformar 0 e 1 em vogais acentuadas, cecedilha, etc. O “encoding” de cada arquivo varia de acordo com o sistema operacional e aplicativo no qual foi gerado.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dados &amp;lt;- read_delim(file1, 
+                    delim = &amp;quot;,&amp;quot;, 
+                    locale = locale(encoding=&amp;#39;latin1&amp;#39;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para resolver este problema, informamos ao R o parâmetro &lt;em&gt;encoding&lt;/em&gt; dentro do &lt;em&gt;locale&lt;/em&gt;, que indica qual é o “encoding” esperado do arquivo. Infelizmente não há formas automáticas infalíveis de descobrir o “encoding” de um arquivo e é preciso conhecer como foi gerado – seja por que você produziu o arquivo ou por que você teve acesso à documentação – ou partir para tentativa e erro. Alguns “encodings” comuns são “latin1”, “latin2” e “utf8”, mas há diversos outros. Como arquivo com o qual estamos trabalhando não contém caracteres especiais, não é preciso fazer nada.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tibbles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tibbles&lt;/h2&gt;
+&lt;p&gt;Se inspecionarmos o objeto criado por qualquer uma das operações acima, &lt;em&gt;dados&lt;/em&gt; parecem um pouco diferentes do que vimos antes. &lt;em&gt;dados&lt;/em&gt; é um data.frame, mas também tem alguns característicos adicionais que facilitam o nosso trabalho. Ele se chama um &lt;em&gt;tibble&lt;/em&gt; (um objeto pode ser de mais de uma clase). Observe que não utilizamos &lt;em&gt;head&lt;/em&gt; para imprimir as primeiras linhas. Essa é uma característica de &lt;em&gt;tibbles&lt;/em&gt;: o output contém uma fração do banco, a informação sobre número de linhas e colunas, e os tipos de cada variável abaixo dos nomes das colunas. Você pode ler mais sobre &lt;em&gt;tibbles&lt;/em&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dados-em-arquivos-editores-de-planilhas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dados em arquivos editores de planilhas&lt;/h2&gt;
+&lt;p&gt;Editores de planilha são, em geral, a primeira ferramenta de análise de dados que aprendemos. Diversas organizações disponibilizam (infelizmente) seus dados em formato .xls ou .xlsx e muitos pesquisadores utilizam editores de planilha para construir bases de dados.&lt;/p&gt;
+&lt;p&gt;Vamos ver como obter dados em formato .xls ou .xlsx diretamente, sem precisar abrir os arquivos e exportá-los para um formato de texto.&lt;/p&gt;
+&lt;p&gt;Há dois bons pacotes com funções para dados em editores de planilha: &lt;em&gt;readxl&lt;/em&gt; e &lt;em&gt;gdata&lt;/em&gt;. Vamos trabalhar apenas com o primeiro, mas convém conhecer o segundo se você for trabalhar constantemente com planilhas e quiser editá-las, e não só salvá-las. &lt;em&gt;readxl&lt;/em&gt; também é parte do &lt;em&gt;tidyverse&lt;/em&gt; mas temos que abri a biblioteca direitamente. Importe o pacote:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(readxl)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;um-pouco-sobre-donwload-e-manipulação-de-arquivos&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Um pouco sobre donwload e manipulação de arquivos&lt;/h3&gt;
+&lt;p&gt;Nosso exemplo será a Pesquisa Perfil dos Municípios Brasileiros de 2005, produzida pelo IBGE e apelidade de MUNIC. Diferentemente das demais funções deste tutorial, precisamos baixar o arquivo para o computador e acessá-lo localmente. Faça o download diretamente do &lt;a href=&#34;ftp://ftp.ibge.gov.br/Perfil_Municipios/2005/base_MUNIC_2005.zip&#34;&gt;site do IBGE&lt;/a&gt; e descompacte. Ou, mais interessante ainda, vamos automatizar o download e descompactação do arquivo (aviso: pode dar erro no Windows e tentaremos corrigir na hora – use Linux!).&lt;/p&gt;
+&lt;p&gt;Em primeiro lugar, vamos guardar o endereço url do arquivo em um objeto e fazer o download. Note que na função &lt;em&gt;download.file&lt;/em&gt; o primeiro argumento é o url e o segundo é o nome do arquivo que será salvo.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;url_arquivo &amp;lt;- &amp;quot;ftp://ftp.ibge.gov.br/Perfil_Municipios/2005/base_MUNIC_2005.zip&amp;quot;
+download.file(url_arquivo, &amp;quot;temp.zip&amp;quot;, quiet = F)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O argumento “quiet = F” serve para não imprimirmos no console “os números” do download (pois o tutorial ficaria poluído), mas você pode retirá-lo ou alterá-lo caso queira ver o que acontece.&lt;/p&gt;
+&lt;p&gt;Com &lt;em&gt;unzip&lt;/em&gt;, vamos extrair o conteúdo da pasta:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;unzip(&amp;quot;temp.zip&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use &lt;em&gt;list.files&lt;/em&gt; para ver todos os arquivos que estão na sua pasta caso você não saiba o nome do arquivo baixado. No nosso caso utilizaremos o arquivo “Base 2005.xls”&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;list.files()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Vamos aproveitar e excluir nosso arquivo .zip temporário:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;file.remove(&amp;quot;temp.zip&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;voltando-às-planilhas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Voltando às planilhas&lt;/h2&gt;
+&lt;p&gt;Para não repetir o nome do arquivo diversas vezes, vamos criar o objeto “arquivo” que contém o endereço do arquivo no seu computador (ou só o nome do arquivo entre aspas se você tivê-lo no seu wd):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;arquivo &amp;lt;- &amp;quot;Base 2005.xls&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Com &lt;em&gt;excel_sheets&lt;/em&gt; examinamos quais são as planilhas existentes do arquivo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;excel_sheets(arquivo)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;No caso, temos 11 planilhas diferentes (e um bocado de mensagens de erro estranhas). O dicionário, para quem já trabalhou alguma vez com a MUNIC, não é uma base de dados, apenas textos espalhados entre células. As demais, no entanto, têm formato adequado para &lt;em&gt;data frame&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Vamos importar os dados da planilha “Variáveis externas”. As duas maneiras abaixo se equivalem:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# 1
+transporte &amp;lt;- read_excel(arquivo, &amp;quot;Variáveis externas&amp;quot;)
+
+# 2
+transporte &amp;lt;- read_excel(arquivo, 11)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A função &lt;em&gt;read_excel&lt;/em&gt; aceita os argumentos “col_names” e “col_types” tal como as funções de importação do pacote &lt;em&gt;readr&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instalação de R, RStudio e Git</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/install/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/install/</guid>
+      <description>&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;Baixar e instalar o R&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Links adicionais&lt;/strong&gt;
+&lt;a href=&#34;https://rpubs.com/cassiorampinelli/488999&#34;&gt;Visão geral e primeiros passos com R e RStudio&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;rstudio&#34;&gt;RStudio&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://rstudio.com/products/rstudio/download/&#34;&gt;Baixar e instalar o RStudio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No link acima é apresentado o processo de instalação para Windows. No mesmo site é possível encontrar procedimentos de instalação para outros sistemas operacionais.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&#34;&gt;Baixar e instalar o Git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No link acima é apresentado o processo de instalação do Git. Atenção às diferenças de arquivos e procedimentos de instalação para diferentes sistemas operacionais.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Nesse &lt;a href=&#34;https://www.curso-r.com/material/instalacao/&#34;&gt;site&lt;/a&gt; você encontra detalhes sobre a instalação do R e do RStudio e sobre a instalação de pacotes do R.&lt;/p&gt;
+&lt;h2 id=&#34;versão-com-voz-de-desenho-animado&#34;&gt;Versão com voz de desenho animado&lt;/h2&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/QCV0EaUMtxM?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;versão-com-voz-de-aeroporto&#34;&gt;Versão com voz de aeroporto&lt;/h2&gt;
+&lt;iframe width=&#34;1730&#34; height=&#34;692&#34; src=&#34;https://www.youtube.com/embed/iI8-Bnt1ACE&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git e Github</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/git_r/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/git_r/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definições&#34;&gt;Definições&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-instalar-o-git-no-seu-computador&#34;&gt;Como instalar o Git no seu computador&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;definições&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definições&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Git&lt;/code&gt; é um sistema de controle de versão por linha de comando. Se você não estiver familiarizado com ele, &lt;code&gt;Git&lt;/code&gt; não tem botões para pressionar, apenas comandos para digitar para controlá-lo, mas ele permite salvar múltiplas versões de um arquivo. A beleza do controle de versão é que se você fizer “alguma besteira”, você pode voltar para a última versão salva. É como chegar a um “ponto de salvamento” em um videogame no qual você pode voltar se seu personagem morrer.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GitHub&lt;/code&gt; é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-instalar-o-git-no-seu-computador&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Como instalar o Git no seu computador&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git&#34;&gt;Informações gerais e sistemas operacionais&lt;/a&gt;
+&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/gHq5V9NZ2Do?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;hr /&gt;
+&lt;p&gt;Fonte interessante: &lt;a href=&#34;https://happygitwithr.com/&#34;&gt;Happy Git with R&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Criando sua conta no Github</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/github/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/github/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definições&#34;&gt;Definições&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#vocabulário-básico-para-uso-do-github&#34;&gt;Vocabulário básico para uso do &lt;code&gt;GitHub&lt;/code&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-operacionalizar&#34;&gt;Como operacionalizar?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;definições&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definições&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;GitHub&lt;/code&gt; é o lugar onde você pode armazenar todas estas versões de seu trabalho. Outros desenvolvedores podem ver, fazer uma cópia, alterar sua cópia e fazer sugestões sobre seu trabalho.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vocabulário-básico-para-uso-do-github&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Vocabulário básico para uso do &lt;code&gt;GitHub&lt;/code&gt;:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Repositório&lt;/code&gt;: Quando você faz uma conta no &lt;code&gt;Github&lt;/code&gt;, a primeira coisa que você vai querer fazer é criar um repositório (ou repo). Este é o lugar para armazenar todos os seus arquivos para um determinado projeto.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Fork:&lt;/code&gt; Digamos que você realmente gosta do projeto de outra pessoa no &lt;code&gt;GitHub&lt;/code&gt; e você gostaria de fazer uma cópia dele em sua conta para ajustar como você quiser? Bem, esse processo é chamado de &lt;code&gt;forking&lt;/code&gt;. Para fazer isso, encontre um reporte que você gosta e clique no botão &lt;code&gt;fork&lt;/code&gt; no canto direito.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Branch&lt;/code&gt;: Esta é uma “versão paralela” de um projeto que você pode ajustar sem impactar o projeto original.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Remote&lt;/code&gt;: A cópia de seus arquivos que residem no &lt;code&gt;GitHub.com&lt;/code&gt;. É o endereço “destinatário” do seu projeto na plataforma online.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Local:&lt;/code&gt; A cópia de seus arquivos que residem em seu computador. É um espelho do repositório remoto.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Commit&lt;/code&gt;: Uma alteração em um arquivo, geralmente apresentada com uma mensagem sua para indicar o que foi alterado.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Push&lt;/code&gt;: Uma vez que você realize mudanças em seus arquivos locais, você quer enviá-las (ou empurrá-las) para seu repositório remoto, tornando-as disponíveis para outros.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Pull&lt;/code&gt;: Se várias pessoas estiverem trabalhando em seu repositório remoto, elas podem ter feito uma mudança que não está refletida em sua versão local. Você pode &lt;code&gt;puxar&lt;/code&gt; a versão mais nova para o seu computador para trabalhar nela.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-operacionalizar&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Como operacionalizar?&lt;/h2&gt;
+&lt;p&gt;Vá ao site do &lt;a href=&#34;Github.com&#34;&gt;Github.com&lt;/a&gt; e crie uma conta gratuita. Faça seu login.
+Na página dos seus repositórios, crie um repositório e faça uso desse espaço para controlar as versões de projetos diversos.&lt;/p&gt;
+&lt;p&gt;Para quem, como eu, não curte muito ter que lembrar comandos em linha o tempo todo, existem aplicativos GUI que permitem a gestão dos repositórios &lt;code&gt;local&lt;/code&gt; e &lt;code&gt;remoto&lt;/code&gt;. O próprio &lt;code&gt;Github&lt;/code&gt; tem um aplicativo desktop para gestão. Entretanto, por achar mais simples (cada um vai se sentir mais confortável com uma interface), estou usando o &lt;a href=&#34;https://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ainda tenho que me acostumar a utilizar o &lt;code&gt;RStudio&lt;/code&gt; para gerenciar versão no &lt;code&gt;Github&lt;/code&gt;. Sim, é possível. Mas também estão disponíveis os aplicativos &lt;code&gt;desktop&lt;/code&gt; como &lt;code&gt;GitHub Desktop&lt;/code&gt; e o &lt;code&gt;GitKraken&lt;/code&gt;.&lt;/p&gt;
+&lt;iframe width=&#34;1218&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/DL6BkIFxL9Q?list=PLqDTVtdD-5aOczVvI_Ga_1qKFtYof5XGB&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;hr /&gt;
+&lt;p&gt;Créditos: &lt;a href=&#34;https://amber.rbind.io/2016/12/19/website/&#34; class=&#34;uri&#34;&gt;https://amber.rbind.io/2016/12/19/website/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BÔNUS &lt;a href=&#34;https://happygitwithr.com/&#34;&gt;Happy Git with R&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introdução ao RMarkdown</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/assets/css/custom.css&#34; type=&#34;text/css&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tldr&#34;&gt;TL;DR&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#o-que-é-markdown&#34;&gt;O que é Markdown?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rmarkdown&#34;&gt;RMarkdown&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#formatação-de-texto&#34;&gt;Formatação de texto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#incluindo-tabelas&#34;&gt;Incluindo tabelas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#incluindo-figuras&#34;&gt;Incluindo figuras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#chunks&#34;&gt;chunks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#visualização&#34;&gt;Visualização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#metadados---cabeçalho&#34;&gt;Metadados - Cabeçalho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#formatos-de-output&#34;&gt;Formatos de output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Assita o vídeo! É impactante, baseado em fatos reais!&lt;/p&gt;
+&lt;iframe width=&#34;738&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/s3JldKoA0zw&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;div id=&#34;tldr&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;TL;DR&lt;/h1&gt;
+&lt;p&gt;RMarkdown é uma estrutura de documento para edição de textos que segue a sintaxe da linguagem Markdown. Sínteses e informações sobre essa linguagem RMarkdown podem ser encontradas nas seguintes cheatsheet que podem ser obtidas por meio do &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:f:/g/personal/renataoliveira_cefetmg_br/EjcsMqE7jmFHqGVdSfXuwBoBp66Q0iX1tWwDX8L3kMiyHQ?e=RSoWLP&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;o-que-é-markdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;O que é Markdown?&lt;/h2&gt;
+&lt;p&gt;Segundo o criador da linguagem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).&lt;/p&gt;
+&lt;p&gt;John Gruber&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Dicas de sintaxe da linguagem Markdown podem ser encontradas em:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.da2k.com.br/2015/02/08/aprenda-markdown/&#34;&gt;Sintaxe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md&#34;&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://beatriz-milz.shinyapps.io/tutorial_markdown/#section-introdu%C3%A7%C3%A3o&#34;&gt;Tutorial interativo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rmarkdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RMarkdown&lt;/h2&gt;
+&lt;p&gt;Vou colocar aqui algumas informações-chave sobre a construção geral de informações a partir do uso do RMarkdown. Entretanto, informações adicionais podem ser obtidas de maneira detalhada no site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://cursos.leg.ufpr.br/prr/capDocDin.html&#34;&gt;Documentos dinâmicos no R by Fernando Mayer &amp;amp; Walmes Zeviani&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;formatação-de-texto&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Formatação de texto&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Textos em itálico são produzidos com um par de asteriscos &lt;code&gt;*Itálico*&lt;/code&gt; ou de underscores &lt;code&gt;_Itálico_&lt;/code&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Textos em negrito são produzidos com dois pares de asteriscos: &lt;code&gt;**Negrito**&lt;/code&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Um par de acentos til produz texto subscrito: &lt;code&gt;CO~2~&lt;/code&gt; vira CO2&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Um par de acentos circunflexos produz texto sobrescrito: &lt;code&gt;x^2^&lt;/code&gt; vira x2&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Hyperlinks são criados com a sintaxe &lt;code&gt;[texto](link): Clique [aqui](https://www.google.com/)&lt;/code&gt; vira Clique aqui&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Imagens são inseridas com a sintaxe &lt;code&gt;![texto opcional](pasta/imagem.jpg)&lt;/code&gt; ou &lt;code&gt;![texto opcional](link para imagem)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;seções-e-subseções&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Seções e subseções&lt;/h4&gt;
+&lt;p&gt;Para demarcar seções e subseções, utilize os &lt;code&gt;hashtags&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;listas-e-ordenação&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Listas e ordenação&lt;/h4&gt;
+&lt;p&gt;Basta enumerar:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;incluindo-tabelas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Incluindo tabelas&lt;/h3&gt;
+&lt;p&gt;Existem duas boas opções para produzir tabelas elegantes em documentos R Markdown:&lt;/p&gt;
+&lt;p&gt;A função &lt;code&gt;knitr::kable()&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;iris %&amp;gt;% 
+  head() %&amp;gt;% 
+  knitr::kable()&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;Sepal.Length&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Sepal.Width&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Petal.Length&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Petal.Width&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Species&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;5.1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;4.9&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;4.7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;4.6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;5.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;5.4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.9&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.7&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;setosa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A função &lt;code&gt;knitr::kable()&lt;/code&gt; acompanhada do pacote &lt;code&gt;kableExtra&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;iris %&amp;gt;% 
+  head() %&amp;gt;% 
+  kableExtra::kable()&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Sepal.Length
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Sepal.Width
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Petal.Length
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+Petal.Width
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Species
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+5.1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.5
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4.9
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4.6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+5.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+5.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.9
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+setosa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;E tabelas interativas por meio do pacote &lt;code&gt;DT&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;iris %&amp;gt;% 
+  head() %&amp;gt;% 
+  DT::datatable()&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:auto;&#34; class=&#34;datatables html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;vertical&#34;:false,&#34;data&#34;:[[&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;],[5.1,4.9,4.7,4.6,5,5.4],[3.5,3,3.2,3.1,3.6,3.9],[1.4,1.4,1.3,1.5,1.4,1.7],[0.2,0.2,0.2,0.2,0.2,0.4],[&#34;setosa&#34;,&#34;setosa&#34;,&#34;setosa&#34;,&#34;setosa&#34;,&#34;setosa&#34;,&#34;setosa&#34;]],&#34;container&#34;:&#34;&lt;table class=\&#34;display\&#34;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt; &lt;\/th&gt;\n      &lt;th&gt;Sepal.Length&lt;\/th&gt;\n      &lt;th&gt;Sepal.Width&lt;\/th&gt;\n      &lt;th&gt;Petal.Length&lt;\/th&gt;\n      &lt;th&gt;Petal.Width&lt;\/th&gt;\n      &lt;th&gt;Species&lt;\/th&gt;\n    &lt;\/tr&gt;\n  &lt;\/thead&gt;\n&lt;\/table&gt;&#34;,&#34;options&#34;:{&#34;columnDefs&#34;:[{&#34;className&#34;:&#34;dt-right&#34;,&#34;targets&#34;:[1,2,3,4]},{&#34;orderable&#34;:false,&#34;targets&#34;:0}],&#34;order&#34;:[],&#34;autoWidth&#34;:false,&#34;orderClasses&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p&gt;Informações sobre a configuração dos packages considerados porm ser encontrados nos links: &lt;a href=&#34;https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html&#34;&gt;&lt;code&gt;kableExtra&lt;/code&gt;&lt;/a&gt;, `&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;incluindo-figuras&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Incluindo figuras&lt;/h3&gt;
+&lt;p&gt;Eu prefiro incluir figuras por meio de &lt;code&gt;chunk&lt;/code&gt;, pois a parametrização do &lt;code&gt;chunk&lt;/code&gt; permite configurar a figura:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(img1_path)&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/&#34;&gt;Dicas!&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chunks&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;chunks&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;chunks&lt;/code&gt; são blocos de código que podem ser incluídos e rodados em um documento &lt;code&gt;.Rmd&lt;/code&gt;. Os chunks precisam de uma formatação específicica e podem ser escritos em diferentes linguagens. A forma mais rápida de incluir um chunk para edição em &lt;code&gt;R&lt;/code&gt; é o atalho &lt;code&gt;Ctrl + Alt + i&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;chunk&lt;/code&gt; deve ser iniciado por ```&lt;code&gt;{r }&lt;/code&gt; e alguns parâmetros definem opções para os &lt;code&gt;chunks&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;eval&lt;/code&gt;: tipo logical. Executar (TRUE) ou não (FALSE) o código do &lt;code&gt;chunk&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;echo&lt;/code&gt;: tipo logical. Incluir o código do &lt;code&gt;chunk&lt;/code&gt; ou não no documento compilado.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;warning&lt;/code&gt;, &lt;code&gt;message&lt;/code&gt; e &lt;code&gt;error&lt;/code&gt;: tipo logical. Caso &lt;code&gt;error = TRUE&lt;/code&gt;, o documento será compilado mesmo que o chunk retorne um erro.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;include&lt;/code&gt;: tipo logical. Controla se o &lt;code&gt;chunk&lt;/code&gt; e o output estarão presentes no documento final.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;cache&lt;/code&gt;: tipo logical. Controla se o &lt;code&gt;chunk&lt;/code&gt; poderá usar cache para criar uma pasta com arquivos cacheados. Útil para chunks de códigos que levam muito tempo para rodar.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- rnorm(30)
+x&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1]  0.5162300 -0.9708385  1.0235770 -0.6915387 -1.0844002 -2.3260716
+##  [7] -1.2964939 -0.5799969 -0.6267196 -1.8150133  0.3675131 -0.5721890
+## [13] -0.2655877 -0.9298799 -0.8974441 -0.7339284  0.7127292 -1.3384530
+## [19]  0.3969737  1.1318720  0.4960721  0.5678342  1.2569189  1.2371460
+## [25] -0.8775620  0.9499297  1.0608437  0.3446300 -0.4034319  0.2331705&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para definir uma opção da mesma maneira para todos os &lt;code&gt;chunks&lt;/code&gt; do documento, é possível criar um &lt;code&gt;chunk&lt;/code&gt; com o código &lt;code&gt;knitr::opts_chunk$set()&lt;/code&gt;, como no exemplo abaixo:&lt;/p&gt;
+&lt;p&gt;As opções gerais de &lt;code&gt;chunks&lt;/code&gt; podem ser encontradas no &lt;a href=&#34;https://yihui.org/knitr/options/&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualização&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Visualização&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Também podemos fazer um histograma dessa variável simulada&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;hist(x)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_rmarkdown_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;metadados---cabeçalho&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Metadados - Cabeçalho&lt;/h3&gt;
+&lt;div id=&#34;yaml-yet-another-markup-language&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;code&gt;YAML&lt;/code&gt; (Yet Another Markup Language)&lt;/h4&gt;
+&lt;p&gt;No &lt;code&gt;YAML&lt;/code&gt;, os dados são escritos em forma de lista aninhada. Os metadados em &lt;code&gt;YAML&lt;/code&gt; são colocados sempre no início de um documento, e são delimitados por &lt;code&gt;---&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;formatos-de-output&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Formatos de output&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar um documento em RMarkdown
+&lt;code&gt;knitr&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Na &lt;a href=&#34;https://rmarkdown.rstudio.com/gallery.html&#34;&gt;galeria do RStudio&lt;/a&gt; diferentes estruturas de informação produzida por meio de &lt;code&gt;RMarkdown&lt;/code&gt; podem ser encontradas!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;beamer_presentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;html_document&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ioslides_presentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pdf_document&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;slidy_document&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;powerpoint_presentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;word_document&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;output:
+  html_document:
+    toc: true
+    number_sections: yes
+  pdf_document:
+    keep_tex: true&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe width=&#34;1197&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/xU4AXv0GolM&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R! Tutorial no swirl</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/swirl/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/swirl/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Fiquei pensando em como posso ajudar os estudantes no desenvolvimento de competências no R com tão pouco tempo e remotamente. Uma possibilidade que consegui viabilizar são tutoriais interativos. São atividades eletivas também, mas FORTEMENTE recomendadas! No site os estudantes podem encontrar as informações necessárias para utilizar as funções e podem sempre consultar o “oráculo” universal Google.&lt;/p&gt;
+&lt;p&gt;Os estudantes um procedimento breve para conseguirem abrir o tutorial:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Salvar o arquivo nesta mensagem em um diretório em seu computador.&lt;/li&gt;
+&lt;li&gt;Abrir o RStudio e procedam com a instalação do package swirl: &lt;code&gt;install.packages(&#34;swirl&#34;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carregar a biblioteca do swirl: &lt;code&gt;library(swirl)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instalar o tutorial: &lt;code&gt;install_course()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;uma janela de navegação permitirá a seleção do arquivo desta mensagem em seu computador.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Abrir o menu de tutoriais &lt;code&gt;swirl::swirl()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Digitar o número referente à alternantiva R_business. Caso essa opção não esteja disponível, digitar o último valor que o tutorial aparecerá no novo menu.&lt;/li&gt;
+&lt;li&gt;Selecionar 1: &lt;code&gt;introR&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mãos à obra! Bom tutorial!!!! Por enquanto são cinco tutoriais autoexplicativos e interativo.&lt;/p&gt;
+&lt;p&gt;In a &lt;code&gt;chunk&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;swirl&amp;quot;)
+library(swirl)
+
+install_course()
+swirl()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O arquivo pode ser acessado no &lt;a href=&#34;https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ERP-1p3qFR1MiftEt5n0kwkBwzxgRSVTlLFeRKe9QLKXIQ?e=0NopHG&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;1000&#34; height=&#34;542&#34; src=&#34;https://www.youtube.com/embed/HaZ4p16sv6M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Bonus: Existem vários cursos disponíveis online. Para acessá-los, veja o &lt;a href=&#34;http://swirlstats.com/scn/&#34;&gt;Swirl Course Network&lt;/a&gt;. A instalação é feita também com a função &lt;code&gt;install_course()&lt;/code&gt;, mas nesse caso você precisa digitar o nome do curso como em:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;swirl::install_course(&amp;quot;A_(very)_short_introduction_to_R&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tipos de dados e objetos no R</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/estrutura_dados/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/estrutura_dados/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-dados-no-r&#34;&gt;Tipos de dados no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-classes-no-r&#34;&gt;Tipos de classes no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dicas-de-sites-com-informação-interessante&#34;&gt;Dicas de sites com informação interessante&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;tipos-de-dados-no-r&#34; class=&#34;section level3 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h3&gt;Tipos de dados no R&lt;/h3&gt;
+&lt;p&gt;No R, os dados são organizados por meio de uma estrutura hierárquica de tipos de dados que podem ser utilizados para armazenar valores em diferentes estruturas. Cada tipo de dado pode ser associado com uma função de teste e uma função de conversão.&lt;/p&gt;
+&lt;p&gt;A função de teste retorna sempre &lt;code&gt;TRUE&lt;/code&gt; ou &lt;code&gt;FALSE&lt;/code&gt;, pois é uma &lt;code&gt;função lógica&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A função de conversão, quando possível, transforma os dados em diferentes tipos.&lt;/p&gt;
+&lt;p&gt;Funções de teste apresentam a estrutura &lt;code&gt;is.character()&lt;/code&gt; e funções de conversão são &lt;code&gt;as.character()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Neste curso não detalharemos todos os tipos de dados, mas apresentaremos apenas os mais importantes para a análise de dados em caráter exploratório. No blog, temos diversas sugestões de tutoriais e documentação geral que contempla todos os tipos de dados e capacidade de interoperabilidade do R.&lt;/p&gt;
+&lt;div id=&#34;character&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Character&lt;/h4&gt;
+&lt;p&gt;Variáveis &lt;code&gt;character&lt;/code&gt; são aquelas que contém texto. Para designar uma variável como texto, precisamos colocar seus valores entre aspas. Dados do tipo texto são comuns em variáveis categóricas.&lt;/p&gt;
+&lt;p&gt;Experimente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;d &amp;lt;- &amp;quot;texto&amp;quot;
+is.character(d)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;numeric&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Numeric&lt;/h4&gt;
+&lt;p&gt;Dados &lt;code&gt;numeric&lt;/code&gt; são números. A função &lt;code&gt;numeric&lt;/code&gt; pode ser utilizada para gerar um vetor com elementos numéricos com valor 0.&lt;/p&gt;
+&lt;p&gt;Faça:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Criar vetor de cinco posições com valores 0
+numeric(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0 0 0 0 0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Gera valor character
+e &amp;lt;- &amp;quot;1980&amp;quot;
+
+# Teste
+is.numeric(e)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Conversão
+f &amp;lt;- as.numeric(&amp;quot;1980&amp;quot;)
+
+# Teste
+is.numeric(f)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;logical&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Logical&lt;/h4&gt;
+&lt;p&gt;A função &lt;code&gt;logical&lt;/code&gt; gera um vetor lógico com o tamanho desejado e por padrão, cada elemento do vetor recebe o valor &lt;code&gt;FALSE&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Um objeto de qualquer uma desses tipos é chamado de &lt;strong&gt;objeto atômico&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mãos à obra:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;logical(3)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE FALSE FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Conversão
+as.logical(c(7,5,0))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1]  TRUE  TRUE FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# TRUE e FALSE podem ser convertidos em 1 ou 0
+as.logical(c(7,5,0))*1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 1 0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os valores no vetor que são diferentes de &lt;em&gt;zero&lt;/em&gt;, recebem o valor &lt;code&gt;TRUE&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A função &lt;strong&gt;&lt;code&gt;c&lt;/code&gt;&lt;/strong&gt;(&lt;em&gt;combine&lt;/em&gt;) é utilizada para composição de um vetor, combinando valores identificados por índices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-classes-no-r&#34; class=&#34;section level3 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h3&gt;Tipos de classes no R&lt;/h3&gt;
+&lt;p&gt;Diferentes tipos de dados podem ser utilizados para popular diferentes estruturas de dados ou &lt;code&gt;classes&lt;/code&gt;. As classes mais comumente utilizadas para análise de dados espaciais são: vetores, matrizes, data frames, listas e factores.&lt;/p&gt;
+&lt;p&gt;É por meio das classes que as funções e operadores conseguem saber exatamente o que fazer com um objeto.&lt;/p&gt;
+&lt;p&gt;Experimente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;1+1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Faça &lt;code&gt;&#34;a&#34; + &#34;b&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;O operador &lt;code&gt;+&lt;/code&gt; verifica que “a” e “b” não são números (ou que não são do tipo &lt;code&gt;numeric&lt;/code&gt;) e devolve uma mensagem de erro informando isso.&lt;/p&gt;
+&lt;div id=&#34;vetores&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Vetores&lt;/h4&gt;
+&lt;p&gt;O R é construído com base no conceito de vetores e matrizes. As maior parte das operações é feita para os elementos.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Definição de vetores
+vector(mode = &amp;quot;numeric&amp;quot;, length = 8)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0 0 0 0 0 0 0 0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vector(length = 8)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tmp &amp;lt;- data.frame(a=10:15, b=15:20)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fatores&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fatores&lt;/h4&gt;
+&lt;p&gt;Fatores são vetores de categorias específicas, definidas por meio do parâmetro &lt;code&gt;levels&lt;/code&gt;. A ordem dos fatores pode ser especificada pela função &lt;code&gt;ordered&lt;/code&gt;. Experimente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Vetor de texto
+tipos.casas &amp;lt;- c(&amp;quot;casa&amp;quot;, &amp;quot;apartamento&amp;quot;, &amp;quot;apartamento&amp;quot;, &amp;quot;sobrado&amp;quot;)
+
+# Vetor de fatores
+tipos.casas &amp;lt;- factor(c(&amp;quot;casa&amp;quot;, &amp;quot;apartamento&amp;quot;, &amp;quot;apartamento&amp;quot;, &amp;quot;sobrado&amp;quot;), levels=c(&amp;quot;casa&amp;quot;, &amp;quot;apartamento&amp;quot;, &amp;quot;sobrado&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Quando utilizamos dados em estrutura de fatores, é possível gerar sínteses rápidas e simples por meio da função &lt;code&gt;table&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(tipos.casas)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## tipos.casas
+##        casa apartamento     sobrado 
+##           1           2           1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dados fatoriais são úteis para o tratamento de dados categóricos, ou que pertencem a um determinado número de classes predeterminadas. Existem muitas feições representadas por meio de dados espaciais que são estruturadas em variáveis discretas.&lt;/p&gt;
+&lt;p&gt;LEMBRANDO….. Dados podem ser:
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/continuous_discrete.png&#34; alt=&#34;Discretos x Contínuos&#34; /&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/nominal_ordinal_binary.png&#34; alt=&#34;Discreto x Contínuo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Para ordenar dados fatoriais, utilizamos a função &lt;code&gt;ordered&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;renda_1 &amp;lt;- factor(c(&amp;quot;alta&amp;quot;, &amp;quot;alta&amp;quot;, &amp;quot;baixa&amp;quot;, &amp;quot;baixa&amp;quot;, &amp;quot;media&amp;quot;, &amp;quot;alta&amp;quot;), levels=c(&amp;quot;baixa&amp;quot;, &amp;quot;media&amp;quot;, &amp;quot;alta&amp;quot;)) 
+
+renda_2 &amp;lt;- ordered(c(&amp;quot;alta&amp;quot;, &amp;quot;alta&amp;quot;, &amp;quot;baixa&amp;quot;, &amp;quot;baixa&amp;quot;, &amp;quot;media&amp;quot;, &amp;quot;alta&amp;quot;), levels=c(&amp;quot;baixa&amp;quot;, &amp;quot;media&amp;quot;, &amp;quot;alta&amp;quot;)) &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;listas&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Listas&lt;/h4&gt;
+&lt;p&gt;Os tipos de dados &lt;code&gt;character&lt;/code&gt;, &lt;code&gt;numeric&lt;/code&gt; e &lt;code&gt;logical&lt;/code&gt; só podem ser associados a classes de dados nas quais TODOS os elementos são do mesmo tipo. A classe &lt;code&gt;listas&lt;/code&gt; não tem esse requisito. As listas têm posições (índices) para diferentes topos de elementos.&lt;/p&gt;
+&lt;p&gt;Para acessar um elemento em um vetor, utilizamos &lt;code&gt;[]&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vector_teste &amp;lt;- c(5:10)
+vector_teste&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1]  5  6  7  8  9 10&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vector_teste[4]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 8&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para acessar um elemento em uma lista por meio de sua posição, utilizamos &lt;code&gt;[[]]&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colaborador &amp;lt;- list(name=&amp;quot;Renata Oliveira&amp;quot;, ano.inicio = 2006, posicao = &amp;quot;Professora&amp;quot;)
+colaborador&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $name
+## [1] &amp;quot;Renata Oliveira&amp;quot;
+## 
+## $ano.inicio
+## [1] 2006
+## 
+## $posicao
+## [1] &amp;quot;Professora&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;matrizes-data.frames-e-tibble&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Matrizes, data.frames e tibble&lt;/h4&gt;
+&lt;p&gt;Matrizes são um conjunto de vetores. As linhas e colunas das matrizes podem ser nomeadas. Na análise espacial de um dado vetorial, temos uma tabela de atributos em estrutura matricial. As linhas representam as feições e as colunas são os atributos dessas feições. Na representação de dados raster, linhas e colunas representam latitudes e longitudes ou células raster.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Data frames&lt;/code&gt; e &lt;code&gt;tibble&lt;/code&gt; são estruturas tabulares de dados que, diferentemente das matrizes (&lt;code&gt;matrix&lt;/code&gt;), permitem representar diferentes atributos (e tipos de dados) em diferentes colunas. Esses tipos de classes são utilizadas para organizar dados espaciais (pontos, linhas, áreas e pixels).&lt;/p&gt;
+&lt;p&gt;Em tabelas de dados espaciais, cada informação representa um fenômeno real por meio de uma feição geográfica e os campos representam atributos associados com cada feição (população, área, altitude etc.).&lt;/p&gt;
+&lt;p&gt;A classe &lt;code&gt;data.frame&lt;/code&gt; no R é composta por uma série de vetores de &lt;strong&gt;comprimento igual&lt;/strong&gt; (número de observações) que juntos formam uma estrutura de dados bi-dimensional. Cada vetor registra valores de um atributo específico. Essa é a classe de dados mais comumente utilizada para armazenar dados no R.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- data.frame(dist=seq(0, 400, 100), city=c(&amp;quot;Belo Horizonte&amp;quot;, &amp;quot;São Paulo&amp;quot;, &amp;quot;Rio de Janeiro&amp;quot;, &amp;quot;Brasília&amp;quot;, &amp;quot;Salvador&amp;quot;))
+str(df)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    5 obs. of  2 variables:
+##  $ dist: num  0 100 200 300 400
+##  $ city: chr  &amp;quot;Belo Horizonte&amp;quot; &amp;quot;São Paulo&amp;quot; &amp;quot;Rio de Janeiro&amp;quot; &amp;quot;Brasília&amp;quot; ...&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A função &lt;code&gt;seq&lt;/code&gt; possibilita a criação de uma sequência de dados por meio de três parâmetros: seq(&lt;code&gt;valor_inicial&lt;/code&gt;, &lt;code&gt;valor_final&lt;/code&gt;, &lt;code&gt;intervalo&lt;/code&gt;).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tibbles e data.frames não são muito diferentes. Há alguns detalhes quanto à transformação de dados na criação dessas classes, mas, em linhas gerais, a estrutura de dados em &lt;code&gt;tibble&lt;/code&gt; é mais eficiente e organizada.&lt;/p&gt;
+&lt;p&gt;As seguintes funções são adequadas tanto para &lt;code&gt;data.frames&lt;/code&gt; como para &lt;code&gt;tibble&lt;/code&gt;:&lt;br /&gt;
+&lt;code&gt;names()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;colnames()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;rownames()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;length()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;ncol()&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;nrow()&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Explore a documentação do &lt;code&gt;tibble&lt;/code&gt; em: &lt;code&gt;vignette(&#34;tibble&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Os objetos dessas duas classes podem ser selecionados por meio da estrutura &lt;code&gt;data.frame[linha, coluna]&lt;/code&gt;, na qual os parâmetros linhas e coluna são os índices desses elementos.&lt;/p&gt;
+&lt;p&gt;Para combinar &lt;code&gt;data.frame&lt;/code&gt; e &lt;code&gt;tibble&lt;/code&gt; por linhas ou colunas utilizamos, respectivamente, as funções &lt;code&gt;rbind()&lt;/code&gt; e &lt;code&gt;cbind()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Até aqui, já ficou claro que a escolha ou identificação dos tipos e das classes de dados espaciais e não espaciais é muito importante para sua análise.&lt;/p&gt;
+&lt;p&gt;Algumas funções para manipulação de dataframes:&lt;/p&gt;
+&lt;p&gt;head() # - Mostra as primeiras 6 linhas.&lt;br /&gt;
+tail() # - Mostra as últimas 6 linhas.&lt;br /&gt;
+dim() # - Número de linhas e de colunas.&lt;br /&gt;
+names() # - Os nomes das colunas (variáveis).&lt;br /&gt;
+str() # - Estrutura do data.frame. Mostra, entre outras coisas, as classes de cada coluna.&lt;br /&gt;
+cbind() # - Acopla duas tabelas lado a lado.&lt;br /&gt;
+rbind() # - Empilha duas tabelas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dicas-de-sites-com-informação-interessante&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Dicas de sites com informação interessante&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://lhmet.github.io/adar-ebook/vetor.html&#34; class=&#34;uri&#34;&gt;https://lhmet.github.io/adar-ebook/vetor.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html&#34; class=&#34;uri&#34;&gt;http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/02_funcoes_e_objetos.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.estatisticacomr.uff.br/?p=564&#34; class=&#34;uri&#34;&gt;http://www.estatisticacomr.uff.br/?p=564&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://livro.curso-r.com/3-r-base.html&#34; class=&#34;uri&#34;&gt;https://livro.curso-r.com/3-r-base.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.msperlin.com/padfeR/operacoes-basicas.html&#34; class=&#34;uri&#34;&gt;https://www.msperlin.com/padfeR/operacoes-basicas.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visualização de dados</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#gráficos-no-r&#34;&gt;Gráficos no R&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#ferramentas-básicas-de-construção-de-gráficos-no-r&#34;&gt;Ferramentas básicas de construção de gráficos no R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#introdução-à-gramática-de-gráficos-com-ggplot2&#34;&gt;Introdução à gramática de gráficos com ggplot2&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#ggplot2-uma-gramática-de-dados&#34;&gt;ggplot2: uma gramática de dados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#um-primeiro-exemplo&#34;&gt;Um primeiro exemplo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#variações-de-histograma-e-gráfico-de-densidade&#34;&gt;Variações de histograma e gráfico de densidade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#curva-de-densidade-ou-boxplot&#34;&gt;Curva de densidade ou boxplot?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#duas-variáveis-contínuas-e-gráfico-de-dispersão&#34;&gt;Duas variáveis contínuas e gráfico de dispersão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#aspectos-não-relacionados-à-geometria&#34;&gt;Aspectos não relacionados à geometria&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;gráficos-no-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Gráficos no R&lt;/h2&gt;
+&lt;div id=&#34;ferramentas-básicas-de-construção-de-gráficos-no-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Ferramentas básicas de construção de gráficos no R&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x1 &amp;lt;- rnorm(100)
+y1 &amp;lt;- rnorm(100)
+plot(x1,y1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x1,y1,pch=16, col=&amp;#39;red&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x2 &amp;lt;- seq(0,2*pi,len=100)
+y2 &amp;lt;- sin(x2)
+
+plot(x2,y2,type=&amp;#39;l&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x2,y2,type=&amp;#39;l&amp;#39;, lwd=3, col=&amp;#39;darkgreen&amp;#39;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(x2,y2,type=&amp;#39;l&amp;#39;, col=&amp;#39;darkgreen&amp;#39;, lwd=3, ylim=c(-1.2,1.2));
+y2r &amp;lt;- y2 + rnorm(100,0,0.1)
+points(x2,y2r, pch=16, col=&amp;#39;darkred&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;carregando-mapas-no-r&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Carregando mapas no R&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install.packages(&amp;quot;GISTools&amp;quot;, depend = T)
+library(GISTools)
+
+# library(GISTools)
+data(georgia)
+
+# seleciona o primeiro elemento - Município Appling
+appling &amp;lt;- georgia.polys[[1]]
+
+# determinar a extensão da representação
+plot(appling, asp=1, type=&amp;#39;n&amp;#39;, xlab=&amp;quot;Easting&amp;quot;, ylab=&amp;quot;Northing&amp;quot;)
+
+# plot the selected features with hatching
+polygon(appling, density=14, angle=135) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;introdução-à-gramática-de-gráficos-com-ggplot2&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Introdução à gramática de gráficos com ggplot2&lt;/h1&gt;
+&lt;p&gt;Para este tutorial vamos usar novamente dados de Fakeland, como fizemos no tutorial 5. Em vez de apenas 30 observações, agora trabalharemos com um conjunto maior de cidadãos (200) e menos variáveis, para facilitar nosso trabalho.&lt;/p&gt;
+&lt;p&gt;Antes de abrir os dados, vamos começar carregando as duas bibliotecas que utilizaremos no tutorial: &lt;em&gt;readr&lt;/em&gt;, para ler os dados; e &lt;em&gt;ggplot2&lt;/em&gt;, para a produção de gráficos. Você pode simplesmente carregar o pacte &lt;em&gt;tidyverse&lt;/em&gt; se preferir.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(readr)
+library(ggplot2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v tibble  3.1.4     v dplyr   1.0.7
+## v tidyr   1.1.3     v stringr 1.4.0
+## v purrr   0.3.4     v forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+## x dplyr::select() masks MASS::select()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A seguir, carregue os dados, que estão no repositório da oficina:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;url_fake_data &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/cebrap_lab_programacao_r/master/data/fake_data_2.csv&amp;quot;
+fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_names = T)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 200 Columns: 7&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Column specification --------------------------------------------------------
+## Delimiter: &amp;quot;;&amp;quot;
+## chr (4): sexo, educ, partido, candidato
+## dbl (3): idade, renda, filhos&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;ggplot2-uma-gramática-de-dados&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;ggplot2: uma gramática de dados&lt;/h2&gt;
+&lt;p&gt;Em conjunto com a gramática de manipulação de dados do &lt;em&gt;dplyr&lt;/em&gt;, a gramática de gráficos &lt;em&gt;ggplot2&lt;/em&gt; é um dos destaques da linguagem R. Além de flexível e aplicável a diversas classes de objetos (data frames, objetos de mapa e redes, por exemplo), a qualidade dos gráficos é excepcionalmente boa.&lt;/p&gt;
+&lt;p&gt;Não é, no entanto, tão intuitiva e simples como a gramática de manipulação de dados. Assim, neste breve tutorial vamos priorizar a compreensão da estrutura do código para produzir gráficos com &lt;em&gt;ggplot2&lt;/em&gt; a partir de alguns exemplos simples e propositalmente não cobriremos todas as (inúmeras) possibilidades de visualização.&lt;/p&gt;
+&lt;p&gt;Você verá, depois de um punhado de gráficos, que a estrutura pouco muda de um tipo de gráfico a outro. Quando precisar de um “tipo” novo de gráfico, ou, como denominaremos a partir de agora, de uma nova “geometria”, bastará aprender mais uma linha de código a ser adicionada ao final de um código já conhecido.&lt;/p&gt;
+&lt;p&gt;Vamos logo a um primeiro exemplo para clarificar o assunto.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;um-primeiro-exemplo&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Um primeiro exemplo&lt;/h2&gt;
+&lt;p&gt;Queremos conhecer a distribuição de preferências de candidato à presidência na amostra de cidadãos de Fakeland. Veja como apresentar essa informação com o pacote &lt;em&gt;ggplot2&lt;/em&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = candidato)) +
+  geom_bar()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Bastante estranho, não? Vamos olhar cada uma de suas partes.&lt;/p&gt;
+&lt;p&gt;Comecemos pela primeira linha. A principal função do código é, como era de se esperar, &lt;em&gt;ggplot&lt;/em&gt; (sem o 2 mesmo). Note que não estamos fazendo uma atribuição, por enquanto, pois queremos apenas “imprimir” o gráfico, e não guardá-lo como objeto (algo perfeitamente possível!).&lt;/p&gt;
+&lt;p&gt;O primeiro argumento da função &lt;em&gt;ggplot&lt;/em&gt; é “data”, ou seja, o objeto que contém os dados a serem visualizados. No nosso caso, o data frame &lt;em&gt;fake&lt;/em&gt;. Diremos que um código de gráfico se compõem de várias camadas, e a primeira delas corresponde aos dados.&lt;/p&gt;
+&lt;p&gt;Até aqui, nada de novo. A estranhesa vem com as 3 letrinhas “aes” que são a abreviação de “aesthetics”. Está é a segunda “camada”. Aqui definiremos quais variáveis farão parte do gráfico. Estamos trabalhando por enquanto com apenas uma variável, representada no eixo horizontal, ou eixo “x”. Por esta razão preenchemos o parâmetro “x” da “aesthetics” e nada mais.&lt;/p&gt;
+&lt;p&gt;Mesmo após usar a função &lt;em&gt;ggplot&lt;/em&gt;, informar a fonte dos dados e a “aesthetics”, não dissemos nada sobre a geometria do gráfico. A geometria será nossa terceira camada. Como estamos lidando com uma variável nominal (discreta), e queremos observar sua distribuição de probabilidade, podemos usar uma gráfico de barras simples.&lt;/p&gt;
+&lt;p&gt;Para adicionar uma geometria, colocamos um símbolo de “+” após fechar o parêntesis da função &lt;em&gt;ggplot&lt;/em&gt; e, na mesma linha, ou, convencionalmente, na linha seguinte, utilizarmos a função da geometria correspondente. Vamos repetir o gráfico para examinar o código novamente, agora prestando atenção às suas partes:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = candidato)) +
+  geom_bar()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Vamos trocar rapidamente para uma variável contínua, idade, (alterando o valor de “x” dentro de “aesthetics”) e a geometria para histograma (adequado para representar variávels numéricas):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
+  geom_histogram()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Não avance. Compare os dois códigos com calma e compreenda as diferenças. Note que o tipo de variável que demanda uma(s) geometria(s) específica(s), e não contrário. Pergunte, caso tenha dúvidas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;variações-de-histograma-e-gráfico-de-densidade&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Variações de histograma e gráfico de densidade&lt;/h2&gt;
+&lt;p&gt;As geometrias, cada uma com sua função, também têm parâmetros que podem ser alterados. Por exemplo, as barras do histograma que acabamos de produzir são muito “fininhas”. Vamos aumentar sua largura, ou seja, vamos representar mais valores do eixo “x” em cada barra do histograma:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
+  geom_histogram(binwidth = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;O gráfico está muito cinza. Vamos mudar algumas cores:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = fake, aes(x = idade)) + 
+  geom_histogram(binwidth = 2, colour = &amp;quot;darkred&amp;quot;, fill = &amp;quot;green&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Melhor, não? Certamente não. Mas note que podemo trocar a contornos dos contornos das barras e seu preenchimento. Em geral, os argumentos “colour” e “fill” servem a várias geometrias (e, como veremos abaixo, podemos usá-los também em “aesthetics”).&lt;/p&gt;
+&lt;p&gt;Curiosidade: R aceita as duas grafias em inglês para a palavra cor, “colour” (britânico) e “color” (americano).&lt;/p&gt;
+&lt;p&gt;Histogramas são normalmente bastante adequados par variáveis numéricas com valores bastante espaçados, como é o caso de variáveis discretas numéricas (valores inteiros apenas, não podendo assumir valores doidos como pi ou raiz de 2).&lt;/p&gt;
+&lt;p&gt;Uma alternativa mais elegante ao histograma, e convencionalmente utilizada para variáveis verdadeiramente contínuas, são os gráficos de densidade. Vamos, assim, apenas alterar a geometria para a mesma variável, idade, e observar novamente sua distribuição.&lt;/p&gt;
+&lt;p&gt;Nota: a partir de agora vamos omitir o nome do parâmetro “data” logo no início do código.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lindo, mas ainda cinza demais. Vamos adicionar cor à borda:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density(colour = &amp;quot;blue&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Melhor (melhor?), mas ainda muito branco. Vamos adicionar cor ao interior da curva:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Muito pior. E se deixássemos a curva mais “transparente”?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;, alpha = 0.2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Agora sim melhorou. Mas nos falta uma referência para facilitar a leitura do gráfico. Por exemplo, seria legal adicionar uma linha vertical que indicasse onde está a média da distribuição. Vamos calcular a média da idade:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;media_idade &amp;lt;- mean(fake$idade)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mas estamos tratando de curvas de densidade, não estamos? Nessa geometria não há possibilidade de representar valores com uma linha vertical. Vamos, então, adicionar uma nova geometria, com uma “aesthetics” própria, com novos dados (no caso, um valor único), ao gráfico que já havíamos construído:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;, alpha = 0.2) +
+  geom_vline(aes(xintercept = media_idade))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Veja que, com &lt;em&gt;ggplot2&lt;/em&gt; podemos adicionar novas geometrias e dados sempre que precisarmos. É por esta razão que a estrutura do código deste pacote difere tanto da estrutura para gráficos no pacote base. A flexibilidade adicionar geometrias (usando ou não os dados inicialmente apontados) é uma das vantagens do &lt;em&gt;ggplot2&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Para tornar o gráfico mais interessante, vamos alterar a forma e a cor da linha adicionada no gráfico anterior:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade)) + 
+  geom_density(colour = &amp;quot;blue&amp;quot;, fill = &amp;quot;blue&amp;quot;, alpha = 0.2) +
+  geom_vline(aes(xintercept = media_idade),
+             linetype=&amp;quot;dashed&amp;quot;,
+             colour=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;“linetype” é outro parâmetro comum a diversas geometrias (obviamente, as geometrias de linhas).&lt;/p&gt;
+&lt;p&gt;Vamos dar alguns passos para traz e retornar aos histogramas. E se quisermos comparar as distribuições de idade por sexo, por exemplo? Precisamos filtrar os dados e fazer um gráfico para cada categoria de sexo?&lt;/p&gt;
+&lt;p&gt;Poderíamos. Mas mais interessante é compara as distribuições em um mesmo gráfico. Como estamos separando uma distribuição de uma variável contínua (idade) em duas, a partir de uma segunda variável (sexo), precisamos adicionar essa nova variável à “aesthetics”. Veja como:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
+  geom_histogram(binwidth = 2, position = &amp;quot;identity&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Observe que adicionamos o parâmetro “fill” à “aesthetics”. Isso significa que a variável sexo separará as distribuições de idade em cores de preenchimento diferentes. Conseguem ver as duas distribuições, uma atrás da outra? Note que agora temos uma legenda.&lt;/p&gt;
+&lt;p&gt;“position” é o que determina como as barras ficarão dispotas uma em relação à outra. Vamos ver outras opções para o mesmo parâmetro (novamente, comum a várias geometrias) para buscar uma opção mais adequada de visualizar os mesmos dados:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x=idade, fill = sexo)) + 
+  geom_histogram(binwidth = 2, position = &amp;quot;dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Um pouco melhor?&lt;/p&gt;
+&lt;p&gt;Vamos tentar algo semelhante com as curvas de densidade. Em vez de “fill”, vamos usar a variável sexo em “colour” na “aesthetics” e separa as distribuições por cores de borda:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, colour = sexo)) + 
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Agora sim está melhor. Vamos adicionar tentar o mesmo com “fill”:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
+  geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Não ficou muito bom. Mas pode melhorar. Com o parâmetro “alpha”, que já usamos no passado, podemos deixar as distribuições mais “transparentes” e observar as áreas nas quais se sobrepôe:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo)) + 
+  geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Finalmente, podemos usar “fill” e “colour” juntos na “aesthetics”&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = sexo, colour = sexo)) + 
+  geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Que belezura de gráfico! A comparação de distribuições de uma variável dependente por uma variável binária (duas categorias) é uma das mais úteis em ciência, pois é exatamente a forma gráfica de testes de hipóteses. Qual grupo tem, na média, mais idade em Fakeland? Com os gráficos fica fácil responder&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;curva-de-densidade-ou-boxplot&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Curva de densidade ou boxplot?&lt;/h2&gt;
+&lt;p&gt;Vamos repetir o gráfico acima, mas, em vez de separar as distribuições por sexo, vamos separar por uma variável com mais categorias: ‘educ’, que representa nível educacional mais alto obtido pelo indivíduo em Fakeland.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, fill = educ, colour = educ)) + 
+  geom_density(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Dá par comparar as distribuições de idade por grupo? Certamente não. Podemos ter alguma ideia de que não há muita diferença, mas o gráfico é poluído demais.&lt;/p&gt;
+&lt;p&gt;Uma alternativa mais sintética, ou seja, que contém menos informações,
+para representar distribuições de variáveis numéricas é utilizar boxplot. Vamos ver um exemplo que serve de alternativa ao gráfico anterior.&lt;/p&gt;
+&lt;p&gt;Nota: na nova “aesthetics” temos agora “x” (eixo horizontal) e “y”, eixo vertical.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = educ, y = idade)) + 
+  geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Importante: se você não tem familiaridade com boxplots, me peça uma rápida explicação.&lt;/p&gt;
+&lt;p&gt;Ainda que com perda de informação, conseguimos compara as distribuições de idade por nível educacional de forma bastante rápida. As médias são próximas e as distribuições mais à esqueda são ligeiramente mais concentradas em torno da média do que as distribuições mais à direita.&lt;/p&gt;
+&lt;p&gt;Para colocar um pouco de cor nos boxplots, podemos usar “fill” novamente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = educ, y = idade, fill = educ)) + 
+  geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Gráfico de barras, para variáveis categóricas, e histogramas, curvas de densidade e boxplot são os melhores gráficos para explorarmos as distribuição de variáveis quando queremos conhecer os dados que recém coletamos ou obtemos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;duas-variáveis-contínuas-e-gráfico-de-dispersão&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Duas variáveis contínuas e gráfico de dispersão&lt;/h2&gt;
+&lt;p&gt;Até agora trabalhamos com distribuições de uma única variável ou com a distribuição conjunta de uma variável contínua por outra discreta (em outras palavras, separados a distribuição de uma variável em várias a partir de um variável categórica).&lt;/p&gt;
+&lt;p&gt;Vamos ver agora como relacionar graficamente duas variáveis contínuas. O padrão é usarmos a geometria de gráfico de dispersão, que presenta cada par de informações como uma coordenada no espaço bidimensional. Vamos ver um exemplo com idade (eixo horizontal) e renda (eixo vertical):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Você consegue ler este gráfico? Cada ponto representa um indivíduo, ou seja, posiciona no espaço o par (idade, renda) daquela(e) indivíduo.&lt;/p&gt;
+&lt;p&gt;Note que há uma certa tendência nos dados: quanto mais velha a pessoa, maior sua renda. Podemos representar essa relação com modelos lineares e não lineares. A geometria &lt;em&gt;geom_smooth&lt;/em&gt; cumpre esse papel.&lt;/p&gt;
+&lt;p&gt;Para utilizá-la, precisamos definir qual é o método (parâmetro “method”) de ajuste aos dados. O mais convencional é representar a relação entre as variáveis como reta. Veja o exemplo (ignore o parâmetro “se” por enquanto):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Legal, não? Se retirarmos o parâmetro “se”, ou voltarmos seu valor para o padrão “TRUE”, obteremos também o intervalo de confiança da reta que inserimos.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Modelos de regressão, linear ou não, estão bastante fora do escopo deste curso. Mas podemos falar sobre isso individualmente se você quiser. Tente apenas interpretar o resultado gráfico.&lt;/p&gt;
+&lt;p&gt;A alternativa não linear para representar a relação ao dados mais utilizada com essa geometria é o método “loess”. Veja o resultado:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;loess&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;E se quisermos inserir informações de outras variáveis no gráfico? É possível?&lt;/p&gt;
+&lt;p&gt;Sim, é. Se, por exemplo, queremos representar uma terceira variável numérica, podemos colocá-la como o tamanho dos pontos (raio do círculo). Por exemplo, o número de filhos, variável que vai de 1 a 10 nos nossos dados, poderia ser adicionada da seguinte forma:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, size = filhos)) + 
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Se, em vez de alterar o tamanho dos pontos por uma variável numérica, quisermos alterar sua cor ou forma dos pontos com base em uma variável categória (sexo, por exemplo), fazemos, respectivamente:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ou:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, shape = sexo)) + 
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Nota: cada símbolo é representado por um número e você encontra facilmente na documentação a tabela de códigos dos diferentes símbolos.&lt;/p&gt;
+&lt;p&gt;Alterando simultaneamente cor e forma:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo, shape = sexo)) + 
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Adicionando uma reta de regressão para cada categoria de sexo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;, se = F)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lindo, não?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aspectos-não-relacionados-à-geometria&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Aspectos não relacionados à geometria&lt;/h2&gt;
+&lt;p&gt;Finalmente, podemos alterar diversos aspectos não relacionados aos dados, geometria e “aesthetics”. O procedimento para adicionar alterações em título, eixos, legenda, etc, é o mesmo que para adicionar novas geometrias. Vamos trabalhar com o último gráfico que produzimos fazendo pequenas modificações.&lt;/p&gt;
+&lt;p&gt;Em primeiro lugar, vamos adicionar um título ao gráfico:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) + 
+  ggtitle(&amp;quot;Renda por idade, separado por sexo&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-38-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;A seguir, vamos modificar os nomes dos rótulos dos eixos:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) + 
+  ggtitle(&amp;quot;Renda por idade, separado por sexo&amp;quot;) +
+  xlab(&amp;quot;Idade (em anos inteiros)&amp;quot;) +
+  ylab(&amp;quot;FM$ (Fake Money)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-39-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Também podemos modificar as legendas. Há um conjunto de comandos “scale”, que variam de acordo com o elemento da “aesthetics” que definem a legenda e com o tipo de variável, que podem ser usadas para tanto. No nosso caso, usamos uma variável discreta (sexo) como “colour”, e, por tanto, precisamos usar a função &lt;em&gt;scale_colour_discrete&lt;/em&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) + 
+  ggtitle(&amp;quot;Renda por idade, separado por sexo&amp;quot;) +
+  xlab(&amp;quot;Idade (em anos inteiros)&amp;quot;) +
+  ylab(&amp;quot;FM$ (Fake Money)&amp;quot;) +
+  scale_colour_discrete(name=&amp;quot;Sexo&amp;quot;,
+                         breaks=c(&amp;quot;Female&amp;quot;, &amp;quot;Male&amp;quot;),
+                         labels=c(&amp;quot;Mulher&amp;quot;, &amp;quot;Homem&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-40-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Excelente!&lt;/p&gt;
+&lt;p&gt;Vamos complicar um pouco mais. Vamos supor que queremos separar agora nossos dados em múltiplos gráficos diferentes, um para cada nível de educação. Como fazer isso? Com &lt;em&gt;face_grid&lt;/em&gt; ou &lt;em&gt;facet_wrap&lt;/em&gt;. Veja um exemplo com o último:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(fake, aes(x = idade, y = renda, colour = sexo)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) + 
+  ggtitle(&amp;quot;Renda por idade, separado por sexo&amp;quot;) +
+  xlab(&amp;quot;Idade (em anos inteiros)&amp;quot;) +
+  ylab(&amp;quot;FM$ (Fake Money)&amp;quot;) +
+  scale_colour_discrete(name = &amp;quot;Sexo&amp;quot;,
+                         breaks = c(&amp;quot;Female&amp;quot;, &amp;quot;Male&amp;quot;),
+                         labels = c(&amp;quot;Mulher&amp;quot;, &amp;quot;Homem&amp;quot;)) + 
+  facet_wrap( ~ educ, ncol = 2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/ggplot_files/figure-html/unnamed-chunk-41-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ufa! Quanta coisa em um só gráfico!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Manipulação e limpeza de dados</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/funcoes_manipulacao/</guid>
+      <description>&lt;h1 id=&#34;introdução-ao-pacote-dplyr&#34;&gt;Introdução ao pacote dplyr&lt;/h1&gt;
+&lt;p&gt;Começando pelo meio: data frames
+Uma característica distintiva da linguagem de programação R é ter sido desenvolvida para a análise de dados. E quando pensamos em análise de dados, a protagonista do show é a base de dados ou, como vamos conhecer a partir de agora, data frame.&lt;/p&gt;
+&lt;p&gt;Por esta razão, em vez de aprender como fazer aritmética, elaborar funções ou executar loops para repetir tarefas e outros aspectos básicos da linguagem, vamos começar olhando para o R como um software concorrente dos demais utilizados para análise de dados em ciências sociais, como SPSS, Stata, SAS e companhia.&lt;/p&gt;
+&lt;p&gt;As principais características de um data frame são: (1) cada coluna representa uma variável (ou característica) de um conjunto de observações; (2) cada linha representa uma observação e contém os valores de cada variável para tal observação. Vejamos um exemplo:&lt;/p&gt;
+&lt;p&gt;Candidato	Partido	Votos
+Beatriz	PMDB	350
+Danilo	SOL	1598
+Pedro	PTB	784
+Davi	PSD	580
+Mateus	PV	2
+Note que em uma linha os elementos são de tipos de diferentes: na primeira coluna há uma nome (texto), na segunda uma sigla de partido (texto, mas limitado a um conjunto de siglas) e na terceira votos (número inteiros).&lt;/p&gt;
+&lt;p&gt;Por outro lado, em cada coluna há somente elementos de um tipo. Por exemplo, há apenas números inteiros na coluna votos. Colunas são variáveis e por isso aceitam registros de um único tipo. Se você já fez um curso de estatísticas básica ou de métodos quantitativos deve se lembrar que as variáveis são classificadas da seguinte maneira:&lt;/p&gt;
+&lt;p&gt;1- Discretas&lt;/p&gt;
+&lt;p&gt;Nominais, que são categorias (normalmente texto) não ordenadas&lt;/p&gt;
+&lt;p&gt;Ordinais, que são categorias (normalmente texto) ordenadas&lt;/p&gt;
+&lt;p&gt;Inteiros, ou seja, o conjunto dos números inteiros&lt;/p&gt;
+&lt;p&gt;2- Contínuas, números que podem assumir valores não inteiros&lt;/p&gt;
+&lt;p&gt;Se destacamos uma coluna do nosso data frame, temos um vetor. Por exemplo, a variável &amp;ldquo;Votos&amp;rdquo; pode ser presentado da seguinte maneira: {350, 1598, 784, 580, 2}. Um data frame é um conjunto de variáveis (vetores!) dispostos na vertical e combinados um ao lado do outro.&lt;/p&gt;
+&lt;p&gt;Data frame e vetores são objetos na linguagem R.&lt;/p&gt;
+&lt;p&gt;Vamos ver como o R representa vetores e data frames na tela. Antes disso, é preciso &amp;ldquo;abrir&amp;rdquo; um data frame.&lt;/p&gt;
+&lt;p&gt;Cadastro de Escolas
+Neste tutorial vamos trabalhar com as bases de dados da educação municipal da cidade de São Paulo. Em particular, vamos começar trabalhando com o cadastro de escolas da Prefeitura de São Paulo.&lt;/p&gt;
+&lt;p&gt;A página na qual você encontrará o cadastro de escolas é essa aqui aqui. Comece baixando o dicionário de dados e os dados mais atuais.&lt;/p&gt;
+&lt;p&gt;Abrindo dados em R com botão (aaaaaaargh!)
+Se você decidiu aprender a programar em R, provavelmente quer substituir a análise de dados com cliques no mouse que fazemos no editor de planilhas pela construção de scripts que documentam o passo a passo da análise. Daqui em diante estaremos num mundo sem botões. Exceto um, por enquanto, aí no canto direito superior chamado &amp;ldquo;Import Dataset&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Clique no botão (aaaaaaargh!). Veja que temos a opção de importar arquivos de texto com duas bibliotecas diferentes, base e readr (que é o pacote de abertura de dados do tidyverse) e dados em alguns outros formatos, como MS Excel e outros softwares de análise estatística.&lt;/p&gt;
+&lt;p&gt;Use a primeira opção, &amp;ldquo;From Text (base)&amp;rdquo; para carregar os dados do cadastro de escola.&lt;/p&gt;
+&lt;p&gt;Abrindo dados em R (com script)
+(Lembre-se de carregar o pacote tidyverse antes de prosseguir)&lt;/p&gt;
+&lt;p&gt;library(tidyverse)
+Use o recurso &amp;ldquo;Import Dataset&amp;rdquo; enquanto não se sentir confortável com a linguagem. Mas, aos poucos, vá abandonando. Abrir dados em R é muito simples.&lt;/p&gt;
+&lt;p&gt;Repetindo o procedimento, para abrir o cadastro de escola basta fazer:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(&amp;ldquo;&lt;a href=&#34;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22&#34;&gt;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&amp;quot;&lt;/a&gt;)
+Em R, as funções &amp;ldquo;read.&amp;rdquo; são as funções de abertura de dados do base e as funções &amp;ldquo;read_&amp;rdquo; são as análogas do pacote readr, parte do tidyverse. Há funções &amp;ldquo;read&amp;rdquo; para abrir todos os tipos de dados, de arquivos de texto a páginas em HTML.&lt;/p&gt;
+&lt;p&gt;No nosso caso, utilizamos a função read_csv2 para abrir um arquivo de texto cujos valores das colunas são separados por vírgula. Infelizmente, não há tempo para aprender sobre as variedades das funções de abertura de dados, mas você pode aprender um pouco mais aqui ou aqui.&lt;/p&gt;
+&lt;p&gt;Note que utilizamos o URL dos dados diretamente. Não precisamos fazer download para uma pasta local para, depois, abrir os dados.&lt;/p&gt;
+&lt;p&gt;Um jeito mais confortável, na mina opinião, de fazer a abertura de dados com um URL é guardar o URL em um objeto de texto e, depois, utilizar esse objeto como input da função:&lt;/p&gt;
+&lt;p&gt;url_escolas &amp;lt;- &amp;ldquo;&lt;a href=&#34;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv%22&#34;&gt;http://dados.prefeitura.sp.gov.br/pt_PT/dataset/8da55b0e-b385-4b54-9296-d0000014ddd5/resource/e0f7d848-1d35-4ce8-b2b3-20e1196c2076/download/escolas122018.csv&amp;quot;&lt;/a&gt;
+escolas &amp;lt;- read_csv2(url_escolas)
+Note que, pela segunda vez, utilizamos o símbolo &amp;ldquo;&amp;lt;-&amp;rdquo;. Ele é um símbolo de atribuição, e é um das marcas mais importantes da linguagem. Atribuir, significa &amp;ldquo;guardar na memória com um nome&amp;rdquo;. O nome, é o que vai do lado esquerdo. A parte do lado direito da equação de atribuição é o objeto a ser guardado.&lt;/p&gt;
+&lt;p&gt;Você pode usar &amp;ldquo;=&amp;rdquo; no lugar de &amp;ldquo;&amp;lt;-&amp;rdquo;. Mas, avisamos desde já, há casos em que há ambiguidade e os símbolos não funcionam como esperado.&lt;/p&gt;
+&lt;p&gt;Vamos avançar.&lt;/p&gt;
+&lt;p&gt;Explorando sem olhar para a matriz de dados
+No editor de planilhas estamos acostumados a ver os dados, célula a célula. Mas será que é realmente útil ficar olhando para os dados? Você perceberá com o tempo que olhar os dados é desnecessário e até contraproducente.&lt;/p&gt;
+&lt;p&gt;Você pode ver os dados clicando (aaaaaaargh!) no nome do objeto que está no &amp;ldquo;Environment&amp;rdquo; ou utilizando a função View (cuidado, o &amp;ldquo;V&amp;rdquo; é maiúsculo, algo raro em nomes de funções de R).&lt;/p&gt;
+&lt;p&gt;View(escolas)
+Agora que carregamos o cadastro de escolas na memória, vamos conhecer um pouco sobre estes dados sem olhar para a matriz de dados.&lt;/p&gt;
+&lt;p&gt;Podemos rapidamente olhar para uma &amp;ldquo;amostra&amp;rdquo; dos dados com a função head, que nos apresenta as 6 primeiras linhas do conjunto de dados.&lt;/p&gt;
+&lt;p&gt;head(escolas)
+Com apenas as 6 primeiras linhas do data frame temos noção de todo o conjunto. Sabemos rapidamente que existem informações sobre o nome das escolas, seus códigos de cadastro, de que tipo de escola se trata, à qual diretoria regional de ensino (DRE) pertence, etc.&lt;/p&gt;
+&lt;p&gt;Quantas escolas há? Há tantas escolas quantas linhas nos dados. Com nrow descobrimos quantas são.&lt;/p&gt;
+&lt;p&gt;nrow(escolas)
+Quantas informações temos disponíveis para cada escola? Ou seja, quantas variáveis há no conjunto de dados?&lt;/p&gt;
+&lt;p&gt;ncol(escolas)
+Qual é o nome das variáveis?&lt;/p&gt;
+&lt;p&gt;names(escolas)
+Pausa para um comentário
+Podemos fazer comentários no meio do código. Basta usar # e tudo que seguir até o final da linha não será interpertado pelo R como código. Por exemplo:&lt;/p&gt;
+&lt;h1 id=&#34;imprime-o-nome-das-variaveis-do-data-frame-cadastro&#34;&gt;Imprime o nome das variaveis do data frame cadastro&lt;/h1&gt;
+&lt;p&gt;names(escolas)&lt;/p&gt;
+&lt;p&gt;names(escolas) # Repetindo o comando acima com comentario em outro lugar
+Comentários são extremamente úteis para documentar seu código. Documentar é parte de programar e você deve pensar nas pessoas com as quais vai compartilhar o código e no fato de que com certeza não se lembrará do que fez em pouco tempo (garanto, você vai esquecer).&lt;/p&gt;
+&lt;p&gt;Argumentos ou parâmetros das funções
+Note que em todas as funções que utilizamos até agora, escolas está dentro do parênteses que segue o nome da função. Essa sintaxe é característica das funções de R. O que vai entre parêntesis são os argumentos ou parâmetros da função, ou seja, os &amp;ldquo;inputs&amp;rdquo; que serão transformados.&lt;/p&gt;
+&lt;p&gt;Uma função pode receber mais de um argumento. Pode também haver argumentos não obrigatórios, ou seja, para os quais não é necessário informar nada se você não quiser alterar os valores pré-definidos. Por exemplo, a função head contém o argumento n, que se refere ao número de linhas a serem impressas na tela, pré-estabelecido em 6 (você pode conhecer os argumentos da função na documentação do R usando ? antes do nome da função). Para alterar o parâmetro n para 10, por exemplo, basta fazer:&lt;/p&gt;
+&lt;p&gt;head(x = escolas, n = 10)
+x é o argumento que já havíamos utilizado anteriormente e indica em que objeto a função head será aplicada. Dica: você pode omitir tanto &amp;ldquo;x =&amp;rdquo; quanto &amp;ldquo;n =&amp;rdquo; se você já conhecer a ordem de cada argumento no uso da função.&lt;/p&gt;
+&lt;p&gt;Mais funções para explorar os dados
+Todos os objetos em R tem uma estrutura. Você pode investigar essa estrutura utilizando a função str. No caso de data frames, o output é legível (para outras classes de objeto isso não é verdade necessariamente):&lt;/p&gt;
+&lt;p&gt;str(escolas)
+Há informações sobre o nome das variáveis, dispostas na vertical, tipo de dados (texto &amp;ndash; char &amp;ndash; ou números &amp;ndash; num ou int) e uma amostra das primeiras observações.&lt;/p&gt;
+&lt;p&gt;Uma função semelhante, e com resultado um pouco mais &amp;ldquo;limpo&amp;rdquo;, é glimpse, parte do dplyr:&lt;/p&gt;
+&lt;p&gt;glimpse(escolas)
+Vamos agora renomear os dados.&lt;/p&gt;
+&lt;p&gt;Renomeando variáveis
+Quando trabalhamos com dados que não coletamos, em geral, não vamos gostar dos nomes das variáveis que quem produziu os dados escolheu. Mais ainda, com certa frequência, obtemos dados cujos nomes das colunas são compostos ou contêm acentuação, cecedilha e demais caracteres especiais. Dá um tremendo trabalho usar nomes com tais característica, apesar de possível. O ideal é termos nomes sem espaço (você pode usar ponto ou subscrito para separar palavras em um nome composto) e que contenham preferencialmente letras minísculas sem acento e números.&lt;/p&gt;
+&lt;p&gt;Vamos começar renomeando algumas variáveis no nosso banco de dados, cujos nomes vemos com o comando abaixo:&lt;/p&gt;
+&lt;p&gt;names(escolas)
+O primeiro argumento da função rename deve ser a base de dados cujos nomes das variáveis serão renomeados. Depois da primeira vírgula, inserimos todos as modificações de nomes, novamente separadas por vírgulas, e da seguinte maneira. Exemplo: nome_novo = nome_velho. Exemplo: nome_novo = Nome_Velho. Veja o exemplo, em que damos novos nomes às variáveis &amp;ldquo;tipoesc&amp;rdquo;, &amp;ldquo;latitute&amp;rdquo; e &amp;ldquo;longitude&amp;rdquo;:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Simples, não?&lt;/p&gt;
+&lt;p&gt;Uma gramática, duas formas
+No tidyverse, existe uma outra sintaxe para executar a mesma tarefa de (re)nomeação. Vamos olhar para ela (lembre-se de carregar novamente os dados, pois os nomes velhos já não existem mais e não existe Ctrl+Z em R):&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+rename(tipo = tipoesc,
+lat = latitude,
+lon = longitude)
+Usando o operador %&amp;gt;%, denominado pipe, retiramos de dentro da função rename o banco de dados cujas variáveis serão renomeadas. As quebras de linha depois do %&amp;gt;% e dentro da função rename são opcionais. Porém, o pardão é &amp;lsquo;verticalizar o código&amp;rsquo; e colcar os &amp;lsquo;verbos&amp;rsquo; à esquerda, o que torna sua leitura mais confortável.&lt;/p&gt;
+&lt;p&gt;Compare com o código que havíamos executado anteriormente:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- rename(escolas, tipo = tipoesc, lat = latitude, lon = longitude)
+Essa outra sintaxe tem uma vantagem grande sobre a anterior: ela permite emendar uma operação de transformação do banco de dados na outra. Veremos adiante como fazer isso. Por enquanto, tenha em mente que o resultado é o mesmo para qualquer uma das duas formas.&lt;/p&gt;
+&lt;p&gt;Vamos trabalhar com várias variáveis (sic) de uma única vez. Reabra o banco de dados:&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas)
+Renomeie as variáveis &amp;ldquo;dre&amp;rdquo;, &amp;ldquo;codesc&amp;rdquo;, &amp;ldquo;tipoesc&amp;rdquo;, &amp;ldquo;nomesc&amp;rdquo;, &amp;ldquo;diretoria&amp;rdquo;, &amp;ldquo;latitude&amp;rdquo;, &amp;ldquo;longitude&amp;rdquo; e &amp;ldquo;codinep&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)
+Selecionando colunas
+Algumas colunas podem ser dispensáveis em nosso banco de dados a depender da análise. Por exemplo, pode ser que nos interessem apenas as variáveis que já renomeamos. Para selecionar um conjunto de variáveis, utilizaremos o segundo verbo do dplyr que aprenderemos: select&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- select(escolas, dre_abreviatura, codigo, tipo, nome, dre, lat, lon, codigo_inep)
+ou usando o operador %&amp;gt;%, chamado pipe,&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Operador %&amp;gt;% para &amp;ldquo;emendar&amp;rdquo; tarefas
+O que o operador pipe faz é simplesmente colocar o primeiro argumento da função (no caso acima, o data frame), fora e antes da própria função. Ele permite lermos o código, informalmente, da seguinte maneira: &amp;ldquo;pegue o data frame x e aplique a ele esta função&amp;rdquo;. Veremos abaixo que podemos fazer uma cadeia de operações (&amp;ldquo;pipeline&amp;rdquo;), que pode ser lida informalmente como: &amp;ldquo;pegue o data frame x e aplique a ele esta função, e depois essa, e depois essa outra, etc&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;A grande vantagem de trabalharmos com o operador %&amp;gt;% é não precisar repetir o nome do data frame diversas vezes ao aplicarmos a ele um conjunto de operações.&lt;/p&gt;
+&lt;p&gt;Vejamos agora como usamos o operador %&amp;gt;% para &amp;ldquo;emendar&amp;rdquo; tarefas, começando da abertura desde dados. Note que o primeiro input é o url da base de dados e, que, uma vez carregados, vai sendo transformado a cada novo verbo.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- read_csv2(url_escolas) %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep)
+Em uma única sequência de operações, abrimos os dados, alteramos os nomes das variáveis e selecionamos as que permaneceriam no banco de dados. Esta forma de programa, tenha certeza, é bastante mais econômica e mais fácil de ler, para que possamos identificar erros mais facilmente.&lt;/p&gt;
+&lt;p&gt;Transformando variáveis
+Usaremos a função mutate para operar transformações nas variáveis existentes e criar variáveis novas. Há inúmeras transformações possíveis e elas lembram bastante as funções de outros softwares, como MS Excel. Vamos ver algumas das mais importantes.&lt;/p&gt;
+&lt;p&gt;No nosso caso, o formato dos valores de latitude e longitude estão em formato diferente do convenional. Latitudes são representadas por números entre -90 e 90, com 8 casas decimais, e Longitudes por números entre -180 e 180, também com 8 casas decimais. Em nosso par de variáveis, latitude está sem separador de decimal está omitido. Faremos a correção divindo latitude por 1 milhão.&lt;/p&gt;
+&lt;p&gt;No caso de longitude, a situação é ainda pior. Há vários separadores e a variável foi lida como texto. Teremos que limpar todos os separadores, transformar a variável em número e, ao final, dividir por 1 milhão para colocar o separador no lugar certo.&lt;/p&gt;
+&lt;p&gt;escolas &amp;lt;- escolas %&amp;gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) 
+Como utilizamos os nomes das próprias variáveis à esquerda da operação de transformação, produziremos uma substituição e não haverá novas colunas na base de dados.&lt;/p&gt;
+&lt;p&gt;Voltaremos ao verbo mutate no próximo tutorial e no exemplos abaixo.&lt;/p&gt;
+&lt;p&gt;Filtrando linhas
+Por vezes, queremos trabalhar apenas com um conjunto de linhas do nosso banco de dados. Por exemplo, se quisermos selecionar apenas escolas municipais de educação infantil, utilizamos o verbo &amp;lsquo;filter&amp;rsquo; com a condição desejada. Note que estamos criando um novo data frame (ou seja, um novo objeto) que contém a seleção de linhas produzida:&lt;/p&gt;
+&lt;p&gt;emeis &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;EMEI&amp;rdquo;)
+Além da igualdade, poderíamos usar outros símbolos: maior (&amp;gt;). maior ou igual (&amp;gt;=), menor (&amp;lt;), menor ou igual (&amp;lt;=) e diferente (!=) para selecionar casos. Para casos de NA, podemos usar a função is.na(), pois a igualdade &amp;lsquo;== NA&amp;rsquo; é inválida em R.&lt;/p&gt;
+&lt;p&gt;Vamos supor agora que todos centros de educação infantil (creche) da rede direta, indireta e conveniada. Como combinar condições?&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)
+Note que, para dizer que para combinarmos as condições de seleção de linha, utilizamos uma barra vertical. A barra é o símbolo &amp;ldquo;ou&amp;rdquo;, e indica que todas as observações que atenderem a uma ou outra condição serão incluídas.&lt;/p&gt;
+&lt;p&gt;Vamos supor que queremos estabelecer agora condições para a seleção de linhas a partir de duas variáveis. Por exemplo, queremos incluir as mesmas escolas já escolhidas e que também sejam da Diretoria Regional do Ipiranga. O símbolo da conjunção &amp;ldquo;e&amp;rdquo; é &amp;ldquo;&amp;amp;&amp;rdquo;. Veja como utilizá-lo:&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- escolas %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;Ao usar duas variáveis diferentes para filter e a conjunção &amp;ldquo;e&amp;rdquo;, podemos escrever o comando separando as condições por vírgula e dispensar o operador &amp;ldquo;&amp;amp;&amp;quot;:&lt;/p&gt;
+&lt;p&gt;creches_ipiranga &amp;lt;- escolas %&amp;gt;% 
+filter((tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;),
+dre == &amp;ldquo;DIRETORIA REGIONAL DE EDUCACAO IPIRANGA&amp;rdquo;)
+Você pode combinar quantas condições precisar. Se houver ambiguidade quanto à ordem das condições, use parênteses, como fizemos acima.&lt;/p&gt;
+&lt;p&gt;Vamos uma aplicação interessante dos dados com os quais trabalhamos.&lt;/p&gt;
+&lt;p&gt;Produzindo mapas no R
+Criamos acima um data frame que contém apenas centros de educação infantil com a informação de latitude e longitude já corrigida. Conseguimos &amp;ldquo;reduzir&amp;rdquo; e alterar os dados usando quatro &amp;ldquo;verbos&amp;rdquo; (funções) fundamentais de manipulação de dados: rename, select, mutate e filter.&lt;/p&gt;
+&lt;p&gt;Precisaremos do pacote ggmap e osmdata para &amp;ldquo;importar&amp;rdquo; mapas de rua de serviços da web (Google e Open Street Maps, por exemplo) para, depois, fazer a combinação dos mapas com os pontos (escolas, a partir da latitude e longitude).&lt;/p&gt;
+&lt;h1 id=&#34;installpackagesosmdata&#34;&gt;install.packages(&amp;lsquo;osmdata&amp;rsquo;)&lt;/h1&gt;
+&lt;h1 id=&#34;installpackagesggmap&#34;&gt;install.packages(&amp;lsquo;ggmap&amp;rsquo;)&lt;/h1&gt;
+&lt;p&gt;library(ggmap)
+library(osmdata)
+Sem entrar em detalhes, vamos utilizar as funções get_map e getbb para obter um mapa sobre o qual inseriremos nossos pontos.&lt;/p&gt;
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+maptype = &amp;ldquo;toner-background&amp;rdquo;,
+zoom = 13)
+Podemos plotar o mapa que baixamos com a função plot:&lt;/p&gt;
+&lt;p&gt;plot(map_sp)
+Mas ainda não é isso que queremos. Precisamos sobrepor ao mapa que baixamos os pontos correspondentes a cada uma dos CEIS. Veja como:&lt;/p&gt;
+&lt;p&gt;ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)
+Legal, não? Não muito bonito, mas estamos no caminho.&lt;/p&gt;
+&lt;p&gt;O código acima tem uma estrutura bastante diferente do que havíamos visto. Ele é parte de outra &amp;ldquo;gramática&amp;rdquo; do R, a &amp;ldquo;grammar o graphics&amp;rdquo; do pacote ggplot2. Veremos um pouco sobre ela em outro tutorial, mas vamos tentar destrinchar o código do mapa acima desde já.&lt;/p&gt;
+&lt;p&gt;Começamos plotando o mapa de São Paulo obtido nas APIs do Open Street Maps e Google com a função ggmap. Criamos, assim, a primeira camada do mapa e &amp;ldquo;organizará&amp;rdquo; o sistema de coordenadas. Com geom_point, adicionaremos pontos ao mapa. Os pontos vem do data frame &amp;ldquo;creches&amp;rdquo; &amp;ndash; por isso &amp;ldquo;data = creches&amp;rdquo; &amp;ndash; e a informação utilizada, &amp;ldquo;lat&amp;rdquo; e &amp;ldquo;lon&amp;rdquo;, faz parte da &amp;ldquo;aesthetics&amp;rdquo; do mapa &amp;ndash; por isso dentro do parênteses &amp;ldquo;aes&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Se você quiser aprender um pouco mais sobre mapas no R (e fazer mapas mais bonitos) aqui.&lt;/p&gt;
+&lt;p&gt;Fim
+Espero que com este tutorial você tenha se familiarizado com a linguagem R e compreendido como utilizá-la trabalhar com os dados abertos da educação municipal. Organizando o que fizemos em um único &amp;ldquo;bloco&amp;rdquo; de cógido, vemos que é preciso pouco código para fazer algo relevante:&lt;/p&gt;
+&lt;p&gt;library(tidyverse)
+library(ggmap)
+library(osmdata)&lt;/p&gt;
+&lt;p&gt;creches &amp;lt;- read_csv2(url_escolas) %&amp;gt;%
+rename(dre_abreviatura = dre,
+codigo = codesc,
+tipo = tipoesc,
+nome = nomesc,
+dre = diretoria,
+lat = latitude,
+lon = longitude,
+codigo_inep = codinep)  %&amp;gt;%
+select(dre_abreviatura,
+codigo,
+tipo,
+nome,
+dre,
+lat,
+lon,
+codigo_inep) %&amp;gt;% 
+mutate(lat = lat / 1000000, 
+lon = str_replace_all(lon, &amp;ldquo;\.&amp;rdquo;, &amp;ldquo;&amp;quot;),
+lon = as.numeric(lon),
+lon = lon / 1000000) %&amp;gt;% 
+filter(tipo == &amp;ldquo;CEI DIRET&amp;rdquo; | 
+tipo == &amp;ldquo;CEI INDIR&amp;rdquo; | 
+tipo == &amp;ldquo;CR.P.CONV&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;map_sp &amp;lt;- get_map(getbb(&amp;ldquo;Sao Paulo&amp;rdquo;), 
+maptype = &amp;ldquo;toner-background&amp;rdquo;,
+zoom = 13)&lt;/p&gt;
+&lt;p&gt;ggmap(map_sp) +
+geom_point(aes(lon, lat), data = creches)&lt;/p&gt;
+&lt;h1 id=&#34;group-by-summarise-arrange-e-slice&#34;&gt;Group by, Summarise, Arrange e Slice&lt;/h1&gt;
+&lt;h2 id=&#34;novos-verbos-e-dados-de-survey&#34;&gt;Novos verbos e dados de survey&lt;/h2&gt;
+&lt;p&gt;No tutorial passado vimos 4 dos principais verbos do &lt;em&gt;dplyr&lt;/em&gt;: &lt;em&gt;rename&lt;/em&gt;, &lt;em&gt;select&lt;/em&gt;, &lt;em&gt;mutate&lt;/em&gt; (para operações de colunas) e &lt;em&gt;filter&lt;/em&gt; (para seleção de casos). Não produzimos, entretanto, uma das operações mais importantes na manipulação de &lt;em&gt;data_frames&lt;/em&gt;: o agrupamento de casos a partir de uma ou mais variáveis. O agrupamento de casos em uma base de dados convencional é bastante simples, como veremos a seguir.&lt;/p&gt;
+&lt;h2 id=&#34;fake-data&#34;&gt;Fake data&lt;/h2&gt;
+&lt;p&gt;Para esta atividade, vamos trabalhar com um banco de dados falso criado para a atividade.&lt;/p&gt;
+&lt;p&gt;Abra o banco de dados usando &lt;em&gt;read_delim&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;library(tidyverse)
+url_fake_data &amp;lt;- &amp;quot;https://raw.githubusercontent.com/leobarone/ifch_intro_r/master/data/fake_data.csv&amp;quot;
+fake &amp;lt;- read_delim(url_fake_data, delim = &amp;quot;;&amp;quot;, col_names = T)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fakeland é uma democracia muito estável que realiza eleições presidenciais a cada 4 anos. Vamos trabalhar com o conjunto de dados falso de cidadãos individuais de Fakeland que contém informações sobre suas características básicas e opiniões / posições políticas (falsas). A descrição das variáveis está abaixo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;age&lt;/em&gt;: idade&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;sex&lt;/em&gt;: sexo&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;educ&lt;/em&gt;: nível educacional&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;income&lt;/em&gt;: renda mensal medida em dinheiro falso (FM \ $)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;savings&lt;/em&gt;: Dinheiro falso total (FM \ $) na conta de poupança&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;marriage&lt;/em&gt;: estado civil (sim = casado)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;kids&lt;/em&gt;: número de filhos&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;party&lt;/em&gt;: afiliação partidária&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;turnout&lt;/em&gt;: intenção de votar nas próximas eleições&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vote_history&lt;/em&gt;: número de eleições presidenciais votou desde as eleições de 2002&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;economy&lt;/em&gt;: opinião sobre o desempenho da economia nacional&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;incumbent&lt;/em&gt;: opinião sobre o desempenho do presidente&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;candidate&lt;/em&gt;: candidato preferido&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;agrupando-com-_filter_-e-_pull_&#34;&gt;Agrupando com &lt;em&gt;filter&lt;/em&gt; e &lt;em&gt;pull&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Vamos supor que nos interessa comparar a renda entre grupos de sexo. Poderíamos, rapidamente selecionar as linhas de um dos grupos de sexo com o verbo &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Female&amp;quot;) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Com o comando &lt;em&gt;pull&lt;/em&gt;, podemos &amp;lsquo;retirar&amp;rsquo; de um data frame uma coluna e tratá-la como um vetor destacado. &lt;em&gt;pull&lt;/em&gt; é mais um (de vários) verbos do &lt;em&gt;dplyr&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  pull(income)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;E, se adicionarmos à &amp;lsquo;pipeline&amp;rsquo; um comando simples de estatística descritiva &amp;ndash; média, por exemplo &amp;ndash; calculamos uma estatística para o grupo para o qual selecionamos com &lt;em&gt;filter&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  pull(income) %&amp;gt;%
+  mean()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que não utilizamos o símbolo de atribuição &amp;lsquo;&amp;lt;-&amp;rsquo; e, portanto, não armazenamos o resultado em nenhum objeto.&lt;/p&gt;
+&lt;p&gt;Note também que podemos adicionar à pipeline qualquer função que não seja &amp;lsquo;verbo&amp;rsquo; do &lt;em&gt;dplyr&lt;/em&gt;, como comando &lt;em&gt;mean&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Essa estratégia funciona para calcular uma medida qualquer para um grupo. Mas, em geral, interessa &amp;lsquo;sumarizar&amp;rsquo; um variável &amp;ndash; como renda &amp;ndash; por uma variável de grupo &amp;ndash; como sexo &amp;ndash; sem destacar cada uma das categorias. Vamos ver como fazer isso.&lt;/p&gt;
+&lt;h2 id=&#34;_summarise_&#34;&gt;&lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Uma maneira altenartiva ao que acabamos de realizar é utilizar o verbo &lt;em&gt;summarise&lt;/em&gt;. Com ele, não precisamos extrair a variável do data frame para gerar um sumário estatístico. Veja como é simples:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Male&amp;quot;) %&amp;gt;%
+  summarise(media_homens = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  filter(sex == &amp;quot;Female&amp;quot;) %&amp;gt;%
+  summarise(media_mulheres = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;agrupando-com-_group_by_-by-e-_summarise_&#34;&gt;Agrupando com &lt;em&gt;group_by&lt;/em&gt; by e &lt;em&gt;summarise&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Para agrupar os dados por uma ou mais variáveis na &amp;lsquo;gramática&amp;rsquo; do &lt;em&gt;dplyr&lt;/em&gt; utilizamos o verbo &lt;em&gt;group_by&lt;/em&gt; em combinação com &lt;em&gt;summarise&lt;/em&gt;. Veja um exemplo antes de detalharmos seu uso:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Veja que o resultado é uma tabela de duas linhas que contém a média de renda para grupo de sexo. O primeiro passo é justamente indicar qual é a variável &amp;ndash; discreta &amp;ndash; pela qual queremos agrupar os dados. Fazemos isso com &lt;em&gt;group_by&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Na sequência, utilizamos &lt;em&gt;summarise&lt;/em&gt; para criar uma lista das operações que faremos em outras variáveis ao agrupar os dados. Por exemplo, estamos calculando a média da renda, que aparecerá com o nome &amp;lsquo;media_renda&amp;rsquo;, para cada um dos grupos de sexo.&lt;/p&gt;
+&lt;p&gt;Execute novamente o código acima e observe atentamente sua estrutura antes de avançar.&lt;/p&gt;
+&lt;p&gt;O verbo &lt;em&gt;summarise&lt;/em&gt; permite mais de uma operação por agrupamento. Por exemplo, podemos calcular o desvio padrao da renda, a media da idade (&amp;lsquo;age&amp;rsquo;) e a soma do número de eleições nas quais votou (&amp;lsquo;vote_history&amp;rsquo;):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media_renda = mean(income),
+            stdev_renda = sd(income),
+            media_idade = mean(age),
+            soma_eleicoes = sum(vote_history))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Simples, não? O comando &lt;em&gt;summarise&lt;/em&gt; é bastante flexível e aceita diversas operações. Veremos as mais comuns adiante.&lt;/p&gt;
+&lt;p&gt;E se quisermos, agora, utilizar mais de uma variável para agrupar os dados? Por exemplo, e se quisermos agrupar por sexo e candidato de preferência, como fazemos?&lt;/p&gt;
+&lt;p&gt;Basta adicionar outra variável dentro do comando &lt;em&gt;group_by&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observe bem a estrutura dos resultados que obtivemos. Em primeiro lugar, o resultado é sempre um data frame. Sempre que estivermos preparando os dados para gerar tabelas ou com gráficos, como veremos no tutorial seguinte, produziremos um data frame para servir de &amp;lsquo;input&amp;rsquo; para o gráfico ou tabela.&lt;/p&gt;
+&lt;p&gt;Em segundo, cada variável utilizada para agrupamento aparece como uma coluna diferente no novo data frame. Os dados estão &amp;lsquo;colapsados&amp;rsquo; ou &amp;lsquo;achatados&amp;rsquo; em um número de linhas que corresponde ao total de combinações de categorias das variáveis de agrupamento (por exemplo, &amp;ldquo;Female e Rilari&amp;rdquo;, &amp;ldquo;Female e Trampi&amp;rdquo;, etc).&lt;/p&gt;
+&lt;p&gt;Se pararmos para pensar, o data frame resultante do último comando tem exatamente o número de células de uma tabela de duas entradas (&amp;lsquo;crosstab&amp;rsquo;), mas as informações das margens da tabela estão como variáveis. Veremos como modificar isso adiante.&lt;/p&gt;
+&lt;p&gt;Finalmente, cada nova variável gerada com &lt;em&gt;summarise&lt;/em&gt; em nosso data frame &amp;lsquo;achatado&amp;rsquo; recebe uma coluna. Para &amp;lsquo;sumarizar&amp;rsquo; uma variável &amp;ndash; tirar média, somatória, contar, etc &amp;ndash; precisamos sempre de uma função de sumário.&lt;/p&gt;
+&lt;h2 id=&#34;funções-de-sumário-estatístico&#34;&gt;Funções de sumário estatístico&lt;/h2&gt;
+&lt;p&gt;Vamos ver exemplos das funções de sumário estatístico mais utilizadas dentro do verbo &lt;em&gt;summarise&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;1- Média&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2- Desvio padrão&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(desvpad = sd(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3- Mediana&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(mediana = median(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4- Quantis (no exemplo, quantis 10%, 25%, 75%, 90%)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(quantil_10 = quantile(income, probs = 0.1),
+            quantil_25 = quantile(income, probs = 0.25),
+            quantil_75 = quantile(income, probs = 0.75),
+            quantil_90 = quantile(income, probs = 0.9))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5- Mínimo e máximo&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(minimo = min(income),
+            maximo = max(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;6- Contagem e soma&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(contagem = n(),
+            soma = sum(age))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Importante: quando houver algum &amp;ldquo;NA&amp;rdquo; (missing value) em uma variável numérica, é preciso utilizar o argumento &amp;ldquo;na.rm = TRUE&amp;rdquo; dentro da função de sumário. Veja como ficaria o código caso houvesse algum &amp;ldquo;NA&amp;rdquo;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex) %&amp;gt;%
+  summarise(media = mean(income, na.rm = TRUE))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A sessão Useful &lt;a href=&#34;https://r4ds.had.co.nz/transform.html#summarise-funs&#34;&gt;Summary Functions&lt;/a&gt; do livro R for Data Science traz uma relação mais completa de funçoes que podem ser usandas com summarise. O &lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf&#34;&gt;“cheatsheet” da RStudio&lt;/a&gt; oferece uma lista para uso rápido.&lt;/p&gt;
+&lt;h2 id=&#34;transformando-um-agrupamento-em-um-crosstab-e-exportando&#34;&gt;Transformando um agrupamento em um &amp;ldquo;crosstab&amp;rdquo; e exportando&lt;/h2&gt;
+&lt;p&gt;Vamos retomar o exemplo do agrupamento por duas variáveis, sexo e candidato de preferência:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Esse formato não costuma ser o usual em apresentação de dados. O mais comum é termos a informação que consta em nossas duas primeiras colunas como margens em uma tabela de duas entradas.&lt;/p&gt;
+&lt;p&gt;Na linguagem de manipulação de dados, o resultado acima está no formato &amp;ldquo;long&amp;rdquo; e todas as variáveis são representadas como colunas. Uma tabela de 2 entradas corresponde ao formato &amp;ldquo;wide&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Há dois verbos no &lt;em&gt;dplyr&lt;/em&gt; que transformam &amp;ldquo;long&amp;rdquo; em &amp;ldquo;wide&amp;rdquo; e vice-versa: &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt;. Como &lt;em&gt;spread&lt;/em&gt;, tranformamos o nosso resultado acima na tabela desejada:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  spread(sex, media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;spread&lt;/em&gt; precisa de 2 argumentos: a &amp;ldquo;key&amp;rdquo;, que a variável que irá para a margem superior da tabela, e &amp;ldquo;value&amp;rdquo;, que é a variável que ficará em seu conteúdo.&lt;/p&gt;
+&lt;p&gt;É fácil, inclusive, exportá-la para um editor de planilhas com a função &lt;em&gt;write_csv&lt;/em&gt; (do pacote &lt;em&gt;readr&lt;/em&gt;) ao final do pipeline:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  spread(sex, media_renda) %&amp;gt;%
+  write_csv(&amp;quot;tabela_candidato_sexo_renda.csv&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Vá à sua pasta de trabalho e verifique que sua tabela está lá.&lt;/p&gt;
+&lt;p&gt;Veja que, como introduzimos um comando de exportação ao final do pipelina, não geramos nenhum objeto. Não há símbolo de atribuição em nosso código. Esse é um dos objetivo do uso do pipe (%&amp;gt;%): reduzir o número de objetos intermediários gerados.&lt;/p&gt;
+&lt;h3 id=&#34;spread-e-gather-caindo-em-desuso&#34;&gt;Spread e Gather caindo em desuso&lt;/h3&gt;
+&lt;p&gt;Há notícias de que os verbos &lt;em&gt;spread&lt;/em&gt; e &lt;em&gt;gather&lt;/em&gt; cairão em desuso. Seus substituos serão &lt;em&gt;pivot_wider&lt;/em&gt; e &lt;em&gt;pivot_longer&lt;/em&gt;. As 4 funções são parte do pacote &lt;em&gt;tidyr&lt;/em&gt;, componente do &lt;em&gt;tidyverse&lt;/em&gt;. O uso das novas funções é bem similar ao das antigas, e veja como fica a substituição de &lt;em&gt;spread&lt;/em&gt; por &lt;em&gt;pivot_wider&lt;/em&gt; no código que produzimos. É possível que sua instalação do &lt;em&gt;tidyverse&lt;/em&gt; não contenha as novas funções e que o código abaixo não funcione.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;%
+  group_by(sex, candidate) %&amp;gt;%
+  summarise(media_renda = mean(income)) %&amp;gt;%
+  pivot_wider(names_from = sex,
+              values_from = media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mutate-com-group-by&#34;&gt;Mutate com Group By&lt;/h2&gt;
+&lt;p&gt;Vamos supor que queremos manter os dados no mesmo formato, ou seja, sem &amp;lsquo;achatá-los&amp;rsquo; por uma variável discreta, mas queremos uma nova coluna que represente a soma de uma variável por grupo &amp;ndash; para calcular percentuais de renda dentro de cada grupo de sexo, por exemplo. Vamos observar o resultado do uso conjunto de &lt;em&gt;group_by&lt;/em&gt; e &lt;em&gt;mutate&lt;/em&gt;. Para podermos observar o resultado, vamos armazenar os novos dados em um objeto chamado &amp;lsquo;fake2&amp;rsquo; e utilizar o comando &lt;em&gt;View&lt;/em&gt;. A última coluna de nossos dados agora é a soma da renda dentro de cada grupo.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+  group_by(sex) %&amp;gt;%
+  mutate(renda_grupo = mean(income))
+
+View(fake2)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando utilizarmos &lt;em&gt;group_by&lt;/em&gt; sem o &lt;em&gt;summarise&lt;/em&gt;, é importante &amp;ldquo;desagrupar&amp;rdquo; os data frame, ou &amp;ldquo;desligar o agrupamento&amp;rdquo;. Caso contrário, o agrupamento continuará ativo e afetando todas as operações seguintes. Repetindo o código com o desagrupamento:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake2 &amp;lt;- fake %&amp;gt;% 
+  group_by(sex) %&amp;gt;%
+  mutate(renda_grupo = mean(income)) %&amp;gt;%
+  ungroup()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mais-verbos-do-_dplyr_-_arrange_-e-_slice_&#34;&gt;Mais verbos do &lt;em&gt;dplyr&lt;/em&gt;: &lt;em&gt;arrange&lt;/em&gt; e &lt;em&gt;slice&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Se quisermos ordenar, de forma crescente, nossos dados por idade, por exemplo, basta usar o comando &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Em ordem decrescente teríamos:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(-age)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisermos &amp;lsquo;desempatar&amp;rsquo; o ordenamento por idade por uma segunda variável, basta adicioná-la ao &lt;em&gt;arrange&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(-age, vote_history)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Quando trabalhamos com bases de dados de survey faz pouco sentido ordená-las. Entretanto, quando trabalhamos numa escala menor, com poucas linhas, ou com a produção de tabelas, como nos exemplos acima, convém ordenar a tabela (veja que, neste ponto, faz pouco sentido diferenciar tabela de data frame, pois se tornam sinônimos) por alguma variável de interesse.&lt;/p&gt;
+&lt;p&gt;Por exemplo, podemos ordenar os grupos de candidato de preferência por média de renda:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  group_by(candidate) %&amp;gt;% 
+  summarise(media_renda = mean(income)) %&amp;gt;% 
+  arrange(media_renda)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fácil e útil.&lt;/p&gt;
+&lt;p&gt;Finalmente, vamos supor que queremos extrair da base de dados apenas os 10 indivíduos de menor idade Como &amp;ldquo;recortar&amp;rdquo; linhas dos dados pela posição das linhas?&lt;/p&gt;
+&lt;p&gt;Em primeiro lugar, vamos ordenar os dados por idade. A seguir, vamos aplicar o verbo &lt;em&gt;slice&lt;/em&gt; para recortar as 10 primeiras linhas:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age) %&amp;gt;% 
+  slice(1:10)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Se quisessemos recortar do 25, por exemplo, ao último, sem precisar especificar qual é o número da última posição, utilizamos &lt;em&gt;n()&lt;/em&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;fake %&amp;gt;% 
+  arrange(age) %&amp;gt;% 
+  slice(25:n())
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note que a aplicação de &lt;em&gt;slice&lt;/em&gt; não afeta em nada as colunas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Documentos parametrizados</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/reprodutibility/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/reprodutibility/</guid>
+      <description>&lt;p&gt;Um dos muitos benefícios de trabalhar com R Markdown é que você pode reproduzir análises com o clique de um botão. Isto torna muito fácil atualizar qualquer trabalho e alterar qualquer parâmetro de entrada dentro do relatório. Relatórios parametrizados estendem esse benefício e permitem aos usuários especificar um ou mais parâmetros para personalizar a análise. Isto é útil se você quiser criar um modelo de relatório que possa ser reutilizado em vários cenários similares. Como exemplos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mostrar resultados para uma localização geográfica específica.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Executar um relatório que cubra um período de tempo específico.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Executar uma única análise várias vezes para diferentes suposições.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;declaração-de-parâmetros&#34;&gt;Declaração de parâmetros&lt;/h1&gt;
+&lt;p&gt;Os parâmetros são especificados usando o campo dos parâmetros dentro da seção &lt;code&gt;YAML&lt;/code&gt;. Podemos especificar um ou mais parâmetros com cada item em uma nova linha. A título de exemplo:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;---
+title: My Document
+output: html_document
+params:
+  year: 2018
+  region: Europe
+  printcode: TRUE
+  data: file.csv
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Todos os tipos de dados do &lt;code&gt;R&lt;/code&gt; podem ser processados por &lt;code&gt;yaml::yaml.load()&lt;/code&gt;, podendo ser incluídos como parâmetros, a saber: &lt;code&gt;character&lt;/code&gt;, &lt;code&gt;numeric&lt;/code&gt;, &lt;code&gt;integer&lt;/code&gt; e &lt;code&gt;logical&lt;/code&gt;. Também podemos usar objetos R incluindo &lt;code&gt;!r&lt;/code&gt; antes das expressões &lt;code&gt;R&lt;/code&gt;. Por exemplo, podemos incluir a data atual com o seguinte código R:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r}&#34; data-lang=&#34;{r}&#34;&gt;---
+title: My Document
+output: html_document
+params:
+  date: !r Sys.Date()
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Qualquer expressão no &lt;code&gt;R&lt;/code&gt; incluída dentro dos parâmetros no &lt;code&gt;yaml&lt;/code&gt; é executada antes de qualquer código no documento, portanto qualquer dependência de pacote deve ser explicitamente declarada usando o &lt;code&gt;pacote::função&lt;/code&gt; notação (por exemplo, &lt;code&gt;!r lubridate::today()&lt;/code&gt;), mesmo que o pacote seja carregado mais tarde no documento &lt;code&gt;Rmd&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;knitting-com-parâmetros&#34;&gt;&lt;code&gt;Knitting&lt;/code&gt; com parâmetros&lt;/h2&gt;
+&lt;p&gt;Há três maneiras de se fazer um relatório parametrizado:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Usando o botão &lt;code&gt;Knit&lt;/code&gt; dentro do RStudio.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;rmarkdown::render()&lt;/code&gt; com o argumento dos &lt;code&gt;params&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usando uma interface de usuário interativa para inserir valores de parâmetros.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;o-botão-knit&#34;&gt;O botão &lt;code&gt;Knit&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Usando o botão &lt;code&gt;Knit&lt;/code&gt; no RStudio ou a função &lt;code&gt;rmarkdown::render()&lt;/code&gt;, os valores-padrão listados nos metadados do &lt;code&gt;YAML&lt;/code&gt; (quando especificados) serão utilizados.&lt;/p&gt;
+&lt;h3 id=&#34;knitting-com-parâmetros-personalizados&#34;&gt;&lt;code&gt;Knitting&lt;/code&gt; com parâmetros personalizados&lt;/h3&gt;
+&lt;p&gt;Mesmo que seu documento tenha o campo de parâmetros nos metadados do &lt;code&gt;YAML&lt;/code&gt;, você pode realmente substituí-lo fornecendo uma lista personalizada de valores de parâmetros para a função &lt;code&gt;rmarkdown::render()&lt;/code&gt;. Por exemplo:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;rmarkdown::render(&amp;quot;MyDocument.Rmd&amp;quot;, params = list(
+  year = 2017,
+  region = &amp;quot;Asia&amp;quot;,
+  printcode = FALSE,
+  file = &amp;quot;file2.csv&amp;quot;
+))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Não temos que declarar explicitamente todos os parâmetros no argumento dos &lt;code&gt;params&lt;/code&gt;. Qualquer parâmetro não especificado terá como padrão os valores especificados nos metadados do &lt;code&gt;YAML&lt;/code&gt;. Por exemplo, a função a seguir somente anulará o parâmetro da região:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;rmarkdown::render(&amp;quot;MyDocument.Rmd&amp;quot;, params = list(
+  region = &amp;quot;Asia&amp;quot;
+))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Você pode querer integrar estas mudanças em uma função. Tal função também poderia ser usada para criar um arquivo de saída com um nome de arquivo diferente para cada uma das diferentes combinações de parâmetros. No exemplo a seguir, um novo arquivo Report-region year.pdf é criado para cada conjunto de parâmetros:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;render_report = function(region, year) {
+  rmarkdown::render(
+    &amp;quot;MyDocument.Rmd&amp;quot;, params = list(
+      region = region,
+      year = year
+    ),
+    output_file = paste0(&amp;quot;Report-&amp;quot;, region, &amp;quot;-&amp;quot;, year, &amp;quot;.pdf&amp;quot;)
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;a-interface-interativa-ao-usuário&#34;&gt;A interface interativa ao usuário&lt;/h3&gt;
+&lt;p&gt;Podemos usar uma interface gráfica de usuário (&lt;code&gt;GUI&lt;/code&gt;) baseada no &lt;code&gt;Shiny&lt;/code&gt; para inserir interativamente os parâmetros de um relatório. A interface de usuário pode ser chamada por &lt;code&gt;rmarkdown::render(&amp;quot;MyDocument.Rmd&amp;quot;, params = &amp;quot;ask&amp;quot;)&lt;/code&gt; ou clicando no menu suspenso atrás do botão &lt;code&gt;Knit&lt;/code&gt; e escolhendo &lt;code&gt;Knit with Parameters&lt;/code&gt; no RStudio. A Figura a seguir apresenta a &lt;code&gt;GUI&lt;/code&gt; do &lt;code&gt;rmarkdown&lt;/code&gt; solicitando parâmetros de entrada.&lt;/p&gt;
+&lt;p&gt;Valores dos parâmetros de entrada interativamente para relatórios parametrizados.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/params-input.png&#34; alt=&#34;Valores dos parâmetros de entrada interativamente para relatórios parametrizados.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Os controles de entrada para diferentes tipos de parâmetros podem ser personalizados, especificando subitens adicionais dentro da especificação do parâmetro em &lt;code&gt;YAML&lt;/code&gt;. Por exemplo, controles deslizantes, caixas de seleção e caixas de entrada de texto podem ser todos usados para controles de entrada.&lt;/p&gt;
+&lt;p&gt;Além disso, também podemos especificar as restrições dos valores permitidos em cada parâmetro. Por exemplo, podemos querer que nosso modelo só seja executado durante anos entre 2010 e 2018. Isto é particularmente benéfico se você gostaria que outros usuários interagissem com o relatório, pois impede que os usuários tentem executar relatórios fora dos limites projetados.&lt;/p&gt;
+&lt;p&gt;Adaptando nosso exemplo acima para incluir algumas configurações:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;---
+title: My Document
+output: html_document
+params:
+  year:
+    label: &amp;quot;Year&amp;quot;
+    value: 2017
+    input: slider
+    min: 2010
+    max: 2018
+    step: 1
+    sep: &amp;quot;&amp;quot;
+  region:
+    label: &amp;quot;Region:&amp;quot;
+    value: Europe
+    input: select
+    choices: [North America, Europe, Asia, Africa]
+  printcode:
+    label: &amp;quot;Display Code:&amp;quot;
+    value: TRUE
+  data:
+    label: &amp;quot;Input dataset:&amp;quot;
+    value: results.csv
+    input: file
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Isto resulta na interface do usuário para os parâmetros.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/params-controls.png&#34; alt=&#34;Valores dos parâmetros de entrada interativamente para relatórios parametrizados.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Controles personalizados para os parâmetros.
+FIGURA 15.2: Controles personalizados para os parâmetros.&lt;/p&gt;
+&lt;p&gt;O tipo de controle Brilhante utilizado é controlado pelo campo de entrada. A Tabela 15.1 mostra os tipos de entrada atualmente suportados (veja a página de ajuda da função Shiny associada para atributos adicionais que podem ser especificados para personalizar a entrada, por exemplo, ?shiny::checkboxInput).&lt;/p&gt;
+&lt;p&gt;TABELA 15.1: Possíveis tipos de entrada e as funções Brilhantes associadas para relatórios parametrizados.
+Input Type	Shiny Function
+checkbox	checkboxInput
+numeric	numericInput
+slider	sliderInput
+date	dateInput
+text	textInput
+file	fileInput
+radio	radioButtons
+select	selectInput
+password	passwordInput&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Operadores lógicos e aritméticos no R</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/estatistica/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/estatistica/</guid>
+      <description>&lt;h2 id=&#34;estatística-descritiva-para-sumarização-de-dados-com-o-r&#34;&gt;Estatística descritiva para sumarização de dados com o R&lt;/h2&gt;
+&lt;p&gt;Já apresentamos os operadores relativos às estatísticas descritivas básicas. Segue uma síntese:&lt;/p&gt;
+&lt;h3 id=&#34;operadores-aritméticos-r&#34;&gt;Operadores aritméticos R&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operador&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;x + y&lt;/td&gt;
+&lt;td&gt;Adição de x com y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x - y&lt;/td&gt;
+&lt;td&gt;Subtração de y em x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x * y&lt;/td&gt;
+&lt;td&gt;Multiplicação de x e y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x / y&lt;/td&gt;
+&lt;td&gt;Divisão de x por y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xy ou x**y&lt;/td&gt;
+&lt;td&gt;x elevado a y-ésima potência&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x%%y&lt;/td&gt;
+&lt;td&gt;Resto da divisão de x por y (módulo)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x%/%y&lt;/td&gt;
+&lt;td&gt;Parte inteira da divisão de x por y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;operadores-de-comparação-no-r&#34;&gt;Operadores de comparação no R&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operador&lt;/th&gt;
+&lt;th&gt;Significado&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;==&lt;/td&gt;
+&lt;td&gt;igual a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;!=&lt;/td&gt;
+&lt;td&gt;diferente de&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;maior que&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;menor que&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;=&lt;/td&gt;
+&lt;td&gt;maior ou igual a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;=&lt;/td&gt;
+&lt;td&gt;menor ou igual a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Os operadores de comparação sempre retornam um valor lógico TRUE ou FALSE.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;operadores-lógicos-no-r&#34;&gt;Operadores lógicos no R&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operador&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;th&gt;Explicação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;AND lógico&lt;/td&gt;
+&lt;td&gt;Versão vetorizada. Compara dois elementos do tipo vetor e retorna um vetor de TRUEs e FALSEs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&amp;amp;&lt;/td&gt;
+&lt;td&gt;AND lógico&lt;/td&gt;
+&lt;td&gt;Versão não-vetorizada. Compara apenas o primeiro valor de cada vetor, retornando um valor lógico.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;OR lógico&lt;/td&gt;
+&lt;td&gt;Versão vetorizada. Compara dois elementos do tipo vetor e retorna um vetor de TRUEs e FALSEs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;||&lt;/td&gt;
+&lt;td&gt;OR lógico&lt;/td&gt;
+&lt;td&gt;Versão não-vetorizada. Compara apenas o primeiro valor de cada vetor, retornando um valor lógico.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;!&lt;/td&gt;
+&lt;td&gt;NOT lógico&lt;/td&gt;
+&lt;td&gt;Negação lógica. Retorna um valor lógico único ou um vetor de TRUE / FALSE.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xor&lt;/td&gt;
+&lt;td&gt;XOR&lt;/td&gt;
+&lt;td&gt;Ou Exclusivo. Retorna valor lógico TRUE se ambos os valores de entrada forem diferentes entre si, e retorna FALSE se os valores forem iguais.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Também conhecidos como operadores booleanos, permitem trabalhar com múltiplas condições relacionais na mesma expressão, e retornam valores lógicos verdadeiro ou falso.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;algumas-funções-estatísticas-para-sumarização-de-dados&#34;&gt;Algumas funções estatísticas para sumarização de dados&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Funções&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;min()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;mínimo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;max()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;máximo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;range()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;amplitude&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;mean()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;média&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sum()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;soma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;median()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;mediana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sd()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;desvio-padrão&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;IQR()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;intervalo interquantil&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;quantile()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;quartis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;var()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;variância&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cor()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;correlação&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;summary()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;métricas de sumarização&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;rowMeans()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;média das linhas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;colMeans()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;média das colunas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;rowSums()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;soma das linhas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;colSums()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;soma das colunas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;tratamento-de-dados-omissos&#34;&gt;Tratamento de dados omissos&lt;/h3&gt;
+&lt;p&gt;O R permite que sejam armazenados, em vetores e data.frames, o valor &lt;code&gt;NA&lt;/code&gt; (Not Available), que representa dados que ainda não são conhecidos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;x == NA&lt;/code&gt; trará sempre um resultado FALSE, mesmo que &lt;code&gt;x&lt;/code&gt; não seja conhecido.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;hr&gt;
+&lt;p&gt;
+&lt;h2 id=&#34;atividades-de-verificação-de-aprendizagem&#34;&gt;Atividades de verificação de aprendizagem&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Questão 1:&lt;/strong&gt;
+Abra o &lt;code&gt;data.frame&lt;/code&gt; &amp;ldquo;iris&amp;rdquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;a &amp;lt;- iris
+class(iris)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;a. Calcule estatísticas básicas de cada variável. Copie e cole no Canvas (código e resultado).&lt;/p&gt;
+&lt;p&gt;Veja o exemplo:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;summary(iris$Sepal.Length)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;b. Para que serve p símbolo &lt;code&gt;$&lt;/code&gt; após o nome do data.frame?
+c. Por meio das funções &lt;code&gt;hist()&lt;/code&gt; e &lt;code&gt;boxplot()&lt;/code&gt;, respectivamente, gere um exemplo de cada gráfico para a variável que você escolher. Copie e cole no Canvas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R! Estrutura, conceitos e funções básicas</title>
+      <link>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_r/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/intro_r/intro_r/</guid>
+      <description>
+&lt;script src=&#34;https://app.netlify.com/sites/cranky-mestorf-a03ae7/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tldr&#34;&gt;TL;DR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-o-que-é-o-r&#34;&gt;R? O que é o R?&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#conhecendo-o-r&#34;&gt;Conhecendo o R&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#interface-e-funcionalidades&#34;&gt;Interface e funcionalidades&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definições-básicas&#34;&gt;Definições básicas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#tipos-de-arquivos-no-r&#34;&gt;Tipos de arquivos no R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#local-de-trabalho&#34;&gt;Local de trabalho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#variáveis-funções-e-packages&#34;&gt;Variáveis, funções e &lt;em&gt;packages&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;tldr&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;TL;DR&lt;/h1&gt;
+&lt;p&gt;Nessa seção apresentamos alguns conceitos importantes para que a utilização do &lt;code&gt;R&lt;/code&gt; seja mais amigável! Algumas informações importantes que são detalhadas a seguir:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O &lt;code&gt;RStudio&lt;/code&gt; é uma interface para uso do &lt;code&gt;R&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;code&gt;R&lt;/code&gt; é sensível a caracteres maiúsculos e minúsculos.&lt;/li&gt;
+&lt;li&gt;Marcador de decimal para o R é &lt;code&gt;.&lt;/code&gt;, mas pode ser configurado conforme arquivo.&lt;/li&gt;
+&lt;li&gt;O &lt;code&gt;R&lt;/code&gt; é estruturado em &lt;code&gt;package::função(objeto, parâmetros))&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Para utilizar pacotes, precisamos instalar (&lt;code&gt;install.packages(&#34;package&#34;)&lt;/code&gt;), carregar (&lt;code&gt;library(&#34;package&#34;)&lt;/code&gt;) e chamar as funções.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;As funções &lt;code&gt;getwd()&lt;/code&gt;, &lt;code&gt;dir()&lt;/code&gt; e &lt;code&gt;setwd()&lt;/code&gt; ajudam a organizar o trabalho.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-o-que-é-o-r&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R? O que é o R?&lt;/h1&gt;
+&lt;div id=&#34;conhecendo-o-r&#34; class=&#34;section level2 tabset tabset-fade tabset-pills&#34;&gt;
+&lt;h2&gt;Conhecendo o R&lt;/h2&gt;
+&lt;div id=&#34;interface-e-funcionalidades&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Interface e funcionalidades&lt;/h3&gt;
+&lt;p&gt;Para uso do R no ambiente RStudio, é inicialmente necessário entender o seu funcionamento. O R é uma linguagem de programação, em plataforma open source, desenvolvida para análise de dados. SEJAM BEM VINDOS!&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/allison_horst/welcome_to_rstats_twitter.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Bem vindo&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Em um primeiro momento, o conjunto R + RStudio parece pouco amigável, mas com o tempo, é impossível não apaixonar-se pelas infinitas possibilidades que temos ao utilizar o R.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/allison_horst/r_first_then.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Ódio x amor&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A comunidade do R é bastante ampla e colaborativa. Assim: BUSQUE AJUDA!!!!!&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/allison_horst/code_hero.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Suporte&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;definições-básicas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Definições básicas&lt;/h1&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;37%&#34; /&gt;
+&lt;col width=&#34;62%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Termos&lt;/th&gt;
+&lt;th&gt;Definição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Script&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Os scripts são arquivos do R com comandos a serem executados. Para rodar um comando digitado no painel de edição dos Scripts ou do arquivo .Rmd do RStudio no Windows, basta fazer: &lt;code&gt;Ctrl+Enter&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;Packages&lt;/code&gt; ou &lt;code&gt;pacotes&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;São um conjunto de funções organizadas em um arquivo que pode ser obtido em diferentes repositórios. Para utilização dos pacotes, é necessário instalá-los e, posteriormente, carregá-los na sessão por meio do comando &lt;code&gt;library&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;funções&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;São códigos que determina um algoritmo computacional e que têm diferentes objetivos. Pode haver mais de uma função para o mesmo objetivo. As funções são estruturadas por meio de um comando básico e parâmetros/argumentos que são incluídos entre parênteses após a função.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;objeto&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Objetos no R são elementos aos quais são aplicadas as funções&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Console&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;É o espaço no ambiente R onde você digita e roda os comandos do R. É a janela principal, onde é possível digitar os comandos, vizualizar os resultados e mensagens de alerta e mensagens de erros. Nesse ambiente, a seta (&amp;gt;) indica que o R esta pronto para receber um comando; sinal de mais (+) indica que o comando da linha anterior ainda não esta completo, faltando algo para o comando ser executado. A ausência de um desses dois simbólos (&amp;gt; ou +) indica que o R ainda não finalizou o processo do comando anterior. Os resultados de uma função são apresentados entre símbolos de cochetes ([]).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;Terminal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;É o espaço onde você digita e roda comandos do sistema (Windows, por exemplo)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;RMarkdown&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Linguagem de texto do R&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;RStudio&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;É uma IDE (Integrated Development Envirnonment) que permite uma interface gráfica amigável com os usuários.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Janela onde são mostrados os textos de ajuda.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;Plot&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Janela reservada para os resultados gráficos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;History&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Lista o histórico dos comandos já executados.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;Environment&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Painel exclusivo do RStudio que lista os objetos criados na área de trabalho (workspace).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Files&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Painel exclusivo do RStudio, que lista os arquivos do computador. É semelhante ao gerenciador de arquivos padrão do sistema operacional.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div id=&#34;tipos-de-arquivos-no-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tipos de arquivos no R&lt;/h2&gt;
+&lt;p&gt;Os principais tipos de arquivos gerados por meio do &lt;code&gt;R&lt;/code&gt; são:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Extensão&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;.R&lt;/td&gt;
+&lt;td&gt;Usado para salvar &lt;code&gt;scripts&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;.RData&lt;/td&gt;
+&lt;td&gt;Usado para salvar os &lt;code&gt;objetos&lt;/code&gt; da área de trabalho (workspace).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;.Rhistory&lt;/td&gt;
+&lt;td&gt;Usado para salvar o &lt;code&gt;histórico dos comandos&lt;/code&gt; executados.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;.Rmd&lt;/td&gt;
+&lt;td&gt;Formato para salvar arquivos em &lt;code&gt;RMarkdown&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;local-de-trabalho&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Local de trabalho&lt;/h2&gt;
+&lt;p&gt;O diretório de trabalho padrão é aquele ao qual o R foi associado. Entretanto, pode ser alterado, sem qualquer mudanças nos objetos da área de trabalho.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retaoliveira.github.io/relements/figures/allison_horst/cracked_setwd.png&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;getwd() # Mostrar o diretório de trabalho atual
+dir() # Listar os arquivos do diretório
+setwd() # Mudar o diretório de trabalho&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;É possivel salvar a área de trabalho inteira e carregar em outro momento.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ls() # Listar os objetos da área de trabalho
+save.image(&amp;quot;meu_workspace.RData&amp;quot;) # Salvar área de trabalho
+load(&amp;quot;meu_workspace.RData&amp;quot;) # Carregar área de trabalho&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;variáveis-funções-e-packages&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Variáveis, funções e &lt;em&gt;packages&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Sua estrutura fundamenta-se em uma grande variedade de ferramentas quantitativas, organizadas por meio de &lt;strong&gt;objetos&lt;/strong&gt;, &lt;strong&gt;funções&lt;/strong&gt; e &lt;strong&gt;packages&lt;/strong&gt;. A instalação &lt;code&gt;base&lt;/code&gt; do R já contempla uma série de funções e &lt;em&gt;packages&lt;/em&gt;. &lt;em&gt;Packages&lt;/em&gt; adicionais podem ser instalados quando for necessário ou interessante. Para instalação de &lt;em&gt;packages&lt;/em&gt;, utiliza-se a função &lt;code&gt;install.packages()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A priori, instale os seguintes pacotes no seu computador:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(c(&amp;quot;rmarkdown&amp;quot;, &amp;quot;knitr&amp;quot;, &amp;quot;dsbox&amp;quot;, &amp;quot;tidyverse&amp;quot;, &amp;quot;coronavirus&amp;quot;, &amp;quot;lubridate&amp;quot;, &amp;quot;glue&amp;quot;, &amp;quot;scales&amp;quot;, &amp;quot;ggrepel&amp;quot;, &amp;quot;DT&amp;quot;, &amp;quot;flexdashboard&amp;quot;, &amp;quot;blogdown&amp;quot;, &amp;quot;bookdown&amp;quot;, &amp;quot;pagedown&amp;quot;, &amp;quot;xaringan&amp;quot;, &amp;quot;xaringanthemer&amp;quot;, &amp;quot;janitor&amp;quot;, &amp;quot;jsonlite&amp;quot;, &amp;quot;kableExtra&amp;quot;, &amp;quot;leaflet&amp;quot;, &amp;quot;officedown&amp;quot;, &amp;quot;openxlsx&amp;quot;, &amp;quot;readr&amp;quot;, &amp;quot;readxl&amp;quot;, &amp;quot;devtools&amp;quot;, &amp;quot;remotes&amp;quot;, &amp;quot;swirl&amp;quot;, &amp;quot;stringr&amp;quot;, &amp;quot;tmap&amp;quot;, &amp;quot;tmapstool&amp;quot;, &amp;quot;rvest&amp;quot;, &amp;quot;viridis&amp;quot;, &amp;quot;installr&amp;quot;, &amp;quot;distill&amp;quot;, &amp;quot;rticles&amp;quot;, &amp;quot;data.table&amp;quot;, &amp;quot;ggplot2&amp;quot;, &amp;quot;hrbrthemes&amp;quot;, &amp;quot;plotly&amp;quot;, &amp;quot;learnr&amp;quot;, &amp;quot;prettydoc&amp;quot;, &amp;quot;corrplot&amp;quot;, &amp;quot;tufte&amp;quot;, &amp;quot;ggpubr&amp;quot;, &amp;quot;sf&amp;quot;, &amp;quot;htmlwidgets&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ao longo do curso chamaremos as bibliotecas para que possamos implementar as funções.&lt;/p&gt;
+&lt;iframe width=&#34;1197&#34; height=&#34;645&#34; src=&#34;https://www.youtube.com/embed/dOasm9dKjKE?list=PLqDTVtdD-5aPagWJB6_0IaKN3IpIGhFU1&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

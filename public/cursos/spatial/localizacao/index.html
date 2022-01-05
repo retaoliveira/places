@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Renata Oliveira">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Pensamento espacialRepresentações: sistemas geodésicos, modelos e datumGeóideElipsóide de revoluçãoSistemas geodésicosDatumSistemas de referênciasSistemas de coordenadas geográficasSistemas de coordenadas projetadas - projeções cartográficasSistemas de Informações GeográficasDefinições de GISPor que fazer cartografia digital?GeocodificaçãoUnidades espaciais e representação de fenômenos espaciaisDados espaciaisEstrutura do shapefileDistânciasQGISAmbiente e funcionalidades básicas do QGISPensamento espacial” todas as coisas são parecidas mas coisas mais próximas se parecem mais que coisas mais distantes”.">
+
+  
+  <link rel="alternate" hreflang="pt-br" href="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/spatial/localizacao/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#FC6F5C">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/sites/cranky-mestorf-a03ae7/css/academia.min.ce1482d82f467a7727ce777c4d020022.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/sites/cranky-mestorf-a03ae7/css/academia.d6f9c9c9de95f61e59be498124eeba32.css">
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/sites/cranky-mestorf-a03ae7/site.webmanifest">
+  <link rel="icon" type="image/png" href="/sites/cranky-mestorf-a03ae7/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/sites/cranky-mestorf-a03ae7/img/icon-192.png">
+
+  <link rel="canonical" href="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/spatial/localizacao/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@retaoliveira">
+  <meta property="twitter:creator" content="@retaoliveira">
+  
+  <meta property="og:site_name" content="Profa. Renata Oliveira">
+  <meta property="og:url" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/cursos/spatial/localizacao/">
+  <meta property="og:title" content="Localização | Profa. Renata Oliveira">
+  <meta property="og:description" content="Pensamento espacialRepresentações: sistemas geodésicos, modelos e datumGeóideElipsóide de revoluçãoSistemas geodésicosDatumSistemas de referênciasSistemas de coordenadas geográficasSistemas de coordenadas projetadas - projeções cartográficasSistemas de Informações GeográficasDefinições de GISPor que fazer cartografia digital?GeocodificaçãoUnidades espaciais e representação de fenômenos espaciaisDados espaciaisEstrutura do shapefileDistânciasQGISAmbiente e funcionalidades básicas do QGISPensamento espacial” todas as coisas são parecidas mas coisas mais próximas se parecem mais que coisas mais distantes”."><meta property="og:image" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/img/icon-192.png">
+  <meta property="twitter:image" content="https://app.netlify.com/sites/cranky-mestorf-a03ae7/img/icon-192.png"><meta property="og:locale" content="pt-br">
+  
+  <meta property="article:published_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2021-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Localização | Profa. Renata Oliveira</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Pesquisar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Pesquisar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/sites/cranky-mestorf-a03ae7/">Profa. Renata Oliveira</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#projects"><span>Projetos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#publications"><span>Publicações</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Cursos</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/log_all/"><span>Logística</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/log_urb/"><span>Logística Urbana</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/intro_r/"><span>Introdução ao R</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/"><span>Sistemas de Suporte à Decisão Espacial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/cursos/urban/"><span>Urban Analytics</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Disciplinas</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/dados_grad/"><span>Análise de Dados para gestão organizacional - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log/"><span>Logística - 2021/1</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log_adm/"><span>Logística - Administração - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/log_epc/"><span>Logística - Eng. Produção Civil - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/intror_master/"><span>Introdução ao R - 2021/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/sites/cranky-mestorf-a03ae7/disciplinas/sdss/"><span>Sistemas de Suporte à Decisão Espacial - 2021/2</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sites/cranky-mestorf-a03ae7/#contact"><span>Contato</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Pesquisar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/spatial/">Análise espacial</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/sites/cranky-mestorf-a03ae7/cursos/spatial/localizacao/">Localização como atributo de suporte à decisão</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/localizacao/">Localização</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/geodata/">Dados espaciais</a>
+      </li>
+      
+      <li >
+        <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/map/">Construindo mapas e representações</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Localização</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#pensamento-espacial">Pensamento espacial</a></li>
+<li><a href="#representações-sistemas-geodésicos-modelos-e-datum">Representações: sistemas geodésicos, modelos e datum</a>
+<ul>
+<li><a href="#geóide">Geóide</a></li>
+<li><a href="#elipsóide-de-revolução">Elipsóide de revolução</a></li>
+<li><a href="#sistemas-geodésicos">Sistemas geodésicos</a>
+<ul>
+<li><a href="#datum">Datum</a></li>
+</ul></li>
+<li><a href="#sistemas-de-referências">Sistemas de referências</a>
+<ul>
+<li><a href="#sistemas-de-coordenadas-geográficas">Sistemas de coordenadas geográficas</a></li>
+<li><a href="#sistemas-de-coordenadas-projetadas---projeções-cartográficas">Sistemas de coordenadas projetadas - projeções cartográficas</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sistemas-de-informações-geográficas">Sistemas de Informações Geográficas</a>
+<ul>
+<li><a href="#definições-de-gis">Definições de GIS</a></li>
+<li><a href="#por-que-fazer-cartografia-digital">Por que fazer cartografia digital?</a></li>
+<li><a href="#geocodificação">Geocodificação</a></li>
+</ul></li>
+<li><a href="#unidades-espaciais-e-representação-de-fenômenos-espaciais">Unidades espaciais e representação de fenômenos espaciais</a></li>
+<li><a href="#dados-espaciais">Dados espaciais</a>
+<ul>
+<li><a href="#estrutura-do-shapefile">Estrutura do shapefile</a></li>
+</ul></li>
+<li><a href="#distâncias">Distâncias</a></li>
+<li><a href="#qgis">QGIS</a>
+<ul>
+<li><a href="#ambiente-e-funcionalidades-básicas-do-qgis">Ambiente e funcionalidades básicas do QGIS</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="pensamento-espacial" class="section level1">
+<h1>Pensamento espacial</h1>
+<blockquote>
+<p>” todas as coisas são parecidas mas coisas mais próximas se parecem mais que coisas mais distantes”. Waldo Tobler</p>
+</blockquote>
+<ul>
+<li><p>Encontrar significado em formas, tamanho, orientação, localização, direção ou trajetória de objetos, processos e fenômenos</p></li>
+<li><p>Encontrar significado na localização relativa de múltiplos objetos, processos e fenômenos.</p>
+<ul>
+<li>O que diferencia dados espaciais e não espaciais?<br />
+</li>
+<li>O que existe em uma determinada localização?<br />
+</li>
+<li>Onde posso encontrar um determinado objeto?<br />
+</li>
+<li>O que mudou ao longo do tempo?<br />
+</li>
+<li>Qual o melhor caminho?<br />
+</li>
+<li>Como os objetos são distribuídos no espaço?<br />
+</li>
+<li>Como as condições serão alteradas no futuro?</li>
+</ul></li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/pensamento_espacial.png" width="50%" /></p>
+</div>
+<div id="representações-sistemas-geodésicos-modelos-e-datum" class="section level1">
+<h1>Representações: sistemas geodésicos, modelos e datum</h1>
+<div id="geóide" class="section level3">
+<h3>Geóide</h3>
+<p>Forma irregular, com ondulações e depressões</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/gravidade_terra.png" width="50%" /></p>
+<p>É preciso buscar um modelo mais simples para representar a Terra.</p>
+<p><strong>Geóide</strong>: Superfície delimitada pelo nível médio dos mares supostamente prolongado por sob os continentes<br />
+<strong>Elipsóide</strong>: Modelo matemático que define a superfície da Terra.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/geoide.png" width="30%" /></p>
+</div>
+<div id="elipsóide-de-revolução" class="section level3">
+<h3>Elipsóide de revolução</h3>
+<p>Ao girar em torno de seu eixo menor, uma ELIPSE forma um volume achatado nos pólos</p>
+<p>É a figura matemática que mais se aproxima da forma do geóide. Parâmetros são simples</p>
+<p>Parâmetros
+a = semi-eixo maior; b = semi-eixo menor; f = achatamento = (a-b)/a</p>
+<p>Em geral, cada país ou grupo de países adotou um elipsóide de referência para os trabalhos geodésicos e topográficos que mais se aproxima do geóide na região considerada.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/elipsoi_1.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/elipsoide_2.png" width="30%" /></p>
+</div>
+<div id="sistemas-geodésicos" class="section level2">
+<h2>Sistemas geodésicos</h2>
+<p>Permitem estabelecer uma relação entre um ponto determinado do terreno e um elipsóide de referência.<br />
+Elegem um elipsóide de revolução que melhor se ajuste às características locais do geóide.</p>
+<p>A posição deste elipsóide em relação à Terra, bem como sua forma e tamanho, constituem um conjunto de parâmetros que usualmente são denominados Datum Geodésico.</p>
+<div id="datum" class="section level3">
+<h3>Datum</h3>
+<p>Marco geodésico, horizontal ou vertical, usado como ponto de origem do sistema geodésico (referência)</p>
+<ul>
+<li><p>Datum Vertical ou Altimétrico: referência para altitude (marco “zero” – 0 m)<br />
+<img src="https://retaoliveira.github.io/relements/figures/datum.png" width="50%" /></p></li>
+<li><p>Datum Horizontal ou Planimétrico: referência para coordenadas planimétricas<br />
+<img src="https://retaoliveira.github.io/relements/figures/geoide_geocentrico.png" width="30%" /></p></li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/geoide_topocentrico.png" width="30%" /></p>
+<p>SIRGAS 2000 - Sistema de Referência Geocêntrico para as Américas<br />
+Datum Global, Geocêntrico</p>
+<p>SAD-69 - Sistema Geodésico Sul-Americano 1969<br />
+Datum Local, Topocêntrico</p>
+</div>
+</div>
+<div id="sistemas-de-referências" class="section level2">
+<h2>Sistemas de referências</h2>
+<p>Como estabelecer localizações na Superfície Terrestre?</p>
+<ul>
+<li><p>Adotar um modelo matemático da Terra: Datum Geodésico (SAD-69, SIRGAS 2000…)</p></li>
+<li><p>Adotar um sistema capaz de localizar qualquer lugar da Terra: Sistema de Coordenadas</p></li>
+</ul>
+<div id="sistemas-de-coordenadas-geográficas" class="section level3">
+<h3>Sistemas de coordenadas geográficas</h3>
+<p>Sistemas de coordenadas geográficas são necessários para a expressão da posição de pontos sobre uma superfície.</p>
+<p>Considerando que esta superfície seja curvilínea (elipsóide ou esfera), cada ponto da superfície terrestre é localizado na interseção de um meridiano e paralelo e seu posicionamento é dado por meio de <strong>valores angulares</strong> que correspondem a sua <strong>latitude</strong> e <strong>longitude</strong>.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/graus.png" width="30%" /></p>
+<p><strong>Meridianos</strong><br />
+- Num modelo esférico, os meridianos são semi-círculos gerados a partir da interseção de planos verticais que contém o eixo de rotação terrestre com a superfície da Terra.</p>
+<ul>
+<li><p>Um semicírculo define um meridiano que com seu antimeridiano formam um círculo máximo.</p></li>
+<li><p>O meridiano de origem, é denominado Meridiano de Greenwich, com o seu antimeridiano, divide a Terra em dois hemisférios: leste e oeste.</p></li>
+<li><p>A leste deste meridiano, os valores da coordenadas são crescentes, variando entre 0° e +180°.</p></li>
+<li><p>A oeste, as medidas são decrescentes, variando entre 0° e -180°.</p></li>
+</ul>
+<p><strong>Paralelos</strong><br />
+- Paralelos são círculos cujo plano é perpendicular ao eixo dos pólos.</p>
+<ul>
+<li><p>O Equador é o paralelo que divide a Terra em dois hemisférios (Norte e Sul) e é considerado o paralelo de origem (0°).</p></li>
+<li><p>Partindo-se do Equador em direção aos pólos tem-se vários planos paralelos ao Equador, cujos tamanhos vão diminuindo até que se reduzam a pontos nos pólos Norte (+90°) e Sul (-90°).</p></li>
+</ul>
+<p><strong>Latitude e Longitude</strong><br />
+- Longitude (letra grega lambda λ): É a distância angular entre o lugar e o meridiano de origem, contada sobre um plano paralelo ao Equador.<br />
+- Latitude (letra grega phi ϕ): É a distância angular entre o lugar e o plano do Equador, contada sobre o plano do meridiano que passa no lugar.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/lat_long.png" width="30%" /></p>
+</div>
+<div id="sistemas-de-coordenadas-projetadas---projeções-cartográficas" class="section level3">
+<h3>Sistemas de coordenadas projetadas - projeções cartográficas</h3>
+<p>Para confeccionar um mapa, precisamos de um método segundo o qual a cada ponto da superfície terrestre corresponda um ponto do mapa e vice versa: <strong>sistema de projeções</strong>.</p>
+<p>A projeção cartográfica <strong>transforma</strong> uma posição sobre a superfície terrestre, identificada por latitude e longitude em uma posição em coordenadas cartesianas/planas (x,y).</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/projecao.png" width="30%" /></p>
+<p>Sistemas de coordenadas planas devem ser utilizados para representação de pequenas porções da superfície terrestre (mapas de grande escala). Coordenadas planas não são utilizadas para mapas de pequenas escalas pelo seu potencial de distorção.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/laranja1.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/laranja 2.png" width="30%" /></p>
+<p>Representar uma superfície curva (a Terra) em um plano sempre envolve deformações. <strong>Não existe projeção ideal</strong>.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/erro_proj1.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/proj.jpg" width="30%" /></p>
+<p>As projeções podem ser:<br />
+- Projeção conforme (conformidade): Mantêm ângulos (forma), mas não os tamanhos<br />
+- Projeção equidistante: Mantêm distância, mas deforma áreas e ângulos<br />
+- Projeção equivalente: Mantêm áreas, mas distorce as formas<br />
+- Projeções afiláticas: Não conserva nenhuma das propriedades. Busca reduzir distorções de maneira geral.</p>
+<p><strong>Classificação das projeções geográficas</strong><br />
+Quanto à Superfície de Projeção:<br />
+- Plana ou Azimutal<br />
+- Cilíndrica<br />
+- Cônica<br />
+- Polissuperficiais (poliédrica, policilíndrica, policônica)</p>
+<p>Quanto ao Tipo de Contato:<br />
+- Tangente</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/planotangente.png" width="30%" /></p>
+<ul>
+<li>Secante</li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/planosecante.png" width="30%" /></p>
+<div id="utm" class="section level4">
+<h4>UTM</h4>
+<p>O Sistema de projeção Universal Transversa de Mercato apresenta uma superfície de Projeção com 60 cilindros transversos, cada um com uma amplitude de 6 graus em longitude = 60 fusos.</p>
+<p>Cada fuso possui um meridiano central, com 3 graus para cada lado. Os 60 fusos são enumerados a partir do anti-meridiano de Greenwich.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/mercartor.png" width="30%" /></p>
+<p>A unidade é o <strong>metro</strong> tendo como origem o Equador e o Meridiano Central. No hemisfério Sul, o sistema possui o valor 10.000.000,00 m no Equador para a corrdenada Norte, decrescendo para o Sul. E o valor 500.000,00 m no Meridiano Central para a coordenada leste, decrescendo para Oeste e crescendo para leste.</p>
+<p>As Coordenadas UTM definem posições bi-dimensionais e horizontais.</p>
+<ul>
+<li><p>Fusos UTM no território brasileiro: Fusos 18 a 25</p></li>
+<li><p>Belo Horizonte: Fuso 23</p></li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/utm.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/utm_br.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/utm1.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/utm2.png" width="30%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/utm5.png" width="30%" /></p>
+</div>
+</div>
+</div>
+</div>
+<div id="sistemas-de-informações-geográficas" class="section level1">
+<h1>Sistemas de Informações Geográficas</h1>
+<p>GIS significa “Sistema de Informação Geográfica” ou “Geographic Information System”.</p>
+<p>Os GIS são um conjunto de ferramentas usadas para coleta e tratamento de informações espaciais, geração de saídas na forma de mapas, relatórios, arquivos digitais, etcc.</p>
+<ul>
+<li><p>Deve prover recursos para sua armazenagem, gerenciamento, manipulação e análise.</p></li>
+<li><p>Geoprocessamento representa qualquer tipo de processamento de dados georeferenciados (conceito muito mais abrangente).</p></li>
+<li><p>Um SIG é capaz de processar dados gráficos e não gráficos (alfanuméricos), com ferramentas de análises espaciais e modelagens de superfícies.</p></li>
+</ul>
+<p>Assim como usamos um processador de texto para escrever documentos e lidar com palavras em um computador, podemos usar um aplicativo GIS para lidar com informações espaciais em um computador.</p>
+<div id="definições-de-gis" class="section level3">
+<h3>Definições de GIS</h3>
+<p>“Conjunto poderoso de ferramentas para coletar, armazenar, recuperar, transformar e visualizar dados sobre o mundo real”(Burrough)</p>
+<p>“Um sistema de suporte à decisão que integra dados referenciados espacialmente num ambiente de respostas a problemas” (Cowen)</p>
+<p>“Um banco de dados indexados espacialmente, sobre o qual opera um conjunto de procedimentos para responder a consultas sobre entidades espaciais” (Smith)</p>
+</div>
+<div id="por-que-fazer-cartografia-digital" class="section level3">
+<h3>Por que fazer cartografia digital?</h3>
+<p>Fazer mapas mais rapidamente.<br />
+Fazer mapas mais baratos.<br />
+Fazer mapas para usos específicos.<br />
+Fazer mapas em situações em que não há disponibilidade de pessoal especializado.<br />
+Permitir experimentos com representações espaciais diversas dos mesmos dados.<br />
+Facilitar atualização de mapas.<br />
+Facilitar análises de dados que exigem interação entre estatística e mapas.<br />
+Minimizar a necessidade de mapas em papel.<br />
+Fazer mapas que não podem ser representados em papel, como em 3D, por exemplo.</p>
+</div>
+<div id="geocodificação" class="section level3">
+<h3>Geocodificação</h3>
+<p>A geocodificação é um processo que permite transformar dados de localização como coordenadas, endereços e nomes de estabelecimentos em uma geolocalização com latitude e longitude.</p>
+</div>
+</div>
+<div id="unidades-espaciais-e-representação-de-fenômenos-espaciais" class="section level1">
+<h1>Unidades espaciais e representação de fenômenos espaciais</h1>
+<p>A escolha das unidades espaciais dependende tanto da disponibilidade de dados como do fenômeno em análise. Mais informações e discussões serão feitas sobre o conceito de MAUP.</p>
+</div>
+<div id="dados-espaciais" class="section level1">
+<h1>Dados espaciais</h1>
+<p>Dados espaciais podem apresentar diferentes formatos e comporem diferentes estruturas. Por agora, utilizaremos apenas o formato criado pela ESRI denominado <code>shapefile</code>.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/vector-vs-raster.png" width="30%" /></p>
+<div id="estrutura-do-shapefile" class="section level2">
+<h2>Estrutura do shapefile</h2>
+<p><code>.dbf</code> – Banco de dados – Informações dos atributos das feições<br />
+<code>.prj</code> – Sistemas de coordenadas geográficas<br />
+<code>.snb</code> e <code>.sbx</code> – Armazenam os índices espaciais das feições<br />
+<code>.shp</code> – Armazenam a geometria das feições<br />
+<code>.shx</code> – Armazena o índice da geometria das feições – busca rápida<br />
+<code>.xml</code> - metadado em formato XML</p>
+</div>
+</div>
+<div id="distâncias" class="section level1">
+<h1>Distâncias</h1>
+<p>Diferentes conceitos de distância podem ser utilizados no tratamento de dados espaciais visando representar a impedância entre funções/atividades urbanas (conectividade).</p>
+<ul>
+<li>A <code>Distância Euclidiana</code> é definida como a soma da raiz quadrada da diferença entre x e y em suas respectivas dimensões.
+<ul>
+<li>Distância Euclideana: √((x1 – x2)² + (y1 – y2)²).</li>
+</ul></li>
+<li>A <code>Distância Manhattan</code> tem uma definição mais simples na qual é apenas a soma das diferenças entre x e y em cada dimensão.
+<ul>
+<li>Distância Manhattan: |x1 – x2| + |y1 – y2|.</li>
+</ul></li>
+</ul>
+<p>A <strong>Distância Euclidiana</strong> seria o segmento de uma reta que conceta dois pontos no espaço. A <strong>Distância Manhattan</strong> seria um segmento de retas na vertical e na horizontal semelhante a uma rota veicular em áreas urbanas.</p>
+<p>A distância em rede é aquela equivalente ao deslocamento real no ambiente construído e se aproxima mais da realidade. Entretanto, o esforço computacional e a demanda por dados é sempre maior.</p>
+</div>
+<div id="qgis" class="section level1">
+<h1>QGIS</h1>
+<div id="ambiente-e-funcionalidades-básicas-do-qgis" class="section level2">
+<h2>Ambiente e funcionalidades básicas do QGIS</h2>
+<p><strong>1. Ambiente geral</strong></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q1.png" width="60%" /></p>
+<p><strong>2. Complementos</strong></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q2.png" width="60%" /></p>
+<p><strong>3. Acesso aos dados espaciais</strong></p>
+<p>Vamos trabalhar com dados na estrutura <code>shapefile</code> - camadas vetoriais</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q3.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q4.png" width="60%" /></p>
+<p><strong>4. Mudança de atributos dos shapefiles</strong></p>
+<p>Mudança de cores das camadas</p>
+<ul>
+<li>acesso às propriedades da camada</li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/q7.png" width="60%" /></p>
+<ul>
+<li>Recursos para alteração da representação das feições nas camadas</li>
+</ul>
+<p><img src="https://retaoliveira.github.io/relements/figures/q5.png" width="60%" /></p>
+<blockquote>
+<p>Pode haver incompatibilidade entre feições causadas pela qualidade do dado vetorial ou por uso de diferentes projeções. Isso não inviabiliza o uso do dado espacial, mas podem ser necessárias conversões de sistemas de referência ou mesmo tratamento da geometria das feições.</p>
+</blockquote>
+<p><img src="https://retaoliveira.github.io/relements/figures/q8.png" width="60%" /></p>
+<p><strong>5. Mudança de datum e sistemas de coordenadas</strong></p>
+<p><strong>Transformações on-the-fly</strong></p>
+<p>O mecanismo de transformações <code>on-the-fly</code> realiza reprojeções automáticas para fins de visualização/renderização.</p>
+<p>São reprojeções dinâmicas, que não afetam o dado original</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q9.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q10.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q11.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q12.png" width="60%" /></p>
+<p><strong>Reprojetar ou converter</strong><br />
+Para reprojetar ou converter para outro formato:
+Salvar a camada com o novo sistema de referência/formato
+Botão direito sobre a camada &gt; Save as…</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q13.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q14.png" width="60%" /></p>
+<p><strong>6. Tabela de atributos</strong></p>
+<p>A <code>tabela de atributos</code> pode ser acessada pelo mesmo menu da camada. Na <code>tabela de atributos</code> são apresentadas as observações e os atributos de cada feição geométrica gerreferenciada. É análoga a uma planilha ou a um data.frame (<code>R</code>). É importante lembrar que só é possível associar um banco de dados (tabela de atributos) a um dado vetorial. Cada observação é uma feição geométrica desse dado.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q17.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q18.png" width="60%" /></p>
+<p><strong>7. Geocodificação</strong></p>
+<p>O complemento que utilizo para geocodificação é o <code>MMQGIS</code>, que conecta direto com as APIs do Google e do OSM. Para fazer a geocodificação pelo Google, é necessária chave de acesso e token, pois acima de 2.500 requisiçoes por IP por dia são cobradas. Assim, recomendo a utilização do <code>OSM</code>.</p>
+<p>O arquivo a ser organizado e importado no <code>QGIS</code> para geocodificação é no formato <code>.csv</code> e codificação <code>UTF-8</code>. Nesse arquivo devem ser organizadas as informações sobre o endereço em quatro colunas:<br />
+- address<br />
+- city<br />
+- state<br />
+- country</p>
+<p>Na primeira coluna colocamos o endereço completo sem as informações de cidade, estado e país.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q16.png" width="60%" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qvUgWpidJ5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIeLmrR7Kz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9UAn8M9tZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><strong>8. Mapas temáticos</strong></p>
+<p>Mapas temáticos são representações em feições geométricas do atributo de interesse utilizando elementos visuais para visualização da estrutura espacial desses dados.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q22.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q23.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q24.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q25.png" width="60%" /></p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q26.png" width="60%" /></p>
+<p><strong>9. Geração de Layout de impressão</strong><br />
+Para gerarmos o layout de impressão dos mapas, é necessário acessar o ambiente de edição do layout.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q19.png" width="60%" /></p>
+<p>O ambiente de edição de layout tem a seguinte estrutura:</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q20.png" width="60%" /></p>
+<p>Para inserir os elementos gráficos e textuais no layout, você deve acessar o menu à esquerda da página em branco e incluir mapas, legendas, indicador de norte, escala, dentre outros elementos.</p>
+<p><img src="https://retaoliveira.github.io/relements/figures/q21.png" width="60%" /></p>
+<p><strong>10. Manipulação de dados</strong><br />
+1. seleção por atributo e por localização<br />
+2. join por código e join espacial<br />
+3. geração de centroides e agregação de variaveis</p>
+<p><strong>11. Dados no formato raster</strong></p>
+<p><a href="https://metadados.ana.gov.br/geonetwork/srv/pt/metadata.show?uuid=830d00e6-9924-469d-b24b-aff67a1fd432">Metadados ANA</a></p>
+<p><strong>12. GeoDa para análise espacial e econometria espacial</strong><br />
+<a href="https://geodacenter.github.io/">GeoDa - Documentação e download</a></p>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Próximo</div>
+    <a href="/sites/cranky-mestorf-a03ae7/cursos/spatial/geodata/" rel="prev">Dados espaciais</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Última atualização em May 5, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          Renata Oliveira 2022 &middot; 
+          Build with 
+          <a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener"><i class="far fa-heart"></i>
+          ,
+          <a href="https://github.com/retaoliveira" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+          , the
+          <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a>
+          <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>
+          package, and 
+          <a href="https://themes.gohugo.io/academia-hugo/" target="_blank" rel="noopener">Academia Hugo</a>
+          for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:retaoliveira"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/sites/cranky-mestorf-a03ae7/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/sites/cranky-mestorf-a03ae7/index.json";
+      const i18n = {
+        'placeholder': "Pesquisar...",
+        'results': "Resultados encontrados",
+        'no_results': "Sem resultados"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projetos",
+        'publication' : "Publicações",
+        'talk' : "Palestras"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/sites/cranky-mestorf-a03ae7/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
